@@ -1,7 +1,7 @@
 ---
 title: Pod našom (auto)komandom
 pubDate: 2025-01-27
-heroImage: /images/autokomanda.jpg
+heroImage: /src/assets/images/autokomanda.jpg
 ---
 
 Pozivamo vas da nam se pridružite na dvadesetčetvoročasovnoj blokadi Auto-komande, koja će nastupiti u ponedeljak 27. 1. u 10h. Blokada će obuhvatiti deo Bulevara oslobođenja, pa sve do raskrsnice Ustaničke, Južnog bulevara i Nebojšine ulice. Tačno ucrtane granice blokade možete videti na slici ispod.

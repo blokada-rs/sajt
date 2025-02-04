@@ -43,8 +43,8 @@ collections:
             widget: "select"
             options: [ "visok", "srednji", "nizak" ]
 
-media_folder: "public/images" # Location where files will be stored in the repo
-public_folder: "/images" # The src attribute for uploaded media
+media_folder: "/src/assets/images/" # Location where files will be stored in the repo
+public_folder: "/src/assets/images/" # The src attribute for uploaded media
 locale: hr
 
 backend:

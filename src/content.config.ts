@@ -5,12 +5,12 @@ const vesti = defineCollection({
 	// Load Markdown and MDX files in the `src/content/vesti/` directory.
 	loader: glob({ base: './src/content/vesti', pattern: '**/*.{md,mdx}' }),
 	// Type-check frontmatter using a schema
-	schema: z.object({
+	schema: ({ image }) => z.object({
 		title: z.string(),
 		// Transform string to Date object
 		pubDate: z.coerce.date(),
 		updatedDate: z.coerce.date().optional(),
-		heroImage: z.string().optional(),
+		heroImage: image().optional(),
 	}),
 });
 
@@ -18,11 +18,11 @@ const akcije = defineCollection({
 	// Load Markdown and MDX files in the `src/content/vesti/` directory.
 	loader: glob({ base: './src/content/akcije', pattern: '**/*.{md,mdx}' }),
 	// Type-check frontmatter using a schema
-	schema: z.object({
+	schema: ({ image }) => z.object({
 		title: z.string(),
 		// Transform string to Date object
 		pubDate: z.coerce.date(),
-		heroImage: z.string().optional(),
+		heroImage: image().optional(),
 	}),
 });
 

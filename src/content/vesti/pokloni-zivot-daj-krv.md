@@ -1,7 +1,7 @@
 ---
 title: Pokloni život - daj krv
 pubDate: 2025-01-26
-heroImage: /images/davanje-krvi.jpg
+heroImage: /src/assets/images/davanje-krvi.jpg
 ---
 
 Studenti Visoke zdravstvene škole pozivaju sve punoletne građane na akciju dobrovoljnog davanja krvi.
