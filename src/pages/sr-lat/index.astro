@@ -7,6 +7,7 @@ import { Image } from 'astro:assets';
 import indeks from '../../assets/images/indeks.jpg'
 import megafon from '../../assets/images/megafon.jpg'
 import zastava from '../../assets/images/zastava.jpg'
+import slavija from '../../assets/images/slavija.jpg'
 ---
 
 <!doctype html>
@@ -16,7 +17,7 @@ import zastava from '../../assets/images/zastava.jpg'
 	</head>
 	<body>
 		<Header />
-		<div class="title">
+		<div class="title" style={`background-image: url(${slavija.src});`}>
 			<h1>Studentske blokade</h1>
 		</div>
 		<main>
@@ -58,7 +59,6 @@ import zastava from '../../assets/images/zastava.jpg'
 <style>
 	.title {
 		position: relative;
-		background-image: url("/images/slavija.jpg");
 		background-size: cover;
 		background-position: center;
 		height: 30rem;
