@@ -75,11 +75,24 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
         border: 1px solid rgb(var(--black));
         border-radius: .5rem;
         text-decoration: none;
+        flex-grow: 1;
+        text-align: center;
+    }
+
+
+    @media (max-width: 500px) {
+        .nalozi {
+            gap: 0.5rem;
+        }
+
+        a {
+            padding: .5rem 1rem;
+        }
     }
 
     a:hover {
         color: rgb(var(--gray));
-        border-color: rgb(var(--gray));;
+        border-color: rgb(var(--gray));
     }
 
     section {
