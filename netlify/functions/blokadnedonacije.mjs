@@ -1,3 +1,5 @@
 export default async (req, context) => {
-    return fetch("https://blokadnedonacije.rs/");
+    return new Response(await (await fetch("https://blokadnedonacije.rs/")).text(), {
+        status: 200,
+    });
 };

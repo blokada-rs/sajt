@@ -181,8 +181,9 @@ const fakulteti = (await getCollection('donacije')).filter(fakultet => typeof fa
 
     koordinate.set("Univerzitet Metropolitan", [20.455155840507967, 44.83055028434515]);
 
-
     const response = await fetch("/.netlify/functions/blokadnedonacije");
+    console.log(response);
+
     const blokadnedonacije = await response.text();
 
     const parser = new DOMParser();
@@ -202,6 +203,8 @@ const fakulteti = (await getCollection('donacije')).filter(fakultet => typeof fa
             }
         }
     }).filter(fakultet => typeof fakultet.data.koordinate !== 'undefined');
+
+    console.log(fakulteti);
 
     // const fakulteti = JSON.parse(document.body.dataset.fakulteti);
 
