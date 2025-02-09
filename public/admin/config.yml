@@ -44,7 +44,7 @@ collections:
             options: [ "visok", "srednji", "nizak" ]
 
 media_folder: "/src/assets/images/" # Location where files will be stored in the repo
-public_folder: "/src/assets/images/" # The src attribute for uploaded media
+public_folder: "@assets/images/" # The src attribute for uploaded media
 locale: hr
 
 backend:
