@@ -15,7 +15,7 @@ const vesti = defineCollection({
 });
 
 const akcije = defineCollection({
-	// Load Markdown and MDX files in the `src/content/vesti/` directory.
+	// Load Markdown and MDX files in the `src/content/akcije/` directory.
 	loader: glob({ base: './src/content/akcije', pattern: '**/*.{md,mdx}' }),
 	// Type-check frontmatter using a schema
 	schema: ({ image }) => z.object({
@@ -27,7 +27,7 @@ const akcije = defineCollection({
 });
 
 const donacije = defineCollection({
-	// Load Markdown and MDX files in the `src/content/vesti/` directory.
+	// Load Markdown and MDX files in the `src/content/donacije/` directory.
 	loader: glob({ base: './src/content/donacije', pattern: '**/*.{md,mdx}' }),
 	// Type-check frontmatter using a schema
 	schema: z.object({
