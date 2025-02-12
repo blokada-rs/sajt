@@ -1,4 +1,52 @@
 collections:
+  - name: "stranice"
+    label: "Stranice"
+    i18n:
+      structure: single_file
+    files:
+      - label: "Početna"
+        name: "pocetna"
+        file: "src/content/stranice/početna.md"
+        create: false
+        i18n: true
+        fields:
+          - { label: "Naslov", name: "naslov", widget: "string", i18n: true }
+          - { label: "Opis", name: "opis", widget: "markdown", i18n: true }
+          - { label: "Zahtevi", name: "zahtevi", widget: "markdown", i18n: true }
+
+      - label: "O Blokadama"
+        name: "o-blokadama"
+        file: "src/content/stranice/o-blokadama.md"
+        create: false
+        i18n: true
+        fields:
+          - { label: "Tekst", name: "tekst", widget: "markdown", i18n: true }
+
+      - label: "Zaglavlje"
+        name: "zaglavlje"
+        file: "src/content/stranice/zaglavlje.md"
+        create: false
+        i18n: true
+        fields:
+          - label: "Naslov"
+            name: "naslov"
+            widget: "string"
+            i18n: true
+
+          - label: "Linkovi"
+            name: "linkovi"
+            widget: "list"
+            i18n: true
+            fields:
+              - label: "Naziv"
+                name: "naziv"
+                widget: string
+                i18n: true
+              - label: "Link"
+                name: "link"
+                widget: string
+                i18n: true
+
   - name: "vesti"
     label: "Vesti"
     folder: "src/content/vesti"
@@ -20,6 +68,8 @@ collections:
       - { label: "Datum objavljivanja", name: "pubDate", widget: "datetime", i18n: "duplicate" }
       - { label: "Glavna slika", name: "heroImage", widget: "image", i18n: "duplicate" }
       - { label: "tekst", name: "body", widget: "markdown", i18n: true }
+
+
 
 media_folder: "/src/assets/images/"
 public_folder: "@assets/images/"

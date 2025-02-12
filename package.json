@@ -9,13 +9,11 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@arcgis/core": "^4.31.6",
-    "@arcgis/map-components": "^4.31.6",
     "@astrojs/mdx": "^4.0.8",
     "@astrojs/rss": "^4.0.11",
     "@astrojs/sitemap": "^3.2.1",
-    "@netlify/functions": "^3.0.0",
-    "astro": "^5.2.5",
+    "@astropub/md": "^1.0.0",
+    "astro": "^5.2.6",
     "sharp": "^0.33.5"
   }
 }

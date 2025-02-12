@@ -1,13 +1,14 @@
 ---
 import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../consts';
+import { frontmatter } from "@content/stranice/zaglavlje.md";
 
 const { lang } = Astro.params;
+const zaglavlje = frontmatter[lang?.substring(0, 2) as string]
 ---
 
 <header>
 	<nav>
-		<h2><a href=`/${lang}`>{SITE_TITLE}</a></h2>
+		<h2><a href=`/${lang}`>{zaglavlje.naslov}</a></h2>
 
 		<button popovertarget="menu-links">
 			Meni
@@ -16,10 +17,9 @@ const { lang } = Astro.params;
 		<div id="menu-links" popover>
 			<nav class="internal-links">
 				<button popovertarget="menu-links" popovertargetaction="hide">Zatvori</button>
-				<HeaderLink href=`/${lang}/o-blokadama`>O Blokadama</HeaderLink>
-				<HeaderLink href=`/${lang}/vesti`>Vesti</HeaderLink>
-				<HeaderLink href=`/${lang}/akcije`>Akcije</HeaderLink>
-				<HeaderLink href=`/${lang}/kontakt`>Kontakt</HeaderLink>
+				{zaglavlje.linkovi.map(({naziv, link}: {naziv: string, link: string}) => 
+					<HeaderLink href={`/${lang}${link}`}>{naziv}</HeaderLink>
+				)}
 			</nav>
 		</div>
 	</nav>

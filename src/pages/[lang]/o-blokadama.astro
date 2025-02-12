@@ -1,7 +1,10 @@
 ---
+import { Markdown } from '@astropub/md'
+
 import BaseHead from '../../components/BaseHead.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
+import { frontmatter } from "@content/stranice/o-blokadama.md";
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 
 export async function getStaticPaths() {
@@ -10,6 +13,9 @@ export async function getStaticPaths() {
 		{params: {lang: 'en'}},
 	]
 }
+
+const { lang } = Astro.params;
+const oblokadama = frontmatter[lang?.substring(0, 2) as string];
 ---
 
 <!doctype html>
@@ -20,30 +26,7 @@ export async function getStaticPaths() {
 	<body>
 		<Header />
 		<main>
-			<h1>O blokadama</h1>
-			<p>
-				Pad nadstrešnice na Železničkoj stanici u Novom Sadu u petak, 1. novembra 2024. u 11:52, usmrtio je 15 ljudi. Smrt nevinih izazvala je kolektivnu tugu. Građani su na ulicama zastajali u 11.52 kako bi petnaestominutnom tišinom odali počast žrtvama. Građani Srbije se i dalje redovno okupljaju u različitim mestima u Srbiji, uvek u isto vreme, u 11:52.
-			</p>
-			<p>
-				Studenti i profesori Fakulteta dramskih umetnosti u Beogradu okupili su se 22. novembra 2024. godine, u neposrednoj blizini fakulteta, kako bi odali počast poginulima. Tokom skupa, koji je bio unapred najavljen, studenti i profesori FDU fizički su napadnuti od strane organizovane grupe ljudi. Dvoje studenata zadobilo je lakše telesne povrede.
-			</p>
-			<p>
-				Četiri dana nakon incidenta, studenti Fakulteta dramskih umetnosti stupaju u blokadu fakulteta kao rezultat nereagovanja policije i tužilaštva. Nakon što je Fakultet dramskih umetnosti stupio u blokadu, u ponedeljak 2. decembra 2024. godine blokirana je i zgrada Rektorata Univerziteta u Beogradu. Nakon FDU, u blokadu stpaju Filozofski, Filološki, Hemijski i Matematički fakultet u Beogradu.
-			</p>
-			<p>
-				U narednim danima jedan po jedan fakultet, na plenumima koji predstavljaju direktno-demokratski skup na kojem mogu učestvovati svi studenti sa jednakim pravom glasa, je izglasavao blokadu.
-			</p>
-			<p>
-				Preko 60 fakulteta i visokih škola širom Srbije trenutno je u blokadi.
-			</p>
-
-			<h2>Zahtevi</h2>
-			<ul>
-				<li>Objava celokupne dokumentacije koja se tiče rekonstruisanja Železničke stanice u Novom Sadu koja je trenutno nedostupna javnosti.</li>
-				<li>Zahtevamo potvrdu nadležnih organa o identitetu svih lica za koja postoji osnovana sumnja da su fizički napala studente i profesore, kao i pokretanje krivičnih postupaka protiv njih. Takođe zahtevamo razrešenje pomenutih lica ukoliko se pokaže da su ista javni funkcioneri.</li>
-				<li>Odbacivanje krivičnih prijava protiv uhapšenih i privedenih studenata na protestima, kao i obustava već pokrenutih krivičnih postupaka.</li>
-				<li>Povećanje budžeta za visoko obrazovanje u iznosu od 20%.</li>
-			</ul>
+			<Markdown of={oblokadama.tekst} />
 		</main>
 		<Footer />
 	</body>

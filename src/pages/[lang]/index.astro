@@ -1,13 +1,18 @@
 ---
+import { Markdown } from '@astropub/md'
+import { Image } from 'astro:assets';
+
 import BaseHead from '../../components/BaseHead.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
-import { Image } from 'astro:assets';
-import indeks from '../../assets/images/indeks.jpg'
-import megafon from '../../assets/images/megafon.jpg'
-import zastava from '../../assets/images/zastava.jpg'
-import slavija from '../../assets/images/slavija.jpg'
+
+import { frontmatter } from "@content/stranice/početna.md";
+
+import { SITE_DESCRIPTION } from '../../consts';
+import indeks from '@assets/images/indeks.jpg'
+import megafon from '@assets/images/megafon.jpg'
+import zastava from '@assets/images/zastava.jpg'
+import slavija from '@assets/images/slavija.jpg'
 
 export async function getStaticPaths() {
 	return [
@@ -15,47 +20,34 @@ export async function getStaticPaths() {
 		{params: {lang: 'en'}},
 	]
 }
+
+const { lang } = Astro.params;
+const naslovna = frontmatter[lang?.substring(0, 2) as string];
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<BaseHead title={naslovna.naslov} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
 		<Header />
 		<div class="title" style={`background-image: url(${slavija.src});`}>
-			<h1>Studentske blokade</h1>
+			<h1>{naslovna.naslov}</h1>
 		</div>
 		<main>
 			<section>
-				<p>
-					Pad nadstrešnice na Železničkoj stanici u Novom Sadu u petak, 1. novembra 2024. u 11:52, usmrtio je 15 ljudi. Smrt nevinih izazvala je kolektivnu tugu. Građani su na ulicama zastajali u 11.52 kako bi petnaestominutnom tišinom odali počast žrtvama. Građani Srbije se i dalje redovno okupljaju u različitim mestima u Srbiji, uvek u isto vreme, u 11:52.
-				</p>
-
-				<p>
-					U blokadama je trenutno oko 60 fakulteta i visokih škola širom Srbije.
-				</p>
-
-				<p>
-					Nemamo pojedince koji stoje iznad zajednice. Nismo sledbenici kulta ličnosti. Naše delovanje je kolektivno, promišljeno i odgovorno. Na ulici smo zbog ideje, a ne zbog lične koristi. Ovo nije ni mesto, ni vreme za isticanje pojedinaca, već za zajedništvo i solidarnost.
-				</p>
+				<Markdown of={naslovna.opis} />
 			</section>
 
 			<div class="collage">
-				<Image class="megafon" src={megafon} alt="" />
-				<Image class="indeks" src={indeks} alt="" />
-				<Image class="zastava" src={zastava} alt="" />
+				<Image class="megafon" loading="eager" src={megafon} alt="" />
+				<Image class="indeks" loading="eager" src={indeks} alt="" />
+				<Image class="zastava" loading="eager" src={zastava} alt="" />
 			</div>
 
 			<section>	
-				<h2>Zahtevi</h2>
-				<ul>
-					<li>Objava celokupne dokumentacije koja se tiče rekonstruisanja Železničke stanice u Novom Sadu koja je trenutno nedostupna javnosti.</li>
-					<li>Zahtevamo potvrdu nadležnih organa o identitetu svih lica za koja postoji osnovana sumnja da su fizički napala studente i profesore, kao i pokretanje krivičnih postupaka protiv njih. Takođe zahtevamo razrešenje pomenutih lica ukoliko se pokaže da su ista javni funkcioneri.</li>
-					<li>Odbacivanje krivičnih prijava protiv uhapšenih i privedenih studenata na protestima, kao i obustava već pokrenutih krivičnih postupaka.</li>
-					<li>Povećanje budžeta za visoko obrazovanje u iznosu od 20%.</li>
-				</ul>
+				<Markdown of={naslovna.zahtevi} />
 			</section>
 		</main>
 		<Footer />
