@@ -2,6 +2,13 @@ import rss from '@astrojs/rss';
 import { getCollection } from 'astro:content';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../../consts';
 
+export async function getStaticPaths() {
+	return [
+		{params: {lang: 'sr-lat'}},
+		{params: {lang: 'en'}},
+	]
+}
+
 export async function GET(context) {
 	const posts = await getCollection('vesti');
 	return rss({
