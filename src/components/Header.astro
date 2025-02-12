@@ -1,11 +1,13 @@
 ---
 import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
+
+const { lang } = Astro.params;
 ---
 
 <header>
 	<nav>
-		<h2><a href="/">{SITE_TITLE}</a></h2>
+		<h2><a href=`/${lang}`>{SITE_TITLE}</a></h2>
 
 		<button popovertarget="menu-links">
 			Meni
@@ -14,10 +16,10 @@ import { SITE_TITLE } from '../consts';
 		<div id="menu-links" popover>
 			<nav class="internal-links">
 				<button popovertarget="menu-links" popovertargetaction="hide">Zatvori</button>
-				<HeaderLink href="/sr-lat/o-blokadama">O Blokadama</HeaderLink>
-				<HeaderLink href="/sr-lat/vesti">Vesti</HeaderLink>
-				<HeaderLink href="/sr-lat/akcije">Akcije</HeaderLink>
-				<HeaderLink href="/sr-lat/kontakt">Kontakt</HeaderLink>
+				<HeaderLink href=`/${lang}/o-blokadama`>O Blokadama</HeaderLink>
+				<HeaderLink href=`/${lang}/vesti`>Vesti</HeaderLink>
+				<HeaderLink href=`/${lang}/akcije`>Akcije</HeaderLink>
+				<HeaderLink href=`/${lang}/kontakt`>Kontakt</HeaderLink>
 			</nav>
 		</div>
 	</nav>

@@ -8,6 +8,13 @@ import indeks from '../../assets/images/indeks.jpg'
 import megafon from '../../assets/images/megafon.jpg'
 import zastava from '../../assets/images/zastava.jpg'
 import slavija from '../../assets/images/slavija.jpg'
+
+export async function getStaticPaths() {
+	return [
+		{params: {lang: 'sr-lat'}},
+		{params: {lang: 'en'}},
+	]
+}
 ---
 
 <!doctype html>

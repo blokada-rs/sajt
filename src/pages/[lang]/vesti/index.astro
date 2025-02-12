@@ -7,13 +7,24 @@ import Footer from '../../../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../../consts';
 import FormattedDate from '../../../components/FormattedDate.astro';
 
+const { lang } = Astro.params;
+
 const posts = (await getCollection('vesti')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
-);
+).map(e => {
+	return {...e, lang: e.id.split('/')[0], id: e.id.split('/')[1]};
+}).filter(post => lang.startsWith(post.lang));
+
+export async function getStaticPaths() {
+	return [
+		{params: {lang: 'sr-lat'}},
+		{params: {lang: 'en'}},
+	]
+}
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang=lang>
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
@@ -94,7 +105,7 @@ const posts = (await getCollection('vesti')).sort(
 					{
 						posts.map((post) => (
 							<li>
-								<a href={`/sr-lat/vesti/${post.id}/`}>
+								<a href=`/${lang}/vesti/${post.id}/`>
 									<Image width={720} src={post.data.heroImage} alt="" />
 									<h4 class="title">{post.data.title}</h4>
 									<p class="date">

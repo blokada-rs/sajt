@@ -4,9 +4,11 @@ import BlogPost from '../../../layouts/BlogPost.astro';
 import { render } from 'astro:content';
 
 export async function getStaticPaths() {
+	const lat = ((lang: string) => (lang === "sr")? "sr-lat": "en")
+
 	const posts = await getCollection('akcije');
 	return posts.map((post) => ({
-		params: { slug: post.id },
+		params: { lang: lat(post.id.split('/')[0]), slug: post.id.split('/')[1] },
 		props: post,
 	}));
 }
