@@ -7,9 +7,10 @@ import Footer from '../../../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../../consts';
 import FormattedDate from '../../../components/FormattedDate.astro';
 
-const posts = (await getCollection('akcije')).sort(
+const posts = (await getCollection('akcije')).filter(el => el.id.startsWith("sr/")).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
+console.log(posts)
 ---
 
 <!doctype html>
