@@ -1,7 +1,7 @@
 ---
 title: Saopštenje povodom ostavke dr Mile Paunić
 pubDate: 2025-01-23
-heroImage: '@assets/images/placeholder.jpg'
+heroImage: "@assets/images/placeholder.jpg"
 ---
 
 Odluka doktorke Mile Paunić, da podnese ostavku u Zavodu za zdravstvenu zaštitu studenata zbog onemogućavanja zaposlenih da iskažu podršku studentima, nije samo čin lične hrabrosti, već i jasan pokazatelj ozbiljnih problema u društvu. Taj gest solidarnosti i moralnog integriteta istovremeno osvetljava atmosferu pritiska i straha u kojoj čak i podrška studentima biva okarakterisana kao čin koji zaslužuje sankciju.

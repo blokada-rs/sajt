@@ -3,49 +3,36 @@ collections:
     label: "Vesti"
     folder: "src/content/vesti"
     create: true
+    i18n: true
     fields:
-      - { label: "Naslov", name: "title", widget: "string" }
-      - { label: "Datum objavljivanja", name: "pubDate", widget: "datetime" }
-      - { label: "Glavna slika", name: "heroImage", widget: "image" }
-      - { label: "tekst", name: "body", widget: "markdown" }
+      - { label: "Naslov", name: "title", widget: "string", i18n: true }
+      - { label: "Datum objavljivanja", name: "pubDate", widget: "datetime", i18n: "duplicate" }
+      - { label: "Glavna slika", name: "heroImage", widget: "image", i18n: "duplicate" }
+      - { label: "tekst", name: "body", widget: "markdown", i18n: true }
 
   - name: "akcije"
     label: "Akcije"
     folder: "src/content/akcije"
     create: true
+    i18n: true
     fields:
-      - { label: "Naslov", name: "title", widget: "string" }
-      - { label: "Datum objavljivanja", name: "pubDate", widget: "datetime" }
-      - { label: "Glavna slika", name: "heroImage", widget: "image" }
-      - { label: "tekst", name: "body", widget: "markdown" }
+      - { label: "Naslov", name: "title", widget: "string", i18n: true }
+      - { label: "Datum objavljivanja", name: "pubDate", widget: "datetime", i18n: "duplicate" }
+      - { label: "Glavna slika", name: "heroImage", widget: "image", i18n: "duplicate" }
+      - { label: "tekst", name: "body", widget: "markdown", i18n: true }
 
-  - name: "donacije"
-    label: "Namirnice za donacije"
-    folder: "src/content/donacije"
-    create: false
-    identifier_field: fakultet
-    fields:
-      -  name: "fakultet"
-         widget: "hidden"
-      - label: "namirnice"
-        name: "namirnice"
-        label_singular: "namirnica"
-        widget: "list"
-        fields:
-          - label: "Naziv"
-            name: "naziv"
-            widget: "string"
-          - label: "Dodatni opis"
-            name: "opis"
-            widget: "text"
-          - label: "Prioritet"
-            name: "prioritet"
-            widget: "select"
-            options: [ "visok", "srednji", "nizak" ]
+media_folder: "/src/assets/images/"
+public_folder: "@assets/images/"
 
-media_folder: "/src/assets/images/" # Location where files will be stored in the repo
-public_folder: "@assets/images/" # The src attribute for uploaded media
-locale: hr
+site_url: https://blokade.org
+logo_url: https://blokade.org/favicon.ico
+
+locale: en
+
+i18n:
+  structure: multiple_folders
+  locales: [sr, en]
+  default_locale: sr
 
 backend:
   name: github
