@@ -11,6 +11,7 @@ const vesti = defineCollection({
 		pubDate: z.coerce.date(),
 		updatedDate: z.coerce.date().optional(),
 		heroImage: image().optional(),
+		draft: z.boolean().optional()
 	}),
 });
 
@@ -23,6 +24,7 @@ const akcije = defineCollection({
 		// Transform string to Date object
 		pubDate: z.coerce.date(),
 		heroImage: image().optional(),
+		draft: z.boolean().optional()
 	}),
 });
 

@@ -6,12 +6,13 @@ import { render } from 'astro:content';
 export async function getStaticPaths() {
 	const lat = ((lang: string) => (lang === "sr")? "sr-lat": "en")
 
-	const posts = await getCollection('vesti');
+	const posts = (await getCollection('vesti')).filter(({data}) => !data.draft);
 	return posts.map((post) => ({
 		params: { lang: lat(post.id.split('/')[0]), slug: post.id.split('/')[1] },
 		props: post,
 	}));
 }
+
 type Props = CollectionEntry<'vesti'>;
 
 const post = Astro.props;

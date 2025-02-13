@@ -1,3 +1,22 @@
+site_url: https://blokade.org
+logo_url: https://blokade.org/favicon.ico
+
+media_folder: "/src/assets/images/"
+public_folder: "@assets/images/"
+
+locale: sr
+
+backend:
+  name: github
+  repo: blokada-rs/sajt
+  branch: to-publish
+
+i18n:
+  structure: multiple_folders
+  locales: [sr, en]
+  default_locale: sr
+  save_all_locales: false
+
 collections:
   - name: "stranice"
     label: "Stranice"
@@ -38,53 +57,40 @@ collections:
             widget: "list"
             i18n: true
             fields:
-              - label: "Naziv"
-                name: "naziv"
-                widget: string
-                i18n: true
-              - label: "Link"
-                name: "link"
-                widget: string
-                i18n: true
+              - { label: "Naslov", name: "naziv", widget: "string", i18n: true }
+              - { label: "Link", name: "link", widget: "string", i18n: true }
 
   - name: "vesti"
     label: "Vesti"
     folder: "src/content/vesti"
     create: true
     i18n: true
+    sortable_fields:
+      fields: [pubDate]
+      default:
+        field: pubDate
+        direction: descending
     fields:
       - { label: "Naslov", name: "title", widget: "string", i18n: true }
+      - { label: "Draft", name: "draft", widget: "boolean", i18n: true }
       - { label: "Datum objavljivanja", name: "pubDate", widget: "datetime", i18n: "duplicate" }
       - { label: "Glavna slika", name: "heroImage", widget: "image", i18n: "duplicate" }
-      - { label: "tekst", name: "body", widget: "markdown", i18n: true }
+      - { label: "Tekst", name: "body", widget: "markdown", i18n: true, optional: true }
 
   - name: "akcije"
     label: "Akcije"
     folder: "src/content/akcije"
     create: true
     i18n: true
+
+    sortable_fields:
+      fields: [pubDate]
+      default:
+        field: pubDate
+        direction: descending
     fields:
       - { label: "Naslov", name: "title", widget: "string", i18n: true }
+      - { label: "Draft", name: "draft", widget: "boolean", i18n: true }
       - { label: "Datum objavljivanja", name: "pubDate", widget: "datetime", i18n: "duplicate" }
       - { label: "Glavna slika", name: "heroImage", widget: "image", i18n: "duplicate" }
-      - { label: "tekst", name: "body", widget: "markdown", i18n: true }
-
-
-
-media_folder: "/src/assets/images/"
-public_folder: "@assets/images/"
-
-site_url: https://blokade.org
-logo_url: https://blokade.org/favicon.ico
-
-locale: en
-
-i18n:
-  structure: multiple_folders
-  locales: [sr, en]
-  default_locale: sr
-
-backend:
-  name: github
-  repo: blokada-rs/sajt
-  branch: main
+      - { label: "Tekst", name: "body", widget: "markdown", i18n: true, optional: true }

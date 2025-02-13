@@ -9,11 +9,11 @@ import FormattedDate from '../../../components/FormattedDate.astro';
 
 const { lang } = Astro.params;
 
-const posts = (await getCollection('akcije')).sort(
-	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
-).map(e => {
-	return {...e, lang: e.id.split('/')[0], id: e.id.split('/')[1]};
-}).filter(post => lang.startsWith(post.lang));
+const posts = (await getCollection('akcije'))
+	.filter(({data}) => !data.draft)
+	.map(e => ({...e, lang: e.id.split('/')[0], id: e.id.split('/')[1]}))
+	.filter(post => lang.startsWith(post.lang))
+	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
 export async function getStaticPaths() {
 	return [
@@ -102,19 +102,17 @@ export async function getStaticPaths() {
 		<main>
 			<section>
 				<ul>
-					{
-						posts.map((post) => (
-							<li>
-								<a href={`/${lang}/akcije/${post.id}/`}>
-									<Image width={720} src={post.data.heroImage} alt="" />
-									<h4 class="title">{post.data.title}</h4>
-									<p class="date">
-										<FormattedDate date={post.data.pubDate} />
-									</p>
-								</a>
-							</li>
-						))
-					}
+					{posts.map((post) => (
+						<li>
+							<a href={`/${lang}/akcije/${post.id}/`}>
+								<Image width={720} src={post.data.heroImage} alt="" />
+								<h4 class="title">{post.data.title}</h4>
+								<p class="date">
+									<FormattedDate date={post.data.pubDate} />
+								</p>
+							</a>
+						</li>
+					))}
 				</ul>
 			</section>
 		</main>
