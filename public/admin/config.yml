@@ -68,6 +68,25 @@ collections:
               - { label: "Naslov", name: "naziv", widget: "string", i18n: true }
               - { label: "Link", name: "link", widget: "string", i18n: true }
 
+      - label: "Pitanja"
+        name: "pitanja"
+        file: "src/content/stranice/{{locale}}/pitanja.md"
+        create: false
+        i18n: true
+        fields:
+          - label: "Naslov"
+            name: "naslov"
+            widget: "string"
+            i18n: true
+
+          - label: "Pitanja i Odgovori"
+            name: "pitanjaOdgovori"
+            widget: "list"
+            i18n: true
+            fields:
+              - { label: "Pitanje", name: "pitanje", widget: "string", i18n: true }
+              - { label: "Odgovor", name: "odgovor", widget: "string", i18n: true }
+
       - label: "Ostalo"
         name: "ostalo"
         file: "src/content/stranice/{{locale}}/ostalo.md"

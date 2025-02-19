@@ -1,0 +1,40 @@
+---
+const { mainText, additionalText } = Astro.props;
+---
+
+<style>
+  /* Custom sweep animation, see: https://stackoverflow.com/questions/38213329/how-to-add-css3-transition-with-html5-details-summary-tag-reveal */
+  details[open] summary ~ * {
+    animation: sweep 0.5s ease-in-out;
+  }
+
+  @keyframes sweep {
+    0% {
+      opacity: 0;
+      margin-left: -10px;
+    }
+    100% {
+      opacity: 1;
+      margin-left: 0px;
+    }
+  }
+
+  /* Optional: Prevent overflow during animation */
+  details summary ~ * {
+    overflow: hidden;  /* Prevent content from spilling out */
+  }
+</style>
+
+<div class="p-4">
+  <!-- The "details" element will manage the collapsible behavior automatically -->
+  <details class="group">
+    <summary class="text-xl font-semibold text-gray-900 cursor-pointer hover:underline">
+      {mainText}
+    </summary>
+
+    <!-- Content to be animated -->
+    <div class="mt-2 text-gray-700">
+      <p>{additionalText}</p>
+    </div>
+  </details>
+</div>

@@ -62,6 +62,18 @@ const zaglavlje = defineCollection({
 	}),
 });
 
+const pitanja = defineCollection({
+	// Load Markdown and MDX files in the `src/content/akcije/` directory.
+	loader: glob({ base: './src/content/stranice', pattern: '**/pitanja.md' }),
+	// Type-check frontmatter using a schema
+	schema: () => z.object({
+		naslov: z.string(),
+		pitanjaOdgovori: z.object({
+			pitanje: z.string(),
+			odgovor: z.string()
+		}).array()
+	}),
+});
 
 const ostalo = defineCollection({
 	// Load Markdown and MDX files in the `src/content/akcije/` directory.
@@ -75,4 +87,4 @@ const ostalo = defineCollection({
 	}),
 });
 
-export const collections = { vesti, akcije, pocetna, zahtevi, oblokadama, zaglavlje, ostalo };
+export const collections = { vesti, akcije, pocetna, zahtevi, oblokadama, zaglavlje, pitanja, ostalo };

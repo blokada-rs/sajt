@@ -1,0 +1,37 @@
+---
+import CollapsibleText from "components/CollapsibleText.astro";
+import "../../styles/global.css";
+import { file, langs } from '@scripts/translate';
+import BaseHead from "components/BaseHead.astro";
+import Footer from "components/Footer.astro";
+import Header from "components/Header.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "consts";
+export async function getStaticPaths() {
+	return langs.map(lang => ({params: {lang}}))
+}
+
+const { lang } = Astro.params;
+const { frontmatter } = await file("pitanja", lang);
+const qaPairs = frontmatter.pitanjaOdgovori;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <Header />
+    <main class="flex-grow">
+      <h1 class="text-4xl font-bold mb-6">{frontmatter.naslov}</h1>
+
+      {qaPairs.map(x => (
+        <CollapsibleText
+          mainText={x.pitanje}
+          additionalText={x.odgovor}
+        />
+      ))}
+    </main>
+    <Footer />
+  </body>
+</html>
