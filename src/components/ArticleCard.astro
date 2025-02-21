@@ -1,0 +1,130 @@
+---
+// ArticleCard.astro
+const { image, title, excerpt, link } = Astro.props;
+---
+<style>
+  .darken-bg{
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+</style>
+
+<div class="masonry-item">
+  <!-- Relative wrapper to position the text overlay -->
+  <div class="image-wrapper">
+    <!-- Image: object-cover ensures it scales and crops properly -->
+    <img 
+      src={image} 
+      alt={title} 
+      class="image"
+      loading="lazy"
+    />
+    <!-- Dark background overlay with text -->
+    <div class="darken-bg">
+      <a class="title" href={link}>{title}</a>
+      <p class="excerpt">{excerpt}</p>
+    </div>
+  </div>
+</div>
+<style>
+.masonry-item {
+  background-color: white;
+  padding: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  container-name: main; /* Container that will be used in queries to resize fonts, margins etc */
+  container-type: inline-size;
+  cursor: pointer;
+}
+
+.image-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.image {
+  border-radius: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -moz-transition: all .4s ease-in;
+  -o-transition: all .4s ease-in;
+  -webkit-transition: all .4s ease-in;
+  transition: all .4s ease-in;
+}
+
+.darken-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  color: white;
+  padding: 1.5rem 1.5rem 0.2rem 1.5rem;
+
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+
+/* Animate image highlight on hover */
+.darken-bg:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Animate image zoom on hover */
+.image-wrapper:hover > .image {
+  transform: scale(1.2);
+}
+
+.title {
+  font-size: 1.2rem; 
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.excerpt {
+  font-size: 0.875rem;
+  margin-top: 0.2rem;
+}
+
+a {
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+  color: white;
+}
+
+a:hover {
+  color:red;
+}
+
+@container main (min-width: 500px) {
+  .title {
+    font-size: 1.5em;
+  }
+}
+
+@container main (min-height: 200px) {
+  .excerpt{
+    margin-top: 0.5rem;
+  }
+  .title{
+    font-size: 1.5em;
+    margin-top: 30px;
+  }
+  .darken-bg{
+    padding: 1.5rem;
+  }
+}
+</style>
+

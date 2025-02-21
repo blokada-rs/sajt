@@ -1,5 +1,5 @@
 ---
-import { file, langs } from '@scripts/translate';
+import { file, langs, collection } from '@scripts/translate';
 import { Image } from 'astro:assets';
 
 import BaseHead from '../../components/BaseHead.astro';
@@ -11,6 +11,8 @@ import indeks from '@assets/images/indeks.jpg'
 import megafon from '@assets/images/megafon.jpg'
 import zastava from '@assets/images/zastava.jpg'
 import slavija from '@assets/images/slavija.jpg'
+import RecentNewsMasonry from 'components/RecentNewsMasonry.astro';
+
 
 export async function getStaticPaths() {
 	return langs.map(lang => ({params: {lang}}))
@@ -20,6 +22,9 @@ const { lang } = Astro.params;
 const { Content: Pocetna } = await file("pocetna", lang);
 const { Content: Zahtevi } = await file("zahtevi", lang);
 const { frontmatter } = await file("ostalo", lang);
+
+const allPosts = await collection('vesti', lang);
+const recentPosts = allPosts.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
 ---
 
 <!doctype html>
@@ -37,11 +42,7 @@ const { frontmatter } = await file("ostalo", lang);
 				<Pocetna />
 			</section>
 
-			<div class="collage">
-				<Image class="megafon" loading="eager" src={megafon} alt="" />
-				<Image class="indeks" loading="eager" src={indeks} alt="" />
-				<Image class="zastava" loading="eager" src={zastava} alt="" />
-			</div>
+			<RecentNewsMasonry recentPosts={recentPosts} />
 
 			<section>	
 				<Zahtevi />
@@ -89,32 +90,6 @@ const { frontmatter } = await file("ostalo", lang);
 
 	section:not(:first-of-type) {
 		margin-top: 5rem;
-	}
-
-	.collage {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		grid-template-rows: repeat(3, 1fr);
-		grid-template-areas: 
-			"megafon megafon indeks"
-			"megafon megafon indeks"
-			"zastava zastava zastava";
-		gap: 1rem;
-	}
-
-
-	@media (max-width: 720px) {
-		.collage {
-			grid-template-columns: 1fr;
-			grid-template-areas: 
-				"megafon"
-				"zastava"
-				"indeks";
-		}
-
-		.collage img {
-			max-height: 20vh;
-		}
 	}
 
 	img {

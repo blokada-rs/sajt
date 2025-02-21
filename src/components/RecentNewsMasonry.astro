@@ -1,0 +1,82 @@
+---
+import '../styles/global.css';
+import { file, langs, collection } from '@scripts/translate';
+import BaseHead from "components/BaseHead.astro";
+import Footer from "components/Footer.astro";
+import Header from "components/Header.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "consts";
+import ArticleCard from "./ArticleCard.astro";
+const { lang } = Astro.params;
+const { recentPosts } = Astro.props;
+---
+
+<div class="grid-container">
+  <!-- Large Square Article -->
+  <div class="large-article">
+    <ArticleCard 
+    image={recentPosts[0].data.heroImage.src} 
+    title={recentPosts[0].data.title} 
+    excerpt={recentPosts[0].data.pubDate.toLocaleDateString()} 
+    link={`/${lang}/vesti/${recentPosts[0].id}/`}/>
+  </div>
+  <!-- Rectangular Article (Upper half of right space) -->
+  <div class="rectangular-article">
+    <ArticleCard 
+    image={recentPosts[1].data.heroImage.src} 
+    title={recentPosts[1].data.title} 
+    excerpt={recentPosts[1].data.pubDate.toLocaleDateString()}
+    link={`/${lang}/vesti/${recentPosts[1].id}/`} />
+  </div>
+  <!-- Square Articles (Bottom-right corner, stacked vertically) -->
+  <div class="square-article">
+    <ArticleCard 
+    image={recentPosts[2].data.heroImage.src} 
+    title={recentPosts[2].data.title} 
+    excerpt={""} 
+    link={`/${lang}/vesti/${recentPosts[2].id}/`}/>
+  </div>
+  <div class="square-article">
+    <ArticleCard 
+    image={recentPosts[3].data.heroImage.src} 
+    title={recentPosts[3].data.title} 
+    excerpt={""} 
+    link={`/${lang}/vesti/${recentPosts[3].id}/`}
+    />
+  </div>
+</div>
+<style>
+.grid-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr; /* Default single column */
+  grid-gap: 0.25rem; /* Gap between items */
+}
+
+@media (min-width: 640px) { /* Small screens (sm) */
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+  }
+}
+
+@media (min-width: 1024px) { /* Large screens (lg) */
+  .grid-container {
+    grid-template-columns: 22% 22% 28% 28%; /* Four columns */
+    grid-template-rows: 40vh 30vh; /* Custom row structure for large screens */
+  }
+}
+
+.large-article {
+  grid-column: span 2; /* This will take up two columns in large screens */
+  grid-row: span 2; /* This will take up two rows in large screens */
+}
+
+.rectangular-article {
+  grid-column: span 2; /* This will take up two columns in large screens */
+  grid-row: span 1; /* This will take up one row in large screens */
+}
+
+.square-article {
+  grid-column: span 1; /* This will take up one column in large screens */
+}
+
+</style>
