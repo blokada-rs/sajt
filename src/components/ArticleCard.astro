@@ -10,7 +10,7 @@ const { image, title, excerpt, link } = Astro.props;
 
 <div class="masonry-item">
   <!-- Relative wrapper to position the text overlay -->
-  <div class="image-wrapper">
+  <a class="image-wrapper" href={link}>
     <!-- Image: object-cover ensures it scales and crops properly -->
     <img 
       src={image} 
@@ -20,10 +20,10 @@ const { image, title, excerpt, link } = Astro.props;
     />
     <!-- Dark background overlay with text -->
     <div class="darken-bg">
-      <a class="title" href={link}>{title}</a>
+      <p class="title">{title}</p>
       <p class="excerpt">{excerpt}</p>
     </div>
-  </div>
+  </a>
 </div>
 <style>
 .masonry-item {
@@ -32,11 +32,13 @@ const { image, title, excerpt, link } = Astro.props;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   height: 100%;
   container-name: main; /* Container that will be used in queries to resize fonts, margins etc */
-  container-type: inline-size;
+  container-type: size;
   cursor: pointer;
 }
 
 .image-wrapper {
+  display: block;
+  text-decoration: none;
   overflow: hidden;
   position: relative;
   width: 100%;
@@ -85,7 +87,12 @@ const { image, title, excerpt, link } = Astro.props;
   transform: scale(1.2);
 }
 
+.image-wrapper:hover .title {
+  color: rgb(200, 200, 200);
+}
+
 .title {
+  line-height: 1.2;
   font-size: 1.2rem; 
   font-weight: 600;
   margin-bottom: 0.5rem;
@@ -104,21 +111,17 @@ a {
   color: white;
 }
 
-a:hover {
-  color:red;
-}
-
 @container main (min-width: 500px) {
   .title {
     font-size: 1.5em;
   }
 }
 
-@container main (min-height: 200px) {
+@container main (min-height: 400px) {
   .excerpt{
     margin-top: 0.5rem;
   }
-  .title{
+  .title {
     font-size: 1.5em;
     margin-top: 30px;
   }
