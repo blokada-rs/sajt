@@ -162,22 +162,24 @@ const { frontmatter } = await file("ostalo", lang);
     border-radius: 8px;
     aspect-ratio: 16/9;
   }
+
+  #map :global(img) {
+    border-radius: 0;
+  }
 </style>
 
 <script>
   import leaflet from "leaflet";
 
-  import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png';
-  import markerIcon from 'leaflet/dist/images/marker-icon.png';
-  import markerShadow from 'leaflet/dist/images/marker-shadow.png';
+  import MarkerIcon from "@assets/icons/marker.svg"
+  import MarkerIconShadow from "@assets/icons/marker-shadow.svg"
 
   const marker_icon = leaflet.icon({
-    iconSize: [25, 41],
-    iconAnchor: [10, 41],
+    iconSize: [48, 48],
+    iconAnchor: [24, 44],
     popupAnchor: [2, -40],
-    iconRetinaUrl: markerIcon2x.src,
-    iconUrl: markerIcon.src,
-    shadowUrl: markerShadow.src,
+    iconUrl: MarkerIcon.src,
+    shadowUrl: MarkerIconShadow.src,
   })
 
   const map_container = document.getElementById("map")!;
@@ -190,7 +192,7 @@ const { frontmatter } = await file("ostalo", lang);
   });
 
   leaflet.tileLayer('https://services.arcgisonline.com/arcgis/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
-    maxZoom: 19,
+    maxZoom: 16,
   }).addTo(map);
 
   map_data.markers?.forEach(marker =>
