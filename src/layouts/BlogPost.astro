@@ -8,6 +8,8 @@ import Timeline from "@components/Timeline.astro";
 import { file } from "@scripts/i18n";
 
 import 'leaflet/dist/leaflet.css';
+import {ICON_SIZE_LG} from "../consts";
+import {Icon} from "astro-icon/components";
 
 type Props = CollectionEntry<"vesti">["data"] & {lang: string, live?: boolean};
 
@@ -63,7 +65,11 @@ const { frontmatter } = await file("ostalo", lang);
 
       { map &&
         <div class="center">
-          <div data-map={JSON.stringify(map)} id="map"></div>
+          <div data-map={JSON.stringify(map)} id="map">
+            <button id="fullscreen">
+                <Icon name="mdi:fullscreen" size={ICON_SIZE_LG} />
+            </button>
+          </div>
         </div>
       }
 
@@ -166,6 +172,18 @@ const { frontmatter } = await file("ostalo", lang);
   #map :global(img) {
     border-radius: 0;
   }
+
+  button#fullscreen {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 500;
+    background-color: white;
+  }
+
+  button#fullscreen :global(svg) {
+    display: block;
+  }
 </style>
 
 <script>
@@ -183,6 +201,13 @@ const { frontmatter } = await file("ostalo", lang);
   })
 
   const map_container = document.getElementById("map")!;
+  const fullscreen_button = document.getElementById("fullscreen")!;
+
+  fullscreen_button.onclick = () =>
+    document.fullscreenElement === null ?
+      map_container.requestFullscreen() :
+      document.exitFullscreen();
+
   const map_data = JSON.parse(map_container.dataset.map!);
 
   const map = leaflet.map(map_container, {
