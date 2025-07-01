@@ -172,7 +172,10 @@ timeline:
     datum: 2025-07-01T20:49:00.000Z
     videos: []
     slike: []
-    tekst: 'Можете нам се обратити путем мејла: [gdesublokade@proton.me](mailto:gdesublokade@proton.me).'
+    tekst: |-
+      Можете нам се обратити путем мејла: [gdesublokade@proton.me](mailto:gdesublokade@proton.me).
+
+      **Молимо вас да нам дате тачну локацију шта се блокира у вашем граду.&#32;**Волели бисмо што прецизније да постављамо маркере на мапи, како би људи знали где да иду.
   - naslov: Блокада Аутокоманде од 21.00 до поноћи
     datum: 2025-07-01T20:30:00.000Z
     videos: []
