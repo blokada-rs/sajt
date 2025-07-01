@@ -183,7 +183,7 @@ timeline:
     videos: []
     slike: []
     tekst: ''
-  - naslov: Бежанијска коса у 20.00
+  - naslov: Бежанијска коса у 18.00
     datum: 2025-07-01T15:22:00.000Z
     videos: []
     slike: []
