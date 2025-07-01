@@ -189,7 +189,7 @@ const { frontmatter } = await file("ostalo", lang);
     attributionControl: false,
   });
 
-  leaflet.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  leaflet.tileLayer('https://services.arcgisonline.com/arcgis/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
     maxZoom: 19,
   }).addTo(map);
 
