@@ -62,7 +62,9 @@ const { frontmatter } = await file("ostalo", lang);
       }
 
       { map &&
-        <div data-map={JSON.stringify(map)} id="map"></div>
+        <div class="center">
+          <div data-map={JSON.stringify(map)} id="map"></div>
+        </div>
       }
 
       <Timeline {timeline} />
@@ -147,8 +149,14 @@ const { frontmatter } = await file("ostalo", lang);
     aspect-ratio: 16/9;
   }
 
+  .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   #map {
-    max-width: 600px;
+    max-width: 1000px;
     width: 100%;
     border: none;
     border-radius: 8px;
@@ -178,11 +186,11 @@ const { frontmatter } = await file("ostalo", lang);
   const map = leaflet.map(map_container, {
     center: leaflet.latLng(map_data.coords_lat, map_data.coords_long),
     zoom: map_data.zoom,
+    attributionControl: false,
   });
 
   leaflet.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
   }).addTo(map);
 
   map_data.markers?.forEach(marker =>
