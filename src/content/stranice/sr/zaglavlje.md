@@ -1,5 +1,5 @@
 ---
-naslov: Студентске блокаде
+naslov: Студенти у блокади
 linkovi:
   - naziv: Захтеви
     link: /zahtevi

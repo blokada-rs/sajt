@@ -21,8 +21,6 @@ if (typeof lang === "undefined") {
 
 const { Content: Pocetna, frontmatter: pocetna } = await file("pocetna", lang);
 const { Content: Zahtevi } = await file("zahtevi", lang);
-const { frontmatter } = await file("ostalo", lang);
-// const { frontmatter : frontmatter_faq } = await file("faq", lang);
 const live = (await collection("vesti", lang)).filter((vest) => vest.data.live);
 
 const vesti = await collection("vesti", lang);
@@ -30,8 +28,7 @@ const akcije = await collection("akcije", lang);
 ---
 
 <Base
-  {lang}
-  title={frontmatter.naslov}
+  title={pocetna.naslov}
   description={SITE_DESCRIPTION}
   image={slavija.src}
 >
@@ -55,7 +52,7 @@ const akcije = await collection("akcije", lang);
       )}
     </div>
 
-    <h1>{frontmatter.naslov}</h1>
+    <h1>{pocetna.naslov}</h1>
   </div>
 
   <section>
@@ -102,25 +99,6 @@ const akcije = await collection("akcije", lang);
       <a slot="button" href=`https://mrezasolidarnosti.rs` class="button primary dugme center">{pocetna.mreza_solidarnosti_dugme}</a>
     </div>
   </section>
-
-<!-- 
-  <section class="gap">
-    <h2>{frontmatter_faq.naslov}</h2>
-    {frontmatter_faq.podnaslov && <p class="section-subtitle">{frontmatter_faq.podnaslov}</p>}
-    <div class="pitanja">
-      {frontmatter_faq.pitanja.map(
-        (entry: {pitanje: string, odgovor: string}) => 
-          <details>
-            <summary>{entry.pitanje}</summary>
-            <div class="content">
-              <Markdown of={entry.odgovor} />
-            </div>
-          </details>
-      )}
-      <a href="https://forms.gle/EXjYqREErj14cZ6X8" class="button primary dugme">{frontmatter_faq.dugme}</a>
-    </div>
-  </section> -->
-
 </Base>
 
 <style>

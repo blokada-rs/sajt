@@ -15,7 +15,7 @@ if (typeof lang === "undefined") {
 const { frontmatter } = await file("ostalo", lang);
 ---
 
-<Base {lang} title={frontmatter.naslov} description={SITE_DESCRIPTION}>
+<Base title={`${frontmatter.kontakt} | ${frontmatter.studenti_u_blokadi}`} description={SITE_DESCRIPTION}>
   <section>
     <h1>{frontmatter.kontakt}</h1>
 

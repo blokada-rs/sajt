@@ -19,7 +19,7 @@ export async function getStaticPaths() {
 }
 ---
 
-<Base {lang} title={SITE_TITLE} description={SITE_DESCRIPTION}>
+<Base title={`${frontmatter.akcije} | ${frontmatter.studenti_u_blokadi}`} description={SITE_DESCRIPTION}>
   <h1>{frontmatter.akcije}</h1>
   <section>
     <ul>

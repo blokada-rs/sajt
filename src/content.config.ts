@@ -69,6 +69,7 @@ const linkovi = defineCollection({
 const pocetna = defineCollection({
 	loader: glob({ base: './src/content/stranice', pattern: '**/početna.md' }),
 	schema: () => z.object({
+		naslov: z.string(),
 		vesti: z.string(),
 		vesti_tekst: z.string(),
 		vesti_dugme: z.string(),
@@ -133,7 +134,6 @@ const zaglavlje = defineCollection({
 const ostalo = defineCollection({
 	loader: glob({ base: './src/content/stranice', pattern: '**/ostalo.md' }),
 	schema: () => z.object({
-		naslov: z.string(),
 		akcije: z.string(),
 		afere: z.string(),
 		vesti: z.string(),

@@ -161,6 +161,7 @@ collections:
         create: false
         i18n: true
         fields:
+          - { label: "Naslov", name: "naslov", widget: "string", i18n: true }
           - { label: "Opis", name: "body", widget: "markdown", i18n: true }
           - { label: "Vesti", name: "vesti", widget: "string", i18n: true }
           - { label: "Vesti tekst", name: "vesti_tekst", widget: "text", i18n: true }
@@ -252,7 +253,6 @@ collections:
         create: false
         i18n: true
         fields:
-          - { label: "Naslov", name: "naslov", widget: "string", i18n: true }
           - { label: "Akcije", name: "akcije", widget: "string", i18n: true }
           - { label: "Vesti", name: "vesti", widget: "string", i18n: true }
           - { label: "Afere", name: "afere", widget: "string", i18n: true }
@@ -345,4 +345,3 @@ collections:
 
           - { label: "Naslov", name: "naslov", widget: "string", i18n: true }
           - { label: "Link", name: "link", widget: "string", i18n: true }
-

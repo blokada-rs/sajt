@@ -13,14 +13,14 @@ import {Icon} from "astro-icon/components";
 
 type Props = CollectionEntry<"vesti">["data"] & {lang: string, live?: boolean};
 
-const { lang, title, pubDate, updatedDate, heroImage, live = false, live_embed, timeline, map = null } = Astro.props;
+const { lang, title, description = "", pubDate, updatedDate, heroImage, live = false, live_embed, timeline, map = null } = Astro.props;
 
 const { lang: expectedLang } = Astro.params;
 
 const { frontmatter } = await file("ostalo", lang);
 ---
 
-<Base {lang} title={title} description={title} image={heroImage.src}>
+<Base title={`${title} | ${frontmatter.studenti_u_blokadi}`} description={description} image={heroImage.src}>
   {expectedLang !== lang &&
     <div class="full-width">
       This page is currently not translated to English. Showing the untranslated version.
@@ -221,7 +221,7 @@ const { frontmatter } = await file("ostalo", lang);
     maxZoom: 16,
   }).addTo(map);
 
-  map_data.markers?.forEach(marker =>
+  map_data.markers?.forEach((marker: any) =>
       leaflet.marker([marker.coords_lat, marker.coords_long], { icon: marker_icon })
         .addTo(map)
         .bindPopup(marker.text)

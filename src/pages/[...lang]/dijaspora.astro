@@ -15,7 +15,7 @@ if (typeof lang === "undefined") {
 const { frontmatter, Content } = await file("dijaspora", lang);
 ---
 
-<Base {lang} title={frontmatter.title} description={SITE_DESCRIPTION}>
+<Base title={frontmatter.title} description={SITE_DESCRIPTION}>
   <section>
     <Content />
   </section>

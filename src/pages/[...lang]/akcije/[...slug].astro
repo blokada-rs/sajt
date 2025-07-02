@@ -2,7 +2,7 @@
 import { type CollectionEntry } from 'astro:content';
 import BlogPost from '../../../layouts/BlogPost.astro';
 import { render } from 'astro:content';
-import {collection, collectionIDs, entry, langs} from '@scripts/i18n';
+import { collectionIDs, entry, langs } from '@scripts/i18n';
 
 const { lang } = Astro.params;
 if (typeof lang === "undefined") {
