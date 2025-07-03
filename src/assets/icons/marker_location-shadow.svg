@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg height="48" viewBox="0 0 48 48" width="48" fill="#1f1f1f" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter style="color-interpolation-filters:sRGB" id="filter" x="-0.31073125" y="-0.21751187" width="1.6214625" height="1.4350237">
+      <feGaussianBlur stdDeviation="3.625198" />
+    </filter>
+  </defs>
+  <path d="M 24,4 C 16.26,4 10,10.26 10,18 10,28.5 24,44 24,44 24,44 38,28.5 38,18 38,10.26 31.74,4 24,4 Z m 0,19 c -2.76,0 -5,-2.24 -5,-5 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 0,2.76 -2.24,5 -5,5 z" style="stroke-width:2;fill:#0c3118;filter:url(#filter);opacity:0.70368191" />
+</svg>

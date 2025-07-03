@@ -66,9 +66,14 @@ const { frontmatter } = await file("ostalo", lang);
       { map &&
         <div class="center">
           <div data-map={JSON.stringify(map)} id="map">
-            <button id="fullscreen">
+            <div class="buttons">
+              <button id="locate">
+                  <Icon name="mdi:my-location" size={ICON_SIZE_LG} />
+              </button>
+              <button id="fullscreen">
                 <Icon name="mdi:fullscreen" size={ICON_SIZE_LG} />
-            </button>
+              </button>
+            </div>
           </div>
         </div>
       }
@@ -174,15 +179,21 @@ const { frontmatter } = await file("ostalo", lang);
     border-radius: 0;
   }
 
-  button#fullscreen {
+  #map .buttons {
     position: absolute;
     right: 1rem;
     bottom: 1rem;
     z-index: 500;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+
+  #map button {
     background-color: white;
   }
 
-  button#fullscreen :global(svg) {
+  #map button :global(svg) {
     display: block;
   }
 </style>
@@ -193,21 +204,37 @@ const { frontmatter } = await file("ostalo", lang);
   import MarkerIcon from "@assets/icons/marker.svg"
   import MarkerIconShadow from "@assets/icons/marker-shadow.svg"
 
+
+  import MarkerLocationIcon from "@assets/icons/marker_location.svg"
+  import MarkerLocationIconShadow from "@assets/icons/marker_location-shadow.svg"
+
   const marker_icon = leaflet.icon({
     iconSize: [48, 48],
     iconAnchor: [24, 44],
-    popupAnchor: [2, -40],
+    popupAnchor: [0, -40],
     iconUrl: MarkerIcon.src,
     shadowUrl: MarkerIconShadow.src,
-  })
+  });
+
+  const marker_location_icon = leaflet.icon({
+    iconSize: [48, 48],
+    iconAnchor: [24, 44],
+    popupAnchor: [0, -40],
+    iconUrl: MarkerLocationIcon.src,
+    shadowUrl: MarkerLocationIconShadow.src,
+  });
 
   const map_container = document.getElementById("map")!;
   const fullscreen_button = document.getElementById("fullscreen")!;
+  const locate_button = document.getElementById("locate")!;
 
   fullscreen_button.onclick = () =>
     document.fullscreenElement === null ?
       map_container.requestFullscreen() :
       document.exitFullscreen();
+
+  locate_button.onclick = () =>
+    map.locate({setView: true, maxZoom: 16});
 
   const map_data = JSON.parse(map_container.dataset.map!);
 
@@ -217,13 +244,30 @@ const { frontmatter } = await file("ostalo", lang);
     attributionControl: false,
   });
 
+  let located_marker: leaflet.Marker | null = null;
+  let located_circle: leaflet.Circle | null = null;
+  map.on('locationfound', (e: leaflet.LocationEvent) => {
+    located_marker?.remove();
+    located_circle?.remove();
+
+    const radius = e.accuracy;
+    located_marker = leaflet.marker(e.latlng, { icon: marker_location_icon }).addTo(map);
+
+    if (radius < 10) return;
+    located_circle = leaflet.circle(e.latlng, {radius}).addTo(map);
+  });
+
+  map.on('locationerror', (e: leaflet.ErrorEvent) => {
+    alert(e.message);
+  });
+
   leaflet.tileLayer('https://services.arcgisonline.com/arcgis/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
     maxZoom: 16,
   }).addTo(map);
 
   map_data.markers?.forEach((marker: any) =>
-      leaflet.marker([marker.coords_lat, marker.coords_long], { icon: marker_icon })
-        .addTo(map)
-        .bindPopup(marker.text)
+    leaflet.marker([marker.coords_lat, marker.coords_long], { icon: marker_icon })
+      .addTo(map)
+      .bindPopup(marker.text)
   );
 </script>
