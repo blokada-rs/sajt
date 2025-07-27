@@ -1,7 +1,7 @@
 ---
 link: mi-smo-se-ovde-rasirili
 title: Ми смо се овде раширили
-live: true
+live: false
 draft: uredjivanje
 pubDate: 2025-06-29T22:20:00.000Z
 heroImage: '@assets/images/rasirili.webp'
