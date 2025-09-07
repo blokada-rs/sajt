@@ -21,3 +21,6 @@ heroImage: '@assets/images/U99eWgQOfwY-HD.webp'
 Кликните и послушајте прву епизоду!
 
 [ttps://youtu.be/U99eWgQOfwY](ttps://youtu.be/U99eWgQOfwY)
+
+
+📷: 1. [Владан Башић](https://www.instagram.com/_basic.jpg_), 2. [Гаврило Андрић](https://instagram.com/gavriloandric)
