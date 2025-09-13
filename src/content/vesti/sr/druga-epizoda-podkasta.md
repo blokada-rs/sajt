@@ -1,6 +1,6 @@
 ---
 link: druga-epizoda-podkasta
-title: '„ПројекатЈадар: јавни или приватни интерес?”'
+title: '„Пројекат Јадар: јавни или приватни интерес?”'
 live: false
 live_embed: oGUhTyoVsGM
 draft: uredjivanje
