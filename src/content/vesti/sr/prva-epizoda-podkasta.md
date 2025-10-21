@@ -1,6 +1,6 @@
 ---
 link: prva-epizoda-podkasta
-title: Прва епиозда подкаста Студената у блокади
+title: Прва епизода подкаста Студената у блокади
 live: false
 draft: uredjivanje
 pubDate: 2025-09-06T18:57:00.000Z
@@ -21,6 +21,5 @@ heroImage: '@assets/images/U99eWgQOfwY-HD.webp'
 Кликните и послушајте прву епизоду!
 
 [ttps://youtu.be/U99eWgQOfwY](ttps://youtu.be/U99eWgQOfwY)
-
 
 📷: 1. [Владан Башић](https://www.instagram.com/_basic.jpg_), 2. [Гаврило Андрић](https://instagram.com/gavriloandric)
