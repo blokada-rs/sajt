@@ -10,8 +10,10 @@ timeline:
   - naslov: Нова Пазова
     datum: 2025-10-30T17:10:00.000Z
     videos: []
-    slike: []
-    tekst: ''
+    slike:
+      - '@assets/images/IMG_3684.webp'
+      - '@assets/images/IMG_3688.webp'
+    tekst: 'Диван дочек у Новој Пазови, пауза за одмор и превијање. Следећа станица: Стара Пазова.'
   - naslov: Крај друге паузе
     datum: 2025-10-30T15:45:00.000Z
     videos: []
