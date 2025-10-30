@@ -7,6 +7,11 @@ pubDate: 2025-10-30T11:17:00.000Z
 heroImage: '@assets/images/WhatsApp slika 2025-10-30 u 11.00.02_4dbcc0b8.webp'
 description: Студенти и грађани кренули су јутрос у 10 часова од Факултета драмских уметности за Нови Сад. Прва пауза биће код...
 timeline:
+  - naslov: Нова Пазова
+    datum: 2025-10-30T17:10:00.000Z
+    videos: []
+    slike: []
+    tekst: ''
   - naslov: Крај друге паузе
     datum: 2025-10-30T15:45:00.000Z
     videos: []
