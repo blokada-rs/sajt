@@ -4,7 +4,7 @@ title: Дијана, уз Вас смо!
 live: false
 draft: uredjivanje
 pubDate: 2025-11-03T19:47:00.000Z
-heroImage: '@assets/images/СДАДА.webp'
+heroImage: '@assets/images/SDADA.webp'
 ---
 Када бол једне особе постане бол свих нас, дужност нам је да покажемо људскост и саосећање.
 
