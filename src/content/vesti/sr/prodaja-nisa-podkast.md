@@ -2,6 +2,7 @@
 link: prodaja-nisa-podkast
 title: Продаја НИС-а – добитак или губитак? | Ко је теби крив?
 live: false
+live_embed: XPu9zTXHZgw
 draft: uredjivanje
 pubDate: 2025-12-08T14:51:00.000Z
 heroImage: '@assets/images/nis.webp'
