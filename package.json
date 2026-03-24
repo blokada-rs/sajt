@@ -11,16 +11,16 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/rss": "^4.0.12",
-    "@astrojs/sitemap": "^3.6.0",
+    "@astrojs/rss": "^4.0.17",
+    "@astrojs/sitemap": "^3.7.1",
     "@astropub/md": "^1.0.0",
     "@iconify-json/mdi": "^1.2.3",
     "@oddbird/popover-polyfill": "^0.6.1",
-    "@sveltia/cms": "^0.113.0",
-    "astro": "^5.14.7",
+    "@sveltia/cms": "^0.149.1",
+    "astro": "^6.0.8",
     "astro-icon": "^1.1.5",
     "leaflet": "^1.9.4",
-    "sharp": "^0.34.4"
+    "sharp": "^0.34.5"
   },
   "devDependencies": {
     "@types/geojson": "^7946.0.16",
