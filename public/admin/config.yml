@@ -10,7 +10,7 @@ backend:
   name: github
   repo: blokada-rs/sajt
   branch: main
-  base_url: https://https://sveltia-cms-auth.studblokade.workers.dev/
+  base_url: https://sveltia-cms-auth.studblokade.workers.dev/
 
 media_libraries:
   default:
