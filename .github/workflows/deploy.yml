@@ -13,12 +13,14 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [ '24.x' ]
     steps:
       - uses: actions/checkout@v4
-  
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24.x'
+
       - name: Cache images
         uses: actions/cache@v4
         with:
