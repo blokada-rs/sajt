@@ -3,7 +3,7 @@ import Base from "@layouts/Base.astro"
 import { langs, collection, file } from "@scripts/i18n";
 
 import { SITE_TITLE, SITE_DESCRIPTION } from "../../../consts";
-import { Markdown } from "@astropub/md";
+import { Markdown } from "@mashehu/astropub-md";
 const { lang } = Astro.params;
 if (typeof lang === "undefined") {
   return Astro.rewrite(`/sr${Astro.url.pathname}`);

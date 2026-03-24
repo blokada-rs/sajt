@@ -13,7 +13,7 @@
   "dependencies": {
     "@astrojs/rss": "^4.0.17",
     "@astrojs/sitemap": "^3.7.1",
-    "@astropub/md": "^1.0.0",
+    "@mashehu/astropub-md": "^2.0.1",
     "@iconify-json/mdi": "^1.2.3",
     "@oddbird/popover-polyfill": "^0.6.1",
     "@sveltia/cms": "^0.149.1",

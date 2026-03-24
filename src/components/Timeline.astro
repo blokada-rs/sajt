@@ -2,7 +2,7 @@
 import type { CollectionEntry } from 'astro:content'
 import FormattedDate from './FormattedDate.astro';
 import { Picture } from 'astro:assets';
-import { Markdown } from '@astropub/md';
+import { Markdown } from '@mashehu/astropub-md';
 
 type Props = {timeline: CollectionEntry<"vesti">["data"]["timeline"]};
 const { timeline } = Astro.props;

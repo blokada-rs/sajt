@@ -14,12 +14,12 @@ importers:
       '@astrojs/sitemap':
         specifier: ^3.7.1
         version: 3.7.1
-      '@astropub/md':
-        specifier: ^1.0.0
-        version: 1.0.0(@astrojs/markdown-remark@7.0.1)
       '@iconify-json/mdi':
         specifier: ^1.2.3
         version: 1.2.3
+      '@mashehu/astropub-md':
+        specifier: ^2.0.1
+        version: 2.0.1(@astrojs/markdown-remark@7.0.1)
       '@oddbird/popover-polyfill':
         specifier: ^0.6.1
         version: 0.6.1
@@ -76,11 +76,6 @@ packages:
   '@astrojs/telemetry@3.3.0':
     resolution: {integrity: sha512-UFBgfeldP06qu6khs/yY+q1cDAaArM2/7AEIqQ9Cuvf7B1hNLq0xDrZkct+QoIGyjq56y8IaE2I3CTvG99mlhQ==}
     engines: {node: 18.20.8 || ^20.3.0 || >=22.0.0}
-
-  '@astropub/md@1.0.0':
-    resolution: {integrity: sha512-++urcyulQogbLAF0VC2rEp6qLUfnRX9iaDREAkN1su9fF8V84DVaMHbQXn7qqQ27wYT5AVVeoK+4+vggYYVbQg==}
-    peerDependencies:
-      '@astrojs/markdown-remark': ^5
 
   '@babel/helper-string-parser@7.27.1':
     resolution: {integrity: sha512-qMlSxKbpRlAridDExk92nSobyDdpPijUq2DW6oDnUqd0iOGxmQjyqhMIihI9+zv4LPyZdRje2cavWPbCbWm3eA==}
@@ -423,6 +418,11 @@ packages:
 
   '@jridgewell/sourcemap-codec@1.5.5':
     resolution: {integrity: sha512-cYQ9310grqxueWbl+WuIUIaiUaDcj7WOq5fVhEljNVgRfOUhY9fy2zTvfoqWsnebh8Sl70VScFbICvJnLKB0Og==}
+
+  '@mashehu/astropub-md@2.0.1':
+    resolution: {integrity: sha512-oV3mfJJ9z6S4BRgyYn/xSDuJGP1TqIJWcQdTvaQe6QCMv6UPCdkeIsv+VVHsjKMYwfxW0ymdUgEM31UamBCmyA==}
+    peerDependencies:
+      '@astrojs/markdown-remark': ^7
 
   '@netlify/blobs@8.2.0':
     resolution: {integrity: sha512-9djLZHBKsoKk8XCgwWSEPK9QnT8qqxEQGuYh48gFIcNLvpBKkLnHbDZuyUxmNemCfDz7h0HnMXgSPnnUVgARhg==}
@@ -1745,10 +1745,6 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astropub/md@1.0.0(@astrojs/markdown-remark@7.0.1)':
-    dependencies:
-      '@astrojs/markdown-remark': 7.0.1
-
   '@babel/helper-string-parser@7.27.1': {}
 
   '@babel/helper-validator-identifier@7.28.5': {}
@@ -1992,6 +1988,10 @@ snapshots:
       minipass: 7.1.3
 
   '@jridgewell/sourcemap-codec@1.5.5': {}
+
+  '@mashehu/astropub-md@2.0.1(@astrojs/markdown-remark@7.0.1)':
+    dependencies:
+      '@astrojs/markdown-remark': 7.0.1
 
   '@netlify/blobs@8.2.0':
     optional: true
