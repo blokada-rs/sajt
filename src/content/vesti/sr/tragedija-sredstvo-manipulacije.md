@@ -1,6 +1,6 @@
 ---
 link: tragedija-sredstvo-manipulacije
-title: ТРАГЕДИЈА КАО СРЕДСТВО МАНИПУЛАЦИЈЕ
+title: Трагедија као средство манипулације
 live: false
 draft: spremno
 pubDate: 2026-03-28T15:36:00.000Z
