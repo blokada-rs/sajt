@@ -16,7 +16,7 @@ const vesti = defineCollection({
 			naslov: z.string(),
 			datum: z.coerce.date(),
 			videos: z.string().array().optional(),
-			slike: image().array(),
+			slike: image().array().optional(),
 			tekst: z.string().optional()
 		}).array().optional(),
 		map: z.object({
