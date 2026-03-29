@@ -3,8 +3,8 @@ link: lokalni-izbori
 title: Локални избори у 10 општина
 live: false
 draft: spremno
-pubDate: 2026-03-29T07:31:00.000Z
-updatedDate: 2026-03-29T07:31:00.000Z
+pubDate: 2026-03-29T07:44:00.000Z
+updatedDate: 2026-03-29T07:44:00.000Z
 heroImage: '@assets/images/_DSC6506.webp'
 description: 'Студенти прате локалне изборе у 10 општина: Аранђеловац, Бајина Башта, Бор, Кладово, Књажевац, Кула, Лучани, Мајданпек, Севојно и Смедеревска паланка.'
 timeline:
