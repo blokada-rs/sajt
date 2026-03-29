@@ -14,7 +14,7 @@ const { timeline } = Astro.props;
         <article>
           <h3>{post.naslov}</h3>
           <FormattedDate date={post.datum} time />
-          {(post.slike.length > 0 || (post.videos?.length ?? 0) > 0) && 
+          {((post.slike?.length ?? 0) > 0 || (post.videos?.length ?? 0) > 0) &&
             <div class="slike">
               {post.videos?.map(video =>
                 <iframe 
@@ -22,7 +22,7 @@ const { timeline } = Astro.props;
                   referrerpolicy="strict-origin-when-cross-origin" allowfullscreen 
                 />
               )}
-              {post.slike.map(slika => 
+              {post.slike?.map(slika =>
                 <Picture formats={['avif', 'webp']} src={slika} alt="" />
               )}
             </div>
