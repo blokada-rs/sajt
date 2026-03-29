@@ -2,7 +2,6 @@
 link: lokalni-izbori
 title: Локални избори у 10 општина
 live: true
-live_embed: lokiz
 draft: spremno
 pubDate: 2026-03-29T08:07:00.000Z
 updatedDate: 2026-03-29T08:07:00.000Z
