@@ -39,13 +39,13 @@ const { frontmatter } = await file("ostalo", lang);
         <div class="about">
           {live && <Live>{frontmatter.live}</Live>}
           {pubDate && <FormattedDate date={pubDate} />}
-          {
-            updatedDate && (
-              <div class="last-updated-on">
-                Last updated on <FormattedDate date={updatedDate} />
-              </div>
-            )
-          }
+          <!--{-->
+          <!--  updatedDate && (-->
+          <!--    <div class="last-updated-on">-->
+          <!--      Last updated on <FormattedDate date={updatedDate} />-->
+          <!--    </div>-->
+          <!--  )-->
+          <!--}-->
         </div>
         <h1>{title}</h1>
         <hr />
