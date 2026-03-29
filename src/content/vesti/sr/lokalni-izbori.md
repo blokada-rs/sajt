@@ -30,8 +30,6 @@ timeline:
     datum: 2026-03-29T13:02:00.000Z
     videos:
       - 8ExfaV6-oYk
-    slike:
-      - '@assets/images/јаоооооо.webp'
     tekst: |-
       **Смедеревска Паланка**:
 
