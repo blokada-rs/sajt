@@ -1,7 +1,7 @@
 ---
 link: skup-ispred-rektorata
 title: Позив на скуп испред ректората
-live: true
+live: false
 draft: uredjivanje
 pubDate: 2026-03-31T15:32:00.000Z
 heroImage: '@assets/images/SAJT 2.webp'
