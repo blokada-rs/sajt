@@ -6,7 +6,7 @@ linkovi:
     naslov: Instagram profil
     link: https://www.instagram.com/etfublokadi/
   - ikonica: twitter
-    naslov: X nalog
+    naslov: Twitter nalog
     link: https://x.com/etfblokada
   - ikonica: facebook
     naslov: Facebook stranica
@@ -14,7 +14,7 @@ linkovi:
   - ikonica: youtube
     naslov: YouTube kanal
     link: https://www.youtube.com/@etf_u_blokadi
-  - ikonica: bez
+  - ikonica: music-note
     naslov: TikTok nalog
     link: https://www.tiktok.com/@etfublokadi
 ---

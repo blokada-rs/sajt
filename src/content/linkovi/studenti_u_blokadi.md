@@ -20,7 +20,7 @@ linkovi:
   - ikonica: youtube
     naslov: YouTube kanal
     link: https://www.youtube.com/@studentiublokadi
-  - ikonica: bez
+  - ikonica: facebook-messenger
     naslov: Messenger kanal
     link: https://www.messenger.com/channel/Studentblokade
 ---

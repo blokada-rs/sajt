@@ -6,9 +6,9 @@ linkovi:
     naslov: Zvanični sajt studenata u blokadi
     link: blokade.org
   - ikonica: instagram
-    naslov: Zvanični instagram nalog
+    naslov: Instagram nalog
     link: https://www.instagram.com/hf.blokada
   - ikonica: twitter
-    naslov: X nalog
+    naslov: Twitter nalog
     link: https://x.com/blokadaHF
 ---

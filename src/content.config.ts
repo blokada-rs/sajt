@@ -58,7 +58,8 @@ const linkovi = defineCollection({
 		linkovi: z.object({
 			ikonica: z.enum([
 				"bez", "web", "instagram", "twitter", "at",
-				"facebook", "youtube", "viber", "newspaper", "hand-coin"
+				"facebook", "youtube", "viber", "facebook-messenger",
+				"music-note", "threads", "reddit", "newspaper", "hand-coin"
 			]),
 			naslov: z.string(),
 			link: z.string(),
