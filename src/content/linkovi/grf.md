@@ -11,4 +11,7 @@ linkovi:
   - ikonica: facebook
     naslov: Facebook nalog
     link: https://www.facebook.com/share/1KMqmLDgF1
+  - ikonica: bez
+    naslov: Donacije RJIL
+    link: https://studenti.org.rs/doniraj
 ---
