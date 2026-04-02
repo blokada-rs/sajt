@@ -1,6 +1,6 @@
 ---
 title: Linkovi | Studenti u blokadi
-link: studenti_u_blokadi
+link: sub
 linkovi:
   - ikonica: web
     naslov: Zvanični sajt studenata u blokadi
