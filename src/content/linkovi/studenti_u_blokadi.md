@@ -15,10 +15,12 @@ linkovi:
     naslov: Twitter nalog
     link: https://x.com/studentblokade
   - ikonica: facebook
-    naslov: Facebook nalog
-    link: https://www.facebook.com/people/Studenti-u-blokadi-UB/61571631694236/
+    naslov: Facebook stranica
+    link: https://www.facebook.com/Studentblokade
   - ikonica: youtube
     naslov: YouTube kanal
-    link: https://www.youtube.com/channel/UCVzOMk75igzA-ZuOvQaI1xg
+    link: https://www.youtube.com/@studentiublokadi
+  - ikonica: bez
+    naslov: Messenger kanal
+    link: https://www.messenger.com/channel/Studentblokade
 ---
-
