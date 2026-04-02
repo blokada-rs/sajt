@@ -1,5 +1,5 @@
 ---
-title: Visoka
+title: Visoka škola za informacione i komunikacione tehnologije
 link: ict
 linkovi:
   - ikonica: instagram
