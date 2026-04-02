@@ -8,4 +8,7 @@ linkovi:
   - ikonica: twitter
     naslov: X nalog
     link: https://x.com/masinciublokadi
+  - ikonica: youtube
+    naslov: YouTube kanal
+    link: https://youtube.com/@masinciublokadi?
 ---
