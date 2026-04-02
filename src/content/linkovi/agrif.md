@@ -4,7 +4,7 @@ link: agrif
 linkovi:
   - ikonica: instagram
     naslov: Instagram nalog
-    link: https://www.instagram.com/poljoprivredniblokada
+    link: https://www.instagram.com/poljoprivredniblokada?
   - ikonica: twitter
     naslov: X (formerly Twitter) nalog
     link: https://x.com/agrifblokira
