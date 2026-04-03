@@ -11,4 +11,7 @@ linkovi:
   - ikonica: music-note
     naslov: TikTok profil
     link: https://www.tiktok.com/@blokada_sumarski
+  - ikonica: at
+    naslov: blokadasumarski@gmail.com
+    link: mailto:blokadasumarski@gmail.com
 ---

@@ -14,4 +14,7 @@ linkovi:
   - ikonica: music-note
     naslov: TikTok profil
     link: https://www.tiktok.com/@blokada.ffubg
+  - ikonica: at
+    naslov: blokadafarmacija@gmail.com
+    link: mailto:blokadafarmacija@gmail.com
 ---

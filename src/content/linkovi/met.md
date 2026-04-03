@@ -8,4 +8,7 @@ linkovi:
   - ikonica: twitter
     naslov: X profil
     link: https://x.com/metblokada
+  - ikonica: at
+    naslov: met.blokade.bg@gmail.com
+    link: mailto:met.blokade.bg@gmail.com
 ---

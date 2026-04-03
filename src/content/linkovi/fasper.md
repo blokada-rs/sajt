@@ -11,4 +11,7 @@ linkovi:
   - ikonica: facebook
     naslov: Facebook profil
     link: https://www.facebook.com/share/18i3FWabv6
+  - ikonica: at
+    naslov: fasperstudenti.inicijativa@gmail.com
+    link: mailto:fasperstudenti.inicijativa@gmail.com
 ---

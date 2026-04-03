@@ -11,4 +11,7 @@ linkovi:
   - ikonica: facebook
     naslov: Facebook profil
     link: https://www.facebook.com/share/1BPfvh29MA/
+  - ikonica: web
+    naslov: Blokadni časopis
+    link: https://filblok.info
 ---

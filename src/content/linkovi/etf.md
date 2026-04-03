@@ -14,10 +14,16 @@ linkovi:
   - ikonica: music-note
     naslov: TikTok profil
     link: https://www.tiktok.com/@etfublokadi
-  - ikonica: bez
+  - ikonica: hand-coin
     naslov: Donacije
     link: https://studenti.org.rs/doniraj
   - ikonica: youtube
     naslov: YouTube kanal
     link: https://www.youtube.com/@etf_u_blokadi
+  - ikonica: hand-coin
+    naslov: Донације за свратишта
+    link: http://cim.org.rs/donacije/donacija/
+  - ikonica: at
+    naslov: studenti.etf.pr@gmail.com
+    link: mailto:studenti.etf.pr@gmail.com
 ---

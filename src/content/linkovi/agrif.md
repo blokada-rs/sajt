@@ -14,4 +14,7 @@ linkovi:
   - ikonica: at
     naslov: Threads profil
     link: https://www.threads.com/@poljoprivredniblokada
+  - ikonica: music-note
+    naslov: TikTok profil
+    link: https://tiktok.com/@poljoprivredniblokada
 ---

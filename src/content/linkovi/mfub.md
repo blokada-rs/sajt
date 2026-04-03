@@ -11,4 +11,7 @@ linkovi:
   - ikonica: bez
     naslov: Donacije
     link: https://donacije.itblokada.org/
+  - ikonica: at
+    naslov: plenum.mfub@gmail.com
+    link: mailto:plenum.mfub@gmail.com
 ---

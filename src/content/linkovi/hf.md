@@ -11,4 +11,7 @@ linkovi:
   - ikonica: twitter
     naslov: Twitter nalog
     link: https://x.com/blokadaHF
+  - ikonica: at
+    naslov: hfblokada@gmail.com
+    link: mailto:hfblokada@gmail.com
 ---

@@ -8,4 +8,7 @@ linkovi:
   - ikonica: twitter
     naslov: X profil
     link: https://x.com/gefublokadi
+  - ikonica: at
+    naslov: blokada.gef@gmail.com
+    link: mailto:blokada.gef@gmail.com
 ---
