@@ -1,6 +1,6 @@
 ---
 title: Univerzitet Metropolitan
-link: meth
+link: met
 linkovi:
   - ikonica: instagram
     naslov: Instagram profil
