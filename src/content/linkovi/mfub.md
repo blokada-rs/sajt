@@ -8,4 +8,7 @@ linkovi:
   - ikonica: twitter
     naslov: X profil
     link: https://x.com/blokada_mfub
+  - ikonica: bez
+    naslov: Donacije
+    link: https://donacije.itblokada.org/
 ---
