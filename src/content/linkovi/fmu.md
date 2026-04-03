@@ -14,4 +14,7 @@ linkovi:
   - ikonica: music-note
     naslov: TikTok profil
     link: https://www.tiktok.com/@blokadafmu
+  - ikonica: at
+    naslov: E-mail adresa
+    link: mailto:fmublokade@gmail.com
 ---
