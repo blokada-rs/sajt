@@ -11,10 +11,13 @@ linkovi:
   - ikonica: facebook
     naslov: Facebook stranica
     link: https://www.facebook.com/etfublokadi
-  - ikonica: youtube
-    naslov: YouTube kanal
-    link: https://www.youtube.com/@etf_u_blokadi
   - ikonica: music-note
     naslov: TikTok profil
     link: https://www.tiktok.com/@etfublokadi
+  - ikonica: bez
+    naslov: Donacije
+    link: https://studenti.org.rs/doniraj
+  - ikonica: youtube
+    naslov: YouTube kanal
+    link: https://www.youtube.com/@etf_u_blokadi
 ---
