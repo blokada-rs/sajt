@@ -3,15 +3,15 @@ title: Farmaceutski fakultet
 link: ffubg
 linkovi:
   - ikonica: instagram
-    naslov: Instagram nalog
+    naslov: Instagram profil
     link: https://www.instagram.com/blokada.ffubg
   - ikonica: twitter
-    naslov: X nalog
+    naslov: X profil
     link: https://x.com/blokadaffubg
   - ikonica: facebook
-    naslov: Facebook nalog
+    naslov: Facebook profil
     link: https://www.facebook.com/share/1BGKFwcic4/
   - ikonica: music-note
-    naslov: TikTok nalog
+    naslov: TikTok profil
     link: https://www.tiktok.com/@blokada.ffubg
 ---
