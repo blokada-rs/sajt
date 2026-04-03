@@ -1,6 +1,6 @@
 ---
 title: Fakultet za fizičku hemiju
-link: Ffh
+link: ffh
 linkovi:
   - ikonica: instagram
     naslov: Instagram profil
