@@ -11,4 +11,7 @@ linkovi:
   - ikonica: facebook
     naslov: Facebook profil
     link: https://www.facebook.com/share/14ezY4inMEL/
+  - ikonica: bez
+    naslov: Vodič za zborove
+    link: https://drive.google.com/file/d/1skvgt0-gRV69iw5u3YBTWWcKTmjFvv9X/view?usp=drivesdk
 ---
