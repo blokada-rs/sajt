@@ -8,4 +8,7 @@ linkovi:
   - ikonica: web
     naslov: Infozbornik
     link: https://infozbornik.rs/
+  - ikonica: facebook
+    naslov: Facebook profil
+    link: https://www.facebook.com/share/14ezY4inMEL/
 ---
