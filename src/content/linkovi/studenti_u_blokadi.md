@@ -7,7 +7,7 @@ linkovi:
     link: https://blokade.org
   - ikonica: at
     naslov: Zvanicni e-mail
-    link: studentiublokadi@gmail.com
+    link: mailto:studentiublokadi@gmail.com
   - ikonica: instagram
     naslov: Instagram nalog
     link: https://instagram.com/studenti_u_blokadi
