@@ -3,13 +3,13 @@ title: Građevinski fakultet
 link: grf
 linkovi:
   - ikonica: instagram
-    naslov: Instagram nalog
+    naslov: Instagram profil
     link: https://www.instagram.com/grf.blokade
   - ikonica: twitter
-    naslov: X nalog
+    naslov: X profil
     link: https://x.com/grf_blokade
   - ikonica: facebook
-    naslov: Facebook nalog
+    naslov: Facebook profil
     link: https://www.facebook.com/share/1KMqmLDgF1
   - ikonica: bez
     naslov: Donacije RJIL
