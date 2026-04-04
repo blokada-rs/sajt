@@ -46,7 +46,6 @@ const live = (await collection("vesti", lang)).filter((vest) => vest.data.live);
                 </li>
             )}
         </ul>
-        <!--<hr>-->
     </>}
     <h1>{linkovi.data.title}</h1>
     <ul>
@@ -59,7 +58,6 @@ const live = (await collection("vesti", lang)).filter((vest) => vest.data.live);
             </li>
         )}
     </ul>
-    <!--<hr>-->
     <h1>Ostali linkovi</h1>
     <ul>
         {ostali_linkovi.linkovi.map(link =>
@@ -76,14 +74,8 @@ const live = (await collection("vesti", lang)).filter((vest) => vest.data.live);
 <style>
     h1 {
         margin-top: 2rem;
-    }
-
-    h2 {
         margin-bottom: 1rem;
-    }
-
-    hr {
-        margin-block: 2rem;
+        font-size: 1.75rem;
     }
 
     ul {
