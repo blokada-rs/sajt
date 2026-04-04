@@ -8,4 +8,7 @@ linkovi:
   - ikonica: twitter
     naslov: X profil
     link: https://x.com/DIF_blokada
+  - ikonica: at
+    naslov: studenti.fsfv@gmail.com
+    link: mailto:studenti.fsfv@gmail.com
 ---

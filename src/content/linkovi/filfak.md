@@ -14,4 +14,7 @@ linkovi:
   - ikonica: web
     naslov: Blokadni časopis
     link: https://filblok.info
+  - ikonica: at
+    naslov: blokadafiloloski@gmail.com
+    link: mailto:blokadafiloloski@gmail.com
 ---
