@@ -4,8 +4,6 @@ logo_url: https://blokade.org/favicon.ico
 media_folder: "/src/assets/images/"
 public_folder: "@assets/images/"
 
-locale: sr
-
 backend:
   name: github
   repo: blokada-rs/sajt
@@ -32,7 +30,6 @@ i18n:
   locales: [sr, en]
   initial_locales: [sr]
   default_locale: sr
-  save_all_locales: false
 
 collections:
   - name: "vesti"
