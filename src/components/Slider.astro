@@ -107,8 +107,8 @@ import { ICON_SIZE_LG } from 'consts';
           const { scrollWidth, clientWidth } = observed[0].target;
 
           if (scrollWidth > clientWidth) {
-              this.#left.style.display = "block";
-              this.#right.style.display = "block";
+              this.#left.style.display = "flex";
+              this.#right.style.display = "flex";
           } else {
               this.#left.style.display = "none";
               this.#right.style.display = "none";
