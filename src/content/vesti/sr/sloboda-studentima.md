@@ -1,7 +1,7 @@
 ---
 link: sloboda-studentima
 title: Слобода студентима
-live: true
+live: false
 draft: uredjivanje
 pubDate: 2026-04-04T09:28:00.000Z
 updatedDate: 2026-04-04T09:28:00.000Z
