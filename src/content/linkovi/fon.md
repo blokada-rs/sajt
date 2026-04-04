@@ -6,7 +6,7 @@ linkovi:
     naslov: Instagram profil
     link: https://www.instagram.com/blokada.fon
   - ikonica: twitter
-    naslov: X profil
+    naslov: Twitter profil
     link: https://x.com/blokadafon
   - ikonica: facebook
     naslov: Facebook stranica

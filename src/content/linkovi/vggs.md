@@ -6,6 +6,6 @@ linkovi:
     naslov: Instagram profil
     link: https://www.instagram.com/vggs_blokada/
   - ikonica: twitter
-    naslov: X profil
+    naslov: Twitter profil
     link: https://x.com/vggsblokada
 ---

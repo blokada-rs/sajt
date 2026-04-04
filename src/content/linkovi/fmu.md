@@ -6,7 +6,7 @@ linkovi:
     naslov: Instagram profil
     link: https://www.instagram.com/blokada.fmu
   - ikonica: twitter
-    naslov: X profil
+    naslov: Twitter profil
     link: https://x.com/blokadafmu
   - ikonica: facebook
     naslov: Facebook profil

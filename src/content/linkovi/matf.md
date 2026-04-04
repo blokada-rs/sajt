@@ -1,10 +1,7 @@
 ---
-title: Linkovi | Matematički fakultet
+title: Matematički fakultet
 link: matf
 linkovi:
-  - ikonica: web
-    naslov: Zvanični sajt studenata u blokadi
-    link: https://blokade.org
   - ikonica: instagram
     naslov: '@blokada.matf'
     link: https://instagram.com/blokada.matf

@@ -1,5 +1,5 @@
 ---
-title: Linkovi | Studenti u blokadi
+title: Studenti u blokadi
 link: studenti_u_blokadi
 linkovi:
   - ikonica: web
@@ -9,10 +9,10 @@ linkovi:
     naslov: Zvanicni e-mail
     link: mailto:studentiublokadi@gmail.com
   - ikonica: instagram
-    naslov: Instagram nalog
+    naslov: Instagram profil
     link: https://instagram.com/studenti_u_blokadi
   - ikonica: twitter
-    naslov: Twitter nalog
+    naslov: Twitter profil
     link: https://x.com/studentblokade
   - ikonica: facebook
     naslov: Facebook stranica
@@ -23,7 +23,4 @@ linkovi:
   - ikonica: facebook-messenger
     naslov: Messenger kanal
     link: https://www.messenger.com/channel/Studentblokade
-  - ikonica: hand-coin
-    naslov: IT mreža solidarnosti
-    link: https://mrezasolidarnosti.org/
 ---

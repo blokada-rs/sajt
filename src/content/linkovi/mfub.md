@@ -6,7 +6,7 @@ linkovi:
     naslov: Instagram profil
     link: https://www.instagram.com/blokada.mfub
   - ikonica: twitter
-    naslov: X profil
+    naslov: Twitter profil
     link: https://x.com/blokada_mfub
   - ikonica: bez
     naslov: Donacije

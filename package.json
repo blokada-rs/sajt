@@ -11,13 +11,13 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/rss": "^4.0.17",
-    "@astrojs/sitemap": "^3.7.1",
-    "@mashehu/astropub-md": "^2.0.1",
+    "@astrojs/rss": "^4.0.18",
+    "@astrojs/sitemap": "^3.7.2",
     "@iconify-json/mdi": "^1.2.3",
+    "@mashehu/astropub-md": "^2.0.1",
     "@oddbird/popover-polyfill": "^0.6.1",
-    "@sveltia/cms": "^0.149.1",
-    "astro": "^6.0.8",
+    "@sveltia/cms": "^0.152.0",
+    "astro": "^6.1.3",
     "astro-icon": "^1.1.5",
     "leaflet": "^1.9.4",
     "sharp": "^0.34.5"

@@ -51,6 +51,9 @@ const akcije = await collection("akcije", lang);
     </div>
 
     <h1>{pocetna.naslov}</h1>
+
+    <div class="square" />
+    <div class="square" />
   </div>
 
   <section>
@@ -109,9 +112,8 @@ const akcije = await collection("akcije", lang);
 
     display: flex;
     align-items: center;
-    overflow: hidden;
-    border-radius: 0.5rem;
 
+    margin-inline: 1rem;
     margin-block: 2rem;
   }
 
@@ -128,6 +130,7 @@ const akcije = await collection("akcije", lang);
     background-color: rgba(0, 0, 0, 0.4);
     inset: 0;
     z-index: 1;
+    border-radius: 0.5rem;
   }
 
   .title h1 {
@@ -137,6 +140,25 @@ const akcije = await collection("akcije", lang);
     z-index: 1;
     font-size: 4rem;
     text-align: center;
+  }
+
+  .title .square {
+    width: 8rem;
+    aspect-ratio: 2;
+    background-color: var(--accent);
+    z-index: 2;
+    position: absolute;
+    border-radius: 0.5rem;
+  }
+
+  .title .square:nth-of-type(2) {
+    bottom: -1rem;
+    left: -1rem;
+  }
+
+  .title .square:nth-of-type(3) {
+    top: -1rem;
+    right: -1rem;
   }
 
   .pitanja {
@@ -179,7 +201,7 @@ const akcije = await collection("akcije", lang);
   @media (max-width: 720px) {
     .title h1 {
       padding-inline: 2vw;
-      font-size: 12vw;
+      font-size: 10vw;
     }
   }
 
@@ -190,6 +212,7 @@ const akcije = await collection("akcije", lang);
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    z-index: 3;
   }
 
   .gap {

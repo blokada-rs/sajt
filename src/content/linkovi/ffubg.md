@@ -6,7 +6,7 @@ linkovi:
     naslov: Instagram profil
     link: https://www.instagram.com/blokada.ffubg
   - ikonica: twitter
-    naslov: X profil
+    naslov: Twitter profil
     link: https://x.com/blokadaffubg
   - ikonica: facebook
     naslov: Facebook profil

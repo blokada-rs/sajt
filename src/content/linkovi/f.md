@@ -6,7 +6,7 @@ linkovi:
     naslov: Instagram profil
     link: https://www.instagram.com/filozofi.u.blokadi
   - ikonica: twitter
-    naslov: X profil
+    naslov: Twitter profil
     link: https://x.com/FFUBublokadi
   - ikonica: facebook
     naslov: Facebook stranica

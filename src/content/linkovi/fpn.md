@@ -6,7 +6,7 @@ linkovi:
     naslov: Instagram profil
     link: https://www.instagram.com/blokada.fpn
   - ikonica: twitter
-    naslov: X profil
+    naslov: Twitter profil
     link: https://x.com/blokada_fpn
   - ikonica: music-note
     naslov: TikTok profil

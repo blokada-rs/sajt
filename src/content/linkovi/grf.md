@@ -6,7 +6,7 @@ linkovi:
     naslov: Instagram profil
     link: https://www.instagram.com/grf.blokade
   - ikonica: twitter
-    naslov: X profil
+    naslov: Twitter profil
     link: https://x.com/grf_blokade
   - ikonica: facebook
     naslov: Facebook profil

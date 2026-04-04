@@ -5,6 +5,7 @@ import { Icon } from 'astro-icon/components';
 import { type CollectionEntry, getCollection } from 'astro:content';
 import { SITE_TITLE, SITE_DESCRIPTION } from "../../../consts";
 import { ICON_SIZE_LG } from 'consts';
+import { frontmatter as ostali_linkovi } from "@content/ostali-linkovi.md"
 
 export async function getStaticPaths() {
     const linkovi = await getCollection('linkovi');
@@ -32,16 +33,23 @@ const linkovi = Astro.props;
 const live = (await collection("vesti", lang)).filter((vest) => vest.data.live);
 ---
 
-<Base lang={linkovi.lang} title={linkovi.data.title} description={SITE_DESCRIPTION}>
+<Base lang={linkovi.lang} title=`Linkovi | ${linkovi.data.title}` description={SITE_DESCRIPTION}>
+    {live.length > 0 && <>
+        <h1>Vesti uživo</h1>
+        <ul>
+            {live.map(live =>
+                <li>
+                    <a class="live" href={`/${lang}/vesti/${live.data.link}`}>
+                        <Icon size={ICON_SIZE_LG} name={`mdi:newspaper`} />
+                        {live.data.title}
+                    </a>
+                </li>
+            )}
+        </ul>
+        <!--<hr>-->
+    </>}
+    <h1>{linkovi.data.title}</h1>
     <ul>
-        {live.map(live =>
-            <li>
-                <a class="live" href={`/${lang}/vesti/${live.data.link}`}>
-                    <Icon size={ICON_SIZE_LG} name={`mdi:newspaper`} />
-                    {live.data.title}
-                </a>
-            </li>
-        )}
         {linkovi.data.linkovi.map(link =>
             <li>
                 <a href={link.link}>
@@ -51,16 +59,39 @@ const live = (await collection("vesti", lang)).filter((vest) => vest.data.live);
             </li>
         )}
     </ul>
+    <!--<hr>-->
+    <h1>Ostali linkovi</h1>
+    <ul>
+        {ostali_linkovi.linkovi.map(link =>
+                <li>
+                    <a href={link.link}>
+                        {link.ikonica !== "bez" && <Icon size={ICON_SIZE_LG} name={`mdi:${link.ikonica}`} />}
+                        {link.naslov}
+                    </a>
+                </li>
+        )}
+    </ul>
 </Base>
 
 <style>
+    h1 {
+        margin-top: 2rem;
+    }
+
+    h2 {
+        margin-bottom: 1rem;
+    }
+
+    hr {
+        margin-block: 2rem;
+    }
+
     ul {
         list-style: none;
         display: flex;
         flex-direction: column;
         gap: 1rem;
         padding: 0;
-        margin-top: 2rem;
     }
 
     a {

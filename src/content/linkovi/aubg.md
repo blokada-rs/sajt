@@ -6,7 +6,7 @@ linkovi:
     naslov: Instagram profil
     link: https://www.instagram.com/aubg.blokada
   - ikonica: twitter
-    naslov: X profil
+    naslov: Twitter profil
     link: https://x.com/aubgblokada
   - ikonica: music-note
     naslov: TikTok profil

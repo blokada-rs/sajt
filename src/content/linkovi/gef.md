@@ -6,7 +6,7 @@ linkovi:
     naslov: Instagram profil
     link: https://www.instagram.com/blokada.gef
   - ikonica: twitter
-    naslov: X profil
+    naslov: Twitter profil
     link: https://x.com/gefublokadi
   - ikonica: at
     naslov: blokada.gef@gmail.com

@@ -9,7 +9,7 @@ linkovi:
     naslov: Instagram profil
     link: https://www.instagram.com/ekof.blokada
   - ikonica: twitter
-    naslov: X profil
+    naslov: Twitter profil
     link: https://x.com/ekof_blokade
   - ikonica: facebook
     naslov: Facebook profil

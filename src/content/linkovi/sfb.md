@@ -6,7 +6,7 @@ linkovi:
     naslov: Instagram profil
     link: https://www.instagram.com/blokada.sumarski
   - ikonica: twitter
-    naslov: X profil
+    naslov: Twitter profil
     link: https://x.com/Blokadasumarski
   - ikonica: music-note
     naslov: TikTok profil

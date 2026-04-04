@@ -6,12 +6,12 @@ linkovi:
     naslov: Instagram profil
     link: https://www.instagram.com/fasper_blokada
   - ikonica: twitter
-    naslov: X profil
+    naslov: Twitter profil
     link: https://x.com/fasperublokadi
   - ikonica: facebook
     naslov: Facebook profil
     link: https://www.facebook.com/share/18i3FWabv6
   - ikonica: at
-    naslov: fasperstudenti.inicijativa@gmail.com
+    naslov: e-mail
     link: mailto:fasperstudenti.inicijativa@gmail.com
 ---

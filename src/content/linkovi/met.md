@@ -6,7 +6,7 @@ linkovi:
     naslov: Instagram profil
     link: https://www.instagram.com/met.blokada
   - ikonica: twitter
-    naslov: X profil
+    naslov: Twitter profil
     link: https://x.com/metblokada
   - ikonica: at
     naslov: met.blokade.bg@gmail.com
