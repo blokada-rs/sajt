@@ -3,7 +3,7 @@ import Base from '@layouts/Base.astro';
 import { collection, langs } from '@scripts/i18n';
 import { Icon } from 'astro-icon/components';
 import { type CollectionEntry, getCollection } from 'astro:content';
-import { SITE_TITLE, SITE_DESCRIPTION } from "../../../consts";
+import { SITE_DESCRIPTION } from "../../../consts";
 import { ICON_SIZE_LG } from 'consts';
 import { frontmatter as ostali_linkovi } from "@content/ostali-linkovi.md"
 
@@ -33,7 +33,7 @@ const linkovi = Astro.props;
 const live = (await collection("vesti", lang)).filter((vest) => vest.data.live);
 ---
 
-<Base lang={linkovi.lang} title=`Linkovi | ${linkovi.data.title}` description={SITE_DESCRIPTION}>
+<Base title=`Linkovi | ${linkovi.data.title}` description={SITE_DESCRIPTION}>
     {live.length > 0 && <>
         <h1>Vesti uživo</h1>
         <ul>
