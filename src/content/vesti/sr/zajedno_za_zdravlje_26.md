@@ -1,6 +1,6 @@
 ---
 link: zajedno_za_zdravlje_26
-title: Заједно за задравље
+title: Заједно за здравље
 live: false
 draft: spremno
 pubDate: 2026-04-07T11:21:00.000Z
