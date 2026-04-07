@@ -151,6 +151,10 @@ img {
     height: auto;
 }
 
+svg {
+    flex-shrink: 0;
+}
+
 img:not(.not-rounded) {
     border-radius: 0.5rem;
 }
