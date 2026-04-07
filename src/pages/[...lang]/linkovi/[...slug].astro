@@ -30,7 +30,8 @@ if (typeof lang === "undefined") {
 
 const linkovi = Astro.props;
 
-const live = (await collection("vesti", lang)).filter((vest) => vest.data.live);
+const vesti = (await collection("vesti", lang))
+const live = vesti.filter((vest) => vest.data.live);
 ---
 
 <Base title=`Linkovi | ${linkovi.data.title}` description={SITE_DESCRIPTION}>
@@ -67,6 +68,18 @@ const live = (await collection("vesti", lang)).filter((vest) => vest.data.live);
                         {link.naslov}
                     </a>
                 </li>
+        )}
+    </ul>
+
+    <h1>Najnovije vesti</h1>
+    <ul>
+        {vesti.slice(0, 3).map(vest =>
+          <li>
+              <a href={`/${lang}/vesti/${vest.data.link}`}>
+                  <Icon size={ICON_SIZE_LG} name={`mdi:newspaper`} />
+                  {vest.data.title}
+              </a>
+          </li>
         )}
     </ul>
 </Base>

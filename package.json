@@ -16,8 +16,8 @@
     "@iconify-json/mdi": "^1.2.3",
     "@mashehu/astropub-md": "^2.0.1",
     "@oddbird/popover-polyfill": "^0.6.1",
-    "@sveltia/cms": "^0.152.0",
-    "astro": "^6.1.3",
+    "@sveltia/cms": "^0.152.2",
+    "astro": "^6.1.4",
     "astro-icon": "^1.1.5",
     "leaflet": "^1.9.4",
     "sharp": "^0.34.5"
