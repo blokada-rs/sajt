@@ -59,9 +59,16 @@ export async function file<C extends keyof AnyEntryMap>(
     Content: AstroComponentFactory,
     frontmatter: Record<string, any>
 }> {
-    const post = (await getCollection(collection))
-        .map(post => ({...post, lang: post.id.split('/')[0], id: post.id.split('/')[1]}))
-        .filter(post => lang === post.lang)[0];
+    const all = (await getCollection(collection))
+        .map(post => ({...post, lang: post.id.split('/')[0], id: post.id.split('/')[1]}));
+
+    let post = all.filter(post => lang === post.lang)[0];
+
+    for (let lang of fallbackLanguages) {
+        if (!!post) { break; }
+
+        post = all.filter(post => lang === post.lang)[0];
+    }
 
     const rendered = await render(post);
     return {
