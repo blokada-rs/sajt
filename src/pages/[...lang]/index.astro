@@ -24,7 +24,6 @@ const { Content: Zahtevi } = await file("zahtevi", lang);
 const live = (await collection("vesti", lang)).filter((vest) => vest.data.live);
 
 const vesti = await collection("vesti", lang);
-const akcije = await collection("akcije", lang);
 ---
 
 <Base
@@ -73,31 +72,23 @@ const akcije = await collection("akcije", lang);
     </section>
   </div>
 
-    <section>
-      <Zahtevi />
-      <div class="buttons">
-        <a slot="button" href=`/${lang}/zahtevi` class="button primary dugme center">{pocetna.konkretizacije_zahteva}</a>
-      </div>
-    </section>
-
-  <div class="dark-background full-width">
-    <section class="gap">
-      <h2>{pocetna.akcije}</h2>
-      {pocetna.akcije_tekst && <p class="section-subtitle">{pocetna.akcije_tekst}</p>}
-      <Slider>
-        {akcije.slice(0, 3).map(post =>
-          <Card link={`/${lang}/akcije/${post.id}`} {...post} />)
-        }
-        <a slot="button" href=`/${lang}/akcije` class="button primary dugme">{pocetna.akcije_dugme}</a>
-      </Slider>
-    </section>
-  </div>
-
   <section>
-    <h2>{pocetna.mreza_solidarnosti}</h2>
-    {pocetna.mreza_solidarnosti_tekst && <Markdown of={pocetna.mreza_solidarnosti_tekst} />}
+    <Zahtevi />
     <div class="buttons">
-      <a slot="button" href=`https://mrezasolidarnosti.rs` class="button primary dugme center">{pocetna.mreza_solidarnosti_dugme}</a>
+      <a slot="button" href=`/${lang}/zahtevi` class="button primary dugme center">{pocetna.konkretizacije_zahteva}</a>
+    </div>
+  </section>
+
+  <section class="dark-background">
+    <h2>{pocetna.akc}</h2>
+    {pocetna.akc_tekst && <Markdown of={pocetna.akc_tekst} />}
+  </section>
+
+  <section class="">
+    <h2>{pocetna.suss}</h2>
+    {pocetna.suss_tekst && <Markdown of={pocetna.suss_tekst} />}
+    <div class="buttons">
+      <a slot="button" href=`https://suss.rs` class="button primary dugme center">{pocetna.suss_dugme}</a>
     </div>
   </section>
 </Base>
@@ -114,7 +105,7 @@ const akcije = await collection("akcije", lang);
     align-items: center;
 
     margin-inline: 1rem;
-    margin-block: 2rem;
+    margin-block: 3rem;
   }
 
   .title :is(picture, img) {
@@ -234,7 +225,19 @@ const akcije = await collection("akcije", lang);
   }
 
   .dark-background {
-    background-color: hsl(0, 0%, 95%);
+    position: relative;
     padding-block: 3rem;
+  }
+
+  .dark-background::before {
+    content: "";
+    background-color: hsl(0, 0%, 95%);
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 50%;
+    translate: -50% 0;
   }
 </style>

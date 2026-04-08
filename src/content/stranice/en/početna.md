@@ -3,21 +3,37 @@ naslov: Student Blockades
 vesti: News
 vesti_tekst: Upcoming public actions and events organized by students in the blockades of higher education institutions in Belgrade. See the announcements of actions that await us in the coming period, find out more about the plan of activities, see the map or follow how the event is developing live.
 vesti_dugme: See all news
-akcije: Public actions
-akcije_tekst: See posts from our "Public actions" log. Here you can read more detailed stories written by our colleagues during or after events that have already taken place.
-akcije_dugme: All public actions
-mreza_solidarnosti: The Solidarity Network
-mreza_solidarnosti_tekst: |-
-  The Solidarity Network came from the IT sector as a temporary system of direct financial support which connects:
-  - **donors** - people who want to help financially;
-  - **affected teachers and non-teaching staff** - those who are on strike and whose salaries have been cut.
+akc: Akademski krizni centar
+akc_tekst: |-
+  Akademski krizni centar **(AKC)** nastao je kao odgovor akademske zajednice na sve učestalije pritiske, privođenja i oblike institucionalne represije nad studentima, profesorima i saradnicima u kontekstu studentskih blokada i protesta.
 
-  The aim is to provide fast, secure and transparent assistance without a centralized fund and intermediary - money goes directly from donor to teacher per the peer-to-peer direct donation model, without intermediaries, with mutual trust.
+  AKC funkcioniše kao operativna mreža podrške koja povezuje pogođene članove akademske zajednice sa advokatima i pravnim timovima, uz istovremeno informisanje javnosti i podsticanje solidarnosti.
 
-  Recently, university teachers have been included in the support system. So far, more than 3,500 educators have connected through the Solidarity Network who have been compensated for their lost salaries, with donations exceeding 120 million dinars, but *a lot more funding* is still needed.
+  Cilj AKC-a je da obezbedi brzu, pouzdanu i koordinisanu podršku u kriznim situacijama, od prvog kontakta i prikupljanja informacija do pravne zaštite i javnog reagovanja.
+  Od osnivanja do danas, AKC je intervenisao u više od 150 slučajeva, pružajući pravnu i organizacionu podršku.
 
-  **Let's show that solidarity is not just a word - no teacher will be left to face injustice alone.**
-mreza_solidarnosti_dugme: The Solidarity Network
-konkretizacije_zahteva: Конкретизације захтева
+  **AKC**:
+
+  - prikuplja i verifikuje informacije o pritiscima i privođenjima,
+  - povezuje pogođene sa pravnom pomoći,
+  - prati tok slučajeva i održava komunikaciju,
+  - informiše javnost i dokumentuje oblike represije,
+  - umrežava aktere solidarnosti u zemlji i inostranstvu.
+
+  AKC deluje kao decentralizovana mreža zasnovana na poverenju, brzoj reakciji i međusobnoj podršci, sa ciljem da niko ne ostane bez pomoći u situacijama pritiska i nepravde.
+
+  Za hitne slučajeve: [**0800 500 801**](tel:+381800500801)
+  <br>
+  Za pravne savete i i kontakt advokata: [**061 4050 537**](tel:+381614050537) i [**061 3348 235**](tel:+381613348235)
+suss: Student u svakom selu
+suss_tekst: |-
+  Radna jedinica „Student u svakom selu“ je jedinica u okviru Studentskog pokreta koja obilazi mesta širom Srbije. U prethodnih godinu dana obišli smo preko 400 mesta, više od 40 hiljada domaćinstava i razgovarali sa preko 20 hiljada ljudi.
+
+  Od istoka do zapada, od severa do juga, trudili smo se da budemo svuda. Od Jagoštice i Krupnja do Korbova i Velike Vrbice, od Palića i Bajmoka do Vranja i Grdelice, trudili smo se da budemo prisutni. Obilazeći Srbiju uverili smo se u njenu lepotu, a razgovorom sa ljudima shvatili smo koliko dijalog znači.
+
+  Ovaj rad nosi i posebnu emociju zajedništva. Slušajući ljude i njihove svakodnevne izazove, osećamo odgovornost, ali i snagu koja dolazi iz povezivanja. Dijalog ne donosi samo mogućnost promene uslova života. On donosi osećaj da niko nije sam i da postoji neko ko sluša i razume. Upravo u tome leži njegova najveća vrednost, u stvaranju poverenja, vraćanju vere i uverenju da zajedno možemo više.
+suss_dugme: SUSS sajt
+konkretizacije_zahteva: Concretization of demands
 ---
+
 The collapse of the canopy at the Railway Station in Novi Sad on Friday, November 1, 2024, at 11:52, killed 15 people. The death of innocent victims caused collective sorrow. Citizens paused in the streets at 11:52AM to honor the victims with a 15-minute silence. People in Serbia continue to gather regularly in various locations across the country, always at the same time – 11:52.

@@ -1,36 +1,34 @@
 ---
 import Base from '@layouts/Base.astro';
-import { collection, langs } from '@scripts/i18n';
+import {collection, collectionIDs, entry, langs} from '@scripts/i18n';
 import { Icon } from 'astro-icon/components';
-import { type CollectionEntry, getCollection } from 'astro:content';
+import { type CollectionEntry } from 'astro:content';
 import { SITE_DESCRIPTION } from "../../../consts";
 import { ICON_SIZE_LG } from 'consts';
 import { frontmatter as ostali_linkovi } from "@content/ostali-linkovi.md"
-
-export async function getStaticPaths() {
-    const linkovi = await getCollection('linkovi');
-    let ret = [];
-
-    for (const lang of langs) {
-        ret.push(...linkovi.map((post) => ({
-            params: { lang: lang, slug: post.id },
-            props: post,
-        })));
-    }
-
-    return ret;
-}
-
-type Props = CollectionEntry<'linkovi'> & {lang: string};
 
 const { lang } = Astro.params;
 if (typeof lang === "undefined") {
     return Astro.rewrite(`/sr${Astro.url.pathname}`);
 }
 
+export async function getStaticPaths() {
+    const linkovi = await collectionIDs('linkovi');
+
+    return Promise.all(langs
+        .flatMap(lang => linkovi.flatMap(id => ({lang, id})))
+        .map(async ({lang, id}) => ({
+                params: {lang, slug: id},
+                props: await entry("linkovi", id, lang),
+            })
+        ));
+}
+
+type Props = CollectionEntry<'linkovi'> & {lang: string};
+
 const linkovi = Astro.props;
 
-const vesti = (await collection("vesti", lang))
+const vesti = await collection("vesti", lang);
 const live = vesti.filter((vest) => vest.data.live);
 ---
 

@@ -1,5 +1,6 @@
 import { glob } from 'astro/loaders';
-import { defineCollection, z } from 'astro:content';
+import { defineCollection } from 'astro:content';
+import { z } from 'astro/zod'
 
 const vesti = defineCollection({
 	loader: glob({ base: './src/content/vesti', pattern: '**/*.(md|mdx)' }),
@@ -51,7 +52,7 @@ const afere = defineCollection({
 });
 
 const linkovi = defineCollection({
-	loader: glob({ base: './src/content/linkovi', pattern: '*.md' }),
+	loader: glob({ base: './src/content/linkovi', pattern: '**/*.md' }),
 	schema: () => z.object({
 		title: z.string(),
 		link: z.string(),
@@ -74,12 +75,11 @@ const pocetna = defineCollection({
 		vesti: z.string(),
 		vesti_tekst: z.string(),
 		vesti_dugme: z.string(),
-		akcije: z.string(),
-		akcije_tekst: z.string(),
-		akcije_dugme: z.string(),
-		mreza_solidarnosti: z.string(),
-		mreza_solidarnosti_tekst: z.string(),
-		mreza_solidarnosti_dugme: z.string(),
+		akc: z.string(),
+		akc_tekst: z.string(),
+		suss: z.string(),
+		suss_tekst: z.string(),
+		suss_dugme: z.string(),
 		konkretizacije_zahteva: z.string(),
 	}),
 });

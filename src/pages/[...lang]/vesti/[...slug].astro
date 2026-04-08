@@ -12,7 +12,7 @@ if (typeof lang === "undefined") {
 export async function getStaticPaths() {
 	const posts = await collectionIDs('vesti');
 
-	return await Promise.all(langs
+	return Promise.all(langs
 		.flatMap(lang => posts.flatMap(id => ({lang, id})))
 		.map(async ({lang, id}) => ({
 				params: {lang, slug: id},

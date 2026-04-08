@@ -11,7 +11,7 @@ export const langs = ["sr", "sr-lat", "en", undefined];
 
 const fallbackLanguages = ["en", "sr-lat"];
 
-export async function collectionIDs<T extends "vesti" | "akcije" | "afere">(
+export async function collectionIDs<T extends "vesti" | "akcije" | "afere" | "linkovi">(
   collection: T
 ): Promise<string[]> {
   const all =
@@ -19,7 +19,6 @@ export async function collectionIDs<T extends "vesti" | "akcije" | "afere">(
       .map((collection) => collection.id.split('/')[1]);
 
   return [...new Set(all)];
-
 }
 
 export async function collection<T extends "vesti" | "akcije" | "afere">(
@@ -36,7 +35,7 @@ export async function collection<T extends "vesti" | "akcije" | "afere">(
     return all.sort((a, b) => a.data.title.localeCompare(b.data.title));
 }
 
-export async function entry<T extends "vesti" | "akcije" | "afere">(
+export async function entry<T extends "vesti" | "akcije" | "afere" | "linkovi">(
   collection: T,
   entry: string,
   lang: string = "sr"

@@ -163,12 +163,11 @@ collections:
           - { label: "Vesti", name: "vesti", widget: "string", i18n: true }
           - { label: "Vesti tekst", name: "vesti_tekst", widget: "text", i18n: true }
           - { label: "Vesti dugme", name: "vesti_dugme", widget: "string", i18n: true }
-          - { label: "Akcije", name: "akcije", widget: "string", i18n: true }
-          - { label: "Akcije tekst", name: "akcije_tekst", widget: "text", i18n: true }
-          - { label: "Akcije dugme", name: "akcije_dugme", widget: "string", i18n: true }
-          - { label: "Mreža solidarnosti", name: "mreza_solidarnosti", widget: "string", i18n: true }
-          - { label: "Mreža solidarnosti tekst", name: "mreza_solidarnosti_tekst", widget: "markdown", i18n: true }
-          - { label: "Mreža solidarnosti dugme", name: "mreza_solidarnosti_dugme", widget: "string", i18n: true }
+          - { label: "AKC", name: "akc", widget: "string", i18n: true }
+          - { label: "AKC tekst", name: "akc_tekst", widget: "markdown", i18n: true }
+          - { label: "SUSS", name: "suss", widget: "string", i18n: true }
+          - { label: "SUSS tekst", name: "suss_tekst", widget: "markdown", i18n: true }
+          - { label: "SUSS dugme", name: "suss_dugme", widget: "string", i18n: true }
           - { label: "Konkretizacije zahteva", name: "konkretizacije_zahteva", widget: "string", i18n: true }
 
       - label: "O Blokadama"
@@ -302,8 +301,9 @@ collections:
     folder: "src/content/linkovi"
     create: true
     identifier_field: link
+    i18n: true
     fields:
-      - label: "Title"
+      - label: "Naslov"
         name: "title"
         widget: "string"
 
