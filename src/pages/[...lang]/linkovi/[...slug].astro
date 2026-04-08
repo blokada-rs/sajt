@@ -1,11 +1,10 @@
 ---
 import Base from '@layouts/Base.astro';
-import {collection, collectionIDs, entry, langs} from '@scripts/i18n';
+import {collection, collectionIDs, entry, file, langs} from '@scripts/i18n';
 import { Icon } from 'astro-icon/components';
 import { type CollectionEntry } from 'astro:content';
 import { SITE_DESCRIPTION } from "../../../consts";
 import { ICON_SIZE_LG } from 'consts';
-import { frontmatter as ostali_linkovi } from "@content/ostali-linkovi.md"
 
 const { lang } = Astro.params;
 if (typeof lang === "undefined") {
@@ -29,6 +28,9 @@ type Props = CollectionEntry<'linkovi'> & {lang: string};
 const linkovi = Astro.props;
 
 const vesti = await collection("vesti", lang);
+
+const { frontmatter: ostali_linkovi } = await file("ostali_linkovi", lang);
+
 const live = vesti.filter((vest) => vest.data.live);
 ---
 
@@ -57,7 +59,7 @@ const live = vesti.filter((vest) => vest.data.live);
             </li>
         )}
     </ul>
-    <h1>Ostali linkovi</h1>
+    <h1>{ostali_linkovi.ostali_linkovi}</h1>
     <ul>
         {ostali_linkovi.linkovi.map(link =>
                 <li>
@@ -69,7 +71,7 @@ const live = vesti.filter((vest) => vest.data.live);
         )}
     </ul>
 
-    <h1>Najnovije vesti</h1>
+    <h1>{ostali_linkovi.najnovije_vesti}</h1>
     <ul>
         {vesti.slice(0, 3).map(vest =>
           <li>

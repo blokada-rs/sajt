@@ -243,6 +243,43 @@ collections:
               - { label: "Naslov", name: "naziv", widget: "string", i18n: true }
               - { label: "Link", name: "link", widget: "string", i18n: true }
 
+      - name: "ostali-linkovi"
+        label: "Ostali linkovi"
+        i18n: true
+        file: "src/content/stranice/{{locale}}/ostali-linkovi.md"
+        fields:
+          - label: "Ostali linkovi"
+            name: "ostali_linkovi"
+          - label: "Najnovije vesti"
+            name: "najnovije_vesti"
+          - label: "Linkovi"
+            label_singular: 'Link'
+            name: "linkovi"
+            widget: "list"
+            summary: "{{naslov}}"
+            fields:
+              - label: "Ikonica"
+                name: "ikonica"
+                widget: "select"
+                options:
+                  - { label: "Bez", value: "bez" }
+                  - { label: "Sajt", value: "web" }
+                  - { label: "Instagram", value: "instagram" }
+                  - { label: "Twitter", value: "twitter" }
+                  - { label: "Facebook", value: "facebook" }
+                  - { label: "YouTube", value: "youtube" }
+                  - { label: "Viber", value: "viber" }
+                  - { label: "Messenger", value: "facebook-messenger" }
+                  - { label: "Reddit", value: "reddit" }
+                  - { label: "TikTok", value: "music-note" }
+                  - { label: "Vesti", value: "newspaper" }
+                  - { label: "Mejl", value: "at" }
+                  - { label: "Donacije", value: "hand-coin" }
+                default: "Bez"
+
+              - { label: "Naslov", name: "naslov", widget: "string", i18n: true }
+              - { label: "Link", name: "link", widget: "string", i18n: true }
+
       - label: "Ostalo"
         name: "ostalo"
         file: "src/content/stranice/{{locale}}/ostalo.md"
@@ -258,42 +295,6 @@ collections:
           - { label: "Studenti u blokadi", name: "studenti_u_blokadi", widget: "string", i18n: true }
           - { label: "Kontakti pojedinačnih fakulteta", name: "pojedinacni_fakulteti", widget: "string", i18n: true }
           - { label: "Pratite live", name: "pratite_live", widget: "string", i18n: true }
-
-  - name: "ostali-linkovi"
-    label: "Ostali linkovi"
-    icon: link
-    files:
-    - name: "ostali-linkovi"
-      label: "Ostali linkovi"
-      file: "src/content/ostali-linkovi.md"
-      fields:
-        - label: "Linkovi"
-          label_singular: 'Link'
-          name: "linkovi"
-          widget: "list"
-          summary: "{{naslov}}"
-          fields:
-            - label: "Ikonica"
-              name: "ikonica"
-              widget: "select"
-              options:
-                - { label: "Bez", value: "bez" }
-                - { label: "Sajt", value: "web" }
-                - { label: "Instagram", value: "instagram" }
-                - { label: "Twitter", value: "twitter" }
-                - { label: "Facebook", value: "facebook" }
-                - { label: "YouTube", value: "youtube" }
-                - { label: "Viber", value: "viber" }
-                - { label: "Messenger", value: "facebook-messenger" }
-                - { label: "Reddit", value: "reddit" }
-                - { label: "TikTok", value: "music-note" }
-                - { label: "Vesti", value: "newspaper" }
-                - { label: "Mejl", value: "at" }
-                - { label: "Donacije", value: "hand-coin" }
-              default: "Bez"
-
-            - { label: "Naslov", name: "naslov", widget: "string", i18n: true }
-            - { label: "Link", name: "link", widget: "string", i18n: true }
 
   - name: "linkovi"
     label: "Linkovi"
