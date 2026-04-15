@@ -1,6 +1,6 @@
 ---
 link: pravo-svakog-deteta
-title: Безбедна школа – право дваког детета!
+title: Безбедна школа – право сваког детета!
 live: false
 draft: uredjivanje
 pubDate: 2026-04-15T19:30:00.000Z
