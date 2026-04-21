@@ -3,6 +3,9 @@ title: Студенти у блокади
 link: studenti_u_blokadi
 linkovi:
   - ikonica: web
+    naslov: Контролори у дијаспори
+    link: https://docs.google.com/forms/d/e/1FAIpQLSc08eDBADFSlkD9lQSJJSwmGg_8O_iCmsZHHjw0ZyPiKFdhLA/viewform
+  - ikonica: web
     naslov: Званични сајт студената у блокади
     link: https://blokade.org
   - ikonica: at
