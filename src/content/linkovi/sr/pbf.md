@@ -1,5 +1,5 @@
 ---
-title: Православно-богословски факултет
+title: Православни богословски факултет
 link: pbf
 linkovi:
   - ikonica: instagram
