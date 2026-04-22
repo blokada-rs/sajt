@@ -21,9 +21,9 @@ if (typeof lang === "undefined") {
 
 const { Content: Pocetna, frontmatter: pocetna } = await file("pocetna", lang);
 const { Content: Zahtevi } = await file("zahtevi", lang);
-const live = (await collection("vesti", lang)).filter((vest) => vest.data.live);
 
 const vesti = await collection("vesti", lang);
+const live = vesti.filter((vest) => vest.data.live);
 ---
 
 <Base
@@ -59,18 +59,16 @@ const vesti = await collection("vesti", lang);
     <Pocetna />
   </section>
 
-  <div class="dark-background full-width">
-    <section class="gap">
-      <h2>{pocetna.vesti}</h2>
-      {pocetna.vesti_tekst && <p class="section-subtitle">{pocetna.vesti_tekst}</p>}
-      <Slider>
-        {vesti.slice(0, 3).map(post =>
-          <Card link={`/${lang}/vesti/${post.id}`} {...post} />)
-        }
-        <a slot="button" href=`/${lang}/vesti` class="button primary dugme">{pocetna.vesti_dugme}</a>
-      </Slider>
-    </section>
-  </div>
+  <section class="dark-background">
+    <h2>{pocetna.vesti}</h2>
+    {pocetna.vesti_tekst && <p class="section-subtitle">{pocetna.vesti_tekst}</p>}
+    <Slider>
+      {vesti.slice(0, 3).map(post =>
+        <Card link={`/${lang}/vesti/${post.id}`} {...post} />)
+      }
+      <a slot="button" href=`/${lang}/vesti` class="button primary dugme">{pocetna.vesti_dugme}</a>
+    </Slider>
+  </section>
 
   <section>
     <Zahtevi />
@@ -204,12 +202,6 @@ const vesti = await collection("vesti", lang);
     flex-direction: column;
     gap: 0.5rem;
     z-index: 3;
-  }
-
-  .gap {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
   }
 
   .dugme {

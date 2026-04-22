@@ -170,6 +170,24 @@ collections:
           - { label: "SUSS dugme", name: "suss_dugme", widget: "string", i18n: true }
           - { label: "Konkretizacije zahteva", name: "konkretizacije_zahteva", widget: "string", i18n: true }
 
+      - label: "Izbori"
+        name: "izbori"
+        file: "src/content/stranice/{{locale}}/izbori.md"
+        create: false
+        i18n: true
+        fields:
+          - { label: "Naslov", name: "title", widget: "string", i18n: true }
+          - label: "Sekcije"
+            label_singular: "Sekcija"
+            name: "sections"
+            widget: "list"
+            i18n: true
+            fields:
+              - { label: "Naslov", name: "title", widget: "string", i18n: true, required: false }
+              - { label: "Link tekst", name: "link_text", widget: "string", i18n: true, required: false }
+              - { label: "Link", name: "link", widget: "string", i18n: true, required: false }
+              - { label: "Tekst", name: "text", widget: "markdown", i18n: true, required: false }
+
       - label: "O Blokadama"
         name: "o-blokadama"
         file: "src/content/stranice/{{locale}}/o-blokadama.md"

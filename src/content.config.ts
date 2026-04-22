@@ -86,6 +86,19 @@ const pocetna = defineCollection({
     }),
 });
 
+const izbori = defineCollection({
+    loader: glob({base: './src/content/stranice', pattern: '**/izbori.md'}),
+    schema: () => z.object({
+        title: z.string(),
+        sections: z.object({
+            title: z.string().optional(),
+            text: z.string().optional(),
+            link_text: z.string().optional(),
+            link: z.string().optional(),
+        }).array(),
+    }),
+});
+
 const zahtevi = defineCollection({
     loader: glob({base: './src/content/stranice', pattern: '**/zahtevi.md'}),
     schema: () => z.object({
@@ -168,6 +181,7 @@ export const collections = {
     afere,
     linkovi,
     pocetna,
+    izbori,
     zahtevi,
     faq,
     oblokadama,

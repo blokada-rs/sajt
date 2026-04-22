@@ -1,6 +1,8 @@
 ---
 naslov: Student blockades
 linkovi:
+  - naziv: Elections
+    link: /izbori
   - naziv: Demands
     link: /zahtevi
   - naziv: News
@@ -10,4 +12,3 @@ linkovi:
   - naziv: Contact
     link: /kontakt
 ---
-

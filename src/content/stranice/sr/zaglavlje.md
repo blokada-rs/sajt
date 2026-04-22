@@ -1,6 +1,8 @@
 ---
 naslov: Студенти у блокади
 linkovi:
+  - naziv: Избори
+    link: /izbori
   - naziv: Захтеви
     link: /zahtevi
   - naziv: Вести
@@ -14,4 +16,3 @@ linkovi:
   - naziv: Контакт
     link: /kontakt
 ---
-
