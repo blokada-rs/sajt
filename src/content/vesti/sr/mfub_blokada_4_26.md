@@ -1,7 +1,7 @@
 ---
 link: mfub_blokada_4_26
 title: Блокиран деканат Медицинског факултета
-live: true
+live: false
 draft: spremno
 pubDate: 2026-04-21T16:32:00.000Z
 heroImage: '@assets/images/mfub.webp'
