@@ -1,5 +1,5 @@
 ---
-title: Факултет мззичке уметности
+title: Факултет музичке уметности
 link: fmu
 linkovi:
   - ikonica: instagram
