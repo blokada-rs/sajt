@@ -28,7 +28,7 @@ const {frontmatter: izbori} = await file("izbori", lang);
             {section.text && <Markdown of={section.text} />}
             {section.link &&
                 <div class="buttons">
-                    <a slot="button" href={section.link} class="button primary dugme center">{section.link_text}</a>
+                    <a slot="button" href={section.link} class="button primary dugme center" download={section.link.endsWith(".pdf")}>{section.link_text}</a>
                 </div>
             }
         </section>
