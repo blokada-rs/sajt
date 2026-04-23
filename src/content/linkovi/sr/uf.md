@@ -1,6 +1,6 @@
 ---
 title: Fakultet za obrazovanje učitelja i vaspitača
-link: Uf
+link: uf
 linkovi:
   - ikonica: instagram
     naslov: Instagram profil
