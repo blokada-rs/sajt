@@ -183,6 +183,7 @@ collections:
             widget: "list"
             i18n: true
             fields:
+              - { label: "ID", name: "id", widget: "string", i18n: true, required: false }
               - { label: "Naslov", name: "title", widget: "string", i18n: true, required: false }
               - { label: "Link tekst", name: "link_text", widget: "string", i18n: true, required: false }
               - { label: "Link", name: "link", widget: "string", i18n: true, required: false }

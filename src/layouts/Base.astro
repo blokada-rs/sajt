@@ -31,11 +31,11 @@ const { lang } = Astro.params;
 
                 const lang = localStorage.getItem("lang");
                 if (lang !== null) {
-                    window.location.replace(`/${lang}${window.location.pathname}`);
+                    window.location.replace(`/${lang}${window.location.pathname + window.location.search + window.location.hash}`);
                     return;
                 }
 
-                window.location.replace(`/sr${window.location.pathname}`);
+                window.location.replace(`/${lang}${window.location.pathname + window.location.search + window.location.hash}`);
             })()
         </script>
         <BaseHead {title} {description} {image} />

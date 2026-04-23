@@ -91,6 +91,7 @@ const izbori = defineCollection({
     schema: () => z.object({
         title: z.string(),
         sections: z.object({
+            id: z.string().optional(),
             title: z.string().optional(),
             text: z.string().optional(),
             link_text: z.string().optional(),

@@ -7,7 +7,8 @@ sections:
       At the center of the movement, there are concrete demands concerning the responsibility of institutions, the decision-making methods, and the conditions in which students and the society should function. One of the ways to fulfill these demands is by calling an election, because then it would be possible to make changes to the current state of our country and this corrupt system.
 
       Through our work, we act as a political actor whose influence is based on numbers, connections and the ability to organize a joint action through a constantly expanding network.
-  - title: Stickers
+  - id: nalepnice
+    title: Stickers
     link_text: Get stickers
     link: /nalepnice.pdf
     text: |-
@@ -18,7 +19,8 @@ sections:
       Each sticker becomes a part of the larger picture that is built day by day. The more they are around us, the harder it is to ignore the meaning behind them.
 
       That’s why it’s important that as many people as possible download them and stick them wherever people pass, stop, or look.
-  - title: Donations
+  - id: donacije
+    title: Donations
     link_text: Donate
     link: https://studenti.org.rs/doniraj
     text: |-

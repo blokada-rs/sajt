@@ -23,7 +23,7 @@ const {frontmatter: izbori} = await file("izbori", lang);
 >
     <h1>{izbori.title}</h1>
     {izbori.sections.map((section, i) =>
-        <section class:list={[{ 'dark-background': i % 2 === 1 }]}>
+        <section class:list={[{ 'dark-background': i % 2 === 1 }]} id={section.id}>
             {section.title && <h2>{section.title}</h2>}
             {section.text && <Markdown of={section.text} />}
             {section.link &&
@@ -36,6 +36,10 @@ const {frontmatter: izbori} = await file("izbori", lang);
 </Base>
 
 <style>
+    :root {
+        scroll-padding-top: 4rem;
+    }
+
     .title {
         position: relative;
         background-size: cover;

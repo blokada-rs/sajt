@@ -193,7 +193,7 @@ hr {
 }
 
 :where(section:not(:last-child), .full-width) {
-    margin-bottom: 3rem;
+    padding-block: 3rem;
 }
 
 :where(sub, sup) {
