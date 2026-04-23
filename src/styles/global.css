@@ -192,9 +192,14 @@ hr {
     }
 }
 
-:where(section:not(:last-child), .full-width) {
-    padding-block: 3rem;
+:where(section:not(:first-of-type)) {
+    padding-top: 3rem;
 }
+
+:where(section:not(:last-of-type)) {
+    padding-bottom: 3rem;
+}
+
 
 :where(sub, sup) {
     vertical-align: sub;

@@ -29,7 +29,8 @@ sections:
       After the police confiscated the money donated to us and has yet to be returned, the resources available to the movement were further reduced.
 
       The continuity of the movement depends on how long this network can be maintained. Any support goes directly into that process and allows all our activities to continue with no interruption.
-  - title: Mailing list
+  - id: mejling-lista
+    title: Mailing list
     link_text: Join the mailing list
     link: https://anketa.studenti.org.rs/sr/surveys/288b2ed4-e690-4494-8b59-697098649aa8
     text: |-
