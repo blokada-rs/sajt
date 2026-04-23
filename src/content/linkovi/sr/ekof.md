@@ -1,5 +1,5 @@
 ---
-title: економски факултет
+title: Економски факултет
 link: ekof
 linkovi:
   - ikonica: web
