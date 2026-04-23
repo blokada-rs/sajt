@@ -8,6 +8,13 @@ pubDate: 2026-04-20T15:10:00.000Z
 heroImage: '@assets/images/5996765834581314578.webp'
 description: 23. априла окупљамо се у Горњем Милановцу и крећемо ка месту где је све почело. Други српски устанак није био само борба за територију, већ за достојанство и право на живот без страха.
 timeline:
+  - naslov: Дочек у Такову
+    datum: 2026-04-23T18:17:00.000Z
+    slike:
+      - '@assets/images/74898.webp'
+      - '@assets/images/74896.webp'
+      - '@assets/images/74892.webp'
+      - '@assets/images/74890.webp'
   - naslov: Тренуци са шетње
     datum: 2026-04-23T17:32:00.000Z
     slike:
