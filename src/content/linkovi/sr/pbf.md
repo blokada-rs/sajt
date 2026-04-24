@@ -9,6 +9,6 @@ linkovi:
     naslov: Twitter профил
     link: https://x.com/blokada_pbf
   - ikonica: at
-    naslov: blokadapbf@gmail.com
+    naslov: Мејл адреса
     link: mailto:blokadapbf@gmail.com
 ---
