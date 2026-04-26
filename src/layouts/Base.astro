@@ -35,7 +35,7 @@ const { lang } = Astro.params;
                     return;
                 }
 
-                window.location.replace(`/${lang}${window.location.pathname + window.location.search + window.location.hash}`);
+                window.location.replace(`/sr${window.location.pathname + window.location.search + window.location.hash}`);
             })()
         </script>
         <BaseHead {title} {description} {image} />
