@@ -20,22 +20,25 @@ const { lang } = Astro.params;
     <head>
         <script>
             (() => {
+                let link = `${window.location.pathname + window.location.search + window.location.hash}`
                 const langs = JSON.parse(document.documentElement.dataset.langs!!) as string[];
                 const shouldRedirect = !langs.some(lang =>
                   window.location.pathname.startsWith(`/${lang}/`) || window.location.pathname === `/${lang}`);
 
                 if (!shouldRedirect) {
                     localStorage.setItem("lang", document.documentElement.lang);
+                    link = link.substring(document.documentElement.lang.length + 1);
+                    window.history.replaceState({}, "", `${window.location.protocol}//${window.location.host}${link}`);
                     return;
                 }
 
                 const lang = localStorage.getItem("lang");
                 if (lang !== null) {
-                    window.location.replace(`/${lang}${window.location.pathname + window.location.search + window.location.hash}`);
+                    window.location.replace(`/${lang}${link}`);
                     return;
                 }
 
-                window.location.replace(`/sr${window.location.pathname + window.location.search + window.location.hash}`);
+                window.location.replace(`/sr/${link}`);
             })()
         </script>
         <BaseHead {title} {description} {image} />
