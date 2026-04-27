@@ -166,7 +166,7 @@ const { frontmatter } = await file("ostalo", lang);
     justify-content: center;
   }
 
-  #map {
+  #map:not(.fullscreen) {
     max-width: 1000px;
     width: 100%;
     border: none;
@@ -195,6 +195,12 @@ const { frontmatter } = await file("ostalo", lang);
 
   #map button :global(svg) {
     display: block;
+  }
+
+  .fullscreen {
+    position: fixed!important;
+    z-index: 1000;
+    inset: 0;
   }
 </style>
 
@@ -228,21 +234,26 @@ const { frontmatter } = await file("ostalo", lang);
   const fullscreen_button = document.getElementById("fullscreen")!;
   const locate_button = document.getElementById("locate")!;
 
-  fullscreen_button.onclick = () =>
-    document.fullscreenElement === null ?
-      map_container.requestFullscreen() :
-      document.exitFullscreen();
-
-  locate_button.onclick = () =>
-    map.locate({setView: true, maxZoom: 16});
-
   const map_data = JSON.parse(map_container.dataset.map!);
-
   const map = leaflet.map(map_container, {
     center: leaflet.latLng(map_data.coords_lat, map_data.coords_long),
     zoom: map_data.zoom,
     attributionControl: false,
   });
+
+  fullscreen_button.onclick = () => {
+    if (map_container.requestFullscreen) {
+      document.fullscreenElement === null ?
+          map_container.requestFullscreen() :
+          document.exitFullscreen();
+    } else {
+      map_container.classList.toggle("fullscreen");
+    }
+    map.invalidateSize()
+  }
+
+  locate_button.onclick = () =>
+    map.locate({setView: true, maxZoom: 16});
 
   let located_marker: leaflet.Marker | null = null;
   let located_circle: leaflet.Circle | null = null;
