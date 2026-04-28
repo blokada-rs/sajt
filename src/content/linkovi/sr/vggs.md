@@ -8,4 +8,7 @@ linkovi:
   - ikonica: twitter
     naslov: Twitter профил
     link: https://x.com/vggsblokada
+  - ikonica: at
+    naslov: Mail адреса
+    link: mailto:studentivggs16@gmail.com
 ---
