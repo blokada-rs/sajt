@@ -15,7 +15,10 @@ import {markdown} from "@mashehu/astropub-md";
 type Props = CollectionEntry<"vesti">["data"] & {lang: string, live?: boolean};
 
 const { lang, title, description = "", pubDate, updatedDate, heroImage, live = false, live_embed, timeline, map: map_prerender = null } = Astro.props;
-const map = {...map_prerender, markers: await Promise.all(map_prerender?.markers?.map(async (e) => ({...e, text: await markdown(e.text)})) ?? [])};
+const map =
+  (map_prerender !== null)
+  ? {...map_prerender, markers: await Promise.all(map_prerender?.markers?.map(async (e) => ({...e, text: await markdown(e.text)})) ?? [])}
+  : null
 
 const { lang: expectedLang } = Astro.params;
 
@@ -81,8 +84,9 @@ const { frontmatter } = await file("ostalo", lang);
       }
 
       <Timeline {timeline} />
-
-      <slot />
+      <article>
+        <slot />
+      </article>
     </div>
   </article>
 </Base>
@@ -115,9 +119,12 @@ const { frontmatter } = await file("ostalo", lang);
     margin-inline: auto;
   }
 
+  article {
+    margin-top: 1rem;
+  }
+
   .title {
-    margin-bottom: 1em;
-    padding: 1em 0;
+    padding-top: 1rem;
     text-align: center;
     line-height: 1;
   }
@@ -174,6 +181,7 @@ const { frontmatter } = await file("ostalo", lang);
     border: none;
     border-radius: 8px;
     aspect-ratio: 16/9;
+    margin-top: 1rem;
     isolation: isolate;
   }
 
