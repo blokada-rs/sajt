@@ -42,17 +42,16 @@ const live = vesti.filter((vest) => vest.data.live);
       height={320}
       sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${slavija.width}px`}
     />
-
-    <div class="live-box">
-      {live.map(live =>
-        <Live href={`/${lang}/vesti/${live.id}`}>{live.data.title}</Live>
-      )}
-    </div>
-
     <h1>{pocetna.naslov}</h1>
 
     <div class="square" />
     <div class="square" />
+  </div>
+
+  <div class="live-box">
+    {live.map(live =>
+      <Live href={`/${lang}/vesti/${live.id}`}>{live.data.title}</Live>
+    )}
   </div>
 
   <section>
@@ -140,12 +139,12 @@ const live = vesti.filter((vest) => vest.data.live);
     border-radius: 0.5rem;
   }
 
-  .title .square:nth-of-type(2) {
+  .title .square:nth-of-type(1) {
     bottom: -1rem;
     left: -1rem;
   }
 
-  .title .square:nth-of-type(3) {
+  .title .square:nth-of-type(2) {
     top: -1rem;
     right: -1rem;
   }
@@ -194,14 +193,14 @@ const live = vesti.filter((vest) => vest.data.live);
     }
   }
 
-  .title .live-box {
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
+  .live-box {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 0.5rem;
     z-index: 3;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
   }
 
   .dugme {
