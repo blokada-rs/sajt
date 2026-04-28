@@ -13,7 +13,7 @@ linkovi:
     link: https://www.facebook.com/share/1BPfvh29MA/
   - ikonica: web
     naslov: Блокадни часопис
-    link: https://filblok.info
+    link: https://filoblok.info
   - ikonica: at
     naslov: blokadafiloloski@gmail.com
     link: mailto:blokadafiloloski@gmail.com
