@@ -1,5 +1,5 @@
 ---
-title: Правни факултет универзитета УНИОН
+title: Правни факултет Универзитета УНИОН
 link: pfuub
 linkovi:
   - ikonica: instagram
