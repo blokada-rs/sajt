@@ -1,6 +1,6 @@
 ---
 title: Универзитет Сингидунум
-link: Singi
+link: singi
 linkovi:
   - ikonica: instagram
     naslov: Instagram профил
