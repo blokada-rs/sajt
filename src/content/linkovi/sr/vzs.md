@@ -14,4 +14,7 @@ linkovi:
   - ikonica: music-note
     naslov: TikTok налог
     link: https://www.tiktok.com/@vzs.blokada
+  - ikonica: web
+    naslov: Званични сајт
+    link: https://vzsblokada.com/
 ---
