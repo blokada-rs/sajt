@@ -44,13 +44,6 @@ const { frontmatter } = await file("ostalo", lang);
         <div class="about">
           {live && <Live>{frontmatter.live}</Live>}
           {pubDate && <FormattedDate date={pubDate} />}
-          <!--{-->
-          <!--  updatedDate && (-->
-          <!--    <div class="last-updated-on">-->
-          <!--      Last updated on <FormattedDate date={updatedDate} />-->
-          <!--    </div>-->
-          <!--  )-->
-          <!--}-->
         </div>
         <h1>{title}</h1>
         <hr />
@@ -73,13 +66,22 @@ const { frontmatter } = await file("ostalo", lang);
           <div data-map={JSON.stringify(map)} id="map">
             <div class="buttons">
               <button id="locate">
-                  <Icon name="mdi:my-location" size={ICON_SIZE_LG} />
+                <Icon name="mdi:my-location" size={ICON_SIZE_LG} />
               </button>
               <button id="fullscreen">
                 <Icon name="mdi:fullscreen" size={ICON_SIZE_LG} />
               </button>
             </div>
           </div>
+            <label>
+              Testic
+              <input list="list" id="search" type="text">
+              <datalist id="list">
+                {map.markers.map(marker => (
+                  <option value={marker.text} />
+                ))}
+              </datalist>
+            </label>
         </div>
       }
 
