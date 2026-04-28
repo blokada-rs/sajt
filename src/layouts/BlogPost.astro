@@ -10,10 +10,12 @@ import { file } from "@scripts/i18n";
 import 'leaflet/dist/leaflet.css';
 import {ICON_SIZE_LG} from "../consts";
 import {Icon} from "astro-icon/components";
+import {markdown} from "@mashehu/astropub-md";
 
 type Props = CollectionEntry<"vesti">["data"] & {lang: string, live?: boolean};
 
-const { lang, title, description = "", pubDate, updatedDate, heroImage, live = false, live_embed, timeline, map = null } = Astro.props;
+const { lang, title, description = "", pubDate, updatedDate, heroImage, live = false, live_embed, timeline, map: map_prerender = null } = Astro.props;
+const map = {...map_prerender, markers: await Promise.all(map_prerender?.markers?.map(async (e) => ({...e, text: await markdown(e.text)})) ?? [])};
 
 const { lang: expectedLang } = Astro.params;
 
@@ -275,6 +277,8 @@ const { frontmatter } = await file("ostalo", lang);
   leaflet.tileLayer('https://services.arcgisonline.com/arcgis/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
     maxZoom: 16,
   }).addTo(map);
+
+  console.log(map_data.markers)
 
   map_data.markers?.forEach((marker: any) =>
     leaflet.marker([marker.coords_lat, marker.coords_long], { icon: marker_icon })
