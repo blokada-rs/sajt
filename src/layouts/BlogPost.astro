@@ -278,8 +278,6 @@ const { frontmatter } = await file("ostalo", lang);
     maxZoom: 16,
   }).addTo(map);
 
-  console.log(map_data.markers)
-
   map_data.markers?.forEach((marker: any) =>
     leaflet.marker([marker.coords_lat, marker.coords_long], { icon: marker_icon })
       .addTo(map)
