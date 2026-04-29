@@ -1,7 +1,7 @@
 ---
 link: oblepimo-srbiju
 title: Србија се облепљује истином
-live: true
+live: false
 draft: uredjivanje
 pubDate: 2026-04-27T19:25:00.000Z
 heroImage: '@assets/images/oblepimo-srbiju.webp'
@@ -399,7 +399,7 @@ map:
       text: '**12:00 - 15:00:** Лесковац,<br>Трг револуције'
     - coords_lat: 44.5320302244571
       coords_long: 19.2219353027414
-      text: '**13:00 - 15:00:** Лозница,<br>Јована Цвијића '
+      text: '**13:00 - 15:00:** Лозница,<br>Јована Цвијића'
     - coords_lat: 43.2830354838365
       coords_long: 21.7205601717476
       text: '**15:00 - 17:00:** Мерошина,<br>Општина Мерошина, Цара Лазара 17'
