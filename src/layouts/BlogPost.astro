@@ -238,9 +238,24 @@ const { frontmatter } = await file("ostalo", lang);
 
   const map_data = JSON.parse(map_container.dataset.map!);
   const map = leaflet.map(map_container, {
+    preferCanvas: true,
+    renderer: leaflet.canvas(),
     center: leaflet.latLng(map_data.coords_lat, map_data.coords_long),
     zoom: map_data.zoom,
     attributionControl: false,
+    layers: [
+      leaflet.tileLayer('https://services.arcgisonline.com/arcgis/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
+        maxZoom: 16,
+      }),
+      leaflet.layerGroup(map_data.markers?.map((marker: any) =>
+        leaflet.circleMarker([marker.coords_lat, marker.coords_long], {
+          radius: 7,
+          color: "#b80000",
+          fillOpacity: 0.5,
+        })
+          .bindPopup(marker.text)
+      ))
+    ]
   });
 
   fullscreen_button.onclick = () => {
@@ -273,14 +288,4 @@ const { frontmatter } = await file("ostalo", lang);
   map.on('locationerror', (e: leaflet.ErrorEvent) => {
     alert(e.message);
   });
-
-  leaflet.tileLayer('https://services.arcgisonline.com/arcgis/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
-    maxZoom: 16,
-  }).addTo(map);
-
-  map_data.markers?.forEach((marker: any) =>
-    leaflet.marker([marker.coords_lat, marker.coords_long], { icon: marker_icon })
-      .addTo(map)
-      .bindPopup(marker.text)
-  );
 </script>
