@@ -205,38 +205,39 @@ const { frontmatter } = await file("ostalo", lang);
     z-index: 1000;
     inset: 0;
   }
+
+  :global(.marker-cluster-small, .marker-cluster-medium, .marker-cluster-large) {
+      background-color: rgba(148, 10, 10, 0.5) !important;
+  }
+
+  :global(.marker-cluster div) {
+      background-color: rgba(148, 10, 10, 1) !important;
+      color: white;
+  }
 </style>
 
 <script>
   import leaflet from "leaflet";
-
-  import MarkerIcon from "@assets/icons/marker.svg"
-  import MarkerIconShadow from "@assets/icons/marker-shadow.svg"
-
-  import MarkerLocationIcon from "@assets/icons/marker_location.svg"
-  import MarkerLocationIconShadow from "@assets/icons/marker_location-shadow.svg"
-
-  const marker_icon = leaflet.icon({
-    iconSize: [48, 48],
-    iconAnchor: [24, 44],
-    popupAnchor: [0, -40],
-    iconUrl: MarkerIcon.src,
-    shadowUrl: MarkerIconShadow.src,
-  });
-
-  const marker_location_icon = leaflet.icon({
-    iconSize: [48, 48],
-    iconAnchor: [24, 44],
-    popupAnchor: [0, -40],
-    iconUrl: MarkerLocationIcon.src,
-    shadowUrl: MarkerLocationIconShadow.src,
-  });
+  import "leaflet.markercluster";
+  import 'leaflet.markercluster/dist/MarkerCluster.css';
+  import 'leaflet.markercluster/dist/MarkerCluster.Default.css';
 
   const map_container = document.getElementById("map")!;
   const fullscreen_button = document.getElementById("fullscreen")!;
   const locate_button = document.getElementById("locate")!;
 
   const map_data = JSON.parse(map_container.dataset.map!);
+  const markers = new leaflet.MarkerClusterGroup()
+  map_data.markers?.forEach((marker: any) =>
+    leaflet.circleMarker([marker.coords_lat, marker.coords_long], {
+      radius: 7,
+      color: "#b80000",
+      fillOpacity: 0.5,
+    })
+    .bindPopup(marker.text)
+    .addTo(markers)
+  )
+
   const map = leaflet.map(map_container, {
     preferCanvas: true,
     renderer: leaflet.canvas(),
@@ -244,17 +245,8 @@ const { frontmatter } = await file("ostalo", lang);
     zoom: map_data.zoom,
     attributionControl: false,
     layers: [
-      leaflet.tileLayer('https://services.arcgisonline.com/arcgis/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
-        maxZoom: 16,
-      }),
-      leaflet.layerGroup(map_data.markers?.map((marker: any) =>
-        leaflet.circleMarker([marker.coords_lat, marker.coords_long], {
-          radius: 7,
-          color: "#b80000",
-          fillOpacity: 0.5,
-        })
-          .bindPopup(marker.text)
-      ))
+      leaflet.tileLayer('https://services.arcgisonline.com/arcgis/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', { maxZoom: 16 }),
+      markers,
     ]
   });
 
