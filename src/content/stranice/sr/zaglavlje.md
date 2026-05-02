@@ -1,8 +1,8 @@
 ---
 naslov: Студенти у блокади
 linkovi:
-  - naziv: Избори
-    link: /izbori
+  - naziv: Укључи се
+    link: /ukljuci-se
   - naziv: Захтеви
     link: /zahtevi
   - naziv: Вести

@@ -123,6 +123,11 @@ const faq = defineCollection({
     }),
 });
 
+const not_found = defineCollection({
+    loader: glob({base: './src/content/stranice', pattern: '**/404.md'}),
+    schema: () => z.object({}),
+});
+
 const oblokadama = defineCollection({
     loader: glob({base: './src/content/stranice', pattern: '**/o-blokadama.md'}),
     schema: () => z.object({
@@ -185,6 +190,7 @@ export const collections = {
     izbori,
     zahtevi,
     faq,
+    not_found,
     oblokadama,
     dijaspora,
     zaglavlje,

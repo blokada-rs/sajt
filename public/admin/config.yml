@@ -242,6 +242,14 @@ collections:
               - { label: "Odgovor", name: "odgovor", widget: "markdown", i18n: true }
           - { label: "Tekst", name: "body", widget: "markdown", i18n: true }
 
+      - label: "404"
+        name: "404"
+        file: "src/content/stranice/{{locale}}/404.md"
+        create: false
+        i18n: true
+        fields:
+          - { label: "Tekst", name: "body", widget: "markdown", i18n: true }
+
       - label: "Zaglavlje"
         name: "zaglavlje"
         file: "src/content/stranice/{{locale}}/zaglavlje.md"

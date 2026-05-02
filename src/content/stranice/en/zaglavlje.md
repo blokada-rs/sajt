@@ -1,8 +1,8 @@
 ---
 naslov: Student blockades
 linkovi:
-  - naziv: Elections
-    link: /izbori
+  - naziv: Join us
+    link: /ukljuci-se
   - naziv: Demands
     link: /zahtevi
   - naziv: News
