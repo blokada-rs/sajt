@@ -5,7 +5,7 @@ import {z} from 'astro/zod'
 const ikonice = [
     "bez", "web", "instagram", "twitter", "at",
     "facebook", "youtube", "viber", "facebook-messenger",
-    "music-note", "threads", "reddit", "newspaper", "hand-coin"
+    "music-note", "threads", "reddit", "newspaper", "hand-coin", "sticker"
 ];
 
 const vesti = defineCollection({

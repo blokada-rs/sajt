@@ -294,6 +294,7 @@ collections:
                   - { label: "Vesti", value: "newspaper" }
                   - { label: "Mejl", value: "at" }
                   - { label: "Donacije", value: "hand-coin" }
+                  - { label: "Stikeri", value: "sticker" }
                 default: "Bez"
 
               - { label: "Naslov", name: "naslov", widget: "string", i18n: true }
@@ -354,6 +355,7 @@ collections:
               - { label: "Vesti", value: "newspaper" }
               - { label: "Mejl", value: "at" }
               - { label: "Donacije", value: "hand-coin" }
+              - { label: "Stikeri", value: "sticker" }
             default: "Bez"
 
           - { label: "Naslov", name: "naslov", widget: "string", i18n: true }
