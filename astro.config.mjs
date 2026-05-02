@@ -10,6 +10,7 @@ export default defineConfig({
     cacheDir: "cache",
     redirects: {
         '/sub': '/linkovi/studenti_u_blokadi',
+        '/izbori': '/ukljuci-se',
     },
     i18n: {
         locales: ["sr", "sr-lat", "en"],

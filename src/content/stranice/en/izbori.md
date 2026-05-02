@@ -1,5 +1,5 @@
 ---
-title: Elections
+title: Join the movement
 sections:
   - text: |-
       The student movement in Serbia today functions as a wide network that spreads through faculties, cities and social networks, without a central leadership. Our organization is based on the principles of direct democracy, where through plenums and open discussions we make decisions and take responsibility for further steps.
