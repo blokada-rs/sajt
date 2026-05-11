@@ -2,7 +2,6 @@
 link: nas-protest
 title: Our pRoTeSt
 live: false
-draft: uredjivanje
 pubDate: 2025-03-07T16:13:00.000Z
 heroImage: '@assets/images/nas-protest.png'
 ---

@@ -1,7 +1,6 @@
 ---
 link: sretnimo-se-na-sretenje
 title: Сретнимо се на Сретење!
-draft: spremno
 pubDate: 2025-02-15T08:00:00.000Z
 heroImage: '@assets/images/sretnimo-se-na-sretenje.jpg'
 ---

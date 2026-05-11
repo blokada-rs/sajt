@@ -2,7 +2,6 @@
 link: zadnji-voz-za-cacak
 title: Задњи воз за Чачак
 live: false
-draft: uredjivanje
 pubDate: 2025-05-20T15:13:00.000Z
 heroImage: '@assets/images/zvzcck.webp'
 description: Задњи воз за Чачак - где је цена карте истина!

@@ -2,7 +2,6 @@
 link: dosta-je-bilo-krvi
 title: Доста је било крви
 live: false
-draft: uredjivanje
 pubDate: 2025-06-02T20:43:00.000Z
 heroImage: '@assets/images/pravni1.webp'
 description: Скуп подршке испред Правног факултета у Београду поводом напада на професорку и портира.

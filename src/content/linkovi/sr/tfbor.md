@@ -1,5 +1,5 @@
 ---
-title: Tehnički fakultet Bor
+title: Техничи факултет Бор
 link: tfbor
 linkovi:
   - ikonica: instagram

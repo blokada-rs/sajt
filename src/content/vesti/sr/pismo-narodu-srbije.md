@@ -2,7 +2,6 @@
 link: pismo-narodu-srbije
 title: Писмо народу Србије
 live: false
-draft: uredjivanje
 pubDate: 2025-03-09T19:27:00.000Z
 heroImage: '@assets/images/pismo-narodu-srbije.jpg'
 ---

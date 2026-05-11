@@ -1,7 +1,6 @@
 ---
 link: šetnja-do-novog-sada
 title: Шетња до Новог Сада
-draft: spremno
 pubDate: 2025-01-30T09:00:00.000Z
 heroImage: '@assets/images/do-novog-sada.jpg'
 ---

@@ -1,12 +1,13 @@
-<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="noindex" />
-    <link href="/admin/config.yml" type="text/yaml" rel="cms-config-url" />
-    <link rel="preload" href="/fonts/montserrat-v29-cyrillic_latin_latin-ext-regular.woff2" as="font" type="font/ttf" crossorigin />
-    <link rel="preload" href="/fonts/montserrat-v29-cyrillic_latin_latin-ext-700.woff2" as="font" type="font/ttf" crossorigin />    
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="robots" content="noindex"/>
+    <link href="/admin/config.yml" type="text/yaml" rel="cms-config-url"/>
+    <link rel="preload" href="/fonts/montserrat-v29-cyrillic_latin_latin-ext-regular.woff2" as="font" type="font/ttf"
+          crossorigin/>
+    <link rel="preload" href="/fonts/montserrat-v29-cyrillic_latin_latin-ext-700.woff2" as="font" type="font/ttf"
+          crossorigin/>
     <title>Content Manager</title>
     <style>
         @font-face {
@@ -32,10 +33,225 @@
     </style>
 </head>
 <body>
- <script>
-    import { init } from '@sveltia/cms';
+<script>
+    import { init, type Collection, type CollectionDivider } from '@sveltia/cms';
+    import {
+        folder_collection, file_collection, file, string_field, bool_field,
+        enum_field, datetime_field, image_field, text_field, markdown_field,
+        list_field, divider, object_field, number_field
+    } from "@scripts/content.ts"
 
-    init();
- </script>
+    const icons = [
+        { label: "Bez", value: "bez" },
+        { label: "Sajt", icon: "web", value: "web" },
+        { label: "Instagram", icon: "instagram", value: "instagram" },
+        { label: "Twitter", icon: "twitter", value: "twitter" },
+        { label: "Facebook", icon: "facebook", value: "facebook" },
+        { label: "YouTube", icon: "youtube", value: "youtube" },
+        { label: "Viber", icon: "viber", value: "viber" },
+        { label: "Messenger", icon: "facebook-messenger", value: "facebook-messenger" },
+        { label: "Reddit", icon: "reddit", value: "reddit" },
+        { label: "TikTok", icon: "music-note", value: "music-note" },
+        { label: "Vesti", icon: "newspaper", value: "newspaper" },
+        { label: "Mejl", icon: "at", value: "at" },
+        { label: "Donacije", icon: "hand-coin", value: "hand-coin" },
+        { label: "Stikeri", icon: "sticker", value: "sticker" },
+    ]
+
+    const vesti: Collection =
+        folder_collection("vesti", "Vesti", "newspaper", "src/content/vesti", [
+            string_field("link", "Link").i18n("duplicate"),
+            string_field("title", "Naslov"),
+            bool_field("live", "Lajv"),
+            string_field("live_embed", "Video ID").i18n("duplicate").required(false),
+            datetime_field("pubDate", "Datum objavljivanja"),
+            datetime_field("updatedDate", "Datum izmene").required(false),
+            image_field("heroImage", "Glavna slika"),
+            object_field("map", "Mapa", [
+                number_field("coords_lat", "Geografska širina").default(44.8118),
+                number_field("coords_long", "Geografska dužina").default(20.4659),
+                number_field("zoom", "Zoom").default(12).type("int"),
+                list_field("markers", "Markeri", [
+                    number_field("coords_lat", "Geografska širina"),
+                    number_field("coords_long", "Geografska dužina"),
+                    markdown_field("text", "Tekst")
+                ]).singular( "Marker").required(false)
+            ]).required(false),
+            text_field("description", "Opis").required(false),
+            markdown_field("body", "Tekst"),
+            list_field("timeline", "Tajmlajn",[
+                string_field("naslov", "Naslov"),
+                datetime_field("datum", "Datum"),
+                list_field("videos", "Video IDs", [
+                    string_field("id", "ID")
+                ]).singular("Video ID"),
+                list_field("slike", "Slike", [
+                    image_field("slike", "Slike")
+                ]).singular("Slika"),
+                markdown_field("tekst", "Tekst")
+            ]).add_to_top().required(false).i18n(false),
+        ]).slug("{{fields.link}}").sort_by("pubDate").make();
+
+    const akcije =
+        folder_collection("akcije", "Akcije", "timeline", "src/content/akcije", [
+            string_field("link", "Link").i18n("duplicate"),
+            string_field("title", "Naslov"),
+            datetime_field("pubDate", "Datum akcije"),
+            image_field("heroImage", "Glavna slika"),
+            string_field("description", "Opis"),
+            markdown_field("body", "Tekst"),
+        ]).slug("{{fields.link}}").sort_by("pubDate").make();
+
+    const afere =
+        folder_collection("afere", "Afere", "priority_high", "src/content/afere", [
+            string_field("link", "Link").i18n("duplicate"),
+            string_field("title", "Naslov"),
+            markdown_field("body", "Tekst"),
+        ]).slug("{{fields.link}}").make();
+
+    const stranice =
+        file_collection("stranice", "Stranice", "description", [
+            file("pocetna", "Početna", "src/content/stranice/{{locale}}/početna.md", [
+                string_field("naslov", "Naslov"),
+                markdown_field("body", "Opis"),
+                string_field("vesti", "Vesti"),
+                markdown_field("vesti_tekst", "Vesti tekst"),
+                string_field("vesti_dugme", "Vesti dugme"),
+                string_field("akc", "AKC"),
+                markdown_field("akc_tekst", "AKC tekst"),
+                string_field("suss", "SUSS"),
+                markdown_field("suss_tekst", "SUSS tekst"),
+                string_field("suss_dugme", "SUSS dugme"),
+                string_field("konkretizacije_zahteva", "Konkretizacijе zahteva"),
+            ]),
+
+            file("izbori", "Izbori", "src/content/stranice/{{locale}}/izbori.md", [
+                string_field("title", "Naslov"),
+                list_field("sections", "Sekcije", [
+                    string_field("id", "ID"),
+                    string_field("title", "Naslov"),
+                    string_field("link_text", "Link tekst"),
+                    string_field("link", "Link"),
+                    markdown_field("text", "Tekst")
+                ]).singular("Sekcija")
+            ]),
+
+            file("o-blokadama", "O Blokadama", "src/content/stranice/{{locale}}/o-blokadama.md", [
+                string_field("title", "Naslov"),
+                markdown_field("body", "Tekst")
+            ]),
+
+            file("dijaspora", "Dijaspora", "src/content/stranice/{{locale}}/dijaspora.md", [
+                string_field("title", "Naslov"),
+                markdown_field("body", "Tekst")
+            ]),
+
+            file("zahtevi", "Zahtevi", "src/content/stranice/{{locale}}/zahtevi.md", [
+                string_field("title", "Title"),
+                string_field("naslov", "Naslov"),
+                list_field("zahtevi", "Zahtevi", [
+                    string_field("original", "Originalni oblik"),
+                    markdown_field("konkretizacija", "Konkretizacija")
+                ]).singular("Zahtev"),
+                markdown_field("body", "Tekst")
+            ]),
+
+            file("404", "404", "src/content/stranice/{{locale}}/404.md", [
+                markdown_field("body", "Tekst")
+            ]),
+
+            file("zaglavlje", "Zaglavlje", "src/content/stranice/{{locale}}/zaglavlje.md", [
+                string_field("naslov", "Naslov"),
+                list_field("linkovi", "Linkovi", [
+                    string_field("naziv", "Naslov"),
+                    string_field("link", "Link").url(true)
+                ]).singular("Link")
+            ]),
+
+            file("ostali-linkovi", "Ostali linkovi", "src/content/stranice/{{locale}}/ostali-linkovi.md", [
+                string_field("ostali_linkovi", "Ostali linkovi"),
+                string_field("najnovije_vesti", "Najnovije vesti"),
+                list_field("linkovi", "Linkovi", [
+                    enum_field("ikonica", "Ikonica", icons.map(({value, label}) => [value, label])),
+                    string_field("naslov", "Naslov"),
+                    string_field("link", "Link").url(true)
+                ]).singular("Link")
+            ]),
+
+            file("ostalo", "Ostalo", "src/content/stranice/{{locale}}/ostalo.md", [
+                string_field("akcije", "Akcije"),
+                string_field("vesti", "Vesti"),
+                string_field("afere", "Afere"),
+                string_field("notifikacije", "Uključi notifikacije"),
+                string_field("kontakt", "Kontakt"),
+                string_field("live", "Live"),
+                string_field("studenti_u_blokadi", "Studenti u blokadi"),
+                string_field("pojedinacni_fakulteti", "Kontakti pojedinačnih fakulteta"),
+                string_field("pratite_live", "Pratite live")
+            ])
+        ]).make();
+
+    const linkovi =
+        folder_collection("linkovi", "Linkovi", "link", "src/content/linkovi", [
+            string_field("title", "Naslov"),
+            string_field("link", "Link"),
+            list_field("linkovi", "Linkovi", [
+                enum_field("ikonica", "Ikonica", icons.map(({value, label}) => [value, label])),
+                string_field("naslov", "Naslov"),
+                string_field("link", "Link").url(true)
+            ]).singular("Link").summary("{{naslov}}")
+        ]).make();
+
+    const collections: (Collection | CollectionDivider)[] = [
+        vesti, akcije, afere,
+        divider(),
+        stranice, linkovi
+    ];
+
+    init({
+        config: {
+            load_config_file: false,
+            site_url: "https://blokade.org",
+            logo: {
+                src: "https://blokade.org/favicon.ico",
+            },
+            media_folder: "/src/assets/images/",
+            public_folder: "@assets/images/",
+            i18n: {
+                structure: "multiple_folders",
+                locales: ["sr", "en"],
+                initial_locales: ["sr"],
+                default_locale: "sr"
+            },
+            backend: {
+                name: "github",
+                repo: "blokada-rs/sajt",
+                branch: "main",
+                base_url: "https://sveltia-cms-auth.studblokade.workers.dev/"
+            },
+            media_libraries: {
+                default: {
+                    config: {
+                        transformations: {
+                            raster_image: {
+                                format: "webp",
+                                quality: 85,
+                                width: 1920,
+                                height: 1920
+                            },
+                            svg: {
+                                optimize: true
+                            }
+                        }
+                    }
+                }
+            },
+            output: {
+                omit_empty_optional_fields: true,
+            },
+            collections,
+        }
+    });
+</script>
 </body>
 </html>

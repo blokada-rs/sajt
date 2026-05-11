@@ -2,7 +2,6 @@
 link: 29-novembar
 title: Urgent action of support for an arrested colleague
 live: false
-draft: uredjivanje
 pubDate: 2025-04-07T21:24:00.000Z
 heroImage: '@assets/images/29-novembar.png'
 ---

@@ -1,7 +1,6 @@
 ---
 link: dodji-na-mostar-ako-imas-petlju
 title: Come to Mostar if you have the guts
-draft: false
 pubDate: 2025-01-10
 heroImage: '@assets/images/petlja.jpg'
 ---

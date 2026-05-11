@@ -2,7 +2,6 @@
 link: studentski-edikt
 title: Студентски едикт
 live: false
-draft: spremno
 pubDate: 2025-02-28T12:16:00
 heroImage: '@assets/images/studentski-edikt.jpg'
 timeline:

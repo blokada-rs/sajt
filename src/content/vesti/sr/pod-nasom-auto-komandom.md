@@ -2,7 +2,6 @@
 link: pod-nasom-auto-komandom
 title: Под нашом (ауто)командом
 live: false
-draft: spremno
 pubDate: 2025-01-27
 heroImage: '@assets/images/autokomanda.jpg'
 ---

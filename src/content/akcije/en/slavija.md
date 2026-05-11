@@ -1,7 +1,6 @@
 ---
 link: slavija
 title: Slavija
-draft: false
 pubDate: 2024-12-22
 heroImage: '@assets/images/beograd-je-opet-svet.jpg'
 ---

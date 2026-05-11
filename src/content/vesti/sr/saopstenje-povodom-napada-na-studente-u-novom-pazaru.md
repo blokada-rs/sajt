@@ -2,7 +2,6 @@
 link: saopstenje-povodom-napada-na-studente-u-novom-pazaru
 title: Саопштење поводом напада на студенте у Новом Пазару
 live: false
-draft: spremno
 pubDate: 2025-02-19T02:11:00
 heroImage: '@assets/images/placeholder.jpg'
 ---

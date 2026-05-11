@@ -2,7 +2,6 @@
 link: praticemo-izbore
 title: 'Студенти у блокади прате изборе 29. марта: Бићемо у свим општинама'
 live: false
-draft: spremno
 pubDate: 2026-03-28T01:39:00.000Z
 updatedDate: 2026-03-28T01:39:00.000Z
 heroImage: '@assets/images/5915698945344605478.webp'

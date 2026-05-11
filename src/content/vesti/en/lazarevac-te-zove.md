@@ -2,7 +2,6 @@
 link: lazarevac-te-zove
 title: Lazarevac is calling you
 live: false
-draft: uredjivanje
 pubDate: 2025-06-09T16:20:00.000Z
 heroImage: '@assets/images/la.webp'
 description: Students from Lazarevac invite you to a protest on June 10.

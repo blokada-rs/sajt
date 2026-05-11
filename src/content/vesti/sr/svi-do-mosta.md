@@ -2,7 +2,6 @@
 link: svi-do-mosta
 title: Сви до моста, јер је доста
 live: false
-draft: uredjivanje
 pubDate: 2025-03-26T16:01:00.000Z
 heroImage: '@assets/images/photo_2025-03-26_16-12-05.jpg'
 timeline:

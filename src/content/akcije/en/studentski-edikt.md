@@ -1,7 +1,6 @@
 ---
 link: studentski-edikt
 title: The Student Edict
-draft: Uređivanje
 pubDate: 2025-03-01T09:00:00.000Z
 heroImage: '@assets/images/studentski-edikt-1.jpg'
 ---

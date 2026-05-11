@@ -1,7 +1,6 @@
 ---
 link: pod-našom-auto-komandom
 title: Under our command
-draft: false
 pubDate: 2025-01-27T14:03:00
 heroImage: '@assets/images/autokomanda-masa.jpg'
 ---

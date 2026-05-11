@@ -2,7 +2,6 @@
 link: sloboda-vlada-carsijom
 title: Freedom rules the bazaar
 live: false
-draft: uredjivanje
 pubDate: 2025-04-11T18:36:00.000Z
 heroImage: '@assets/images/novi-pazar.jpg'
 description: Roses are red, the bazaar is being prepared, system reform is coming on April 12.

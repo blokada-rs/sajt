@@ -3,7 +3,6 @@ link: osma-epizoda-podkasta
 title: Рушење Савског моста | „Ко је теби крив?”
 live: false
 live_embed: PT0ov5tu5xc
-draft: uredjivanje
 pubDate: 2025-11-16T19:59:00.000Z
 heroImage: '@assets/images/35363.webp'
 ---

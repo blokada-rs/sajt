@@ -1,7 +1,6 @@
 ---
 link: šetnja-do-kragujevca
 title: Шетња до Крагујевца
-draft: prevodjenje
 pubDate: 2025-02-11T23:26:00.000Z
 heroImage: '@assets/images/setnja-do-kragujevca.jpg'
 ---

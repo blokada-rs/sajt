@@ -2,7 +2,6 @@
 link: akcija-operacija
 title: Акција „Операција”
 live: false
-draft: uredjivanje
 pubDate: 2025-03-10T23:10:00.000Z
 heroImage: '@assets/images/1000155773.jpg'
 timeline:

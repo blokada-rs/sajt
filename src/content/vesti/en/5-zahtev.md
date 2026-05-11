@@ -2,7 +2,6 @@
 link: 5-zahtev
 title: 5th student demand
 live: false
-draft: uredjivanje
 pubDate: 2025-04-04T18:00:00.000Z
 heroImage: '@assets/images/5-zahtev.png'
 ---

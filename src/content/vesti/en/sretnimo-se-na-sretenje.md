@@ -2,7 +2,6 @@
 link: sretnimo-se-na-sretenje
 title: Let's meet at Sretenje!
 live: false
-draft: false
 pubDate: 2025-02-13T14:38:00
 heroImage: '@assets/images/protestni-program.jpg'
 ---

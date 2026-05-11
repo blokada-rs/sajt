@@ -2,7 +2,6 @@
 link: dan-d-ce-se-desiti
 title: Дан Д ће се десити, али настава не!
 live: false
-draft: prevodjenje
 pubDate: 2025-03-02T22:00:00.000Z
 heroImage: '@assets/images/dan-d.jpg'
 description: У понедељак, 3. марта, организоваће се протест испред Факултета за медије и комуникације због најава о почетку академских активности.

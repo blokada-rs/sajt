@@ -2,7 +2,6 @@
 link: heroj_4_26
 title: Како да постанете херој на један дан?
 live: false
-draft: uredjivanje
 pubDate: 2026-04-20T14:35:00.000Z
 heroImage: '@assets/images/5994395162957777961.webp'
 description: |-

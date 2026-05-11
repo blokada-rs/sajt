@@ -2,7 +2,6 @@
 link: rts-blokada
 title: Хитна акција блокаде РТС-а
 live: false
-draft: uredjivanje
 pubDate: 2025-04-14T20:29:00.000Z
 heroImage: '@assets/images/rts-1.png'
 description: Хитно! Позив на изненадну акцију испред РТС-а!

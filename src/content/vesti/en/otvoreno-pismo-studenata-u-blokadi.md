@@ -2,7 +2,6 @@
 link: otvoreno-pismo-studenata-u-blokadi
 title: An open letter from students in blockade
 live: false
-draft: uredjivanje
 pubDate: 2025-02-26T02:18:00
 heroImage: '@assets/images/placeholder.jpg'
 ---

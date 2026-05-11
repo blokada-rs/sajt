@@ -2,7 +2,6 @@
 link: dosta-je-bilo-krvi
 title: Enough of blood
 live: false
-draft: uredjivanje
 pubDate: 2025-06-02T20:43:00.000Z
 heroImage: '@assets/images/pravni1.webp'
 ---

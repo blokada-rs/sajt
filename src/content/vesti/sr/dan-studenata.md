@@ -2,7 +2,6 @@
 link: dan-studenata
 title: Дан студената
 live: false
-draft: uredjivanje
 pubDate: 2025-04-04T13:25:00.000Z
 heroImage: '@assets/images/dan-studenata-1.png'
 description: О насиљу и неиспуњењу захтева

@@ -2,7 +2,6 @@
 link: saopstenje-povodom-napada-na-studente-u-novom-pazaru
 title: Statement regarding the attack on students in Novi Pazar
 live: false
-draft: false
 pubDate: 2025-02-19T02:11:00
 heroImage: '@assets/images/placeholder.jpg'
 ---

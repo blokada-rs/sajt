@@ -1,7 +1,6 @@
 ---
 link: nema-nove-za-staru-ste-nam-još-dužni
 title: Нема нове - за стару сте нам још дужни
-draft: spremno
 pubDate: 2024-12-31
 heroImage: '@assets/images/nema-nove.jpg'
 ---

@@ -1,7 +1,6 @@
 ---
 link: školski-čas-u-zadnji-čas
 title: “Школски час у задњи час”
-draft: spremno
 pubDate: 2025-01-19
 heroImage: '@assets/images/skolski-cas-u-zadnji-cas.jpg'
 ---

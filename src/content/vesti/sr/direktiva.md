@@ -2,7 +2,6 @@
 link: direktiva
 title: Студенти траже парламентарне изборе
 live: false
-draft: uredjivanje
 pubDate: 2025-05-05T21:30:00.000Z
 heroImage: '@assets/images/direktiva.jpg'
 ---

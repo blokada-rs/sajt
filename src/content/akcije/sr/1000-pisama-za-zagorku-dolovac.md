@@ -1,7 +1,6 @@
 ---
 link: 1000-pisama-za-zagorku-dolovac
 title: 1000 писама за Загорку Доловац
-draft: spremno
 pubDate: 2024-12-25
 heroImage: '@assets/images/pisma-za-zagu.jpg'
 ---

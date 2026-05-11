@@ -2,7 +2,6 @@
 link: dan-studenata-pod-kontrolom-i-pritiscima
 title: Дан студената у условима притиска и контроле
 live: false
-draft: spremno
 pubDate: 2026-04-04T16:55:00.000Z
 heroImage: '@assets/images/72345.webp'
 description: Овај Дан студената долази после године у којој је однос према студентима јасно постављен. Окупљања се прекидају, студенти се приводе, а интервенције постају редовна појава.

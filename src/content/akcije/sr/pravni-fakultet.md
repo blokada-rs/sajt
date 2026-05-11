@@ -1,7 +1,6 @@
 ---
 link: pravni-fakultet
 title: Правни факултет
-draft: spremno
 pubDate: 2025-01-16
 heroImage: '@assets/images/profesor-pravnog.jpg'
 ---

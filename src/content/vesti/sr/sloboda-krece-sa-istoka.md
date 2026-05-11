@@ -2,7 +2,6 @@
 link: sloboda-krece-sa-istoka
 title: Слобода креће са истока
 live: false
-draft: uredjivanje
 pubDate: 2025-05-23T19:20:00.000Z
 heroImage: '@assets/images/za.webp'
 description: Зајечар бира слободу 24. маја! Придружите се великом протесту студената и будите део промене.

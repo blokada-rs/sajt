@@ -2,7 +2,6 @@
 link: hapsenja-2-4-26
 title: Академски бунт се угасити не може!
 live: false
-draft: uredjivanje
 pubDate: 2026-04-02T18:05:00.000Z
 updatedDate: 2026-04-02T18:05:00.000Z
 heroImage: '@assets/images/hapsenja2426.webp'

@@ -2,7 +2,6 @@
 link: osmi-mart
 title: March 8th in the streets
 live: false
-draft: uredjivanje
 pubDate: 2025-03-08T00:00:00.000Z
 heroImage: '@assets/images/osmi-mart.jpg'
 ---

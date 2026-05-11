@@ -2,7 +2,6 @@
 link: dan-d-ce-se-desiti
 title: D-Day will happen, but classes won't!
 live: false
-draft: uredjivanje
 pubDate: 2025-03-02T22:00:00.000Z
 heroImage: '@assets/images/dan-d.jpg'
 ---

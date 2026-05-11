@@ -2,7 +2,6 @@
 link: blokada-suda-u-novom-sadu
 title: Blockade of the court in Novi Sad
 live: false
-draft: uredjivanje
 pubDate: 2025-05-19T16:00:00.000Z
 heroImage: '@assets/images/ns.webp'
 ---

@@ -2,7 +2,6 @@
 link: dobrovoljno_davanje_krvi_4_26
 title: Акција донирања крви
 live: false
-draft: uredjivanje
 pubDate: 2026-04-07T14:38:00.000Z
 updatedDate: 2026-04-07T14:38:00.000Z
 heroImage: '@assets/images/IMG_9412.webp'

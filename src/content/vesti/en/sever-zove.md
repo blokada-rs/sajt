@@ -2,7 +2,6 @@
 link: sever-zove
 title: The North is calling
 live: false
-draft: uredjivanje
 pubDate: 2025-05-17T11:00:00.000Z
 heroImage: '@assets/images/subotica.webp'
 description: Students from Subotica invite you to a protest on May 17. The North is calling!

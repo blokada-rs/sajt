@@ -2,7 +2,6 @@
 link: oblepimo-srbiju
 title: Србија се облепљује истином
 live: false
-draft: uredjivanje
 pubDate: 2026-04-27T19:25:00.000Z
 heroImage: '@assets/images/oblepimo-srbiju.webp'
 map:

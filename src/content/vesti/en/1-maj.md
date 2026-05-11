@@ -2,7 +2,6 @@
 link: 1-maj
 title: International Workers' Day
 live: false
-draft: uredjivanje
 pubDate: 2025-05-01T09:09:00.000Z
 heroImage: '@assets/images/1-maj_.jpg'
 ---

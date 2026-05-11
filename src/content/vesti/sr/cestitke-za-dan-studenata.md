@@ -2,7 +2,6 @@
 link: cestitke-za-dan-studenata
 title: Како власт честита Дан студената
 live: false
-draft: uredjivanje
 pubDate: 2026-04-04T19:08:00.000Z
 heroImage: '@assets/images/72382.webp'
 description: Данас, на Дан студената, слушамо министра који говори да полиција има право да нас убије.

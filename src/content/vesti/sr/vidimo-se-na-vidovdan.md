@@ -3,7 +3,6 @@ link: vidimo-se-na-vidovdan
 title: Видимо се на Видовдан
 live: false
 live_embed: y5y4sf0yOOU
-draft: uredjivanje
 pubDate: 2025-06-28T02:30:00.000Z
 heroImage: '@assets/images/vidovdan(1).webp'
 description: Окупљање на Тргу Славија у 18 часова, 28. јуна 2025.

@@ -2,7 +2,6 @@
 link: pionirski-park-pripada-narodu
 title: Пионирски парк припада народу
 live: false
-draft: uredjivanje
 pubDate: 2025-07-12T20:35:00.000Z
 heroImage: '@assets/images/1000220363.webp'
 ---

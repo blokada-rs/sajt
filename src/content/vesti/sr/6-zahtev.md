@@ -2,7 +2,6 @@
 link: 6-zahtev
 title: 6. захтев студената у блокади
 live: false
-draft: uredjivanje
 pubDate: 2025-04-07T18:00:00.000Z
 heroImage: '@assets/images/6-zahtev.jpg'
 ---

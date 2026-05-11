@@ -2,7 +2,6 @@
 link: gde-su-blokade
 title: Где су блокаде?
 live: false
-draft: uredjivanje
 pubDate: 2025-07-01T20:25:00.000Z
 heroImage: '@assets/images/blokic.webp'
 description: Помозите нам да на време сазнамо где се све блокирају улице широм Србије.

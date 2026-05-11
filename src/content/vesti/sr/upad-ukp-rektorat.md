@@ -2,7 +2,6 @@
 link: upad-ukp-rektorat
 title: УКП у згради Ректората Универзитета у Београду
 live: false
-draft: uredjivanje
 pubDate: 2026-03-31T12:10:00.000Z
 updatedDate: 2026-03-31T12:10:00.000Z
 heroImage: '@assets/images/SAJT 1.webp'

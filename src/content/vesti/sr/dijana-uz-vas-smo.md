@@ -2,7 +2,6 @@
 link: dijana-uz-vas-smo
 title: Дијана, уз Вас смо!
 live: false
-draft: uredjivanje
 pubDate: 2025-11-03T19:47:00.000Z
 heroImage: '@assets/images/SDADA.webp'
 ---

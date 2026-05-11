@@ -2,7 +2,6 @@
 link: rts-blokada
 title: Urgent action to block RTS
 live: false
-draft: uredjivanje
 pubDate: 2025-04-14T20:29:00.000Z
 heroImage: '@assets/images/rts-1.png'
 description: |-

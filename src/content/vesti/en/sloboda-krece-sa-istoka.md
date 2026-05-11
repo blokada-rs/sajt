@@ -2,7 +2,6 @@
 link: sloboda-krece-sa-istoka
 title: Freedom comes from the east
 live: false
-draft: uredjivanje
 pubDate: 2025-05-23T19:20:00.000Z
 heroImage: '@assets/images/za.webp'
 ---

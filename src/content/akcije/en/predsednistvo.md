@@ -1,7 +1,6 @@
 ---
 link: predsednistvo
 title: The Presidency Building
-draft: false
 pubDate: 2024-12-11
 heroImage: '@assets/images/predsednistvo.jpg'
 ---

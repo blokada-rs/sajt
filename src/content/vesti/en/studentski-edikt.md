@@ -2,7 +2,6 @@
 link: studentski-edikt
 title: The Student Edict
 live: false
-draft: uredjivanje
 pubDate: 2025-02-28T12:16:00
 heroImage: '@assets/images/studentski-edikt.jpg'
 ---

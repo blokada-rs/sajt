@@ -1,7 +1,6 @@
 ---
 link: naše-pravo-da-znamo-sve
 title: “Our right to know everything”
-draft: false
 pubDate: 2025-01-17
 heroImage: '@assets/images/vase-pravo-da-znate-sve.jpg'
 ---

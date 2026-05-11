@@ -1,7 +1,6 @@
 ---
 link: šetnja-do-kragujevca
 title: Walk to Kragujevac
-draft: Uređivanje
 pubDate: 2025-02-11T23:26:00.000Z
 heroImage: '@assets/images/setnja-do-kragujevca.jpg'
 ---

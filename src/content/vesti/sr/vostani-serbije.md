@@ -3,7 +3,6 @@ link: vostani-serbije
 title: Востани Сербије
 live: false
 live_embed: AvmM8KI209U
-draft: uredjivanje
 pubDate: 2025-06-01T11:30:00.000Z
 heroImage: '@assets/images/SAD-JE-STVARNO-FINALNA-VER-1.webp'
 description: 'ДЕЦЕНТРАЛИЗАЦИЈА СЕ УЧИТАВА: Видимо се!'

@@ -2,7 +2,6 @@
 link: pumpaj-pumpaj-ibar-vodo
 title: Pump, pump, Ibar river
 live: false
-draft: uredjivanje
 pubDate: 2025-04-16T09:51:00.000Z
 heroImage: '@assets/images/pumpaj-pumpaj-ibar-vodo.jpg'
 description: Today, April 16, in Kraljevo, a protest is being held in honour of the 16 victims that had tragically been killed due to the collapse of the canopy in Novi Sad.

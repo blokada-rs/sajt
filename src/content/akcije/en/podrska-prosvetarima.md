@@ -1,7 +1,6 @@
 ---
 link: podrška-prosvetarima
 title: Support for educators
-draft: false
 pubDate: 2025-01-20
 heroImage: '@assets/images/podrska-prosvetarima.jpg'
 ---

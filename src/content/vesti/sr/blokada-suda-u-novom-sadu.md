@@ -2,7 +2,6 @@
 link: blokada-suda-u-novom-sadu
 title: Блокада суда у Новом Саду
 live: false
-draft: uredjivanje
 pubDate: 2025-05-19T16:00:00.000Z
 heroImage: '@assets/images/ns.webp'
 description: Већ 5 дана студенти и грађани блокирају зграду суда и тужилаштва у Новом Саду.

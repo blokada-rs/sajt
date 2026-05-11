@@ -2,7 +2,6 @@
 link: prva-epizoda-podkasta
 title: Прва епизода подкаста Студената у блокади
 live: false
-draft: uredjivanje
 pubDate: 2025-09-06T18:57:00.000Z
 heroImage: '@assets/images/U99eWgQOfwY-HD.webp'
 ---

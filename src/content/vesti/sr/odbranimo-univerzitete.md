@@ -2,7 +2,6 @@
 link: odbranimo-univerzitete
 title: Одбранимо универзитете
 live: false
-draft: uredjivanje
 pubDate: 2025-05-22T22:17:00.000Z
 heroImage: '@assets/images/pu.webp'
 description: |-

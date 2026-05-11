@@ -2,7 +2,6 @@
 link: pokloni-zivot-daj-krv
 title: Give life – donate blood
 live: false
-draft: false
 pubDate: 2025-01-26
 heroImage: '@assets/images/davanje-krvi.jpg'
 ---

@@ -3,7 +3,6 @@ link: druga-epizoda-podkasta
 title: '„Пројекат Јадар: јавни или приватни интерес?”'
 live: false
 live_embed: oGUhTyoVsGM
-draft: uredjivanje
 pubDate: 2025-09-13T18:32:00.000Z
 heroImage: '@assets/images/RIO TINTO NECE KOPATI EDIT 10.08.2024.-3.webp'
 ---

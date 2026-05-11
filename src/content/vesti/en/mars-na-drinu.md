@@ -2,7 +2,6 @@
 link: mars-na-drinu
 title: March on the Drina
 live: false
-draft: uredjivanje
 pubDate: 2025-05-06T20:07:00.000Z
 heroImage: '@assets/images/mars-na-drinu.png'
 ---

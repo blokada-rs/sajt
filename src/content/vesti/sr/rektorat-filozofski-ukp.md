@@ -2,7 +2,6 @@
 link: rektorat-filozofski-ukp
 title: Крај је кад ми кажемо да је крај!
 live: false
-draft: spremno
 pubDate: 2026-04-01T13:32:00.000Z
 updatedDate: 2026-04-01T13:32:00.000Z
 heroImage: '@assets/images/rktrt 3.2.webp'

@@ -2,7 +2,6 @@
 link: sabac-protest
 title: Хоћемо ли у Шабац на протест?
 live: false
-draft: uredjivanje
 pubDate: 2025-05-31T15:00:00.000Z
 heroImage: '@assets/images/5897664996140238768.webp'
 timeline:
