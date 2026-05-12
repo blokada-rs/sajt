@@ -12,7 +12,7 @@ if (typeof lang === "undefined") {
   return Astro.rewrite(`/sr${Astro.url.pathname}`);
 }
 
-const { frontmatter, Content } = await file("oblokadama", lang);
+const { frontmatter, Content } = await file("o_blokadama", lang);
 ---
 
 <Base title={frontmatter.title} description={SITE_DESCRIPTION}>

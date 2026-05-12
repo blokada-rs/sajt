@@ -1,24 +1,53 @@
-import {
-    type Collection,
-    type Field,
-    type StringField,
-    type BooleanField,
-    type SelectField,
-    type DateTimeField,
-    type ImageField,
-    type ObjectField,
-    type CollectionDivider,
-    type CollectionFile,
-    type ListField,
-    type NumberField,
-    type I18nOptions
-} from '@sveltia/cms';
+import {z} from 'astro/zod'
+import type { SchemaContext } from "astro/content/config";
 
-export type I18N = boolean | "duplicate" | "translate" | "none";
+export type I18N = boolean | string | "duplicate" | "translate" | "none";
 
-class FolderBuilder {
+type CollectionBuilder = FolderBuilder | FilesBuilder | DividerBuilder
+
+interface Builder {
+    make_cms(): any;
+    make_zod(ctx: SchemaContext): any
+}
+
+export type ZodCollection = {
+    name: string,
+    base: string,
+    pattern: string,
+    schema: (ctx: SchemaContext) => z.ZodType
+}
+
+class CollectionsBuilder implements Builder {
     constructor(
-        private name: string,
+        private collections: CollectionBuilder[]
+    ) {}
+
+    make_cms() {
+        return this.collections.flatMap(collection => collection.make_cms())
+    }
+
+    make_zod(): ZodCollection[] {
+        const collections: ZodCollection[] = []
+        for (const collection of this.collections) {
+            if (collection instanceof DividerBuilder) {
+            } else if (collection instanceof FolderBuilder) {
+                collections.push(collection.make_zod())
+            } else if (collection instanceof FilesBuilder) {
+                collection.make_zod().forEach(collection => {
+                    collections.push(collection)
+                })
+            } else {
+                throw new Error("Not valid")
+            }
+        }
+
+        return collections
+    }
+}
+
+class FolderBuilder implements Builder {
+    constructor(
+        public name: string,
         private label: string,
         private icon: string,
         private folder: string,
@@ -34,17 +63,17 @@ class FolderBuilder {
     protected _create: boolean = true;
     create(value: boolean) { this._create = value; return this }
 
-    protected _i18n: boolean | I18nOptions = true;
-    i18n(value: boolean | I18nOptions) { this._i18n = value; return this }
+    protected _i18n: boolean = true;
+    i18n(value: boolean) { this._i18n = value; return this }
 
-    make(): Collection {
+    make_cms() {
         return {
             name: this.name,
             label: this.label,
             icon: this.icon,
             folder: this.folder,
             slug: this._slug,
-            fields: this.fields.map(field => field.make()),
+            fields: this.fields.map(field => field.make_cms()),
             create: this._create,
             i18n: this._i18n,
             sortable_fields: typeof this._sort_by !== "undefined" ? {
@@ -56,33 +85,59 @@ class FolderBuilder {
             } : undefined
         }
     }
+
+    make_zod(): ZodCollection {
+        return {
+            name: this.name,
+            schema: (ctx) => {
+                const obj: {[name: string]: z.ZodType} = {}
+                for (const field of this.fields) {
+                    obj[field.name] = field.make_zod(ctx)
+                }
+
+                return z.object(obj)
+            },
+            base: this.folder,
+            pattern: "**/*.md"
+        }
+    }
 }
 
-class FileBuilder {
+class FileBuilder implements Builder {
     constructor(
-        private name: string,
+        public name: string,
         private label: string,
-        private file: string,
+        public folder: string,
+        public file: string,
         private fields: FieldBuilder[],
     ) {}
 
     protected _i18n: boolean = true;
     i18n(value: boolean) { this._i18n = value; return this }
 
-    make(): CollectionFile {
+    make_cms() {
         return {
             name: this.name,
             label: this.label,
-            file: this.file,
-            fields: this.fields.map(field => field.make()),
+            file: `${this.folder}/{{locale}}/${this.file}`,
+            fields: this.fields.map(field => field.make_cms()),
             i18n: this._i18n,
         }
     }
+
+    make_zod(ctx: SchemaContext): z.ZodType {
+        const obj: {[name: string]: z.ZodType} = {};
+        for (const field of this.fields) {
+            obj[field.name] = field.make_zod(ctx)
+        }
+
+        return z.object(obj)
+    }
 }
 
-class FilesBuilder {
+class FilesBuilder implements Builder {
     constructor(
-        private name: string,
+        public name: string,
         private label: string,
         private icon: string,
         private files: FileBuilder[]
@@ -91,20 +146,36 @@ class FilesBuilder {
     protected _i18n: boolean = true;
     i18n(value: boolean) { this._i18n = value; return this }
 
-    make(): Collection {
+    make_cms() {
         return {
             name: this.name,
             label: this.label,
             icon: this.icon,
-            files: this.files.map(file => file.make()),
+            files: this.files.map(file => file.make_cms()),
             i18n: this._i18n,
         }
     }
+
+    make_zod(): ZodCollection[] {
+        return this.files.map(file => ({
+            name: file.name,
+            schema: (ctx) => file.make_zod(ctx),
+            base: file.folder,
+            pattern: `**/${file.file}`
+        }))
+    }
 }
 
-class FieldBuilder {
+class DividerBuilder implements Builder {
+    constructor() {}
+
+    make_cms() { return { divider: true }; }
+    make_zod(): z.ZodType[] { return []; }
+}
+
+class FieldBuilder implements Builder {
     constructor(
-        protected name: string,
+        public name: string,
         protected label: string,
         protected widget: string
     ) {}
@@ -115,7 +186,7 @@ class FieldBuilder {
     protected _i18n: I18N = true;
     i18n(value: I18N) { this._i18n = value; return this }
 
-    make(): Field {
+    make_cms() {
         return {
             widget: this.widget,
             name: this.name,
@@ -123,6 +194,10 @@ class FieldBuilder {
             required: this._required,
             i18n: this._i18n,
         }
+    }
+
+    make_zod(ctx: SchemaContext): z.ZodType {
+        return this._required? z.any() : z.any().optional()
     }
 }
 
@@ -134,11 +209,15 @@ export class StringBuilder extends FieldBuilder {
     protected _url: boolean = false;
     url(value: boolean) { this._url = value; return this }
 
-    make(): StringField {
+    make_cms() {
         return {
-            ...(super.make() as StringField),
+            ...(super.make_cms()),
             type: this._url? "url" : "text"
         };
+    }
+
+    make_zod(): z.ZodType {
+        return this._required? z.string() : z.string().optional();
     }
 }
 
@@ -146,11 +225,19 @@ class TextBuilder extends FieldBuilder {
     constructor(name: string, label: string) {
         super(name, label, "text");
     }
+
+    make_zod(): z.ZodType {
+        return this._required? z.string() : z.string().optional();
+    }
 }
 
 class MarkdownBuilder extends FieldBuilder {
     constructor(name: string, label: string) {
         super(name, label, "markdown");
+    }
+
+    make_zod(): z.ZodType {
+        return z.string().optional();
     }
 }
 
@@ -166,12 +253,16 @@ class NumberBuilder extends FieldBuilder {
     protected _type: ValueType = "float"
     type(value: ValueType) { this._type = value; return this }
 
-    make(): NumberField {
+    make_cms() {
         return {
-            ...(super.make() as NumberField),
+            ...(super.make_cms()),
             default: this._default,
             value_type: this._type
         };
+    }
+
+    make_zod(): z.ZodType {
+        return this._required? z.number() : z.number().optional();
     }
 }
 
@@ -183,12 +274,16 @@ class BoolBuilder extends FieldBuilder {
     protected _default: boolean | undefined;
     default(value: boolean) { this._default = value; return this }
 
-    make(): BooleanField {
+    make_cms() {
         return {
-            ...(super.make() as BooleanField),
+            ...super.make_cms(),
             default: this._default,
             i18n: "duplicate"
         };
+    }
+
+    make_zod(): z.ZodType {
+        return this._required? z.boolean() : z.boolean().optional();
     }
 }
 
@@ -197,12 +292,17 @@ class EnumBuilder extends FieldBuilder {
         super(name, label, "select");
     }
 
-    make(): SelectField {
+    make_cms() {
         return {
-            ...(super.make() as SelectField),
+            ...super.make_cms(),
             options: this.options.map(([value, label]) => ({value, label})),
             default: this.options[0][0],
         };
+    }
+
+    make_zod(): z.ZodType {
+        const option = z.enum(this.options.map(([value, _]) => value))
+        return this._required? option : option.optional();
     }
 }
 
@@ -214,13 +314,18 @@ class DateTimeBuilder extends FieldBuilder {
     protected _default: string = "{{now}}";
     default(value: string) { this._default = value; return this }
 
-    make(): DateTimeField {
+    make_cms() {
         return {
-            ...(super.make() as DateTimeField),
+            ...(super.make_cms()),
             default: this._default,
             i18n: "duplicate",
             picker_utc: true
         };
+    }
+
+    make_zod(): z.ZodType {
+        const date = z.coerce.date()
+        return this._required? date : date.optional();
     }
 }
 
@@ -229,11 +334,15 @@ class ImageBuilder extends FieldBuilder {
         super(name, label, "image");
     }
 
-    make(): ImageField {
+    make_cms() {
         return {
-            ...(super.make() as ImageField),
+            ...(super.make_cms()),
             i18n: "duplicate",
         };
+    }
+
+    make_zod({ image }: SchemaContext): z.ZodType {
+        return this._required? image() : image().optional()
     }
 }
 
@@ -242,11 +351,20 @@ class ObjectBuilder extends FieldBuilder {
         super(name, label, "object");
     }
 
-    make(): ObjectField {
+    make_cms() {
         return {
-            ...(super.make() as ObjectField),
-            fields: this.fields.map((field) => field.make()),
+            ...(super.make_cms()),
+            fields: this.fields.map((field) => field.make_cms()),
         };
+    }
+
+    make_zod(ctx: SchemaContext): z.ZodType {
+        const obj: {[name: string]: z.ZodType} = {}
+        for (const field of this.fields) {
+            obj[field.name] = field.make_zod(ctx)
+        }
+
+        return this._required? z.object(obj) : z.object(obj).optional()
     }
 }
 
@@ -264,20 +382,35 @@ class ListBuilder extends FieldBuilder {
     protected _add_to_top: boolean = false;
     add_to_top() { this._add_to_top = true; return this }
 
-    make(): ListField {
+    make_cms() {
         return {
-            ...(super.make() as ListField),
-            fields: this.fields.map((field) => field.make()),
+            ...(super.make_cms()),
+            fields: this.fields.map((field) => field.make_cms()),
             label_singular: this._singular,
             add_to_top: this._add_to_top,
             summary: this._summary
         };
     }
+
+    make_zod(ctx: SchemaContext): z.ZodType {
+        if (this.fields.length > 1) {
+            const obj: {[name: string]: z.ZodType} = {}
+            for (const field of this.fields) {
+                obj[field.name] = field.make_zod(ctx)
+            }
+
+            return this._required? z.object(obj).array() : z.object(obj).array().optional()
+        } else {
+            return this._required? this.fields[0].make_zod(ctx).array() : this.fields[0].make_zod(ctx).array().optional()
+        }
+    }
 }
 
+export const all_collections = (collections: CollectionBuilder[]) => new CollectionsBuilder(collections)
 export const folder_collection = (name: string, label: string, icon: string, folder: string, fields: FieldBuilder[]) => new FolderBuilder(name, label, icon, folder, fields)
 export const file_collection = (name: string, label: string, icon: string, files: FileBuilder[]) => new FilesBuilder(name, label, icon, files)
-export const file = (name: string, label: string, file: string, fields: FieldBuilder[]) => new FileBuilder(name, label, file, fields)
+export const file = (name: string, label: string, folder: string, file: string, fields: FieldBuilder[]) => new FileBuilder(name, label, folder, file, fields)
+export const divider = () => new DividerBuilder()
 
 export const number_field = (name: string, label: string) => new NumberBuilder(name, label)
 export const string_field = (name: string, label: string) => new StringBuilder(name, label)
@@ -289,7 +422,3 @@ export const datetime_field = (name: string, label: string) => new DateTimeBuild
 export const image_field = (name: string, label: string) => new ImageBuilder(name, label)
 export const object_field = (name: string, label: string, fields: FieldBuilder[]) => new ObjectBuilder(name, label, fields)
 export const list_field = (name: string, label: string, fields: FieldBuilder[])=> new ListBuilder(name, label, fields)
-
-export const divider = (): CollectionDivider => ({
-    divider: true
-})

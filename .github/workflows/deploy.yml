@@ -15,9 +15,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
+
       - uses: pnpm/action-setup@v4
         with:
-          version: 10
+          version: 11
 
       - name: Cache images
         uses: actions/cache@v5
