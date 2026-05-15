@@ -201,6 +201,19 @@ const stranice = file_collection("stranice", "Stranice", "description", [
     string_field("pojedinacni_fakulteti", "Kontakti pojedinačnih fakulteta"),
     string_field("pratite_live", "Pratite live"),
   ]),
+
+  file("slavija", "Slavija", "src/content/stranice", "slavija.md", [
+    string_field("title", "Naslov"),
+    string_field("preuzmi", "Preuzmi plakat"),
+    markdown_field("body", "Tekst"),
+    list_field("sections", "Sekcije", [
+      string_field("id", "ID").required(false),
+      string_field("title", "Naslov").required(false),
+      string_field("link_text", "Link tekst").required(false),
+      string_field("link", "Link").required(false),
+      markdown_field("text", "Tekst").required(false),
+    ]).singular("Sekcija"),
+  ]),
 ]);
 
 const linkovi = folder_collection(

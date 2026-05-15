@@ -17,7 +17,7 @@
     "@mashehu/astropub-md": "^2.0.1",
     "@oddbird/popover-polyfill": "^0.6.1",
     "@sveltia/cms": "^0.160.1",
-    "astro": "^6.3.1",
+    "astro": "^6.3.3",
     "astro-icon": "^1.1.5",
     "leaflet": "^1.9.4",
     "leaflet.markercluster": "^1.5.3",
