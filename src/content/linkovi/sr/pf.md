@@ -2,6 +2,9 @@
 title: Правни факултет
 link: pf
 linkovi:
+  - ikonica: hand-coin
+    naslov: Помозимо Верољубу Сарићу
+    link: https://blokade.org/vesti/pomozimo-veroljubu-saricu/
   - ikonica: instagram
     naslov: Instagram профил
     link: https://www.instagram.com/blokada_pravni
