@@ -65,7 +65,7 @@ const { frontmatter, Content } = await file("slavija", lang);
 
 <script>
   const dana = document.getElementById("dana") as HTMLSpanElement;
-  const slavija = new Date("May 23, 2026 00:00:00");
+  const slavija = new Date("May 23, 2026 23:29:00");
   const ms = slavija.getTime() - new Date().getTime();
   const broj_dana = Math.floor(ms / (1000 * 60 * 60 * 24));
   dana.innerText = dana?.dataset.text?.replace("$$", `${broj_dana}`) ?? "";
