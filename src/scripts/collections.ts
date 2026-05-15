@@ -206,6 +206,7 @@ const stranice = file_collection("stranice", "Stranice", "description", [
     string_field("title", "Naslov"),
     string_field("preuzmi", "Preuzmi plakat"),
     markdown_field("body", "Tekst"),
+    string_field("vidimo_se", "Vidimo se"),
     list_field("sections", "Sekcije", [
       string_field("id", "ID").required(false),
       string_field("title", "Naslov").required(false),

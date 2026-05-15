@@ -34,14 +34,10 @@ const { frontmatter, Content } = await file("slavija", lang);
     <div class="square"></div>
   </div>
 
-  <section>
-    <Content />
-  </section>
-
   {
     frontmatter.sections.map((section, i) => (
       <section
-        class:list={[{ "dark-background": i % 2 === 0 }]}
+        class:list={[{ "dark-background": i % 2 === 1 }]}
         id={section.id}
       >
         {section.title && <h2>{section.title}</h2>}
@@ -61,7 +57,19 @@ const { frontmatter, Content } = await file("slavija", lang);
       </section>
     ))
   }
+
+  <section>
+    <h1 class="center" id="dana" data-text={frontmatter.vidimo_se}></h1>
+  </section>
 </Base>
+
+<script>
+  const dana = document.getElementById("dana") as HTMLSpanElement;
+  const slavija = new Date("May 23, 2026 00:00:00");
+  const ms = slavija.getTime() - new Date().getTime();
+  const broj_dana = Math.floor(ms / (1000 * 60 * 60 * 24));
+  dana.innerText = dana?.dataset.text?.replace("$$", `${broj_dana}`) ?? "";
+</script>
 
 <style>
   :root {
@@ -208,5 +216,9 @@ const { frontmatter, Content } = await file("slavija", lang);
     top: 0;
     left: 50%;
     translate: -50% 0;
+  }
+
+  .center {
+    text-align: center;
   }
 </style>
