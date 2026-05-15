@@ -1,183 +1,192 @@
 ---
 import Base from "@layouts/Base.astro";
-import {file, langs} from "@scripts/i18n";
-import {Markdown} from "@mashehu/astropub-md";
+import { file, langs } from "@scripts/i18n";
+import { Markdown } from "@mashehu/astropub-md";
 
-import {SITE_DESCRIPTION} from "../../consts";
+import { SITE_DESCRIPTION } from "../../consts";
 
 export async function getStaticPaths() {
-    return langs.map((lang) => ({params: {lang}}));
+  return langs.map((lang) => ({ params: { lang } }));
 }
 
-const {lang} = Astro.params;
+const { lang } = Astro.params;
 if (typeof lang === "undefined") {
-    return Astro.rewrite(`/sr${Astro.url.pathname}`);
+  return Astro.rewrite(`/sr${Astro.url.pathname}`);
 }
 
-const {frontmatter: izbori} = await file("izbori", lang);
+const { frontmatter: izbori } = await file("izbori", lang);
 ---
 
-<Base
-    title={izbori.title}
-    description={SITE_DESCRIPTION}
->
-    <h1>{izbori.title}</h1>
-    {izbori.sections.map((section, i) =>
-        <section class:list={[{ 'dark-background': i % 2 === 1 }]} id={section.id}>
-            {section.title && <h2>{section.title}</h2>}
-            {section.text && <Markdown of={section.text} />}
-            {section.link &&
-                <div class="buttons">
-                    <a slot="button" href={section.link} class="button primary dugme center" download={section.link.endsWith(".pdf")}>{section.link_text}</a>
-                </div>
-            }
-        </section>
-    )}
+<Base title={izbori.title} description={SITE_DESCRIPTION}>
+  <h1>{izbori.title}</h1>
+  {
+    izbori.sections.map((section, i) => (
+      <section
+        class:list={[{ "dark-background": i % 2 === 1 }]}
+        id={section.id}
+      >
+        {section.title && <h2>{section.title}</h2>}
+        {section.text && <Markdown of={section.text} />}
+        {section.link && (
+          <div class="buttons">
+            <a
+              slot="button"
+              href={section.link}
+              class="button primary dugme center"
+              download={section.link.endsWith(".pdf")}
+            >
+              {section.link_text}
+            </a>
+          </div>
+        )}
+      </section>
+    ))
+  }
 </Base>
 
 <style>
-    :root {
-        scroll-padding-top: 4rem;
-    }
+  :root {
+    scroll-padding-top: 4rem;
+  }
 
-    .title {
-        position: relative;
-        background-size: cover;
-        background-position: center;
-        height: 22rem;
-        max-height: 30vh;
+  .title {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 22rem;
+    max-height: 30vh;
 
-        display: flex;
-        align-items: center;
+    display: flex;
+    align-items: center;
 
-        margin-inline: 1rem;
-        margin-block: 3rem;
-    }
+    margin-inline: 1rem;
+    margin-block: 3rem;
+  }
 
-    .title :is(picture, img) {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+  .title :is(picture, img) {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
-    .title::before {
-        content: "";
-        position: absolute;
-        background-color: rgba(0, 0, 0, 0.4);
-        inset: 0;
-        z-index: 1;
-        border-radius: 0.5rem;
-    }
+  .title::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    inset: 0;
+    z-index: 1;
+    border-radius: 0.5rem;
+  }
 
+  .title h1 {
+    margin-inline: auto;
+    padding-inline: 2rem;
+    color: white;
+    z-index: 1;
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .title .square {
+    width: 8rem;
+    aspect-ratio: 2;
+    background-color: var(--accent);
+    z-index: 2;
+    position: absolute;
+    border-radius: 0.5rem;
+  }
+
+  .title .square:nth-of-type(2) {
+    bottom: -1rem;
+    left: -1rem;
+  }
+
+  .title .square:nth-of-type(3) {
+    top: -1rem;
+    right: -1rem;
+  }
+
+  .pitanja {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    align-items: center;
+  }
+
+  details {
+    width: 100%;
+  }
+
+  details summary {
+    cursor: pointer;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+  }
+
+  section :global(ol) {
+    padding-inline-start: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  section :global(ol) :global(::marker) {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  section :global(h2) {
+    border-left: 0.4rem var(--accent) solid;
+    padding-left: 0.8rem;
+  }
+
+  @media (max-width: 720px) {
     .title h1 {
-        margin-inline: auto;
-        padding-inline: 2rem;
-        color: white;
-        z-index: 1;
-        font-size: 4rem;
-        text-align: center;
+      padding-inline: 2vw;
+      font-size: 10vw;
     }
+  }
 
-    .title .square {
-        width: 8rem;
-        aspect-ratio: 2;
-        background-color: var(--accent);
-        z-index: 2;
-        position: absolute;
-        border-radius: 0.5rem;
-    }
+  .title .live-box {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    z-index: 3;
+  }
 
-    .title .square:nth-of-type(2) {
-        bottom: -1rem;
-        left: -1rem;
-    }
+  .dugme {
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    width: fit-content;
+  }
 
-    .title .square:nth-of-type(3) {
-        top: -1rem;
-        right: -1rem;
-    }
+  .buttons {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
 
-    .pitanja {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        width: 100%;
-        align-items: center;
-    }
+  .dark-background {
+    position: relative;
+    padding-block: 3rem;
+  }
 
-    details {
-        width: 100%;
-    }
-
-    details summary {
-        cursor: pointer;
-        padding: 1rem;
-        border: 1px solid black;
-        border-radius: 0.5rem;
-    }
-
-    section :global(ol) {
-        padding-inline-start: 4rem;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    section :global(ol) :global(::marker) {
-        font-size: 2.5rem;
-        font-weight: 700;
-        line-height: 1;
-    }
-
-    section :global(h2) {
-        border-left: 0.4rem var(--accent) solid;
-        padding-left: 0.8rem;
-    }
-
-    @media (max-width: 720px) {
-        .title h1 {
-            padding-inline: 2vw;
-            font-size: 10vw;
-        }
-    }
-
-    .title .live-box {
-        position: absolute;
-        top: 1rem;
-        left: 1rem;
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-        z-index: 3;
-    }
-
-    .dugme {
-        padding: 1rem 2rem;
-        border-radius: 0.5rem;
-        width: fit-content;
-    }
-
-    .buttons {
-        margin-top: 2rem;
-        display: flex;
-        justify-content: center;
-    }
-
-    .dark-background {
-        position: relative;
-        padding-block: 3rem;
-    }
-
-    .dark-background::before {
-        content: "";
-        background-color: hsl(0, 0%, 95%);
-        position: absolute;
-        width: 100vw;
-        height: 100%;
-        z-index: -1;
-        top: 0;
-        left: 50%;
-        translate: -50% 0;
-    }
+  .dark-background::before {
+    content: "";
+    background-color: hsl(0, 0%, 95%);
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 50%;
+    translate: -50% 0;
+  }
 </style>

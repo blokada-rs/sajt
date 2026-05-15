@@ -7,35 +7,71 @@ import Live from "@components/Live.astro";
 import Timeline from "@components/Timeline.astro";
 import { file } from "@scripts/i18n";
 
-import 'leaflet/dist/leaflet.css';
-import {ICON_SIZE_LG} from "../consts";
-import {Icon} from "astro-icon/components";
-import {markdown} from "@mashehu/astropub-md";
+import "leaflet/dist/leaflet.css";
+import { ICON_SIZE_LG } from "../consts";
+import { Icon } from "astro-icon/components";
+import { markdown } from "@mashehu/astropub-md";
 
-type Props = CollectionEntry<"vesti">["data"] & {lang: string, live?: boolean};
+type Props = CollectionEntry<"vesti">["data"] & {
+  lang: string;
+  live?: boolean;
+};
 
-const { lang, title, description = "", pubDate, updatedDate, heroImage, live = false, live_embed, timeline, map: map_prerender = null } = Astro.props;
+const {
+  lang,
+  title,
+  description = "",
+  pubDate,
+  updatedDate,
+  heroImage,
+  live = false,
+  live_embed,
+  timeline,
+  map: map_prerender = null,
+} = Astro.props;
 const map =
-  (map_prerender !== null)
-  ? {...map_prerender, markers: await Promise.all(map_prerender?.markers?.map(async (e) => ({...e, text: await markdown(e.text)})) ?? [])}
-  : null
+  map_prerender !== null
+    ? {
+        ...map_prerender,
+        markers: await Promise.all(
+          map_prerender?.markers?.map(async (e) => ({
+            ...e,
+            text: await markdown(e.text),
+          })) ?? [],
+        ),
+      }
+    : null;
 
 const { lang: expectedLang } = Astro.params;
 
 const { frontmatter } = await file("ostalo", lang);
 ---
 
-<Base title={`${title} | ${frontmatter.studenti_u_blokadi}`} description={description} image={heroImage.src}>
-  {expectedLang !== lang &&
-    <div class="full-width">
-      This page is currently not translated to English. Showing the untranslated version.
-    </div>
+<Base
+  title={`${title} | ${frontmatter.studenti_u_blokadi}`}
+  description={description}
+  image={heroImage.src}
+>
+  {
+    expectedLang !== lang && (
+      <div class="full-width">
+        This page is currently not translated to English. Showing the
+        untranslated version.
+      </div>
+    )
   }
   <article>
     <div class="hero-image">
       {
         heroImage && (
-          <Picture transition:name={Astro.originPathname} formats={['avif', 'webp']} width={1020} src={heroImage} loading="eager" alt="" />
+          <Picture
+            transition:name={Astro.originPathname}
+            formats={["avif", "webp"]}
+            width={1020}
+            src={heroImage}
+            loading="eager"
+            alt=""
+          />
         )
       }
     </div>
@@ -49,31 +85,36 @@ const { frontmatter } = await file("ostalo", lang);
         <hr />
       </div>
 
-      {live_embed &&
-        <div>
-          <strong>{frontmatter.pratite_live}</strong>
-          <br />
-          <iframe
-            class="live-embed"
-            src={`https://www.youtube-nocookie.com/embed/${live_embed}`} 
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen 
-          />
-        </div>
+      {
+        live_embed && (
+          <div>
+            <strong>{frontmatter.pratite_live}</strong>
+            <br />
+            <iframe
+              class="live-embed"
+              src={`https://www.youtube-nocookie.com/embed/${live_embed}`}
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            />
+          </div>
+        )
       }
 
-      { map &&
-        <div class="center">
-          <div data-map={JSON.stringify(map)} id="map">
-            <div class="buttons">
-              <button id="locate">
-                <Icon name="mdi:my-location" size={ICON_SIZE_LG} />
-              </button>
-              <button id="fullscreen">
-                <Icon name="mdi:fullscreen" size={ICON_SIZE_LG} />
-              </button>
+      {
+        map && (
+          <div class="center">
+            <div data-map={JSON.stringify(map)} id="map">
+              <div class="buttons">
+                <button id="locate">
+                  <Icon name="mdi:my-location" size={ICON_SIZE_LG} />
+                </button>
+                <button id="fullscreen">
+                  <Icon name="mdi:fullscreen" size={ICON_SIZE_LG} />
+                </button>
+              </div>
             </div>
           </div>
-        </div>
+        )
       }
 
       <Timeline {timeline} />
@@ -189,7 +230,7 @@ const { frontmatter } = await file("ostalo", lang);
     z-index: 500;
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: 0.5rem;
   }
 
   #map button {
@@ -201,42 +242,47 @@ const { frontmatter } = await file("ostalo", lang);
   }
 
   .fullscreen {
-    position: fixed!important;
+    position: fixed !important;
     z-index: 1000;
     inset: 0;
   }
 
-  :global(.marker-cluster-small, .marker-cluster-medium, .marker-cluster-large) {
-      background-color: rgba(148, 10, 10, 0.5) !important;
+  :global(
+    .marker-cluster-small,
+    .marker-cluster-medium,
+    .marker-cluster-large
+  ) {
+    background-color: rgba(148, 10, 10, 0.5) !important;
   }
 
   :global(.marker-cluster div) {
-      background-color: rgba(148, 10, 10, 1) !important;
-      color: white;
+    background-color: rgba(148, 10, 10, 1) !important;
+    color: white;
   }
 </style>
 
 <script>
   import leaflet from "leaflet";
   import "leaflet.markercluster";
-  import 'leaflet.markercluster/dist/MarkerCluster.css';
-  import 'leaflet.markercluster/dist/MarkerCluster.Default.css';
+  import "leaflet.markercluster/dist/MarkerCluster.css";
+  import "leaflet.markercluster/dist/MarkerCluster.Default.css";
 
   const map_container = document.getElementById("map")!;
   const fullscreen_button = document.getElementById("fullscreen")!;
   const locate_button = document.getElementById("locate")!;
 
   const map_data = JSON.parse(map_container.dataset.map!);
-  const markers = new leaflet.MarkerClusterGroup()
+  const markers = new leaflet.MarkerClusterGroup();
   map_data.markers?.forEach((marker: any) =>
-    leaflet.circleMarker([marker.coords_lat, marker.coords_long], {
-      radius: 7,
-      color: "#b80000",
-      fillOpacity: 0.5,
-    })
-    .bindPopup(marker.text)
-    .addTo(markers)
-  )
+    leaflet
+      .circleMarker([marker.coords_lat, marker.coords_long], {
+        radius: 7,
+        color: "#b80000",
+        fillOpacity: 0.5,
+      })
+      .bindPopup(marker.text)
+      .addTo(markers),
+  );
 
   const map = leaflet.map(map_container, {
     preferCanvas: true,
@@ -245,39 +291,43 @@ const { frontmatter } = await file("ostalo", lang);
     zoom: map_data.zoom,
     attributionControl: false,
     layers: [
-      leaflet.tileLayer('https://services.arcgisonline.com/arcgis/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', { maxZoom: 16 }),
+      leaflet.tileLayer(
+        "https://services.arcgisonline.com/arcgis/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
+        { maxZoom: 16 },
+      ),
       markers,
-    ]
+    ],
   });
 
   fullscreen_button.onclick = () => {
     if (map_container.requestFullscreen) {
-      document.fullscreenElement === null ?
-          map_container.requestFullscreen() :
-          document.exitFullscreen();
+      document.fullscreenElement === null
+        ? map_container.requestFullscreen()
+        : document.exitFullscreen();
     } else {
       map_container.classList.toggle("fullscreen");
     }
-    map.invalidateSize()
-  }
+    map.invalidateSize();
+  };
 
-  locate_button.onclick = () =>
-    map.locate({setView: true, maxZoom: 16});
+  locate_button.onclick = () => map.locate({ setView: true, maxZoom: 16 });
 
   let located_marker: leaflet.Marker | null = null;
   let located_circle: leaflet.Circle | null = null;
-  map.on('locationfound', (e: leaflet.LocationEvent) => {
+  map.on("locationfound", (e: leaflet.LocationEvent) => {
     located_marker?.remove();
     located_circle?.remove();
 
     const radius = e.accuracy;
-    located_marker = leaflet.marker(e.latlng, { icon: marker_location_icon }).addTo(map);
+    located_marker = leaflet
+      .marker(e.latlng, { icon: marker_location_icon })
+      .addTo(map);
 
     if (radius < 10) return;
-    located_circle = leaflet.circle(e.latlng, {radius}).addTo(map);
+    located_circle = leaflet.circle(e.latlng, { radius }).addTo(map);
   });
 
-  map.on('locationerror', (e: leaflet.ErrorEvent) => {
+  map.on("locationerror", (e: leaflet.ErrorEvent) => {
     alert(e.message);
   });
 </script>

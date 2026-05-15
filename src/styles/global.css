@@ -1,207 +1,238 @@
 :root {
-    --accent: #c91414;
-    --accent-dark: #930a0a;
-    --black: 15, 18, 25;
-    --gray: 96, 115, 159;
-    --gray-light: hsl(0, 0%, 95%);
-    --gray-dark: 34, 41, 57;
-    --gray-gradient: var(--gray-light), #fff;
-    --box-shadow: 0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
+  --accent: #c91414;
+  --accent-dark: #930a0a;
+  --black: 15, 18, 25;
+  --gray: 96, 115, 159;
+  --gray-light: hsl(0, 0%, 95%);
+  --gray-dark: 34, 41, 57;
+  --gray-gradient: var(--gray-light), #fff;
+  --box-shadow:
+    0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
     0 16px 32px rgba(var(--gray), 33%);
 }
 
 @font-face {
-    font-display: swap;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Montsrrat'), url('/fonts/montserrat-v29-cyrillic_latin_latin-ext-regular.woff2') format('woff2');
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Montsrrat"),
+    url("/fonts/montserrat-v29-cyrillic_latin_latin-ext-regular.woff2")
+      format("woff2");
 }
 
 @font-face {
-    font-display: swap;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    src: local('Montsrrat'), url('/fonts/montserrat-v29-cyrillic_latin_latin-ext-700.woff2') format('woff2');
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local("Montsrrat"),
+    url("/fonts/montserrat-v29-cyrillic_latin_latin-ext-700.woff2")
+      format("woff2");
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(var(--gray-gradient)) no-repeat;
-    background-size: 100% 600px;
-    color: rgb(var(--gray-dark));
-    line-height: 1.7;
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(var(--gray-gradient)) no-repeat;
+  background-size: 100% 600px;
+  color: rgb(var(--gray-dark));
+  line-height: 1.7;
 }
 
 main {
-    margin-bottom: 2rem;
-    min-height: 100vh;
+  margin-bottom: 2rem;
+  min-height: 100vh;
 
-    display: grid;
-    place-content: start;
-    grid-template-columns: 1fr min(70rem, 100% - 2rem) 1fr;
+  display: grid;
+  place-content: start;
+  grid-template-columns: 1fr min(70rem, 100% - 2rem) 1fr;
 }
 
 main > * {
-    grid-column: 2 / span 1;
+  grid-column: 2 / span 1;
 }
 
 .full-width {
-    grid-column: 1 / -1;
+  grid-column: 1 / -1;
 }
 
 .full-width > section {
-    width: min(70rem, 100% - 2rem);
-    margin-inline: auto;
+  width: min(70rem, 100% - 2rem);
+  margin-inline: auto;
 }
 
 footer {
-    padding: 1rem;
-    background: linear-gradient(var(--gray-gradient)) no-repeat;
-    color: rgb(var(--gray));
+  padding: 1rem;
+  background: linear-gradient(var(--gray-gradient)) no-repeat;
+  color: rgb(var(--gray));
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: rgb(var(--black));
-    line-height: 1;
-    font-weight: bold;
-    margin-bottom: 2rem;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: rgb(var(--black));
+  line-height: 1;
+  font-weight: bold;
+  margin-bottom: 2rem;
 }
 
 h1 {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
-h1 { font-size: 3em;    }
-h2 { font-size: 2.5em;  }
-h3 { font-size: 2em;    }
-h4 { font-size: 1.5em;  }
-h5 { font-size: 1.25em; }
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 2.5em;
+}
+h3 {
+  font-size: 2em;
+}
+h4 {
+  font-size: 1.5em;
+}
+h5 {
+  font-size: 1.25em;
+}
 
 @media (max-width: 800px) {
-    h1 { font-size: 8vw; }
-    h2 { font-size: 7vw; }
-    h3 { font-size: 6vw; }
-    h4 { font-size: 5vw; }
-    h5 { font-size: 4vw; }
+  h1 {
+    font-size: 8vw;
+  }
+  h2 {
+    font-size: 7vw;
+  }
+  h3 {
+    font-size: 6vw;
+  }
+  h4 {
+    font-size: 5vw;
+  }
+  h5 {
+    font-size: 4vw;
+  }
 }
 
 strong {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 :where(a, button).clear {
-    all: unset;
-    cursor: pointer;
+  all: unset;
+  cursor: pointer;
 }
 
 :where(a:not(.button):not(.clear), button.link) {
-    all: unset;
-    cursor: pointer;
-    text-decoration: underline;
-    color: var(--accent);
+  all: unset;
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--accent);
 }
 
 :where(a:not(.button):not(.clear), button.link):hover {
-    color: var(--accent-dark);
+  color: var(--accent-dark);
 }
 
 :where(button:not(.link):not(.clear), a.button) {
-    all: unset;
-    display: inline-block;
-    line-height: normal;
-    cursor: pointer;
-    border: 1px solid black;
-    border-radius: 3px;
-    padding: 0.4em 0.6rem;
-    user-select: none;
+  all: unset;
+  display: inline-block;
+  line-height: normal;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 0.4em 0.6rem;
+  user-select: none;
 }
 
 :where(button:not(.link):not(.clear), a.button):hover {
-    color: var(--accent-dark);
-    border-color: var(--accent-dark);
+  color: var(--accent-dark);
+  border-color: var(--accent-dark);
 }
 
 :where(button:not(.link):not(.clear), a.button):active {
-    color: var(--accent);
-    border-color: var(--accent);
+  color: var(--accent);
+  border-color: var(--accent);
 }
 
 :where(button:not(.link):not(.clear), a.button).primary {
-    background-color: var(--accent);
-    font-weight: bold;
-    color: white;
+  background-color: var(--accent);
+  font-weight: bold;
+  color: white;
 }
 
 :where(button:not(.link):not(.clear), a.button).primary:hover {
-    background-color: var(--accent-dark);
+  background-color: var(--accent-dark);
 }
 
 :where(p):not(:last-child) {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 :where(ol, ul):not(:last-child) {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 svg {
-    flex-shrink: 0;
+  flex-shrink: 0;
 }
 
 img:not(.not-rounded) {
-    border-radius: 0.5rem;
+  border-radius: 0.5rem;
 }
 
 code {
-    padding: 2px 5px;
-    background-color: var(--gray-light);
-    border-radius: 2px;
+  padding: 2px 5px;
+  background-color: var(--gray-light);
+  border-radius: 2px;
 }
 
 pre {
-    padding: 1.5em;
-    border-radius: 8px;
+  padding: 1.5em;
+  border-radius: 8px;
 }
 
 pre > code {
-    all: unset;
+  all: unset;
 }
 
 blockquote {
-    border-left: 4px solid var(--accent);
-    padding-left: 1rem;
-    margin-bottom: 1rem;
+  border-left: 4px solid var(--accent);
+  padding-left: 1rem;
+  margin-bottom: 1rem;
 }
 
 hr {
-    border: none;
-    border-top: 1px solid rgba(var(--gray-dark), 0.5);
-    width: 80%;
+  border: none;
+  border-top: 1px solid rgba(var(--gray-dark), 0.5);
+  width: 80%;
 }
 
 @media (max-width: 720px) {
-    body {
-        font-size: 18px;
-    }
+  body {
+    font-size: 18px;
+  }
 }
 
 :where(section:not(:first-of-type)) {
-    padding-top: 3rem;
+  padding-top: 3rem;
 }
 
 :where(section:not(:last-of-type)) {
-    padding-bottom: 3rem;
+  padding-bottom: 3rem;
 }
 
-
 :where(sub, sup) {
-    vertical-align: sub;
-    font-size: smaller;
+  vertical-align: sub;
+  font-size: smaller;
 }

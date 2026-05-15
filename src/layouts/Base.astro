@@ -6,9 +6,9 @@ import Footer from "@components/Footer.astro";
 import { langs } from "@scripts/i18n";
 
 interface Props {
-	title: string;
-	description: string;
-	image?: string;
+  title: string;
+  description: string;
+  image?: string;
 }
 
 const { title, description, image } = Astro.props;
@@ -16,40 +16,54 @@ const { lang } = Astro.params;
 ---
 
 <!doctype html>
-<html {lang} data-langs={JSON.stringify(langs.filter(lang => typeof lang !== "undefined"))}>
-    <head>
-        <script>
-            (() => {
-                let link = `${window.location.pathname + window.location.search + window.location.hash}`
-                const langs = JSON.parse(document.documentElement.dataset.langs!!) as string[];
-                const shouldRedirect = !langs.some(lang =>
-                  window.location.pathname.startsWith(`/${lang}/`) || window.location.pathname === `/${lang}`);
+<html
+  {lang}
+  data-langs={JSON.stringify(
+    langs.filter((lang) => typeof lang !== "undefined"),
+  )}
+>
+  <head>
+    <script>
+      (() => {
+        let link = `${window.location.pathname + window.location.search + window.location.hash}`;
+        const langs = JSON.parse(
+          document.documentElement.dataset.langs!!,
+        ) as string[];
+        const shouldRedirect = !langs.some(
+          (lang) =>
+            window.location.pathname.startsWith(`/${lang}/`) ||
+            window.location.pathname === `/${lang}`,
+        );
 
-                if (!shouldRedirect) {
-                    localStorage.setItem("lang", document.documentElement.lang);
-                    link = link.substring(document.documentElement.lang.length + 1);
-                    window.history.replaceState({}, "", `${window.location.protocol}//${window.location.host}${link}`);
-                    return;
-                }
+        if (!shouldRedirect) {
+          localStorage.setItem("lang", document.documentElement.lang);
+          link = link.substring(document.documentElement.lang.length + 1);
+          window.history.replaceState(
+            {},
+            "",
+            `${window.location.protocol}//${window.location.host}${link}`,
+          );
+          return;
+        }
 
-                const lang = localStorage.getItem("lang");
-                if (lang !== null) {
-                    window.location.replace(`/${lang}${link}`);
-                    return;
-                }
+        const lang = localStorage.getItem("lang");
+        if (lang !== null) {
+          window.location.replace(`/${lang}${link}`);
+          return;
+        }
 
-                window.location.replace(`/sr${link}`);
-            })()
-        </script>
-        <BaseHead {title} {description} {image} />
-        <slot name="head" />
-    </head>
-    <body>
-        <Header />
-        <slot name="above" />
-        <main>
-            <slot />
-        </main>
-        <Footer />
-    </body>
+        window.location.replace(`/sr${link}`);
+      })();
+    </script>
+    <BaseHead {title} {description} {image} />
+    <slot name="head" />
+  </head>
+  <body>
+    <Header />
+    <slot name="above" />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+  </body>
 </html>

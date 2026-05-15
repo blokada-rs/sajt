@@ -1,5 +1,5 @@
 ---
-import Base from "@layouts/Base.astro"
+import Base from "@layouts/Base.astro";
 import { langs, collection, file } from "@scripts/i18n";
 
 import { SITE_TITLE, SITE_DESCRIPTION } from "../../../consts";
@@ -18,22 +18,27 @@ export async function getStaticPaths() {
 }
 ---
 
-<Base title={`${frontmatter.afere} | ${frontmatter.studenti_u_blokadi}`} description={SITE_DESCRIPTION}>
+<Base
+  title={`${frontmatter.afere} | ${frontmatter.studenti_u_blokadi}`}
+  description={SITE_DESCRIPTION}
+>
   <div class="flex">
     <h1>{frontmatter.afere}</h1>
   </div>
   <section>
-    {afere.map(afera => (
+    {
+      afere.map((afera) => (
         <article>
-        <h2>{afera.data.title}</h2>
-        <Markdown of={afera.body!} />
+          <h2>{afera.data.title}</h2>
+          <Markdown of={afera.body!} />
         </article>
-    ))}
+      ))
+    }
   </section>
 </Base>
 
 <style>
-    article {
-        margin-top: 3rem;
-    }
+  article {
+    margin-top: 3rem;
+  }
 </style>

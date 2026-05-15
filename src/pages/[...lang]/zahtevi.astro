@@ -1,6 +1,6 @@
 ---
 import Base from "@layouts/Base.astro";
-import { Markdown } from '@mashehu/astropub-md'
+import { Markdown } from "@mashehu/astropub-md";
 
 import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
 
@@ -22,17 +22,23 @@ const { frontmatter } = await file("zahtevi", lang);
     <h1>{frontmatter.naslov}</h1>
 
     <div class="zahtevi">
-      {frontmatter.zahtevi.map(
-        (zahtev: {original: string, konkretizacija: string}, idx: number) =>
-          <details>
-            <summary>
+      {
+        frontmatter.zahtevi.map(
+          (
+            zahtev: { original: string; konkretizacija: string },
+            idx: number,
+          ) => (
+            <details>
+              <summary>
                 <strong>{idx + 1}.</strong> {zahtev.original}
-            </summary>
-            <div class="content">
-              <Markdown of={zahtev.konkretizacija} />
-            </div>
-          </details>
-      )}
+              </summary>
+              <div class="content">
+                <Markdown of={zahtev.konkretizacija} />
+              </div>
+            </details>
+          ),
+        )
+      }
     </div>
   </section>
 </Base>
@@ -45,9 +51,9 @@ const { frontmatter } = await file("zahtevi", lang);
   }
 
   details {
-    background-color: hsl(0,0%,95%);
+    background-color: hsl(0, 0%, 95%);
     border: 2px solid #686868;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
   }
 
   details summary {

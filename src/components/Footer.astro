@@ -32,7 +32,13 @@ const socialIcons = [
     <div class="social-links">
       {
         socialIcons.map(({ label, icon, link }) => (
-          <a aria-label={label} href={link} target="_blank" rel="noopener noreferrer" style={`height: ${ICON_SIZE_LG}px;`}>
+          <a
+            aria-label={label}
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={`height: ${ICON_SIZE_LG}px;`}
+          >
             <Icon name={icon} size={ICON_SIZE_LG} class="icon" />
           </a>
         ))

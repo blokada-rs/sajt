@@ -1,250 +1,271 @@
 ---
-import { langs, file } from '@scripts/i18n';
-import HeaderLink from './HeaderLink.astro';
+import { langs, file } from "@scripts/i18n";
+import HeaderLink from "./HeaderLink.astro";
 import { Icon } from "astro-icon/components";
-import { ICON_SIZE_LG } from 'consts';
+import { ICON_SIZE_LG } from "consts";
 
 const { lang } = Astro.params;
 
 const { frontmatter } = await file("zaglavlje", lang);
 
 const jezik = (jezik: string) => {
-	let url = Astro.url.pathname.toString();
-	const jezici = langs
-		.filter(a => typeof a !== "undefined")
-		.sort((a: string, b: string) => b.length - a.length);
+  let url = Astro.url.pathname.toString();
+  const jezici = langs
+    .filter((a) => typeof a !== "undefined")
+    .sort((a: string, b: string) => b.length - a.length);
 
-	for (const lang of jezici) {
-		url = url.replace(`/${lang}`, '');
-	}
+  for (const lang of jezici) {
+    url = url.replace(`/${lang}`, "");
+  }
 
-	return `/${jezik}${url}`
-}
+  return `/${jezik}${url}`;
+};
 ---
 
 <header transition:name="header">
-	<nav>
-		<a class="title" href=`/${lang}`>{frontmatter.naslov}</a>
+  <nav>
+    <a class="title" href=`/${lang}`>{frontmatter.naslov}</a>
 
-		<button aria-label="Open navigation menu" class="mobile center" popovertarget="menu-links">
-			<Icon name="mdi:hamburger-menu" size={ICON_SIZE_LG} />
-		</button>
+    <button
+      aria-label="Open navigation menu"
+      class="mobile center"
+      popovertarget="menu-links"
+    >
+      <Icon name="mdi:hamburger-menu" size={ICON_SIZE_LG} />
+    </button>
 
-		<div id="menu-links" popover>
-			<nav class="internal-links">
-				<button aria-label="Close navigation menu" class="mobile" popovertarget="menu-links" popovertargetaction="hide">
-					<Icon name="mdi:close" size={ICON_SIZE_LG} />
-				</button>
-				{frontmatter.linkovi.map(({naziv, link}: {naziv: string, link: string}) => 
-					<HeaderLink href={`/${lang}${link}`}>{naziv}</HeaderLink>
-				)}
+    <div id="menu-links" popover>
+      <nav class="internal-links">
+        <button
+          aria-label="Close navigation menu"
+          class="mobile"
+          popovertarget="menu-links"
+          popovertargetaction="hide"
+        >
+          <Icon name="mdi:close" size={ICON_SIZE_LG} />
+        </button>
+        {
+          frontmatter.linkovi.map(
+            ({ naziv, link }: { naziv: string; link: string }) => (
+              <HeaderLink href={`/${lang}${link}`}>{naziv}</HeaderLink>
+            ),
+          )
+        }
 
-				<button aria-label="Open website language list" class="icon" popovertarget="translate">
-					<Icon name="mdi:translate" size={ICON_SIZE_LG} />
-				</button>
-			</nav>
-		</div>
+        <button
+          aria-label="Open website language list"
+          class="icon"
+          popovertarget="translate"
+        >
+          <Icon name="mdi:translate" size={ICON_SIZE_LG} />
+        </button>
+      </nav>
+    </div>
 
-		<div id="translate" popover>
-			<ul>
-				<li>
-					<button aria-label="Close website language list" popovertarget="translate" popovertargetaction="hide">
-						<Icon name="mdi:close" size={ICON_SIZE_LG} />
-					</button>
-				</li>
-				<li><a href={jezik("sr")}>Српски (ћирилица)</a></li>
-				<li><a href={jezik("sr-lat")}>Srpski (latinica)</a></li>
-				<li><a href={jezik("en")}>English</a></li>
-			</ul>
-		</div>
-	</nav>
+    <div id="translate" popover>
+      <ul>
+        <li>
+          <button
+            aria-label="Close website language list"
+            popovertarget="translate"
+            popovertargetaction="hide"
+          >
+            <Icon name="mdi:close" size={ICON_SIZE_LG} />
+          </button>
+        </li>
+        <li><a href={jezik("sr")}>Српски (ћирилица)</a></li>
+        <li><a href={jezik("sr-lat")}>Srpski (latinica)</a></li>
+        <li><a href={jezik("en")}>English</a></li>
+      </ul>
+    </div>
+  </nav>
 </header>
 
 <style>
-	header {
-		margin: 0;
-		padding: 0 1em;
-		background: white;
-		box-shadow: 0 2px 8px rgba(var(--black), 5%);
-		top: 0;
-		position: sticky;
-		z-index: 100;
-	}
+  header {
+    margin: 0;
+    padding: 0 1em;
+    background: white;
+    box-shadow: 0 2px 8px rgba(var(--black), 5%);
+    top: 0;
+    position: sticky;
+    z-index: 100;
+  }
 
-	.title {
-		font-weight: bold;
-	}
+  .title {
+    font-weight: bold;
+  }
 
-	nav {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-	nav a {
-		padding: 1rem 0.75rem;
-		color: var(--black);
-		border-bottom: 4px solid transparent;
-		text-decoration: none;
-	}
+  nav a {
+    padding: 1rem 0.75rem;
+    color: var(--black);
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+  }
 
-	nav a:hover {
-		background-color: rgba(0, 0, 0, 0.05);
-	}
+  nav a:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
 
-	nav button {	
-		background: none;
-		color: inherit;
-		border: none;
-		padding: 0 0 0 0.5em;
-		font: inherit;
-		outline: inherit;	
-		cursor: pointer;
-	}
+  nav button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0 0 0 0.5em;
+    font: inherit;
+    outline: inherit;
+    cursor: pointer;
+  }
 
-	nav a.active {
-		border-bottom-color: var(--accent);
-	}
+  nav a.active {
+    border-bottom-color: var(--accent);
+  }
 
-	.social-links,
-	.social-links a {
-		display: flex;
-	}
+  .social-links,
+  .social-links a {
+    display: flex;
+  }
 
-	@media (max-width: 720px) {
-		.social-links {
-			display: none;
-		}
-	}
+  @media (max-width: 720px) {
+    .social-links {
+      display: none;
+    }
+  }
 
-	button {
-		display: block;
-	}
+  button {
+    display: block;
+  }
 
-	.icon {
-		display: grid;
-		align-items: center;
-	}
+  .icon {
+    display: grid;
+    align-items: center;
+  }
 
-	#menu-links {
-		position: fixed;
-		margin: 0;
-		border: none;
-		inset: unset;
-		top: 0;
-		right: 0;
-		height: 100vh;
-		box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+  #menu-links {
+    position: fixed;
+    margin: 0;
+    border: none;
+    inset: unset;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
 
-		transition: translate 0.2s;
-		@starting-style {
-			display: block;
-			translate: 100% 0;
-		}
-	}
+    transition: translate 0.2s;
+    @starting-style {
+      display: block;
+      translate: 100% 0;
+    }
+  }
 
-	#menu-links::backdrop {
-		display: block;
-		opacity: 0;
-	}
+  #menu-links::backdrop {
+    display: block;
+    opacity: 0;
+  }
 
-	[popover]::backdrop {
-		transition: opacity 0.2s;
-	}
+  [popover]::backdrop {
+    transition: opacity 0.2s;
+  }
 
-	[popover]:is(:popover-open, .\:popover-open)::backdrop {
-		opacity: 1;
-		pointer-events: none;
-		background-color: rgba(0, 0, 0, 0.2);
+  [popover]:is(:popover-open, .\:popover-open)::backdrop {
+    opacity: 1;
+    pointer-events: none;
+    background-color: rgba(0, 0, 0, 0.2);
 
-		@starting-style {
-			opacity: 0;
-		}
-	}
+    @starting-style {
+      opacity: 0;
+    }
+  }
 
-	#menu-links:is(:popover-open, .\:popover-open) nav {
-		padding-block: 1rem;
-		flex-direction: column;
-		align-items: stretch;
-	}
+  #menu-links:is(:popover-open, .\:popover-open) nav {
+    padding-block: 1rem;
+    flex-direction: column;
+    align-items: stretch;
+  }
 
-	#menu-links:is(:popover-open, .\:popover-open) a {
-		padding: 0.5rem 2rem;
-		border-bottom: 4px solid transparent;
-		border-left: 4px solid transparent;
-	}
+  #menu-links:is(:popover-open, .\:popover-open) a {
+    padding: 0.5rem 2rem;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid transparent;
+  }
 
-	#menu-links:is(:popover-open, .\:popover-open) a.active {
-		border-left-color: var(--accent);
-	}
+  #menu-links:is(:popover-open, .\:popover-open) a.active {
+    border-left-color: var(--accent);
+  }
 
-	#menu-links:is(:popover-open, .\:popover-open) button {
-		padding: .5rem 2rem;
-	}
+  #menu-links:is(:popover-open, .\:popover-open) button {
+    padding: 0.5rem 2rem;
+  }
 
-	#translate {
-		margin: auto;
-		transition: translate 0.2s;
-		padding: 1rem;
-		border-radius: 0.5rem;
-		flex-direction: column;
-		gap: 1rem;
+  #translate {
+    margin: auto;
+    transition: translate 0.2s;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    flex-direction: column;
+    gap: 1rem;
 
-		@starting-style {
-			display: flex;
-			translate: 0 2rem;
-		}
-	}
+    @starting-style {
+      display: flex;
+      translate: 0 2rem;
+    }
+  }
 
-	#translate button {
-		margin-left: auto;
-	}
+  #translate button {
+    margin-left: auto;
+  }
 
-	#translate ul {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        padding: 0;
+  #translate ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+  }
+
+  #translate a {
+    display: flex;
+
+    text-decoration: none;
+    color: black;
+    align-items: center;
+    gap: 1rem;
+
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    padding: 1rem;
+  }
+
+  #translate a:hover {
+    filter: opacity(0.5);
+  }
+
+  button:hover :global(svg) {
+    color: var(--accent-dark);
+  }
+
+  .center {
+    display: grid;
+    place-content: center;
+  }
+
+  @media (min-width: 1050px) {
+    #menu-links {
+      display: contents;
     }
 
-    #translate a {
-        display: flex;
-        
-        text-decoration: none;
-        color: black;
-        align-items: center;
-        gap: 1rem;
-
-        border: 2px solid black;
-        border-radius: 0.5rem;
-        padding: 1rem;
+    button.mobile {
+      display: none;
     }
 
-    #translate a:hover {
-        filter: opacity(0.5);
+    button[popovertarget="translate"] {
+      margin-top: unset;
     }
-
-	button:hover :global(svg) {
-		color: var(--accent-dark);
-	}
-
-	.center {
-		display: grid;
-		place-content: center;
-	}
-
-	@media (min-width: 1050px) {
-		#menu-links {
-			display: contents;
-		}
-
-		button.mobile {
-			display: none;
-		}
-
-		button[popovertarget="translate"] {
-			margin-top: unset;
-		}
-	}
+  }
 </style>

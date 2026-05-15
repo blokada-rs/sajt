@@ -1,80 +1,96 @@
 <html lang="en">
-<head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="robots" content="noindex"/>
-    <link href="/admin/config.yml" type="text/yaml" rel="cms-config-url"/>
-    <link rel="preload" href="/fonts/montserrat-v29-cyrillic_latin_latin-ext-regular.woff2" as="font" type="font/ttf"
-          crossorigin/>
-    <link rel="preload" href="/fonts/montserrat-v29-cyrillic_latin_latin-ext-700.woff2" as="font" type="font/ttf"
-          crossorigin/>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <link href="/admin/config.yml" type="text/yaml" rel="cms-config-url" />
+    <link
+      rel="preload"
+      href="/fonts/montserrat-v29-cyrillic_latin_latin-ext-regular.woff2"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/montserrat-v29-cyrillic_latin_latin-ext-700.woff2"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
     <title>Content Manager</title>
     <style>
-        @font-face {
-            font-display: swap;
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 400;
-            src: local('Montsrrat'), url('/fonts/montserrat-v29-cyrillic_latin_latin-ext-regular.woff2') format('woff2');
-        }
+      @font-face {
+        font-display: swap;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        src:
+          local("Montsrrat"),
+          url("/fonts/montserrat-v29-cyrillic_latin_latin-ext-regular.woff2")
+            format("woff2");
+      }
 
-        @font-face {
-            font-display: swap;
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 700;
-            src: local('Montsrrat'), url('/fonts/montserrat-v29-cyrillic_latin_latin-ext-700.woff2') format('woff2');
-        }
+      @font-face {
+        font-display: swap;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        src:
+          local("Montsrrat"),
+          url("/fonts/montserrat-v29-cyrillic_latin_latin-ext-700.woff2")
+            format("woff2");
+      }
 
-        body {
-            --sui-font-family-default: 'Montserrat';
-            --sui-font-weight-normal: 400;
-        }
+      body {
+        --sui-font-family-default: "Montserrat";
+        --sui-font-weight-normal: 400;
+      }
     </style>
-</head>
-<body>
-<script>
-    import { init } from '@sveltia/cms';
-    import { all } from "@scripts/collections";
+  </head>
+  <body>
+    <script>
+      import { init } from "@sveltia/cms";
+      import { all } from "@scripts/collections";
 
-    init({
+      init({
         config: {
-            load_config_file: false,
-            site_url: "https://blokade.org",
-            logo: { src: "https://blokade.org/favicon.ico" },
-            media_folder: "/src/assets/images/",
-            public_folder: "@assets/images/",
-            i18n: {
-                structure: "multiple_folders",
-                locales: ["sr", "en"],
-                initial_locales: ["sr"],
-                default_locale: "sr"
+          load_config_file: false,
+          site_url: "https://blokade.org",
+          logo: { src: "https://blokade.org/favicon.ico" },
+          media_folder: "/src/assets/images/",
+          public_folder: "@assets/images/",
+          i18n: {
+            structure: "multiple_folders",
+            locales: ["sr", "en"],
+            initial_locales: ["sr"],
+            default_locale: "sr",
+          },
+          backend: {
+            name: "github",
+            repo: "blokada-rs/sajt",
+            branch: "main",
+            base_url: "https://sveltia-cms-auth.studblokade.workers.dev/",
+          },
+          media_libraries: {
+            default: {
+              config: {
+                transformations: {
+                  raster_image: {
+                    format: "webp",
+                    quality: 85,
+                    width: 1920,
+                    height: 1920,
+                  },
+                  svg: { optimize: true },
+                },
+              },
             },
-            backend: {
-                name: "github",
-                repo: "blokada-rs/sajt",
-                branch: "main",
-                base_url: "https://sveltia-cms-auth.studblokade.workers.dev/"
-            },
-            media_libraries: {
-                default: {
-                    config: {
-                        transformations: {
-                            raster_image: {
-                                format: "webp",
-                                quality: 85,
-                                width: 1920,
-                                height: 1920
-                            },
-                            svg: { optimize: true }
-                        }
-                    }
-                }
-            },
-            output: { omit_empty_optional_fields: true },
-            collections: all.make_cms(),
-        }
-    });
-</script>
-</body>
+          },
+          output: { omit_empty_optional_fields: true },
+          collections: all.make_cms(),
+        },
+      });
+    </script>
+  </body>
 </html>

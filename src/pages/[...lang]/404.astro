@@ -5,31 +5,34 @@ import { SITE_DESCRIPTION } from "../../consts";
 import { file, langs } from "@scripts/i18n";
 
 export async function getStaticPaths() {
-    return langs.map((lang) => ({ params: { lang } }));
+  return langs.map((lang) => ({ params: { lang } }));
 }
 
 const { lang } = Astro.params;
 if (typeof lang === "undefined") {
-    return Astro.rewrite(`/sr${Astro.url.pathname}`);
+  return Astro.rewrite(`/sr${Astro.url.pathname}`);
 }
 
 const { frontmatter } = await file("ostalo", lang);
 const { Content } = await file("not_found", lang);
 ---
 
-<Base title={`404 | ${frontmatter.studenti_u_blokadi}`} description={SITE_DESCRIPTION}>
-    <section>
-        <h1>404</h1>
-        <Content />
-    </section>
+<Base
+  title={`404 | ${frontmatter.studenti_u_blokadi}`}
+  description={SITE_DESCRIPTION}
+>
+  <section>
+    <h1>404</h1>
+    <Content />
+  </section>
 </Base>
 
 <style>
-    section {
-        margin-top: 10rem;
-    }
-    h1 {
-        text-align: center;
-        font-size: 10rem;
-    }
+  section {
+    margin-top: 10rem;
+  }
+  h1 {
+    text-align: center;
+    font-size: 10rem;
+  }
 </style>

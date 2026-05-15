@@ -1,8 +1,8 @@
 ---
 import Base from "@layouts/Base.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
+import { SITE_DESCRIPTION } from "../../consts";
 
-import { langs, file } from "@scripts/i18n";
+import { file, langs } from "@scripts/i18n";
 export async function getStaticPaths() {
   return langs.map((lang) => ({ params: { lang } }));
 }

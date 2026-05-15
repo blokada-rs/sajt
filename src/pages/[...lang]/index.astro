@@ -26,14 +26,10 @@ const vesti = await collection("vesti", lang);
 const live = vesti.filter((vest) => vest.data.live);
 ---
 
-<Base
-  title={pocetna.naslov}
-  description={SITE_DESCRIPTION}
-  image={slavija.src}
->
+<Base title={pocetna.naslov} description={SITE_DESCRIPTION} image={slavija.src}>
   <div class="title">
     <Picture
-      formats={['avif', 'webp']}
+      formats={["avif", "webp"]}
       src={slavija}
       loading="eager"
       alt=""
@@ -44,14 +40,16 @@ const live = vesti.filter((vest) => vest.data.live);
     />
     <h1>{pocetna.naslov}</h1>
 
-    <div class="square" />
-    <div class="square" />
+    <div class="square"></div>
+    <div class="square"></div>
   </div>
 
   <div class="live-box">
-    {live.map(live =>
-      <Live href={`/${lang}/vesti/${live.id}`}>{live.data.title}</Live>
-    )}
+    {
+      live.map((live) => (
+        <Live href={`/${lang}/vesti/${live.id}`}>{live.data.title}</Live>
+      ))
+    }
   </div>
 
   <section>
@@ -60,19 +58,31 @@ const live = vesti.filter((vest) => vest.data.live);
 
   <section class="dark-background">
     <h2>{pocetna.vesti}</h2>
-    {pocetna.vesti_tekst && <p class="section-subtitle">{pocetna.vesti_tekst}</p>}
+    {
+      pocetna.vesti_tekst && (
+        <p class="section-subtitle">{pocetna.vesti_tekst}</p>
+      )
+    }
     <Slider>
-      {vesti.slice(0, 3).map(post =>
-        <Card link={`/${lang}/vesti/${post.id}`} {...post} />)
+      {
+        vesti
+          .slice(0, 3)
+          .map((post) => <Card link={`/${lang}/vesti/${post.id}`} {...post} />)
       }
-      <a slot="button" href=`/${lang}/vesti` class="button primary dugme">{pocetna.vesti_dugme}</a>
+      <a slot="button" href=`/${lang}/vesti` class="button primary dugme"
+        >{pocetna.vesti_dugme}</a
+      >
     </Slider>
   </section>
 
   <section>
     <Zahtevi />
     <div class="buttons">
-      <a slot="button" href=`/${lang}/zahtevi` class="button primary dugme center">{pocetna.konkretizacije_zahteva}</a>
+      <a
+        slot="button"
+        href=`/${lang}/zahtevi`
+        class="button primary dugme center">{pocetna.konkretizacije_zahteva}</a
+      >
     </div>
   </section>
 
@@ -85,7 +95,11 @@ const live = vesti.filter((vest) => vest.data.live);
     <h2>{pocetna.suss}</h2>
     {pocetna.suss_tekst && <Markdown of={pocetna.suss_tekst} />}
     <div class="buttons">
-      <a slot="button" href=`https://suss.rs` class="button primary dugme center">{pocetna.suss_dugme}</a>
+      <a
+        slot="button"
+        href=`https://suss.rs`
+        class="button primary dugme center">{pocetna.suss_dugme}</a
+      >
     </div>
   </section>
 </Base>

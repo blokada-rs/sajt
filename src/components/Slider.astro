@@ -1,6 +1,6 @@
 ---
-import { Icon } from 'astro-icon/components';
-import { ICON_SIZE_LG } from 'consts';
+import { Icon } from "astro-icon/components";
+import { ICON_SIZE_LG } from "consts";
 ---
 
 <astro-carousel>
@@ -67,52 +67,56 @@ import { ICON_SIZE_LG } from 'consts';
     #right: HTMLButtonElement;
 
     scrollList(list?: Element) {
-      if (typeof list === "undefined") { return; }
-  
+      if (typeof list === "undefined") {
+        return;
+      }
+
       this.#inner.scrollTo({
-          left:
-            this.#inner.scrollLeft -
-            this.#inner.getBoundingClientRect().left +
-            list.getBoundingClientRect().left - 5,
-          
-          behavior: 'smooth'
-        });
+        left:
+          this.#inner.scrollLeft -
+          this.#inner.getBoundingClientRect().left +
+          list.getBoundingClientRect().left -
+          5,
+
+        behavior: "smooth",
+      });
     }
 
     left() {
       this.scrollList(
         [...this.#inner.children]
           .reverse()
-          .find(el => el.getBoundingClientRect().x < 0)
-      )
+          .find((el) => el.getBoundingClientRect().x < 0),
+      );
     }
 
     right() {
       this.scrollList(
-        [...this.#inner.children]
-          .find(el => el.getBoundingClientRect().x > 30)
-      )
+        [...this.#inner.children].find(
+          (el) => el.getBoundingClientRect().x > 30,
+        ),
+      );
     }
 
     constructor() {
       super();
       this.#inner = this.querySelector(".inner")!;
-      this.#left  = this.querySelector("[data-dir='left']")!;
+      this.#left = this.querySelector("[data-dir='left']")!;
       this.#right = this.querySelector("[data-dir='right']")!;
 
       this.#left.onclick = () => this.left();
       this.#right.onclick = () => this.right();
 
-      const resized = new ResizeObserver(observed => {
-          const { scrollWidth, clientWidth } = observed[0].target;
+      const resized = new ResizeObserver((observed) => {
+        const { scrollWidth, clientWidth } = observed[0].target;
 
-          if (scrollWidth > clientWidth) {
-              this.#left.style.display = "flex";
-              this.#right.style.display = "flex";
-          } else {
-              this.#left.style.display = "none";
-              this.#right.style.display = "none";
-          }
+        if (scrollWidth > clientWidth) {
+          this.#left.style.display = "flex";
+          this.#right.style.display = "flex";
+        } else {
+          this.#left.style.display = "none";
+          this.#right.style.display = "none";
+        }
       });
 
       resized.observe(this.#inner);

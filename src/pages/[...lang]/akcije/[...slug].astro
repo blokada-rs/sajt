@@ -1,32 +1,32 @@
 ---
-import { type CollectionEntry } from 'astro:content';
-import BlogPost from '../../../layouts/BlogPost.astro';
-import { render } from 'astro:content';
-import { collectionIDs, entry, langs } from '@scripts/i18n';
+import { collectionIDs, entry, langs } from "@scripts/i18n";
+import { render, type CollectionEntry } from "astro:content";
+import BlogPost from "../../../layouts/BlogPost.astro";
 
 const { lang } = Astro.params;
 if (typeof lang === "undefined") {
-	return Astro.rewrite(`/sr${Astro.url.pathname}`);
+  return Astro.rewrite(`/sr${Astro.url.pathname}`);
 }
 
 export async function getStaticPaths() {
-	const posts = await collectionIDs('akcije');
+  const posts = await collectionIDs("akcije");
 
-	return await Promise.all(langs
-		.flatMap(lang => posts.flatMap(id => ({lang, id})))
-		.map(async ({lang, id}) => ({
-				params: {lang, slug: id},
-				props: await entry('akcije', id, lang),
-			})
-		));
+  return await Promise.all(
+    langs
+      .flatMap((lang) => posts.flatMap((id) => ({ lang, id })))
+      .map(async ({ lang, id }) => ({
+        params: { lang, slug: id },
+        props: await entry("akcije", id, lang),
+      })),
+  );
 }
 
-type Props = CollectionEntry<'akcije'> & {lang: string};
+type Props = CollectionEntry<"akcije"> & { lang: string };
 
 const post = Astro.props;
 const { Content } = await render(post);
 ---
 
 <BlogPost lang={post.lang} {...post.data}>
-	<Content />
+  <Content />
 </BlogPost>

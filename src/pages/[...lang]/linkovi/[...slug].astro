@@ -1,29 +1,30 @@
 ---
-import Base from '@layouts/Base.astro';
-import {collection, collectionIDs, entry, file, langs} from '@scripts/i18n';
-import { Icon } from 'astro-icon/components';
-import { type CollectionEntry } from 'astro:content';
+import Base from "@layouts/Base.astro";
+import { collection, collectionIDs, entry, file, langs } from "@scripts/i18n";
+import { Icon } from "astro-icon/components";
+import { type CollectionEntry } from "astro:content";
 import { SITE_DESCRIPTION } from "../../../consts";
-import { ICON_SIZE_LG } from 'consts';
+import { ICON_SIZE_LG } from "consts";
 
 const { lang } = Astro.params;
 if (typeof lang === "undefined") {
-    return Astro.rewrite(`/sr${Astro.url.pathname}`);
+  return Astro.rewrite(`/sr${Astro.url.pathname}`);
 }
 
 export async function getStaticPaths() {
-    const linkovi = await collectionIDs('linkovi');
+  const linkovi = await collectionIDs("linkovi");
 
-    return Promise.all(langs
-        .flatMap(lang => linkovi.flatMap(id => ({lang, id})))
-        .map(async ({lang, id}) => ({
-                params: {lang, slug: id},
-                props: await entry("linkovi", id, lang),
-            })
-        ));
+  return Promise.all(
+    langs
+      .flatMap((lang) => linkovi.flatMap((id) => ({ lang, id })))
+      .map(async ({ lang, id }) => ({
+        params: { lang, slug: id },
+        props: await entry("linkovi", id, lang),
+      })),
+  );
 }
 
-type Props = CollectionEntry<'linkovi'> & {lang: string};
+type Props = CollectionEntry<"linkovi"> & { lang: string };
 
 const linkovi = Astro.props;
 
@@ -35,88 +36,102 @@ const live = vesti.filter((vest) => vest.data.live);
 ---
 
 <Base title=`Linkovi | ${linkovi.data.title}` description={SITE_DESCRIPTION}>
-    {live.length > 0 && <>
+  {
+    live.length > 0 && (
+      <>
         <h1>Vesti uživo</h1>
         <ul>
-            {live.map(live =>
-                <li>
-                    <a class="live" href={`/${lang}/vesti/${live.data.link}`}>
-                        <Icon size={ICON_SIZE_LG} name={`mdi:newspaper`} />
-                        {live.data.title}
-                    </a>
-                </li>
-            )}
-        </ul>
-    </>}
-    <h1>{linkovi.data.title}</h1>
-    <ul>
-        {linkovi.data.linkovi.map(link =>
+          {live.map((live) => (
             <li>
-                <a href={link.link}>
-                    {link.ikonica !== "bez" && <Icon size={ICON_SIZE_LG} name={`mdi:${link.ikonica}`} />}
-                    {link.naslov}
-                </a>
-            </li>
-        )}
-    </ul>
-    <h1>{ostali_linkovi.ostali_linkovi}</h1>
-    <ul>
-        {ostali_linkovi.linkovi.map(link =>
-                <li>
-                    <a href={link.link}>
-                        {link.ikonica !== "bez" && <Icon size={ICON_SIZE_LG} name={`mdi:${link.ikonica}`} />}
-                        {link.naslov}
-                    </a>
-                </li>
-        )}
-    </ul>
-
-    <h1>{ostali_linkovi.najnovije_vesti}</h1>
-    <ul>
-        {vesti.slice(0, 3).map(vest =>
-          <li>
-              <a href={`/${lang}/vesti/${vest.data.link}`}>
-                  <Icon size={ICON_SIZE_LG} name={`mdi:newspaper`} />
-                  {vest.data.title}
+              <a class="live" href={`/${lang}/vesti/${live.data.link}`}>
+                <Icon size={ICON_SIZE_LG} name={`mdi:newspaper`} />
+                {live.data.title}
               </a>
-          </li>
-        )}
-    </ul>
+            </li>
+          ))}
+        </ul>
+      </>
+    )
+  }
+  <h1>{linkovi.data.title}</h1>
+  <ul>
+    {
+      linkovi.data.linkovi.map((link) => (
+        <li>
+          <a href={link.link}>
+            {link.ikonica !== "bez" && (
+              <Icon size={ICON_SIZE_LG} name={`mdi:${link.ikonica}`} />
+            )}
+            {link.naslov}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+  <h1>{ostali_linkovi.ostali_linkovi}</h1>
+  <ul>
+    {
+      ostali_linkovi.linkovi.map((link) => (
+        <li>
+          <a href={link.link}>
+            {link.ikonica !== "bez" && (
+              <Icon size={ICON_SIZE_LG} name={`mdi:${link.ikonica}`} />
+            )}
+            {link.naslov}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+
+  <h1>{ostali_linkovi.najnovije_vesti}</h1>
+  <ul>
+    {
+      vesti.slice(0, 3).map((vest) => (
+        <li>
+          <a href={`/${lang}/vesti/${vest.data.link}`}>
+            <Icon size={ICON_SIZE_LG} name={`mdi:newspaper`} />
+            {vest.data.title}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
 </Base>
 
 <style>
-    h1 {
-        margin-top: 2rem;
-        margin-bottom: 1rem;
-        font-size: 1.75rem;
-    }
+  h1 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+  }
 
-    ul {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        padding: 0;
-    }
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+  }
 
-    a {
-        display: flex;
-        
-        text-decoration: none;
-        color: black;
-        align-items: center;
-        gap: 1rem;
+  a {
+    display: flex;
 
-        border: 2px solid black;
-        border-radius: 0.5rem;
-        padding: 1rem;
-    }
+    text-decoration: none;
+    color: black;
+    align-items: center;
+    gap: 1rem;
 
-    a.live {
-        border-color: var(--accent);
-    }
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    padding: 1rem;
+  }
 
-    a:hover {
-        filter: opacity(0.5);
-    }
+  a.live {
+    border-color: var(--accent);
+  }
+
+  a:hover {
+    filter: opacity(0.5);
+  }
 </style>
