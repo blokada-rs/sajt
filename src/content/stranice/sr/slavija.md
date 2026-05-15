@@ -1,5 +1,5 @@
 ---
-title: Ти и ја, Славија
+title: Ти и ја, Славија 23. 5.
 preuzmi: Преузми плакат
 sections:
   - id: prijavi-se
