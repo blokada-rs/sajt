@@ -2,6 +2,9 @@
 title: Пољопривредни факултет
 link: agrif
 linkovi:
+  - ikonica: bez
+    naslov: Пријава – Тура до Стразбура
+    link: https://docs.google.com/forms/d/e/1FAIpQLSd-kXR-nCS95BMz1axFFvgN-2sHLbF3H3jaS6xZYDB8ntwx6w/viewform
   - ikonica: instagram
     naslov: Instagram профил
     link: https://www.instagram.com/poljoprivredniblokada
