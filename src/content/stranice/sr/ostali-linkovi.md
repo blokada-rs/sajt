@@ -2,6 +2,9 @@
 ostali_linkovi: Остали линкови
 najnovije_vesti: Најновије вести
 linkovi:
+  - ikonica: web
+    naslov: Ти и ја, Славија 23. 5.
+    link: https://blokade.org/slavija/
   - ikonica: sticker
     naslov: Налепнице
     link: https://blokade.org/ukljuci-se#nalepnice
