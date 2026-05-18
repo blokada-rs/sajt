@@ -2,6 +2,9 @@
 title: Студенти у блокади – дијаспора
 link: sub_dijaspora
 linkovi:
+  - ikonica: web
+    naslov: Потпиши подршку
+    link: https://dijaspora.studenti.org.rs/
   - ikonica: instagram
     naslov: Instagram профил
     link: https://www.instagram.com/studenti_u_blokadi_dijaspora
