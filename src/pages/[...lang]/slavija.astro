@@ -35,7 +35,7 @@ const { frontmatter, Content } = await file("slavija", lang);
   </div>
 
   {
-    frontmatter.sections.map((section, i) => (
+    frontmatter.sections.map((section: any, i: number) => (
       <section
         class:list={[{ "dark-background": i % 2 === 1 }]}
         id={section.id}
@@ -59,16 +59,43 @@ const { frontmatter, Content } = await file("slavija", lang);
   }
 
   <section>
-    <h1 class="center" id="dana" data-text={frontmatter.vidimo_se}></h1>
+    <strong class="center" id="dana" data-text={frontmatter.vidimo_se}></strong>
   </section>
 </Base>
 
 <script>
-  const dana = document.getElementById("dana") as HTMLSpanElement;
-  const slavija = new Date("May 23, 2026 23:29:00");
-  const ms = slavija.getTime() - new Date().getTime();
-  const broj_dana = Math.floor(ms / (1000 * 60 * 60 * 24));
-  dana.innerText = dana?.dataset.text?.replace("$$", `${broj_dana}`) ?? "";
+  const end = new Date("May 23, 2026 18:00:00");
+
+  const _second = 1000;
+  const _minute = _second * 60;
+  const _hour = _minute * 60;
+  const _day = _hour * 24;
+
+  const timer = setInterval(showRemaining, 1000);
+  const dana = document.getElementById("dana") as HTMLElement;
+
+  function showRemaining() {
+    const now = new Date();
+    const distance = end.getTime() - now.getTime();
+    if (distance < 0) {
+      clearInterval(timer);
+      dana.innerHTML = "Славија!";
+
+      return;
+    }
+
+    const days = Math.floor(distance / _day);
+    const hours = Math.floor((distance % _day) / _hour);
+    const minutes = Math.floor((distance % _hour) / _minute);
+    const seconds = Math.floor((distance % _minute) / _second);
+
+    dana.innerText =
+      dana.dataset.text
+        ?.replace("$1", `${days}`)
+        ?.replace("$2", `${hours}`)
+        ?.replace("$3", `${minutes}`)
+        ?.replace("$4", `${seconds}`) ?? "";
+  }
 </script>
 
 <style>
@@ -220,5 +247,6 @@ const { frontmatter, Content } = await file("slavija", lang);
 
   .center {
     text-align: center;
+    display: block;
   }
 </style>
