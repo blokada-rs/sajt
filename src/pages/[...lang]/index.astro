@@ -52,8 +52,20 @@ const live = vesti.filter((vest) => vest.data.live);
     }
   </div>
 
-  <section>
+  <section class="dark-background">
     <Pocetna />
+  </section>
+
+  <section class="background">
+    <h2>{pocetna.slavija}</h2>
+    {pocetna.slavija_tekst && <Markdown of={pocetna.slavija_tekst} />}
+
+    <p class="countdown">{pocetna.vidimo_se}<strong id="countdown"></strong></p>
+    <div class="buttons">
+      <a slot="button" href=`/slavija` class="button primary dugme center">
+        {pocetna.slavija_dugme}
+      </a>
+    </div>
   </section>
 
   <section class="dark-background">
@@ -104,7 +116,27 @@ const live = vesti.filter((vest) => vest.data.live);
   </section>
 </Base>
 
+<script>
+  import { countdown } from "@scripts/timer";
+  const end = new Date("May 23, 2026 18:00:00");
+  const dana = document.getElementById("countdown") as HTMLElement;
+
+  countdown(end, dana);
+</script>
+
 <style>
+  .countdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #countdown {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    line-height: 0.75;
+  }
+
   .title {
     position: relative;
     background-size: cover;

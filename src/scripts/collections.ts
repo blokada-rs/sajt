@@ -116,6 +116,10 @@ const stranice = file_collection("stranice", "Stranice", "description", [
   file("pocetna", "Početna", "src/content/stranice", "početna.md", [
     string_field("naslov", "Naslov"),
     markdown_field("body", "Opis"),
+    string_field("slavija", "Slavija"),
+    markdown_field("slavija_tekst", "Slavija tekst"),
+    string_field("vidimo_se", "Vidimo se za"),
+    string_field("slavija_dugme", "Slavija dugme"),
     string_field("vesti", "Vesti"),
     markdown_field("vesti_tekst", "Vesti tekst"),
     string_field("vesti_dugme", "Vesti dugme"),

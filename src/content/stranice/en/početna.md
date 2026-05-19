@@ -1,5 +1,16 @@
 ---
 naslov: Student Blockades
+slavija: Ti i ja, Slavija
+slavija_tekst: |-
+  Okupljamo se na dobro poznatom mestu, mestu na kome je počela naša pobeda. Sastajemo se da pokažemo da smo i dalje tu, da čitava Srbija i svet vide našu brojnost i zajedništvo. Naš glas se najdalje čuje kada smo zajedno!
+
+  **Neka naše prvo sazvežđe ponovo zasija!**
+
+  Studenti ne odustaju. Studenti se organizuju. 
+
+  **STUDENTI POBEĐUJU!**
+vidimo_se: Vidimo se za
+slavija_dugme: Informacije u skupu
 vesti: News
 vesti_tekst: Upcoming public actions and events organized by students in the blockades of higher education institutions in Belgrade. See the announcements of actions that await us in the coming period, find out more about the plan of activities, see the map or follow how the event is developing live.
 vesti_dugme: See all news
