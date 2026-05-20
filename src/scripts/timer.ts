@@ -4,6 +4,7 @@ export const countdown = (until: Date, element: HTMLElement) => {
   const _hour = _minute * 60;
   const _day = _hour * 24;
 
+  showRemaining();
   const timer = setInterval(showRemaining, 1000);
 
   function showRemaining() {
