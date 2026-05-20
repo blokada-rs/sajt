@@ -10,7 +10,7 @@ slavija_tekst: |-
 
   **STUDENTI POBEĐUJU!**
 vidimo_se: Vidimo se za
-slavija_dugme: Informacije u skupu
+slavija_dugme: Informacije o skupu
 vesti: News
 vesti_tekst: Upcoming public actions and events organized by students in the blockades of higher education institutions in Belgrade. See the announcements of actions that await us in the coming period, find out more about the plan of activities, see the map or follow how the event is developing live.
 vesti_dugme: See all news
