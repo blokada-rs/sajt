@@ -56,5 +56,3 @@ sections:
     link: https://studenti.org.rs/doniraj
     text: Буди део заједнице и на тај начин учествуј!
 ---
-
-.
