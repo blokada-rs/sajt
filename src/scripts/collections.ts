@@ -73,7 +73,7 @@ const vesti = folder_collection(
       list_field("slike", "Slike", [image_field("slike", "Slike")])
         .singular("Slika")
         .required(false),
-      markdown_field("tekst", "Tekst"),
+      markdown_field("tekst", "Tekst").required(false),
     ])
       .add_to_top()
       .required(false)
@@ -210,6 +210,9 @@ const stranice = file_collection("stranice", "Stranice", "description", [
     string_field("title", "Naslov"),
     string_field("preuzmi", "Preuzmi plakat"),
     string_field("vidimo_se", "Vidimo se"),
+    string_field("najnovije_vesti", "Najnovije vesti"),
+    string_field("video_id", "Video ID").required(false),
+    string_field("prenos_uzivo", "Prenos uživo"),
     list_field("sections", "Sekcije", [
       string_field("id", "ID").required(false),
       string_field("title", "Naslov").required(false),

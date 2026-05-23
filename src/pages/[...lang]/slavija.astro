@@ -6,6 +6,7 @@ import slavija from "@assets/images/slavija.webp";
 import { file, langs } from "@scripts/i18n";
 import { Picture } from "astro:assets";
 import { Markdown } from "@mashehu/astropub-md";
+import Timeline from "@components/Timeline.astro";
 
 export async function getStaticPaths() {
   return langs.map((lang) => ({ params: { lang } }));
@@ -17,6 +18,7 @@ if (typeof lang === "undefined") {
 }
 
 const { frontmatter, Content } = await file("slavija", lang);
+const { frontmatter: vest } = await file("slavija_23_5", lang);
 ---
 
 <Base title={frontmatter.title} description={SITE_DESCRIPTION}>
@@ -34,10 +36,24 @@ const { frontmatter, Content } = await file("slavija", lang);
     <div class="square"></div>
   </div>
 
-  <section class="accent-background">
+  <section
+    id="countdown"
+    class="accent-background"
+    data-id={frontmatter.video_id}
+    data-prenos_uzivo={frontmatter.prenos_uzivo}
+  >
     <span class="center">{frontmatter.vidimo_se}</span>
     <h1 class="center" id="dana"></h1>
   </section>
+
+  {
+    vest.timeline && (
+      <section>
+        <h2>{frontmatter.najnovije_vesti}</h2>
+        <Timeline timeline={vest.timeline} />
+      </section>
+    )
+  }
 
   {
     frontmatter.sections.map((section: any, i: number) => (
@@ -69,7 +85,26 @@ const { frontmatter, Content } = await file("slavija", lang);
   const end = new Date("May 23, 2026 18:00:00");
   const dana = document.getElementById("dana") as HTMLElement;
 
-  countdown(end, dana);
+  countdown(end, dana, () => {
+    const countdown = document.getElementById("countdown") as HTMLElement;
+    countdown.classList
+      .values()
+      .forEach((val) => countdown.classList.remove(val));
+
+    countdown.classList.toggle("dark-background");
+    countdown.innerHTML = `
+      <div>
+        <h2>${countdown.dataset.prenos_uzivo!}</h2>
+        <br />
+        <iframe
+          class="live-embed"
+          src="https://www.youtube-nocookie.com/embed/${countdown.dataset.id!}"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        />
+      </div>
+    `;
+  });
 </script>
 
 <style>
@@ -202,12 +237,12 @@ const { frontmatter, Content } = await file("slavija", lang);
     justify-content: center;
   }
 
-  .dark-background {
+  :global(.dark-background) {
     position: relative;
     padding-block: 3rem;
   }
 
-  .dark-background::before {
+  :global(.dark-background::before) {
     content: "";
     background-color: hsl(0, 0%, 95%);
     position: absolute;
@@ -238,5 +273,13 @@ const { frontmatter, Content } = await file("slavija", lang);
 
   #dana {
     margin-block: 0;
+  }
+
+  :global(.live-embed) {
+    max-width: 600px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    aspect-ratio: 16/9;
   }
 </style>

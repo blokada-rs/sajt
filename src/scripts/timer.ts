@@ -1,8 +1,11 @@
-export const countdown = (until: Date, element: HTMLElement) => {
+export const countdown = (
+  until: Date,
+  element: HTMLElement,
+  done: Function | null = null,
+) => {
   const _second = 1000;
   const _minute = _second * 60;
   const _hour = _minute * 60;
-  const _day = _hour * 24;
 
   showRemaining();
   const timer = setInterval(showRemaining, 1000);
@@ -12,16 +15,14 @@ export const countdown = (until: Date, element: HTMLElement) => {
     const distance = until.getTime() - now.getTime();
     if (distance < 0) {
       clearInterval(timer);
-      element.innerHTML = "Славија!";
-
+      done && done();
       return;
     }
 
-    const days = Math.floor(distance / _day);
-    const hours = Math.floor((distance % _day) / _hour);
+    const hours = Math.floor(distance / _hour);
     const minutes = Math.floor((distance % _hour) / _minute);
     const seconds = Math.floor((distance % _minute) / _second);
 
-    element.innerText = `${String(days * 24 + hours).padStart(2, "0")}:${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+    element.innerText = `${String(hours).padStart(2, "0")}:${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
   }
 };

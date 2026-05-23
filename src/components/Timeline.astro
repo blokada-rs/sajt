@@ -10,44 +10,41 @@ const { timeline } = Astro.props;
 
 {
   typeof timeline !== "undefined" && (
-    <section>
-      <div class="desavanja">
-        {timeline.map((post) => (
-          <article>
-            <h3>{post.naslov}</h3>
-            <FormattedDate date={post.datum} time />
-            {((post.slike?.length ?? 0) > 0 ||
-              (post.videos?.length ?? 0) > 0) && (
-              <div class="slike">
-                {post.videos?.map((video) => (
-                  <iframe
-                    src={`https://www.youtube-nocookie.com/embed/${video}`}
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen
-                  />
-                ))}
-                {post.slike?.map((slika) => (
-                  <Picture formats={["avif", "webp"]} src={slika} alt="" />
-                ))}
-              </div>
-            )}
+    <div class="desavanja">
+      {timeline.map((post) => (
+        <article>
+          <h3>{post.naslov}</h3>
+          <FormattedDate date={post.datum} time />
+          {((post.slike?.length ?? 0) > 0 ||
+            (post.videos?.length ?? 0) > 0) && (
+            <div class="slike">
+              {post.videos?.map((video) => (
+                <iframe
+                  src={`https://www.youtube-nocookie.com/embed/${video}`}
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                />
+              ))}
+              {post.slike?.map((slika) => (
+                <Picture formats={["avif", "webp"]} src={slika} alt="" />
+              ))}
+            </div>
+          )}
 
-            {typeof post.tekst !== "undefined" && <Markdown of={post.tekst} />}
-          </article>
-        ))}
-      </div>
-    </section>
+          {typeof post.tekst !== "undefined" && <Markdown of={post.tekst} />}
+        </article>
+      ))}
+    </div>
   )
 }
 
 <style>
   .desavanja {
-    margin-top: 2rem;
     border-left: 4px solid black;
     padding-left: 24px;
   }
 
-  article {
+  article:not(:last-of-type) {
     margin-bottom: 3rem;
   }
 

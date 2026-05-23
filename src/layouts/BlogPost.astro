@@ -117,7 +117,10 @@ const { frontmatter } = await file("ostalo", lang);
         )
       }
 
-      <Timeline {timeline} />
+      <section class="timeline">
+        <Timeline {timeline} />
+      </section>
+
       <article>
         <slot />
       </article>
