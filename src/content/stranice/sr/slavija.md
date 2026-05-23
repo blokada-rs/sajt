@@ -58,4 +58,9 @@ sections:
     link_text: Донирај
     link: https://studenti.org.rs/doniraj
     text: Буди део заједнице и на тај начин учествуј!
+  - id: kontrola
+    title: Пријава за контролоре
+    link_text: Пријава
+    link: https://prijava.studenti.org.rs/p/kontrola
+    text: Помози студентима при изборној логистици - пријави се да будеш контролор на предстојећим парламентарним изборима.
 ---
