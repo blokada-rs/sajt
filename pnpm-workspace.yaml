@@ -1,3 +1,5 @@
 allowBuilds:
   esbuild: true
   sharp: true
+minimumReleaseAgeExclude:
+  - '@sveltia/cms@0.164.0'
