@@ -1,7 +1,7 @@
 ---
 title: Ти и ја, Славија 23. 5.
 preuzmi: Преузми плакат
-vidimo_se: Видимо се за
+vidimo_se: Славија
 najnovije_vesti: Најновије вести
 video_id: lcNgNzFTqu8
 prenos_uzivo: Пренос уживо
