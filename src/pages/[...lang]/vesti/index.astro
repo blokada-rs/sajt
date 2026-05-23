@@ -14,7 +14,6 @@ if (typeof lang === "undefined") {
 }
 
 const posts = await collection("vesti", lang);
-
 const { frontmatter } = await file("ostalo", lang);
 
 export async function getStaticPaths() {

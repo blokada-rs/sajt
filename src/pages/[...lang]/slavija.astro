@@ -3,7 +3,7 @@ import Base from "@layouts/Base.astro";
 import { SITE_DESCRIPTION } from "../../consts";
 
 import slavija from "@assets/images/slavija.webp";
-import { file, langs } from "@scripts/i18n";
+import { entry, file, langs } from "@scripts/i18n";
 import { Picture } from "astro:assets";
 import { Markdown } from "@mashehu/astropub-md";
 import Timeline from "@components/Timeline.astro";
@@ -18,7 +18,7 @@ if (typeof lang === "undefined") {
 }
 
 const { frontmatter, Content } = await file("slavija", lang);
-const { frontmatter: vest } = await file("slavija_23_5", lang);
+const { data: vest } = await entry("vesti", "slavija_23_5", lang);
 ---
 
 <Base title={frontmatter.title} description={SITE_DESCRIPTION}>
