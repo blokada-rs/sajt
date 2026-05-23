@@ -440,13 +440,20 @@ class ListBuilder extends FieldBuilder {
   }
 
   make_cms() {
-    return {
+    const cms = {
       ...super.make_cms(),
-      fields: this.fields.map((field) => field.make_cms()),
       label_singular: this._singular,
       add_to_top: this._add_to_top,
       summary: this._summary,
     };
+
+    if (this.fields.length === 1) {
+      cms.field = this.fields[0].make_cms();
+    } else if (this.fields.length > 1) {
+      cms.fields = this.fields.map((field) => field.make_cms());
+    }
+
+    return cms;
   }
 
   make_zod(ctx: SchemaContext): z.ZodType {
