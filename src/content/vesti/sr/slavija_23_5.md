@@ -9,6 +9,8 @@ description: Ти и ја – Славија. Уживо пренос скупа
 timeline:
   - naslov: Ти и ја
     datum: 2026-05-23T20:04:00.000Z
+    videos:
+      - cehLNCsEGSk
     slike:
       - '@assets/images/photo_5805363713706495486_y.webp'
     tekst: 'Фотограф: Игор Вујановић'
