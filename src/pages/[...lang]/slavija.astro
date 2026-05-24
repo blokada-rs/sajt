@@ -36,14 +36,14 @@ const { data: vest } = await entry("vesti", "slavija_23_5", lang);
     <div class="square"></div>
   </div>
 
-  <section
-    id="countdown"
-    class="accent-background"
-    data-id={frontmatter.video_id}
-    data-prenos_uzivo={frontmatter.prenos_uzivo}
-  >
-    <span class="center">{frontmatter.vidimo_se}</span>
-    <h1 class="center" id="dana"></h1>
+  <section class="dark-background">
+    <h2>{frontmatter.prenos_uzivo}</h2>
+    <br />
+    <iframe
+      class="live-embed"
+      src=`https://www.youtube-nocookie.com/embed/${frontmatter.video_id}`
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen></iframe>
   </section>
 
   {
@@ -79,33 +79,6 @@ const { data: vest } = await entry("vesti", "slavija_23_5", lang);
     ))
   }
 </Base>
-
-<script>
-  import { countdown } from "@scripts/timer";
-  const end = new Date("May 23, 2026 18:00:00");
-  const dana = document.getElementById("dana") as HTMLElement;
-
-  countdown(end, dana, () => {
-    const countdown = document.getElementById("countdown") as HTMLElement;
-    countdown.classList
-      .values()
-      .forEach((val) => countdown.classList.remove(val));
-
-    countdown.classList.toggle("dark-background");
-    countdown.innerHTML = `
-      <div>
-        <h2>${countdown.dataset.prenos_uzivo!}</h2>
-        <br />
-        <iframe
-          class="live-embed"
-          src="https://www.youtube-nocookie.com/embed/${countdown.dataset.id!}"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        />
-      </div>
-    `;
-  });
-</script>
 
 <style>
   :root {
