@@ -359,7 +359,6 @@ class DateTimeBuilder extends FieldBuilder {
       ...super.make_cms(),
       default: this._default,
       i18n: "duplicate",
-      picker_utc: true,
     };
   }
 
@@ -448,8 +447,10 @@ class ListBuilder extends FieldBuilder {
     };
 
     if (this.fields.length === 1) {
+      // @ts-ignore
       cms.field = this.fields[0].make_cms();
     } else if (this.fields.length > 1) {
+      // @ts-ignore
       cms.fields = this.fields.map((field) => field.make_cms());
     }
 
