@@ -38,7 +38,7 @@ sections:
 
       Кроз мејл стижу даљи кораци, информације и начини даљег укључивања.
   - id: kontrola
-    title: Контола избора
+    title: Контрола избора
     link_text: Пријави се
     link: https://prijava.studenti.org.rs/p/kontrola
     text: |-
