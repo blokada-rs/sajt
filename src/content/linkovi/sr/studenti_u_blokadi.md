@@ -3,8 +3,11 @@ title: Студенти у блокади
 link: studenti_u_blokadi
 linkovi:
   - ikonica: web
+    naslov: Контролори у Србији
+    link: https://blokade.org/ukljuci-se#kontrola
+  - ikonica: web
     naslov: Контролори у дијаспори
-    link: https://docs.google.com/forms/d/e/1FAIpQLSc08eDBADFSlkD9lQSJJSwmGg_8O_iCmsZHHjw0ZyPiKFdhLA/viewform
+    link: https://blokade.org/ukljuci-se#k-dijaspora
   - ikonica: web
     naslov: Званични сајт студената у блокади
     link: https://blokade.org
