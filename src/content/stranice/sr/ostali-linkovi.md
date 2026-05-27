@@ -3,14 +3,11 @@ ostali_linkovi: Остали линкови
 najnovije_vesti: Најновије вести
 linkovi:
   - ikonica: web
-    naslov: Ти и ја, Славија 23. 5.
-    link: https://blokade.org/slavija/
-  - ikonica: sticker
-    naslov: Налепнице
-    link: https://blokade.org/ukljuci-se#nalepnice
-  - ikonica: at
-    naslov: Пријава за мејлинг листу
-    link: https://anketa.studenti.org.rs/sr/surveys/288b2ed4-e690-4494-8b59-697098649aa8
+    naslov: Контролори у Србији
+    link: https://blokade.org/ukljuci-se#kontrola
+  - ikonica: web
+    naslov: Контролори у дијаспори
+    link: https://blokade.ork/ukljuci-se#k-dijaspora
   - ikonica: web
     naslov: Званични сајт
     link: https://blokade.org
