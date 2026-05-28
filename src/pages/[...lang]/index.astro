@@ -29,6 +29,7 @@ const live = vesti.filter((vest) => vest.data.live);
 <Base title={pocetna.naslov} description={SITE_DESCRIPTION} image={slavija.src}>
   <div class="title">
     <Picture
+      fetchpriority="high"
       formats={["avif", "webp"]}
       src={slavija}
       loading="eager"

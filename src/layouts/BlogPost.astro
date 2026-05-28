@@ -22,7 +22,6 @@ const {
   title,
   description = "",
   pubDate,
-  updatedDate,
   heroImage,
   live = false,
   live_embed,
@@ -65,6 +64,7 @@ const { frontmatter } = await file("ostalo", lang);
       {
         heroImage && (
           <Picture
+            fetchpriority="high"
             transition:name={Astro.originPathname}
             formats={["avif", "webp"]}
             width={1020}
@@ -274,63 +274,69 @@ const { frontmatter } = await file("ostalo", lang);
   const fullscreen_button = document.getElementById("fullscreen")!;
   const locate_button = document.getElementById("locate")!;
 
-  const map_data = JSON.parse(map_container.dataset.map!);
-  const markers = new leaflet.MarkerClusterGroup();
-  map_data.markers?.forEach((marker: any) =>
-    leaflet
-      .circleMarker([marker.coords_lat, marker.coords_long], {
-        radius: 7,
-        color: "#b80000",
-        fillOpacity: 0.5,
-      })
-      .bindPopup(marker.text)
-      .addTo(markers),
-  );
+  const setup_map = () => {
+    const map_data = JSON.parse(map_container.dataset.map!);
+    const markers = new leaflet.MarkerClusterGroup();
+    map_data.markers?.forEach((marker: any) =>
+      leaflet
+        .circleMarker([marker.coords_lat, marker.coords_long], {
+          radius: 7,
+          color: "#b80000",
+          fillOpacity: 0.5,
+        })
+        .bindPopup(marker.text)
+        .addTo(markers),
+    );
 
-  const map = leaflet.map(map_container, {
-    preferCanvas: true,
-    renderer: leaflet.canvas(),
-    center: leaflet.latLng(map_data.coords_lat, map_data.coords_long),
-    zoom: map_data.zoom,
-    attributionControl: false,
-    layers: [
-      leaflet.tileLayer(
-        "https://services.arcgisonline.com/arcgis/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
-        { maxZoom: 16 },
-      ),
-      markers,
-    ],
-  });
+    const map = leaflet.map(map_container, {
+      preferCanvas: true,
+      renderer: leaflet.canvas(),
+      center: leaflet.latLng(map_data.coords_lat, map_data.coords_long),
+      zoom: map_data.zoom,
+      attributionControl: false,
+      layers: [
+        leaflet.tileLayer(
+          "https://services.arcgisonline.com/arcgis/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
+          { maxZoom: 16 },
+        ),
+        markers,
+      ],
+    });
 
-  fullscreen_button.onclick = () => {
-    if (map_container.requestFullscreen) {
-      document.fullscreenElement === null
-        ? map_container.requestFullscreen()
-        : document.exitFullscreen();
-    } else {
-      map_container.classList.toggle("fullscreen");
-    }
-    map.invalidateSize();
-  };
+    fullscreen_button.onclick = () => {
+      if (map_container.requestFullscreen) {
+        document.fullscreenElement === null
+          ? map_container.requestFullscreen()
+          : document.exitFullscreen();
+      } else {
+        map_container.classList.toggle("fullscreen");
+      }
+      map.invalidateSize();
+    };
 
-  locate_button.onclick = () => map.locate({ setView: true, maxZoom: 16 });
+    locate_button.onclick = () => map.locate({ setView: true, maxZoom: 16 });
 
-  let located_marker: leaflet.Marker | null = null;
-  let located_circle: leaflet.Circle | null = null;
-  map.on("locationfound", (e: leaflet.LocationEvent) => {
-    located_marker?.remove();
-    located_circle?.remove();
+    let located_marker: leaflet.Marker | null = null;
+    let located_circle: leaflet.Circle | null = null;
+    map.on("locationfound", (e: leaflet.LocationEvent) => {
+      located_marker?.remove();
+      located_circle?.remove();
 
-    const radius = e.accuracy;
-    located_marker = leaflet
-      .marker(e.latlng, { icon: marker_location_icon })
-      .addTo(map);
+      const radius = e.accuracy;
+      located_marker = leaflet
+        .marker(e.latlng, { icon: marker_location_icon })
+        .addTo(map);
 
-    if (radius < 10) return;
-    located_circle = leaflet.circle(e.latlng, { radius }).addTo(map);
-  });
+      if (radius < 10) return;
+      located_circle = leaflet.circle(e.latlng, { radius }).addTo(map);
+    });
 
-  map.on("locationerror", (e: leaflet.ErrorEvent) => {
-    alert(e.message);
-  });
+    map.on("locationerror", (e: leaflet.ErrorEvent) => {
+      alert(e.message);
+    });
+  }
+
+  if (typeof map_container?.dataset?.map !== "undefined") {
+    setup_map();
+  }
 </script>
