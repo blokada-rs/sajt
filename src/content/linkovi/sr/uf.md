@@ -1,11 +1,13 @@
 ---
 title: Учитељски факултет
 link: uf
+prikaz: Учитељски
+type: ub
 linkovi:
-  - ikonica: instagram
+  - type: instagram
     naslov: Instagram профил
     link: https://www.instagram.com/blokada_uf
-  - ikonica: twitter
+  - type: twitter
     naslov: X профил
     link: https://x.com/blokada_uf
 ---

@@ -1,20 +1,22 @@
 ---
 title: Правни факултет
 link: pf
+prikaz: Права
+type: ub
 linkovi:
-  - ikonica: hand-coin
+  - type: donations
     naslov: Помозимо Верољубу Сарићу
     link: https://blokade.org/vesti/pomozimo-veroljubu-saricu/
-  - ikonica: instagram
+  - type: instagram
     naslov: Instagram профил
     link: https://www.instagram.com/blokada_pravni
-  - ikonica: twitter
+  - type: twitter
     naslov: Twitter профил
     link: https://x.com/blokadapravni
-  - ikonica: facebook
+  - type: facebook
     naslov: Facebook страница
     link: https://www.facebook.com/61577330282501/
-  - ikonica: music-note
+  - type: tiktok
     naslov: TikTok профил
     link: https://www.tiktok.com/@blokada_pravni
 ---

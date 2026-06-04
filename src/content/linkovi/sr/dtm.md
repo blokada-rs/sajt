@@ -1,11 +1,13 @@
 ---
 title: Висока текстилна школа
 link: dtm
+prikaz: Текстилна школа
+type: visa
 linkovi:
-  - ikonica: instagram
+  - type: instagram
     naslov: Instagram профил
     link: https://www.instagram.com/dtm.blokada
-  - ikonica: twitter
+  - type: twitter
     naslov: Twitter профил
     link: https://x.com/dtm_blokada
 ---

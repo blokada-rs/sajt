@@ -16,26 +16,51 @@ import {
   text_field,
 } from "@scripts/content.ts";
 
-const icons = [
-  { label: "Bez", value: "bez" },
-  { label: "Sajt", icon: "web", value: "web" },
-  { label: "Instagram", icon: "instagram", value: "instagram" },
-  { label: "Twitter", icon: "twitter", value: "twitter" },
-  { label: "Facebook", icon: "facebook", value: "facebook" },
-  { label: "YouTube", icon: "youtube", value: "youtube" },
-  { label: "Viber", icon: "viber", value: "viber" },
-  {
-    label: "Messenger",
-    icon: "facebook-messenger",
-    value: "facebook-messenger",
-  },
-  { label: "Reddit", icon: "reddit", value: "reddit" },
-  { label: "TikTok", icon: "music-note", value: "music-note" },
-  { label: "Vesti", icon: "newspaper", value: "newspaper" },
-  { label: "Mejl", icon: "at", value: "at" },
-  { label: "Donacije", icon: "hand-coin", value: "hand-coin" },
-  { label: "Stikeri", icon: "sticker", value: "sticker" },
+type Icon = {
+  label: string;
+  icon?: string;
+  value: string;
+};
+
+export const socials: Icon[] = [
+  { label: "Sajt", icon: "mdi:web", value: "web" },
+  { label: "Instagram", icon: "simple-icons:instagram", value: "instagram" },
+  { label: "Twitter", icon: "simple-icons:twitter", value: "twitter" },
+  { label: "Facebook", icon: "simple-icons:facebook", value: "facebook" },
+  { label: "YouTube", icon: "simple-icons:youtube", value: "youtube" },
+  { label: "TikTok", icon: "simple-icons:tiktok", value: "tiktok" },
+  { label: "Viber", icon: "simple-icons:viber", value: "viber" },
+  { label: "Messenger", icon: "simple-icons:messenger", value: "messenger" },
+  { label: "Reddit", icon: "simple-icons:reddit", value: "reddit" },
+  { label: "WhatsApp", icon: "simple-icons:whatsapp", value: "whatsapp" },
+  { label: "Telegram", icon: "simple-icons:telegram", value: "telegram" },
+  { label: "Threads", icon: "simple-icons:threads", value: "threads" },
+  { label: "Mejl", icon: "mdi:at", value: "mail" },
 ];
+
+export const others: Icon[] = [
+  { label: "Bez", value: "bez" },
+  { label: "Vesti", icon: "mdi:newspaper", value: "news" },
+  { label: "Donacije", icon: "mdi:hand-coin", value: "donations" },
+  { label: "Stikeri", icon: "mdi:sticker", value: "sticker" },
+];
+
+export const icons = [
+  ...others,
+  ...socials,
+  ...socials.map((icon) => ({
+    ...icon,
+    label: `${icon.label} bitno`,
+    value: `${icon.value}-bitno`,
+  })),
+];
+
+export const type = {
+  ub: { sort: 0 },
+  uu: { sort: 1 },
+  visa: { sort: 2 },
+  privatni: { sort: 3 },
+};
 
 const vesti = folder_collection(
   "vesti",
@@ -46,9 +71,9 @@ const vesti = folder_collection(
     string_field("link", "Link").i18n("duplicate"),
     string_field("title", "Naslov"),
     bool_field("live", "Lajv"),
-    string_field("live_embed", "Video ID").i18n("duplicate").required(false),
+    string_field("live_embed", "Video ID").i18n("duplicate").optional(),
     datetime_field("pubDate", "Datum objavljivanja"),
-    datetime_field("updatedDate", "Datum izmene").required(false),
+    datetime_field("updatedDate", "Datum izmene").optional(),
     image_field("heroImage", "Glavna slika"),
     object_field("map", "Mapa", [
       number_field("coords_lat", "Geografska širina").default(44.8118),
@@ -60,23 +85,23 @@ const vesti = folder_collection(
         markdown_field("text", "Tekst"),
       ])
         .singular("Marker")
-        .required(false),
-    ]).required(false),
-    text_field("description", "Opis").required(false),
+        .optional(),
+    ]).optional(),
+    text_field("description", "Opis").optional(),
     markdown_field("body", "Tekst"),
     list_field("timeline", "Tajmlajn", [
       string_field("naslov", "Naslov"),
       datetime_field("datum", "Datum"),
       list_field("videos", "Video IDs", [string_field("id", "ID")])
         .singular("Video ID")
-        .required(false),
+        .optional(),
       list_field("slike", "Slike", [image_field("slike", "Slike")])
         .singular("Slika")
-        .required(false),
-      markdown_field("tekst", "Tekst").required(false),
+        .optional(),
+      markdown_field("tekst", "Tekst").optional(),
     ])
       .add_to_top()
-      .required(false)
+      .optional()
       .i18n(false),
   ],
 )
@@ -93,7 +118,7 @@ const akcije = folder_collection(
     string_field("title", "Naslov"),
     datetime_field("pubDate", "Datum akcije"),
     image_field("heroImage", "Glavna slika"),
-    string_field("description", "Opis").required(false),
+    string_field("description", "Opis").optional(),
     markdown_field("body", "Tekst"),
   ],
 )
@@ -111,6 +136,19 @@ const afere = folder_collection(
     markdown_field("body", "Tekst"),
   ],
 ).slug("{{fields.link}}");
+
+const link_list = () =>
+  list_field("linkovi", "Linkovi", [
+    enum_field(
+      "type",
+      "Tip",
+      icons.map(({ value, label }) => [value, label]),
+    ),
+    string_field("naslov", "Naslov"),
+    string_field("link", "Link").url(true),
+  ])
+    .singular("Link")
+    .summary("{{naslov}}");
 
 const stranice = file_collection("stranice", "Stranice", "description", [
   file("pocetna", "Početna", "src/content/stranice", "početna.md", [
@@ -134,11 +172,11 @@ const stranice = file_collection("stranice", "Stranice", "description", [
   file("izbori", "Izbori", "src/content/stranice", "izbori.md", [
     string_field("title", "Naslov"),
     list_field("sections", "Sekcije", [
-      string_field("id", "ID").required(false),
-      string_field("title", "Naslov").required(false),
-      string_field("link_text", "Link tekst").required(false),
-      string_field("link", "Link").required(false),
-      markdown_field("text", "Tekst").required(false),
+      string_field("id", "ID").optional(),
+      string_field("title", "Naslov").optional(),
+      string_field("link_text", "Link tekst").optional(),
+      string_field("link", "Link").optional(),
+      markdown_field("text", "Tekst").optional(),
     ]).singular("Sekcija"),
   ]),
 
@@ -182,15 +220,7 @@ const stranice = file_collection("stranice", "Stranice", "description", [
     [
       string_field("ostali_linkovi", "Ostali linkovi"),
       string_field("najnovije_vesti", "Najnovije vesti"),
-      list_field("linkovi", "Linkovi", [
-        enum_field(
-          "ikonica",
-          "Ikonica",
-          icons.map(({ value, label }) => [value, label]),
-        ),
-        string_field("naslov", "Naslov"),
-        string_field("link", "Link").url(true),
-      ]).singular("Link"),
+      link_list(),
     ],
   ),
 
@@ -200,10 +230,13 @@ const stranice = file_collection("stranice", "Stranice", "description", [
     string_field("afere", "Afere"),
     string_field("notifikacije", "Uključi notifikacije"),
     string_field("kontakt", "Kontakt"),
+    markdown_field("kontakt_opis", "Kontakt - opis"),
     string_field("live", "Live"),
     string_field("studenti_u_blokadi", "Studenti u blokadi"),
     string_field("pojedinacni_fakulteti", "Kontakti pojedinačnih fakulteta"),
     string_field("pratite_live", "Pratite live"),
+    markdown_field("vesti_opis", "Vesti - opis"),
+    string_field("najnovija_vest", "Najnovija vest"),
   ]),
 
   file("slavija", "Slavija", "src/content/stranice", "slavija.md", [
@@ -211,14 +244,14 @@ const stranice = file_collection("stranice", "Stranice", "description", [
     string_field("preuzmi", "Preuzmi plakat"),
     string_field("vidimo_se", "Vidimo se"),
     string_field("najnovije_vesti", "Najnovije vesti"),
-    string_field("video_id", "Video ID").required(false),
+    string_field("video_id", "Video ID").optional(),
     string_field("prenos_uzivo", "Prenos uživo"),
     list_field("sections", "Sekcije", [
-      string_field("id", "ID").required(false),
-      string_field("title", "Naslov").required(false),
-      string_field("link_text", "Link tekst").required(false),
-      string_field("link", "Link").required(false),
-      markdown_field("text", "Tekst").required(false),
+      string_field("id", "ID").optional(),
+      string_field("title", "Naslov").optional(),
+      string_field("link_text", "Link tekst").optional(),
+      string_field("link", "Link").optional(),
+      markdown_field("text", "Tekst").optional(),
     ]).singular("Sekcija"),
   ]),
 ]);
@@ -231,17 +264,13 @@ const linkovi = folder_collection(
   [
     string_field("title", "Naslov"),
     string_field("link", "Link"),
-    list_field("linkovi", "Linkovi", [
-      enum_field(
-        "ikonica",
-        "Ikonica",
-        icons.map(({ value, label }) => [value, label]),
-      ),
-      string_field("naslov", "Naslov"),
-      string_field("link", "Link").url(true),
-    ])
-      .singular("Link")
-      .summary("{{naslov}}"),
+    string_field("prikaz", "Prikaz").optional(),
+    enum_field(
+      "type",
+      "Tip",
+      Object.keys(type).map((e) => [e, e]),
+    ).optional(),
+    link_list(),
   ],
 );
 

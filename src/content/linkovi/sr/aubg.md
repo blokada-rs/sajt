@@ -1,17 +1,19 @@
 ---
 title: Академија уметности у Београду
 link: aubg
+prikaz: Академија уметности
+type: privatni
 linkovi:
-  - ikonica: instagram
+  - type: instagram
     naslov: Instagram профил
     link: https://www.instagram.com/aubg.blokada
-  - ikonica: twitter
+  - type: twitter
     naslov: Twitter профил
     link: https://x.com/aubgblokada
-  - ikonica: music-note
+  - type: tiktok
     naslov: TikTok профил
     link: https://www.tiktok.com/@aubg.blokada
-  - ikonica: bez
+  - type: bez
     naslov: Spotify профил
     link: https://open.spotify.com/user/31fr5rm7opoep66cud7m37hvujge
 ---

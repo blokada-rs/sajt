@@ -1,26 +1,28 @@
 ---
 title: Електротехнички факултет
 link: etf
+prikaz: Електротехника
+type: ub
 linkovi:
-  - ikonica: instagram
+  - type: instagram
     naslov: Instagram профил
     link: https://www.instagram.com/etfublokadi/
-  - ikonica: twitter
+  - type: twitter
     naslov: Twitter профил
     link: https://x.com/etfblokada
-  - ikonica: facebook
+  - type: facebook
     naslov: Facebook страница
     link: https://www.facebook.com/etfublokadi
-  - ikonica: music-note
+  - type: tiktok
     naslov: TikTok профил
     link: https://www.tiktok.com/@etfublokadi
-  - ikonica: youtube
+  - type: youtube
     naslov: YouTube канал
     link: https://www.youtube.com/@etf_u_blokadi
-  - ikonica: hand-coin
+  - type: donations
     naslov: Донације за свратишта
     link: http://cim.org.rs/donacije/donacija/
-  - ikonica: at
+  - type: mail
     naslov: studenti.etf.pr@gmail.com
     link: mailto:studenti.etf.pr@gmail.com
 ---

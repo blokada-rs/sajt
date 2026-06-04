@@ -50,7 +50,7 @@
   </head>
   <body>
     <script>
-      import { init } from "@sveltia/cms";
+      import { type Collection, init } from "@sveltia/cms";
       import { all } from "@scripts/collections";
 
       init({
@@ -90,7 +90,7 @@
             },
           },
           output: { omit_empty_optional_fields: true },
-          collections: all.make_cms(),
+          collections: all.make_cms() as Collection[],
         },
       });
     </script>

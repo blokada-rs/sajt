@@ -1,14 +1,16 @@
 ---
 title: Универзитет Метрополитан
 link: met
+prikaz: Универзитет Метрополитан
+type: privatni
 linkovi:
-  - ikonica: instagram
+  - type: instagram
     naslov: Instagram профил
     link: https://www.instagram.com/met.blokada
-  - ikonica: twitter
+  - type: twitter
     naslov: Twitter профил
     link: https://x.com/metblokada
-  - ikonica: at
+  - type: mail
     naslov: met.blokade.bg@gmail.com
     link: mailto:met.blokade.bg@gmail.com
 ---

@@ -2,7 +2,7 @@ import type { SchemaContext } from "astro/content/config";
 import { z } from "astro/zod";
 
 type I18N = boolean | string | "duplicate" | "translate" | "none";
-type CollectionBuilder = FolderBuilder | FilesBuilder | DividerBuilder;
+export type CollectionBuilder = FolderBuilder | FilesBuilder | DividerBuilder;
 
 interface Builder {
   make_cms(): any;
@@ -42,7 +42,7 @@ class CollectionsBuilder implements Builder {
   }
 }
 
-class FolderBuilder implements Builder {
+export class FolderBuilder implements Builder {
   constructor(
     public name: string,
     private label: string,
@@ -108,7 +108,7 @@ class FolderBuilder implements Builder {
   }
 }
 
-class FileBuilder implements Builder {
+export class FileBuilder implements Builder {
   constructor(
     public name: string,
     private label: string,
@@ -143,7 +143,7 @@ class FileBuilder implements Builder {
   }
 }
 
-class FilesBuilder implements Builder {
+export class FilesBuilder implements Builder {
   constructor(
     public name: string,
     private label: string,
@@ -177,7 +177,7 @@ class FilesBuilder implements Builder {
   }
 }
 
-class DividerBuilder implements Builder {
+export class DividerBuilder implements Builder {
   constructor() {}
 
   make_cms() {
@@ -195,9 +195,9 @@ class FieldBuilder implements Builder {
     protected widget: string,
   ) {}
 
-  protected _required: boolean = true;
-  required(value: boolean) {
-    this._required = value;
+  protected _optional: boolean = false;
+  optional() {
+    this._optional = true;
     return this;
   }
 
@@ -212,13 +212,14 @@ class FieldBuilder implements Builder {
       widget: this.widget,
       name: this.name,
       label: this.label,
-      required: this._required,
+      required: !this._optional,
       i18n: this._i18n,
     };
   }
 
   make_zod(ctx: SchemaContext): z.ZodType {
-    return this._required ? z.any() : z.any().optional();
+    const ret = z.any();
+    return this._optional ? ret.optional() : ret;
   }
 }
 
@@ -241,7 +242,8 @@ export class StringBuilder extends FieldBuilder {
   }
 
   make_zod(): z.ZodType {
-    return this._required ? z.string() : z.string().optional();
+    const ret = z.string();
+    return this._optional ? ret.optional() : ret;
   }
 }
 
@@ -251,7 +253,8 @@ class TextBuilder extends FieldBuilder {
   }
 
   make_zod(): z.ZodType {
-    return this._required ? z.string() : z.string().optional();
+    const ret = z.string();
+    return this._optional ? ret.optional() : ret;
   }
 }
 
@@ -292,7 +295,8 @@ class NumberBuilder extends FieldBuilder {
   }
 
   make_zod(): z.ZodType {
-    return this._required ? z.number() : z.number().optional();
+    const ret = z.number();
+    return this._optional ? ret.optional() : ret;
   }
 }
 
@@ -316,7 +320,8 @@ class BoolBuilder extends FieldBuilder {
   }
 
   make_zod(): z.ZodType {
-    return this._required ? z.boolean() : z.boolean().optional();
+    const ret = z.boolean();
+    return this._optional ? ret.optional() : ret;
   }
 }
 
@@ -338,8 +343,8 @@ class EnumBuilder extends FieldBuilder {
   }
 
   make_zod(): z.ZodType {
-    const option = z.enum(this.options.map(([value, _]) => value));
-    return this._required ? option : option.optional();
+    const ret = z.enum(this.options.map(([value, _]) => value));
+    return this._optional ? ret.optional() : ret;
   }
 }
 
@@ -363,8 +368,8 @@ class DateTimeBuilder extends FieldBuilder {
   }
 
   make_zod(): z.ZodType {
-    const date = z.coerce.date();
-    return this._required ? date : date.optional();
+    const ret = z.coerce.date();
+    return this._optional ? ret.optional() : ret;
   }
 }
 
@@ -381,7 +386,8 @@ class ImageBuilder extends FieldBuilder {
   }
 
   make_zod({ image }: SchemaContext): z.ZodType {
-    return this._required ? image() : image().optional();
+    const ret = image();
+    return this._optional ? ret.optional() : ret;
   }
 }
 
@@ -407,7 +413,8 @@ class ObjectBuilder extends FieldBuilder {
       obj[field.name] = field.make_zod(ctx);
     }
 
-    return this._required ? z.object(obj) : z.object(obj).optional();
+    const ret = z.object(obj);
+    return this._optional ? ret.optional() : ret;
   }
 }
 
@@ -464,13 +471,11 @@ class ListBuilder extends FieldBuilder {
         obj[field.name] = field.make_zod(ctx);
       }
 
-      return this._required
-        ? z.object(obj).array()
-        : z.object(obj).array().optional();
+      const ret = z.object(obj).array();
+      return this._optional ? ret.optional() : ret;
     } else {
-      return this._required
-        ? this.fields[0].make_zod(ctx).array()
-        : this.fields[0].make_zod(ctx).array().optional();
+      const ret = this.fields[0].make_zod(ctx).array();
+      return this._optional ? ret.optional() : ret;
     }
   }
 }

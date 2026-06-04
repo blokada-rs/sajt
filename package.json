@@ -7,20 +7,22 @@
     "build": "./latinica.sh && astro build",
     "preview": "astro preview",
     "compress": "parallel 'echo {} && mogrify -resize 1920x1080 -quality 90 {}' ::: src/assets/images/*",
-    "prettier": "prettier . --write",
+    "format": "prettier . --write",
     "astro": "astro"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.18",
     "@astrojs/sitemap": "^3.7.3",
     "@iconify-json/mdi": "^1.2.3",
+    "@iconify-json/simple-icons": "^1.2.85",
     "@mashehu/astropub-md": "^2.0.1",
     "@oddbird/popover-polyfill": "^0.6.1",
-    "@sveltia/cms": "^0.164.1",
-    "astro": "^6.3.8",
+    "@sveltia/cms": "^0.165.1",
+    "astro": "^6.4.3",
     "astro-icon": "^1.1.5",
     "leaflet": "^1.9.4",
     "leaflet.markercluster": "^1.5.3",
+    "sass": "^1.100.0",
     "sharp": "^0.34.5"
   },
   "devDependencies": {

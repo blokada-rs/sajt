@@ -1,34 +1,38 @@
 ---
 import { Icon } from "astro-icon/components";
 import { ICON_SIZE_LG } from "consts";
-const today = new Date();
+import { file } from "@scripts/i18n.ts";
+
+const { lang } = Astro.params;
+const { frontmatter } = await file("ostalo", lang);
+
 const socialIcons = [
   {
     label: "Instagram",
-    icon: "mdi:instagram",
+    icon: "simple-icons:instagram",
     link: "https://instagram.com/studenti_u_blokadi",
   },
   {
     label: "Twitter",
-    icon: "mdi:twitter",
+    icon: "simple-icons:twitter",
     link: "https://x.com/studentblokade",
   },
   {
     label: "Facebook",
-    icon: "mdi:facebook",
+    icon: "simple-icons:facebook",
     link: "https://www.facebook.com/people/Studenti-u-blokadi-UB/61571631694236/",
   },
   {
-    label: "Github",
-    icon: "mdi:github",
-    link: "https://github.com/blokada-rs/sajt",
+    label: "Git",
+    icon: "simple-icons:git",
+    link: "https://git.blokade.org/blokade-org/sajt",
   },
 ];
 ---
 
 <footer>
   <div class="footer-container">
-    <div>Blokade fakulteta {today.getFullYear()}.</div>
+    <div>{frontmatter.studenti_u_blokadi}</div>
     <div class="social-links">
       {
         socialIcons.map(({ label, icon, link }) => (

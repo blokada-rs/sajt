@@ -1,14 +1,16 @@
 ---
 title: Медицински факултет
 link: mfub
+prikaz: Медицина
+type: ub
 linkovi:
-  - ikonica: instagram
+  - type: instagram
     naslov: Instagram профил
     link: https://www.instagram.com/blokada.mfub
-  - ikonica: twitter
+  - type: twitter
     naslov: Twitter профил
     link: https://x.com/blokada_mfub
-  - ikonica: at
+  - type: mail
     naslov: plenum.mfub@gmail.com
     link: mailto:plenum.mfub@gmail.com
 ---

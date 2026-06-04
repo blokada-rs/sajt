@@ -1,11 +1,13 @@
 ---
 title: Висока школа за информационе и комуникационе технологије
 link: ict
+prikaz: ICT
+type: visa
 linkovi:
-  - ikonica: instagram
+  - type: instagram
     naslov: Instagram профил
     link: https://www.instagram.com/ictublokadi
-  - ikonica: twitter
+  - type: twitter
     naslov: Twitter профил
     link: https://x.com/ictublokadi
 ---

@@ -2,22 +2,22 @@
 title: Радна јединица за зборове
 link: rjzz
 linkovi:
-  - ikonica: instagram
+  - type: instagram
     naslov: Instagram профил
     link: https://www.instagram.com/sviuzborove
-  - ikonica: facebook
+  - type: facebook
     naslov: Facebook профил
     link: https://www.facebook.com/share/14ezY4inMEL/
-  - ikonica: web
+  - type: web
     naslov: Infozbornik
     link: https://infozbornik.rs/
-  - ikonica: web
+  - type: web
     naslov: zborstarigrad.org
     link: https://zborstarigrad.org/
-  - ikonica: web
+  - type: web
     naslov: bezanijskakosainfo.rs
     link: https://bezanijskakosainfo.rs/
-  - ikonica: bez
+  - type: bez
     naslov: Водич за зборове
     link: https://drive.google.com/file/d/1skvgt0-gRV69iw5u3YBTWWcKTmjFvv9X/view?usp=drivesdk
 ---

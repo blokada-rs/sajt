@@ -1,20 +1,22 @@
 ---
 title: Фармацеутски факултет
 link: ffubg
+prikaz: Фармација
+type: ub
 linkovi:
-  - ikonica: instagram
+  - type: instagram
     naslov: Instagram профил
     link: https://www.instagram.com/blokada.ffubg
-  - ikonica: twitter
+  - type: twitter
     naslov: Twitter профил
     link: https://x.com/blokadaffubg
-  - ikonica: facebook
+  - type: facebook
     naslov: Facebook профил
     link: https://www.facebook.com/share/1BGKFwcic4/
-  - ikonica: music-note
+  - type: tiktok
     naslov: TikTok профил
     link: https://www.tiktok.com/@blokada.ffubg
-  - ikonica: at
+  - type: mail
     naslov: blokadafarmacija@gmail.com
     link: mailto:blokadafarmacija@gmail.com
 ---

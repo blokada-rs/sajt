@@ -12,5 +12,5 @@ Gathering will be on the plateau in front of **the Government of the Republic of
 ## Timetable:
 
 - 14.00 – Gathering
-- 14.30 – Speeches by students and trade unions- 
+- 14.30 – Speeches by students and trade unions
 After the speech – 16 minutes of silence

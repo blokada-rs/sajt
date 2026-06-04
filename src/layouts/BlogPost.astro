@@ -334,7 +334,7 @@ const { frontmatter } = await file("ostalo", lang);
     map.on("locationerror", (e: leaflet.ErrorEvent) => {
       alert(e.message);
     });
-  }
+  };
 
   if (typeof map_container?.dataset?.map !== "undefined") {
     setup_map();

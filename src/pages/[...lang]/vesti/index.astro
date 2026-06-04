@@ -7,6 +7,7 @@ import { Picture } from "astro:assets";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../../../consts";
 import FormattedDate from "../../../components/FormattedDate.astro";
 import Live from "@components/Live.astro";
+import { Markdown } from "@mashehu/astropub-md";
 
 const { lang } = Astro.params;
 if (typeof lang === "undefined") {
@@ -25,33 +26,60 @@ export async function getStaticPaths() {
   title={`${frontmatter.vesti} | ${frontmatter.studenti_u_blokadi}`}
   description={SITE_DESCRIPTION}
 >
-  <div class="flex">
+  <section>
     <h1>{frontmatter.vesti}</h1>
-  </div>
+    <Markdown of={frontmatter.vesti_opis} />
+  </section>
   <section>
     <ul>
+      <li>
+        <h2>{frontmatter.najnovija_vest}</h2>
+        <a class="clear" href={`/${lang}/vesti/${posts[0].id}/`}>
+          <Picture
+            formats={["avif", "webp"]}
+            width={720}
+            src={posts[0].data.heroImage}
+            loading="eager"
+            alt=""
+          />
+          <div class="details">
+            {posts[0].data.live && <Live>{frontmatter.live}</Live>}
+            {
+              lang !== posts[0].lang && (
+                <p class="untranslated">Currently untranslated</p>
+              )
+            }
+            <h2 class="title">{posts[0].data.title}</h2>
+            <p class="date">
+              <FormattedDate date={posts[0].data.pubDate} />
+            </p>
+            <p class="description">
+              {posts[0].data.description}
+            </p>
+          </div>
+        </a>
+      </li>
       {
-        posts.map((post, index) => (
+        posts.slice(1).map((post, index) => (
           <li>
             <a class="clear" href={`/${lang}/vesti/${post.id}/`}>
               <Picture
-                transition:name={`/${lang}/vesti/${post.id}`}
                 formats={["avif", "webp"]}
                 width={720}
                 src={post.data.heroImage}
                 loading={index <= 3 ? "eager" : "lazy"}
                 alt=""
               />
-              <>{post.data.live && <Live>{frontmatter.live}</Live>}</>
-              <>
+              <div class="details">
+                {post.data.live && <Live>{frontmatter.live}</Live>}
                 {lang !== post.lang && (
                   <p class="untranslated">Currently untranslated</p>
                 )}
-              </>
-              <h2 class="title">{post.data.title}</h2>
-              <p class="date">
-                <FormattedDate date={post.data.pubDate} />
-              </p>
+                <h2 class="title">{post.data.title}</h2>
+                <p class="date">
+                  <FormattedDate date={post.data.pubDate} />
+                </p>
+              </div>
             </a>
           </li>
         ))
@@ -66,33 +94,65 @@ export async function getStaticPaths() {
     align-items: center;
     justify-content: space-between;
   }
+
   ul {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     flex-wrap: wrap;
     gap: 2rem;
     list-style-type: none;
     padding: 0;
   }
 
-  ul li {
-    width: calc(50% - 1rem);
-  }
-
-  ul li * {
+  li * {
     transition: 0.2s ease;
   }
 
-  ul li:first-child {
-    width: 100%;
+  li h2 {
+    font-size: 2rem;
+  }
+
+  li:first-child {
+    padding-block: 2rem;
+  }
+
+  li:first-child,
+  li:first-child a {
+    position: relative;
+    display: grid;
+    grid-column: 1 / -1;
+    grid-template-columns: subgrid;
+  }
+
+  li:first-child::before {
+    content: "";
+    position: absolute;
+    background-color: hsl(0, 0%, 95%);
+    inset: 0;
+    left: 50%;
+    translate: -50% 0;
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+  }
+
+  li:first-child .details {
+    grid-column: 2;
+  }
+
+  li > h2 {
     margin-bottom: 1rem;
-    text-align: center;
   }
 
-  ul li:first-child img {
-    width: 100%;
+  .description {
+    margin-top: 1rem;
   }
 
-  ul li img {
+  li:not(:first-child) .details {
+    margin-top: 1rem;
+  }
+
+  img {
     margin-bottom: 0.5rem;
     border-radius: 12px;
   }
@@ -125,14 +185,16 @@ export async function getStaticPaths() {
   @media (max-width: 720px) {
     ul {
       gap: 2em;
+      grid-template-columns: 1fr;
     }
-    ul li {
-      width: 100%;
-      text-align: center;
+
+    li .details {
+      margin-top: 1rem;
     }
-    ul li:first-child {
-      margin-bottom: 0;
-    }
+  }
+
+  section {
+    padding-top: 0;
   }
 
   .live {

@@ -2,31 +2,31 @@
 title: Студенти у блокади
 link: studenti_u_blokadi
 linkovi:
-  - ikonica: web
-    naslov: Контролори у Србији
-    link: https://blokade.org/ukljuci-se#kontrola
-  - ikonica: web
-    naslov: Контролори у дијаспори
-    link: https://blokade.org/ukljuci-se#k-dijaspora
-  - ikonica: web
+  - type: web
     naslov: Званични сајт студената у блокади
     link: https://blokade.org
-  - ikonica: at
-    naslov: Званични мејл
-    link: mailto:studentiublokadi@gmail.com
-  - ikonica: instagram
+  - type: instagram
     naslov: Instagram профил
     link: https://instagram.com/studenti_u_blokadi
-  - ikonica: twitter
+  - type: twitter
     naslov: Twitter профил
     link: https://x.com/studentblokade
-  - ikonica: facebook
+  - type: facebook
     naslov: Facebook страница
     link: https://www.facebook.com/Studentblokade
-  - ikonica: youtube
+  - type: youtube
     naslov: YouTube канал
     link: https://www.youtube.com/@studentiublokadi
-  - ikonica: facebook-messenger
+  - type: messenger
     naslov: Messenger канал
     link: https://www.messenger.com/channel/Studentblokade
+  - type: whatsapp
+    naslov: WhatsApp канал
+    link: https://whatsapp.com/channel/0029Vb8DmhMHgZWcMb3Ak72h
+  - type: telegram
+    naslov: Telegram канал
+    link: https://t.me/studenti_u_blokadi
+  - type: mail
+    naslov: Званични мејл
+    link: mailto:studentiublokadi@gmail.com
 ---

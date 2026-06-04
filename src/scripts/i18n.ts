@@ -21,7 +21,9 @@ export async function collectionIDs<
   return [...new Set(all)];
 }
 
-export async function collection<T extends "vesti" | "akcije" | "afere">(
+export async function collection<
+  T extends "vesti" | "akcije" | "afere" | "linkovi",
+>(
   collection: T,
   lang: string = "all",
 ): Promise<(CollectionEntry<T> & { lang: string })[]> {

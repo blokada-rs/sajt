@@ -1,14 +1,16 @@
 ---
 title: Факултет спорта и физичког васпитања
 link: dif
+prikaz: Спорт и физичко васпитање
+type: ub
 linkovi:
-  - ikonica: instagram
+  - type: instagram
     naslov: Instagram профил
     link: https://www.instagram.com/dif.blokada
-  - ikonica: twitter
+  - type: twitter
     naslov: Twitter профил
     link: https://x.com/DIF_blokada
-  - ikonica: at
+  - type: mail
     naslov: studenti.fsfv@gmail.com
     link: mailto:studenti.fsfv@gmail.com
 ---

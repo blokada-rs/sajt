@@ -1,14 +1,16 @@
 ---
 title: Православни богословски факултет
 link: pbf
+prikaz: Православни богословски
+type: ub
 linkovi:
-  - ikonica: instagram
+  - type: instagram
     naslov: Instagram профил
     link: https://www.instagram.com/blokada_pbf
-  - ikonica: twitter
+  - type: twitter
     naslov: Twitter профил
     link: https://x.com/blokada_pbf
-  - ikonica: at
+  - type: mail
     naslov: Мејл адреса
     link: mailto:blokadapbf@gmail.com
 ---

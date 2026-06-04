@@ -1,17 +1,19 @@
 ---
 title: Факултет безбедности
 link: fb
+prikaz: Безбедност
+type: ub
 linkovi:
-  - ikonica: instagram
+  - type: instagram
     naslov: Instagram профил
     link: https://www.instagram.com/blokada.fb
-  - ikonica: twitter
+  - type: twitter
     naslov: Twitter профил
     link: https://x.com/blokada_fb
-  - ikonica: music-note
+  - type: tiktok
     naslov: TikTok профил
     link: https://www.tiktok.com/@blokadafb
-  - ikonica: at
+  - type: mail
     naslov: studentskiplenumfb@gmail.com
     link: mailto:studentskiplenumfb@gmail.com
 ---

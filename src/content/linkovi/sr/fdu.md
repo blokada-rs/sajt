@@ -1,11 +1,13 @@
 ---
 title: Факултет драмских уметности
 link: fdu
+prikaz: Драмске уметности
+type: uu
 linkovi:
-  - ikonica: instagram
+  - type: instagram
     naslov: Instagram профил
     link: https://www.instagram.com/sviublokade.fdu
-  - ikonica: twitter
+  - type: twitter
     naslov: Twitter профил
     link: https://x.com/sviublokade_fdu
 ---

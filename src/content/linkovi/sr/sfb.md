@@ -1,17 +1,19 @@
 ---
 title: Шумарски факултет
 link: sfb
+prikaz: Шумарски
+type: ub
 linkovi:
-  - ikonica: instagram
+  - type: instagram
     naslov: Instagram профил
     link: https://www.instagram.com/blokada.sumarski
-  - ikonica: twitter
+  - type: twitter
     naslov: Twitter профил
     link: https://x.com/Blokadasumarski
-  - ikonica: music-note
+  - type: tiktok
     naslov: TikTok профил
     link: https://www.tiktok.com/@blokada_sumarski
-  - ikonica: at
+  - type: mail
     naslov: blokadasumarski@gmail.com
     link: mailto:blokadasumarski@gmail.com
 ---

@@ -1,11 +1,13 @@
 ---
 title: Београдска академија пословних и уметничких стуковних студија
 link: bapuss
+prikaz: БАПУСС
+type: visa
 linkovi:
-  - ikonica: instagram
+  - type: instagram
     naslov: Instagram профил
     link: https://www.instagram.com/bapuss_blokada/
-  - ikonica: twitter
+  - type: twitter
     naslov: Twitter профил
     link: https://x.com/bapussblokade
 ---

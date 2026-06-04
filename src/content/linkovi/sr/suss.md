@@ -2,16 +2,16 @@
 title: Студент у сваком селу
 link: suss
 linkovi:
-  - ikonica: web
+  - type: web
     naslov: Званични СУСС сајт
     link: https://suss.rs/
-  - ikonica: instagram
+  - type: instagram
     naslov: Instagram профил
     link: https://www.instagram.com/studentusvakomselu
-  - ikonica: twitter
+  - type: twitter
     naslov: Twitter профил
     link: https://x.com/studentuselu
-  - ikonica: facebook
+  - type: facebook
     naslov: Facebook страница
     link: https://www.facebook.com/share/19pu7GZy9D/
 ---

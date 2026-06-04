@@ -1,11 +1,13 @@
 ---
 title: Академија струковних студија Политехника
 link: assp
+prikaz: Политехника
+type: visa
 linkovi:
-  - ikonica: instagram
+  - type: instagram
     naslov: Instagram профил
     link: https://www.instagram.com/blokada_politehnika
-  - ikonica: twitter
+  - type: twitter
     naslov: Twitter профил
     link: https://x.com/blokada_assp
 ---

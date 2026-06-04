@@ -1,14 +1,16 @@
 ---
 title: Грађевински факултет
 link: grf
+prikaz: Грађевина
+type: ub
 linkovi:
-  - ikonica: instagram
+  - type: instagram
     naslov: Instagram профил
     link: https://www.instagram.com/grf.blokade
-  - ikonica: twitter
+  - type: twitter
     naslov: Twitter профил
     link: https://x.com/grf_blokade
-  - ikonica: facebook
+  - type: facebook
     naslov: Facebook профил
     link: https://www.facebook.com/share/1KMqmLDgF1
 ---

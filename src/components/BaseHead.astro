@@ -48,6 +48,7 @@ const { title, description, image } = Astro.props;
 <meta property="og:url" content={Astro.url} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
+<meta property="og:logo" content="/favicon.ico" />
 {
   typeof image !== "undefined" && (
     <meta property="og:image" content={new URL(image, Astro.url)} />
@@ -66,7 +67,7 @@ const { title, description, image } = Astro.props;
 }
 
 <!-- <ClientRouter /> -->
-<meta name="astro-view-transitions-enabled" content="false" />
+<!--<meta name="astro-view-transitions-enabled" content="false" />-->
 
 <!-- Google tag (gtag.js) -->
 <script

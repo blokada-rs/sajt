@@ -1,14 +1,16 @@
 ---
 title: Хемијски факултет
 link: hf
+prikaz: Хемија
+type: ub
 linkovi:
-  - ikonica: instagram
+  - type: instagram
     naslov: Instagram nalog
     link: https://www.instagram.com/hf.blokada
-  - ikonica: twitter
+  - type: twitter
     naslov: Twitter nalog
     link: https://x.com/blokadaHF
-  - ikonica: at
+  - type: mail
     naslov: hfblokada@gmail.com
     link: mailto:hfblokada@gmail.com
 ---

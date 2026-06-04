@@ -5,6 +5,7 @@ import { Icon } from "astro-icon/components";
 import { type CollectionEntry } from "astro:content";
 import { SITE_DESCRIPTION } from "../../../consts";
 import { ICON_SIZE_LG } from "consts";
+import { icons, socials, others } from "@scripts/collections";
 
 const { lang } = Astro.params;
 if (typeof lang === "undefined") {
@@ -28,9 +29,17 @@ type Props = CollectionEntry<"linkovi"> & { lang: string };
 
 const linkovi = Astro.props;
 
+const get_socials = (links) =>
+  links.filter(({ type }) => socials.some(({ value }) => type === value));
+
+const get_others = (links) =>
+  links.filter(({ type }) => !socials.some(({ value }) => type === value));
+
 const vesti = await collection("vesti", lang);
 
 const { frontmatter: ostali_linkovi } = await file("ostali_linkovi", lang);
+
+const { data: sub } = await entry("linkovi", "studenti_u_blokadi", lang);
 
 const live = vesti.filter((vest) => vest.data.live);
 ---
@@ -44,7 +53,7 @@ const live = vesti.filter((vest) => vest.data.live);
           {live.map((live) => (
             <li>
               <a class="live" href={`/${lang}/vesti/${live.data.link}`}>
-                <Icon size={ICON_SIZE_LG} name={`mdi:newspaper`} />
+                <Icon size={ICON_SIZE_LG} name="mdi:newspaper" />
                 {live.data.title}
               </a>
             </li>
@@ -54,28 +63,54 @@ const live = vesti.filter((vest) => vest.data.live);
     )
   }
   <h1>{linkovi.data.title}</h1>
-  <ul>
-    {
-      linkovi.data.linkovi.map((link) => (
-        <li>
-          <a href={link.link}>
-            {link.ikonica !== "bez" && (
-              <Icon size={ICON_SIZE_LG} name={`mdi:${link.ikonica}`} />
-            )}
-            {link.naslov}
-          </a>
-        </li>
-      ))
-    }
-  </ul>
+  {
+    get_others(linkovi.data.linkovi).length > 0 && (
+      <ul>
+        {get_others(linkovi.data.linkovi).map((link) => (
+          <li class="spread">
+            <a href={link.link}>
+              {link.type !== "bez" && (
+                <Icon
+                  size={ICON_SIZE_LG}
+                  name={icons.find((e) => e.value === link.type)?.icon!}
+                />
+              )}
+              {link.naslov}
+            </a>
+          </li>
+        ))}
+      </ul>
+    )
+  }
+  {
+    get_socials(linkovi.data.linkovi).length > 0 && (
+      <ul class="socials">
+        {get_socials(linkovi.data.linkovi).map((link) => (
+          <li>
+            <a href={link.link}>
+              {link.type !== "bez" && (
+                <Icon
+                  size={ICON_SIZE_LG}
+                  name={icons.find((e) => e.value === link.type)?.icon!}
+                />
+              )}
+            </a>
+          </li>
+        ))}
+      </ul>
+    )
+  }
   <h1>{ostali_linkovi.ostali_linkovi}</h1>
   <ul>
     {
       ostali_linkovi.linkovi.map((link) => (
         <li>
           <a href={link.link}>
-            {link.ikonica !== "bez" && (
-              <Icon size={ICON_SIZE_LG} name={`mdi:${link.ikonica}`} />
+            {link.type !== "bez" && (
+              <Icon
+                size={ICON_SIZE_LG}
+                name={icons.find((e) => e.value === link.type)?.icon!}
+              />
             )}
             {link.naslov}
           </a>
@@ -90,13 +125,34 @@ const live = vesti.filter((vest) => vest.data.live);
       vesti.slice(0, 3).map((vest) => (
         <li>
           <a href={`/${lang}/vesti/${vest.data.link}`}>
-            <Icon size={ICON_SIZE_LG} name={`mdi:newspaper`} />
+            <Icon size={ICON_SIZE_LG} name="mdi:newspaper" />
             {vest.data.title}
           </a>
         </li>
       ))
     }
   </ul>
+  {
+    linkovi.data.title !== sub.title && (
+      <>
+        <h1>{sub.title}</h1>
+        <ul class="socials">
+          {get_socials(sub.linkovi).map((link) => (
+            <li>
+              <a href={link.link}>
+                {link.type !== "bez" && (
+                  <Icon
+                    size={ICON_SIZE_LG}
+                    name={icons.find((e) => e.value === link.type)?.icon!}
+                  />
+                )}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </>
+    )
+  }
 </Base>
 
 <style>
@@ -112,6 +168,20 @@ const live = vesti.filter((vest) => vest.data.live);
     flex-direction: column;
     gap: 1rem;
     padding: 0;
+  }
+
+  .socials {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .socials li {
+    flex-grow: 1;
+  }
+
+  .socials a {
+    display: flex;
+    justify-content: center;
   }
 
   a {

@@ -1,17 +1,19 @@
 ---
 title: Факултет за специјалну едукацију и рехабилитацију
 link: fasper
+prikaz: Специјална едукација и рехабилитација
+type: ub
 linkovi:
-  - ikonica: instagram
+  - type: instagram
     naslov: Instagram профил
     link: https://www.instagram.com/fasper_blokada
-  - ikonica: twitter
+  - type: twitter
     naslov: Twitter профил
     link: https://x.com/fasperublokadi
-  - ikonica: facebook
+  - type: facebook
     naslov: Facebook профил
     link: https://www.facebook.com/share/18i3FWabv6
-  - ikonica: at
+  - type: mail
     naslov: Мејл адреса
     link: mailto:fasperstudenti.inicijativa@gmail.com
 ---

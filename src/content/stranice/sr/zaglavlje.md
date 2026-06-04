@@ -1,5 +1,5 @@
 ---
-naslov: Студенти у блокади
+naslov: Студенти побеђују
 linkovi:
   - naziv: Укључи се
     link: /ukljuci-se

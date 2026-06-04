@@ -1,14 +1,16 @@
 ---
 title: Биолошки факултет
 link: bio
+prikaz: Биологија
+type: ub
 linkovi:
-  - ikonica: instagram
+  - type: instagram
     naslov: Instagram профил
     link: https://www.instagram.com/blokada.bioloski
-  - ikonica: twitter
+  - type: twitter
     naslov: Twitter профил
     link: https://x.com/blokadabio
-  - ikonica: at
+  - type: mail
     naslov: bioloziublokadi@gmail.com
     link: mailto:bioloziublokadi@gmail.com
 ---

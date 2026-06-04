@@ -1,11 +1,13 @@
 ---
 title: Физички факултет
 link: ff
+prikaz: Физика
+type: ub
 linkovi:
-  - ikonica: instagram
+  - type: instagram
     naslov: Instagram профил
     link: https://www.instagram.com/glasstudenataff
-  - ikonica: twitter
+  - type: twitter
     naslov: Twitter профил
     link: https://x.com/FFjeFizika
 ---

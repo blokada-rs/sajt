@@ -1,14 +1,16 @@
 ---
-title: Висока грађевинскко-геодетска школа
+title: Висока грађевинско-геодетска школа
 link: vggs
+prikaz: Грађевинско-геодетска школа
+type: visa
 linkovi:
-  - ikonica: instagram
+  - type: instagram
     naslov: Instagram профил
     link: https://www.instagram.com/vggs_blokada/
-  - ikonica: twitter
+  - type: twitter
     naslov: Twitter профил
     link: https://x.com/vggsblokada
-  - ikonica: at
+  - type: mail
     naslov: Mail адреса
     link: mailto:studentivggs16@gmail.com
 ---

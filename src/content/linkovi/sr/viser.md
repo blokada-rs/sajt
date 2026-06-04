@@ -1,11 +1,12 @@
 ---
 title: Висока школа електротехнике и рачунарства
 link: viser
+type: visa
 linkovi:
-  - ikonica: instagram
+  - type: instagram
     naslov: Instagram профил
     link: https://www.instagram.com/blokadaviser
-  - ikonica: twitter
+  - type: twitter
     naslov: Twitter профил
     link: https://x.com/viserblokada
 ---

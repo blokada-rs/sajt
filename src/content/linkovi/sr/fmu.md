@@ -1,20 +1,22 @@
 ---
 title: Факултет музичке уметности
 link: fmu
+prikaz: Музичке уметности
+type: uu
 linkovi:
-  - ikonica: instagram
+  - type: instagram
     naslov: Instagram профил
     link: https://www.instagram.com/blokada.fmu
-  - ikonica: twitter
+  - type: twitter
     naslov: Twitter профил
     link: https://x.com/blokadafmu
-  - ikonica: facebook
+  - type: facebook
     naslov: Facebook профил
     link: https://www.facebook.com/share/1LaWfWyQYW
-  - ikonica: music-note
+  - type: tiktok
     naslov: TikTok профил
     link: https://www.tiktok.com/@blokadafmu
-  - ikonica: at
+  - type: mail
     naslov: E-mail adresa
     link: mailto:fmublokade@gmail.com
 ---

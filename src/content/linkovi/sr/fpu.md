@@ -1,11 +1,13 @@
 ---
 title: Факултет примењених уметности
 link: fpu
+prikaz: Примењене уметности
+type: uu
 linkovi:
-  - ikonica: instagram
+  - type: instagram
     naslov: Instagram профил
     link: https://www.instagram.com/blokada_fpu
-  - ikonica: instagram
+  - type: instagram-bitno
     naslov: '@ansamblgeneralstab'
     link: https://www.instagram.com/ansamblgeneralstab
 ---

@@ -11,35 +11,29 @@ Potrebno je da napravite Github nalog i da se obratite nekome ko održava sajt k
 Da pristupite samom interfejsu uđite na [blokade.org/admin](https://blokade.org/admin/).
 Kada napravite neku izmenu biće potrebno da je neko od administratora proveri i odobri.
 
-### Za tehničku implementaciju
-
-Pogledajte šta je otvoreno i nije preuzeto u [Issues](https://github.com/blokada-rs/sajt/issues) <br>
-Ukoliko nemate write permission za ovaj repozitorijum moraćete da ga forkujete i da radite na svom forku.
-Kada mislite da ste rešili određeni problem ili implementirali nešto novo napravite pull request na master granu ili po dogovoru na neku drugu granu ovog projekta.
-Neko od nas će pregledati vaše izmene i spojiti ih u master granu.
-
 ## Kako da pokrenem stranicu lokalno?
 
-1. Instalirajte [Node.js](https://nodejs.org/en)
+1. Klonirajte projekat sa ovog repozitorijuma
 
-   Za Linux: `sudo apt install nodejs`
+   ```
+   git clone https://git.blokade.org/blokade-org/sajt`
+   ```
 
-2. Klonirajte projekat sa ovog repozitorijuma
+2. Instalirajte sve neophodne Node module
 
-   `git clone https://github.com/blokada-rs/sajt.git`
+   U kloniranom repozitorijumu pokrenite:
 
-3. Instalirajte sve neophodne Node module
+   ```
+   pnpm install
+   ```
 
-   U kloniranom repozitorijumu pokrenite `npm install`
-
-4. Pokrenite development build lokalno
-
-   `npm run dev`
-
+3. Pokrenite development server lokalno
+   ```
+   pnpm run dev
+   ```
    Sada ćete moći da pristupite stranici lokalno (najverovatnije na localhost:4321) - proverite terminal za tačan port
 
 ## Struktura projekta
 
-**Sadržaj** koji se koristi pri generisanju stranica nalazi se u src/content/NAZIV STRANICE/JEZIK/NAZIV.md
-
-**Layout** stranica se nalazi u src/pages/\[lang\], komponente koje se koriste na više mesta su u src/components
+- **Sadržaj** koji se koristi pri generisanju stranica nalazi se u src/content/NAZIV STRANICE/JEZIK/NAZIV.md
+- **Layout** stranica se nalazi u src/pages/\[lang\], komponente koje se koriste na više mesta su u src/components

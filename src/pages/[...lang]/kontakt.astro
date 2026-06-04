@@ -2,7 +2,13 @@
 import Base from "@layouts/Base.astro";
 import { SITE_DESCRIPTION } from "../../consts";
 
-import { file, langs } from "@scripts/i18n";
+import { collection, entry, file, langs } from "@scripts/i18n";
+import { icons, socials } from "@scripts/collections.ts";
+import { ICON_SIZE_LG } from "../../consts.ts";
+import { Icon } from "astro-icon/components";
+import { type } from "@scripts/collections"
+import { Markdown } from "@mashehu/astropub-md";
+
 export async function getStaticPaths() {
   return langs.map((lang) => ({ params: { lang } }));
 }
@@ -13,6 +19,15 @@ if (typeof lang === "undefined") {
 }
 
 const { frontmatter } = await file("ostalo", lang);
+
+// TODO: Duplicate code
+
+const { data: sub } = await entry("linkovi", "studenti_u_blokadi", lang);
+
+const get_socials = (links) =>
+  links.filter(({ type }) => socials.some(({ value }) => type === value));
+
+const all = await collection("linkovi", lang);
 ---
 
 <Base
@@ -21,137 +36,75 @@ const { frontmatter } = await file("ostalo", lang);
 >
   <section>
     <h1>{frontmatter.kontakt}</h1>
+    <Markdown of={frontmatter.kontakt_opis} />
 
     <article>
-      <h2>{frontmatter.studenti_u_blokadi}</h2>
       <div class="nalozi">
-        <a class="button" href="https://instagram.com/studenti_u_blokadi"
-          >Instagram</a
-        >
-        <a
-          class="button"
-          href="https://www.facebook.com/people/Studenti-u-blokadi-UB/61571631694236/"
-          >Facebook</a
-        >
-        <a class="button" href="https://x.com/studentblokade">Twitter</a>
-        <a
-          class="button"
-          href="https://www.youtube.com/channel/UCVzOMk75igzA-ZuOvQaI1xg"
-          >YouTube</a
-        >
+        {
+          get_socials(sub.linkovi).map((link) => (
+            <a class="button" href={link.link}>
+              <Icon
+                size={ICON_SIZE_LG}
+                name={icons.find((e) => e.value === link.type)?.icon!}
+              />
+            </a>
+          ))
+        }
       </div>
     </article>
 
     <article>
       <h2>{frontmatter.pojedinacni_fakulteti}</h2>
       <div class="nalozi">
-        <a class="button" href="https://www.instagram.com/blokada.arh.bg"
-          >Arhitektonski</a
-        >
-        <a class="button" href="https://www.instagram.com/blokada.fb"
-          >Bezbednosti</a
-        >
-        <a class="button" href="https://www.instagram.com/blokada.bioloski"
-          >Biološki</a
-        >
-        <a class="button" href="https://www.instagram.com/sviublokade.fdu"
-          >Dramske umetnosti</a
-        >
-        <a class="button" href="https://www.instagram.com/ekof.blokada"
-          >Ekonomski</a
-        >
-        <a class="button" href="https://www.instagram.com/etfublokadi"
-          >Elektrotehnički</a
-        >
-        <a class="button" href="https://www.instagram.com/blokada.ffubg"
-          >Farmaceutski</a
-        >
-        <a class="button" href="https://www.instagram.com/filoloski.blokada"
-          >Filološki</a
-        >
-        <a class="button" href="https://www.instagram.com/filozofi.u.blokadi"
-          >Filozofski</a
-        >
-        <a class="button" href="https://www.instagram.com/blokadaffh"
-          >Fizička Hemija</a
-        >
-        <a class="button" href="https://www.instagram.com/fizika_u_blokadi"
-          >Fizički</a
-        >
-        <a class="button" href="https://www.instagram.com/blokada.gef"
-          >Geografski</a
-        >
-        <a class="button" href="https://www.instagram.com/grf.blokade"
-          >Građevinski</a
-        >
-        <a class="button" href="https://www.instagram.com/blokada.hf"
-          >Hemijski</a
-        >
-        <a class="button" href="https://www.instagram.com/blokada.matf"
-          >Matematički</a
-        >
-        <a class="button" href="https://www.instagram.com/masinci.u.blokadi"
-          >Mašinski</a
-        >
-        <a class="button" href="https://www.instagram.com/blokada.mfub"
-          >Medicinski</a
-        >
-        <a class="button" href="https://www.instagram.com/met.blokada"
-          >Metropolitan</a
-        >
-        <a class="button" href="https://www.instagram.com/blokada.fmu"
-          >Muzičke umetnosti</a
-        >
-        <a class="button" href="https://www.instagram.com/blokada_uf"
-          >Obrazovanje učitelja i vaspitača</a
-        >
-        <a class="button" href="https://www.instagram.com/blokada.fon"
-          >Organizacione nauke</a
-        >
-        <a class="button" href="https://www.instagram.com/blokada.fpn"
-          >Političke nauke</a
-        >
-        <a class="button" href="https://www.instagram.com/poljoprivredniblokada"
-          >Poljoprivredni</a
-        >
-        <a class="button" href="https://www.instagram.com/blokada_pravni"
-          >Pravni</a
-        >
-        <a class="button" href="#">Pravoslavni bogoslovski</a>
-        <a class="button" href="https://www.instagram.com/rafublokadi/"
-          >Računarski</a
-        >
-        <a class="button" href="https://www.instagram.com/blokada.rgf"
-          >Rudarsko-geološki</a
-        >
-        <a class="button" href="https://www.instagram.com/blokada.sfbg"
-          >Saobraćajni</a
-        >
-        <a class="button" href="https://www.instagram.com/fasper_blokada"
-          >Specijalna edukacija i rehabilitacija</a
-        >
-        <a class="button" href="https://www.instagram.com/dif.blokada"
-          >Sport i fizičko vaspitanje</a
-        >
-        <a class="button" href="https://www.instagram.com/stomfbg_blokada"
-          >Stomatološki</a
-        >
-        <a class="button" href="#">Tehnički u Boru</a>
-        <a class="button" href="https://www.instagram.com/tmf.blokada"
-          >Tehnološko-metalurški</a
-        >
-        <a class="button" href="https://www.instagram.com/fvm_blokade"
-          >Veterinarska medicina</a
-        >
-        <a class="button" href="https://www.instagram.com/blokada.sumarski"
-          >Šumarski</a
-        >
+        {
+          all
+            .filter(({ data }) => typeof data.type !== "undefined")
+            .toSorted(({ data: a }, { data: b }) =>
+              a.type !== b.type
+                ? type[a.type].sort - type[b.type].sort
+                : (a.prikaz ?? "").localeCompare(b.prikaz ?? ""),
+            )
+            .map(({ data }) => (
+              <>
+                <button class={`button ${data.type}`} popovertarget={`popover-${data.link}`}>
+                  {data.prikaz ?? data.title}
+                </button>
+                <div id={`popover-${data.link}`} popover>
+                  <h3>{data.title}</h3>
+                  <ul>
+                    {get_socials(data.linkovi).map((link) => (
+                      <li class="spread">
+                        <a href={link.link}>
+                          {link.type !== "bez" && (
+                            <Icon
+                              size={ICON_SIZE_LG}
+                              name={icons.find((e) => e.value === link.type)?.icon!}
+                            />
+                          )}
+                          {link.naslov}
+                        </a>
+                      </li>
+                    ))}
+                    <li>
+                      <button popovertarget={`popover-${data.link}`} popovertargetaction="hide">
+                        <Icon
+                          size={ICON_SIZE_LG}
+                          name="mdi:close"
+                        />
+                        Zatvori
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </>
+            ))
+        }
       </div>
     </article>
   </section>
 </Base>
 
-<style>
+<style lang="scss">
   .nalozi {
     display: flex;
     flex-wrap: wrap;
@@ -162,7 +115,11 @@ const { frontmatter } = await file("ostalo", lang);
     padding: 1rem 2rem;
     border-radius: 0.5rem;
     flex-grow: 1;
-    text-align: center;
+    border-width: 2px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   article {
@@ -178,4 +135,69 @@ const { frontmatter } = await file("ostalo", lang);
       padding: 0.5rem 1rem;
     }
   }
+
+  [popover] {
+    position: fixed;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 50rem;
+    max-width: calc(100% - 2rem);
+
+    &:before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -2;
+      background: rgba(0,0,0,0.5);
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background: white;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 0;
+    }
+
+    li {
+      display: flex;
+    }
+
+    a, button {
+      display: flex;
+      flex-grow: 1;
+
+      text-decoration: none;
+      color: black;
+      align-items: center;
+      gap: 1rem;
+
+      border: 2px solid black;
+      border-radius: 0.5rem;
+      padding: 1rem;
+    }
+
+    :where(a, button):hover {
+      filter: opacity(0.5);
+    }
+  }
+
+  .ub       { border-color: hsl(0 82% 43%);   }
+  .uu       { border-color: hsl(114 87% 31%); }
+  .visa     { border-color: hsl(55 42% 52%);  }
+  .privatni { border-color: hsl(210 87% 19%); }
+
+  .ub:hover       { color: hsl(0 82% 43%);   }
+  .uu:hover       { color: hsl(114 87% 31%); }
+  .visa:hover     { color: hsl(55 42% 52%);  }
+  .privatni:hover { color: hsl(210 87% 19%); }
 </style>

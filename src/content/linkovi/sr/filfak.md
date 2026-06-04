@@ -1,20 +1,22 @@
 ---
 title: Филолошки факултет
 link: filfak
+prikaz: Филолошки
+type: ub
 linkovi:
-  - ikonica: instagram
+  - type: instagram
     naslov: Instagram профил
     link: https://www.instagram.com/filoloski.blokada
-  - ikonica: twitter
+  - type: twitter
     naslov: Twitter профил
     link: https://x.com/blokadafilfak
-  - ikonica: facebook
+  - type: facebook
     naslov: Facebook профил
     link: https://www.facebook.com/share/1BPfvh29MA/
-  - ikonica: web
+  - type: web
     naslov: Блокадни часопис
     link: https://filoblok.info
-  - ikonica: at
+  - type: mail
     naslov: blokadafiloloski@gmail.com
     link: mailto:blokadafiloloski@gmail.com
 ---
