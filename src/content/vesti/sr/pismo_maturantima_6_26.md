@@ -4,7 +4,7 @@ title: Писмо матурантима
 live: false
 pubDate: 2026-06-04T18:42:00
 updatedDate: 2026-06-04T18:42:00
-heroImage: '@assets/images/Драги_наши_саборци,_будуће_колеге,_а_данас_матуранти!_Затварате.webp'
+heroImage: '@assets/images/pismo_maturantima.webp'
 description: Писмо студената у блокади матурантима.
 ---
 
