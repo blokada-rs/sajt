@@ -2,6 +2,7 @@
 link: zajecar-je-nas
 title: Зајечар је наш!
 live: false
+live_embed: HENbpMKQqOM
 pubDate: 2026-06-09T13:11:00
 heroImage: '@assets/images/zajecar-sajt.webp'
 description: Пре годину дана грађани Зајечара и Косјерића изашли су на локалне изборе. Оно што је уследило није била прослава демократије, већ вишемесечна борба за поштовање изборне воље грађана.
