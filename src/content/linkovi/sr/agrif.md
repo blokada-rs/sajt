@@ -4,9 +4,6 @@ link: agrif
 prikaz: Пољопривреда
 type: ub
 linkovi:
-  - type: bez
-    naslov: Пријава – Тура до Стразбура
-    link: https://docs.google.com/forms/d/e/1FAIpQLSd-kXR-nCS95BMz1axFFvgN-2sHLbF3H3jaS6xZYDB8ntwx6w/viewform
   - type: instagram
     naslov: Instagram профил
     link: https://www.instagram.com/poljoprivredniblokada
