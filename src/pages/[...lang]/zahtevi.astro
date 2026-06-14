@@ -21,7 +21,9 @@ const { frontmatter } = await file("zahtevi", lang);
   <section>
     <h1>{frontmatter.naslov}</h1>
 
-    <div class="zahtevi">
+    <Markdown of={frontmatter.opis} />
+
+    <div class="details-list">
       {
         frontmatter.zahtevi.map(
           (
@@ -44,48 +46,11 @@ const { frontmatter } = await file("zahtevi", lang);
 </Base>
 
 <style>
-  .zahtevi {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+  section :global(h2) {
+    margin-top: 2rem;
   }
 
-  details {
-    background-color: hsl(0, 0%, 95%);
-    border: 2px solid #686868;
-    border-radius: 0.5rem;
-  }
-
-  details summary {
-    cursor: pointer;
-    background-color: white;
-    padding: 1rem;
-    border: 2px solid black;
-    border-radius: 0.5rem;
-    margin: -2px;
-    list-style-type: none;
-  }
-
-  details summary strong {
+  summary strong {
     font-size: 1.5rem;
-  }
-
-  details[open] .content {
-    animation: animateDown 0.2s linear forwards;
-  }
-
-  @keyframes animateDown {
-    0% {
-      opacity: 0;
-      transform: translatey(-30px);
-    }
-    100% {
-      opacity: 1;
-      transform: translatey(0);
-    }
-  }
-
-  details .content {
-    padding: 1rem;
   }
 </style>

@@ -11,8 +11,8 @@ linkovi:
     link: /afere
   - naziv: Дијаспора
     link: /dijaspora
-  - naziv: О Блокадама
-    link: /o-blokadama
+  - naziv: О нама
+    link: /o-nama
   - naziv: Контакт
     link: /kontakt
 ---

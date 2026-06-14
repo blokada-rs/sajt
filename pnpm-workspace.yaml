@@ -2,5 +2,3 @@ allowBuilds:
   '@parcel/watcher': true
   esbuild: true
   sharp: true
-minimumReleaseAgeExclude:
-  - '@sveltia/cms@0.165.1'

@@ -236,3 +236,44 @@ hr {
   vertical-align: sub;
   font-size: smaller;
 }
+
+.details-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.details-list details {
+  background-color: hsl(0, 0%, 95%);
+  border: 2px solid #686868;
+  border-radius: 0.5rem;
+}
+
+.details-list details summary {
+  cursor: pointer;
+  background-color: white;
+  padding: 1rem;
+  border: 2px solid black;
+  border-radius: 0.5rem;
+  margin: -2px;
+  list-style-type: none;
+}
+
+.details-list details[open] .content {
+  animation: animateDown 0.2s linear forwards;
+}
+
+@keyframes animateDown {
+  0% {
+    opacity: 0;
+    transform: translatey(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translatey(0);
+  }
+}
+
+.details-list details .content {
+  padding: 1rem;
+}

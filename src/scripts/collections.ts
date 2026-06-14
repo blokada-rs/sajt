@@ -154,10 +154,10 @@ const stranice = file_collection("stranice", "Stranice", "description", [
   file("pocetna", "Početna", "src/content/stranice", "početna.md", [
     string_field("naslov", "Naslov"),
     markdown_field("body", "Opis"),
-    string_field("slavija", "Slavija"),
-    markdown_field("slavija_tekst", "Slavija tekst"),
-    string_field("vidimo_se", "Vidimo se za"),
-    string_field("slavija_dugme", "Slavija dugme"),
+    string_field("ukljuci_se", "Ukljuci se"),
+    markdown_field("ukljuci_se_tekst", "Ukljuci se tekst"),
+    string_field("ukljuci_se_dugme", "Ukljuci se dugme"),
+    string_field("ukljuci_se_link", "Ukljuci se link"),
     string_field("vesti", "Vesti"),
     markdown_field("vesti_tekst", "Vesti tekst"),
     string_field("vesti_dugme", "Vesti dugme"),
@@ -185,18 +185,19 @@ const stranice = file_collection("stranice", "Stranice", "description", [
     markdown_field("body", "Tekst"),
   ]),
 
-  file("dijaspora", "Dijaspora", "src/content/stranice/", "/dijaspora.md", [
+  file("dijaspora", "Dijaspora", "src/content/stranice", "/dijaspora.md", [
     string_field("title", "Naslov"),
     markdown_field("body", "Tekst"),
   ]),
 
-  file("zahtevi", "Zahtevi", "src/content/stranice/", "zahtevi.md", [
+  file("zahtevi", "Zahtevi", "src/content/stranice", "zahtevi.md", [
     string_field("title", "Title"),
     string_field("naslov", "Naslov"),
     list_field("zahtevi", "Zahtevi", [
       string_field("original", "Originalni oblik"),
       markdown_field("konkretizacija", "Konkretizacija"),
     ]).singular("Zahtev"),
+    markdown_field("opis", "Opis"),
     markdown_field("body", "Tekst"),
   ]),
 

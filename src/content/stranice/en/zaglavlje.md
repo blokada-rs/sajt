@@ -8,7 +8,7 @@ linkovi:
   - naziv: News
     link: /vesti
   - naziv: About
-    link: /o-blokadama
+    link: /o-nama
   - naziv: Contact
     link: /kontakt
 ---

@@ -58,12 +58,12 @@ const live = vesti.filter((vest) => vest.data.live);
   </section>
 
   <section class="background">
-    <h2>{pocetna.slavija}</h2>
-    {pocetna.slavija_tekst && <Markdown of={pocetna.slavija_tekst} />}
+    <h2>{pocetna.ukljuci_se}</h2>
+    {pocetna.ukljuci_se_tekst && <Markdown of={pocetna.ukljuci_se_tekst} />}
 
     <div class="buttons">
-      <a slot="button" href=`/slavija` class="button primary dugme center">
-        {pocetna.slavija_dugme}
+      <a slot="button" href={pocetna.ukljuci_se_link} class="button primary dugme center">
+        {pocetna.ukljuci_se_dugme}
       </a>
     </div>
   </section>
