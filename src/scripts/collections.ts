@@ -150,23 +150,45 @@ const link_list = () =>
     .singular("Link")
     .summary("{{naslov}}");
 
+const specijalne_stranice = folder_collection(
+  "specijalne_stranice",
+  "Specijalne stranice",
+  "priority_high",
+  "src/content/specijalne_stranice",
+  [
+    string_field("link", "Link"),
+    image_field("heroImage", "Glavna slika"),
+    string_field("title", "Naslov"),
+    list_field("sections", "Sekcije", [
+      string_field("id", "ID").optional(),
+      string_field("title", "Naslov").optional(),
+      string_field("link_text", "Link tekst").optional(),
+      string_field("link", "Link").optional(),
+      markdown_field("text", "Tekst").optional(),
+      string_field("vest_id", "Vest ID").optional(),
+      enum_field("special", "Special", [
+        ["default", "Default"],
+        ["vest", "Vest"],
+      ]),
+    ]).singular("Sekcija"),
+  ],
+).slug("{{fields.link}}");
+
 const stranice = file_collection("stranice", "Stranice", "description", [
   file("pocetna", "Početna", "src/content/stranice", "početna.md", [
     string_field("naslov", "Naslov"),
-    markdown_field("body", "Opis"),
-    string_field("ukljuci_se", "Ukljuci se"),
-    markdown_field("ukljuci_se_tekst", "Ukljuci se tekst"),
-    string_field("ukljuci_se_dugme", "Ukljuci se dugme"),
-    string_field("ukljuci_se_link", "Ukljuci se link"),
-    string_field("vesti", "Vesti"),
-    markdown_field("vesti_tekst", "Vesti tekst"),
-    string_field("vesti_dugme", "Vesti dugme"),
-    string_field("akc", "AKC"),
-    markdown_field("akc_tekst", "AKC tekst"),
-    string_field("suss", "SUSS"),
-    markdown_field("suss_tekst", "SUSS tekst"),
-    string_field("suss_dugme", "SUSS dugme"),
-    string_field("konkretizacije_zahteva", "Konkretizacijе zahteva"),
+    list_field("sections", "Sekcije", [
+      string_field("id", "ID").optional(),
+      string_field("title", "Naslov").optional(),
+      string_field("link_text", "Link tekst").optional(),
+      string_field("link", "Link").optional(),
+      markdown_field("text", "Tekst").optional(),
+      enum_field("special", "Special", [
+        ["default", "Default"],
+        ["vesti", "Vesti"],
+        ["zahtevi", "Zahtevi"],
+      ]),
+    ]).singular("Sekcija"),
   ]),
 
   file("izbori", "Izbori", "src/content/stranice", "izbori.md", [
@@ -281,5 +303,6 @@ export const all = all_collections([
   afere,
   divider(),
   stranice,
+  specijalne_stranice,
   linkovi,
 ]);

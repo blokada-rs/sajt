@@ -12,7 +12,7 @@ export const langs = ["sr", "sr-lat", "en", undefined];
 const fallbackLanguages = ["en", "sr-lat"];
 
 export async function collectionIDs<
-  T extends "vesti" | "akcije" | "afere" | "linkovi",
+  T extends "vesti" | "akcije" | "afere" | "linkovi" | "specijalne_stranice",
 >(collection: T): Promise<string[]> {
   const all = (await getCollection(collection)).map(
     (collection) => collection.id.split("/")[1],
@@ -22,7 +22,7 @@ export async function collectionIDs<
 }
 
 export async function collection<
-  T extends "vesti" | "akcije" | "afere" | "linkovi",
+  T extends "vesti" | "akcije" | "afere" | "linkovi" | "specijalne_stranice",
 >(
   collection: T,
   lang: string = "all",
@@ -41,7 +41,7 @@ export async function collection<
   return all.sort((a, b) => a.data.title.localeCompare(b.data.title));
 }
 
-export async function entry<T extends "vesti" | "akcije" | "afere" | "linkovi">(
+export async function entry<T extends "vesti" | "akcije" | "afere" | "linkovi" | "specijalne_stranice">(
   collection: T,
   entry: string,
   lang: string = "sr",

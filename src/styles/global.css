@@ -39,11 +39,11 @@ body {
   background-size: 100% 600px;
   color: rgb(var(--gray-dark));
   line-height: 1.7;
+  min-height: 100vh;
 }
 
 main {
   margin-bottom: 3rem;
-  min-height: 100vh;
 
   display: grid;
   place-content: start;
@@ -276,4 +276,26 @@ hr {
 
 .details-list details .content {
   padding: 1rem;
+}
+
+section h2 {
+  border-left: 0.4rem var(--accent) solid;
+  padding-left: 0.8rem;
+}
+
+.dark-background {
+  position: relative;
+  padding-block: 3rem;
+}
+
+.dark-background::before {
+  content: "";
+  background-color: hsl(0, 0%, 95%);
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 50%;
+  translate: -50% 0;
 }
