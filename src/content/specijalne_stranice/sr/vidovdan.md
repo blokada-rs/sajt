@@ -1,6 +1,6 @@
 ---
 link: vidovdan
-heroImage: '@assets/images/_1090081.JPG'
+heroImage: '@assets/images/IMG_2062.webp'
 title: Све се види на Видовдан
 sections:
   - title: План и програм
