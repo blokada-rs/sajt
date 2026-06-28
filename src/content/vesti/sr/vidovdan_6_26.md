@@ -7,6 +7,11 @@ updatedDate: 2026-06-28T10:18
 heroImage: '@assets/images/photo_5911256836764012221_w.webp'
 description: Студентски скуп у Краљеву, на Видовдан 28.6.
 timeline:
+  - naslov: Бајкери аутопутем до Краљева
+    datum: 2026-06-28T15:24
+    videos:
+      - xrOqumN_zzc
+    tekst: Ветар у коси, врели асфалт под точковима и јасан циљ пред нама — Краљево.
   - naslov: Шетачи
     datum: 2026-06-28T14:53
     videos:
