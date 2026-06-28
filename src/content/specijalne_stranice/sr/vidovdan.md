@@ -3,6 +3,9 @@ link: vidovdan
 heroImage: '@assets/images/IMG_2062.webp'
 title: Све се види на Видовдан
 sections:
+  - title: Краљево 28.6. - Видовдан
+    vest_id: vidovdan_6_26
+    special: vest
   - title: План и програм
     text: |-
       - (**11.00 - 14.00**) Штанд за децу
@@ -20,12 +23,6 @@ sections:
       1. Прикупљање **донација** за децу са Косова и Метохије
       2. **Штампање** мајица 
       3. Пријава за **контролоре**
-    special: default
-  - title: Мапа скупа
-    text: |-
-      ![](@assets/images/IMG_2076.webp)
-
-      ![](@assets/images/IMG_2076.webp)
     special: default
   - title: Повезивање возача, путника и смештаја
     text: |-
