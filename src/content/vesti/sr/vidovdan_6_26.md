@@ -9,6 +9,8 @@ description: Студентски скуп у Краљеву, на Видовд�
 timeline:
   - naslov: Нови дизај мајица
     datum: 2026-06-28T15:14
+    videos:
+      - kL8xNk047sI
     slike:
       - '@assets/images/IMG_2129.webp'
   - naslov: Трг српских ратника
