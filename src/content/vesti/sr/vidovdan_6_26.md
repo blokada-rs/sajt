@@ -9,6 +9,8 @@ description: Студентски скуп у Краљеву, на Видовд�
 timeline:
   - naslov: Шетачи су стигли
     datum: 2026-06-28T16:55
+    videos:
+      - i_TTaetMKeU
   - naslov: Дочек шетача
     datum: 2026-06-28T16:27
     slike:
