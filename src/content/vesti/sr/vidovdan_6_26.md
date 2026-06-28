@@ -7,6 +7,8 @@ updatedDate: 2026-06-28T10:18
 heroImage: '@assets/images/photo_5911256836764012221_w.webp'
 description: Студентски скуп у Краљеву, на Видовдан 28.6.
 timeline:
+  - naslov: Дочек шетача
+    datum: 2026-06-28T16:27
   - naslov: Бајкери надомак Краљева
     datum: 2026-06-28T16:40
     videos:
