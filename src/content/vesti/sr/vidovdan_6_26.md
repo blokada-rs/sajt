@@ -8,7 +8,7 @@ heroImage: '@assets/images/photo_5911256836764012221_w.webp'
 description: Студентски скуп у Краљеву, на Видовдан 28.6.
 timeline:
   - naslov: Шетачи су стигли
-    datum: 2026-06-28T16:55
+    datum: 2026-06-28T18:55
     videos:
       - i_TTaetMKeU
     tekst: |-
@@ -16,7 +16,7 @@ timeline:
 
       Атмосфера је свечана, а лица присутних говоре више од речи.
   - naslov: Дочек шетача
-    datum: 2026-06-28T16:27
+    datum: 2026-06-28T18:27
     slike:
       - '@assets/images/IMG_2140.webp'
   - naslov: Бајкери надомак Краљева
