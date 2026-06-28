@@ -7,6 +7,10 @@ updatedDate: 2026-06-28T10:18
 heroImage: '@assets/images/photo_5911256836764012221_w.webp'
 description: Студентски скуп у Краљеву, на Видовдан 28.6.
 timeline:
+  - naslov: Нови дизај мајица
+    datum: 2026-06-28T15:14
+    slike:
+      - '@assets/images/IMG_2129.webp'
   - naslov: Трг српских ратника
     datum: 2026-06-28T16:08
     videos:
