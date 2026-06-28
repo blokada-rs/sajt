@@ -9,6 +9,8 @@ description: Студентски скуп у Краљеву, на Видовд�
 timeline:
   - naslov: Бајкери надомак Краљева
     datum: 2026-06-28T16:40
+    videos:
+      - 2h7v1IolgCo
     slike:
       - '@assets/images/IMG_2133.webp'
       - '@assets/images/IMG_2134.webp'
