@@ -7,8 +7,12 @@ updatedDate: 2026-06-28T10:18
 heroImage: '@assets/images/photo_5911256836764012221_w.webp'
 description: Студентски скуп у Краљеву, на Видовдан 28.6.
 timeline:
+  - naslov: Шетачи су стигли
+    datum: 2026-06-28T16:55
   - naslov: Дочек шетача
     datum: 2026-06-28T16:27
+    slike:
+      - '@assets/images/IMG_2140.webp'
   - naslov: Бајкери надомак Краљева
     datum: 2026-06-28T16:40
     videos:
@@ -23,6 +27,9 @@ timeline:
       - kL8xNk047sI
     slike:
       - '@assets/images/IMG_2129.webp'
+  - naslov: Комунална милиција
+    datum: 2026-06-28T16:10
+    tekst: Чак и поред пријављивања штандова надлежним органима, комунална полиција је одлучила да испитује и узнемирава студенте за штандовима и  грађане окупљене око њих.
   - naslov: Трг српских ратника
     datum: 2026-06-28T16:08
     videos:
