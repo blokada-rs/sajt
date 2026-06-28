@@ -4,8 +4,8 @@ import FormattedDate from "./FormattedDate.astro";
 import { Picture } from "astro:assets";
 import { Markdown } from "@mashehu/astropub-md";
 
-type Props = { timeline: CollectionEntry<"vesti">["data"]["timeline"] };
-const { timeline } = Astro.props;
+type Props = { timeline: CollectionEntry<"vesti">["data"]["timeline"], border?: "light" | "dark" };
+const { timeline, border = "light" } = Astro.props;
 ---
 
 {
@@ -13,7 +13,7 @@ const { timeline } = Astro.props;
     <div class="desavanja">
       {timeline.map((post) => (
         <article>
-          <h3>{post.naslov}</h3>
+          <h3 class:list={[{"dark": border==="dark"}]}>{post.naslov}</h3>
           <FormattedDate date={post.datum} time />
           {((post.slike?.length ?? 0) > 0 ||
             (post.videos?.length ?? 0) > 0) && (
@@ -65,6 +65,10 @@ const { timeline } = Astro.props;
     left: -39px;
     border-radius: 50%;
     border: 6px solid white;
+  }
+
+  article h3.dark::before {
+    border-color: hsl(0, 0%, 95%);
   }
 
   article p {

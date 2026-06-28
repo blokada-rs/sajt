@@ -3,12 +3,11 @@ import { collectionIDs, entry, langs } from "@scripts/i18n";
 import Base from "@layouts/Base.astro";
 import { SITE_DESCRIPTION } from "../../consts";
 
-import slavija from "@assets/images/slavija.webp";
 import { Picture } from "astro:assets";
 import { Markdown } from "@mashehu/astropub-md";
 import Timeline from "@components/Timeline.astro";
 
-import  { type CollectionEntry, render } from "astro:content";
+import { type CollectionEntry, render } from "astro:content";
 
 const { lang } = Astro.params;
 if (typeof lang === "undefined") {
@@ -28,11 +27,22 @@ export async function getStaticPaths() {
   );
 }
 
-type Props = CollectionEntry<"specijalne_stranice">
+type Props = CollectionEntry<"specijalne_stranice">;
 await render(Astro.props);
 
 const frontmatter = Astro.props.data;
+
+const vesti = new Map();
+
+await Promise.all(
+  frontmatter.sections.map(async (s) => {
+    if (s.special === "vest") {
+      vesti.set(s.vest_id, await entry("vesti", s.vest_id, lang));
+    }
+  }),
+);
 ---
+
 <Base title={frontmatter.title} description={SITE_DESCRIPTION}>
   <div class="title">
     <Picture
@@ -48,44 +58,40 @@ const frontmatter = Astro.props.data;
     <div class="square"></div>
   </div>
 
-  <!--<section class="dark-background">-->
-  <!--  <h2>{frontmatter.prenos_uzivo}</h2>-->
-  <!--  <br />-->
-  <!--  <iframe-->
-  <!--    class="live-embed"-->
-  <!--    src=`https://www.youtube-nocookie.com/embed/${frontmatter.video_id}`-->
-  <!--    referrerpolicy="strict-origin-when-cross-origin"-->
-  <!--    allowfullscreen></iframe>-->
-  <!--</section>-->
-
-  <!--{-->
-  <!--  vest.timeline && (-->
-  <!--    <section>-->
-  <!--      <h2>{frontmatter.najnovije_vesti}</h2>-->
-  <!--      <Timeline timeline={vest.timeline} />-->
-  <!--    </section>-->
-  <!--  )-->
-  <!--}-->
-
   {
     frontmatter.sections.map((section: any, i: number) => (
       <section
         class:list={[{ "dark-background": i % 2 === 0 }]}
         id={section.id}
       >
-        {section.title && <h2>{section.title}</h2>}
-        {section.text && <Markdown of={section.text} />}
-        {section.link && (
-          <div class="buttons">
-            <a
-              slot="button"
-              href={section.link}
-              class="button primary dugme center"
-              download={section.link.endsWith(".pdf")}
-            >
-              {section.link_text}
-            </a>
-          </div>
+        {section.special === "vest" ? (
+          <>
+            {vesti.get(section.vest_id).data.timeline && (
+              <>
+                <Timeline
+                  timeline={vesti.get(section.vest_id).data.timeline}
+                  border={i % 2 === 0 ? "dark" : "light"}
+                />
+              </>
+            )}
+          </>
+        ) : (
+          <>
+            {section.title && <h2>{section.title}</h2>}
+            {section.text && <Markdown of={section.text} />}
+            {section.link && (
+              <div class="buttons">
+                <a
+                  slot="button"
+                  href={section.link}
+                  class="button primary dugme center"
+                  download={section.link.endsWith(".pdf")}
+                >
+                  {section.link_text}
+                </a>
+              </div>
+            )}
+          </>
         )}
       </section>
     ))
