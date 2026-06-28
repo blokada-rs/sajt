@@ -14,7 +14,7 @@ timeline:
   - naslov: Постављени су штандови
     datum: 2026-06-28T16:04
     slike:
-      - '@assets/images/IMG_3356(3).HEIC'
+      - '@assets/images/photo_5911256836764012281_w.webp'
     tekst: |-
       Постављени су штандови у Војном насељу, код ![](@assets/images/trg.webp)
 
