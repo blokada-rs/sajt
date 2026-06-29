@@ -7,7 +7,7 @@ linkovi:
     link: https://blokade.org/ukljuci-se#kontrola
   - type: web
     naslov: Контролори у дијаспори
-    link: https://blokade.ork/ukljuci-se#k-dijaspora
+    link: https://blokade.org/ukljuci-se#k-dijaspora
   - type: web
     naslov: Званични сајт
     link: https://blokade.org
