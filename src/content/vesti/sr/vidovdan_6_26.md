@@ -1,7 +1,7 @@
 ---
 link: vidovdan_6_26
 title: Све се види
-live: true
+live: false
 pubDate: 2026-06-28T10:18
 updatedDate: 2026-06-28T10:18
 heroImage: '@assets/images/photo_5911256836764012221_w.webp'
