@@ -1,6 +1,6 @@
 ---
 link: orden_presuda
-title: Картелске пресуде носичемо као ордење
+title: Картелске пресуде носићемо као ордење
 live: false
 pubDate: 2026-07-01T16:26
 updatedDate: 2026-07-01T16:26
