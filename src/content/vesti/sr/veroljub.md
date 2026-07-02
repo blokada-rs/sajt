@@ -1,6 +1,6 @@
 ---
 link: veroljub
-title: Веруљубе, уз Вас смо!
+title: Верољубе, уз Вас смо!
 live: false
 pubDate: 2026-07-02T14:33
 updatedDate: 2026-07-02T14:33
