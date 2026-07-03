@@ -4,6 +4,9 @@ link: agrif
 prikaz: Пољопривреда
 type: ub
 linkovi:
+  - type: web-bitno
+    naslov: Делфин лига
+    link: https://forms.gle/i7Jj9rZpPmpcajGq7
   - type: instagram
     naslov: Instagram профил
     link: https://www.instagram.com/poljoprivredniblokada
