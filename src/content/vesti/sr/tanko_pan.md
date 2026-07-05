@@ -1,7 +1,7 @@
 ---
 link: tanko_pan
 title: Не сме бити мира за власт - Панчево
-live: true
+live: false
 live_embed: FZKmfBBPsnE
 pubDate: 2026-07-03T18:11
 updatedDate: 2026-07-03T18:11
