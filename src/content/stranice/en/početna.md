@@ -1,10 +1,9 @@
 ---
-naslov: Student Blockades
+naslov: Students Win
 sections:
   - text: The collapse of the canopy at the Railway Station in Novi Sad on Friday, November 1, 2024, at 11:52, killed 15 people. The death of innocent victims caused collective sorrow. Citizens paused in the streets at 11:52AM to honor the victims with a 15-minute silence. People in Serbia continue to gather regularly in various locations across the country, always at the same time – 11:52.
     special: default
-  - id: Get Involved
-    title: Укључи се
+  - title: Get Involved
     link_text: Find out how
     link: /ukljuci-se
     text: The Student Movement in Serbia currently operates as a broad network, spanning faculties, cities and social media, without a central leadership. There are many ways you can support us, the students and our struggle.
