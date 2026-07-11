@@ -2,15 +2,15 @@
 naslov: Students Win
 linkovi:
   - naziv: Get Involved
-    link: https://blokade.org/ukljuci-se
+    link: /ukljuci-se
   - naziv: Demands
-    link: https://blokade.org/zahtevi
+    link: /zahtevi
   - naziv: News
-    link: https://blokade.org/vesti
+    link: /vesti
   - naziv: Dijaspora
-    link: https://blokade.org/dijaspora
+    link: /dijaspora
   - naziv: About
-    link: https://blokade.org/o-nama
+    link: /o-nama
   - naziv: Contact
-    link: https://blokade.org/kontakt
+    link: /kontakt
 ---

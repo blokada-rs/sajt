@@ -231,7 +231,7 @@ const stranice = file_collection("stranice", "Stranice", "description", [
     string_field("naslov", "Naslov"),
     list_field("linkovi", "Linkovi", [
       string_field("naziv", "Naslov"),
-      string_field("link", "Link").url(true),
+      string_field("link", "Link"),
     ]).singular("Link"),
   ]),
 
