@@ -207,7 +207,7 @@ const stranice = file_collection("stranice", "Stranice", "description", [
     markdown_field("body", "Tekst"),
   ]),
 
-  file("dijaspora", "Dijaspora", "src/content/stranice", "/dijaspora.md", [
+  file("dijaspora", "Dijaspora", "src/content/stranice", "dijaspora.md", [
     string_field("title", "Naslov"),
     markdown_field("body", "Tekst"),
   ]),

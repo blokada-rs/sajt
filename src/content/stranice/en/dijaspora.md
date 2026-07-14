@@ -20,7 +20,7 @@ Pravo glasa se ne štiti samo njegovim korišćenjem, već i odbijanjem da se ć
 Biračko pravo imaju državljanin Republike Srbije, tj. ljudi sa važećom ličnom kartom ili pasošem Republike Srbije.
 
 Ukoliko Vam je pasoš istekao, neophodno je da uz lično prisustvo podnesete zahtev za izdavanje novog u najbližem diplomatsko-konzularnom predstavništvu Republike Srbije. Pored zahteva se prilaže i stari pasoš (ili lična karta, ili druga javna isprava na osnovu koje se može utvrditi identitet, ako ne posedujete stari pasoš). Po proceduri je potreban i izvod iz matične knjige rođenih (kao i uverenje o državnjanstvu Republike Srbije, ako nikada ranije niste imali biometrijski pasoš), a to se pribavlja po službenoj dužnosti - dakle, o tome ne treba brinuti. Zakonski rok za rešavanje zahteva je 60 dana, te apelujemo da ne oklevate sa njegovim podnošenjem, jer je procedura prilično dugotrajna. Više informacija imate na narednom linku:
-[https://www.mfa.gov.rs/gradjani/usluge/putne-isprave](https://www.mfa.gov.rs/gradjani/usluge/putne-isprave). 
+[https://www.mfa.gov.rs/gradjani/usluge/putne-isprave](https://www.mfa.gov.rs/gradjani/usluge/putne-isprave).
 
 ### Proveriti da li ste upisani u jedinstveni birački spisak
 
