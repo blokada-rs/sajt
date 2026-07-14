@@ -1,6 +1,7 @@
 ---
-title: Dijaspora | studentske blokade
+title: Diaspora | Students Win
 ---
+
 # Glasanje u inostranstvu
 
 ## Zašto je bitno prijaviti se za glasanje i izaći na izbore
