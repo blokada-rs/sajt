@@ -1,5 +1,5 @@
 ---
-title: Diaspora | Students Win
+title: Diaspora | Student blockades
 ---
 
 # Glasanje u inostranstvu
