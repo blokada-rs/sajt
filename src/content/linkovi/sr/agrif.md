@@ -14,8 +14,8 @@ linkovi:
     naslov: Twitter профил
     link: https://x.com/agrifblokira
   - type: facebook
-    naslov: Facebook профил
-    link: https://www.facebook.com/p/Poljoprivredni-u-blokadi-61572026520487/
+    naslov: Facebook страница
+    link: https://www.facebook.com/agrifblokira
   - type: threads
     naslov: Threads профил
     link: https://www.threads.com/@poljoprivredniblokada
