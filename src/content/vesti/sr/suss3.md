@@ -1,6 +1,6 @@
 ---
 link: suss3
-title: 'СУСС караван: 17. - 19- јул'
+title: 'СУСС караван: 17. - 19. јул'
 live: false
 pubDate: 2026-07-16T16:45
 updatedDate: 2026-07-16T16:45
