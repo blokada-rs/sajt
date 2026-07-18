@@ -29,4 +29,7 @@ linkovi:
   - type: mail
     naslov: Званични мејл
     link: mailto:studentiublokadi@gmail.com
+  - type: facebook
+    naslov: Facebook профил
+    link: https://www.facebook.com/share/1aWq33NE8Z/
 ---
