@@ -40,7 +40,7 @@ sections:
       <br>
       For legal advice or to contact a lawyer: [**061 4050 537**](tel:+381614050537) and [**061 3348 235**](tel:+381613348235)
     special: default
-  - title: Citizens’ assemblies
+  - title: Citizens' Assemblies
     text: |-
       On March 15, 2025, students called on citizens to **self-organize** through citizens’ assemblies. This form of direct democratic organization is recognized by the Constitution of the Republic of Serbia and the Law on Local Self-Government. The letter to the people of Serbia, which students sent to citizens at that time, encouraged people to stand shoulder to shoulder with students and to start a new form of struggle in their local communities.
 
