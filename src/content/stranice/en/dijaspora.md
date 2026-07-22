@@ -2,92 +2,87 @@
 title: Diaspora | Student blockades
 ---
 
-# Glasanje u inostranstvu
+# **Voting from abroad**
 
-## Zašto je bitno prijaviti se za glasanje i izaći na izbore
+## **Why it is important to register and vote**
 
-Premda je Srbija po svom ustavu demokratska republika, svedoci smo da njome već dugi niz godina defakto rukovodi autokratski režim koji ne mari za vladavinu prava. Jedna od posledica takve vlasti jeste konstantno sprovođenje neregularnih izbora prepunih manipulacija, za čije se postojanje, svakim novim ciklusom, javlja sve više dokaza. No, uprkos prevarama, parlamentarni izbori su jedni legalan način za smenu ovog nakradnog režima, što će, nadamo se, naposletku dovesti do ispunjenja studentskih zahteva.
+Although Serbia is a democratic republic by its Constitution, we have witnessed that for many years it has been de facto ruled by an autocratic regime that does not care about the rule of law. One of the consequences of such a government is irregular elections full of manipulation, where with each new cycle, more and more evidence emerges of such violations. However, despite all frauds, parliamentary elections are the only legal way to replace this fraudulent regime, which will, we hope, ultimately lead to the fulfillment of students’ demands.
 
-Glavni vid manipulacije, iz koga proističu mnogi drugi, jeste netransparentno vođenje biračkog spiska, bez javnog nadzora i uz postojanje paralelnih baza podataka, usled čega on postaje sredstvo političke kontrole, a ne neutralan instrument demokratije. Pod takvim uslovima, birači iz dijaspore — fizički odsutni, ali formalno prisutni u spisku — predstavljaju idealnu metu za zloupotrebu.
+The main form of manipulation, from which many others stem, is the non-transparent management of the Electoral Roll. Without public oversight and with the existence of parallel databases, it becomes a means of political control, rather than a neutral instrument of democracy. Under such conditions, voters from the diaspora, who are physically absent but formally present on the Electoral Roll, represent an ideal target for abuse.
 
-Prijava za glasanje iz inostranstva ne utiče na ukupan broj birača, ali ima ključnu funkciju: ona transformiše status birača iz pasivnog, nevidljivog i zloupotrebljivog u aktivnog, registrovanog i kontrolisanog učesnika izbornog procesa. Na taj način, dijaspora ne samo da koristi svoje pravo, već i štiti sopstveni identitet od instrumentalizacije u izbornim prevarama. 
+Registration to vote from abroad does not affect the total number of voters, but it has a key function: it transforms the status of the voter from a passive, invisible and exploitable one to an active, registered and controlled participant in the electoral process. In this way, the diaspora not only exercises its right, but also protects its own identity from being instrumentalized in electoral fraud. 
 
-Pravo glasa se ne štiti samo njegovim korišćenjem, već i odbijanjem da se ćutanjem i pasivnošću učestvuje u lažiranju demokratskog procesa. Aktivna dijaspora je politički faktor. Nevidljiva dijaspora je izborni resurs u tuđim rukama.
+The right to vote is protected not only by exercising it, but also by not acquiescing during the falsification of the democratic process. An active diaspora is a political factor. An invisible diaspora is an electoral resource in the hands of others.
 
-## Pre raspisivanja izbora
+## **Before the election is called**
 
-### Biračko pravo
+### **Voting right**
 
-Biračko pravo imaju državljanin Republike Srbije, tj. ljudi sa važećom ličnom kartom ili pasošem Republike Srbije.
+Citizens of the Republic of Serbia, i.e. people with a valid ID card or passport of the Republic of Serbia, have the right to vote.
 
-Ukoliko Vam je pasoš istekao, neophodno je da uz lično prisustvo podnesete zahtev za izdavanje novog u najbližem diplomatsko-konzularnom predstavništvu Republike Srbije. Pored zahteva se prilaže i stari pasoš (ili lična karta, ili druga javna isprava na osnovu koje se može utvrditi identitet, ako ne posedujete stari pasoš). Po proceduri je potreban i izvod iz matične knjige rođenih (kao i uverenje o državnjanstvu Republike Srbije, ako nikada ranije niste imali biometrijski pasoš), a to se pribavlja po službenoj dužnosti - dakle, o tome ne treba brinuti. Zakonski rok za rešavanje zahteva je 60 dana, te apelujemo da ne oklevate sa njegovim podnošenjem, jer je procedura prilično dugotrajna. Više informacija imate na narednom linku:
-[https://www.mfa.gov.rs/gradjani/usluge/putne-isprave](https://www.mfa.gov.rs/gradjani/usluge/putne-isprave).
+If your passport has expired, you must submit a request for a new one in person at the nearest diplomatic-consular mission of the Republic of Serbia. In addition to the request, you must also submit your old passport (or ID card, or other public document on the basis of which your identity can be established, if you do not possess an old passport). The procedure also requires a birth certificate (as well as a certificate of citizenship of the Republic of Serbia, if you have never had a biometric passport before), which is obtained ex officio — so no need to worry about that. The legal deadline for processing the request is 60 days, so we highly urge you not to hesitate in submitting it, as the procedure is quite lengthy. More information can be found at the following link: [https://www.mfa.gov.rs/en/citizens/services/travel-documents](https://www.mfa.gov.rs/en/citizens/services/travel-documents). 
 
-### Proveriti da li ste upisani u jedinstveni birački spisak
+### **Check if you are registered in the Single Electoral Roll**
 
-Kako biste iskoristili svoje biračko pravo, morate biti upisani u jedinstveni birački spisak. Proveru možete izvršiti putem sledećeg linka:
-[https://upit.birackispisak.gov.rs](https://upit.birackispisak.gov.rs).
+In order to exercise your right to vote, you must be registered in the Single Electoral Roll. You can check this at the following link: [https://upit.birackispisak.gov.rs](https://upit.birackispisak.gov.rs/).
 
-Ako niste u biračkom spisku, zahtev za upis možete podneti tek po raspisivanju izbora.
+If you are not on the Electoral Roll, you can submit a request for registration only after the election is called.
 
-## Posle raspisivanja izbora
+## **After the election is called**
 
-### Zahtev za upis u jedinstveni birački spisak
+### **Request for registration in the Single Electoral Roll**
 
-Zahtev za upis u jedinstveni birački spisak se podnosi samo ako već niste upisani u isti. Diplomatko-konzularna predstavništva su u obavezi da objave obrazac zahteva na svom veb-sajtu. Zahtev je potrebno poslati imejlom diplomatsko-konzularnom predstavništvu najkasnije pet dana pre zaključenja jedinstvenog biračkog spiska.
+A request for registration in the Single Electoral Roll is submitted only if you are not already included in it. Diplomatic-consular missions are obliged to publish the application form on their website. The request must be sent by email to the diplomatic-consular mission no later than five days before the conclusion of the Single Electoral Roll.
 
-Više informacija možete naći u [Zakonu o jedinstvenom biračkom spisku](https://www.paragraf.rs/propisi/zakon_o_jedinstvenom_birackom_spisku.html) ("Sl. glasnik RS", br. 104/2009, 99/2011 i 44/2024).
+More information can be found in [Law on the Single Electoral Roll](https://www.rik.parlament.gov.rs/extfile/en/119/4.%20ZAKON%20O%20JBS.pdf) (“Official Gazette of the RS”, no. 104/2009, 99/2011 и 44/2024).
 
-### Zahtev za glasanje u inostranstvu
+### **Request to vote from abroad**
 
-Zahtev za upis u birački spisak podatka o tome da će birač glasati u inostranstvu je neophodno podneti kako biste glasali u inostranstvu. Diplomatkso-konzularna predstavništva su u obavezi da objave obrazac zahteva na svom veb-sajtu. Zahtev je potrebno poslati imejlom diplomatsko-konzularnom predstavništvu najkasnije pet dana pre zaključenja jedinstvenog biračkog spiska. Zahtev se podnosi bez obzira da li ste ranije glasali u inostranstvu.
+A request for registration in the Electoral Roll stating that the voter will vote from abroad must be submitted in order to vote from abroad. Diplomatic-consular missions are required to publish the request form on their website. The request must be sent by email to the diplomatic-consular mission no later than five days before the conclusion of the Single Electoral Roll. The request is submitted regardless of whether you have previously voted from abroad.
 
-Više informacija možete naći u [Zakonu o jedinstvenom biračkom spisku](https://www.paragraf.rs/propisi/zakon_o_jedinstvenom_birackom_spisku.html) ("Sl. glasnik RS", br. 104/2009, 99/2011 i 44/2024).
+More information can be found in [Law on the Single Electoral Roll](https://www.rik.parlament.gov.rs/extfile/en/119/4.%20ZAKON%20O%20JBS.pdf) (“Official Gazette of the RS”, no. 104/2009, 99/2011 и 44/2024).
 
-### Zahtev za obaveštenje
+### **Notification Request**
 
-Zahtev za obaveštenje o podacima koji su o biraču upisani u birački spisak nije neophodno podnositi, ali je veoma poželjno, jer time povećavate šansu za dobijanje povratne informacije da možete glasati u inostranstvu. U suprotnom, nadležni organi nisu pravno obavezani da Vas obaveste o promeni u biračkom spisku. Za ovaj zahtev ne postoji obrazac, već je dovoljno putem imejla (najbolje je u tu svrhu iskoristiti isti onaj kojim se šalju prethodno navedenei zahtevi) u kome tražiti da se dobije informacija o promeni u biračkom spisku na osvnou stava 4 člana 16 zakona navedenog u narednom paragrafu. Zahtev je potrebno poslati diplomatsko-konzularnom predstavništvu najkasnije pet dana pre zaključenja jedinstvenog biračkog spiska.
+It is not necessary to submit a notification request of your data in the Electoral Roll, but it is highly recommended, as this increases the chance of receiving feedback that you can vote from abroad. Otherwise, the authorities are not legally obliged to inform you of the change in the Electoral Roll. There is no form for this request, but it is sufficient to send an email (it is best to use the same one for previously mentioned requests) in which you request information about the change in the Electoral Roll based on Article 16, Paragraph 4 of the law listed in the following paragraph. The request must be sent to the diplomatic-consular mission no later than five days before the conclusion of the Single Electoral Roll.
 
-Više informacija možete naći u [Zakonu o jedinstvenom biračkom spisku](https://www.paragraf.rs/propisi/zakon_o_jedinstvenom_birackom_spisku.html) ("Sl. glasnik RS", br. 104/2009, 99/2011 i 44/2024).
+More information can be found in [Law on the Single Electoral Roll](https://www.rik.parlament.gov.rs/extfile/en/119/4.%20ZAKON%20O%20JBS.pdf) (“Official Gazette of the RS”, no. 104/2009, 99/2011 и 44/2024).
 
-### Proveravati da li su primljeni zahtevi
+### **Check if your requests have been received**
 
-Kako biste bili sigurni da je vaš zahtev primljen, to treba proveravati svakoga dana do isteka roka za podnošenje. U kontakt sa diplomatsko-konzularnim predstavništvom je moguće stupiti putem imejla, telefona, ili ličnim dolaskom.
+To ensure that your application has been received, check the status every day until the submission deadline. You can contact the diplomatic-consular mission via email, telephone, or in person.
 
-Poželjno je da ljudi iz jednog mesta vode evidenciju o tome ko je sve odatle podneo zahtev, kako bi se znalo da li je ispunjenja kvota za određivanje biračkog mesta.
+It is recommended that people keep records of who has submitted a request from their area, in order to know whether the quota for designating a polling station has been met.
 
-### Određivanje biračkih mesta
+### **Designating polling stations**
 
-Pri normalnim okolnostima, biračko mesto se može odrediti za najmanje 100, a najviše 2500 birača. U izuzetnim slučajevima, biračko mesto se uz saglasnost Republičke izborne komisije (RIK) može odrediti i za manje od 100 birača ako bi zbog prostorne udaljenosti ili nepovoljnog geografskog položaja stanovnicima određenog mesta bilo znatno otežano glasanje na drugom biračkom mestu, tj. za više od 2.500 birača ako ne postoje prostorni uslovi da se otvori više biračkih mesta.
+Under normal circumstances, a polling station may be designated for a minimum of 100 and a maximum of 2,500 voters. In exceptional cases, a polling station may be designated with the consent of the Republic Electoral Commission (REC), for fewer than 100 voters if, due to physical distance of unfavorable geographical location, it would be significantly more difficult for residents of a particular place to vote at another polling station, i.e. for more than 2,500 if there are no spatial conditions to open more polling stations.
 
-Ministarstvo spoljnih poslova dostavlja RIK-u predlog za određivanje biračkih mesta na kojima će se glasati u inostranstvu najkasnije 22 dana pre dana glasanja. RIK zatim donosi odluku o određivanju biračkih mesta najkasnije 20 dana pre dana glasanja. Pošto se birački spisak zaključuje 15 dana pre dana glasanja, ukoliko lista određenih biračkih mesta nije zadovoljavajuća, i ako pri tome postoji pravna osnova za određivanje novih, ili premeštanje postojećih mesta, potrebno je sa time izaći u javnost neposredno po oglašavanju RIK-a na svome veb-sajtu, kako bi se podstaklo donošenje izmene i/ili dopune.
+The Ministry of Foreign Affairs submits a proposal to the REC for the designation of polling stations abroad no later than 22 days before the Election Day. The REC then makes a decision on the designation of polling stations no later than 20 days before the Election Day. Since the Electoral Roll is finalized 15 days before the Election Day, if the list of designated polling stations is not satisfactory, and if there is a legal basis for designating new or relocating existing stations, it is necessary to make this known to the public immediately after the REC publishes it on its website, in order to encourage the adoption of changes and/or amendments.
 
-Više informacija o načinu utvrđivanja predloga biračkih mesta, njihovoj pristupačnosti i karakteristikama objekata u kojima se nalaze, možete naći u [Uputstvu o načinu određivanja biračkih mesta](http://demo.paragraf.rs/demo/combined/Old/t/t2023_10/SG_091_2023_002.htm) ("Sl. glasnik RS", br. 91/2023 - prečišćen tekst), a na narednom linku se nalaze obrasci koje Ministarstvo spoljnih poslova treba da popuni prilikom podnošenja predloga RIK-u:
+More information on the method of determining the proposed polling stations, their accessibility and the characteristics of the facilities in which they are located can be found in [Упутству о начину одређивања бирачких места](http://demo.paragraf.rs/demo/combined/Old/t/t2023_10/SG_091_2023_002.htm) (“Official Gazette of the RS”, no. 91/2023 - consolidated text), and the following link contains the forms that the Ministry of Foreign Affairs should fill out when submitting a proposal to the REC: [https://www.eupropisi.com/dokumenti/SG_091_2023_002.docx](https://www.eupropisi.com/dokumenti/SG_091_2023_002.docx)
 
-[https://www.eupropisi.com/dokumenti/SG_091_2023_002.docx](https://www.eupropisi.com/dokumenti/SG_091_2023_002.docx)
+## **On Election Day**
 
-## Na dan izbora
+### **How to report irregularities**
 
-### Kako prijavljivati nepravilnosti
+Some of the irregularities you may encounter at the polling station are:
 
-Neke od nepravilnosti sa kojima se možete susresti na biračkom mestu jesu:
+- the presence of propaganda material at the polling station or within a radius of 50 meters from the polling station;
+- voting outside the polling station without an attestation to do so;
+- voting without a proof of the voter’s identity;
+- failure to circle a voter’s name in the Electoral Roll or circling the name of another voter;
+- influence of members of the polling board or third parties on the voter’s choice;
+- the absence of a control sheet in the ballot box;
+- excess ballots in the box (relative to the number of voters who have voted);
+- the presence of police officers at the polling station without an invitation from the chairperson of the polling board, i.e. if peace and order are not violated, etc.
 
-- prisustvo propagandnog materijala na biračkom mestu ili u krugu od 50 metara od biračkog mesta;
-- glasanje van biračkog mesta bez potvrde o biračkom pravu za glasanje van biračkog mesta;
-- glasanje bez isprave za dokazivanje identiteta;
-- nezaokruživanje imena birača u biračkom spisku ili zaokruživanje imena drugog birača;
-- uticanje članova biračkog odbora ili trećih lica na biračev izbor;
-- nepostojanje kontrolnog listića u glasačkoj kutiji;
-- višak listića u kutiji (u odnosu na broj birača koji su glasali);
-- prisustvo pripadnika policije na biračkom mestu bez poziva predsednika biračkog odbora, odnosno ukoliko nisu narušeni red i mir i slično.
+If you notice any of the aforementioned irregularities, ask the members of the polling board to enter this in the Minutes of the work of the polling board.
 
-Ukoliko primetite bilo koju od navedenih neregularnosti, tražite od članova biračkih odbora da to unesu u Zapisnik o radu biračkog odbora.
+You can report any irregularity no later than 24 hours from the moment it was committed.
 
-Nepravilnost možete prijaviti najkasinije 24 časa od momenta kada je ona učinjena.
+You can access CeSID’s guide to protecting electoral rights via the following link: [https://www.cesid.rs/wp-content/uploads/2021/06/Vodič-za-zaštitu-izbornog-prava.pdf](https://www.cesid.rs/wp-content/uploads/2021/06/Vodi%C4%8D-za-za%C5%A1titu-izbornog-prava.pdf)
 
-CeSID-ovom vodiču za zaštitu izbornih prava možete pristupiri putem sledećeg linka:
-[https://www.cesid.rs/wp-content/uploads/2021/06/Vodič-za-zaštitu-izbornog-prava.pdf](https://www.cesid.rs/wp-content/uploads/2021/06/Vodič-za-zaštitu-izbornog-prava.pdf)
+### **Leaflet**
 
-## Informator
-
-PDF verziju ove stranice možete naći [ovde](/informator.pdf).
+You can find the PDF version of this page[here](https://blokade.org/%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%BE%D1%80.pdf).
