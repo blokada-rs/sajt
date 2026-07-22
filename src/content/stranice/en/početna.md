@@ -16,6 +16,30 @@ sections:
   - link_text: Concretization of demands
     link: /zahtevi
     special: zahtevi
+  - title: Student in Every Village
+    text: |-
+      The working group called **Student in Every Village** (Student u svakom selu, SUSS) is a unit within the Student Movement that visits communities across Serbia. Over the past year, we have visited more than 400 communities, more than 40,000 households, and spoken with more than 20,000 people.
+
+      From east to west, from north to south, we have striven to be present everywhere. From Jagoštica and Krupanj to Korbovo and Velika Vrbica, from Palić and Bajmok to Vranje and Grdelica, we have striven to reach every corner of the country. **By traveling across Serbia, we have witnessed its beauty, while conversations with its citizens have taught us about the profound significance of dialogue**.
+
+      This work carries a special sense of community. By listening to people and learning about their everyday challenges, we feel both a sense of responsibility and the strength that comes from human connection. Dialogue does not merely create opportunities to improve living conditions – it reassures us that no one is alone and that there is someone willing to listen and understand. That is where its greatest value lies – **in building trust, restoring hope and fostering the belief that we can achieve more together.**
+    special: default
+  - link_text: The Academic Crisis Center
+    text: |-
+      **The Academic Crisis Center** (Akademski krizni centar, AKC) was established by the academic community in response to mounting pressure, arrests, and other forms of institutional repression against students, professors and staff members in the context of the student blockades and protests.
+
+      The AKC functions as an operational support network that connects affected members of the academic community with lawyers and legal teams while simultaneously informing the public and fostering solidarity. 
+
+      **The AKC’s mission is to provide swift, reliable and coordinated assistance in times of crisis, from the initial report and information gathering to legal protection and public advocacy**. Since its establishment, the AKC has intervened in more than 150 cases, providing both legal and organizational support.
+
+      The AKC: collects and verifies information on instances of pressure and arrests, provides legal assistance to affected individuals, monitors the progress of cases and maintains communication, informs the public and documents instances of repression, and builds networks of solidarity both in Serbia and abroad.
+
+      The AKC operates as a decentralized network based on trust, rapid response and mutual support, with the aim of ensuring that no one is left without assistance in times of pressure or injustice.
+
+      Emergency hotline: [**0800 500 801**](tel:+381800500801)
+      <br>
+      For legal advice or to contact a lawyer: [**061 4050 537**](tel:+381614050537) and [**061 3348 235**](tel:+381613348235)
+    special: default
   - title: Citizens’ assemblies
     text: |-
       On March 15, 2025, students called on citizens to **self-organize** through citizens’ assemblies. This form of direct democratic organization is recognized by the Constitution of the Republic of Serbia and the Law on Local Self-Government. The letter to the people of Serbia, which students sent to citizens at that time, encouraged people to stand shoulder to shoulder with students and to start a new form of struggle in their local communities.
