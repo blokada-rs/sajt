@@ -4,7 +4,7 @@ title: Diaspora | Student blockades
 
 # **Voting from abroad**
 
-## **Why it is important to register and vote**
+## **Why it is Important to Register and Vote**
 
 Although Serbia is a democratic republic by its Constitution, we have witnessed that for many years it has been de facto ruled by an autocratic regime that does not care about the rule of law. One of the consequences of such a government is irregular elections full of manipulation, where with each new cycle, more and more evidence emerges of such violations. However, despite all frauds, parliamentary elections are the only legal way to replace this fraudulent regime, which will, we hope, ultimately lead to the fulfillment of students’ demands.
 
@@ -14,7 +14,7 @@ Registration to vote from abroad does not affect the total number of voters, but
 
 The right to vote is protected not only by exercising it, but also by not acquiescing during the falsification of the democratic process. An active diaspora is a political factor. An invisible diaspora is an electoral resource in the hands of others.
 
-## **Before the election is called**
+## **Before the Election is Called**
 
 ### **Voting right**
 
@@ -28,7 +28,7 @@ In order to exercise your right to vote, you must be registered in the Single El
 
 If you are not on the Electoral Roll, you can submit a request for registration only after the election is called.
 
-## **After the election is called**
+## **After the Election is Called**
 
 ### **Request for registration in the Single Electoral Roll**
 
