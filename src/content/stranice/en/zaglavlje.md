@@ -7,7 +7,7 @@ linkovi:
     link: /zahtevi
   - naziv: News
     link: /vesti
-  - naziv: Dijaspora
+  - naziv: Diaspora
     link: /dijaspora
   - naziv: About
     link: /o-nama
