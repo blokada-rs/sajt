@@ -24,7 +24,7 @@ sections:
 
       This work carries a special sense of community. By listening to people and learning about their everyday challenges, we feel both a sense of responsibility and the strength that comes from human connection. Dialogue does not merely create opportunities to improve living conditions – it reassures us that no one is alone and that there is someone willing to listen and understand. That is where its greatest value lies – **in building trust, restoring hope and fostering the belief that we can achieve more together.**
     special: default
-  - link_text: The Academic Crisis Center
+  - title: The Academic Crisis Center
     text: |-
       **The Academic Crisis Center** (Akademski krizni centar, AKC) was established by the academic community in response to mounting pressure, arrests, and other forms of institutional repression against students, professors and staff members in the context of the student blockades and protests.
 
