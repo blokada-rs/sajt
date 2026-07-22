@@ -85,6 +85,6 @@ title: Дијаспора | Студенти побеђују
 
 CeSID-овом водичу за заштиту изборних права можете приступити путем следећег линка:[https://www.cesid.rs/wp-content/uploads/2021/06/Vodič-za-zaštitu-izbornog-prava.pdf](https://www.cesid.rs/wp-content/uploads/2021/06/Vodi%C4%8D-za-za%C5%A1titu-izbornog-prava.pdf)
 
-### **Информатор**
+## **Информатор**
 
 ПДФ верзију ове странице можете наћи[овде](https://blokade.org/%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%BE%D1%80.pdf).

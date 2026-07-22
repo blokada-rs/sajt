@@ -83,6 +83,6 @@ You can report any irregularity no later than 24 hours from the moment it was co
 
 You can access CeSID’s guide to protecting electoral rights via the following link: [https://www.cesid.rs/wp-content/uploads/2021/06/Vodič-za-zaštitu-izbornog-prava.pdf](https://www.cesid.rs/wp-content/uploads/2021/06/Vodi%C4%8D-za-za%C5%A1titu-izbornog-prava.pdf)
 
-### **Leaflet**
+## **Leaflet**
 
 You can find the PDF version of this page[here](https://blokade.org/%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%BE%D1%80.pdf).
