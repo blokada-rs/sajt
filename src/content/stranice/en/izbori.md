@@ -7,18 +7,28 @@ sections:
       At the center of the movement, there are concrete demands concerning the responsibility of institutions, the decision-making methods, and the conditions in which students and the society should function. One of the ways to fulfill these demands is by calling an election, because then it would be possible to make changes to the current state of our country and this corrupt system.
 
       Through our work, we act as a political actor whose influence is based on numbers, connections and the ability to organize a joint action through a constantly expanding network.
-  - id: nalepnice
-    title: Stickers
-    link_text: Get stickers
-    link: /nalepnice.pdf
+  - id: kontrola
+    title: Become an election monitor
+    link_text: Apply here
+    link: https://prijava.studenti.org.rs/p/kontrola
     text: |-
-      Messages don’t circulate on their own. Someone has to spread them.
+      If you want to support the students' movement in a concrete and meaningful way, **apply to become a member of the polling board for the upcoming parliamentary elections**. We are looking for responsible people to serve on polling boards, helping ensure that the election process is conducted fairly and that the will of the voters is protected.
 
-      The materials are all ready and available to anyone who wishes to use them. Downloading and printing them means that the movement is spreading to more people and places.
+      **Your time, attention, and presence can make a real difference.**
 
-      Each sticker becomes a part of the larger picture that is built day by day. The more they are around us, the harder it is to ignore the meaning behind them.
+      Help us carry out this important work together.
+  - id: k-dijaspora
+    title: Election monitoring training for the diaspora
+    link_text: Diaspora – Apply
+    link: https://docs.google.com/forms/d/e/1FAIpQLSc08eDBADFSlkD9lQSJJSwmGg_8O_iCmsZHHjw0ZyPiKFdhLA/viewform
+    text: |-
+      Apply for the training course **to become a member of the extended polling board in the diaspora** and join the team that **safeguards every vote**, ensures that the election process is conducted according to the rules, and protects free and fair elections on the ground.
 
-      That’s why it’s important that as many people as possible download them and stick them wherever people pass, stop, or look.
+      You are no longer standing on the sidelines - **you are helping protect the will of the voters.**
+
+      Fill out this form if you would like to complete the training to become a member of the extended polling board.
+
+      Please note: **This is only an application for the training**. It does not commit you to serving as a member of the extended polling board; it simply allows you to take part in the training process.
   - id: donacije
     title: Donations
     link_text: Donate
@@ -37,6 +47,18 @@ sections:
       Coordination and information about our future actions are shared through channels that connect people and allow organization. 
 
       Further steps, information and ways of further involvement arrive via email.
+  - id: nalepnice
+    title: Stickers
+    link_text: Get stickers
+    link: /nalepnice.pdf
+    text: |-
+      Messages don’t circulate on their own. Someone has to spread them.
+
+      The materials are all ready and available to anyone who wishes to use them. Downloading and printing them means that the movement is spreading to more people and places.
+
+      Each sticker becomes a part of the larger picture that is built day by day. The more they are around us, the harder it is to ignore the meaning behind them.
+
+      That’s why it’s important that as many people as possible download them and stick them wherever people pass, stop, or look.
   - title: Community
     text: |-
       The people who participate often don’t know each other, but they work for the same cause. That connection arises through action, presence, and willingness to react when necessary. There are actions happening in different places at the same time and it helps grow our community. Every day we show how strong our solidarity is! 
