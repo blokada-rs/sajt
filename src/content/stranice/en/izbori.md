@@ -1,5 +1,5 @@
 ---
-title: Get Involved! | Students win
+title: Get Involved!
 sections:
   - text: |-
       The student movement in Serbia today functions as a wide network that spreads through faculties, cities and social networks, without a central leadership. Our organization is based on the principles of direct democracy, where through plenums and open discussions we make decisions and take responsibility for further steps.
@@ -8,7 +8,7 @@ sections:
 
       Through our work, we act as a political actor whose influence is based on numbers, connections and the ability to organize a joint action through a constantly expanding network.
   - id: kontrola
-    title: Become an election monitor
+    title: Become an Election Monitor
     link_text: Apply here
     link: https://prijava.studenti.org.rs/p/kontrola
     text: |-
@@ -18,7 +18,7 @@ sections:
 
       Help us carry out this important work together.
   - id: k-dijaspora
-    title: Election monitoring training for the diaspora
+    title: Election Monitoring Training for the Diaspora
     link_text: Diaspora – Apply
     link: https://docs.google.com/forms/d/e/1FAIpQLSc08eDBADFSlkD9lQSJJSwmGg_8O_iCmsZHHjw0ZyPiKFdhLA/viewform
     text: |-
@@ -40,7 +40,7 @@ sections:
 
       The continuity of the movement depends on how long this network can be maintained. Any support goes directly into that process and allows all our activities to continue with no interruption.
   - id: mejling-lista
-    title: Mailing list
+    title: Mailing List
     link_text: Join the mailing list
     link: https://anketa.studenti.org.rs/sr/surveys/288b2ed4-e690-4494-8b59-697098649aa8
     text: |-
