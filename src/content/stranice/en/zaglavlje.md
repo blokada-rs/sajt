@@ -9,6 +9,8 @@ linkovi:
     link: /vesti
   - naziv: Diaspora
     link: /dijaspora
+  - naziv: Affairs
+    link: /afere
   - naziv: About
     link: /o-nama
   - naziv: Contact
