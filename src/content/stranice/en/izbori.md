@@ -7,6 +7,16 @@ sections:
       At the center of the movement, there are concrete demands concerning the responsibility of institutions, the decision-making methods, and the conditions in which students and the society should function. One of the ways to fulfill these demands is by calling an election, because then it would be possible to make changes to the current state of our country and this corrupt system.
 
       Through our work, we act as a political actor whose influence is based on numbers, connections and the ability to organize a joint action through a constantly expanding network.
+  - id: svi
+    title: We Don't All Have to Take on the Same Role. We Are All Needed.
+    link_text: Count on me
+    link: https://anketa.studenti.org.rs/sr/surveys/a840af72-be74-4619-b5b8-1e17e8cde5d1
+    text: |-
+      On election day, some will be at polling tables, some will monitor what is happening outside polling stations, while others will be at call centers, behind the wheel or in the field. There will be a need to transport materials, bring water and food to the people who spend hours protecting votes, and provide space, vehicles or equipment. We will safeguard the elections in many places and in many ways, which is why every role is important.
+
+      Until then, we will be talking to people door to door. That conversation belongs to everyone. We will be knocking on doors to listen to our neighbors, their concerns and questions, but also to invite them to join us in returning elections to the citizens.
+
+      We don't all have to take on the same role. What matters is that everyone does what they can. Apply to monitor the elections, canvass door to door, help with logistics or provide resources.
   - id: kontrola
     title: Become an Election Monitor
     link_text: Apply here
