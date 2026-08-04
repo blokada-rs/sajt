@@ -2,6 +2,8 @@
 import "../styles/reset.css";
 import "../styles/global.css";
 
+import slavija from "@assets/images/slavija-test.jpg";
+
 interface Props {
   title: string;
   description: string;
@@ -49,22 +51,14 @@ const { title, description, image } = Astro.props;
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:logo" content="/favicon.ico" />
-{
-  typeof image !== "undefined" && (
-    <meta property="og:image" content={new URL(image, Astro.url)} />
-  )
-}
+<meta property="og:image"  content={typeof image !== "undefined" ? new URL(image, Astro.url): new URL(slavija.src, Astro.url)} />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content={Astro.url} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
-{
-  typeof image !== "undefined" && (
-    <meta property="twitter:image" content={new URL(image, Astro.url)} />
-  )
-}
+<meta property="twitter:image" content={typeof image !== "undefined" ? new URL(image, Astro.url): new URL(slavija.src, Astro.url)} />
 
 <!-- <ClientRouter /> -->
 <!--<meta name="astro-view-transitions-enabled" content="false" />-->
