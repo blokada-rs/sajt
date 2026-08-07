@@ -1,6 +1,6 @@
 ---
 link: log_etf_valjevo
-title: Ваљево 14. август
+title: Ваљево 14. август логистика
 live: false
 pubDate: 2026-08-06T18:40
 updatedDate: 2026-08-06T18:40
