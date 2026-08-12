@@ -2,6 +2,7 @@
 link: valjevo26
 title: Ваљево памти 14.8.
 live: false
+live_embed: _9kNPoLzkTE
 pubDate: 2026-08-12T13:24
 updatedDate: 2026-08-12T13:24
 heroImage: '@assets/images/photo_6043991314988208498_y.webp'
