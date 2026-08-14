@@ -1,10 +1,10 @@
 ---
 link: sljive
-title: Студенти беру шљиве
+title: 'Јадарска лепотица: студенти беру шљиве'
 live: false
 pubDate: 2026-08-13T18:59
 updatedDate: 2026-08-13T18:59
-heroImage: '@assets/images/IMG_4516.webp'
+heroImage: '@assets/images/IMG_4550.webp'
 description: |-
   15. августа студенти одлазе да лично помогну пољопривредницима у брању шљива.
   Заједно побеђујемо, и заједно ћемо славити.
