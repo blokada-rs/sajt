@@ -1,6 +1,9 @@
 :root {
-  --accent: #c91414;
-  --accent-dark: #930a0a;
+  --accent: hsl(335 100% 18%);
+  --accent-dark: hsl(335 100% 12%);
+  --secondary: hsl(228 73% 54%);
+  --secondary-dark: hsl(240 42% 19%);
+  --dark-background: color-mix(var(--secondary), white 90%);
   --black: 15, 18, 25;
   --gray: 96, 115, 159;
   --gray-light: hsl(0, 0%, 95%);
@@ -244,7 +247,7 @@ hr {
 }
 
 .details-list details {
-  background-color: hsl(0, 0%, 95%);
+  background-color: var(--dark-background);
   border: 2px solid #686868;
   border-radius: 0.5rem;
 }
@@ -290,7 +293,7 @@ section h2 {
 
 .dark-background::before {
   content: "";
-  background-color: hsl(0, 0%, 95%);
+  background-color: var(--dark-background);
   position: absolute;
   width: 100vw;
   height: 100%;

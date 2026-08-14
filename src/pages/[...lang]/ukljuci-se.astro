@@ -172,21 +172,4 @@ const { frontmatter: izbori } = await file("izbori", lang);
     display: flex;
     justify-content: center;
   }
-
-  .dark-background {
-    position: relative;
-    padding-block: 3rem;
-  }
-
-  .dark-background::before {
-    content: "";
-    background-color: hsl(0, 0%, 95%);
-    position: absolute;
-    width: 100vw;
-    height: 100%;
-    z-index: -1;
-    top: 0;
-    left: 50%;
-    translate: -50% 0;
-  }
 </style>
