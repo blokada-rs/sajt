@@ -19,7 +19,6 @@ const { title, description, image } = Astro.props;
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <link rel="icon" type="image/ico" href="/favicon.ico" />
-<meta name="generator" content={Astro.generator} />
 
 <!-- Font preloads -->
 <link
@@ -51,14 +50,14 @@ const { title, description, image } = Astro.props;
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:logo" content="/favicon.ico" />
-<meta property="og:image"  content={typeof image !== "undefined" ? new URL(image, Astro.url): new URL(slavija.src, Astro.url)} />
+<meta property="og:image" content={new URL(typeof image !== "undefined" ? image: slavija.src, Astro.url)} />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content={Astro.url} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
-<meta property="twitter:image" content={typeof image !== "undefined" ? new URL(image, Astro.url): new URL(slavija.src, Astro.url)} />
+<meta property="twitter:image" content={new URL(typeof image !== "undefined" ? image: slavija.src, Astro.url)} />
 
 <!-- <ClientRouter /> -->
 <!--<meta name="astro-view-transitions-enabled" content="false" />-->
@@ -70,12 +69,8 @@ const { title, description, image } = Astro.props;
   src="https://www.googletagmanager.com/gtag/js?id=G-LR43G5KCPF"></script>
 <script defer is:inline>
   window.dataLayer = window.dataLayer || [];
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag("js", new Date());
-
-  gtag("config", "G-LR43G5KCPF", { debug_mode: true });
+  window.dataLayer.push("js", new Date());
+  window.dataLayer.push("config", "G-LR43G5KCPF");
 </script>
 
 <script>
