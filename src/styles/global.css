@@ -287,15 +287,23 @@ section h2 {
 }
 
 .dark-background {
+  display: grid;
+  grid-column: 1 / span 3;
+  grid-template-columns: subgrid;
   position: relative;
   padding-block: 3rem;
 }
 
+.dark-background > * {
+  grid-column: 2 / span 1;
+}
+
 .dark-background::before {
   content: "";
+  grid-column: 1 / span 3;
   background-color: var(--dark-background);
   position: absolute;
-  width: 100vw;
+  width: 100%;
   height: 100%;
   z-index: -1;
   top: 0;
