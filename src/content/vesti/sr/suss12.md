@@ -1,6 +1,6 @@
 ---
 link: suss12
-title: СУСС караван 17. до 21. август
+title: СУСС караван 17. - 21. август
 live: false
 pubDate: 2026-08-17T08:49
 updatedDate: 2026-08-17T08:49
