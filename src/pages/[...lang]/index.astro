@@ -130,10 +130,12 @@ const live = vesti.filter((vest) => vest.data.live);
   .title .square {
     width: 8rem;
     aspect-ratio: 2;
-    background-color: var(--accent);
     z-index: 2;
     position: absolute;
     border-radius: 0.5rem;
+
+    background: hsla(from var(--accent) h s l / 0.8);
+    backdrop-filter: blur(10px);
   }
 
   .title .square:nth-of-type(1) {
