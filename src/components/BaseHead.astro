@@ -78,11 +78,15 @@ const { title, description, image } = Astro.props;
 <script
   is:inline
   defer
-  src="https://www.googletagmanager.com/gtag/js?id=G-LR43G5KCPF"></script>
+  src="https://www.googletagmanager.com/gtag/js?id=G-LR43G5KCPF" />
 <script defer is:inline>
   window.dataLayer = window.dataLayer || [];
-  window.dataLayer.push("js", new Date());
-  window.dataLayer.push("config", "G-LR43G5KCPF");
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+
+  gtag("js", new Date());
+  gtag("config", "G-LR43G5KCPF", { debug_mode: true });
 </script>
 
 <script>
