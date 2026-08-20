@@ -31,9 +31,9 @@ const socialIcons = [
 ---
 
 <footer>
-  <div class="footer-container">
-    <div>{frontmatter.studenti_u_blokadi}</div>
-    <div class="social-links">
+  <div>
+    <span>{frontmatter.studenti_u_blokadi}</span>
+    <div class="socials">
       {
         socialIcons.map(({ label, icon, link }) => (
           <a
@@ -43,7 +43,7 @@ const socialIcons = [
             rel="noopener noreferrer"
             style={`height: ${ICON_SIZE_LG}px;`}
           >
-            <Icon name={icon} size={ICON_SIZE_LG} class="icon" />
+            <Icon name={icon} />
           </a>
         ))
       }
@@ -52,34 +52,33 @@ const socialIcons = [
 </footer>
 
 <style>
-  .footer-container {
-    width: 70rem;
-    max-width: calc(100% - 2em);
-    margin: auto;
-    padding: 0em 1em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  footer {
+    display: grid;
+    grid-template-columns: subgrid;
+    padding: 1rem;
+
+    background-color: var(--secondary-dark);
+    color: white; /* TODO */
   }
-  .social-links {
+
+  .socials {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1em;
   }
-  .icon {
-    color: rgb(var(--gray));
+
+  .socials a {
+    color: inherit;
+    font-size: 1.2rem;
   }
-  .icon:hover {
-    color: rgb(var(--gray-dark));
-    cursor: pointer;
+
+  footer > div {
+    grid-column: 2 / span 1;
+    display: flex;
   }
-  @media (max-width: 720px) {
-    .footer-container {
-      flex-direction: column;
-    }
-    .social-links {
-      margin-top: 1em;
-    }
+
+  span {
+    flex-grow: 1;
   }
 </style>

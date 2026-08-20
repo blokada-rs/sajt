@@ -86,7 +86,7 @@ const jezik = (jezik: string) => {
     margin: 0;
     padding: 0 1em;
     background: hsla(0deg 0% 100% / 80%);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(6px);
     box-shadow: 0 2px 8px rgba(var(--black), 5%);
     top: 0;
     position: sticky;
@@ -111,7 +111,7 @@ const jezik = (jezik: string) => {
   }
 
   nav a:hover {
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: hsla(from var(--dark-background) h s l / 90%);
   }
 
   nav button {
@@ -156,8 +156,8 @@ const jezik = (jezik: string) => {
     top: 0;
     right: 0;
     height: 100vh;
-    background: hsla(0deg 0% 100% / 0.9);
-    backdrop-filter: blur(10px);
+    background: hsla(0deg 0% 100% / 0.8);
+    backdrop-filter: blur(16px);
     box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
 
     transition: translate 0.2s;

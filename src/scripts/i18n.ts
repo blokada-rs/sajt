@@ -41,7 +41,9 @@ export async function collection<
   return all.sort((a, b) => a.data.title.localeCompare(b.data.title));
 }
 
-export async function entry<T extends "vesti" | "akcije" | "afere" | "linkovi" | "specijalne_stranice">(
+export async function entry<
+  T extends "vesti" | "akcije" | "afere" | "linkovi" | "specijalne_stranice",
+>(
   collection: T,
   entry: string,
   lang: string = "sr",

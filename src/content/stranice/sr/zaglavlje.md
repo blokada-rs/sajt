@@ -12,7 +12,7 @@ linkovi:
   - naziv: Дијаспора
     link: /dijaspora
   - naziv: О нама
-    link: /o-nama
+    link: /o-blokadama
   - naziv: Контакт
     link: /kontakt
 ---

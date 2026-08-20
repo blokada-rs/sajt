@@ -1,6 +1,5 @@
 ---
 link: korak-ispred
-heroImage: '@assets/images/1ba0aa6a-61a7-44d8-93ac-78e5e4c80da8.webp'
 title: Корак испред
 sections:
   - id: kartica

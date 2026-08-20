@@ -28,18 +28,16 @@ export async function getStaticPaths() {
   <section>
     <div class="details-list">
       {
-        afere.map(
-          afera => (
-            <details>
-              <summary>
-                <strong>{afera.data.title}</strong>
-              </summary>
-              <div class="content">
-                <Markdown of={afera.body!} />
-              </div>
-            </details>
-          ),
-        )
+        afere.map((afera) => (
+          <details>
+            <summary>
+              <strong>{afera.data.title}</strong>
+            </summary>
+            <div class="content">
+              <Markdown of={afera.body!} />
+            </div>
+          </details>
+        ))
       }
     </div>
   </section>

@@ -6,7 +6,7 @@ import { collection, entry, file, langs } from "@scripts/i18n";
 import { icons, socials } from "@scripts/collections.ts";
 import { ICON_SIZE_LG } from "../../consts.ts";
 import { Icon } from "astro-icon/components";
-import { type } from "@scripts/collections"
+import { type } from "@scripts/collections";
 import { Markdown } from "@mashehu/astropub-md";
 
 export async function getStaticPaths() {
@@ -66,7 +66,10 @@ const all = await collection("linkovi", lang);
             )
             .map(({ data }) => (
               <>
-                <button class={`button ${data.type}`} popovertarget={`popover-${data.link}`}>
+                <button
+                  class={`button ${data.type}`}
+                  popovertarget={`popover-${data.link}`}
+                >
                   {data.prikaz ?? data.title}
                 </button>
                 <div id={`popover-${data.link}`} popover>
@@ -78,7 +81,9 @@ const all = await collection("linkovi", lang);
                           {link.type !== "bez" && (
                             <Icon
                               size={ICON_SIZE_LG}
-                              name={icons.find((e) => e.value === link.type)?.icon!}
+                              name={
+                                icons.find((e) => e.value === link.type)?.icon!
+                              }
                             />
                           )}
                           {link.naslov}
@@ -86,11 +91,11 @@ const all = await collection("linkovi", lang);
                       </li>
                     ))}
                     <li>
-                      <button popovertarget={`popover-${data.link}`} popovertargetaction="hide">
-                        <Icon
-                          size={ICON_SIZE_LG}
-                          name="mdi:close"
-                        />
+                      <button
+                        popovertarget={`popover-${data.link}`}
+                        popovertargetaction="hide"
+                      >
+                        <Icon size={ICON_SIZE_LG} name="mdi:close" />
                         Zatvori
                       </button>
                     </li>
@@ -149,7 +154,7 @@ const all = await collection("linkovi", lang);
       position: fixed;
       inset: 0;
       z-index: -2;
-      background: rgba(0,0,0,0.5);
+      background: rgba(0, 0, 0, 0.5);
     }
 
     &:after {
@@ -172,7 +177,8 @@ const all = await collection("linkovi", lang);
       display: flex;
     }
 
-    a, button {
+    a,
+    button {
       display: flex;
       flex-grow: 1;
 
@@ -191,13 +197,29 @@ const all = await collection("linkovi", lang);
     }
   }
 
-  .ub       { border-color: hsl(0 82% 43%);   }
-  .uu       { border-color: hsl(114 87% 31%); }
-  .visa     { border-color: hsl(55 42% 52%);  }
-  .privatni { border-color: hsl(210 87% 19%); }
+  .ub {
+    border-color: hsl(0 82% 43%);
+  }
+  .uu {
+    border-color: hsl(114 87% 31%);
+  }
+  .visa {
+    border-color: hsl(55 42% 52%);
+  }
+  .privatni {
+    border-color: hsl(210 87% 19%);
+  }
 
-  .ub:hover       { color: hsl(0 82% 43%);   }
-  .uu:hover       { color: hsl(114 87% 31%); }
-  .visa:hover     { color: hsl(55 42% 52%);  }
-  .privatni:hover { color: hsl(210 87% 19%); }
+  .ub:hover {
+    color: hsl(0 82% 43%);
+  }
+  .uu:hover {
+    color: hsl(114 87% 31%);
+  }
+  .visa:hover {
+    color: hsl(55 42% 52%);
+  }
+  .privatni:hover {
+    color: hsl(210 87% 19%);
+  }
 </style>

@@ -1,4 +1,5 @@
 ---
+link: ukljuci-se
 title: Get Involved!
 sections:
   - text: |-
@@ -7,16 +8,14 @@ sections:
       At the center of the movement, there are concrete demands concerning the responsibility of institutions, the decision-making methods, and the conditions in which students and the society should function. One of the ways to fulfill these demands is by calling an election, because then it would be possible to make changes to the current state of our country and this corrupt system.
 
       Through our work, we act as a political actor whose influence is based on numbers, connections and the ability to organize a joint action through a constantly expanding network.
+    special: default
   - id: svi
     title: We Don't All Have to Take on the Same Role. We Are All Needed.
     link_text: Count on me
     link: https://anketa.studenti.org.rs/sr/surveys/a840af72-be74-4619-b5b8-1e17e8cde5d1
     text: |-
       On election day, some will be at polling tables, some will monitor what is happening outside polling stations, while others will be at call centers, behind the wheel or in the field. There will be a need to transport materials, bring water and food to the people who spend hours protecting votes, and provide space, vehicles or equipment. We will safeguard the elections in many places and in many ways, which is why every role is important.
-
-      Until then, we will be talking to people door to door. That conversation belongs to everyone. We will be knocking on doors to listen to our neighbors, their concerns and questions, but also to invite them to join us in returning elections to the citizens.
-
-      We don't all have to take on the same role. What matters is that everyone does what they can. Apply to monitor the elections, canvass door to door, help with logistics or provide resources.
+    special: default
   - id: kontrola
     title: Become an Election Monitor
     link_text: Apply here
@@ -27,6 +26,7 @@ sections:
       **Your time, attention, and presence can make a real difference.**
 
       Help us carry out this important work together.
+    special: default
   - id: k-dijaspora
     title: Election Monitoring Training for the Diaspora
     link_text: Diaspora – Apply
@@ -39,6 +39,7 @@ sections:
       Fill out this form if you would like to complete the training to become a member of the extended polling board.
 
       Please note: **This is only an application for the training**. It does not commit you to serving as a member of the extended polling board; it simply allows you to take part in the training process.
+    special: default
   - id: donacije
     title: Donations
     link_text: Donate
@@ -49,6 +50,7 @@ sections:
       After the police confiscated the money donated to us and has yet to be returned, the resources available to the movement were further reduced.
 
       The continuity of the movement depends on how long this network can be maintained. Any support goes directly into that process and allows all our activities to continue with no interruption.
+    special: default
   - id: mejling-lista
     title: Mailing List
     link_text: Join the mailing list
@@ -57,6 +59,7 @@ sections:
       Coordination and information about our future actions are shared through channels that connect people and allow organization. 
 
       Further steps, information and ways of further involvement arrive via email.
+    special: default
   - id: nalepnice
     title: Stickers
     link_text: Get stickers
@@ -69,6 +72,7 @@ sections:
       Each sticker becomes a part of the larger picture that is built day by day. The more they are around us, the harder it is to ignore the meaning behind them.
 
       That’s why it’s important that as many people as possible download them and stick them wherever people pass, stop, or look.
+    special: default
   - title: Community
     text: |-
       The people who participate often don’t know each other, but they work for the same cause. That connection arises through action, presence, and willingness to react when necessary. There are actions happening in different places at the same time and it helps grow our community. Every day we show how strong our solidarity is! 
@@ -76,4 +80,5 @@ sections:
       **Thank you for making that possible!**
 
       Your students
+    special: default
 ---

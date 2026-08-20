@@ -12,7 +12,7 @@ linkovi:
   - naziv: Affairs
     link: /afere
   - naziv: About
-    link: /o-nama
+    link: /o-blokadama
   - naziv: Contact
     link: /kontakt
 ---

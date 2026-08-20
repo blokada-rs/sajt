@@ -157,7 +157,7 @@ const specijalne_stranice = folder_collection(
   "src/content/specijalne_stranice",
   [
     string_field("link", "Link"),
-    image_field("heroImage", "Glavna slika"),
+    image_field("heroImage", "Glavna slika").optional(),
     string_field("title", "Naslov"),
     list_field("sections", "Sekcije", [
       string_field("id", "ID").optional(),
@@ -189,27 +189,6 @@ const stranice = file_collection("stranice", "Stranice", "description", [
         ["zahtevi", "Zahtevi"],
       ]),
     ]).singular("Sekcija"),
-  ]),
-
-  file("izbori", "Izbori", "src/content/stranice", "izbori.md", [
-    string_field("title", "Naslov"),
-    list_field("sections", "Sekcije", [
-      string_field("id", "ID").optional(),
-      string_field("title", "Naslov").optional(),
-      string_field("link_text", "Link tekst").optional(),
-      string_field("link", "Link").optional(),
-      markdown_field("text", "Tekst").optional(),
-    ]).singular("Sekcija"),
-  ]),
-
-  file("o_blokadama", "O Blokadama", "src/content/stranice", "o-blokadama.md", [
-    string_field("title", "Naslov"),
-    markdown_field("body", "Tekst"),
-  ]),
-
-  file("dijaspora", "Dijaspora", "src/content/stranice", "dijaspora.md", [
-    string_field("title", "Naslov"),
-    markdown_field("body", "Tekst"),
   ]),
 
   file("zahtevi", "Zahtevi", "src/content/stranice", "zahtevi.md", [
@@ -260,22 +239,6 @@ const stranice = file_collection("stranice", "Stranice", "description", [
     string_field("pratite_live", "Pratite live"),
     markdown_field("vesti_opis", "Vesti - opis"),
     string_field("najnovija_vest", "Najnovija vest"),
-  ]),
-
-  file("slavija", "Slavija", "src/content/stranice", "slavija.md", [
-    string_field("title", "Naslov"),
-    string_field("preuzmi", "Preuzmi plakat"),
-    string_field("vidimo_se", "Vidimo se"),
-    string_field("najnovije_vesti", "Najnovije vesti"),
-    string_field("video_id", "Video ID").optional(),
-    string_field("prenos_uzivo", "Prenos uživo"),
-    list_field("sections", "Sekcije", [
-      string_field("id", "ID").optional(),
-      string_field("title", "Naslov").optional(),
-      string_field("link_text", "Link tekst").optional(),
-      string_field("link", "Link").optional(),
-      markdown_field("text", "Tekst").optional(),
-    ]).singular("Sekcija"),
   ]),
 ]);
 

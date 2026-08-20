@@ -55,7 +55,7 @@ const live = vesti.filter((vest) => vest.data.live);
 
   {
     pocetna.sections.map((section, i) => (
-      <section class:list={[{'dark-background': i % 2 === pocetna.sections.length % 2}]}>
+      <section class:list={[{'dark-background': i % 2 === 1}]}>
         {section.title && <h2>{section.title}</h2>}
         {section.text && <Markdown of={section.text} />}
         {section.special === "vesti" &&
@@ -120,6 +120,7 @@ const live = vesti.filter((vest) => vest.data.live);
 
   .title h1 {
     margin-inline: auto;
+    margin-block: 0;
     padding-inline: 2rem;
     color: white;
     z-index: 1;
@@ -135,7 +136,7 @@ const live = vesti.filter((vest) => vest.data.live);
     border-radius: 0.5rem;
 
     background: hsla(from var(--accent) h s l / 0.8);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(6px);
   }
 
   .title .square:nth-of-type(1) {

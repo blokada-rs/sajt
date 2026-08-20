@@ -44,28 +44,38 @@ await Promise.all(
 ---
 
 <Base title={frontmatter.title} description={SITE_DESCRIPTION}>
-  <div class="title">
-    <Picture
-      formats={["avif", "webp"]}
-      width={1020}
-      src={frontmatter.heroImage}
-      loading="eager"
-      alt=""
-    />
-    <h1>{frontmatter.title}</h1>
+  {
+    frontmatter.heroImage ? (
+      <>
+        <div class="title">
+          <Picture
+            formats={["avif", "webp"]}
+            width={1020}
+            src={frontmatter.heroImage}
+            loading="eager"
+            alt=""
+          />
+          <h1>{frontmatter.title}</h1>
 
-    <div class="square"></div>
-    <div class="square"></div>
-  </div>
+          <div class="square" />
+          <div class="square" />
+        </div>
+      </>
+    ) : (
+      <h1>{frontmatter.title}</h1>
+    )
+  }
 
   {
     frontmatter.sections.map((section: any, i: number) => (
       <section
-        class:list={[{ "dark-background": i % 2 === 0 }]}
+        class:list={[{ "dark-background": i % 2 === 1 }]}
         id={section.id}
       >
         {section.special === "vest" ? (
           <>
+            {section.title && <h2>{section.title}</h2>}
+            {section.text && <Markdown of={section.text} />}
             {vesti.get(section.vest_id).data.timeline && (
               <>
                 <Timeline
@@ -136,6 +146,7 @@ await Promise.all(
 
   .title h1 {
     margin-inline: auto;
+    margin-block: 0;
     padding-inline: 2rem;
     color: white;
     z-index: 1;
