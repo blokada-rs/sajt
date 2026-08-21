@@ -96,8 +96,6 @@ body {
   line-height: 1.5;
 
   background-color: var(--background);
-  background: var(--background-gradient);
-  background-size: 100% 600px;
   color: var(--on-background);
 
   display: grid;
@@ -114,6 +112,9 @@ main {
   display: grid;
   grid-template-columns: subgrid;
   place-content: start;
+  background: var(--background-gradient);
+  background-size: 100% 600px;
+  z-index: 0;
 }
 
 main > * {
