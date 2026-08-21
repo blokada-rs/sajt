@@ -2,7 +2,6 @@
 import { langs, file } from "@scripts/i18n";
 import HeaderLink from "./HeaderLink.astro";
 import { Icon } from "astro-icon/components";
-import { ICON_SIZE_LG } from "consts";
 
 const { lang } = Astro.params;
 
@@ -31,7 +30,7 @@ const jezik = (jezik: string) => {
       class="mobile center"
       popovertarget="menu-links"
     >
-      <Icon name="mdi:hamburger-menu" size={ICON_SIZE_LG} />
+      <Icon name="mdi:hamburger-menu" />
     </button>
 
     <div id="menu-links" popover>
@@ -42,7 +41,7 @@ const jezik = (jezik: string) => {
           popovertarget="menu-links"
           popovertargetaction="hide"
         >
-          <Icon name="mdi:close" size={ICON_SIZE_LG} />
+          <Icon name="mdi:close" />
         </button>
         {
           frontmatter.linkovi.map(
@@ -57,7 +56,7 @@ const jezik = (jezik: string) => {
           class="icon"
           popovertarget="translate"
         >
-          <Icon name="mdi:translate" size={ICON_SIZE_LG} />
+          <Icon name="mdi:translate" />
         </button>
       </nav>
     </div>
@@ -70,7 +69,7 @@ const jezik = (jezik: string) => {
             popovertarget="translate"
             popovertargetaction="hide"
           >
-            <Icon name="mdi:close" size={ICON_SIZE_LG} />
+            <Icon name="mdi:close" />
           </button>
         </li>
         <li><a href={jezik("sr")}>Српски (ћирилица)</a></li>
@@ -85,9 +84,9 @@ const jezik = (jezik: string) => {
   header {
     margin: 0;
     padding: 0 1em;
-    background: hsla(0deg 0% 100% / 80%);
+    background: hsla(from var(--background) h s l / 80%);
     backdrop-filter: blur(6px);
-    box-shadow: 0 2px 8px rgba(var(--black), 5%);
+    box-shadow: var(--box-shadow); /* TODO: box shadow */
     top: 0;
     position: sticky;
     z-index: 100;
@@ -105,13 +104,14 @@ const jezik = (jezik: string) => {
 
   nav a {
     padding: 1rem 0.75rem;
-    color: var(--black);
+    color: var(--on-background);
     border-bottom: 4px solid transparent;
     text-decoration: none;
   }
 
   nav a:hover {
-    background-color: hsla(from var(--dark-background) h s l / 90%);
+    background-color: hsla(from var(--secondary-background) h s l / 90%);
+    color: var(--on-secondary);
   }
 
   nav button {
@@ -125,7 +125,7 @@ const jezik = (jezik: string) => {
   }
 
   nav a.active {
-    border-bottom-color: var(--accent);
+    border-bottom-color: var(--primary);
   }
 
   .social-links,
@@ -199,7 +199,7 @@ const jezik = (jezik: string) => {
   }
 
   #menu-links:is(:popover-open, .\:popover-open) a.active {
-    border-left-color: var(--accent);
+    border-left-color: var(--primary);
   }
 
   #menu-links:is(:popover-open, .\:popover-open) button {
@@ -250,7 +250,7 @@ const jezik = (jezik: string) => {
   }
 
   button:hover :global(svg) {
-    color: var(--accent-dark);
+    color: var(--primary-dark);
   }
 
   .center {

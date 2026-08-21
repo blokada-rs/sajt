@@ -1,6 +1,8 @@
 ---
 naslov: Студенти побеђују
 linkovi:
+  - naziv: СУСС
+    link: /suss
   - naziv: Укључи се
     link: /ukljuci-se
   - naziv: Захтеви

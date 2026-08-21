@@ -1,5 +1,7 @@
 ---
-naslov: Students Win
+link: index
+heroImage: '@assets/images/slavija.jpg'
+title: Students Win
 sections:
   - text: The collapse of the canopy at the Railway Station in Novi Sad on Friday, November 1, 2024, at 11:52, killed 15 people. The death of innocent victims caused collective sorrow. Citizens paused in the streets at 11:52AM to honor the victims with a 15-minute silence. People in Serbia continue to gather regularly in various locations across the country, always at the same time – 11:52.
     special: default

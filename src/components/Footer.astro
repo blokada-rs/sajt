@@ -1,6 +1,5 @@
 ---
 import { Icon } from "astro-icon/components";
-import { ICON_SIZE_LG } from "consts";
 import { file } from "@scripts/i18n.ts";
 
 const { lang } = Astro.params;
@@ -39,9 +38,7 @@ const socialIcons = [
           <a
             aria-label={label}
             href={link}
-            target="_blank"
-            rel="noopener noreferrer"
-            style={`height: ${ICON_SIZE_LG}px;`}
+            rel="noopener noreferrer"}
           >
             <Icon name={icon} />
           </a>

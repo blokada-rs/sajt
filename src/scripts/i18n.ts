@@ -48,7 +48,8 @@ export async function entry<
   entry: string,
   lang: string = "sr",
 ): Promise<CollectionEntry<T> & { lang: string; id: string }> {
-  let e = await getEntry(collection, `${lang}/${entry}`);
+  const search = (typeof entry === "undefined")? "pocetna": entry;
+  let e = await getEntry(collection, `${lang}/${search}`);
 
   for (let lang of fallbackLanguages) {
     if (!!e) {

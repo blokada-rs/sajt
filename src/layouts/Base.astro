@@ -9,9 +9,10 @@ interface Props {
   title: string;
   description: string;
   image?: string;
+  class?: string;
 }
 
-const { title, description, image } = Astro.props;
+const { title, description, image, class: klass } = Astro.props;
 const { lang } = Astro.params;
 ---
 
@@ -58,7 +59,7 @@ const { lang } = Astro.params;
     <BaseHead {title} {description} {image} />
     <slot name="head" />
   </head>
-  <body>
+  <body class={klass}>
     <Header />
     <slot name="above" />
     <main>

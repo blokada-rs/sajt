@@ -43,7 +43,7 @@ const { timeline, border = "light" } = Astro.props;
 
 <style>
   .desavanja {
-    border-left: 4px solid black;
+    border-left: 4px solid var(--on-background);
     padding-left: 24px;
   }
 
@@ -62,12 +62,12 @@ const { timeline, border = "light" } = Astro.props;
     position: absolute;
     width: 14px;
     height: 14px;
-    background-color: var(--accent);
+    background-color: var(--primary);
     top: 50%;
     translate: 0 -50%;
     left: -39px;
     border-radius: 50%;
-    border: 6px solid white;
+    border: 6px solid var(--background);
   }
 
   article h3.dark::before {

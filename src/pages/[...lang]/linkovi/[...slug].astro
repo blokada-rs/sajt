@@ -5,7 +5,7 @@ import { Icon } from "astro-icon/components";
 import { type CollectionEntry } from "astro:content";
 import { SITE_DESCRIPTION } from "../../../consts";
 import { ICON_SIZE_LG } from "consts";
-import { icons, socials, others } from "@scripts/collections";
+import { icons, socials } from "@scripts/collections";
 
 const { lang } = Astro.params;
 if (typeof lang === "undefined") {
@@ -52,7 +52,7 @@ const live = vesti.filter((vest) => vest.data.live);
         <ul>
           {live.map((live) => (
             <li>
-              <a class="live" href={`/${lang}/vesti/${live.data.link}`}>
+              <a class="live button" href={`/${lang}/vesti/${live.data.link}`}>
                 <Icon size={ICON_SIZE_LG} name="mdi:newspaper" />
                 {live.data.title}
               </a>
@@ -87,7 +87,7 @@ const live = vesti.filter((vest) => vest.data.live);
       <ul class="socials">
         {get_socials(linkovi.data.linkovi).map((link) => (
           <li>
-            <a href={link.link}>
+            <a class="button" href={link.link}>
               {link.type !== "bez" && (
                 <Icon
                   size={ICON_SIZE_LG}
@@ -105,7 +105,7 @@ const live = vesti.filter((vest) => vest.data.live);
     {
       ostali_linkovi.linkovi.map((link) => (
         <li>
-          <a href={link.link}>
+          <a class="button" href={link.link}>
             {link.type !== "bez" && (
               <Icon
                 size={ICON_SIZE_LG}
@@ -124,7 +124,7 @@ const live = vesti.filter((vest) => vest.data.live);
     {
       vesti.slice(0, 3).map((vest) => (
         <li>
-          <a href={`/${lang}/vesti/${vest.data.link}`}>
+          <a class="button" href={`/${lang}/vesti/${vest.data.link}`}>
             <Icon size={ICON_SIZE_LG} name="mdi:newspaper" />
             {vest.data.title}
           </a>
@@ -139,7 +139,7 @@ const live = vesti.filter((vest) => vest.data.live);
         <ul class="socials">
           {get_socials(sub.linkovi).map((link) => (
             <li>
-              <a href={link.link}>
+              <a class="button" href={link.link}>
                 {link.type !== "bez" && (
                   <Icon
                     size={ICON_SIZE_LG}
@@ -180,25 +180,20 @@ const live = vesti.filter((vest) => vest.data.live);
   }
 
   .socials a {
-    display: flex;
     justify-content: center;
   }
 
   a {
     display: flex;
 
-    text-decoration: none;
-    color: black;
     align-items: center;
     gap: 1rem;
 
-    border: 2px solid black;
-    border-radius: 0.5rem;
     padding: 1rem;
   }
 
   a.live {
-    border-color: var(--accent);
+    border-color: var(--live);
   }
 
   a:hover {

@@ -90,11 +90,6 @@
   vertical-align: baseline;
 }
 
-picture,
-img {
-  display: block;
-}
-
 :where(
   article,
   aside,
@@ -106,7 +101,9 @@ img {
   hgroup,
   menu,
   nav,
-  section
+  section,
+  picture,
+  img
 ) {
   display: block;
 }

@@ -89,6 +89,8 @@ export async function getStaticPaths() {
 </Base>
 
 <style>
+  /* TODO: clean up */
+
   .flex {
     display: flex;
     align-items: center;
@@ -127,7 +129,7 @@ export async function getStaticPaths() {
   li:first-child::before {
     content: "";
     position: absolute;
-    background-color: var(--dark-background);
+    background-color: var(--secondary-background);
     inset: 0;
     left: 50%;
     translate: -50% 0;
@@ -164,7 +166,6 @@ export async function getStaticPaths() {
 
   .title {
     margin: 0;
-    color: rgb(var(--black));
     line-height: 1;
   }
 
@@ -175,7 +176,7 @@ export async function getStaticPaths() {
 
   li > a:hover .title,
   li > a:hover .date {
-    color: var(--accent);
+    color: var(--primary-text);
   }
 
   li > a:hover img {

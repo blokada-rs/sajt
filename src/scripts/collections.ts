@@ -62,6 +62,19 @@ export const type = {
   privatni: { sort: 3 },
 };
 
+const map = () => object_field("map", "Mapa", [
+  number_field("coords_lat", "Geografska širina").default(44.8118),
+  number_field("coords_long", "Geografska dužina").default(20.4659),
+  number_field("zoom", "Zoom").default(12).type("int"),
+  list_field("markers", "Markeri", [
+    number_field("coords_lat", "Geografska širina"),
+    number_field("coords_long", "Geografska dužina"),
+    markdown_field("text", "Tekst"),
+  ])
+    .singular("Marker")
+    .optional(),
+]);
+
 const vesti = folder_collection(
   "vesti",
   "Vesti",
@@ -75,18 +88,7 @@ const vesti = folder_collection(
     datetime_field("pubDate", "Datum objavljivanja"),
     datetime_field("updatedDate", "Datum izmene").optional(),
     image_field("heroImage", "Glavna slika"),
-    object_field("map", "Mapa", [
-      number_field("coords_lat", "Geografska širina").default(44.8118),
-      number_field("coords_long", "Geografska dužina").default(20.4659),
-      number_field("zoom", "Zoom").default(12).type("int"),
-      list_field("markers", "Markeri", [
-        number_field("coords_lat", "Geografska širina"),
-        number_field("coords_long", "Geografska dužina"),
-        markdown_field("text", "Tekst"),
-      ])
-        .singular("Marker")
-        .optional(),
-    ]).optional(),
+    map().optional(),
     text_field("description", "Opis").optional(),
     markdown_field("body", "Tekst"),
     list_field("timeline", "Tajmlajn", [
@@ -157,6 +159,7 @@ const specijalne_stranice = folder_collection(
   "src/content/specijalne_stranice",
   [
     string_field("link", "Link"),
+    string_field("class", "CSS class (trenutno samo suss)").optional(),
     image_field("heroImage", "Glavna slika").optional(),
     string_field("title", "Naslov"),
     list_field("sections", "Sekcije", [
@@ -166,31 +169,18 @@ const specijalne_stranice = folder_collection(
       string_field("link", "Link").optional(),
       markdown_field("text", "Tekst").optional(),
       string_field("vest_id", "Vest ID").optional(),
+      map().optional(),
       enum_field("special", "Special", [
         ["default", "Default"],
         ["vest", "Vest"],
+        ["vesti", "Vesti"],
+        ["zahtevi", "Zahtevi"]
       ]),
     ]).singular("Sekcija"),
   ],
 ).slug("{{fields.link}}");
 
 const stranice = file_collection("stranice", "Stranice", "description", [
-  file("pocetna", "Početna", "src/content/stranice", "početna.md", [
-    string_field("naslov", "Naslov"),
-    list_field("sections", "Sekcije", [
-      string_field("id", "ID").optional(),
-      string_field("title", "Naslov").optional(),
-      string_field("link_text", "Link tekst").optional(),
-      string_field("link", "Link").optional(),
-      markdown_field("text", "Tekst").optional(),
-      enum_field("special", "Special", [
-        ["default", "Default"],
-        ["vesti", "Vesti"],
-        ["zahtevi", "Zahtevi"],
-      ]),
-    ]).singular("Sekcija"),
-  ]),
-
   file("zahtevi", "Zahtevi", "src/content/stranice", "zahtevi.md", [
     string_field("title", "Title"),
     string_field("naslov", "Naslov"),
