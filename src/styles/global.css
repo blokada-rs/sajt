@@ -345,3 +345,7 @@ section h2 {
   display: flex;
   justify-content: center;
 }
+
+[data-icon] {
+  font-size: 1.2rem;
+}

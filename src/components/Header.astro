@@ -72,9 +72,9 @@ const jezik = (jezik: string) => {
             <Icon name="mdi:close" />
           </button>
         </li>
-        <li><a href={jezik("sr")}>Српски (ћирилица)</a></li>
-        <li><a href={jezik("sr-lat")}>Srpski (latinica)</a></li>
-        <li><a href={jezik("en")}>English</a></li>
+        <li><a class="button" href={jezik("sr")}>Српски (ћирилица)</a></li>
+        <li><a class="button" href={jezik("sr-lat")}>Srpski (latinica)</a></li>
+        <li><a class="button" href={jezik("en")}>English</a></li>
       </ul>
     </div>
   </nav>
@@ -102,10 +102,12 @@ const jezik = (jezik: string) => {
     justify-content: space-between;
   }
 
+  nav :where(a, button) {
+    color: var(--on-background);
+  }
+
   nav a {
     padding: 1rem 0.75rem;
-    color: var(--on-background);
-    border-bottom: 4px solid transparent;
     text-decoration: none;
   }
 
@@ -116,7 +118,6 @@ const jezik = (jezik: string) => {
 
   nav button {
     background: none;
-    color: inherit;
     border: none;
     padding: 0 0 0 0.5em;
     font: inherit;
@@ -125,7 +126,7 @@ const jezik = (jezik: string) => {
   }
 
   nav a.active {
-    border-bottom-color: var(--primary);
+    border-bottom: 4px solid var(--primary);
   }
 
   .social-links,
@@ -213,6 +214,7 @@ const jezik = (jezik: string) => {
     border-radius: 0.5rem;
     flex-direction: column;
     gap: 1rem;
+    background-color: var(--background);
 
     @starting-style {
       display: flex;
@@ -234,15 +236,6 @@ const jezik = (jezik: string) => {
 
   #translate a {
     display: flex;
-
-    text-decoration: none;
-    color: black;
-    align-items: center;
-    gap: 1rem;
-
-    border: 2px solid black;
-    border-radius: 0.5rem;
-    padding: 1rem;
   }
 
   #translate a:hover {

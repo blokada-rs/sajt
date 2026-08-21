@@ -68,7 +68,7 @@ const live = vesti.filter((vest) => vest.data.live);
       <ul>
         {get_others(linkovi.data.linkovi).map((link) => (
           <li class="spread">
-            <a href={link.link}>
+            <a class="button" href={link.link}>
               {link.type !== "bez" && (
                 <Icon
                   size={ICON_SIZE_LG}
