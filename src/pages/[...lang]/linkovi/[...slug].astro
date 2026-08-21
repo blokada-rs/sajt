@@ -44,7 +44,7 @@ const { data: sub } = await entry("linkovi", "studenti_u_blokadi", lang);
 const live = vesti.filter((vest) => vest.data.live);
 ---
 
-<Base title=`Linkovi | ${linkovi.data.title}` description={SITE_DESCRIPTION}>
+<Base class:list={[{"suss": linkovi.id === "suss"}]} title=`Linkovi | ${linkovi.data.title}` description={SITE_DESCRIPTION}>
   {
     live.length > 0 && (
       <>
@@ -190,6 +190,8 @@ const live = vesti.filter((vest) => vest.data.live);
     gap: 1rem;
 
     padding: 1rem;
+
+    background-color: var(--background);
   }
 
   a.live {
