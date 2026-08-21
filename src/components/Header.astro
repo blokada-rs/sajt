@@ -106,6 +106,10 @@ const jezik = (jezik: string) => {
     color: var(--on-background);
   }
 
+  nav > a {
+    border-bottom: 4px solid transparent;
+  }
+
   nav a {
     padding: 1rem 0.75rem;
     text-decoration: none;
@@ -126,7 +130,7 @@ const jezik = (jezik: string) => {
   }
 
   nav a.active {
-    border-bottom: 4px solid var(--primary);
+    border-bottom-color: var(--primary);
   }
 
   .social-links,
