@@ -2,7 +2,6 @@
 link: donacije_pozari
 title: Држава је заказала - грађани нису
 live: false
-live_embed: Држава је заказала - грађани нису
 pubDate: 2026-08-22T14:02
 updatedDate: 2026-08-22T14:02
 heroImage: '@assets/images/sajtpozar_01.webp'
