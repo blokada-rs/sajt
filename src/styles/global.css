@@ -263,6 +263,7 @@ hr {
 
 :where(section) {
   padding-bottom: 3rem;
+  scroll-margin-block-start: 60px;
 }
 
 :where(sub, sup) {

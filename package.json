@@ -17,12 +17,12 @@
     "@iconify-json/simple-icons": "^1.2.93",
     "@mashehu/astropub-md": "^3.0.0",
     "@oddbird/popover-polyfill": "^0.7.2",
-    "@sveltia/cms": "^0.193.2",
+    "@sveltia/cms": "^0.196.0",
     "astro": "^7.2.4",
     "astro-icon": "^1.2.0",
     "leaflet": "^1.9.4",
     "leaflet.markercluster": "^1.5.3",
-    "sass": "^1.103.0",
+    "sass": "^1.103.1",
     "sharp": "^0.35.3"
   },
   "devDependencies": {
@@ -31,7 +31,7 @@
     "@types/leaflet.markercluster": "^1.5.6",
     "prettier": "^3.9.6",
     "prettier-plugin-astro": "0.14.1",
-    "prettier-plugin-astro-organize-imports": "^0.4.12",
+    "prettier-plugin-astro-organize-imports": "^0.4.13",
     "prettier-plugin-organize-imports": "^4.3.0"
   }
 }
