@@ -5,11 +5,11 @@ sections:
   - title: Why it is Important to Register and Vote
     text: |-
       Although Serbia is a democratic republic by its Constitution, we have witnessed that for many years it has been de facto ruled by an autocratic regime that does not care about the rule of law. One of the consequences of such a government is irregular elections full of manipulation, where with each new cycle, more and more evidence emerges of such violations. However, despite all frauds, parliamentary elections are the only legal way to replace this fraudulent regime, which will, we hope, ultimately lead to the fulfillment of students’ demands.
-      
+
       The main form of manipulation, from which many others stem, is the non-transparent management of the Electoral Roll. Without public oversight and with the existence of parallel databases, it becomes a means of political control, rather than a neutral instrument of democracy. Under such conditions, voters from the diaspora, who are physically absent but formally present on the Electoral Roll, represent an ideal target for abuse.
-      
+
       Registration to vote from abroad does not affect the total number of voters, but it has a key function: it transforms the status of the voter from a passive, invisible and exploitable one to an active, registered and controlled participant in the electoral process. In this way, the diaspora not only exercises its right, but also protects its own identity from being instrumentalized in electoral fraud. 
-      
+
       The right to vote is protected not only by exercising it, but also by not acquiescing during the falsification of the democratic process. An active diaspora is a political factor. An invisible diaspora is an electoral resource in the hands of others.
     special: default
   - title: Before the Election is Called
@@ -39,15 +39,15 @@ sections:
       A request for registration in the Electoral Roll stating that the voter will vote from abroad must be submitted in order to vote from abroad. Diplomatic-consular missions are required to publish the request form on their website. The request must be sent by email to the diplomatic-consular mission no later than five days before the conclusion of the Single Electoral Roll. The request is submitted regardless of whether you have previously voted from abroad.
 
       More information can be found in [Law on the Single Electoral Roll](https://www.rik.parlament.gov.rs/extfile/en/119/4.%20ZAKON%20O%20JBS.pdf) (“Official Gazette of the RS”, no. 104/2009, 99/2011 и 44/2024).
-    special: default
-  - title: Notification Request
-    text: |-
+
+      ### Notification Request
+
       To ensure that your application has been received, check the status every day until the submission deadline. You can contact the diplomatic-consular mission via email, telephone, or in person.
 
       It is recommended that people keep records of who has submitted a request from their area, in order to know whether the quota for designating a polling station has been met.
-    special: default
-  - title: Check if your requests have been received
-    text: |-
+
+      ### Check if your requests have been received
+
       To ensure that your application has been received, check the status every day until the submission deadline. You can contact the diplomatic-consular mission via email, telephone, or in person.
 
       It is recommended that people keep records of who has submitted a request from their area, in order to know whether the quota for designating a polling station has been met.
@@ -82,7 +82,6 @@ sections:
       You can access CeSID’s guide to protecting electoral rights via the following link: [https://www.cesid.rs/wp-content/uploads/2021/06/Vodič-za-zaštitu-izbornog-prava.pdf](https://www.cesid.rs/wp-content/uploads/2021/06/Vodi%C4%8D-za-za%C5%A1titu-izbornog-prava.pdf)
     special: default
   - title: Leaflet
-    text: |-
-      You can find the PDF version of this page[here](https://blokade.org/%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%BE%D1%80.pdf).
+    text: You can find the PDF version of this page [here](https://blokade.org/%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%BE%D1%80.pdf).
     special: default
 ---
