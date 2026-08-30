@@ -1,5 +1,5 @@
 ---
-title: Планиште
+title: Пландиште
 link: plandiste
 type: ot
 linkovi:
