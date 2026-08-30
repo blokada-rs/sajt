@@ -1,5 +1,5 @@
 ---
-link: ns_kontrolа
+link: ns_kontrola
 title: Јуримо петицу и добро нам иде
 live: false
 pubDate: 2026-08-30T14:14
