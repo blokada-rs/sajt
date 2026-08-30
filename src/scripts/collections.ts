@@ -56,24 +56,26 @@ export const icons = [
 ];
 
 export const type = {
+  ot: { sort: -1 },
   ub: { sort: 0 },
   uu: { sort: 1 },
   visa: { sort: 2 },
   privatni: { sort: 3 },
 };
 
-const map = () => object_field("map", "Mapa", [
-  number_field("coords_lat", "Geografska širina").default(44.8118),
-  number_field("coords_long", "Geografska dužina").default(20.4659),
-  number_field("zoom", "Zoom").default(12).type("int"),
-  list_field("markers", "Markeri", [
-    number_field("coords_lat", "Geografska širina"),
-    number_field("coords_long", "Geografska dužina"),
-    markdown_field("text", "Tekst"),
-  ])
-    .singular("Marker")
-    .optional(),
-]);
+const map = () =>
+  object_field("map", "Mapa", [
+    number_field("coords_lat", "Geografska širina").default(44.8118),
+    number_field("coords_long", "Geografska dužina").default(20.4659),
+    number_field("zoom", "Zoom").default(12).type("int"),
+    list_field("markers", "Markeri", [
+      number_field("coords_lat", "Geografska širina"),
+      number_field("coords_long", "Geografska dužina"),
+      markdown_field("text", "Tekst"),
+    ])
+      .singular("Marker")
+      .optional(),
+  ]);
 
 const vesti = folder_collection(
   "vesti",
@@ -174,7 +176,7 @@ const specijalne_stranice = folder_collection(
         ["default", "Default"],
         ["vest", "Vest"],
         ["vesti", "Vesti"],
-        ["zahtevi", "Zahtevi"]
+        ["zahtevi", "Zahtevi"],
       ]),
     ]).singular("Sekcija"),
   ],

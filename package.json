@@ -14,16 +14,16 @@
     "@astrojs/rss": "^4.0.19",
     "@astrojs/sitemap": "^3.7.3",
     "@iconify-json/mdi": "^1.2.3",
-    "@iconify-json/simple-icons": "^1.2.93",
+    "@iconify-json/simple-icons": "^1.2.94",
     "@mashehu/astropub-md": "^3.0.0",
     "@oddbird/popover-polyfill": "^0.7.2",
     "@sveltia/cms": "^0.198.0",
-    "astro": "^7.2.6",
+    "astro": "^7.2.9",
     "astro-icon": "^1.2.0",
     "leaflet": "^1.9.4",
     "leaflet.markercluster": "^1.5.3",
     "sass": "^1.103.1",
-    "sharp": "^0.35.3"
+    "sharp": "^0.35.4"
   },
   "devDependencies": {
     "@types/geojson": "^7946.0.16",
