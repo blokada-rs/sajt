@@ -1,5 +1,5 @@
 ---
-title: Мало Црнице
+title: Мало Црниће
 link: malo_crnice
 type: ot
 linkovi:

@@ -2,12 +2,12 @@
 import Base from "@layouts/Base.astro";
 import { SITE_DESCRIPTION } from "../../consts";
 
-import { collection, entry, file, langs } from "@scripts/i18n";
-import { icons, socials } from "@scripts/collections.ts";
-import { ICON_SIZE_LG } from "../../consts.ts";
-import { Icon } from "astro-icon/components";
-import { type } from "@scripts/collections";
 import { Markdown } from "@mashehu/astropub-md";
+import { type } from "@scripts/collections";
+import { icons, socials } from "@scripts/collections.ts";
+import { collection, entry, file, langs } from "@scripts/i18n";
+import { Icon } from "astro-icon/components";
+import { ICON_SIZE_LG } from "../../consts.ts";
 
 export async function getStaticPaths() {
   return langs.map((lang) => ({ params: { lang } }));
@@ -59,6 +59,7 @@ const all = await collection("linkovi", lang);
         {
           all
             .filter(({ data }) => typeof data.type !== "undefined")
+            .filter(({ data }) => type[data.type].sort > 0 - 1)
             .toSorted(({ data: a }, { data: b }) =>
               a.type !== b.type
                 ? type[a.type].sort - type[b.type].sort

@@ -1,5 +1,5 @@
 ---
-title: Забари
+title: Жабари
 link: zabari
 type: ot
 linkovi:

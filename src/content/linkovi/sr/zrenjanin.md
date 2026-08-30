@@ -1,5 +1,5 @@
 ---
-title: Зрељанин
+title: Зрењанин
 link: zrenjanin
 type: ot
 linkovi:

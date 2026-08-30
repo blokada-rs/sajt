@@ -1,5 +1,5 @@
 ---
-title: Загубица
+title: Жагубица
 link: zagubica
 type: ot
 linkovi:

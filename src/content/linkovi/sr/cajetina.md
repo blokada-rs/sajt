@@ -1,5 +1,5 @@
 ---
-title: Чакетина
+title: Чајетина
 link: cajetina
 type: ot
 linkovi:

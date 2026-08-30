@@ -1,5 +1,5 @@
 ---
-title: Сурдулице
+title: Сурдулица
 link: surdulica
 type: ot
 linkovi:
