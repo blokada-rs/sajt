@@ -3,6 +3,9 @@ title: Петровац на Млави
 link: petrovac_na_mlavi
 type: ot
 linkovi:
+  - type: web-bitno
+    naslov: Укључи се!
+    link: https://docs.google.com/forms/d/e/1FAIpQLSeUzTILGPWoTT6MjsBul52dkYoN2GG_LQkKXTNd5NxWXSvdpA/viewform
   - type: mail-bitno
     naslov: petrovac_na_mlavi@studenti.org.rs
     link: mailto:petrovac_na_mlavi@studenti.org.rs
