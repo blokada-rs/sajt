@@ -6,6 +6,9 @@ linkovi:
   - type: mail-bitno
     naslov: sokobanja@studenti.org.rs
     link: mailto:sokobanja@studenti.org.rs
+  - type: web-bitno
+    naslov: Укључи се - Сокобања
+    link: https://docs.google.com/forms/d/e/1FAIpQLSfefm1r2quTRKzjUoX8maOFt6DpmqNh0PBwlbpiTyvBc_I6hw/viewform?fbclid=PAb21jcAO6jQhzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAafEuNS2d2IHj_eP0DWVcZQdb9MqF2dZKa5tn5YNB2jKy-Vmt_dIHDuvosh6Eg&brid=TbLyQ71gas7WJPA9arFJyQ
   - type: instagram
     naslov: Instagram профил
     link: https://www.instagram.com/studenti_sokobanja
