@@ -4,7 +4,7 @@ title: Конференција за медије
 live: false
 pubDate: 2026-09-01T10:19
 updatedDate: 2026-09-01T10:19
-heroImage: '@assets/images/IMG_20260901_032857.webp'
+heroImage: '@assets/images/konferencija za sajt.webp'
 description: |-
   Конференција за медије
    Среда, 2. септембар
