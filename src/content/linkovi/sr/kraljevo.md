@@ -12,10 +12,16 @@ linkovi:
   - type: twitter
     naslov: Twitter профил
     link: https://x.com/kvstudenti
-  - type: facebook
-    naslov: Facebook профил
-    link: https://www.facebook.com/share/1945WbrG4M/
   - type: viber
     naslov: Viber заједница
     link: https://invite.viber.com/?g2=AQAX7SViqeA5IFXVokHT02qAosUi6B83aBJyUyfYBB3T8FKAYIvvBtusteWSI0si
+  - type: facebook
+    naslov: Facebook профил
+    link: https://www.facebook.com/share/1945WbrG4M/
+  - type: web-bitno
+    naslov: Посматрачи - Краљево
+    link: https://forms.gle/MVg2h48pAeExHrJ89
+  - type: web-bitno
+    naslov: Студенти и матуранти – пријава
+    link: https://forms.gle/waJHqPaack8Kbi5Z8
 ---
