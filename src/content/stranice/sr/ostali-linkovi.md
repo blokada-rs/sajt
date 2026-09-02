@@ -3,6 +3,9 @@ ostali_linkovi: Остали линкови
 najnovije_vesti: Најновије вести
 linkovi:
   - type: web
+    naslov: Укључи се!
+    link: https://blokade.org/ukljuci-se
+  - type: web
     naslov: Контролори у Србији
     link: https://blokade.org/ukljuci-se#kontrola
   - type: web
@@ -14,7 +17,4 @@ linkovi:
   - type: donations
     naslov: Донирај
     link: https://blokade.org/ukljuci-se#donacije
-  - type: web
-    naslov: Укључи се!
-    link: https://blokade.org/ukljuci-se
 ---
