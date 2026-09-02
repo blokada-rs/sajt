@@ -15,4 +15,7 @@ linkovi:
   - type: viber
     naslov: Viber заједница
     link: https://invite.viber.com/?g2=AQAHCaRRF3R0Z1cXGf%2BdM1HICPwW5iZdrtJ58vYenRijEscMxRixSHR0nfzqMS%2Bo
+  - type: twitter
+    naslov: Twitter профил
+    link: https://x.com/StudentiZemuna
 ---
