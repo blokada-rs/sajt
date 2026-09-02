@@ -2,6 +2,7 @@
 link: konferencija
 title: Конференција за медије
 live: false
+live_embed: RhtTKDH9ZnQ
 pubDate: 2026-09-01T10:19
 updatedDate: 2026-09-01T10:19
 heroImage: '@assets/images/konferencija za sajt.webp'
