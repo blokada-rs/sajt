@@ -15,6 +15,8 @@ sections:
     special: default
   - id: spisak
     title: Да ли сте у бирачком списку
+    link_text: Провери!
+    link: https://upit.birackispisak.gov.rs/
     text: |-
       Прво проверите да ли сте у бирачком списку?
 
