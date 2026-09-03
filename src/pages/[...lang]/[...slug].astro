@@ -1,17 +1,18 @@
 ---
-import { collection, collectionIDs, entry, file, langs } from "@scripts/i18n";
+import { collection, collectionIDs, entry, langs } from "@scripts/i18n";
 import Base from "@layouts/Base.astro";
 import { SITE_DESCRIPTION } from "../../consts";
 
 import { Picture } from "astro:assets";
-import { markdown, Markdown } from "@mashehu/astropub-md";
-import Timeline from "@components/Timeline.astro";
 
 import { type CollectionEntry, render } from "astro:content";
-import Card from "@components/Card.astro";
-import Slider from "@components/Slider.astro";
 import Live from "@components/Live.astro";
 import Mapa from "@components/Mapa.astro";
+
+import { Icon } from "astro-icon/components";
+import SectionLink from '@components/SectionLink.astro';
+import Vesti from "@components/Vesti.astro"
+
 
 const { lang } = Astro.params;
 if (typeof lang === "undefined") {
@@ -37,116 +38,44 @@ export async function getStaticPaths() {
 }
 
 type Props = CollectionEntry<"specijalne_stranice">;
-await render(Astro.props);
+const {Content} = await render(Astro.props);
 
 const frontmatter = Astro.props.data;
 
-const vesti_map = new Map();
-
-await Promise.all(
-  frontmatter.sections.map(async (s) => {
-    if (s.special === "vest") {
-      vesti_map.set(s.vest_id, await entry("vesti", s.vest_id, lang));
-    }
-  }),
-);
-
 const vesti = await collection("vesti", lang);
 const live = vesti.filter((vest) => vest.data.live);
-
-const { Content: Zahtevi } = await file("zahtevi", lang);
-
-const map_data = await Promise.all(frontmatter.sections.map(async (section) => (
-  section.map
-    ? {
-      ...section.map,
-      markers: await Promise.all(
-        section.map?.markers?.map(async (e) => ({
-          ...e,
-          text: await markdown(e.text),
-        })) ?? [],
-      ),
-    }
-    : null
-)))
-
 ---
 
 <Base class={frontmatter.class} title={frontmatter.title} description={SITE_DESCRIPTION}>
-  {
-    frontmatter.heroImage ? (
-      <>
-        <div class="title">
-          <Picture
-            formats={["avif", "webp"]}
-            width={1020}
-            src={frontmatter.heroImage}
-            loading="eager"
-            alt=""
-          />
-          <h1>{frontmatter.title}</h1>
+  {frontmatter.heroImage ? (
+    <>
+      <div class="title">
+        <Picture
+          formats={["avif", "webp"]}
+          width={1020}
+          src={frontmatter.heroImage}
+          loading="eager"
+          alt=""
+        />
+        <h1>{frontmatter.title}</h1>
 
-          <div class="square" />
-          <div class="square" />
-        </div>
-      </>
-    ) : (
-      <h1>{frontmatter.title}</h1>
-    )
-  }
-
-  {frontmatter.link == "index" && (
-    <div class="live-box">
-      {
-        live.map((live) => (
-          <Live href={`/${lang}/vesti/${live.id}`}>{live.data.title}</Live>
-        ))
-      }
-    </div>
+        <div class="square" />
+        <div class="square" />
+      </div>
+    </>
+  ) : (
+    <h1>{frontmatter.title}</h1>
   )}
 
-  {
-    frontmatter.sections.map((section: any, i: number) => (
-      <section id={section.id} class:list={[{'dark-background': i % 2 === 1}]}>
-        {section.title && <h2>{section.title}</h2>}
-        {section.text && <Markdown of={section.text} />}
-        {section.special === "vesti" &&
-          <Slider>
-            {
-              vesti
-                .slice(0, 3)
-                .map((post) => <Card link={`/${lang}/vesti/${post.id}`} {...post} />)
-            }
-            <a slot="button" href=`/${lang}/vesti` class="button primary dugme"
-            >{section.link_text}</a
-            >
-          </Slider>
-        }
-        {section.special === "zahtevi" && <Zahtevi />}
-        {section.special !== "vesti" && section.link && (
-          <div class="buttons">
-            <a
-              slot="button"
-              href={section.link}
-              class="button primary dugme center"
-            >
-              {section.link_text}
-            </a>
-          </div>
-        )}
-        {section.special === "vest" &&
-          vesti_map.get(section.vest_id).data.timeline && (
-            <>
-              <Timeline
-                timeline={vesti_map.get(section.vest_id).data.timeline}
-                border={i % 2 === 0 ? "dark" : "light"}
-              />
-            </>
-        )}
-        {map_data[i] && <Mapa data={map_data[i]} /> }
-      </section>
+  {frontmatter.link == "index" && (
+    live.map((live) => (
+      <div class="live-box">
+        <Live href={`/${lang}/vesti/${live.id}`}>{live.data.title}</Live>
+      </div>
     ))
-  }
+  )}
+
+  <Content components={{Icon, SectionLink, Vesti, Mapa}} />
 </Base>
 
 <style>
@@ -211,14 +140,14 @@ const map_data = await Promise.all(frontmatter.sections.map(async (section) => (
     right: -1rem;
   }
 
-  section :global(ol) {
+  :global(section) :global(ol) {
     padding-inline-start: 4rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
   }
 
-  section :global(ol) :global(::marker) {
+  :global(section) :global(ol) :global(::marker) {
     font-size: 2.5rem;
     font-weight: 700;
     line-height: 1;

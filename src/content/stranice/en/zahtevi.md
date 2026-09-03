@@ -221,12 +221,3 @@ opis: |-
 
   Since state institutions have neglected their obligations for far too long, and representatives of the authorities have completely failed to meet these demands, we have been faced with massive manipulation. Those in power have on multiple occasions falsely claimed that the demands had been fulfilled, attempting to deceive citizens and suppress the righteous anger of the people’s uprising. Students therefore decided to take full responsibility for the future of this country. We identified our tactical tool for fulfilling all the aforementioned demands in the call for snap parliamentary elections, given that the existing institutions have lost all legitimacy. We developed a detailed and comprehensive political platform, selected experts and proven individuals to represent our movement on the electoral list, and positioned ourselves as an exceptionally powerful political actor. Our actions are now bearing visible fruit, as we achieve victories at every step and are steadily leading society toward genuine change.
 ---
-
-## Demands
-
-1. The publication of the entire documentation related to the reconstruction of the Railway Station in Novi Sad, which is currently unavailable to the public.
-2. We demand confirmation from the competent authorities regarding the identity of all individuals reasonably suspected of physically assaulting students and professors, as well as the initiation of criminal proceedings against them. We also demand the dismissal of these individuals if it is proven that they are public officials.
-3. The dismissal of criminal charges against the arrested and detained students at the protests, as well as the suspension of any ongoing criminal proceedings.
-4. Increase in the higher education budget by 20%.
-5. We demand a thorough investigation by the competent authorities to determine all circumstances and liabilities regarding the phenomenon that caused fear and panic on March 15, 2025 at 7:11 PM along Kralja Milana Street, during a peaceful protest and 15 minutes of silence in memory of the tragic victims in Novi Sad.
-6. Responsibility and protection for patients.

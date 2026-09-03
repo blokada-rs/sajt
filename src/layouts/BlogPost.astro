@@ -100,12 +100,10 @@ const { frontmatter } = await file("ostalo", lang);
       }
 
       {
-        map && <Mapa data={map} />
+        map && <Mapa data={JSON.stringify(map)} />
       }
 
-      <section class="timeline">
-        <Timeline {timeline} />
-      </section>
+      <Timeline {timeline} />
 
       <article>
         <slot />

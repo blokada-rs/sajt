@@ -1,17 +1,17 @@
 :root {
   --background: white;
-  --on-background: hsl(0deg 0% 5%);
+  --on-background: var(--secondary-dark);
 
-  --primary: hsl(324, 100%, 20%);
-  --primary-dark: hsl(335 100% 12%);
+  --primary: hsl(343 100% 34%);
+  --primary-dark: hsl(343 76% 24%);
   --primary-background: var(--primary-dark);
 
   --primary-text: var(--primary);
   --on-primary: white;
 
-  --secondary: hsl(228 73% 54%);
-  --secondary-dark: hsl(240 42% 19%);
-  --secondary-background: color-mix(var(--secondary), white 90%);
+  --secondary: hsl(233 81% 96%);
+  --secondary-dark: hsl(none 0% 15%);
+  --secondary-background: var(--secondary);
   --on-secondary: black;
 
   --background-gradient: var(--background) linear-gradient(var(--secondary-background), var(--background)) no-repeat;
@@ -33,12 +33,10 @@
     --background: hsl(0deg, 0%, 5%);
     --on-background: hsl(0deg, 0%,95%);
 
-    --primary-text: hsl(335 100% 30%);
+    --primary-text: color-mix(var(--primary), white 10%);
 
     --secondary-background: var(--secondary-dark);
     --on-secondary: white;
-
-    /*--background-gradient: var(--background);*/
 
     --background-gradient: var(--background) linear-gradient(
             color-mix(var(--secondary-background), var(--background) 70%),
@@ -190,7 +188,6 @@ strong {
 }
 
 :where(button:not(.link):not(.clear), a.button):not(.primary):hover {
-  color: var(--primary-text);
   border-color: var(--primary-text);
 }
 
@@ -316,7 +313,7 @@ section h2 {
   padding-left: 0.8rem;
 }
 
-.dark-background {
+section:nth-of-type(2n) {
   display: grid;
   grid-column: 1 / span 3;
   grid-template-columns: subgrid;
@@ -325,11 +322,11 @@ section h2 {
   color: var(--on-secondary);
 }
 
-.dark-background > * {
+section:nth-of-type(2n) > * {
   grid-column: 2 / span 1;
 }
 
-.dark-background::before {
+section:nth-of-type(2n)::before {
   content: "";
   background-color: var(--secondary-background);
   position: absolute;
@@ -349,4 +346,6 @@ section h2 {
 
 [data-icon] {
   font-size: 1.2rem;
+  vertical-align: middle;
+  display: inline-block;
 }

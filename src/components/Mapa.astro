@@ -11,16 +11,16 @@ const { data } = Astro.props;
 ---
 
 <div class="center">
-  <div data-map={JSON.stringify(data)} id="map">
+  <astro-map data-map={data}>
     <div class="buttons">
-      <button id="locate">
+      <button data-id="locate">
         <Icon name="mdi:my-location" size={ICON_SIZE_LG} />
       </button>
-      <button id="fullscreen">
+      <button data-id="fullscreen">
         <Icon name="mdi:fullscreen" size={ICON_SIZE_LG} />
       </button>
     </div>
-  </div>
+  </astro-map>
 </div>
 
 <style>
@@ -30,7 +30,8 @@ const { data } = Astro.props;
     justify-content: center;
   }
 
-  #map:not(.fullscreen) {
+  astro-map:not(.fullscreen) {
+    position: relative;
     max-width: 1000px;
     width: 100%;
     border: none;
@@ -40,11 +41,11 @@ const { data } = Astro.props;
     isolation: isolate;
   }
 
-  #map :global(img) {
+  astro-map :global(img) {
     border-radius: 0;
   }
 
-  #map .buttons {
+  .buttons {
     position: absolute;
     right: 1rem;
     bottom: 1rem;
@@ -54,12 +55,12 @@ const { data } = Astro.props;
     gap: 0.5rem;
   }
 
-  #map button {
+  button {
     background-color: var(--background);
     color: var(--on-background);
   }
 
-  #map button :global(svg) {
+  button :global(svg) {
     display: block;
   }
 
@@ -74,12 +75,12 @@ const { data } = Astro.props;
     .marker-cluster-medium,
     .marker-cluster-large
   ) {
-    background-color: rgba(148, 10, 10, 0.5) !important;
+    background-color: var(--primary) !important;
   }
 
   :global(.marker-cluster div) {
-    background-color: rgba(148, 10, 10, 1) !important;
-    color: white;
+    background-color: var(--primary-dark) !important;
+    color: var(--on-primary);
   }
 </style>
 
@@ -89,73 +90,82 @@ const { data } = Astro.props;
   import "leaflet.markercluster/dist/MarkerCluster.css";
   import "leaflet.markercluster/dist/MarkerCluster.Default.css";
 
-  const map_container = document.getElementById("map")!;
-  const fullscreen_button = document.getElementById("fullscreen")!;
-  const locate_button = document.getElementById("locate")!;
+  class Mapa extends HTMLDivElement {
+    #locate: HTMLButtonElement;
+    #fullscreen: HTMLButtonElement;
 
-  const setup_map = () => {
-    const map_data = JSON.parse(map_container.dataset.map!);
-    const markers = new leaflet.MarkerClusterGroup();
-    map_data.markers?.forEach((marker: any) =>
-      leaflet
-        .circleMarker([marker.coords_lat, marker.coords_long], {
-          radius: 7,
-          color: "#b80000",
-          fillOpacity: 0.5,
-        })
-        .bindPopup(marker.text)
-        .addTo(markers),
-    );
+    setup() {
+      const map_data = JSON.parse(this.dataset.map!);
+      const markers = new leaflet.MarkerClusterGroup();
+      map_data.markers?.forEach((marker: any) =>
+        leaflet
+          .circleMarker([marker.coords_lat, marker.coords_long], {
+            radius: 7,
+            color: window.getComputedStyle(document.body).getPropertyValue('--primary'),
+            fillOpacity: 0.5,
+          })
+          .bindPopup(marker.text)
+          .addTo(markers),
+      );
 
-    const map = leaflet.map(map_container, {
-      preferCanvas: true,
-      renderer: leaflet.canvas(),
-      center: leaflet.latLng(map_data.coords_lat, map_data.coords_long),
-      zoom: map_data.zoom,
-      attributionControl: false,
-      layers: [
-        leaflet.tileLayer(
-          "https://services.arcgisonline.com/arcgis/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
-          { maxZoom: 16 },
-        ),
-        markers,
-      ],
-    });
+      const map = leaflet.map(this, {
+        preferCanvas: true,
+        renderer: leaflet.canvas(),
+        center: leaflet.latLng(map_data.coords_lat, map_data.coords_long),
+        zoom: map_data.zoom,
+        attributionControl: false,
+        layers: [
+          leaflet.tileLayer(
+            "https://services.arcgisonline.com/arcgis/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
+            { maxZoom: 16 },
+          ),
+          markers,
+        ],
+      });
 
-    fullscreen_button.onclick = () => {
-      if (map_container.requestFullscreen) {
-        document.fullscreenElement === null
-          ? map_container.requestFullscreen()
-          : document.exitFullscreen();
-      } else {
-        map_container.classList.toggle("fullscreen");
+      this.#fullscreen.onclick = () => {
+        if (this.requestFullscreen) {
+          document.fullscreenElement === null
+            ? this.requestFullscreen()
+            : document.exitFullscreen();
+        } else {
+          this.classList.toggle("fullscreen");
+        }
+        map.invalidateSize();
+      };
+
+      this.#locate.onclick = () => map.locate({ setView: true, maxZoom: 16 });
+
+      let located_marker: leaflet.Marker | null = null;
+      let located_circle: leaflet.Circle | null = null;
+      map.on("locationfound", (e: leaflet.LocationEvent) => {
+        located_marker?.remove();
+        located_circle?.remove();
+
+        const radius = e.accuracy;
+        located_marker = leaflet
+          .marker(e.latlng)
+          .addTo(map);
+
+        if (radius < 10) return;
+        located_circle = leaflet.circle(e.latlng, { radius }).addTo(map);
+      });
+
+      map.on("locationerror", (e: leaflet.ErrorEvent) => {
+        alert(e.message);
+      });
+    }
+
+    constructor() {
+      super();
+      this.#locate = this.querySelector("[data-id='locate']")!;
+      this.#fullscreen = this.querySelector("[data-id='fullscreen']")!;
+
+      if (typeof this.dataset.map !== "undefined") {
+        this.setup();
       }
-      map.invalidateSize();
-    };
-
-    locate_button.onclick = () => map.locate({ setView: true, maxZoom: 16 });
-
-    let located_marker: leaflet.Marker | null = null;
-    let located_circle: leaflet.Circle | null = null;
-    map.on("locationfound", (e: leaflet.LocationEvent) => {
-      located_marker?.remove();
-      located_circle?.remove();
-
-      const radius = e.accuracy;
-      located_marker = leaflet
-        .marker(e.latlng)
-        .addTo(map);
-
-      if (radius < 10) return;
-      located_circle = leaflet.circle(e.latlng, { radius }).addTo(map);
-    });
-
-    map.on("locationerror", (e: leaflet.ErrorEvent) => {
-      alert(e.message);
-    });
-  };
-
-  if (typeof map_container?.dataset?.map !== "undefined") {
-    setup_map();
+    }
   }
+
+  customElements.define("astro-map", Mapa, { extends: "div" });
 </script>

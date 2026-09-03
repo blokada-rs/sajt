@@ -49,6 +49,8 @@ export class FolderBuilder implements Builder {
     private icon: string,
     private folder: string,
     private fields: FieldBuilder[],
+    private pattern?: string,
+    private extension?: string,
   ) {}
 
   protected _slug: string | undefined;
@@ -78,6 +80,7 @@ export class FolderBuilder implements Builder {
       slug: this._slug,
       fields: this.fields.map((field) => field.make_cms()),
       i18n: this._i18n,
+      extension: this.extension,
       sortable_fields:
         typeof this._sort_by !== "undefined"
           ? {
@@ -103,7 +106,7 @@ export class FolderBuilder implements Builder {
         return z.object(obj);
       },
       base: this.folder,
-      pattern: "**/*.md",
+      pattern: (typeof this.pattern !=="undefined")? this.pattern : "**/*.md",
     };
   }
 }
@@ -488,7 +491,9 @@ export const folder_collection = (
   icon: string,
   folder: string,
   fields: FieldBuilder[],
-) => new FolderBuilder(name, label, icon, folder, fields);
+  pattern?: string,
+  extension?: string,
+) => new FolderBuilder(name, label, icon, folder, fields, pattern, extension);
 export const file_collection = (
   name: string,
   label: string,

@@ -11,14 +11,15 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/mdx": "^8.0.0",
     "@astrojs/rss": "^4.0.19",
-    "@astrojs/sitemap": "^3.7.3",
+    "@astrojs/sitemap": "^3.7.4",
     "@iconify-json/mdi": "^1.2.3",
     "@iconify-json/simple-icons": "^1.2.94",
     "@mashehu/astropub-md": "^3.0.0",
     "@oddbird/popover-polyfill": "^0.7.2",
-    "@sveltia/cms": "^0.198.0",
-    "astro": "^7.2.9",
+    "@sveltia/cms": "^0.204.0",
+    "astro": "^7.2.10",
     "astro-icon": "^1.2.0",
     "leaflet": "^1.9.4",
     "leaflet.markercluster": "^1.5.3",

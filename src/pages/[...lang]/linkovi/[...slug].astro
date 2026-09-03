@@ -45,99 +45,48 @@ const live = vesti.filter((vest) => vest.data.live);
 ---
 
 <Base class:list={[{"suss": linkovi.id === "suss"}]} title=`Linkovi | ${linkovi.data.title}` description={SITE_DESCRIPTION}>
-  {
-    live.length > 0 && (
-      <>
-        <h1>Vesti uživo</h1>
+  <section>
+    {
+      live.length > 0 && (
+        <>
+          <h1>Vesti uživo</h1>
+          <ul>
+            {live.map((live) => (
+              <li>
+                <a class="live button" href={`/${lang}/vesti/${live.data.link}`}>
+                  <Icon size={ICON_SIZE_LG} name="mdi:newspaper" />
+                  {live.data.title}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </>
+      )
+    }
+    <h1>{linkovi.data.title}</h1>
+    {
+      get_others(linkovi.data.linkovi).length > 0 && (
         <ul>
-          {live.map((live) => (
-            <li>
-              <a class="live button" href={`/${lang}/vesti/${live.data.link}`}>
-                <Icon size={ICON_SIZE_LG} name="mdi:newspaper" />
-                {live.data.title}
+          {get_others(linkovi.data.linkovi).map((link) => (
+            <li class="spread">
+              <a class="button" href={link.link}>
+                {link.type !== "bez" && (
+                  <Icon
+                    size={ICON_SIZE_LG}
+                    name={icons.find((e) => e.value === link.type)?.icon!}
+                  />
+                )}
+                {link.naslov}
               </a>
             </li>
           ))}
         </ul>
-      </>
-    )
-  }
-  <h1>{linkovi.data.title}</h1>
-  {
-    get_others(linkovi.data.linkovi).length > 0 && (
-      <ul>
-        {get_others(linkovi.data.linkovi).map((link) => (
-          <li class="spread">
-            <a class="button" href={link.link}>
-              {link.type !== "bez" && (
-                <Icon
-                  size={ICON_SIZE_LG}
-                  name={icons.find((e) => e.value === link.type)?.icon!}
-                />
-              )}
-              {link.naslov}
-            </a>
-          </li>
-        ))}
-      </ul>
-    )
-  }
-  {
-    get_socials(linkovi.data.linkovi).length > 0 && (
-      <ul class="socials">
-        {get_socials(linkovi.data.linkovi).map((link) => (
-          <li>
-            <a class="button" href={link.link}>
-              {link.type !== "bez" && (
-                <Icon
-                  size={ICON_SIZE_LG}
-                  name={icons.find((e) => e.value === link.type)?.icon!}
-                />
-              )}
-            </a>
-          </li>
-        ))}
-      </ul>
-    )
-  }
-  <h1>{ostali_linkovi.ostali_linkovi}</h1>
-  <ul>
-    {
-      ostali_linkovi.linkovi.map((link) => (
-        <li>
-          <a class="button" href={link.link}>
-            {link.type !== "bez" && (
-              <Icon
-                size={ICON_SIZE_LG}
-                name={icons.find((e) => e.value === link.type)?.icon!}
-              />
-            )}
-            {link.naslov}
-          </a>
-        </li>
-      ))
+      )
     }
-  </ul>
-
-  <h1>{ostali_linkovi.najnovije_vesti}</h1>
-  <ul>
     {
-      vesti.slice(0, 3).map((vest) => (
-        <li>
-          <a class="button" href={`/${lang}/vesti/${vest.data.link}`}>
-            <Icon size={ICON_SIZE_LG} name="mdi:newspaper" />
-            {vest.data.title}
-          </a>
-        </li>
-      ))
-    }
-  </ul>
-  {
-    linkovi.data.title !== sub.title && (
-      <>
-        <h1>{sub.title}</h1>
+      get_socials(linkovi.data.linkovi).length > 0 && (
         <ul class="socials">
-          {get_socials(sub.linkovi).map((link) => (
+          {get_socials(linkovi.data.linkovi).map((link) => (
             <li>
               <a class="button" href={link.link}>
                 {link.type !== "bez" && (
@@ -150,9 +99,62 @@ const live = vesti.filter((vest) => vest.data.live);
             </li>
           ))}
         </ul>
-      </>
-    )
-  }
+      )
+    }
+    <h1>{ostali_linkovi.ostali_linkovi}</h1>
+    <ul>
+      {
+        ostali_linkovi.linkovi.map((link) => (
+          <li>
+            <a class="button" href={link.link}>
+              {link.type !== "bez" && (
+                <Icon
+                  size={ICON_SIZE_LG}
+                  name={icons.find((e) => e.value === link.type)?.icon!}
+                />
+              )}
+              {link.naslov}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+
+    <h1>{ostali_linkovi.najnovije_vesti}</h1>
+    <ul>
+      {
+        vesti.slice(0, 3).map((vest) => (
+          <li>
+            <a class="button" href={`/${lang}/vesti/${vest.data.link}`}>
+              <Icon size={ICON_SIZE_LG} name="mdi:newspaper" />
+              {vest.data.title}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+    {
+      linkovi.data.title !== sub.title && (
+        <>
+          <h1>{sub.title}</h1>
+          <ul class="socials">
+            {get_socials(sub.linkovi).map((link) => (
+              <li>
+                <a class="button" href={link.link}>
+                  {link.type !== "bez" && (
+                    <Icon
+                      size={ICON_SIZE_LG}
+                      name={icons.find((e) => e.value === link.type)?.icon!}
+                    />
+                  )}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </>
+      )
+    }
+  </section>
 </Base>
 
 <style>
@@ -196,9 +198,5 @@ const live = vesti.filter((vest) => vest.data.live);
 
   a.live {
     border-color: var(--live);
-  }
-
-  a:hover {
-    filter: opacity(0.5);
   }
 </style>

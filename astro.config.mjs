@@ -3,10 +3,21 @@ import sitemap from "@astrojs/sitemap";
 import icon from "astro-icon";
 import { defineConfig, envField } from "astro/config";
 
+import mdx from "@astrojs/mdx";
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://blokade.org",
-  integrations: [sitemap(), icon()],
+  integrations: [
+    sitemap(),
+    icon(),
+    mdx({
+      optimize: {
+        // Prevent the optimizer from handling `h1` elements
+        ignoreElementNames: ["Icon"],
+      },
+    }),
+  ],
   cacheDir: "cache",
   redirects: {
     "/sub": "/linkovi/studenti_u_blokadi",

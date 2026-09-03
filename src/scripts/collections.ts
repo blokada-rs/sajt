@@ -63,7 +63,7 @@ export const type = {
   privatni: { sort: 3 },
 };
 
-const map = () =>
+export const map = () =>
   object_field("map", "Mapa", [
     number_field("coords_lat", "Geografska širina").default(44.8118),
     number_field("coords_long", "Geografska dužina").default(20.4659),
@@ -164,22 +164,10 @@ const specijalne_stranice = folder_collection(
     string_field("class", "CSS class (trenutno samo suss)").optional(),
     image_field("heroImage", "Glavna slika").optional(),
     string_field("title", "Naslov"),
-    list_field("sections", "Sekcije", [
-      string_field("id", "ID").optional(),
-      string_field("title", "Naslov").optional(),
-      string_field("link_text", "Link tekst").optional(),
-      string_field("link", "Link").optional(),
-      markdown_field("text", "Tekst").optional(),
-      string_field("vest_id", "Vest ID").optional(),
-      map().optional(),
-      enum_field("special", "Special", [
-        ["default", "Default"],
-        ["vest", "Vest"],
-        ["vesti", "Vesti"],
-        ["zahtevi", "Zahtevi"],
-      ]),
-    ]).singular("Sekcija"),
+    markdown_field("body", "Body")
   ],
+  "**/*.{md,mdx}",
+  "mdx",
 ).slug("{{fields.link}}");
 
 const stranice = file_collection("stranice", "Stranice", "description", [
@@ -191,7 +179,6 @@ const stranice = file_collection("stranice", "Stranice", "description", [
       markdown_field("konkretizacija", "Konkretizacija"),
     ]).singular("Zahtev"),
     markdown_field("opis", "Opis"),
-    markdown_field("body", "Tekst"),
   ]),
 
   file("not_found", "404", "src/content/stranice", "404.md", [

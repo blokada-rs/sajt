@@ -50,8 +50,100 @@
   </head>
   <body>
     <script>
-      import { type Collection, init } from "@sveltia/cms";
-      import { all } from "@scripts/collections";
+      import { type Collection, type EditorComponentMode, type Field, init, registerEditorComponent } from "@sveltia/cms";
+      import { all, map } from "@scripts/collections";
+
+      const registerMdxComponent = ({id, label, fields, icon, mode = "block", collapsed = false, summary, toPreview}: {
+        id: string,
+        label: string,
+        icon?: string,
+        fields: Field[],
+        mode?: EditorComponentMode,
+        collapsed?: boolean,
+        summary?: string,
+        toPreview?: ((props: Record<string, any>) => string | HTMLElement) | undefined
+      }) => {
+        registerEditorComponent({
+          id, label, icon, fields, mode, collapsed, summary,
+          pattern: new RegExp(String.raw`<${label}\s*${fields.map(field => String.raw`(?:${field.name}="(?<${field.name}>.*?)")?\s*`).join('')}\/>`),
+          toBlock: (fields) => `<SectionLink ${Object.keys(fields).map(field => `${field}="${fields[field]}"`).join(" ")} \/>`,
+          toPreview: (typeof toPreview !== "undefined")? toPreview : (fields) => `[SectionLink ${Object.keys(fields).map(field => `${field}="${fields[field]}"`).join(" ")}]`
+        })
+      }
+
+      registerEditorComponent({
+        id: "icon",
+        label: "Icon",
+        fields: [
+          { name: 'name', widget: 'string' }
+        ],
+        icon: "info_i",
+        pattern: /<Icon name="(?<name>.*?)" \/>/,
+        mode: 'dialog',
+        toBlock: ({name}) => `<Icon name="${name}" />`,
+        toPreview: ({name}) => `[${name}]`
+      });
+
+      registerEditorComponent({
+        id: "section",
+        label: "Section",
+        fields: [
+          { name: 'id', widget: 'string', required: false },
+          { name: 'content', widget: 'richtext' },
+        ],
+        icon: "format_align_justify",
+        collapsed: true,
+        pattern: /<section(?: id="(?<id>.*?)")?>\n\s*(?<content>[\s\S]+?)\s*\n<\/section>/,
+        toBlock: ({content, id}) => `<section${id && " id=\"" + id + "\""}>\n${content}\n</section>`,
+        toPreview: ({content, id}) => `-- section ${id}\n${content}\n\n`
+      });
+
+      registerEditorComponent({
+        id: "mapa",
+        label: "Mapa",
+        fields: [
+          { widget: "object", name: "data", label: "Mapa", fields: [
+            { widget: "number", name: "coords_lat", label: "Geografska širina", required:true, default: 44.8118, value_type: "float"},
+            { widget: "number", name: "coords_long", label: "Geografska dužina", required: true, default: 20.4659, value_type: "float"},
+            { widget: "number", name: "zoom", label: "Zoom", required: true, default:12, value_type: "int"},
+            { widget: "list", name: "markers", label: "Markeri", required: false, label_singular: "Marker", fields: [
+                { widget: "number", name: "coords_lat", label: "Geografska širina", required: true, value_type: "float" },
+                { widget: "number", name: "coords_long", label: "Geografska dužina", required: true, value_type: "float" },
+                { widget: "markdown", name: "text", label: "Tekst", required: true },
+              ]}
+          ]}
+        ],
+        icon: "info_i",
+        pattern: /<Mapa data='(?<data>.*?)' \/>/,
+        mode: 'dialog',
+        toBlock: ({data}) => `<Mapa data='${JSON.stringify(data)}' />`,
+        fromBlock: (match) => ({data: JSON.parse(match[1])}),
+        toPreview: () => `[Mapa]`
+      });
+
+      registerMdxComponent({
+        id: "link",
+        label: "SectionLink",
+        icon: "link_2",
+        fields: [
+          { name: 'link', widget: 'string' },
+          { name: 'text', widget: 'string' },
+        ],
+        mode: "dialog",
+        summary: '{{text}} -> {{link}}',
+        toPreview: ({link, text}) => `[[${text}](${link})]`
+      });
+
+      registerMdxComponent({
+        id: "vesti",
+        label: "Vesti",
+        icon: "newspaper",
+        mode: "dialog",
+        fields: [
+          { name: 'text', widget: 'string' },
+        ],
+        summary: '{{text}}',
+      });
 
       init({
         config: {
