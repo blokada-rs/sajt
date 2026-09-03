@@ -1,7 +1,7 @@
 ---
-import "leaflet/dist/leaflet.css";
 import { Icon } from "astro-icon/components";
 import { ICON_SIZE_LG } from "consts";
+import "leaflet/dist/leaflet.css";
 
 interface Props {
   data: any;
@@ -90,7 +90,7 @@ const { data } = Astro.props;
   import "leaflet.markercluster/dist/MarkerCluster.css";
   import "leaflet.markercluster/dist/MarkerCluster.Default.css";
 
-  class Mapa extends HTMLDivElement {
+  class Mapa extends HTMLElement {
     #locate: HTMLButtonElement;
     #fullscreen: HTMLButtonElement;
 
@@ -101,7 +101,9 @@ const { data } = Astro.props;
         leaflet
           .circleMarker([marker.coords_lat, marker.coords_long], {
             radius: 7,
-            color: window.getComputedStyle(document.body).getPropertyValue('--primary'),
+            color: window
+              .getComputedStyle(document.body)
+              .getPropertyValue("--primary"),
             fillOpacity: 0.5,
           })
           .bindPopup(marker.text)
@@ -143,9 +145,7 @@ const { data } = Astro.props;
         located_circle?.remove();
 
         const radius = e.accuracy;
-        located_marker = leaflet
-          .marker(e.latlng)
-          .addTo(map);
+        located_marker = leaflet.marker(e.latlng).addTo(map);
 
         if (radius < 10) return;
         located_circle = leaflet.circle(e.latlng, { radius }).addTo(map);
@@ -167,5 +167,5 @@ const { data } = Astro.props;
     }
   }
 
-  customElements.define("astro-map", Mapa, { extends: "div" });
+  customElements.define("astro-map", Mapa);
 </script>

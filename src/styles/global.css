@@ -49,7 +49,7 @@
   }
 }
 
-body.suss {
+html.suss {
   --primary: hsl(39.736843 97% 54%);
   --primary-dark: hsl(40 97% 37%);
   --primary-background: var(--primary-dark);
@@ -88,6 +88,29 @@ body.suss {
     url("/fonts/montserrat-v29-cyrillic_latin_latin-ext-700.woff2")
       format("woff2");
 }
+
+html {
+  animation: scroll-background;
+  animation-timing-function: linear;
+  animation-timeline: scroll();
+
+  background-color: var(--background);
+  background: linear-gradient(to bottom,
+  var(--background), var(--background) 50%,
+  var(--secondary-dark) 50%, var(--secondary-dark)
+  ) fixed;
+}
+
+@keyframes scroll-background {
+  from {
+    background: var(--background);
+  }
+
+  to {
+    background: var(--secondary-dark);
+  }
+}
+
 
 body {
   font-family: "Montserrat", sans-serif;

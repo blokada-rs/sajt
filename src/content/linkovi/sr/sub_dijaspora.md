@@ -1,7 +1,6 @@
 ---
 title: Студенти у блокади – дијаспора
 link: sub_dijaspora
-type: ub
 linkovi:
   - type: web-bitno
     naslov: Обука – БиХ

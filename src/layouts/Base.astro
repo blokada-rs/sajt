@@ -19,6 +19,7 @@ const { lang } = Astro.params;
 <!doctype html>
 <html
   {lang}
+  class={klass}
   data-langs={JSON.stringify(
     langs.filter((lang) => typeof lang !== "undefined"),
   )}
@@ -59,7 +60,7 @@ const { lang } = Astro.params;
     <BaseHead {title} {description} {image} />
     <slot name="head" />
   </head>
-  <body class={klass}>
+  <body>
     <Header />
     <slot name="above" />
     <main>
