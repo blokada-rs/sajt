@@ -94,23 +94,15 @@ html {
   animation-timing-function: linear;
   animation-timeline: scroll();
 
-  background-color: var(--background);
-  background: linear-gradient(to bottom,
-  var(--background), var(--background) 50%,
-  var(--secondary-dark) 50%, var(--secondary-dark)
-  ) fixed;
+  background:
+    linear-gradient(var(--background) 50%, var(--secondary-dark) 50%)
+    fixed;
 }
 
 @keyframes scroll-background {
-  from {
-    background: var(--background);
-  }
-
-  to {
-    background: var(--secondary-dark);
-  }
+  from { background: var(--background);     }
+  to   { background: var(--secondary-dark); }
 }
-
 
 body {
   font-family: "Montserrat", sans-serif;
