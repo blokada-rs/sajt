@@ -11,12 +11,7 @@ export default defineConfig({
   integrations: [
     sitemap(),
     icon(),
-    mdx({
-      optimize: {
-        // Prevent the optimizer from handling `h1` elements
-        ignoreElementNames: ["Icon"],
-      },
-    }),
+    mdx(),
   ],
   cacheDir: "cache",
   redirects: {
