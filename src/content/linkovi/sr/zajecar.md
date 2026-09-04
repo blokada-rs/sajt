@@ -15,4 +15,7 @@ linkovi:
   - type: facebook
     naslov: Facebook профил
     link: https://www.facebook.com/share/17tLNaaTa7/
+  - type: viber
+    naslov: Viber заједница
+    link: https://invite.viber.com/?g2=AQAsl097viUWblcaBQHoD%2BaQbrgu3kRUO%2B4B%2BxCJrjkgRkB2MDWgxzfQIMEWGF2X
 ---
