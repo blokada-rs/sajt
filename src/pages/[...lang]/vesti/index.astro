@@ -168,9 +168,14 @@ export async function getStaticPaths() {
   }
 
   @media (max-width: 720px) {
-    ul {
+    ul,
+    .latest {
       gap: 2em;
       grid-template-columns: 1fr;
+    }
+
+    .latest .details {
+      grid-column: 1;
     }
 
     li .details {
