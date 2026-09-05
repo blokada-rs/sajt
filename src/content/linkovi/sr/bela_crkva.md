@@ -9,4 +9,7 @@ linkovi:
   - type: instagram
     naslov: Instagram профил
     link: https://www.instagram.com/bc_uz_studente
+  - type: facebook
+    naslov: Facebook профил
+    link: https://www.facebook.com/share/19LFFzfxJX/
 ---
