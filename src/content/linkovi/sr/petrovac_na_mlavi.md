@@ -15,4 +15,7 @@ linkovi:
   - type: facebook
     naslov: Facebook профил
     link: https://www.facebook.com/61573807870568/
+  - type: twitter
+    naslov: Twitter профил
+    link: https://x.com/studenti_pt/status/2096192331934265831
 ---
