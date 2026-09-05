@@ -3,7 +3,10 @@ title: Бела Црква
 link: bela_crkva
 type: ot
 linkovi:
-  - type: mail-bitno 
+  - type: mail-bitno
     naslov: bela_crkva@studenti.org.rs
     link: mailto:bela_crkva@studenti.org.rs
+  - type: instagram
+    naslov: Instagram профил
+    link: https://www.instagram.com/bc_uz_studente
 ---
