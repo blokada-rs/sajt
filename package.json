@@ -18,12 +18,12 @@
     "@iconify-json/simple-icons": "^1.2.94",
     "@mashehu/astropub-md": "^3.0.0",
     "@oddbird/popover-polyfill": "^0.7.2",
-    "@sveltia/cms": "^0.205.0",
-    "astro": "^7.2.10",
+    "@sveltia/cms": "^0.206.1",
+    "astro": "^7.3.1",
     "astro-icon": "^1.2.0",
     "leaflet": "^1.9.4",
     "leaflet.markercluster": "^1.5.3",
-    "sass": "^1.103.1",
+    "sass": "^1.104.0",
     "sharp": "^0.35.4"
   },
   "devDependencies": {
