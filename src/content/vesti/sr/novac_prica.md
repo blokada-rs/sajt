@@ -4,7 +4,7 @@ title: Узмите новац
 live: false
 pubDate: 2026-09-08T19:16:00
 updatedDate: 2026-09-08T19:16:00
-heroImage: '@assets/images/1000000718.webp'
+heroImage: '@assets/images/pare.webp'
 description: Најављену исплату пунолетним грађанима власт представља као личну доброту Александра Вучића. У државном буџету и фонду, међутим, нема његовог новца.
 ---
 
