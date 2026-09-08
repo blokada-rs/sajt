@@ -106,7 +106,7 @@ export class FolderBuilder implements Builder {
         return z.object(obj);
       },
       base: this.folder,
-      pattern: (typeof this.pattern !=="undefined")? this.pattern : "**/*.md",
+      pattern: typeof this.pattern !== "undefined" ? this.pattern : "**/*.md",
     };
   }
 }

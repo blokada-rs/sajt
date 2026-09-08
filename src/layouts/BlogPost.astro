@@ -99,9 +99,7 @@ const { frontmatter } = await file("ostalo", lang);
         )
       }
 
-      {
-        map && <Mapa data={JSON.stringify(map)} />
-      }
+      {map && <Mapa data={JSON.stringify(map)} />}
 
       <Timeline {timeline} />
 

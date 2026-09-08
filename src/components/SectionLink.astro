@@ -1,15 +1,12 @@
 ---
 interface Props {
-  link: string,
-  text: string
+  link: string;
+  text: string;
 }
 
 const { link, text } = Astro.props;
 ---
 
 <div class="buttons">
-  <a
-    href={link}
-    class="button primary dugme center"
-  >{text}</a>
+  <a href={link} class="button primary dugme center">{text}</a>
 </div>

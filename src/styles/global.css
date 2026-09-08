@@ -14,7 +14,8 @@
   --secondary-background: var(--secondary);
   --on-secondary: black;
 
-  --background-gradient: var(--background) linear-gradient(var(--secondary-background), var(--background)) no-repeat;
+  --background-gradient: var(--background)
+    linear-gradient(var(--secondary-background), var(--background)) no-repeat;
 
   --gray: 96, 115, 159;
   --gray-light: hsl(0 0% 95%);
@@ -31,17 +32,19 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: hsl(0deg, 0%, 5%);
-    --on-background: hsl(0deg, 0%,95%);
+    --on-background: hsl(0deg, 0%, 95%);
 
     --primary-text: color-mix(var(--primary), white 10%);
 
     --secondary-background: var(--secondary-dark);
     --on-secondary: white;
 
-    --background-gradient: var(--background) linear-gradient(
-            color-mix(var(--secondary-background), var(--background) 70%),
-            var(--background)
-    ) no-repeat;
+    --background-gradient: var(--background)
+      linear-gradient(
+        color-mix(var(--secondary-background), var(--background) 70%),
+        var(--background)
+      )
+      no-repeat;
 
     --box-shadow: none;
 
@@ -60,12 +63,13 @@ html.suss {
   --secondary-background: var(--secondary-dark);
   --on-secondary: white;
 
-  --background-gradient: var(--background) linear-gradient(
-          color-mix(var(--secondary-background), var(--background) 70%),
-          var(--background)
-  ) no-repeat;
+  --background-gradient: var(--background)
+    linear-gradient(
+      color-mix(var(--secondary-background), var(--background) 70%),
+      var(--background)
+    )
+    no-repeat;
 }
-
 
 @font-face {
   font-display: swap;
@@ -94,8 +98,7 @@ html {
   animation-timing-function: linear;
   animation-timeline: scroll();
 
-  background:
-    linear-gradient(var(--background) 50%, var(--secondary-dark) 50%)
+  background: linear-gradient(var(--background) 50%, var(--secondary-dark) 50%)
     fixed;
 }
 
@@ -104,8 +107,12 @@ html {
 }
 
 @keyframes scroll-background {
-  from { background: var(--background);     }
-  to   { background: var(--secondary-dark); }
+  from {
+    background: var(--background);
+  }
+  to {
+    background: var(--secondary-dark);
+  }
 }
 
 body {

@@ -8,11 +8,7 @@ import mdx from "@astrojs/mdx";
 // https://astro.build/config
 export default defineConfig({
   site: "https://blokade.org",
-  integrations: [
-    sitemap(),
-    icon(),
-    mdx(),
-  ],
+  integrations: [sitemap(), icon(), mdx()],
   cacheDir: "cache",
   redirects: {
     "/sub": "/linkovi/studenti_u_blokadi",

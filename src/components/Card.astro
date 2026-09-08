@@ -1,9 +1,9 @@
 ---
-import FormattedDate from "./FormattedDate.astro";
-import { type CollectionEntry } from "astro:content";
-import { Picture } from "astro:assets";
-import Live from "./Live.astro";
 import { file } from "@scripts/i18n";
+import { Picture } from "astro:assets";
+import { type CollectionEntry } from "astro:content";
+import FormattedDate from "./FormattedDate.astro";
+import Live from "./Live.astro";
 
 type Props = CollectionEntry<"vesti"> & { lang: string; link: string };
 

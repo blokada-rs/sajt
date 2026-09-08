@@ -1,9 +1,9 @@
 ---
 import Base from "@layouts/Base.astro";
-import { langs, collection, file } from "@scripts/i18n";
+import { collection, file, langs } from "@scripts/i18n";
 
-import { SITE_DESCRIPTION } from "consts";
 import { Markdown } from "@mashehu/astropub-md";
+import { SITE_DESCRIPTION } from "consts";
 const { lang } = Astro.params;
 if (typeof lang === "undefined") {
   return Astro.rewrite(`/sr${Astro.url.pathname}`);

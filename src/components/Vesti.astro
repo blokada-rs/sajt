@@ -3,9 +3,8 @@ import Slider from "@components/Slider.astro";
 import Card from "@components/Card.astro";
 import { collection } from "@scripts/i18n.ts";
 
-
 interface Props {
-  text: string
+  text: string;
 }
 
 const { text } = Astro.props;
@@ -14,6 +13,7 @@ const { lang } = Astro.params;
 
 const vesti = await collection("vesti", lang);
 ---
+
 <Slider>
   {
     vesti

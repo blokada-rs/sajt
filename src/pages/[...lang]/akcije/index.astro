@@ -1,9 +1,9 @@
 ---
 import Base from "@layouts/Base.astro";
-import { langs, collection, file } from "@scripts/i18n";
+import { collection, file, langs } from "@scripts/i18n";
 import { Picture } from "astro:assets";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../../../consts";
 import FormattedDate from "../../../components/FormattedDate.astro";
+import { SITE_DESCRIPTION } from "../../../consts";
 
 const { lang } = Astro.params;
 if (typeof lang === "undefined") {

@@ -164,7 +164,7 @@ const specijalne_stranice = folder_collection(
     string_field("class", "CSS class (trenutno samo suss)").optional(),
     image_field("heroImage", "Glavna slika").optional(),
     string_field("title", "Naslov"),
-    markdown_field("body", "Body")
+    markdown_field("body", "Body"),
   ],
   "**/*.{md,mdx}",
   "mdx",

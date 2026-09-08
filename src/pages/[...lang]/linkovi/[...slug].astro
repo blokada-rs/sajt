@@ -44,7 +44,11 @@ const { data: sub } = await entry("linkovi", "studenti_u_blokadi", lang);
 const live = vesti.filter((vest) => vest.data.live);
 ---
 
-<Base class:list={[{"suss": linkovi.id === "suss"}]} title=`Linkovi | ${linkovi.data.title}` description={SITE_DESCRIPTION}>
+<Base
+  class:list={[{ suss: linkovi.id === "suss" }]}
+  title=`Linkovi | ${linkovi.data.title}`
+  description={SITE_DESCRIPTION}
+>
   <section>
     {
       live.length > 0 && (
@@ -53,7 +57,10 @@ const live = vesti.filter((vest) => vest.data.live);
           <ul>
             {live.map((live) => (
               <li>
-                <a class="live button" href={`/${lang}/vesti/${live.data.link}`}>
+                <a
+                  class="live button"
+                  href={`/${lang}/vesti/${live.data.link}`}
+                >
                   <Icon size={ICON_SIZE_LG} name="mdi:newspaper" />
                   {live.data.title}
                 </a>

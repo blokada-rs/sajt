@@ -1,6 +1,6 @@
 ---
-import { Icon } from "astro-icon/components";
 import { file } from "@scripts/i18n.ts";
+import { Icon } from "astro-icon/components";
 
 const { lang } = Astro.params;
 const { frontmatter } = await file("ostalo", lang);
@@ -35,11 +35,7 @@ const socialIcons = [
     <div class="socials">
       {
         socialIcons.map(({ label, icon, link }) => (
-          <a
-            aria-label={label}
-            href={link}
-            rel="noopener noreferrer"}
-          >
+          <a aria-label={label} href={link} rel="noopener noreferrer">
             <Icon name={icon} />
           </a>
         ))
