@@ -1,18 +1,16 @@
 ---
-import { collection, collectionIDs, entry, langs } from "@scripts/i18n";
 import Base from "@layouts/Base.astro";
+import { collection, collectionIDs, entry, langs } from "@scripts/i18n";
+import { type CollectionEntry, render } from "astro:content";
 import { SITE_DESCRIPTION } from "../../consts";
 
+import { Icon } from "astro-icon/components";
 import { Picture } from "astro:assets";
 
-import { type CollectionEntry, render } from "astro:content";
 import Live from "@components/Live.astro";
 import Mapa from "@components/Mapa.astro";
-
-import { Icon } from "astro-icon/components";
-import SectionLink from '@components/SectionLink.astro';
-import Vesti from "@components/Vesti.astro"
-
+import SectionLink from "@components/SectionLink.astro";
+import Vesti from "@components/Vesti.astro";
 
 const { lang } = Astro.params;
 if (typeof lang === "undefined") {
@@ -20,11 +18,13 @@ if (typeof lang === "undefined") {
 }
 
 export async function getStaticPaths() {
-  const posts: (string | undefined)[] = await collectionIDs("specijalne_stranice");
+  const posts: (string | undefined)[] = await collectionIDs(
+    "specijalne_stranice",
+  );
 
   const pocetna = posts.indexOf("pocetna");
   if (pocetna != -1) {
-    posts[pocetna] = undefined
+    posts[pocetna] = undefined;
   }
 
   return Promise.all(
@@ -38,7 +38,7 @@ export async function getStaticPaths() {
 }
 
 type Props = CollectionEntry<"specijalne_stranice">;
-const {Content} = await render(Astro.props);
+const { Content } = await render(Astro.props);
 
 const frontmatter = Astro.props.data;
 
@@ -46,36 +46,43 @@ const vesti = await collection("vesti", lang);
 const live = vesti.filter((vest) => vest.data.live);
 ---
 
-<Base class={frontmatter.class} title={frontmatter.title} description={SITE_DESCRIPTION}>
-  {frontmatter.heroImage ? (
-    <>
-      <div class="title">
-        <Picture
-          formats={["avif", "webp"]}
-          width={1020}
-          src={frontmatter.heroImage}
-          loading="eager"
-          alt=""
-        />
-        <h1>{frontmatter.title}</h1>
+<Base
+  class={frontmatter.class}
+  title={frontmatter.title}
+  description={SITE_DESCRIPTION}
+>
+  {
+    frontmatter.heroImage ? (
+      <>
+        <div class="title">
+          <Picture
+            formats={["avif", "webp"]}
+            width={1020}
+            src={frontmatter.heroImage}
+            loading="eager"
+            alt=""
+          />
+          <h1>{frontmatter.title}</h1>
 
-        <div class="square" />
-        <div class="square" />
-      </div>
-    </>
-  ) : (
-    <h1>{frontmatter.title}</h1>
-  )}
+          <div class="square" />
+          <div class="square" />
+        </div>
+      </>
+    ) : (
+      <h1>{frontmatter.title}</h1>
+    )
+  }
 
-  {frontmatter.link == "index" && (
-    live.map((live) => (
-      <div class="live-box">
-        <Live href={`/${lang}/vesti/${live.id}`}>{live.data.title}</Live>
-      </div>
-    ))
-  )}
+  {
+    frontmatter.link == "index" &&
+      live.map((live) => (
+        <div class="live-box">
+          <Live href={`/${lang}/vesti/${live.id}`}>{live.data.title}</Live>
+        </div>
+      ))
+  }
 
-  <Content components={{Icon, SectionLink, Vesti, Mapa}} />
+  <Content components={{ Icon, SectionLink, Vesti, Mapa }} />
 </Base>
 
 <style>
