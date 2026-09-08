@@ -86,7 +86,7 @@ const { frontmatter } = await file("ostalo", lang);
 
       {
         live_embed && (
-          <div>
+          <section>
             <strong>{frontmatter.pratite_live}</strong>
             <br />
             <iframe
@@ -95,11 +95,17 @@ const { frontmatter } = await file("ostalo", lang);
               referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen
             />
-          </div>
+          </section>
         )
       }
 
-      {map && <Mapa data={JSON.stringify(map)} />}
+      {
+        map && (
+          <section>
+            <Mapa data={JSON.stringify(map)} />
+          </section>
+        )
+      }
 
       <Timeline {timeline} />
 
@@ -182,5 +188,10 @@ const { frontmatter } = await file("ostalo", lang);
     border: none;
     border-radius: 8px;
     aspect-ratio: 16/9;
+  }
+
+  .prose :global(section) {
+    background: none;
+    padding-block: 1.5rem;
   }
 </style>

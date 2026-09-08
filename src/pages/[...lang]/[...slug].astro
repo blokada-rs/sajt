@@ -38,7 +38,7 @@ export async function getStaticPaths() {
 }
 
 type Props = CollectionEntry<"specijalne_stranice">;
-const { Content } = await render(Astro.props);
+const { Content, headings } = await render(Astro.props);
 
 const frontmatter = Astro.props.data;
 
