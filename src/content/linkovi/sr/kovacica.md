@@ -3,7 +3,7 @@ title: Ковачица
 link: kovacica
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: kovacica@studenti.org.rs
     link: mailto:kovacica@studenti.org.rs
 ---

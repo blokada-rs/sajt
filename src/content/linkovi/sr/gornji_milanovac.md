@@ -3,7 +3,7 @@ title: Горњи Милановац
 link: gornji_milanovac
 type: ot
 linkovi:
-  - type: mail-bitno 
+  - type: mail 
     naslov: gornji_milanovac@studenti.org.rs
     link: mailto:gornji_milanovac@studenti.org.rs
   - type: instagram

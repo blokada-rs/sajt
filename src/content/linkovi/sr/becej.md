@@ -3,7 +3,7 @@ title: Бечеј
 link: becej
 type: ot
 linkovi:
-  - type: mail-bitno 
+  - type: mail 
     naslov: becej@studenti.org.rs
     link: mailto:becej@studenti.org.rs
 ---

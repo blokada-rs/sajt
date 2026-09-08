@@ -6,7 +6,7 @@ linkovi:
   - type: web-bitno
     naslov: Укључи се - Ћуприја
     link: https://forms.gle/3k4GfkecUeTo6Jf46
-  - type: mail-bitno
+  - type: mail
     naslov: cuprija@studenti.org.rs
     link: mailto:cuprija@studenti.org.rs
   - type: instagram

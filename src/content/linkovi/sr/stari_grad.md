@@ -3,7 +3,7 @@ title: Стари Град | Београд
 link: stari_grad
 type: ot
 linkovi:
-  - type: mail-bitno 
+  - type: mail 
     naslov: beograd_stari_grad@studenti.org.rs
     link: mailto:beograd_stari_grad@studenti.org.rs
   - type: instagram

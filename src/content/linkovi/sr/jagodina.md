@@ -3,7 +3,7 @@ title: Јагодина
 link: jagodina
 type: ot
 linkovi:
-  - type: mail-bitno 
+  - type: mail 
     naslov: jagodina@studenti.org.rs
     link: mailto:jagodina@studenti.org.rs
   - type: instagram

@@ -3,7 +3,7 @@ title: Вождовац | Београд
 link: vozdovac
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: beograd_vozdovac@studenti.org.rs
     link: mailto:beograd_vozdovac@studenti.org.rs
   - type: instagram

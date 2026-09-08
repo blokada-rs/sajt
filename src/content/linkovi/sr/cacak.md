@@ -3,7 +3,7 @@ title: Чачак
 link: cacak
 type: ot
 linkovi:
-  - type: mail-bitno 
+  - type: mail 
     naslov: cacak@studenti.org.rs
     link: mailto:cacak@studenti.org.rs
   - type: instagram

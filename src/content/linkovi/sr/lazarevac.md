@@ -3,7 +3,7 @@ title: Лазаревац
 link: lazarevac
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: lazarevac@studenti.org.rs
     link: mailto:lazarevac@studenti.org.rs
   - type: instagram

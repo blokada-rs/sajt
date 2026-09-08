@@ -3,7 +3,7 @@ title: Крагујевац
 link: kragujevac
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: kragujevac@studenti.org.rs
     link: mailto:kragujevac@studenti.org.rs
   - type: instagram

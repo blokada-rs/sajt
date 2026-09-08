@@ -3,7 +3,7 @@ title: Бујановац
 link: bujanovac
 type: ot
 linkovi:
-  - type: mail-bitno 
+  - type: mail 
     naslov: bujanovac@studenti.org.rs
     link: mailto:bujanovac@studenti.org.rs
 ---

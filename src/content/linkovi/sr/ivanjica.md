@@ -3,7 +3,7 @@ title: Ивањица
 link: ivanjica
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: ivanjica@studenti.org.rs
     link: mailto:ivanjica@studenti.org.rs
   - type: instagram

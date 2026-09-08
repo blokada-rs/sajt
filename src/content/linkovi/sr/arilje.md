@@ -3,7 +3,7 @@ title: Ариље
 link: arilje
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: arilje@studenti.org.rs
     link: mailto:arilje@studenti.org.rs
   - type: instagram

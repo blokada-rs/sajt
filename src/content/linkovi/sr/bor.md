@@ -3,7 +3,7 @@ title: Бор
 link: bor
 type: ot
 linkovi:
-  - type: mail-bitno 
+  - type: mail 
     naslov: bor@studenti.org.rs
     link: mailto:bor@studenti.org.rs
   - type: instagram

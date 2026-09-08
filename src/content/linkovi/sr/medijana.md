@@ -3,7 +3,7 @@ title: Медијана | Ниш
 link: medijana
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: medijana@studenti.org.rs
     link: mailto:medijana@studenti.org.rs
 ---

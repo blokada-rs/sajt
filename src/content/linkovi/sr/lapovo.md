@@ -3,7 +3,7 @@ title: Лапово
 link: lapovo
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: lapovo@studenti.org.rs
     link: mailto:lapovo@studenti.org.rs
   - type: instagram

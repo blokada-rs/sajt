@@ -3,7 +3,7 @@ title: Бољевац
 link: boljevac
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: boljevac@studenti.org.rs
     link: mailto:boljevac@studenti.org.rs
   - type: instagram

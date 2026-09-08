@@ -3,7 +3,7 @@ title: Костолац
 link: kostolac
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: pozarevac@studenti.org.rs
     link: mailto:pozarevac@studenti.org.rs
   - type: instagram

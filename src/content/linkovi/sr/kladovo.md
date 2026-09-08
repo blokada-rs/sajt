@@ -3,7 +3,7 @@ title: Кладово
 link: kladovo
 type: ot
 linkovi:
-  - type: mail-bitno 
+  - type: mail 
     naslov: kladovo@studenti.org.rs
     link: mailto:kladovo@studenti.org.rs
   - type: instagram

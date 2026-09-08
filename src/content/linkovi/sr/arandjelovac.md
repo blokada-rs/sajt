@@ -3,7 +3,7 @@ title: Аранђеловац
 link: arandjelovac
 type: ot
 linkovi:
-  - type: mail-bitno 
+  - type: mail 
     naslov: arandjelovac@studenti.org.rs
     link: mailto:arandjelovac@studenti.org.rs
   - type: instagram

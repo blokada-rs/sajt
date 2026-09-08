@@ -4,9 +4,6 @@ link: pf
 prikaz: Права
 type: ub
 linkovi:
-  - type: donations
-    naslov: Помозимо Верољубу Сарићу
-    link: https://blokade.org/vesti/pomozimo-veroljubu-saricu/
   - type: instagram
     naslov: Instagram профил
     link: https://www.instagram.com/blokada_pravni

@@ -3,7 +3,7 @@ title: Деспотовац
 link: despotovac
 type: ot
 linkovi:
-  - type: mail-bitno 
+  - type: mail 
     naslov: despotovac@studenti.org.rs
     link: mailto:despotovac@studenti.org.rs
   - type: instagram

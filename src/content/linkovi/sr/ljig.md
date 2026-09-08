@@ -3,7 +3,7 @@ title: Љиг
 link: ljig
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: ljig@studenti.org.rs
     link: mailto:ljig@studenti.org.rs
   - type: instagram

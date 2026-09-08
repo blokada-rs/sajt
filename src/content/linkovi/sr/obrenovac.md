@@ -3,7 +3,7 @@ title: Обреновац
 link: obrenovac
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: obrenovac@studenti.org.rs
     link: mailto:obrenovac@studenti.org.rs
   - type: instagram

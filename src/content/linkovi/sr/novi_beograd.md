@@ -3,7 +3,7 @@ title: Нови Београд | Београд
 link: novi_beograd
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: beograd_novi_beograd@studenti.org.rs
     link: mailto:beograd_novi_beograd@studenti.org.rs
   - type: instagram

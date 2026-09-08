@@ -3,7 +3,7 @@ title: Савски Венац | Београд
 link: savski_venac
 type: ot
 linkovi:
-  - type: mail-bitno 
+  - type: mail 
     naslov: beograd_savski_venac@studenti.org.rs
     link: mailto:beograd_savski_venac@studenti.org.rs
   - type: instagram

@@ -3,7 +3,7 @@ title: Раковица | Београд
 link: rakovica
 type: ot
 linkovi:
-  - type: mail-bitno 
+  - type: mail 
     naslov: beograd_rakovica@studenti.org.rs
     link: mailto:beograd_rakovica@studenti.org.rs
   - type: instagram

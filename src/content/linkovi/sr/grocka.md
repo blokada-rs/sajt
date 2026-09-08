@@ -3,7 +3,7 @@ title: Гроцка
 link: grocka
 type: ot
 linkovi:
-  - type: mail-bitno 
+  - type: mail 
     naslov: grocka@studenti.org.rs
     link: mailto:grocka@studenti.org.rs
   - type: instagram

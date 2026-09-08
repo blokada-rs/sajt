@@ -3,7 +3,7 @@ title: Младеновац
 link: mladenovac
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: mladenovac@studenti.org.rs
     link: mailto:mladenovac@studenti.org.rs
   - type: instagram

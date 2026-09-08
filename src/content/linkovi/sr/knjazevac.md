@@ -3,7 +3,7 @@ title: Књажевац
 link: knjazevac
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: knjazevac@studenti.org.rs
     link: mailto:knjazevac@studenti.org.rs
   - type: instagram

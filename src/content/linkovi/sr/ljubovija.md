@@ -3,7 +3,7 @@ title: Љубовија
 link: ljubovija
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: ljubovija@studenti.org.rs
     link: mailto:ljubovija@studenti.org.rs
   - type: instagram

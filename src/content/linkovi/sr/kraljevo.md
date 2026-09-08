@@ -3,7 +3,7 @@ title: Краљево
 link: kraljevo
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: kraljevo@studenti.org.rs
     link: mailto:kraljevo@studenti.org.rs
   - type: instagram

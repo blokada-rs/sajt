@@ -3,7 +3,7 @@ title: Мионица
 link: mionica
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: mionica@studenti.org.rs
     link: mailto:mionica@studenti.org.rs
   - type: instagram

@@ -3,7 +3,7 @@ title: Богатић
 link: bogatic
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: bogatic@studenti.org.rs
     link: mailto:bogatic@studenti.org.rs
   - type: instagram

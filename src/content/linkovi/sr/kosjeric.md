@@ -3,7 +3,7 @@ title: Косјерић
 link: kosjeric
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: kosjeric@studenti.org.rs
     link: mailto:kosjeric@studenti.org.rs
   - type: instagram

@@ -3,7 +3,7 @@ title: Земун | Београд
 link: zemun
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: beograd_zemun@studenti.org.rs
     link: mailto:beograd_zemun@studenti.org.rs
   - type: instagram

@@ -4,7 +4,7 @@ link: studenti_u_blokadi
 linkovi:
   - type: web
     naslov: Званични сајт студената у блокади
-    link: https://blokade.org
+    link: https://studenti.org.rs
   - type: instagram
     naslov: Instagram профил
     link: https://instagram.com/studenti_u_blokadi

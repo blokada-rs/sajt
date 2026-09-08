@@ -3,7 +3,7 @@ title: Неготин
 link: negotin
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: negotin@studenti.org.rs
     link: mailto:negotin@studenti.org.rs
   - type: instagram

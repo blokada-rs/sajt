@@ -3,7 +3,7 @@ title: Крушевац
 link: krusevac
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: krusevac@studenti.org.rs
     link: mailto:krusevac@studenti.org.rs
   - type: instagram

@@ -3,7 +3,7 @@ title: Лајковац
 link: lajkovac
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: lajkovac@studenti.org.rs
     link: mailto:lajkovac@studenti.org.rs
   - type: instagram

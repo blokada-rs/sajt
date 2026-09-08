@@ -3,7 +3,7 @@ title: Александровац
 link: aleksandrovac
 type: ot
 linkovi:
-  - type: mail-bitno 
+  - type: mail 
     naslov: aleksandrovac@studenti.org.rs
     link: mailto:aleksandrovac@studenti.org.rs
   - type: instagram

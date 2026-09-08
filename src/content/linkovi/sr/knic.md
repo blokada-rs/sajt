@@ -3,7 +3,7 @@ title: Кнић
 link: knic
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: knic@studenti.org.rs
     link: mailto:knic@studenti.org.rs
   - type: instagram

@@ -3,7 +3,7 @@ title: Барајево
 link: barajevo
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: barajevo@studenti.org.rs
     link: mailto:barajevo@studenti.org.rs
   - type: instagram

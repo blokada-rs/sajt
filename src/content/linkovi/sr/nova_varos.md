@@ -3,7 +3,7 @@ title: Нова Варош
 link: nova_varos
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: nova_varos@studenti.org.rs
     link: mailto:nova_varos@studenti.org.rs
   - type: instagram

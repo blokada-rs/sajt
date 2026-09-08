@@ -3,7 +3,7 @@ title: Лозница
 link: loznica
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: loznica@studenti.org.rs
     link: mailto:loznica@studenti.org.rs
   - type: instagram

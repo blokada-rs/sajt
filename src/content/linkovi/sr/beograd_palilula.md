@@ -3,7 +3,7 @@ title: Палилула | Београд
 link: beograd_palilula
 type: ot
 linkovi:
-  - type: mail-bitno 
+  - type: mail 
     naslov: beograd_palilula@studenti.org.rs
     link: mailto:beograd_palilula@studenti.org.rs
   - type: instagram
