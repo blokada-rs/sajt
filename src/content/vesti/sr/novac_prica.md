@@ -1,6 +1,6 @@
 ---
 link: novac_prica
-title: Узђите новац
+title: Узмите новац
 live: false
 pubDate: 2026-09-08T19:16:00
 updatedDate: 2026-09-08T19:16:00
