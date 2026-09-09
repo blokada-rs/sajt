@@ -2,7 +2,6 @@
 import Base from "@layouts/Base.astro";
 import { collection, collectionIDs, entry, langs } from "@scripts/i18n";
 import { type CollectionEntry, render } from "astro:content";
-import { SITE_DESCRIPTION } from "../../consts";
 
 import { Icon } from "astro-icon/components";
 import { Picture } from "astro:assets";
@@ -49,7 +48,7 @@ const live = vesti.filter((vest) => vest.data.live);
 <Base
   class={frontmatter.class}
   title={frontmatter.title}
-  description={SITE_DESCRIPTION}
+  description={frontmatter.description}
 >
   {
     frontmatter.heroImage ? (
@@ -147,14 +146,14 @@ const live = vesti.filter((vest) => vest.data.live);
     right: -1rem;
   }
 
-  :global(section) :global(ol) {
+  :global(section) > :global(ol) {
     padding-inline-start: 4rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
   }
 
-  :global(section) :global(ol) :global(::marker) {
+  :global(section) > :global(ol) :global(::marker) {
     font-size: 2.5rem;
     font-weight: 700;
     line-height: 1;

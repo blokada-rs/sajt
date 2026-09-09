@@ -1,5 +1,6 @@
 ---
 ostali_linkovi: Остали линкови
+description: Листа најкориснијих линкова
 najnovije_vesti: Најновије вести
 linkovi:
   - type: web
@@ -7,11 +8,11 @@ linkovi:
     link: https://upit.birackispisak.gov.rs
   - type: web
     naslov: Укључи се!
-    link: /ukljuci-se
+    link: https://studenti.org.rs/ukljuci-se
   - type: web
     naslov: Контролори у Србији
-    link: /ukljuci-se#kontrola
+    link: https://studenti.org.rs/ukljuci-se#kontrola
   - type: web
     naslov: Контролори у дијаспори
-    link: /ukljuci-se#k-dijaspora
+    link: https://studenti.org.rs/ukljuci-se#k-dijaspora
 ---

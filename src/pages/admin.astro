@@ -132,6 +132,22 @@
       });
 
       registerEditorComponent({
+        id: "details",
+        label: "Details",
+        fields: [
+          { name: "summary", widget: "richtext" },
+          { name: "details", widget: "richtext" },
+        ],
+        icon: "format_align_justify",
+        collapsed: true,
+        pattern:
+          /<details>\s*<summary>\s*(?<summary>[\s\S]+?)\s*<\/summary>\s*<div class="content">\s*(?<details>[\s\S]+?)\s*<\/div>\s*<\/details>/,
+        toBlock: ({ summary, details }) =>
+          `<details>\n<summary>${summary}</summary>\n<div class="content">\n${details}\n</div>\n</details>`,
+        toPreview: ({ summary }) => `--- summary ${summary}\n\n`,
+      });
+
+      registerEditorComponent({
         id: "article",
         label: "Article",
         fields: [

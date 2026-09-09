@@ -112,23 +112,6 @@ const vesti = folder_collection(
   .slug("{{fields.link}}")
   .sort_by("pubDate");
 
-const akcije = folder_collection(
-  "akcije",
-  "Akcije",
-  "timeline",
-  "src/content/akcije",
-  [
-    string_field("link", "Link").i18n("duplicate"),
-    string_field("title", "Naslov"),
-    datetime_field("pubDate", "Datum akcije"),
-    image_field("heroImage", "Glavna slika"),
-    string_field("description", "Opis").optional(),
-    markdown_field("body", "Tekst"),
-  ],
-)
-  .slug("{{fields.link}}")
-  .sort_by("pubDate");
-
 const afere = folder_collection(
   "afere",
   "Afere",
@@ -164,6 +147,7 @@ const specijalne_stranice = folder_collection(
     string_field("class", "CSS class (trenutno samo suss)").optional(),
     image_field("heroImage", "Glavna slika").optional(),
     string_field("title", "Naslov"),
+    text_field("description", "Opis"),
     markdown_field("body", "Body"),
   ],
   "**/*.{md,mdx}",
@@ -171,17 +155,8 @@ const specijalne_stranice = folder_collection(
 ).slug("{{fields.link}}");
 
 const stranice = file_collection("stranice", "Stranice", "description", [
-  file("zahtevi", "Zahtevi", "src/content/stranice", "zahtevi.md", [
-    string_field("title", "Title"),
-    string_field("naslov", "Naslov"),
-    list_field("zahtevi", "Zahtevi", [
-      string_field("original", "Originalni oblik"),
-      markdown_field("konkretizacija", "Konkretizacija"),
-    ]).singular("Zahtev"),
-    markdown_field("opis", "Opis"),
-  ]),
-
   file("not_found", "404", "src/content/stranice", "404.md", [
+    text_field("description", "Opis"),
     markdown_field("body", "Tekst"),
   ]),
 
@@ -200,6 +175,7 @@ const stranice = file_collection("stranice", "Stranice", "description", [
     "ostali-linkovi.md",
     [
       string_field("ostali_linkovi", "Ostali linkovi"),
+      text_field("description", "Opis"),
       string_field("najnovije_vesti", "Najnovije vesti"),
       link_list(),
     ],
@@ -218,6 +194,9 @@ const stranice = file_collection("stranice", "Stranice", "description", [
     string_field("pratite_live", "Pratite live"),
     markdown_field("vesti_opis", "Vesti - opis"),
     string_field("najnovija_vest", "Najnovija vest"),
+    text_field("afere_description", "Afere opis"),
+    text_field("vesti_description", "Vesti opis"),
+    text_field("kontakt_description", "Kontakt opis"),
   ]),
 ]);
 
@@ -241,7 +220,6 @@ const linkovi = folder_collection(
 
 export const all = all_collections([
   vesti,
-  akcije,
   afere,
   divider(),
   stranice,

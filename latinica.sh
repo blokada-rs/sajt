@@ -1,6 +1,6 @@
 #!/bin/sh
 
-for dir in "src/content/vesti" "src/content/akcije" "src/content/afere" "src/content/stranice" "src/content/linkovi" "src/content/specijalne_stranice"
+for dir in "src/content/vesti" "src/content/afere" "src/content/stranice" "src/content/linkovi" "src/content/specijalne_stranice"
 do
 	rm -rf "$dir/sr-lat"
     mkdir -p "$dir/sr-lat"

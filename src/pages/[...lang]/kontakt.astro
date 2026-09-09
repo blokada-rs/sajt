@@ -1,6 +1,5 @@
 ---
 import Base from "@layouts/Base.astro";
-import { SITE_DESCRIPTION } from "../../consts";
 
 import { Markdown } from "@mashehu/astropub-md";
 import { type } from "@scripts/collections";
@@ -32,7 +31,7 @@ const all = await collection("linkovi", lang);
 
 <Base
   title={`${frontmatter.kontakt} | ${frontmatter.studenti_u_blokadi}`}
-  description={SITE_DESCRIPTION}
+  description={frontmatter.kontakt_description}
 >
   <section>
     <h1>{frontmatter.kontakt}</h1>

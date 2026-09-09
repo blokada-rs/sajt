@@ -3,7 +3,6 @@ import Base from "@layouts/Base.astro";
 import { collection, collectionIDs, entry, file, langs } from "@scripts/i18n";
 import { Icon } from "astro-icon/components";
 import { type CollectionEntry } from "astro:content";
-import { SITE_DESCRIPTION } from "../../../consts";
 import { ICON_SIZE_LG } from "consts";
 import { icons, socials } from "@scripts/collections";
 
@@ -47,7 +46,7 @@ const live = vesti.filter((vest) => vest.data.live);
 <Base
   class:list={[{ suss: linkovi.id === "suss" }]}
   title=`Linkovi | ${linkovi.data.title}`
-  description={SITE_DESCRIPTION}
+  description={ostali_linkovi.description}
 >
   <section>
     {

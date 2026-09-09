@@ -7,7 +7,6 @@ import { Picture } from "astro:assets";
 import Live from "@components/Live.astro";
 import { Markdown } from "@mashehu/astropub-md";
 import FormattedDate from "../../../components/FormattedDate.astro";
-import { SITE_DESCRIPTION } from "../../../consts";
 
 const { lang } = Astro.params;
 if (typeof lang === "undefined") {
@@ -24,7 +23,7 @@ export async function getStaticPaths() {
 
 <Base
   title={`${frontmatter.vesti} | ${frontmatter.studenti_u_blokadi}`}
-  description={SITE_DESCRIPTION}
+  description={frontmatter.vesti_description}
 >
   <section>
     <h1>{frontmatter.vesti}</h1>

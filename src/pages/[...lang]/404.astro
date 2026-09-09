@@ -1,6 +1,5 @@
 ---
 import Base from "@layouts/Base.astro";
-import { SITE_DESCRIPTION } from "../../consts";
 
 import { file, langs } from "@scripts/i18n";
 
@@ -19,7 +18,7 @@ const { Content } = await file("not_found", lang);
 
 <Base
   title={`404 | ${frontmatter.studenti_u_blokadi}`}
-  description={SITE_DESCRIPTION}
+  description={frontmatter.description}
 >
   <section>
     <h1>404</h1>
