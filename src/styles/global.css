@@ -2,15 +2,15 @@
   --background: white;
   --on-background: var(--secondary-dark);
 
-  --primary: hsl(343 100% 34%);
-  --primary-dark: hsl(343 76% 24%);
+  --primary: hsl(350 73% 38%);
+  --primary-dark: hsl(343 78% 27%);
   --primary-background: var(--primary-dark);
 
   --primary-text: var(--primary);
   --on-primary: white;
 
-  --secondary: hsl(233 81% 96%);
-  --secondary-dark: hsl(none 0% 15%);
+  --secondary: hsl(220 45% 92%);
+  --secondary-dark: hsl(345 6% 13%);
   --secondary-background: var(--secondary);
   --on-secondary: black;
 
@@ -71,28 +71,6 @@ html.suss {
     no-repeat;
 }
 
-@font-face {
-  font-display: swap;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  src:
-    local("Montsrrat"),
-    url("/fonts/montserrat-v29-cyrillic_latin_latin-ext-regular.woff2")
-      format("woff2");
-}
-
-@font-face {
-  font-display: swap;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  src:
-    local("Montsrrat"),
-    url("/fonts/montserrat-v29-cyrillic_latin_latin-ext-700.woff2")
-      format("woff2");
-}
-
 html {
   animation: scroll-background;
   animation-timing-function: linear;
@@ -116,7 +94,7 @@ html {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Golog Text", sans-serif;
   line-height: 1.5;
 
   background-color: var(--background);

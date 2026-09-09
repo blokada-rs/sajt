@@ -28,3 +28,4 @@ pnpm-debug.log*
 .netlify
 
 src/content/*/sr-lat/
+public/__astro_font_generated__/

@@ -4,11 +4,12 @@ import icon from "astro-icon";
 import { defineConfig, envField } from "astro/config";
 
 import mdx from "@astrojs/mdx";
+import { astroFont } from "astro-font/integration";
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://studenti.org.rs",
-  integrations: [sitemap(), icon(), mdx()],
+  integrations: [astroFont(), sitemap(), icon(), mdx()],
   cacheDir: "cache",
   redirects: {
     "/sub": "/linkovi/studenti_u_blokadi",

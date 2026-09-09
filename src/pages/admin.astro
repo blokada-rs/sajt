@@ -1,49 +1,33 @@
+---
+import { AstroFont } from "astro-font";
+---
+
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
     <link href="/admin/config.yml" type="text/yaml" rel="cms-config-url" />
-    <link
-      rel="preload"
-      href="/fonts/montserrat-v29-cyrillic_latin_latin-ext-regular.woff2"
-      as="font"
-      type="font/ttf"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      href="/fonts/montserrat-v29-cyrillic_latin_latin-ext-700.woff2"
-      as="font"
-      type="font/ttf"
-      crossorigin
-    />
     <title>Content Manager</title>
+    <AstroFont
+      config={[
+        {
+          src: [],
+          preload: true,
+          display: "swap",
+          name: "Golog Text",
+          fallback: "sans-serif",
+          fetch: true,
+          verbose: true,
+          cacheDir: ".cache",
+          googleFontsURL:
+            "https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap",
+        },
+      ]}
+    />
     <style>
-      @font-face {
-        font-display: swap;
-        font-family: "Montserrat";
-        font-style: normal;
-        font-weight: 400;
-        src:
-          local("Montsrrat"),
-          url("/fonts/montserrat-v29-cyrillic_latin_latin-ext-regular.woff2")
-            format("woff2");
-      }
-
-      @font-face {
-        font-display: swap;
-        font-family: "Montserrat";
-        font-style: normal;
-        font-weight: 700;
-        src:
-          local("Montsrrat"),
-          url("/fonts/montserrat-v29-cyrillic_latin_latin-ext-700.woff2")
-            format("woff2");
-      }
-
       body {
-        --sui-font-family-default: "Montserrat";
+        --sui-font-family-default: "Golog Text";
         --sui-font-weight-normal: 400;
       }
     </style>
