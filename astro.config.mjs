@@ -7,7 +7,7 @@ import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://blokade.org",
+  site: "https://studenti.org.rs",
   integrations: [sitemap(), icon(), mdx()],
   cacheDir: "cache",
   redirects: {
@@ -29,13 +29,6 @@ export default defineConfig({
         access: "public",
         optional: true,
       }),
-    },
-  },
-  vite: {
-    server: {
-      proxy: {
-        "/register": "http://localhost:8888/.netlify/functions/register",
-      },
     },
   },
 });
