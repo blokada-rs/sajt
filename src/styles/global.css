@@ -340,7 +340,7 @@ section h2 {
 
 section:nth-of-type(2n) {
   display: grid;
-  grid-column: 1 / span 3;
+  grid-column: 1 / -1;
   grid-template-columns: subgrid;
   position: relative;
   padding-block: 3rem;

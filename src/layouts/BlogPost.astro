@@ -86,7 +86,7 @@ const { frontmatter } = await file("ostalo", lang);
 
       {
         live_embed && (
-          <section>
+          <div>
             <strong>{frontmatter.pratite_live}</strong>
             <br />
             <iframe
@@ -95,17 +95,11 @@ const { frontmatter } = await file("ostalo", lang);
               referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen
             />
-          </section>
+          </div>
         )
       }
 
-      {
-        map && (
-          <section>
-            <Mapa data={JSON.stringify(map)} />
-          </section>
-        )
-      }
+      {map && <Mapa data={JSON.stringify(map)} />}
 
       <Timeline {timeline} />
 

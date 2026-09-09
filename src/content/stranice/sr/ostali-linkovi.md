@@ -7,11 +7,11 @@ linkovi:
     link: https://upit.birackispisak.gov.rs
   - type: web
     naslov: Укључи се!
-    link: https://blokade.org/ukljuci-se
+    link: /ukljuci-se
   - type: web
     naslov: Контролори у Србији
-    link: https://blokade.org/ukljuci-se#kontrola
+    link: /ukljuci-se#kontrola
   - type: web
     naslov: Контролори у дијаспори
-    link: https://blokade.org/ukljuci-se#k-dijaspora
+    link: /ukljuci-se#k-dijaspora
 ---
