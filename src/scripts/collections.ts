@@ -90,6 +90,7 @@ const vesti = folder_collection(
     datetime_field("pubDate", "Datum objavljivanja"),
     datetime_field("updatedDate", "Datum izmene").optional(),
     image_field("heroImage", "Glavna slika"),
+    bool_field("archived", "Arhivirano").optional(),
     map().optional(),
     text_field("description", "Opis").optional(),
     markdown_field("body", "Tekst"),

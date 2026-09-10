@@ -11,14 +11,16 @@ if (typeof lang === "undefined") {
 export async function getStaticPaths() {
   const posts = await collectionIDs("vesti");
 
-  return Promise.all(
-    langs
-      .flatMap((lang) => posts.flatMap((id) => ({ lang, id })))
-      .map(async ({ lang, id }) => ({
-        params: { lang, slug: id },
-        props: await entry("vesti", id, lang),
-      })),
-  );
+  return (
+    await Promise.all(
+      langs
+        .flatMap((lang) => posts.flatMap((id) => ({ lang, id })))
+        .map(async ({ lang, id }) => ({
+          params: { lang, slug: id },
+          props: await entry("vesti", id, lang),
+        })),
+    )
+  ).filter(({ props }) => !(props.data.archived ?? false));
 }
 
 type Props = CollectionEntry<"vesti"> & { lang: string };

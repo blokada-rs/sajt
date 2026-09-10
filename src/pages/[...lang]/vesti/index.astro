@@ -13,7 +13,9 @@ if (typeof lang === "undefined") {
   return Astro.rewrite(`/sr${Astro.url.pathname}`);
 }
 
-const posts = await collection("vesti", lang);
+const posts = (await collection("vesti", lang)).filter(
+  ({ data }) => !(data.archived ?? false),
+);
 const { frontmatter } = await file("ostalo", lang);
 
 export async function getStaticPaths() {
