@@ -19,7 +19,7 @@ linkovi:
     naslov: Facebook профил
     link: https://www.facebook.com/share/1945WbrG4M/
   - type: web-bitno
-    naslov: Посматрачи - Краљево
+    naslov: Посматрачи  и чланови БО
     link: https://forms.gle/MVg2h48pAeExHrJ89
   - type: web-bitno
     naslov: Студенти и матуранти – пријава
