@@ -11,7 +11,7 @@ linkovi:
     link: mailto:beograd_palilula@studenti.org.rs
   - type: instagram
     naslov: Instagram профил
-    link: https://www.instagram.com/studenti.palilula
+    link: https://www.instagram.com/studenti.palilula/
   - type: twitter
     naslov: Twitter профил
     link: https://x.com/studentpalilula
