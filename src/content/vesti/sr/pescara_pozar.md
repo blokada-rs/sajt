@@ -5,6 +5,7 @@ live: false
 pubDate: 2026-08-08T12:44
 updatedDate: 2026-08-08T12:44
 heroImage: '@assets/images/IMG_4156.webp'
+archived: true
 description: |-
   Ватра и даље гута борову шуму, ниско растиње и траву. Пешчара је, уз Столове код Краљева, једно од два највећа жаришта у Србији.
   Неопходна је помоћ!
