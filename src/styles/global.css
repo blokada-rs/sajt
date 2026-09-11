@@ -210,7 +210,7 @@ strong {
   background-color: var(--primary-dark);
 }
 
-:where(p):not(:last-of-type) {
+:where(p) {
   margin-bottom: 1em;
 }
 
@@ -340,7 +340,7 @@ section > article:not(:last-of-type) {
 }
 
 .buttons {
-  margin-top: 2rem;
+  padding-top: 1rem;
   display: flex;
   justify-content: center;
 }
