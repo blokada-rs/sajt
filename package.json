@@ -11,15 +11,15 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/mdx": "^8.0.0",
+    "@astrojs/mdx": "^8.0.1",
     "@astrojs/rss": "^4.0.19",
     "@astrojs/sitemap": "^3.7.4",
     "@iconify-json/mdi": "^1.2.3",
     "@iconify-json/simple-icons": "^1.2.95",
     "@mashehu/astropub-md": "^3.0.0",
     "@oddbird/popover-polyfill": "^0.7.2",
-    "@sveltia/cms": "^0.208.1",
-    "astro": "^7.3.1",
+    "@sveltia/cms": "^0.209.0",
+    "astro": "^7.3.2",
     "astro-font": "^1.2.0",
     "astro-icon": "^1.2.0",
     "leaflet": "^1.9.4",
@@ -32,7 +32,7 @@
     "@types/leaflet": "^1.9.22",
     "@types/leaflet.markercluster": "^1.5.6",
     "prettier": "^3.9.6",
-    "prettier-plugin-astro": "0.14.1",
+    "prettier-plugin-astro": "1.0.0",
     "prettier-plugin-astro-organize-imports": "^0.4.13",
     "prettier-plugin-organize-imports": "^4.3.0"
   }

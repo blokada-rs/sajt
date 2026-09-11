@@ -1,7 +1,7 @@
 ---
 link: ns_zajedno
 title: Нови Сад - Сви заједно!
-live: true
+live: false
 pubDate: 2026-09-09T23:17:00
 updatedDate: 2026-09-10T00:17:00
 heroImage: '@assets/images/1000000759.webp'

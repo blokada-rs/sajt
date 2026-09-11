@@ -151,7 +151,7 @@ const specijalne_stranice = folder_collection(
     text_field("description", "Opis"),
     markdown_field("body", "Body"),
   ],
-  "**/*.{md,mdx}",
+  "**/*.mdx",
   "mdx",
 ).slug("{{fields.link}}");
 
