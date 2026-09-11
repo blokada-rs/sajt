@@ -4,7 +4,7 @@ title: Потпиши за победу
 live: true
 pubDate: 2026-09-11T15:37:00
 updatedDate: 2026-09-11T15:41:00
-heroImage: '@assets/images/potpisi.webp'
+heroImage: '@assets/images/photo_5845930482976100754_y.webp'
 archived: false
 map:
   coords_lat: 44.05
