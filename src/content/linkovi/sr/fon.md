@@ -19,4 +19,7 @@ linkovi:
   - type: threads
     naslov: Threads профил
     link: https://www.threads.com/@blokada.fon
+  - type: web-bitno
+    naslov: Студентске профилне
+    link: https:/studenti.org.rs
 ---
