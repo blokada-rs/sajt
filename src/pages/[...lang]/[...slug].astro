@@ -42,7 +42,7 @@ const { Content, headings } = await render(Astro.props);
 const frontmatter = Astro.props.data;
 
 const vesti = await collection("vesti", lang);
-const live = vesti.filter((vest) => vest.data.live);
+const live = vesti.filter((vest) => vest.data.live && !vest.data.archived);
 ---
 
 <Base

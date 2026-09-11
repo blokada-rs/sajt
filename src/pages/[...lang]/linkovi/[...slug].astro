@@ -40,7 +40,7 @@ const { frontmatter: ostali_linkovi } = await file("ostali_linkovi", lang);
 
 const { data: sub } = await entry("linkovi", "studenti_u_blokadi", lang);
 
-const live = vesti.filter((vest) => vest.data.live);
+const live = vesti.filter((vest) => vest.data.live && !vest.data.archived);
 ---
 
 <Base
