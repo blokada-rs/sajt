@@ -41,7 +41,7 @@
 
     --background-gradient: var(--background)
       linear-gradient(
-        color-mix(var(--secondary-background), var(--background) 70%),
+        color-mix(var(--primary-dark), var(--background) 85%),
         var(--background)
       )
       no-repeat;
@@ -280,6 +280,10 @@ hr {
 .details-list details {
   background-color: var(--secondary-background);
   border-radius: 0.5rem;
+}
+
+section:nth-of-type(2n) .details-list details {
+  background-color: var(--background);
 }
 
 .details-list details summary {
