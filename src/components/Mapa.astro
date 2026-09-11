@@ -12,7 +12,7 @@ const { data } = Astro.props;
 
 <div class="center">
   <astro-map data-map={data}>
-    <div class="buttons">
+    <div class="map-buttons">
       <button data-id="locate">
         <Icon name="mdi:my-location" size={ICON_SIZE_LG} />
       </button>
@@ -45,7 +45,7 @@ const { data } = Astro.props;
     border-radius: 0;
   }
 
-  .buttons {
+  .map-buttons {
     position: absolute;
     right: 1rem;
     bottom: 1rem;
