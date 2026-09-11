@@ -21,5 +21,5 @@ linkovi:
     link: https://www.threads.com/@blokada.fon
   - type: web-bitno
     naslov: Студентске профилне
-    link: https:/studenti.org.rs
+    link: https://studenti.org.rs
 ---
