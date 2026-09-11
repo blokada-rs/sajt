@@ -1,1 +1,0 @@
-{"fallbackFont":"Courier New","sizeAdjust":"82.36%","ascentOverride":"124.50%","descentOverride":"65.21%","lineGapOverride":"0.00%"}

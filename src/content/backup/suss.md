@@ -1,0 +1,1954 @@
+---
+link: suss
+class: suss
+heroImage: '@assets/images/_DSC3601.webp'
+title: Студент у сваком селу
+sections:
+  - text: |-
+      Путујемо кроз Србију да испричамо своју причу. Без посредника, без сценарија – онако како јесте.
+
+      Нисмо дошли да држимо говоре, већ да разговарамо, да слушамо и да поделимо оно што се не види на насловницама.
+
+      Верујемо да дијалог мења ствари, да тамо где се разговара отворено, нестаје страх, а рађа се поверење.
+
+      Упознајте нас, питајте нас, будите део борбе.
+    special: default
+  - title: Где смо до садa били?
+    map:
+      coords_lat: 44.05
+      coords_long: 20.805
+      zoom: 7
+      markers:
+        - coords_lat: 44.79793258631
+          coords_long: 20.48608481884
+          text: '**Crveni Krst**: 19. 8. 2026.'
+        - coords_lat: 43.3843467
+          coords_long: 21.0313889
+          text: '**Brus**: 18. 8. 2026.'
+        - coords_lat: 46.0657115
+          coords_long: 20.0579429
+          text: '**Kanjiža**: 15. 8. 2026.'
+        - coords_lat: 42.5338889
+          coords_long: 21.8480556
+          text: '**Dubnica**: 16. 8. 2026.'
+        - coords_lat: 42.5407859
+          coords_long: 21.8765293
+          text: '**Bunuševac**: 16. 8. 2026.'
+        - coords_lat: 42.4686111
+          coords_long: 21.8427778
+          text: '**Ristovac**: 16. 8. 2026.'
+        - coords_lat: 42.546287
+          coords_long: 22.003853
+          text: '**Vranjska Banja**: 16. 8. 2026.'
+        - coords_lat: 44.284587
+          coords_long: 21.0193169
+          text: '**Radovanje**: 16. 8. 2026.'
+        - coords_lat: 44.552778
+          coords_long: 19.524444
+          text: '**Tekeriš**: 16. 8. 2026.'
+        - coords_lat: 44.7518375
+          coords_long: 20.407095
+          text: '**Bele Vode**: 16. 8. 2026.'
+        - coords_lat: 42.555292
+          coords_long: 21.902497
+          text: '**Gornja pijaca**: 15. 8. 2026.'
+        - coords_lat: 42.552014821812
+          coords_long: 21.897103786469
+          text: '**Donja pijaca**: 15. 8. 2026.'
+        - coords_lat: 42.6919329
+          coords_long: 22.1701473
+          text: '**Surdulica**: 15. 8. 2026.'
+        - coords_lat: 42.7066729
+          coords_long: 22.0620987
+          text: '**Vladičin Han**: 15. 8. 2026.'
+        - coords_lat: 44.1880511
+          coords_long: 19.3761034
+          text: '**Ljubovija**: 14. 8. 2026.'
+        - coords_lat: 44.7494504
+          coords_long: 20.4168458
+          text: '**Cerak pošta**: 13. 8. 2026.'
+        - coords_lat: 44.806466703251
+          coords_long: 20.464434027672
+          text: '**Studentski kulturni centar**: 13. 8. 2026.'
+        - coords_lat: 44.7914251
+          coords_long: 20.2701444
+          text: '**Surčin**: 13. 8. 2026.'
+        - coords_lat: 44.802996
+          coords_long: 20.383904
+          text: '**Blok 63**: 13. 8. 2026.'
+        - coords_lat: 44.798238331377
+          coords_long: 20.483708381653
+          text: '**Trg Milene i Gage**: 13. 8. 2026.'
+        - coords_lat: 44.7527762
+          coords_long: 20.4549752
+          text: '**Kanarovo Brdo**: 13. 8. 2026.'
+        - coords_lat: 45.2406804
+          coords_long: 19.8113633
+          text: '**Telep**: 13. | 14. 8. 2026.'
+        - coords_lat: 45.1060835
+          coords_long: 19.7453537
+          text: '**Mala Remeta**: 12. 8. 2026.'
+        - coords_lat: 44.8415749
+          coords_long: 20.407124
+          text: '**Kliničko bolnički centar Zemun**: 12. 8. 2026.'
+        - coords_lat: 44.9840388
+          coords_long: 20.0659105
+          text: '**Golubinci**: 12. 8. 2026.'
+        - coords_lat: 44.746517150381
+          coords_long: 20.427795052528
+          text: '**Vojno-Medicinski Centar**: 11. 8. 2026.'
+        - coords_lat: 44.6216203
+          coords_long: 20.5130255
+          text: '**Brđani**: 9. 8. 2026.'
+        - coords_lat: 44.6390298
+          coords_long: 20.5204337
+          text: '**Ripanj**: 9. | 13. 8. 2026.'
+        - coords_lat: 45.2615845
+          coords_long: 19.8130098
+          text: '**Detelinara**: 8. 8. 2026.'
+        - coords_lat: 44.6819321
+          coords_long: 20.4406779
+          text: '**Rušanj**: 8. 8. 2026.'
+        - coords_lat: 44.84145555009
+          coords_long: 20.38956284523
+          text: '**Sava Kovačević**: 8. 8. 2026.'
+        - coords_lat: 44.7486154
+          coords_long: 20.4322023
+          text: '**Filmski grad**: 8. 8. 2026.'
+        - coords_lat: 44.815767822521
+          coords_long: 20.459289550781
+          text: '**Kneza Mihaila**: 8. | 13. 8. 2026.'
+        - coords_lat: 44.875227117424
+          coords_long: 20.462309718132
+          text: '**Valjevskog odreda**: 8. 8. 2026.'
+        - coords_lat: 42.83287620519
+          coords_long: 22.132113575935
+          text: '**Predejane**: 7. 8. 2026.'
+        - coords_lat: 44.539006
+          coords_long: 19.2422026
+          text: '**Klupci**: 7. | 8. 8. 2026.'
+        - coords_lat: 44.814747420086
+          coords_long: 20.434157252312
+          text: '**Šest Kaplara**: 5. 8. 2026.'
+        - coords_lat: 44.7979128
+          coords_long: 20.4721945
+          text: '**Vračar**: 3. | 22. 8. 2026.'
+        - coords_lat: 44.806964745782
+          coords_long: 20.48023223877
+          text: '**Dalmatinska**: 3. 8. 2026.'
+        - coords_lat: 44.6711767
+          coords_long: 20.7168491
+          text: '**Grocka**: 2. 8. 2026.'
+        - coords_lat: 44.807222
+          coords_long: 19.434444
+          text: '**Klenje**: 2. 8. 2026.'
+        - coords_lat: 44.1377164
+          coords_long: 20.7880504
+          text: '**Čumić**: 2. 8. 2026.'
+        - coords_lat: 44.9060932
+          coords_long: 20.274856
+          text: '**Batajnica**: 1. 8. 2026.'
+        - coords_lat: 43.646286192799
+          coords_long: 21.875039935112
+          text: '**Zelena pijaca**: 1. 8. 2026.'
+        - coords_lat: 44.2606718
+          coords_long: 21.0899896
+          text: '**Novo Selo**: 1. 8. 2026.'
+        - coords_lat: 44.665226
+          coords_long: 20.3535609
+          text: '**Velika Moštanica**: 1. 8. 2026.'
+        - coords_lat: 44.1833965
+          coords_long: 20.7650346
+          text: '**Gornja Trnava**: 1. 8. 2026.'
+        - coords_lat: 43.2858588
+          coords_long: 20.809133
+          text: '**Kopaonik**: 1. 8. 2026.'
+        - coords_lat: 45.7638971
+          coords_long: 20.130055
+          text: '**Mol**: 26. 7. 2026.'
+        - coords_lat: 45.7967511
+          coords_long: 20.1330959
+          text: '**Ada**: 25. 7. 2026.'
+        - coords_lat: 44.7586616
+          coords_long: 20.4160359
+          text: '**Repište**: 29. 7. 2026.'
+        - coords_lat: 44.85622
+          coords_long: 20.3732842
+          text: '**Dunavski Virovi**: 28. 7. 2026.'
+        - coords_lat: 44.8174114
+          coords_long: 20.4057736
+          text: '**Park Blok 38**: 28. 7. 2026.'
+        - coords_lat: 44.7435514
+          coords_long: 20.4248683
+          text: '**Cerak Vinogradi**: 28. 7. 2026.'
+        - coords_lat: 44.849575706517
+          coords_long: 20.353143811226
+          text: '**Altina**: 26. 7. 2026.'
+        - coords_lat: 44.8000554
+          coords_long: 20.4755014
+          text: '**Kalenić Pijaca**: 9. 3. 2025. | 2. 8. 2026.'
+        - coords_lat: 44.2925574
+          coords_long: 21.102563
+          text: '**Staro Selo**: 26. 7. 2026.'
+        - coords_lat: 44.7941067
+          coords_long: 20.1443218
+          text: '**Petrovčić**: 26. 7. 2026.'
+        - coords_lat: 44.830206
+          coords_long: 20.4562706
+          text: '**Sportski centar "Milan Gale Muškatirović"**: 26. 7. 2026.'
+        - coords_lat: 43.7069289
+          coords_long: 20.1176124
+          text: '**Stupčevići**: 26. 7. 2026.'
+        - coords_lat: 43.7020193
+          coords_long: 20.0946973
+          text: '**Latvica**: 26. 7. 2026.'
+        - coords_lat: 43.7571083
+          coords_long: 20.0817975
+          text: '**Vrane**: 26. 7. 2026.'
+        - coords_lat: 43.7360032
+          coords_long: 20.108484
+          text: '**Vigošte**: 26. 7. 2026.'
+        - coords_lat: 44.6785303
+          coords_long: 20.3050863
+          text: '**Umka**: 25. 7. 2026.'
+        - coords_lat: 44.15861
+          coords_long: 19.8538256
+          text: '**Gornje Leskovice**: 24. 7. | 2. 8. 2026.'
+        - coords_lat: 44.3997222
+          coords_long: 20.8033333
+          text: '**Kusadak**: 25. | 30. 7. 2026.'
+        - coords_lat: 44.8170783
+          coords_long: 20.4417405
+          text: '**Ušće Park**: 25. 7. 2026.'
+        - coords_lat: 44.8271494
+          coords_long: 20.4213308
+          text: '**Park Blok 10**: 25. 7. 2026.'
+        - coords_lat: 44.8078411
+          coords_long: 20.3856089
+          text: '**Blok 64**: 23. 7. 2026.'
+        - coords_lat: 44.8423335
+          coords_long: 20.4178619
+          text: '**Zemunski Kej**: 22. | 30. 7. 2026.'
+        - coords_lat: 44.8275822
+          coords_long: 20.2228552
+          text: '**Dobanovci**: 19. 7. 2026.'
+        - coords_lat: 43.3975422
+          coords_long: 20.6119489
+          text: '**Pobrđe**: 19. 7. 2026.'
+        - coords_lat: 43.3838579
+          coords_long: 20.6262731
+          text: '**Bela Stena**: 19. 7. 2026.'
+        - coords_lat: 44.1363342
+          coords_long: 20.2248195
+          text: '**Rajac**: 18. | 19. 7. 2026.'
+        - coords_lat: 44.7892503
+          coords_long: 20.516344
+          text: '**Zeleno Brdo**: 18. 7. 2026.'
+        - coords_lat: 44.0176612
+          coords_long: 20.9042336
+          text: '**Veliki Park**: 18. 7. 2026.'
+        - coords_lat: 44.106343
+          coords_long: 20.8165834
+          text: '**Lužnice**: 18. | 19. 7. 2026.'
+        - coords_lat: 43.2798808
+          coords_long: 20.6196932
+          text: '**Supnje**: 18. 7. 2026.'
+        - coords_lat: 44.7955477
+          coords_long: 20.4424019
+          text: '**Senjak**: 18. 7. 2026.'
+        - coords_lat: 44.7318688
+          coords_long: 20.3168776
+          text: '**Ostružnica**: 18. 7. 2026.'
+        - coords_lat: 44.7744616
+          coords_long: 20.5052959
+          text: '**Mesna zajednica Medaković 3**: 18. 7. 2026.'
+        - coords_lat: 44.2384639
+          coords_long: 21.1130098
+          text: '**Markovac**: 18. 7. 2026.'
+        - coords_lat: 44.8434819
+          coords_long: 20.4117813
+          text: '**Robna kuća Beograd**: 16. 7. 2026.'
+        - coords_lat: 44.8178411
+          coords_long: 20.4022483
+          text: '**Blok 38**: 15. 7. 2026.'
+        - coords_lat: 44.3677105
+          coords_long: 20.9473992
+          text: '**Zelena Pijaca**: 15. 7. 2026.'
+        - coords_lat: 44.7457074
+          coords_long: 20.4277095
+          text: '**Vrtovi Ceraka**: 14. 7. 2026.'
+        - coords_lat: 44.6719378
+          coords_long: 20.3954404
+          text: '**Sremčica**: 12. 7. | 13. 8. 2026.'
+        - coords_lat: 44.786161692645
+          coords_long: 20.506743192673
+          text: '**Učiteljsko Naselje**: 11. 7. 2026.'
+        - coords_lat: 44.7868814
+          coords_long: 20.5005937
+          text: '**Denkova Bašta**: 11. 7. 2026.'
+        - coords_lat: 43.9920394
+          coords_long: 20.9198059
+          text: '**Beloševac**: 11. | 12. 7. 2026.'
+        - coords_lat: 44.8452561
+          coords_long: 20.4128803
+          text: '**Donji Grad (Zemun)**: 10. 7. | 4. 8. 2026.'
+        - coords_lat: 44.8201608
+          coords_long: 20.4132305
+          text: '**Tržni centar Novi Merkator**: 30. 6. 2026. | 19. 8. 2026.'
+        - coords_lat: 44.7495493
+          coords_long: 20.4987751
+          text: '**Kumodraž 2**: 11. 7. 13. 8. 2026.'
+        - coords_lat: 44.765432218154
+          coords_long: 20.499951839447
+          text: '**Braće Jerković 2**: 10. 7. 2026.'
+        - coords_lat: 44.3712415
+          coords_long: 21.0887509
+          text: '**Veliko Orašje**: 10. 7. 2026.'
+        - coords_lat: 43.560912674789
+          coords_long: 19.539388418198
+          text: '**Novi Priboj**: 28. 9. 2025.'
+        - coords_lat: 44.018875020058
+          coords_long: 20.454354286194
+          text: '**Neškovića Brdo**: 4. 7. 2026.'
+        - coords_lat: 44.777176753706
+          coords_long: 20.488514900208
+          text: '**Milunke Savić**:'
+        - coords_lat: 44.7667486
+          coords_long: 20.4089308
+          text: '**Julino Brdo**: 4. 7. 2026.'
+        - coords_lat: 44.3556933
+          coords_long: 21.1388107
+          text: '**Donja Livadica**: 4. 7. 2026.'
+        - coords_lat: 44.8311049
+          coords_long: 20.4129049
+          text: '**Blok 9A**: 3. | 18. 7. 2026.'
+        - coords_lat: 44.8407687
+          coords_long: 20.395517
+          text: '**Kalvarija**: 4. 7. 2026.'
+        - coords_lat: 44.1976742
+          coords_long: 21.7851349
+          text: '**Žagubica**: 4. 7. 2026.'
+        - coords_lat: 43.724830838312
+          coords_long: 20.688039064407
+          text: '**Skupština grada Kraljeva**: 28. 6. 2026.'
+        - coords_lat: 43.7252903
+          coords_long: 20.6675611
+          text: '**Vojno naselje**: 28. 6. 2026.'
+        - coords_lat: 43.715140971371
+          coords_long: 20.693596601486
+          text: '**Tržni centar Ribnica**: 28. 6. 2026.'
+        - coords_lat: 44.4962741
+          coords_long: 20.8719177
+          text: '**Selevac**: 5. 7. 2026.'
+        - coords_lat: 44.847977
+          coords_long: 20.3736535
+          text: '**Bački Ilovik**: 28. 6. 2026. | 26. 7. 2026.'
+        - coords_lat: 44.4124832
+          coords_long: 21.1126168
+          text: '**Trnovče**: 28. 6. 2026.'
+        - coords_lat: 44.7727125
+          coords_long: 20.5082691
+          text: '**Medak 3**: 27. 6. | 4. 7. 2026.'
+        - coords_lat: 44.7225323
+          coords_long: 20.2165034
+          text: '**Boljevci**: 27. 6. 2026.'
+        - coords_lat: 43.9013757
+          coords_long: 20.4178774
+          text: '**Preljina**: 27. 6. 2026.'
+        - coords_lat: 44.8173658
+          coords_long: 20.3839131
+          text: '**Bežanijska Kosa**: 24. 6. 2026.'
+        - coords_lat: 43.3748344
+          coords_long: 21.8998508
+          text: '**Hum**: 21. 6. 2026.'
+        - coords_lat: 43.3760952
+          coords_long: 21.9421087
+          text: '**Kamenica**: 21. 6. | 2. 8. 2026.'
+        - coords_lat: 43.2973698
+          coords_long: 21.8233236
+          text: '**Donje Međurečje**: 20. 6. 2026.'
+        - coords_lat: 43.30449
+          coords_long: 21.8150337
+          text: '**Čokot**: 20. 6. 2026.'
+        - coords_lat: 44.7806827
+          coords_long: 20.2031325
+          text: '**Bečmen**: 21. 6. 2026.'
+        - coords_lat: 44.4408242
+          coords_long: 21.1103902
+          text: '**Miloševac**: 21. 6. 2026.'
+        - coords_lat: 44.802160316999
+          coords_long: 20.384788513184
+          text: '**Blok 44**: 17. 6. 2026.'
+        - coords_lat: 44.8723502
+          coords_long: 20.3245179
+          text: '**Zemun Polje**: 14. 6. 2026.'
+        - coords_lat: 44.0284599
+          coords_long: 20.8346982
+          text: '**Divostin**: 14. 6. 2026.'
+        - coords_lat: 42.552257955089
+          coords_long: 21.898691654205
+          text: '**Vranje**: 13. 6. | 15. 8. 2026.'
+        - coords_lat: 44.033169
+          coords_long: 20.8118641
+          text: '**Drača**: 13. 6. 2026.'
+        - coords_lat: 44.54213
+          coords_long: 21.3948737
+          text: '**Boževac**: 13. 6. 2026.'
+        - coords_lat: 42.9180249
+          coords_long: 21.7374692
+          text: '**Lebane**: 25. 10. 2025.'
+        - coords_lat: 43.0127645
+          coords_long: 21.7214247
+          text: '**Bojnik**: 25. 10. 2025.'
+        - coords_lat: 44.2502148
+          coords_long: 19.9325339
+          text: '**Petnica**: 7. 6. 2026.'
+        - coords_lat: 43.620214
+          coords_long: 20.9984448
+          text: '**Trstenik**: 7. 6. 2026.'
+        - coords_lat: 44.7055101
+          coords_long: 20.5189561
+          text: '**Beli Potok**: 7. 6. 2026.'
+        - coords_lat: 44.6963109
+          coords_long: 20.5536259
+          text: '**Zuce**: 7. 6. 2026.'
+        - coords_lat: 42.5999713
+          coords_long: 21.1922853
+          text: '**Gračanica**: 31. 5. 2026.'
+        - coords_lat: 42.8790424
+          coords_long: 20.8657862
+          text: '**Kosovska Mitrovica**: 29. 5. 2026.'
+        - coords_lat: 42.9147673
+          coords_long: 20.6897381
+          text: '**Zubin Potok**: 29. 5. 2026.'
+        - coords_lat: 42.2401249
+          coords_long: 21.0253337
+          text: '**Štrpce**: 30. 5. 2026.'
+        - coords_lat: 42.2489507
+          coords_long: 21.0698052
+          text: '**Gotovuše**: 30. 5. 2026.'
+        - coords_lat: 44.266424007817
+          coords_long: 19.857187271118
+          text: '**Paramentići**: 6. 6. 2026.'
+        - coords_lat: 43.6221774
+          coords_long: 20.8929353
+          text: '**Vrnjačka Banja**: 6. 6. 2026.'
+        - coords_lat: 44.7761018
+          coords_long: 20.4135815
+          text: '**Banovo Brdo**: 6. 6. | 13. 6. 2026.'
+        - coords_lat: 44.7626695
+          coords_long: 20.4128733
+          text: '**Žarkovo**: 6. 6. | 13. 8. 2026.'
+        - coords_lat: 44.1746272
+          coords_long: 19.8058822
+          text: '**Donje Leskovice**: 6. 6. 2026.'
+        - coords_lat: 44.2970451
+          coords_long: 19.9999414
+          text: '**Lukavac**: 6. 6. 2026.'
+        - coords_lat: 44.2141587
+          coords_long: 19.827967
+          text: '**Lelić**: 6. 6. 2026.'
+        - coords_lat: 44.783169695994
+          coords_long: 20.501174926758
+          text: '**Dušanovac**: 3. 6. | 23. 8. 2026.'
+        - coords_lat: 44.8156803
+          coords_long: 20.5235791
+          text: '**Rospi Ćuprija**: 8. 5. 2026.'
+        - coords_lat: 44.812672412634
+          coords_long: 20.514607429504
+          text: '**Bioskop Slavica**: 23. 4. | 6. 6. 2026.'
+        - coords_lat: 44.8154479
+          coords_long: 20.4907818
+          text: '**Bogoslovija**: 13. 5. 2026.'
+        - coords_lat: 44.807889979507
+          coords_long: 20.476815104485
+          text: '**Tehnološko-metalurški fakultet**: 22. 5. 2026.'
+        - coords_lat: 44.560257
+          coords_long: 21.290565
+          text: '**Malo Crniće**: 19. 5. 2026.'
+        - coords_lat: 46.0197362
+          coords_long: 19.7590216
+          text: '**Bikovo**: 31. 5. 2026.'
+        - coords_lat: 46.0404265
+          coords_long: 19.5709644
+          text: '**Mala Bosna**: 31. 5. 2026.'
+        - coords_lat: 44.759575780925
+          coords_long: 20.489909648895
+          text: '**Stepa Stepanović**: 29. 4. | 13. 8. 2026.'
+        - coords_lat: 44.754108
+          coords_long: 20.2602481
+          text: '**Jakovo**: 31. 5. 2026. | 8. 8. 2026.'
+        - coords_lat: 44.1980117
+          coords_long: 20.2876983
+          text: '**Dići**: 31. 5. 2026.'
+        - coords_lat: 44.046757
+          coords_long: 20.496211
+          text: '**Nevade**: 30. 5. 2026.'
+        - coords_lat: 44.1694159
+          coords_long: 20.2473301
+          text: '**Slavkovica**: 30. 5. 2026.'
+        - coords_lat: 44.8162216
+          coords_long: 20.4602953
+          text: '**Trg Republike**: 23. 5. 2026.'
+        - coords_lat: 44.807196872682
+          coords_long: 20.471885204315
+          text: '**Pravni Fakultet**: 23. 6. | 13. 8. 2026.'
+        - coords_lat: 44.787424804586
+          coords_long: 20.465544462204
+          text: '**Autokomanda**: 23. 5. 2026.'
+        - coords_lat: 44.3338327
+          coords_long: 20.9475061
+          text: '**Vodice**: 17. 5. 2025.'
+        - coords_lat: 43.7570552
+          coords_long: 20.6897589
+          text: '**Oplanići**: 16. 5. 2026.'
+        - coords_lat: 45.0827888
+          coords_long: 20.4462371
+          text: '**Baranda**: 16. 5. 2026.'
+        - coords_lat: 44.3731265
+          coords_long: 20.9122645
+          text: '**Glibovac**: 16. 5. 2026.'
+        - coords_lat: 43.5939349
+          coords_long: 21.272291
+          text: '**Čitluk**: 16. 5. 2026.'
+        - coords_lat: 43.3417255
+          coords_long: 21.7862955
+          text: '**Lalinac**: 9. 5. 2026.'
+        - coords_lat: 43.333339
+          coords_long: 21.8291463
+          text: '**Popovac**: 9. 5. 2026.'
+        - coords_lat: 44.1932373
+          coords_long: 20.5857381
+          text: '**Gornja Šatornja**: 9. 5. 2026.'
+        - coords_lat: 44.328345
+          coords_long: 20.6903911
+          text: '**Belosavci**: 10. 5. 2026.'
+        - coords_lat: 43.5275043
+          coords_long: 20.2243026
+          text: '**Međurečje**: 9. 5. 2026.'
+        - coords_lat: 43.5816675
+          coords_long: 20.2304548
+          text: '**Ivanjica**: 9. | 10. 5. 2026.'
+        - coords_lat: 43.6321744
+          coords_long: 20.1502791
+          text: '**Prilike**: 10. 5. 2026.'
+        - coords_lat: 43.6081594
+          coords_long: 20.1930776
+          text: '**Bukovica**: 9. | 10. 5. 2026.'
+        - coords_lat: 44.5250726
+          coords_long: 21.0734642
+          text: '**Lugavčina**: 9. 5. 2026.'
+        - coords_lat: 44.3962398
+          coords_long: 20.2518169
+          text: '**Šopić**: 9. 5. 2026.'
+        - coords_lat: 44.381186298097
+          coords_long: 20.261514186859
+          text: '**Rudarska Česma**: 10. 5. 2026.'
+        - coords_lat: 44.1948424
+          coords_long: 20.6060212
+          text: '**Donja Šatornja**: 9. 5. 2026.'
+        - coords_lat: 44.781201401407
+          coords_long: 20.523083209991
+          text: '**Mali Mokri Lug**: 26. 4. 2026.'
+        - coords_lat: 44.742311167554
+          coords_long: 20.605351924896
+          text: '**Boleč**: 26. 4. 2026. | 9. 8. 2026.'
+        - coords_lat: 44.794457819943
+          coords_long: 20.384252071381
+          text: '**Teatar na Savi**: 26. 4. | 1. 8. 2026.'
+        - coords_lat: 44.504199
+          coords_long: 19.3018587
+          text: '**Korenita**: 26. 4. 2026.'
+        - coords_lat: 44.811216949313
+          coords_long: 20.479717254639
+          text: '**Park Starine Novaka**: 25. 4. 2026.'
+        - coords_lat: 44.846710183721
+          coords_long: 20.487737059593
+          text: '**Krnjača**: 25. 4. 2026.'
+        - coords_lat: 44.0058239
+          coords_long: 20.8666353
+          text: '**Stanovo**: 25. 4. 2026.'
+        - coords_lat: 44.829760994755
+          coords_long: 20.413166284561
+          text: '**Ikarus**: 25. 4. 2026.'
+        - coords_lat: 44.8196
+          coords_long: 20.3993917
+          text: '**Blok 37**: 25. 4. 2026.'
+        - coords_lat: 44.8145919
+          coords_long: 20.4298181
+          text: '**Blok 21**: 25. 4. 2026.'
+        - coords_lat: 44.803601862643
+          coords_long: 20.480618476868
+          text: '**Park Kraljice Marije**: 25. 4. 2026.'
+        - coords_lat: 44.714251691856
+          coords_long: 20.459364652634
+          text: '**Resnik**: 25. 4. 2026.'
+        - coords_lat: 44.778960156329
+          coords_long: 20.473312139511
+          text: '**Činovnička Kolonija**: 25. 4. | 4. 7. 2026.'
+        - coords_lat: 44.77035317443
+          coords_long: 20.478622913361
+          text: '**Gornji Voždovac**: 25. 4. 2026. | 29. 4. 2026.'
+        - coords_lat: 43.8630475
+          coords_long: 20.0462656
+          text: '**Bakionica**: 25. 4. 2026.'
+        - coords_lat: 44.395
+          coords_long: 19.335
+          text: '**Brštica**: 25. 4. 2026.'
+        - coords_lat: 44.4008333
+          coords_long: 19.3780556
+          text: '**Cerova**: 25. 4. 2026.'
+        - coords_lat: 44.3247222
+          coords_long: 19.4372222
+          text: '**Šljivova**: 25. 4. 2026.'
+        - coords_lat: 44.3955556
+          coords_long: 19.4794444
+          text: '**Bela Crkva**: 25. 4. 2026.'
+        - coords_lat: 44.4554446
+          coords_long: 19.4834196
+          text: '**Zavlaka**: 25. 4. 2026.'
+        - coords_lat: 44.774934666055
+          coords_long: 20.490961074829
+          text: '**Tržni centar Stadion**: 24. 4. 2026. | 26. 6. 2026.'
+        - coords_lat: 44.807130536647
+          coords_long: 20.522455573082
+          text: '**Karaburma**: 23. 4. 2026.'
+        - coords_lat: 44.795825998549
+          coords_long: 20.498986244202
+          text: '**Slavujev Potok**: 19. 4. | 13. 8. 2026.'
+        - coords_lat: 43.3250282
+          coords_long: 21.8629678
+          text: '**Medoševac**: 18. 4. 2026.'
+        - coords_lat: 43.3566633
+          coords_long: 21.8039631
+          text: '**Trupale**: 18. 4. 2026.'
+        - coords_lat: 44.5854168
+          coords_long: 21.0079206
+          text: '**Mala Krsna**: 18. 4. 2026.'
+        - coords_lat: 44.769515976627
+          coords_long: 20.488911867142
+          text: '**Pijaca Braće Jerković**: 18. 4. 2026.'
+        - coords_lat: 44.76878026749
+          coords_long: 20.498439073563
+          text: '**Braće Jerković**: 18. 4. 2026. | 25. 4. 2026.'
+        - coords_lat: 44.74203807332
+          coords_long: 20.419528484344
+          text: '**Vidikovačka pijaca**: 18. 4. 2026. | 25. 4. 2026.'
+        - coords_lat: 44.811901663568
+          coords_long: 20.47317802906
+          text: '**Palilulska pijaca**: 18. 4. 2026.'
+        - coords_lat: 44.8250407
+          coords_long: 20.4090455
+          text: '**Fontana**: 18. 4. 2026. | 14. 6. 2026.'
+        - coords_lat: 43.7154933
+          coords_long: 20.8307302
+          text: '**Čukojevac**: 18. 4. 2026.'
+        - coords_lat: 43.7272614
+          coords_long: 20.7995794
+          text: '**Vitanovac**: 18. 4. 2026.'
+        - coords_lat: 45.2699426
+          coords_long: 20.7643369
+          text: '**Jarkovac**: 6. | 13. 12. 2025.'
+        - coords_lat: 43.1019523
+          coords_long: 20.8010532
+          text: '**Leposavić**: 4. 1. 2026.'
+        - coords_lat: 44.760130691873
+          coords_long: 20.475967526436
+          text: '**Banjička pijaca**: Svake subote'
+        - coords_lat: 44.0954702
+          coords_long: 21.4366052
+          text: '**Despotovac**: 9. 10. 2025.'
+        - coords_lat: 43.8636301
+          coords_long: 21.4099615
+          text: '**Paraćin**: 24. 9. 2025. | 8. 8. 2026.'
+        - coords_lat: 43.6565165
+          coords_long: 19.8378669
+          text: '**Gostilje**: 12. 10. 2025.'
+        - coords_lat: 43.6857067
+          coords_long: 19.879625
+          text: '**Sirogojno**: 12. 10. 2025.'
+        - coords_lat: 43.7897531
+          coords_long: 19.5031247
+          text: '**Mokra Gora**: 12. 10. 2025.'
+        - coords_lat: 43.7504753
+          coords_long: 19.7165358
+          text: '**Čajetina**: 12. 10. 2025.'
+        - coords_lat: 43.7264284
+          coords_long: 19.6969105
+          text: '**Zlatibor**: 11. | 12. 10. 2025.'
+        - coords_lat: 43.2179542
+          coords_long: 22.3112654
+          text: '**Bela Palanka**: 17. 10. 2025. | 8. 8. 2026.'
+        - coords_lat: 43.8739802
+          coords_long: 20.5958184
+          text: '**Bresnica**: 17. 2. 2026.'
+        - coords_lat: 44.7911369
+          coords_long: 19.5943382
+          text: '**Štitar**: 16. 11. 2025.'
+        - coords_lat: 44.8676238
+          coords_long: 19.7098485
+          text: '**Drenovac**: 14. 9. 2025.'
+        - coords_lat: 44.8672047
+          coords_long: 19.6597085
+          text: '**Ševarice**: 14. 9. 2025.'
+        - coords_lat: 44.820182
+          coords_long: 19.641277
+          text: '**Tabanović**: 14. 9. 2025.'
+        - coords_lat: 44.7100043
+          coords_long: 19.4238096
+          text: '**Ribari**: 14. 6. 2025.'
+        - coords_lat: 44.0446088
+          coords_long: 19.7509056
+          text: '**Varda**: 4. 6. 2025.'
+        - coords_lat: 44.0461262
+          coords_long: 19.7796607
+          text: '**Donja Pološnica**: 4. 6. 2025.'
+        - coords_lat: 44.0439514
+          coords_long: 19.8056888
+          text: '**Gornja Pološnica**: 4. 6. 2025.'
+        - coords_lat: 43.9937128
+          coords_long: 19.8820216
+          text: '**Selo Kosjerić**: 3. 6. 2025.'
+        - coords_lat: 43.9664343
+          coords_long: 19.976354
+          text: '**Bjeloperica**: 3. 6. 2025.'
+        - coords_lat: 43.9733296
+          coords_long: 19.9564933
+          text: '**Tubići**: 3. 6. 2025.'
+        - coords_lat: 44.071086848474
+          coords_long: 19.918298721313
+          text: '**Razana**: 30. 5. 2025.'
+        - coords_lat: 44.0803307
+          coords_long: 19.7694341
+          text: '**Makovište**: 30. 5. 2025.'
+        - coords_lat: 45.9492639
+          coords_long: 19.6298504
+          text: '**Stari Žednik**: 23. 11. 2025.'
+        - coords_lat: 44.0678815
+          coords_long: 20.6005521
+          text: '**Vraćevšnica**: 13. 3. 2026.'
+        - coords_lat: 44.0962526
+          coords_long: 20.3837155
+          text: '**Vrnčani**: 5. 4. 2026.'
+        - coords_lat: 44.0753249
+          coords_long: 20.4165856
+          text: '**Kalimanići**: 5. 4. 2026.'
+        - coords_lat: 44.0462647
+          coords_long: 20.2990329
+          text: '**Beršići**: 5. 4. 2026.'
+        - coords_lat: 44.05302
+          coords_long: 20.374403
+          text: '**Sinoševići**: 5. 4. 2026.'
+        - coords_lat: 44.024347
+          coords_long: 20.360405
+          text: '**Savinac**: 4. 4. 2026.'
+        - coords_lat: 44.0522841
+          coords_long: 20.3516323
+          text: '**Ločevci**: 4. 4. 2026.'
+        - coords_lat: 44.0662502
+          coords_long: 20.3663778
+          text: '**Ljevaja**: 4. 4. 2026.'
+        - coords_lat: 42.4598455
+          coords_long: 21.7671276
+          text: '**Bujanovac**: 28. 2. | 15. 8. 2026.'
+        - coords_lat: 44.0046527
+          coords_long: 20.414767
+          text: '**Semedraž**: 31. 1. 2026.'
+        - coords_lat: 43.6336354
+          coords_long: 22.172247
+          text: '**Stogazovac**: 28. 2. 2026.'
+        - coords_lat: 44.0765522
+          coords_long: 20.5723326
+          text: '**Gornja Crnuća**: 13. 3. 2026.'
+        - coords_lat: 44.0366162
+          coords_long: 20.6064536
+          text: '**Donja Crnuća**: 13. 3. 2026.'
+        - coords_lat: 44.4157702
+          coords_long: 20.4422253
+          text: '**Tulež**: 1. 3. 2026.'
+        - coords_lat: 44.4069897
+          coords_long: 20.4672668
+          text: '**Venčane**: 28. 2. | 1. 3. 2026.'
+        - coords_lat: 44.3972855
+          coords_long: 20.5208895
+          text: '**Ranilović**: 7. 3. 2026.'
+        - coords_lat: 44.338573
+          coords_long: 20.4576021
+          text: '**Darosava**: 7. 2. | 8. 2. 2026.'
+        - coords_lat: 44.3744804
+          coords_long: 20.6211644
+          text: '**Stojnik**: 14. 3. 2026.'
+        - coords_lat: 44.336842
+          coords_long: 20.634624
+          text: '**Kopljare**: 25. 3. 2026.'
+        - coords_lat: 44.2923397
+          coords_long: 20.5581665
+          text: '**Vrbica**: 21. 3. | 22. 3. 2026.'
+        - coords_lat: 44.2906194
+          coords_long: 20.6251573
+          text: '**Banja**: 21. 3. | 22. 3. 2026.'
+        - coords_lat: 44.6201874
+          coords_long: 22.5002426
+          text: '**Manastirica**: 14. 3. 2026.'
+        - coords_lat: 44.6828281
+          coords_long: 22.4090838
+          text: '**Tekija**: 21. 3. 2026.'
+        - coords_lat: 44.6465805
+          coords_long: 22.542797
+          text: '**Novi Sip**: 13. 3. 2026.'
+        - coords_lat: 44.6435256
+          coords_long: 22.5535155
+          text: '**Davidovac**: 13. 3. 2026.'
+        - coords_lat: 44.6298548
+          coords_long: 22.5719713
+          text: '**Kladušnica**: 13. 3. 2026.'
+        - coords_lat: 44.6100699
+          coords_long: 22.6455891
+          text: '**Kostol**: 14. 3. 2026.'
+        - coords_lat: 44.6015211
+          coords_long: 22.6867881
+          text: '**Mala Vrbica**: 15. 3. | 16. 3. 2026.'
+        - coords_lat: 44.5839835
+          coords_long: 22.7150126
+          text: '**Velika Vrbica**: 20. 3. 2026.'
+        - coords_lat: 44.5656576
+          coords_long: 22.7421094
+          text: '**Rtkovo**: 20. 3. 2026.'
+        - coords_lat: 44.5266153
+          coords_long: 22.709503
+          text: '**Korbovo**: 21. 3. 2026.'
+        - coords_lat: 44.5586492
+          coords_long: 22.6251689
+          text: '**Vajuga**: 21. 3. 2026.'
+        - coords_lat: 43.5675155
+          coords_long: 22.2556547
+          text: '**Knjževac**: 8. 3. | 19. 3. | 21. 3. | 22. 3. 2026'
+        - coords_lat: 43.5516579
+          coords_long: 22.2884137
+          text: '**Trgovište**: 7. 3. 2026.'
+        - coords_lat: 43.5996982
+          coords_long: 22.2791564
+          text: '**Gornje Zuniče**: 7. 3. 2026.'
+        - coords_lat: 43.5981721
+          coords_long: 22.255733
+          text: '**Štipina**: 7. 3. 2026.'
+        - coords_lat: 43.9688686
+          coords_long: 20.4133745
+          text: '**Brđani**: 31. 1. 2026.'
+        - coords_lat: 44.0102717
+          coords_long: 20.2082248
+          text: '**Pranjani**: 21. 6. 2025. | 16. 8. 2026.'
+        - coords_lat: 44.1407115
+          coords_long: 20.4983279
+          text: '**Rudnik**: 6. 12. 2025. | 5. 6. 2026.'
+        - coords_lat: 44.372776
+          coords_long: 19.6007285
+          text: '**Osečina**: 12. 10. 2025.'
+        - coords_lat: 44.1593154
+          coords_long: 19.9779811
+          text: '**Krčmar**: 16. 11. 2025.'
+        - coords_lat: 44.1859802
+          coords_long: 19.9938059
+          text: '**Golubac**: 22. 11. 2025.'
+        - coords_lat: 44.1900361
+          coords_long: 20.0299964
+          text: '**Osečenica**: 15. 11. 2025.'
+        - coords_lat: 44.2902877
+          coords_long: 20.0678871
+          text: '**Tabanović**: 23. 11. 2025.'
+        - coords_lat: 44.2297199
+          coords_long: 20.0509975
+          text: '**Ključ**: 26. 11. 2025.'
+        - coords_lat: 44.2295242
+          coords_long: 20.1008454
+          text: '**Paštrić**: 26. 10. 2025.'
+        - coords_lat: 44.24276
+          coords_long: 20.1277028
+          text: '**Komanice**: 26. 10. 2025.'
+        - coords_lat: 44.5856829
+          coords_long: 22.5002361
+          text: '**Podvrška**: 9. 2. 2026.'
+        - coords_lat: 44.566781
+          coords_long: 22.538885
+          text: '**Rečica**: 9. 2. 2026.'
+        - coords_lat: 44.5511622
+          coords_long: 22.5721546
+          text: '**Milutinovac**: 8. 2. 2026.'
+        - coords_lat: 44.5199546
+          coords_long: 22.5523342
+          text: '**Velesnica**: 8. 2. 2026.'
+        - coords_lat: 44.4842353
+          coords_long: 22.452723
+          text: '**Brza Palanka**: 8. 2. 2026.'
+        - coords_lat: 43.8602275
+          coords_long: 20.1365353
+          text: '**Lučani**: 22. 2. 2026. | 15. 3. 2026.'
+        - coords_lat: 43.8688788
+          coords_long: 20.1433467
+          text: '**Dljin**: 22. 2. 2026.'
+        - coords_lat: 43.8543049
+          coords_long: 20.2151012
+          text: '**Markovica**: 22. 2. 2026.'
+        - coords_lat: 43.8248985
+          coords_long: 20.2849245
+          text: '**Grab**: 15. 3. 2026.'
+        - coords_lat: 43.8043674
+          coords_long: 20.2797746
+          text: '**Rogača**: 15. 3. 2026.'
+        - coords_lat: 43.8493223
+          coords_long: 20.1896095
+          text: '**Negrišori**: 22. 2. 2026. | 14. 3. 2026.'
+        - coords_lat: 43.8033143
+          coords_long: 20.2129554
+          text: '**Turica**: 14. 3. 2026.'
+        - coords_lat: 43.8196348
+          coords_long: 20.1868629
+          text: '**Puhovo**: 14. 3. 2026.'
+        - coords_lat: 43.8056527
+          coords_long: 20.1770139
+          text: '**Lis**: 15. 3. 2026.'
+        - coords_lat: 43.7814745
+          coords_long: 20.1603841
+          text: '**Donja Kravarica**: 15. 3. 2026.'
+        - coords_lat: 43.7610834
+          coords_long: 20.1862192
+          text: '**Gornja Kravarica**: 15. 3. 2026.'
+        - coords_lat: 43.7934332
+          coords_long: 20.3276681
+          text: '**Goračići**: 14. 3. 2026.'
+        - coords_lat: 43.7772932
+          coords_long: 20.2269416
+          text: '**Guča**: 21. 2. 2026. | 14. 3. 2026.'
+        - coords_lat: 43.7042885
+          coords_long: 20.2323381
+          text: '**Kotraža**: 21. 2. 2026. | 14. 3. 2026.'
+        - coords_lat: 43.7613933
+          coords_long: 20.3043222
+          text: '**Živica**: 21. 2. 2026.'
+        - coords_lat: 43.6742041
+          coords_long: 20.2638959
+          text: '**Vučkovica**: 21. 2. 2026.'
+        - coords_lat: 43.7211471
+          coords_long: 20.2997135
+          text: '**Viča**: 21. 2. 2026.'
+        - coords_lat: 43.7113568
+          coords_long: 20.4068295
+          text: '**Kaona**: 21. 2. 2026.'
+        - coords_lat: 43.7276927
+          coords_long: 20.3696394
+          text: '**Milatovići**: 21. 2. 2026.'
+        - coords_lat: 43.6715967
+          coords_long: 20.339427
+          text: '**Donji Dubac**: 21. 2. 2026.'
+        - coords_lat: 43.7624805
+          coords_long: 20.265017
+          text: '**Lučani**: 21. 2. - 15. 3. 2026.'
+        - coords_lat: 44.0778456
+          coords_long: 22.0991779
+          text: '**Bor**: 28. 2. | 1. 3. 2026.'
+        - coords_lat: 43.8455418
+          coords_long: 19.8976765
+          text: '**Sevojno**: 28. 2. - 22. 3. 2026'
+        - coords_lat: 44.6093983
+          coords_long: 22.6136517
+          text: '**Kladovo**: 8. 2. | 9. 2. | 21. 3. 2026.'
+        - coords_lat: 44.0243159
+          coords_long: 20.4600377
+          text: '**Gornji Milanovac**: 22. 9. 2025. | 27. 6. 2026.'
+        - coords_lat: 42.9951304
+          coords_long: 21.9464271
+          text: '**Leskovac**: 20.09.2025.'
+        - coords_lat: 42.8649674
+          coords_long: 21.9111809
+          text: '**Vučje**: 05.10.2025.'
+        - coords_lat: 42.8904977
+          coords_long: 22.0754695
+          text: '**Grdelica**: 13. 9. 2025. | 9. 8. 2026.'
+        - coords_lat: 42.9652346
+          coords_long: 22.1281077
+          text: '**Vlasotince**: 6. 9. 2025. | 16. 5. 2026.'
+        - coords_lat: 43.4140419
+          coords_long: 22.1230473
+          text: '**Svrljig**: 16. 8. 2025. | 1. 8. 2026.'
+        - coords_lat: 43.58286053367
+          coords_long: 19.525237083435
+          text: '**Stari Priboj**: 28. 9. 2025.'
+        - coords_lat: 43.230478
+          coords_long: 19.7183576
+          text: '**Brodarevo**: 27.09.2025.'
+        - coords_lat: 43.389209
+          coords_long: 19.6493525
+          text: '**Prijepolje**: 27. 9. 2025. | 4. 7. 2026.'
+        - coords_lat: 43.4597045
+          coords_long: 19.8154494
+          text: '**Nova Varoš**: 26. 9. 2025. | 25. 7. 2026.'
+        - coords_lat: 42.9716329
+          coords_long: 20.4544434
+          text: '**Ribariće**: 28.09.2025.'
+        - coords_lat: 42.9903848
+          coords_long: 20.3366918
+          text: '**Tutin**: 28.09.2025.'
+        - coords_lat: 43.3927867
+          coords_long: 20.6363945
+          text: '**Baljevac**: 27.09.2025.'
+        - coords_lat: 43.2869592
+          coords_long: 20.6141348
+          text: '**Raška**: 27. 9. 2025. | 16. 8. 2026.'
+        - coords_lat: 43.2729348
+          coords_long: 19.9991727
+          text: '**Sjenica**: 27.09.2025.'
+        - coords_lat: 44.5404691
+          coords_long: 20.9708342
+          text: '**Mihajlovac**: 21.09.2025.'
+        - coords_lat: 44.3677095
+          coords_long: 21.4076704
+          text: '**Petrovac na Mlavi**: 20. 9. 2025. | 27. 6. 2026.'
+        - coords_lat: 45.5933853
+          coords_long: 19.096404
+          text: '**Sonta**: 17.09.2025.'
+        - coords_lat: 45.6776078
+          coords_long: 19.0854039
+          text: '**Prigrevica**: 16.09.2025.'
+        - coords_lat: 45.812126
+          coords_long: 19.248848
+          text: '**Čonoplja**: 22.09.2025.'
+        - coords_lat: 45.5003693
+          coords_long: 19.6898057
+          text: '**Bačko Dobro Polje**: 24.09.2025.'
+        - coords_lat: 45.1943284
+          coords_long: 19.8932816
+          text: '**Bukovac**: 18.09.2025.'
+        - coords_lat: 45.2806643
+          coords_long: 19.9933725
+          text: '**Budisava**: 18.09.2025.'
+        - coords_lat: 45.874223
+          coords_long: 20.5671278
+          text: '**Nakovo**: 28.09.2025.'
+        - coords_lat: 45.9337654
+          coords_long: 20.4096322
+          text: '**Mokrin**: 28.09.2025.'
+        - coords_lat: 45.0724431
+          coords_long: 20.3253675
+          text: '**Surduk**: 30.09.2025.'
+        - coords_lat: 45.0995183
+          coords_long: 19.861045
+          text: '**Irig**: 20.09.2025.'
+        - coords_lat: 45.1211263
+          coords_long: 21.2960485
+          text: '**Vršac**: 10.09.2025.'
+        - coords_lat: 45.0318784
+          coords_long: 20.8654002
+          text: '**Vladimirovac**: 04.09.2025.'
+        - coords_lat: 44.763869
+          coords_long: 20.5516743
+          text: '**Kaluđerica**: 6. 9. 2025. | 13. 8. 2026.'
+        - coords_lat: 44.1508915
+          coords_long: 20.6624834
+          text: '**Stragari**: 02.08.2025.'
+        - coords_lat: 44.0754732
+          coords_long: 20.8825469
+          text: '**Desimirovac**: 13.07.2025.'
+        - coords_lat: 43.9282169
+          coords_long: 20.718433
+          text: '**Knić**: 19.08.2025.'
+        - coords_lat: 43.0578755
+          coords_long: 21.2550485
+          text: '**Kuršumlijska Banja**: 15.06.2025.'
+        - coords_lat: 43.6440513
+          coords_long: 21.8730724
+          text: '**Sokobanja**: 1. 6. 2025. | 1. 8. 2026.'
+        - coords_lat: 43.3650197
+          coords_long: 21.9682163
+          text: '**Gornji Matejevac**: 26.05.2025.'
+        - coords_lat: 43.3667204
+          coords_long: 22.0003479
+          text: '**Knez Selo**: 26.05.2025.'
+        - coords_lat: 43.3326322
+          coords_long: 22.0285545
+          text: '**Malča**: 26.05.2025.'
+        - coords_lat: 43.2371829
+          coords_long: 21.8519469
+          text: '**Malošište**: 28.05.2025.'
+        - coords_lat: 43.2136212
+          coords_long: 21.8191051
+          text: '**Orljane**: 28.05.2025.'
+        - coords_lat: 43.226145
+          coords_long: 21.732943
+          text: '**Pejkovac**: 28.05.2025.'
+        - coords_lat: 43.1889653
+          coords_long: 21.7111439
+          text: '**Žitorađa**: 28.05.2025.'
+        - coords_lat: 43.2933122
+          coords_long: 22.0072312
+          text: '**Niška Banja**: 25. 5. 2025. | 11. 7. 2026.'
+        - coords_lat: 43.2991818
+          coords_long: 21.9841575
+          text: '**Nikola Tesla**: 25.05.2025.'
+        - coords_lat: 43.3095755
+          coords_long: 21.9659185
+          text: '**Brzi Brod**: 25.05.2025.'
+        - coords_lat: 43.4514156
+          coords_long: 21.7431952
+          text: '**Tešica**: 29.04.2025.'
+        - coords_lat: 43.5003238
+          coords_long: 21.7038036
+          text: '**Moravac**: 29.04.2025.'
+        - coords_lat: 43.5094647
+          coords_long: 21.6949039
+          text: '**Žitkovac**: 29.04.2025.'
+        - coords_lat: 43.5402987
+          coords_long: 21.6304331
+          text: '**Trnjane**: 29.04.2025.'
+        - coords_lat: 43.5295721
+          coords_long: 21.7405707
+          text: '**Glogovica**: 28.04.2025.'
+        - coords_lat: 43.5565829
+          coords_long: 21.6914287
+          text: '**Aleksinački Rudnik**: 28.04.2025.'
+        - coords_lat: 43.5405235
+          coords_long: 21.70884
+          text: '**Aleksinac**: 28.04.2025.'
+        - coords_lat: 43.6026338
+          coords_long: 21.6926994
+          text: '**Subotinac**: 28.04.2025.'
+        - coords_lat: 45.3197968
+          coords_long: 19.3513357
+          text: '**Obrovac**: 09.08.2025.'
+        - coords_lat: 45.4213594
+          coords_long: 20.4797385
+          text: '**Klek**: 12.07.2025.'
+        - coords_lat: 45.3148419
+          coords_long: 20.4461574
+          text: '**Ečka**: 21.05. | 12.07.2025.'
+        - coords_lat: 45.5194794
+          coords_long: 19.5838376
+          text: '**Kucura**: 25.07.2025.'
+        - coords_lat: 45.4833996
+          coords_long: 20.5519957
+          text: '**Žitište**: 22. 5. 2025. | 30. 10. 2026.'
+        - coords_lat: 45.0478559
+          coords_long: 20.0807338
+          text: '**Inđija**: 23.06.2025.'
+        - coords_lat: 45.4543171
+          coords_long: 19.2206219
+          text: '**Deronje**: 16.07.2025.'
+        - coords_lat: 45.9385555
+          coords_long: 19.1645788
+          text: '**Stanišić**: 02.09.2025.'
+        - coords_lat: 45.4401994
+          coords_long: 19.8105722
+          text: '**Sirig**: 03.09.2025.'
+        - coords_lat: 43.7067386
+          coords_long: 20.7098521
+          text: '**Kovanluk**: 03.05.2025.'
+        - coords_lat: 43.2622573
+          coords_long: 22.545029
+          text: '**Temska**: 24.08.2025.'
+        - coords_lat: 43.118911510941
+          coords_long: 22.67650222464
+          text: '**Krupac**: 24.08.2025.'
+        - coords_lat: 43.1277304
+          coords_long: 22.6271347
+          text: '**Poljska Ržana**: 23.08.2025.'
+        - coords_lat: 43.0157433
+          coords_long: 22.7781993
+          text: '**Dimitrovgrad**: 23. 8. 2025. | 31. 7. 2026.'
+        - coords_lat: 43.1660932
+          coords_long: 22.548408
+          text: '**Gnjilan**: 23.08.2025.'
+        - coords_lat: 43.1547342
+          coords_long: 22.5865039
+          text: '**Pirot**: 14.06. | 22.08.2025.'
+        - coords_lat: 43.9335612
+          coords_long: 21.3712355
+          text: '**Ćuprija**: 17. 8. 2025. | 19. 7. 2026.'
+        - coords_lat: 44.2544752
+          coords_long: 20.6797215
+          text: '**Topola**: 16.08.2025.'
+        - coords_lat: 44.2228606
+          coords_long: 20.1552518
+          text: '**Banja Vrujci**: 09.08.2025.'
+        - coords_lat: 44.2616484
+          coords_long: 20.1188766
+          text: '**Maljević**: 09.08.2025.'
+        - coords_lat: 44.2728956
+          coords_long: 20.1443687
+          text: '**Gornji Mušić**: 09.08.2025.'
+        - coords_lat: 44.2790235
+          coords_long: 20.0303005
+          text: '**Klašnić**: 08.08.2025.'
+        - coords_lat: 44.252921
+          coords_long: 20.084082
+          text: '**Mionica**: 08.08.2025.'
+        - coords_lat: 45.4542427
+          coords_long: 19.3363581
+          text: '**Ratkovo**: 01.08.2025.'
+        - coords_lat: 45.7937186
+          coords_long: 18.9339346
+          text: '**Bački Monoštor**: 13.08.2025.'
+        - coords_lat: 45.2295217
+          coords_long: 21.1225158
+          text: '**Plandište**: 09.08.2025.'
+        - coords_lat: 44.8172426
+          coords_long: 20.8755889
+          text: '**Bavanište**: 14.08.2025.'
+        - coords_lat: 44.9906809
+          coords_long: 20.7847751
+          text: '**Banatsko Novo Selo**: 27.08. | 31.08.2025.'
+        - coords_lat: 45.2426175
+          coords_long: 19.8820073
+          text: '**Petrovaradin**: 26.08.2025.'
+        - coords_lat: 45.366371
+          coords_long: 20.772384
+          text: '**Sečanj**: 09.08.2025.'
+        - coords_lat: 45.4465892
+          coords_long: 20.8564493
+          text: '**Jaša Tomić**: 9. 8. 2025. | 25. 4. 2026.'
+        - coords_lat: 45.5952571
+          coords_long: 20.1343581
+          text: '**Novi Bečej**: 10.08.2025. | 19.09.2025.'
+        - coords_lat: 45.5166819
+          coords_long: 20.316299
+          text: '**Melenci**: 03.08.2025.'
+        - coords_lat: 45.4427544
+          coords_long: 20.2984035
+          text: '**Elemir**: 03.08.2025.'
+        - coords_lat: 44.9840388
+          coords_long: 20.0659105
+          text: '**Golubinci**: 22.08.2025.'
+        - coords_lat: 44.8745083
+          coords_long: 20.0891145
+          text: '**Šimanovci**: 08.08.2025.'
+        - coords_lat: 45.0822267
+          coords_long: 19.704213
+          text: '**Bešenovo**: 16.08.2025.'
+        - coords_lat: 45.5198425
+          coords_long: 19.3677289
+          text: '**Lalić**: 31.07.2025.'
+        - coords_lat: 45.0092297
+          coords_long: 20.6372859
+          text: '**Crepaja**: 23.07.2025.'
+        - coords_lat: 45.4009247
+          coords_long: 19.5924038
+          text: '**Kulpin**: 26.07.2025.'
+        - coords_lat: 44.4782165
+          coords_long: 21.6693022
+          text: '**Kučevo**: 26. 7. 2025. | 16. 8. 2026.'
+        - coords_lat: 45.3478444
+          coords_long: 19.7272454
+          text: '**Kisač**: 19.07.2025.'
+        - coords_lat: 44.2596223
+          coords_long: 22.5284373
+          text: '**Miloševo**: 20.07.2025.'
+        - coords_lat: 44.2682198
+          coords_long: 22.5555323
+          text: '**Samarinovac**: 20.07.2025.'
+        - coords_lat: 44.2934937
+          coords_long: 22.5247376
+          text: '**Dušanovac**: 20.07.2025.'
+        - coords_lat: 44.2910717
+          coords_long: 22.3528143
+          text: '**Štubik**: 20.07.2025.'
+        - coords_lat: 44.0941731
+          coords_long: 22.5564366
+          text: '**Rajac**: 19.07.2025.'
+        - coords_lat: 44.1994613
+          coords_long: 22.6036771
+          text: '**Bukovče**: 19.07.2025.'
+        - coords_lat: 44.1959817
+          coords_long: 22.5912054
+          text: '**Kobišnica**: 19.07.2025.'
+        - coords_lat: 44.2271199
+          coords_long: 22.5308921
+          text: '**Negotin**: 19. 7. 2025. | 31. 5. 2026.'
+        - coords_lat: 44.400616
+          coords_long: 22.4028511
+          text: '**Urovica**: 18.07.2025.'
+        - coords_lat: 44.4118525
+          coords_long: 22.4543885
+          text: '**Slatina**: 18.07.2025.'
+        - coords_lat: 44.2333085
+          coords_long: 21.1947272
+          text: '**Svilajnac**: 25.06.2025.'
+        - coords_lat: 45.559439
+          coords_long: 19.2035291
+          text: '**Srpski Miletić**: 16.06.2025.'
+        - coords_lat: 45.4976668
+          coords_long: 19.1960432
+          text: '**Karavukovo**: 29.05. | 07.08.2025.'
+        - coords_lat: 45.5552073
+          coords_long: 19.3245845
+          text: '**Bački Gračac**: 17.06.2025.'
+        - coords_lat: 45.6161513
+          coords_long: 19.2701805
+          text: '**Bački Brestovac**: 18.06.2025.'
+        - coords_lat: 45.6585062
+          coords_long: 19.4562036
+          text: '**Crvenka**: 21.05.2025.'
+        - coords_lat: 45.7032662
+          coords_long: 19.3822068
+          text: '**Sivac**: 15. 6. 2025. | 14. 3. 2026.'
+        - coords_lat: 45.5625734
+          coords_long: 19.4201714
+          text: '**Ruski Krstur**: 11.06.2025.'
+        - coords_lat: 45.6101491
+          coords_long: 19.5301174
+          text: '**Kula**: 15.06.2025.'
+        - coords_lat: 45.6712544
+          coords_long: 18.9817862
+          text: '**Apatin**: 6. 6. 2025. | 18. 12. 2025.'
+        - coords_lat: 45.7727397
+          coords_long: 19.1147036
+          text: '**Sombor**: 21. 5. 2025. - 23. 12. 2025.'
+        - coords_lat: 45.7703765
+          coords_long: 19.2776627
+          text: '**Kljajićevo**: 5. 7. 2025. - 27. 12. 2025.'
+        - coords_lat: 45.1220499
+          coords_long: 20.726906
+          text: '**Padina**: 03.07.2025.'
+        - coords_lat: 45.111874
+          coords_long: 20.6201585
+          text: '**Kovačica**: 28.05.2025.'
+        - coords_lat: 45.2722549
+          coords_long: 20.0897727
+          text: '**Šajkaš**: 23.05.2025.'
+        - coords_lat: 45.4073868
+          coords_long: 19.8876546
+          text: '**Temerin**: 22. 5. 2025. - 25. 12. 2025.'
+        - coords_lat: 45.3577286
+          coords_long: 19.889018
+          text: '**Bački Jarak**: 06. 07. 2025. | 9. 4. 2026.'
+        - coords_lat: 45.2062392
+          coords_long: 19.9411666
+          text: '**Sremski Karlovci**: 31.05.2025.'
+        - coords_lat: 45.5076291
+          coords_long: 19.9237515
+          text: '**Nadalj**: 07.07.2025.'
+        - coords_lat: 45.4732331
+          coords_long: 20.0717969
+          text: '**Čurug**: 5. 5. 2025. | 25. 4. 2026.'
+        - coords_lat: 45.3728199
+          coords_long: 20.0637917
+          text: '**Žabalj**: 05.05. | 21.08.2025.'
+        - coords_lat: 45.3241804
+          coords_long: 20.0653482
+          text: '**Đurđevo**: 05.05.2025. | 01.10.2025.'
+        - coords_lat: 45.4022051
+          coords_long: 19.9860024
+          text: '**Gospođinci**: 06. 7. 2025. | 22. 10. 2025.'
+        - coords_lat: 45.5047575
+          coords_long: 19.5217037
+          text: '**Savino Selo**: 03.06.2025.'
+        - coords_lat: 45.4491119
+          coords_long: 19.6223232
+          text: '**Ravno Selo**: 26.06.2025.'
+        - coords_lat: 45.4533871
+          coords_long: 19.6906852
+          text: '**Zmajevo**: 03.06.2025.'
+        - coords_lat: 45.7069444
+          coords_long: 20.0791667
+          text: '**Bačko Petrovo Selo**: 18.06.2025.'
+        - coords_lat: 45.5334357
+          coords_long: 20.0270428
+          text: '**Bačko Gradište**: 14.05.2025.'
+        - coords_lat: 45.2087575
+          coords_long: 19.7676517
+          text: '**Rakovac**: 09.06.2025.'
+        - coords_lat: 45.2099153
+          coords_long: 19.7209347
+          text: '**Beočin**: 10.05. | 13.06.2025.'
+        - coords_lat: 45.2778472
+          coords_long: 19.568299
+          text: '**Gložan**: 14.06.2025.'
+        - coords_lat: 45.3600646
+          coords_long: 19.5914331
+          text: '**Bački Petrovac**: 24. 5. 2025. | 25. 4. 2026.'
+        - coords_lat: 45.2718195
+          coords_long: 19.5271962
+          text: '**Čelarevo**: 14.05. | 19.06.2025.'
+        - coords_lat: 45.3929334
+          coords_long: 19.4618119
+          text: '**Silbaš**: 05.06.2025.'
+        - coords_lat: 45.4704612
+          coords_long: 19.4595651
+          text: '**Pivnice**: 25.06.2025.'
+        - coords_lat: 45.3043361
+          coords_long: 19.26208
+          text: '**Mladenovo**: 10.06.2025.'
+        - coords_lat: 45.4578901
+          coords_long: 19.5263672
+          text: '**Despotovo**: 21.06.2025.'
+        - coords_lat: 45.4097406
+          coords_long: 19.3005456
+          text: '**Selenča**: 10.06. | 29.07.2025.'
+        - coords_lat: 45.4120269
+          coords_long: 19.112122
+          text: '**Vajska**: 12.06.2025.'
+        - coords_lat: 45.3916793
+          coords_long: 19.2368045
+          text: '**Bač**: 02.06.2025.'
+        - coords_lat: 45.2373534
+          coords_long: 19.7064376
+          text: '**Futog**: 22.05. | 19.06.2025.'
+        - coords_lat: 45.2232006
+          coords_long: 19.8434089
+          text: '**Sremska Kamenica**: 13.06.2025.'
+        - coords_lat: 45.2933912
+          coords_long: 19.7410418
+          text: '**Rumenka**: 20.06.2025.'
+        - coords_lat: 45.2115613
+          coords_long: 19.8052203
+          text: '**Ledinci**: 13.06.2025.'
+        - coords_lat: 45.238562370888
+          coords_long: 20.034453390981
+          text: '**Kovilj**: 20.06.2025.'
+        - coords_lat: 45.3000459
+          coords_long: 19.9420836
+          text: '**Kać**: 20.06.2025.'
+        - coords_lat: 45.2372383
+          coords_long: 19.6225197
+          text: '**Begeč**: 19.06.2025.'
+        - coords_lat: 45.6814172
+          coords_long: 19.6888114
+          text: '**Lovćenac**: 05.06.2025.'
+        - coords_lat: 45.6643631
+          coords_long: 19.6980682
+          text: '**Feketić**: 07.06.2025.'
+        - coords_lat: 45.9668227
+          coords_long: 19.4249265
+          text: '**Bajmok**: 18.05.2025.'
+        - coords_lat: 45.3802683
+          coords_long: 20.3907614
+          text: '**Zrenjanin**: 13.05. | 11.06. | 12.07. | 03.08.2025.'
+        - coords_lat: 44.97807170251
+          coords_long: 19.652069066651
+          text: '**Sremska Mitrovica**: 10.07.2025.'
+        - coords_lat: 44.058544504486
+          coords_long: 20.207050321915
+          text: '**Košutnići**: 21.06.2025.'
+        - coords_lat: 44.0709522
+          coords_long: 20.0593568
+          text: '**Tometino Polje**: 21.06.2025.'
+        - coords_lat: 44.4401166
+          coords_long: 20.6941535
+          text: '**Mladenovac**: 20. 6. 2025. | 16. 5. 2026.'
+        - coords_lat: 44.3992415
+          coords_long: 20.7503274
+          text: '**Kovačevac**: 20.06.2025.'
+        - coords_lat: 44.9444762
+          coords_long: 20.2191291
+          text: '**Nova Pazova**: 23.05.2025.'
+        - coords_lat: 44.8799832
+          coords_long: 19.7706577
+          text: '**Hrtkovci**: 19.06.2025.'
+        - coords_lat: 45.0078322
+          coords_long: 19.8187834
+          text: '**Ruma**: 27.05.2025.'
+        - coords_lat: 44.9924191
+          coords_long: 19.9724508
+          text: '**Putinci**: 18.06.2025.'
+        - coords_lat: 44.8241319
+          coords_long: 19.7943371
+          text: '**Platičevo**: 19.06.2025.'
+        - coords_lat: 44.8494518
+          coords_long: 19.8230064
+          text: '**Nikinci**: 20.06.2025.'
+        - coords_lat: 44.9773216
+          coords_long: 19.8840155
+          text: '**Kraljevci**: 18.06.2025.'
+        - coords_lat: 44.787715
+          coords_long: 19.7063361
+          text: '**Klenak**: 19.06.2025.'
+        - coords_lat: 45.0030325
+          coords_long: 19.9356477
+          text: '**Žarkovac**: 18.06.2025.'
+        - coords_lat: 44.9536871
+          coords_long: 19.9277783
+          text: '**Dobrinci**: 18.06.2025.'
+        - coords_lat: 44.7671879
+          coords_long: 19.8329433
+          text: '**Grabovci**: 20.06.2025.'
+        - coords_lat: 44.7891222
+          coords_long: 19.8185151
+          text: '**Vitojevci**: 20.06.2025.'
+        - coords_lat: 44.8943618
+          coords_long: 19.8643311
+          text: '**Buđanovci**: 20.06.2025.'
+        - coords_lat: 45.1216667
+          coords_long: 19.7922222
+          text: '**Vrdnik**: 25.05.2025.'
+        - coords_lat: 45.130612
+          coords_long: 20.0674051
+          text: '**Beška**: 22.05. | 05.09.2025.'
+        - coords_lat: 44.9975082
+          coords_long: 19.5649928
+          text: '**Laćarak**: 09.06.2025.'
+        - coords_lat: 45.0218413
+          coords_long: 19.4082254
+          text: '**Kuzmin**: 24.05.2025.'
+        - coords_lat: 44.9162107
+          coords_long: 19.7562132
+          text: '**Jarak**: 19.06.2025.'
+        - coords_lat: 44.7527746
+          coords_long: 19.5652294
+          text: '**Slepčević**: 12.06.2025.'
+        - coords_lat: 43.7788972
+          coords_long: 22.2043713
+          text: '**Gornja Bela Reka**: 28.05.-08.06.2025.'
+        - coords_lat: 43.8045823
+          coords_long: 22.1651982
+          text: '**Lenovac**: 28.05.-08.06.2025.'
+        - coords_lat: 43.7571248
+          coords_long: 22.1209246
+          text: '**Lasovo**: 28.05.-08.06.2025.'
+        - coords_lat: 43.9746448
+          coords_long: 22.3995446
+          text: '**Halovo**: 28.05.-08.06.2025.'
+        - coords_lat: 44.0305264
+          coords_long: 22.5010881
+          text: '**Šipikovo**: 28.05.-08.06.2025.'
+        - coords_lat: 44.0155029
+          coords_long: 19.9178052
+          text: '**Brajkovići**: 1. 6. 2025.'
+        - coords_lat: 44.0801249
+          coords_long: 19.8566293
+          text: '**Radanovci**: 1. 6. 2025.'
+        - coords_lat: 44.0506961
+          coords_long: 19.8739085
+          text: '**Dubnica**: 1. 6. 2025.'
+        - coords_lat: 44.0130184
+          coords_long: 19.884417
+          text: '**Galovići**: 1. 6. 2025.'
+        - coords_lat: 44.0293143
+          coords_long: 19.9565028
+          text: '**Mionica**: 31. 5. 2025.'
+        - coords_lat: 44.0539318
+          coords_long: 19.966545
+          text: '**Skakavci**: 31. 5. 2025.'
+        - coords_lat: 44.0563914
+          coords_long: 19.9482952
+          text: '**Rosići**: 31. 5. 2025.'
+        - coords_lat: 44.0673295
+          coords_long: 19.9127841
+          text: '**Stojići**: 30. 5. 2025.'
+        - coords_lat: 44.0785809
+          coords_long: 19.8782781
+          text: '**Drenovci**: 30. 5. 2025.'
+        - coords_lat: 43.9936018
+          coords_long: 20.0015974
+          text: '**Mušići**: 29. 5. 2025.'
+        - coords_lat: 44.0000958
+          coords_long: 19.964812
+          text: '**Subjel**: 29. 5. 2025.'
+        - coords_lat: 44.0054717
+          coords_long: 19.9284267
+          text: '**Ševrljuge**: 29. 5. 2025.'
+        - coords_lat: 43.8506757
+          coords_long: 22.2451487
+          text: '**Šljivar**: 28.05.-08.06.2025.'
+        - coords_lat: 43.8672107
+          coords_long: 22.1959151
+          text: '**Lubnica**: 28.05.-08.06.2025.'
+        - coords_lat: 44.0463164
+          coords_long: 22.323386
+          text: '**Koprivnica**: 28.05.-08.06.2025.'
+        - coords_lat: 44.0330796
+          coords_long: 22.3237461
+          text: '**Jelašnica**: 28.05.-08.06.2025.'
+        - coords_lat: 44.365632
+          coords_long: 19.3628418
+          text: '**Krupanj**: 25. 5. 2025. | 25. 4. 2026.'
+        - coords_lat: 44.225332
+          coords_long: 20.2399384
+          text: '**Ljig**: 25. 5. 2025. | 24. 7. 2026.'
+        - coords_lat: 44.7856888
+          coords_long: 19.3713367
+          text: '**Badovinci**: 23.05.2025.'
+        - coords_lat: 44.8343025
+          coords_long: 19.4795213
+          text: '**Bogatić**: 23. 5. 2025. | 12. 7. 2026.'
+        - coords_lat: 44.8757344
+          coords_long: 20.1867706
+          text: '**Ugrinovci**: 22.05.2025.'
+        - coords_lat: 44.8893072
+          coords_long: 20.1383552
+          text: '**Krnješevci**: 22.05.2025.'
+        - coords_lat: 44.9090756
+          coords_long: 19.9672065
+          text: '**Pećinci**: 22.05.2025.'
+        - coords_lat: 44.5199324
+          coords_long: 20.5753544
+          text: '**Sopot**: 21. 5. 2025. | 27. 6. 2026.'
+        - coords_lat: 44.9846077
+          coords_long: 20.1588763
+          text: '**Stara Pazova**: 18. 5. 2025. | 13. 8. 2025.'
+        - coords_lat: 44.7629166
+          coords_long: 21.5161946
+          text: '**Veliko Gradište**: 18. 5. 2025. | 2. 8. 2026.'
+        - coords_lat: 44.3658207
+          coords_long: 20.9579781
+          text: '**Smederevska Palanka**: 17. 5. 2025. | 17. 5. 2026.'
+        - coords_lat: 44.3699164
+          coords_long: 21.016793
+          text: '**Mala Plana**: 17.05.2025.'
+        - coords_lat: 44.4092503
+          coords_long: 21.0482186
+          text: '**Krnjevo**: 17. 5. 2025. | 9. 8. 2026.'
+        - coords_lat: 44.2038226
+          coords_long: 20.9724037
+          text: '**Vučić**: 16.05.2025.'
+        - coords_lat: 44.2253438
+          coords_long: 20.9801511
+          text: '**Rača**: 16.05.2025.'
+        - coords_lat: 44.1545512
+          coords_long: 21.0801314
+          text: '**Batočina**: 16.05.2025.'
+        - coords_lat: 46.1022848
+          coords_long: 19.7634537
+          text: '**Palić**: 15. 5. 2025. | 8. 3. 2026.'
+        - coords_lat: 45.9218656
+          coords_long: 19.7627015
+          text: '**Čantavir**: 15.05.2025.'
+        - coords_lat: 45.8121657
+          coords_long: 19.6304705
+          text: '**Bačka Topola**: 15.05. | 08.06.2025.'
+        - coords_lat: 46.1002058
+          coords_long: 19.6653273
+          text: '**Subotica**: 15. 5. 2025. | 23. 3. 2026.'
+        - coords_lat: 44.0440849
+          coords_long: 20.3870953
+          text: '**Takovo**: 14. 5. 2025. | 9. 8. 2026.'
+        - coords_lat: 44.456203
+          coords_long: 20.0737772
+          text: '**Ub**: 14.05.2025.'
+        - coords_lat: 44.6199926
+          coords_long: 21.1854
+          text: '**Požarevac**: 13. 5. 2025. | 24. 7. 2026.'
+        - coords_lat: 44.7149424
+          coords_long: 21.1710906
+          text: '**Kostolac**: 13. 5. 2025. | 9. 5. 2026.'
+        - coords_lat: 43.2343484
+          coords_long: 21.5884422
+          text: '**Prokuplje**: 11.05.2025.'
+        - coords_lat: 43.2828198
+          coords_long: 21.7203782
+          text: '**Merošina**: 11.05.2025.'
+        - coords_lat: 44.7111946
+          coords_long: 21.6055621
+          text: '**Vinci**: 11.05.2025.'
+        - coords_lat: 44.6850733
+          coords_long: 21.5996526
+          text: '**Usije**: 11.05.2025.'
+        - coords_lat: 44.6531108
+          coords_long: 21.6305205
+          text: '**Golubac**: 11.05.2025.'
+        - coords_lat: 43.1380502
+          coords_long: 21.2717791
+          text: '**Kuršumlija**: 10.05.2025.'
+        - coords_lat: 43.2955155
+          coords_long: 21.2865967
+          text: '**Blace**: 10.05.2025.'
+        - coords_lat: 44.9532153
+          coords_long: 20.2824281
+          text: '**Novi Banovci**: 10.05.2025.'
+        - coords_lat: 43.9263603
+          coords_long: 22.3314124
+          text: '**Veliki Izvor**: 09.05. | 28.05.-08.06.2025.'
+        - coords_lat: 44.1139575
+          coords_long: 22.3200155
+          text: '**Salaš**: 09.05. | 28.05.-08.06.2025.'
+        - coords_lat: 43.8581033
+          coords_long: 22.2930614
+          text: '**Grljan**: 09.05. | 28.05.-08.06.2025.'
+        - coords_lat: 44.9001235
+          coords_long: 21.4230044
+          text: '**Bela Crkva**: 09.05.2025.'
+        - coords_lat: 43.9009535
+          coords_long: 22.2136375
+          text: '**Zvezdan**: 08.05. | 28.05.-08.06.2025.'
+        - coords_lat: 43.9030925
+          coords_long: 22.2785536
+          text: '**Zaječar**: 08.-10.05. | 28.05.-08.06.2025.'
+        - coords_lat: 44.0078458
+          coords_long: 22.2711874
+          text: '**Rgotina**: 08.05 | 28.05.-08.06.2025.'
+        - coords_lat: 43.9612639
+          coords_long: 22.2387446
+          text: '**Nikoličevo**: 08.05. | 28.05.-08.06.2025.'
+        - coords_lat: 45.4137131
+          coords_long: 19.6997016
+          text: '**Stepanovićevo**: 08.05.2025.'
+        - coords_lat: 45.3627931
+          coords_long: 19.5320721
+          text: '**Maglić**: 08.05. | 24.05.2025.'
+        - coords_lat: 45.5058662
+          coords_long: 19.2597368
+          text: '**Odžaci**: 07.05. | 06.08.2025.'
+        - coords_lat: 45.126371
+          coords_long: 19.2291509
+          text: '**Šid**: 07.05. | 20.08.2025.'
+        - coords_lat: 45.2500976
+          coords_long: 19.3897302
+          text: '**Bačka Palanka**: 07.05.2025.'
+        - coords_lat: 44.2971582
+          coords_long: 20.2640633
+          text: '**Dudovica**: 05.05.2025.'
+        - coords_lat: 44.3698615
+          coords_long: 20.1658213
+          text: '**Lajkovac**: 04.05.2025.'
+        - coords_lat: 44.2708719
+          coords_long: 19.8863297
+          text: '**Valjevo**: 4. 5. 2025. | 14. 8. 2026.'
+        - coords_lat: 43.7234519
+          coords_long: 20.6870792
+          text: '**Kraljevo**: 3. 5. 2025. | 1. 8. 2026.'
+        - coords_lat: 43.6893066
+          coords_long: 20.6093678
+          text: '**Mataruška Banja**: 03.05.2025.'
+        - coords_lat: 43.7654372
+          coords_long: 20.6285647
+          text: '**Adrani**: 03.05.2025.'
+        - coords_lat: 43.7465089
+          coords_long: 20.7227096
+          text: '**Sirča**: 03.05.2025.'
+        - coords_lat: 44.6651048
+          coords_long: 20.9271115
+          text: '**Smederevo**: 29.04.2025.'
+        - coords_lat: 44.7412405
+          coords_long: 20.9781361
+          text: '**Kovin**: 29.04.2025.'
+        - coords_lat: 44.7959786
+          coords_long: 21.0666655
+          text: '**Gaj**: 29.04.2025.'
+        - coords_lat: 43.8263227
+          coords_long: 20.105195
+          text: '**Pilatovići**: 26.04.2025.'
+        - coords_lat: 43.8053585
+          coords_long: 20.1239919
+          text: '**Lopaš**: 26.04.2025.'
+        - coords_lat: 43.9971574
+          coords_long: 19.9071184
+          text: '**Kosjerić**: 26.04.2025. | 28.05.-08.06.2025.'
+        - coords_lat: 43.8564957
+          coords_long: 19.840273
+          text: '**Užice**: 25. 04. | 11. 10. 2025.'
+        - coords_lat: 43.8183343
+          coords_long: 20.1148939
+          text: '**Prilipac**: 25.04.2025.'
+        - coords_lat: 43.9159801
+          coords_long: 20.0984573
+          text: '**Papratište**: 25.04.2025.'
+        - coords_lat: 43.7900565
+          coords_long: 20.085926
+          text: '**Milićevo Selo**: 25.04.2025.'
+        - coords_lat: 43.7505484
+          coords_long: 20.1003115
+          text: '**Arilje**: 25. 4. 2025. | 26. 7. 2026.'
+        - coords_lat: 43.8914332
+          coords_long: 20.3491624
+          text: '**Čačak**: 24. 4. 2025. | 2. 8. 2026.'
+        - coords_lat: 43.9160728
+          coords_long: 20.0797891
+          text: '**Tabanovići**: 24.04.2025.'
+        - coords_lat: 43.9020051
+          coords_long: 20.0536537
+          text: '**Loret**: 24.04.2025.'
+        - coords_lat: 43.8630475
+          coords_long: 20.0462656
+          text: '**Bakionica**: 24.04.2025.'
+        - coords_lat: 45.2495309
+          coords_long: 19.756395
+          text: '**Veternik**: 23.04. | 19.06.2025.'
+        - coords_lat: 43.845981
+          coords_long: 20.0356852
+          text: '**Požega**: 23. 4. 2025. | 1. 8. 2026.'
+        - coords_lat: 43.9624881
+          coords_long: 20.0782013
+          text: '**Gornja Dobrinja**: 23. 4. 2025. | 1. 8. 2026.'
+        - coords_lat: 43.9388678
+          coords_long: 20.0571298
+          text: '**Srednja Dobrinja**: 23. 4. 2025. | 1. 8. 2026.'
+        - coords_lat: 43.929859
+          coords_long: 20.040822
+          text: '**Donja Dobrinja**: 23.04.2025.'
+        - coords_lat: 44.335289818157
+          coords_long: 20.584636685089
+          text: '**Orašac**: 23. 04. 2025. | 18. 1. 2026.'
+        - coords_lat: 44.3072663
+          coords_long: 20.5570451
+          text: '**Aranđelovac**: 23.04. |28.08.2025.'
+        - coords_lat: 44.467035364699
+          coords_long: 20.283439634659
+          text: '**Veliki Crljeni**: 16.04.2025.'
+        - coords_lat: 44.3800988
+          coords_long: 20.4050622
+          text: '**Rudovci**: 16.04.2025.'
+        - coords_lat: 44.3815176
+          coords_long: 20.261033
+          text: '**Lazarevac**: 16.04.2025.'
+        - coords_lat: 44.398097
+          coords_long: 20.3709535
+          text: '**Baroševac**: 16.04.2025.'
+        - coords_lat: 44.3324574
+          coords_long: 21.075786
+          text: '**Velika Plana**: 13. 4. 2025. | 7. 8. 2026.'
+        - coords_lat: 44.1854337
+          coords_long: 21.1047905
+          text: '**Lapovo**: 13. 4. 2025. | 3. 5. 2026.'
+        - coords_lat: 43.9794256
+          coords_long: 21.2607688
+          text: '**Jagodina**: 13. 4. 2025. | 9. 5. 2026.'
+        - coords_lat: 45.7262466
+          coords_long: 20.6912659
+          text: '**Srpska Crnja**: 12.04.2025.'
+        - coords_lat: 45.8300065
+          coords_long: 20.4653054
+          text: '**Kikinda**: 12.04. | 24.05.2025.'
+        - coords_lat: 45.6153745
+          coords_long: 20.0490085
+          text: '**Bečej**: 12.04.2025.'
+        - coords_lat: 45.568028
+          coords_long: 19.6470089
+          text: '**Vrbas**: 11. 4. 2025. - 24. 12. 2025.'
+        - coords_lat: 45.5376971
+          coords_long: 19.8549648
+          text: '**Turija**: 11. 4. 2025. | 8. 4. 2026.'
+        - coords_lat: 45.5484758
+          coords_long: 19.7911219
+          text: '**Srbobran**: 11. 4. 2025. | 12. 6. 2026.'
+        - coords_lat: 43.1363535
+          coords_long: 20.5112273
+          text: '**Novi Pazar**: 08.04. | 31.07.2025. | 26.09.2025.'
+        - coords_lat: 43.3211301
+          coords_long: 21.8959232
+          text: '**Niš**:'
+        - coords_lat: 43.58264
+          coords_long: 21.3264811
+          text: '**Kruševac**: 6. 4. 2025. | 19. 7. 2026.'
+        - coords_lat: 44.8647768
+          coords_long: 20.6671319
+          text: '**Strelište**: 5. 4. 2025. | 9. 5. 2026.'
+        - coords_lat: 44.8100472
+          coords_long: 20.6998149
+          text: '**Starčevo**: 05.04.2025. | 02.10.2025.'
+        - coords_lat: 45.0044137
+          coords_long: 20.4858976
+          text: '**Sefkerin**: 5. 4. 2025. | 17. 5. 2026.'
+        - coords_lat: 44.873649194271
+          coords_long: 20.648910999298
+          text: '**Pančevo**: 5. 4. 2025. | 20. 6. 2026.'
+        - coords_lat: 45.0487194
+          coords_long: 20.4331827
+          text: '**Opovo**: 5. 4. 2025. | 17. 5. 2026.'
+        - coords_lat: 44.7607631
+          coords_long: 20.7310487
+          text: '**Omoljica**: 05. 4. 2025. | 9. 5. 2026.'
+        - coords_lat: 44.9665856
+          coords_long: 20.6995481
+          text: '**Kačarevo**: 5. 4. 2025. | 9. 5. 2026.'
+        - coords_lat: 44.9471243
+          coords_long: 20.595162
+          text: '**Jabuka**: 05. 04. 2025. | 7. 4. 2026.'
+        - coords_lat: 44.740425150063
+          coords_long: 20.703083035187
+          text: '**Ivanovo**: 05.04.2025.'
+        - coords_lat: 44.902196511324
+          coords_long: 20.88092422171
+          text: '**Dolovo**: 05. 4. 2025. | 5. 11. 2025.'
+        - coords_lat: 45.0689128
+          coords_long: 20.5995487
+          text: '**Debeljača**: 05.04.2025.'
+        - coords_lat: 44.748324250544
+          coords_long: 19.710983263794
+          text: '**Šabac**: 4. 4. 2025. | 1. 8. 2026.'
+        - coords_lat: 44.7708247
+          coords_long: 19.6547859
+          text: '**Majur**: 04.04.2025.'
+        - coords_lat: 44.73064483604
+          coords_long: 19.760138511265
+          text: '**Mišar**: 04.04.2025.'
+        - coords_lat: 44.6158293
+          coords_long: 19.7851041
+          text: '**Vladimirci**: 4. 4. 2025. | 18. 8. 2026.'
+        - coords_lat: 44.0130251
+          coords_long: 20.91925
+          text: '**Kragujevac**:'
+        - coords_lat: 44.4679915
+          coords_long: 19.8203527
+          text: '**Koceljeva**: 04.04.2025.'
+        - coords_lat: 45.2043941
+          coords_long: 20.3060414
+          text: '**Titel**: 30.03.2025.'
+        - coords_lat: 45.1452359
+          coords_long: 20.4818833
+          text: '**Sakule**: 30. 3. 2025. | 16. 5. 2026.'
+        - coords_lat: 45.207496
+          coords_long: 20.3813491
+          text: '**Perlez**: 30.03.2025.'
+        - coords_lat: 45.187658
+          coords_long: 20.3186927
+          text: '**Knićanin**: 30.03.2025.'
+        - coords_lat: 45.1903495
+          coords_long: 20.5131341
+          text: '**Idvor**: 30.03.2025.'
+        - coords_lat: 45.189364
+          coords_long: 20.4735842
+          text: '**Farkaždin**: 30.03.2025.'
+        - coords_lat: 45.1073687
+          coords_long: 20.3852794
+          text: '**Čenta**: 23.03.2025.'
+        - coords_lat: 44.5309221
+          coords_long: 19.2237478
+          text: '**Loznica**: 22. 3. 2025. | 5. 7. 2026.'
+        - coords_lat: 44.5191667
+          coords_long: 19.3380556
+          text: '**Gornje Nedeljice**: 22.03.2025.'
+        - coords_lat: 44.4339252
+          coords_long: 20.875859
+          text: '**Azanja**: 19.03.2025.'
+        - coords_lat: 44.578035
+          coords_long: 20.4160478
+          text: '**Barajevo**: 13.03.2025.'
+        - coords_lat: 44.655962496153
+          coords_long: 20.207153317169
+          text: '**Obrenovac**: 12. 3. 2025. | 13. 8. 2026.'
+        - coords_lat: 43.9653158
+          coords_long: 19.2759904
+          text: '**Jagoštica**: 09.03.2025.'
+        - coords_lat: 43.9712226
+          coords_long: 19.5660149
+          text: '**Bajina Bašta**: 09.03.2025.'
+        - coords_lat: 45.2551338
+          coords_long: 19.8451756
+          text: '**Novi Sad**:'
+        - coords_lat: 44.8178131
+          coords_long: 20.4568974
+          text: '**Beograd**:'
+    special: default
+  - title: Ко смо ми?
+    text: |-
+      Ми смо студенти са различитих факултета, окупљени око заједничке идеје да покренемо дијалог са грађанима широм Србије. Наша иницијатива, „Студент у сваком селу“, проистекла је из потребе да се чује глас младих и да се успостави комуникација са људима у свим деловима наше земље.
+
+      Верујемо да је отворен разговор кључ за разумевање и решавање проблема у друштву. Кроз посете местима широм Србије, желимо да слушамо, учимо и делимо идеје са грађанима, без обзира на њихова уверења или ставове.
+    special: default
+  - title: Зашто радимо ово?
+    text: 'Зато што верујемо да студенти имају право да се чују и да људи имају право да знају. У времену у ком се важне приче све чешће прећуткују, одлучили смо да не будемо тихи. Кроз ову иницијативу желимо да отворимо дијалог: о томе шта нас мучи, шта тражимо, и зашто не пристајемо на мање. Знамо да постоје питања, сумње, неповерење  и управо зато долазимо лично, да одговоримо на све.'
+    special: default
+  - title: Како да нас препознате?
+    text: На сам дан акције, неће вам бити тешко да нас уочите. Сваки студент носи акредитацију са својим именом и факултетом. Ради лакше уочљивости, често носимо и додатне ознаке попут маркера или грађевинских кацига. На самој локацији препознаћете беле столове обележене банерима који јасно указују на то ко смо и шта желимо. Све то чинимо како би свака особа која нам приђе знала да је добродошла, да желимо да чујемо њену причу, и да верујемо да се дијалог гради кроз отворен и искрен разговор.
+    special: default
+  - id: kontakt
+    title: Како да нас контактирате?
+    link_text: Анекта за позив
+    link: https://anketa.studenti.org.rs/sr/surveys/160ea4f5-528c-48ef-8d45-266cd2ba4ebf
+    text: |-
+      Отворени смо за питања, сугестије, критике и сарадњу. Ако желите да нас угостите у свом месту, да поделите своју причу или да се укључите у иницијативу, пишите нам:
+
+      - **Email**: [kontakt@suss.rs](mailto:kontakt@suss.rs)
+      - **Instagram**: [@studentusvakomselu](https://www.instagram.com/studentusvakomselu)
+      - **Twitter**: [@studentuselu](https://x.com/studentuselu)
+      - **Facebook**: [Student U Svakom Selu](https://www.facebook.com/studentuselu/)
+
+      Имате предлоге за места која треба да посетимо? Попуните анкету!
+    special: default
+---
