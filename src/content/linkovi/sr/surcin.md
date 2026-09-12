@@ -3,7 +3,7 @@ title: Сурчин
 link: surcin
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: surcin@studenti.org.rs
     link: mailto:surcin@studenti.org.rs
   - type: instagram

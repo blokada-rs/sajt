@@ -3,7 +3,7 @@ title: Велико Градиште
 link: veliko_gradiste
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: veliko_gradiste@studenti.org.rs
     link: mailto:veliko_gradiste@studenti.org.rs
   - type: instagram

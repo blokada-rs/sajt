@@ -3,7 +3,7 @@ title: Уб
 link: ub
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: ub@studenti.org.rs
     link: mailto:ub@studenti.org.rs
   - type: instagram

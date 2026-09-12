@@ -3,7 +3,7 @@ title: Смедеревска Паланка
 link: smederevska_palanka
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: smederevska_palanka@studenti.org.rs
     link: mailto:smederevska_palanka@studenti.org.rs
   - type: instagram

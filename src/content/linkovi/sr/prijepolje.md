@@ -3,7 +3,7 @@ title: Пријепоље
 link: prijepolje
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: prijepolje@studenti.org.rs
     link: mailto:prijepolje@studenti.org.rs
   - type: instagram

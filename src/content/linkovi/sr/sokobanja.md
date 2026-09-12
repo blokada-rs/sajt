@@ -3,7 +3,7 @@ title: Сокобања
 link: sokobanja
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: sokobanja@studenti.org.rs
     link: mailto:sokobanja@studenti.org.rs
   - type: web-bitno

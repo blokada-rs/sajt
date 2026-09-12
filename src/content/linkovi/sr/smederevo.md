@@ -3,7 +3,7 @@ title: Смедерево
 link: smederevo
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: smederevo@studenti.org.rs
     link: mailto:smederevo@studenti.org.rs
   - type: instagram

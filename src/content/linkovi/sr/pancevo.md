@@ -3,7 +3,7 @@ title: Панчево
 link: pancevo
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: pancevo@studenti.org.rs
     link: mailto:pancevo@studenti.org.rs
   - type: instagram

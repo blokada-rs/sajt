@@ -3,7 +3,7 @@ title: Тител
 link: titel
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: titel@studenti.org.rs
     link: mailto:titel@studenti.org.rs
 ---

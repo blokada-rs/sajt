@@ -3,7 +3,7 @@ title: Брус
 link: brus
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: brus@studenti.org.rs
     link: mailto:brus@studenti.org.rs
   - type: instagram

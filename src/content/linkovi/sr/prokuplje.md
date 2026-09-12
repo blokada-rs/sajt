@@ -3,7 +3,7 @@ title: Прокупље
 link: prokuplje
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: prokuplje@studenti.org.rs
     link: mailto:prokuplje@studenti.org.rs
 ---

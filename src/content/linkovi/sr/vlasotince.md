@@ -3,7 +3,7 @@ title: Власотинце
 link: vlasotince
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: vlasotince@studenti.org.rs
     link: mailto:vlasotince@studenti.org.rs
   - type: instagram

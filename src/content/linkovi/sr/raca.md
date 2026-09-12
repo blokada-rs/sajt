@@ -3,7 +3,7 @@ title: Рача
 link: raca
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: raca@studenti.org.rs
     link: mailto:raca@studenti.org.rs
   - type: instagram

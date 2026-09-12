@@ -3,7 +3,7 @@ title: Шабац
 link: sabac
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: sabac@studenti.org.rs
     link: mailto:sabac@studenti.org.rs
   - type: instagram

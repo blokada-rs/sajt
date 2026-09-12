@@ -3,7 +3,7 @@ title: Параћин
 link: paracin
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: paracin@studenti.org.rs
     link: mailto:paracin@studenti.org.rs
   - type: instagram

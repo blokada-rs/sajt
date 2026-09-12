@@ -3,7 +3,7 @@ title: Врњачка Бања
 link: vrnjacka_banja
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: vrnjacka_banja@studenti.org.rs
     link: mailto:vrnjacka_banja@studenti.org.rs
   - type: instagram

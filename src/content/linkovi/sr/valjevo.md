@@ -3,7 +3,7 @@ title: Ваљево
 link: valjevo
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: valjevo@studenti.org.rs
     link: mailto:valjevo@studenti.org.rs
   - type: instagram

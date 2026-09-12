@@ -3,7 +3,7 @@ title: Зајечар
 link: zajecar
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: zajecar@studenti.org.rs
     link: mailto:zajecar@studenti.org.rs
   - type: instagram

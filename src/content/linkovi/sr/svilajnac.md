@@ -3,7 +3,7 @@ title: Свилајнац
 link: svilajnac
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: svilajnac@studenti.org.rs
     link: mailto:svilajnac@studenti.org.rs
   - type: instagram

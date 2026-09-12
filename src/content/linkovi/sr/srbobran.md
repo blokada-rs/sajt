@@ -3,7 +3,7 @@ title: Србобран
 link: srbobran
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: srbobran@studenti.org.rs
     link: mailto:srbobran@studenti.org.rs
 ---

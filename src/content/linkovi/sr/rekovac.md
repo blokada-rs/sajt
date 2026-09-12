@@ -3,7 +3,7 @@ title: Рековац
 link: rekovac
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: rekovac@studenti.org.rs
     link: mailto:rekovac@studenti.org.rs
   - type: instagram

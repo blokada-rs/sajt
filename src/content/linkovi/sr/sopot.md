@@ -3,7 +3,7 @@ title: Сопот
 link: sopot
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: sopot@studenti.org.rs
     link: mailto:sopot@studenti.org.rs
   - type: instagram

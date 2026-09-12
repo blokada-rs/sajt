@@ -3,7 +3,7 @@ title: Пожега
 link: pozega
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: pozega@studenti.org.rs
     link: mailto:pozega@studenti.org.rs
   - type: instagram

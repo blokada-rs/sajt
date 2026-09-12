@@ -3,7 +3,7 @@ title: Пећинци
 link: pecinci
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: pecinci@studenti.org.rs
     link: mailto:pecinci@studenti.org.rs
 ---

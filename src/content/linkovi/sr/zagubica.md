@@ -3,7 +3,7 @@ title: Жагубица
 link: zagubica
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: zagubica@studenti.org.rs
     link: mailto:zagubica@studenti.org.rs
   - type: instagram

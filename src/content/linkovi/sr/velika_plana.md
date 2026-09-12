@@ -3,7 +3,7 @@ title: Велика Плана
 link: velika_plana
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: velika_plana@studenti.org.rs
     link: mailto:velika_plana@studenti.org.rs
   - type: instagram

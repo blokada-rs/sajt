@@ -3,7 +3,7 @@ title: Прибој
 link: priboj
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: priboj@studenti.org.rs
     link: mailto:priboj@studenti.org.rs
   - type: instagram

@@ -3,7 +3,7 @@ title: Ужице
 link: uzice
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: uzice@studenti.org.rs
     link: mailto:uzice@studenti.org.rs
   - type: instagram

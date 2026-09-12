@@ -3,7 +3,7 @@ title: Трстеник
 link: trstenik
 type: ot
 linkovi:
-  - type: mail-bitno
+  - type: mail
     naslov: trstenik@studenti.org.rs
     link: mailto:trstenik@studenti.org.rs
   - type: instagram
