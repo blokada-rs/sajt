@@ -50,29 +50,25 @@ const { frontmatter } = await file("ostalo", lang);
   description={description}
   image={heroImage.src}
 >
-  {
-    expectedLang !== lang && (
-      <div class="full-width">
-        This page is currently not translated to English. Showing the
-        untranslated version.
-      </div>
-    )
-  }
+  {expectedLang !== lang && (
+    <div class="full-width">
+      This page is currently not translated to English. Showing the untranslated
+      version.
+    </div>
+  )}
   <article>
     <div class="hero-image">
-      {
-        heroImage && (
-          <Picture
-            fetchpriority="high"
-            transition:name={Astro.originPathname}
-            formats={["avif", "webp"]}
-            width={1020}
-            src={heroImage}
-            loading="eager"
-            alt=""
-          />
-        )
-      }
+      {heroImage && (
+        <Picture
+          fetchpriority="high"
+          transition:name={Astro.originPathname}
+          formats={["avif", "webp"]}
+          width={1020}
+          src={heroImage}
+          loading="eager"
+          alt=""
+        />
+      )}
     </div>
     <div class="prose">
       <div class="title">
@@ -84,20 +80,18 @@ const { frontmatter } = await file("ostalo", lang);
         <hr />
       </div>
 
-      {
-        live_embed && (
-          <div>
-            <strong>{frontmatter.pratite_live}</strong>
-            <br />
-            <iframe
-              class="live-embed"
-              src={`https://www.youtube-nocookie.com/embed/${live_embed}`}
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            />
-          </div>
-        )
-      }
+      {live_embed && (
+        <div>
+          <strong>{frontmatter.pratite_live}</strong>
+          <br />
+          <iframe
+            class="live-embed"
+            src={`https://www.youtube-nocookie.com/embed/${live_embed}`}
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      )}
 
       {map && <Mapa data={JSON.stringify(map)} />}
 
@@ -112,7 +106,6 @@ const { frontmatter } = await file("ostalo", lang);
 
 <style>
   .hero-image {
-    margin-top: 2rem;
     width: 100%;
   }
 
