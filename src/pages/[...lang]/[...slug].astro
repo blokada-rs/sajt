@@ -1,7 +1,7 @@
 ---
 import Base from "@layouts/Base.astro";
-import { collection, collectionIDs, entry, langs } from "@scripts/i18n";
-import { type CollectionEntry, render } from "astro:content";
+import { collection,collectionIDs,entry,langs } from "@scripts/i18n";
+import { type CollectionEntry,render } from "astro:content";
 
 import { Icon } from "astro-icon/components";
 import { Picture } from "astro:assets";
@@ -10,6 +10,8 @@ import Live from "@components/Live.astro";
 import Mapa from "@components/Mapa.astro";
 import SectionLink from "@components/SectionLink.astro";
 import Vesti from "@components/Vesti.astro";
+
+import slsp from "@assets/images/slsp.png";
 
 const { lang } = Astro.params;
 if (typeof lang === "undefined") {
@@ -55,13 +57,15 @@ const live = vesti.filter((vest) => vest.data.live && !vest.data.archived);
       <>
         <div class="title">
           <Picture
+            class="cover"
             formats={["avif", "webp"]}
             width={1020}
             src={frontmatter.heroImage}
             loading="eager"
             alt=""
           />
-          <h1>{frontmatter.title}</h1>
+
+          {frontmatter.link == "index"? <Picture class="slsp" src={slsp} alt={frontmatter.title} /> : <h1>{frontmatter.title}</h1>}
 
           <div class="square" />
           <div class="square" />
@@ -99,11 +103,23 @@ const live = vesti.filter((vest) => vest.data.live && !vest.data.archived);
     margin-block: 3rem;
   }
 
-  .title :is(picture, img) {
+  .title .cover {
     position: absolute;
     width: 100%;
     height: 100%;
+    inset: 0;
+    z-index: -1;
     object-fit: cover;
+  }
+
+  .title .slsp {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    inset: 0;
+    margin: auto;
+    z-index: 2;
+    object-fit: contain;
   }
 
   .title::before {
