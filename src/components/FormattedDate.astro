@@ -20,26 +20,22 @@ const locale = (lang?: string) => {
 ---
 
 <time datetime={date.toISOString()}>
-  {
-    time && (
-      <>
-        <strong>
-          {date.toLocaleTimeString(locale(lang), {
-            hour: "numeric",
-            minute: "numeric",
-            timeZone: "UTC",
-          })}
-        </strong>{" "}
-        |
-      </>
-    )
-  }
-  {
-    date.toLocaleDateString(locale(lang), {
-      year: "numeric",
-      month: "short",
-      day: "numeric",
-      timeZone: "UTC",
-    })
-  }
+  {time && (
+    <>
+      <strong>
+        {date.toLocaleTimeString(locale(lang), {
+          hour: "numeric",
+          minute: "numeric",
+          timeZone: "UTC",
+        })}
+      </strong>{" "}
+      |
+    </>
+  )}
+  {date.toLocaleDateString(locale(lang), {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+    timeZone: "UTC",
+  })}
 </time>
