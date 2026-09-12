@@ -31,7 +31,7 @@ const socialIcons = [
 
 <footer>
   <div>
-    <span>{frontmatter.studenti_u_blokadi}</span>
+    <a class="clear" href="/">{frontmatter.studenti_u_blokadi}</a>
     <div class="socials">
       {
         socialIcons.map(({ label, icon, link }) => (
@@ -74,7 +74,7 @@ const socialIcons = [
     display: flex;
   }
 
-  span {
+  a {
     flex-grow: 1;
   }
 </style>
