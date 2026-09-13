@@ -3,7 +3,10 @@ title: Јагодина
 link: jagodina
 type: ot
 linkovi:
-  - type: mail 
+  - type: web-bitno
+    naslov: Јагодина - укључи се!
+    link: https://docs.google.com/forms/d/e/1FAIpQLScCgEYXJrujduRKgH9BBxcIqPu3TMVyAtvP67L3rky3lNEm6Q/viewform?usp=header
+  - type: mail
     naslov: jagodina@studenti.org.rs
     link: mailto:jagodina@studenti.org.rs
   - type: instagram
