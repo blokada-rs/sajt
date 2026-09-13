@@ -5,7 +5,7 @@ live: false
 pubDate: 2026-09-13T17:45:00
 updatedDate: 2026-09-13T17:45:00
 heroImage: '@assets/images/pobedniksajt.webp'
-archived: true
+archived: false
 description: 14. септембра у 17.00 часова окупљамо се испред Ректората Универзитета у Београду, одакле заједно крећемо Путем победника!
 ---
 
