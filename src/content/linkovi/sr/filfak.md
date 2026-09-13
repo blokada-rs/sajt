@@ -12,7 +12,7 @@ linkovi:
     link: https://x.com/blokadafilfak
   - type: facebook
     naslov: Facebook профил
-    link: https://www.facebook.com/share/1BPfvh29MA/
+    link: https://www.facebook.com/share/19evg8qPqg/
   - type: web
     naslov: Блокадни часопис
     link: https://filoblok.info
