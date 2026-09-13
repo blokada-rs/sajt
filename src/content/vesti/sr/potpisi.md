@@ -291,7 +291,7 @@ timeline:
     tekst: |-
       Видимо се испред ректората Универзитета у Београду!
 
-      <SectionLink link="https://studenti.org.rs/vesti/putem_pobednika" text="Путем победника" />
+      [Више детаља о скупу](/vesti/putem_pobednika)
   - naslov: Где можете потписати у недељу?
     datum: 2026-09-12T18:00:00
     tekst: |-
