@@ -1,7 +1,7 @@
 ---
 link: potpisi
 title: Потпиши за победу
-live: true
+live: false
 pubDate: 2026-09-11T15:37:00
 updatedDate: 2026-09-11T15:41:00
 heroImage: '@assets/images/photo_5845930482976100754_y.webp'
