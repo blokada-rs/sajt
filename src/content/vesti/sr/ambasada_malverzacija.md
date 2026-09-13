@@ -1,6 +1,6 @@
 ---
 link: ambasada_malverzacija
-title: '## Колективни годишњи или губитак права гласа'
+title: Колективни годишњи или губитак права гласа
 live: false
 pubDate: 2026-09-13T13:08:00
 updatedDate: 2026-09-13T13:08:00
