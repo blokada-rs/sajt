@@ -70,17 +70,38 @@ const { data } = Astro.props;
     inset: 0;
   }
 
-  :global(
-    .marker-cluster-small,
-    .marker-cluster-medium,
-    .marker-cluster-large
-  ) {
-    background-color: var(--primary) !important;
+  :global(.cluster-icon) {
+    --color: var(--primary);
   }
 
-  :global(.marker-cluster div) {
-    background-color: var(--primary-dark) !important;
+  :global(.cluster-icon) {
+    background-color: hsla(from var(--color) h s l / 50%);
     color: var(--on-primary);
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+  }
+
+  :global(.cluster-icon strong) {
+    background-color: var(--color);
+    border-radius: 50%;
+    margin: auto;
+    aspect-ratio: 1/1;
+    width: 28px;
+    display: grid;
+    place-content: center;
+  }
+
+  :global(.green) {
+    --color: hsl(from var(--primary) calc(h + 90) s l);
+  }
+
+  :global(.blue) {
+    --color: hsl(from var(--primary) calc(h + 180) s l);
+  }
+
+  :global(.purple) {
+    --color: hsl(from var(--primary) calc(h + 270) s l);
   }
 </style>
 
@@ -94,9 +115,22 @@ const { data } = Astro.props;
     #locate: HTMLButtonElement;
     #fullscreen: HTMLButtonElement;
 
+    markerIcon(color?: string) {
+      return (cluster: leaflet.MarkerCluster) => {
+        return leaflet.divIcon({
+          iconSize: [36, 36],
+          className: `cluster-icon ${color}`,
+          html: "<strong>" + cluster.getChildCount() + "</strong>",
+        });
+      };
+    }
+
     setup() {
       const map_data = JSON.parse(this.dataset.map!);
-      const markers = new leaflet.MarkerClusterGroup();
+      const markers = new leaflet.MarkerClusterGroup({
+        maxClusterRadius: 40,
+        iconCreateFunction: this.markerIcon(),
+      });
       map_data.markers?.forEach((marker: any) =>
         leaflet
           .circleMarker([marker.coords_lat, marker.coords_long], {
