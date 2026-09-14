@@ -8,6 +8,10 @@ heroImage: '@assets/images/pobedniksajt.webp'
 archived: false
 description: 14. септембра у 17.00 часова окупљамо се испред Ректората Универзитета у Београду, одакле заједно крећемо Путем победника!
 timeline:
+  - naslov: Бајкери су се прикључили колони
+    datum: 2026-09-14T18:10:00
+    slike:
+      - '@assets/images/photo_5855233953369886938_w.webp'
   - naslov: Кренула је колона
     datum: 2026-09-14T18:07:00
     slike:
