@@ -8,6 +8,14 @@ heroImage: '@assets/images/pobedniksajt.webp'
 archived: false
 description: 14. септембра у 17.00 часова окупљамо се испред Ректората Универзитета у Београду, одакле заједно крећемо Путем победника!
 timeline:
+  - naslov: Кренула је колона
+    datum: 2026-09-14T18:07:00
+    slike:
+      - '@assets/images/photo_5855233953369886926_w.webp'
+      - '@assets/images/photo_5855233953369886919_w.webp'
+      - '@assets/images/photo_5855233953369886928_w.webp'
+      - '@assets/images/photo_5855233953369886910_w.webp'
+    tekst: Колона је кренула ка згради Републичке изборне комисије, како би предали сакупљене потписе.
   - naslov: Ко ће носити кутије?
     datum: 2026-09-14T17:47:00
     tekst: |-
