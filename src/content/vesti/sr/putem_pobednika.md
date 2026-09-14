@@ -1,7 +1,7 @@
 ---
 link: putem_pobednika
 title: Путем победника
-live: false
+live: true
 pubDate: 2026-09-13T17:45:00
 updatedDate: 2026-09-13T17:45:00
 heroImage: '@assets/images/pobedniksajt.webp'
