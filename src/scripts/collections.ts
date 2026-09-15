@@ -72,6 +72,12 @@ export const map = () =>
       number_field("coords_lat", "Geografska širina"),
       number_field("coords_long", "Geografska dužina"),
       markdown_field("text", "Tekst"),
+      enum_field("color", "Boja", [
+        ["first", "Prva"],
+        ["second", "Druga"],
+        ["third", "Treca"],
+        ["fourth", "Cetrvrta"],
+      ]).optional(),
     ])
       .singular("Marker")
       .optional(),

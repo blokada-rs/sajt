@@ -30,6 +30,13 @@ const { data } = Astro.props;
     justify-content: center;
   }
 
+  astro-map {
+    --first: var(--primary);
+    --second: hsl(from var(--primary) calc(h + 90) s l);
+    --third: hsl(from var(--primary) calc(h + 180) s l);
+    --fourth: hsl(from var(--primary) calc(h + 270) s l);
+  }
+
   astro-map:not(.fullscreen) {
     position: relative;
     max-width: 1000px;
@@ -74,6 +81,18 @@ const { data } = Astro.props;
     --color: var(--primary);
   }
 
+  :global(.second) {
+    --color: var(--second);
+  }
+
+  :global(.third) {
+    --color: var(--third);
+  }
+
+  :global(.fourth) {
+    --color: var(--fourth);
+  }
+
   :global(.cluster-icon) {
     background-color: hsla(from var(--color) h s l / 50%);
     color: var(--on-primary);
@@ -92,24 +111,13 @@ const { data } = Astro.props;
     place-content: center;
   }
 
-  :global(.green) {
-    --color: hsl(from var(--primary) calc(h + 90) s l);
-  }
-
-  :global(.blue) {
-    --color: hsl(from var(--primary) calc(h + 180) s l);
-  }
-
-  :global(.purple) {
-    --color: hsl(from var(--primary) calc(h + 270) s l);
-  }
 </style>
 
 <script>
   import leaflet from "leaflet";
-  import "leaflet.markercluster";
-  import "leaflet.markercluster/dist/MarkerCluster.css";
-  import "leaflet.markercluster/dist/MarkerCluster.Default.css";
+import "leaflet.markercluster"
+import "leaflet.markercluster/dist/MarkerCluster.css"
+import "leaflet.markercluster/dist/MarkerCluster.Default.css"
 
   class Mapa extends HTMLElement {
     #locate: HTMLButtonElement;
@@ -127,22 +135,35 @@ const { data } = Astro.props;
 
     setup() {
       const map_data = JSON.parse(this.dataset.map!);
-      const markers = new leaflet.MarkerClusterGroup({
-        maxClusterRadius: 40,
-        iconCreateFunction: this.markerIcon(),
-      });
+
+      const colors = new Map<string, any[]>();
       map_data.markers?.forEach((marker: any) =>
-        leaflet
-          .circleMarker([marker.coords_lat, marker.coords_long], {
-            radius: 7,
-            color: window
-              .getComputedStyle(document.body)
-              .getPropertyValue("--primary"),
-            fillOpacity: 0.5,
-          })
-          .bindPopup(marker.text)
-          .addTo(markers),
+        colors.set(marker.color ?? "first", [
+          ...(colors.get(marker.color ?? "first") ?? []),
+          marker,
+        ]),
       );
+
+      const layers = colors.keys().map((key) => {
+        const markers = new leaflet.MarkerClusterGroup({
+          maxClusterRadius: 40,
+          iconCreateFunction: this.markerIcon(`${key}`),
+        });
+
+        colors.get(key)!.forEach((marker: any) =>
+          leaflet
+            .circleMarker([marker.coords_lat, marker.coords_long], {
+              radius: 7,
+              color: window
+                .getComputedStyle(this)
+                .getPropertyValue(`--${key}`),
+              fillOpacity: 0.5,
+            })
+            .bindPopup(marker.text)
+            .addTo(markers),
+        );
+        return markers;
+      });
 
       const map = leaflet.map(this, {
         preferCanvas: true,
@@ -155,7 +176,7 @@ const { data } = Astro.props;
             "https://services.arcgisonline.com/arcgis/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
             { maxZoom: 16 },
           ),
-          markers,
+          ...layers,
         ],
       });
 
