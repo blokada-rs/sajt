@@ -8,7 +8,7 @@ linkovi:
     link: mailto:kragujevac@studenti.org.rs
   - type: instagram
     naslov: Instagram профил
-    link: https://www.instagram.com/sub_ukg
+    link: https://www.instagram.com/studenti_ukg
   - type: twitter
     naslov: Twitter профил
     link: https://x.com/studenti_ukg
