@@ -32,9 +32,10 @@ const { data } = Astro.props;
 
   astro-map {
     --first: var(--primary);
-    --second: hsl(from var(--primary) calc(h + 90) s l);
-    --third: hsl(from var(--primary) calc(h + 180) s l);
-    --fourth: hsl(from var(--primary) calc(h + 270) s l);
+    --second: hsl(from var(--primary) calc(h + 1*360/5) s l);
+    --third: hsl(from var(--primary) calc(h + 2*360/5) s l);
+    --fourth: hsl(from var(--primary) calc(h + 3*360/5) s l);
+    --fifth: hsl(from var(--primary) calc(h + 4*360/5) s l);
   }
 
   astro-map:not(.fullscreen) {
@@ -91,6 +92,10 @@ const { data } = Astro.props;
 
   :global(.fourth) {
     --color: var(--fourth);
+  }
+
+  :global(.fifth) {
+    --color: var(--fifth);
   }
 
   :global(.cluster-icon) {

@@ -77,6 +77,7 @@ export const map = () =>
         ["second", "Druga"],
         ["third", "Treca"],
         ["fourth", "Cetrvrta"],
+        ["fifth", "Peta"],
       ]).optional(),
     ])
       .singular("Marker")
