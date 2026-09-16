@@ -44,48 +44,42 @@ export async function getStaticPaths() {
       />
       <div class="details">
         {posts[0].data.live && <Live>{frontmatter.live}</Live>}
-        {
-          lang !== posts[0].lang && (
-            <p class="untranslated">Currently untranslated</p>
-          )
-        }
+        {lang !== posts[0].lang && (
+          <p class="untranslated">Currently untranslated</p>
+        )}
         <h2 class="title">{posts[0].data.title}</h2>
         <p class="date">
           <FormattedDate date={posts[0].data.pubDate} />
         </p>
-        <p class="description">
-          {posts[0].data.description}
-        </p>
+        <p class="description">{posts[0].data.description}</p>
       </div>
     </a>
   </section>
   <section>
     <ul>
-      {
-        posts.slice(1).map((post, index) => (
-          <li>
-            <a class="clear" href={`/${lang}/vesti/${post.id}/`}>
-              <Picture
-                formats={["avif", "webp"]}
-                width={720}
-                src={post.data.heroImage}
-                loading={index <= 3 ? "eager" : "lazy"}
-                alt=""
-              />
-              <div class="details">
-                {post.data.live && <Live>{frontmatter.live}</Live>}
-                {lang !== post.lang && (
-                  <p class="untranslated">Currently untranslated</p>
-                )}
-                <h2 class="title">{post.data.title}</h2>
-                <p class="date">
-                  <FormattedDate date={post.data.pubDate} />
-                </p>
-              </div>
-            </a>
-          </li>
-        ))
-      }
+      {posts.slice(1).map((post, index) => (
+        <li>
+          <a class="clear" href={`/${lang}/vesti/${post.id}/`}>
+            <Picture
+              formats={["avif", "webp"]}
+              width={720}
+              src={post.data.heroImage}
+              loading={index <= 3 ? "eager" : "lazy"}
+              alt=""
+            />
+            <div class="details">
+              {post.data.live && <Live>{frontmatter.live}</Live>}
+              {lang !== post.lang && (
+                <p class="untranslated">Currently untranslated</p>
+              )}
+              <h2 class="title">{post.data.title}</h2>
+              <p class="date">
+                <FormattedDate date={post.data.pubDate} />
+              </p>
+            </div>
+          </a>
+        </li>
+      ))}
     </ul>
   </section>
 </Base>

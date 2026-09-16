@@ -24,11 +24,9 @@ const { frontmatter } = await file("ostalo", lang);
       alt=""
     />
 
-    {
-      lang !== expectedLang && (
-        <span class="untranslated">Currently untranslated</span>
-      )
-    }
+    {lang !== expectedLang && (
+      <span class="untranslated">Currently untranslated</span>
+    )}
     <div class="content">
       <FormattedDate date={data.pubDate} />
       <h3>{data.title}</h3>

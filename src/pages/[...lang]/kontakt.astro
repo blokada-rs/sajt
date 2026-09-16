@@ -39,71 +39,66 @@ const all = await collection("linkovi", lang);
 
     <article>
       <div class="nalozi">
-        {
-          get_socials(sub.linkovi).map((link) => (
-            <a class="button" href={link.link}>
-              <Icon
-                size={ICON_SIZE_LG}
-                name={icons.find((e) => e.value === link.type)?.icon!}
-              />
-            </a>
-          ))
-        }
+        {get_socials(sub.linkovi).map((link) => (
+          <a class="button" href={link.link}>
+            <Icon
+              size={ICON_SIZE_LG}
+              name={icons.find((e) => e.value === link.type)?.icon!}
+            />
+          </a>
+        ))}
       </div>
     </article>
 
     <article>
       <h2>{frontmatter.pojedinacni_fakulteti}</h2>
       <div class="nalozi">
-        {
-          all
-            .filter(({ data }) => typeof data.type !== "undefined")
-            .filter(({ data }) => type[data.type].sort > 0 - 1)
-            .toSorted(({ data: a }, { data: b }) =>
-              a.type !== b.type
-                ? type[a.type].sort - type[b.type].sort
-                : (a.prikaz ?? "").localeCompare(b.prikaz ?? ""),
-            )
-            .map(({ data }) => (
-              <>
-                <button
-                  class={`button ${data.type}`}
-                  popovertarget={`popover-${data.link}`}
-                >
-                  {data.prikaz ?? data.title}
-                </button>
-                <div id={`popover-${data.link}`} popover>
-                  <h3>{data.title}</h3>
-                  <ul>
-                    {get_socials(data.linkovi).map((link) => (
-                      <li class="spread">
-                        <a href={link.link}>
-                          {link.type !== "bez" && (
-                            <Icon
-                              size={ICON_SIZE_LG}
-                              name={
-                                icons.find((e) => e.value === link.type)?.icon!
-                              }
-                            />
-                          )}
-                          {link.naslov}
-                        </a>
-                      </li>
-                    ))}
-                    <li>
-                      <button
-                        popovertarget={`popover-${data.link}`}
-                        popovertargetaction="hide"
-                      >
-                        <Icon size={ICON_SIZE_LG} name="mdi:close" />
-                        Zatvori
-                      </button>
+        {all
+          .filter(({ data }) => typeof data.type !== "undefined")
+          .filter(({ data }) => type[data.type].sort > 0 - 1)
+          .toSorted(({ data: a }, { data: b }) =>
+            a.type !== b.type
+              ? type[a.type].sort - type[b.type].sort
+              : (a.prikaz ?? "").localeCompare(b.prikaz ?? ""))
+          .map(({ data }) => (
+            <>
+              <button
+                class={`button ${data.type}`}
+                popovertarget={`popover-${data.link}`}
+              >
+                {data.prikaz ?? data.title}
+              </button>
+              <div id={`popover-${data.link}`} popover>
+                <h3>{data.title}</h3>
+                <ul>
+                  {get_socials(data.linkovi).map((link) => (
+                    <li class="spread">
+                      <a href={link.link}>
+                        {link.type !== "bez" && (
+                          <Icon
+                            size={ICON_SIZE_LG}
+                            name={
+                              icons.find((e) => e.value === link.type)?.icon!
+                            }
+                          />
+                        )}
+                        {link.naslov}
+                      </a>
                     </li>
-                  </ul>
-                </div>
-              </>
-            ))
-        }
+                  ))}
+                  <li>
+                    <button
+                      popovertarget={`popover-${data.link}`}
+                      popovertargetaction="hide"
+                    >
+                      <Icon size={ICON_SIZE_LG} name="mdi:close" />
+                      Zatvori
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </>
+          ))}
       </div>
     </article>
   </section>

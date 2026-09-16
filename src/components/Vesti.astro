@@ -15,11 +15,9 @@ const vesti = await collection("vesti", lang);
 ---
 
 <Slider>
-  {
-    vesti
-      .slice(0, 3)
-      .map((post) => <Card link={`/${lang}/vesti/${post.id}`} {...post} />)
-  }
+  {vesti.slice(0, 3).map((post) => (
+    <Card link={`/${lang}/vesti/${post.id}`} {...post} />
+  ))}
   <a slot="button" href=`/${lang}/vesti` class="button primary dugme">
     {text}
   </a>

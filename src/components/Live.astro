@@ -2,19 +2,17 @@
 const { href, ...rest } = Astro.props;
 ---
 
-{
-  typeof href === "undefined" ? (
-    <span transition:name="live" class="live" {...rest}>
-      <div class="icon" />
-      <slot />
-    </span>
-  ) : (
-    <a transition:name="live" {href} class="live" {...rest}>
-      <div class="icon" />
-      <slot />
-    </a>
-  )
-}
+{typeof href === "undefined" ? (
+  <span transition:name="live" class="live" {...rest}>
+    <div class="icon" />
+    <slot />
+  </span>
+) : (
+  <a transition:name="live" {href} class="live" {...rest}>
+    <div class="icon" />
+    <slot />
+  </a>
+)}
 
 <style>
   .live {

@@ -16,6 +16,14 @@ export type ZodCollection = {
   schema: (ctx: SchemaContext) => z.ZodType;
 };
 
+const defined = (object: any) => {
+  Object.keys(object).forEach(
+    (key) => object[key] === undefined && delete object[key],
+  );
+
+  return object;
+};
+
 class CollectionsBuilder implements Builder {
   constructor(private collections: CollectionBuilder[]) {}
 
@@ -72,7 +80,7 @@ export class FolderBuilder implements Builder {
   }
 
   make_cms() {
-    return {
+    return defined({
       name: this.name,
       label: this.label,
       icon: this.icon,
@@ -90,8 +98,8 @@ export class FolderBuilder implements Builder {
                 direction: "descending",
               },
             }
-          : undefined,
-    };
+          : [],
+    });
   }
 
   make_zod(): ZodCollection {
@@ -290,11 +298,11 @@ class NumberBuilder extends FieldBuilder {
   }
 
   make_cms() {
-    return {
+    return defined({
       ...super.make_cms(),
       default: this._default,
       value_type: this._type,
-    };
+    });
   }
 
   make_zod(): z.ZodType {
@@ -315,11 +323,11 @@ class BoolBuilder extends FieldBuilder {
   }
 
   make_cms() {
-    return {
+    return defined({
       ...super.make_cms(),
       default: this._default,
       i18n: "duplicate",
-    };
+    });
   }
 
   make_zod(): z.ZodType {
@@ -449,12 +457,12 @@ class ListBuilder extends FieldBuilder {
   }
 
   make_cms() {
-    const cms = {
+    const cms = defined({
       ...super.make_cms(),
       label_singular: this._singular,
       add_to_top: this._add_to_top,
       summary: this._summary,
-    };
+    });
 
     if (this.fields.length === 1) {
       // @ts-ignore

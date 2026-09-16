@@ -32,10 +32,10 @@ const { data } = Astro.props;
 
   astro-map {
     --first: var(--primary);
-    --second: hsl(from var(--primary) calc(h + 1*360/5) s l);
-    --third: hsl(from var(--primary) calc(h + 2*360/5) s l);
-    --fourth: hsl(from var(--primary) calc(h + 3*360/5) s l);
-    --fifth: hsl(from var(--primary) calc(h + 4*360/5) s l);
+    --second: hsl(from var(--primary) calc(h + 1 * 360/5) s l);
+    --third: hsl(from var(--primary) calc(h + 2 * 360/5) s l);
+    --fourth: hsl(from var(--primary) calc(h + 3 * 360/5) s l);
+    --fifth: hsl(from var(--primary) calc(h + 4 * 360/5) s l);
   }
 
   astro-map:not(.fullscreen) {
@@ -115,14 +115,15 @@ const { data } = Astro.props;
     display: grid;
     place-content: center;
   }
-
 </style>
 
 <script>
   import leaflet from "leaflet";
-import "leaflet.markercluster"
-import "leaflet.markercluster/dist/MarkerCluster.css"
-import "leaflet.markercluster/dist/MarkerCluster.Default.css"
+  import "leaflet.markercluster";
+  import "leaflet.markercluster/dist/MarkerCluster.css";
+  import "leaflet.markercluster/dist/MarkerCluster.Default.css";
+
+  const color_keys = ["first", "fourth", "fifth"];
 
   class Mapa extends HTMLElement {
     #locate: HTMLButtonElement;
@@ -159,9 +160,7 @@ import "leaflet.markercluster/dist/MarkerCluster.Default.css"
           leaflet
             .circleMarker([marker.coords_lat, marker.coords_long], {
               radius: 7,
-              color: window
-                .getComputedStyle(this)
-                .getPropertyValue(`--${key}`),
+              color: window.getComputedStyle(this).getPropertyValue(`--${key}`),
               fillOpacity: 0.5,
             })
             .bindPopup(marker.text)
@@ -180,6 +179,16 @@ import "leaflet.markercluster/dist/MarkerCluster.Default.css"
           leaflet.tileLayer(
             "https://services.arcgisonline.com/arcgis/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
             { maxZoom: 16 },
+          ),
+          ...(map_data.layers ?? []).map(JSON.parse).map((layer, idx) =>
+            leaflet.geoJSON(layer, {
+              style: {
+                color: window
+                  .getComputedStyle(this)
+                  .getPropertyValue(`--${color_keys[idx]}`),
+                weight: 5,
+              },
+            }),
           ),
           ...layers,
         ],

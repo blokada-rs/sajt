@@ -31,15 +31,15 @@ const socialIcons = [
 
 <footer>
   <div>
-    <a class="clear" href="/">{frontmatter.studenti_u_blokadi}</a>
+    <a class="clear" href="/">
+      {frontmatter.studenti_u_blokadi}
+    </a>
     <div class="socials">
-      {
-        socialIcons.map(({ label, icon, link }) => (
-          <a aria-label={label} href={link} rel="noopener noreferrer">
-            <Icon name={icon} />
-          </a>
-        ))
-      }
+      {socialIcons.map(({ label, icon, link }) => (
+        <a aria-label={label} href={link} rel="noopener noreferrer">
+          <Icon name={icon} />
+        </a>
+      ))}
     </div>
   </div>
 </footer>

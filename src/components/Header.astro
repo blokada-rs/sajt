@@ -23,7 +23,9 @@ const jezik = (jezik: string) => {
 
 <header transition:name="header">
   <nav>
-    <a class="title" href=`/${lang}`>{frontmatter.naslov}</a>
+    <a class="title" href=`/${lang}`>
+      {frontmatter.naslov}
+    </a>
 
     <button
       aria-label="Open navigation menu"
@@ -43,13 +45,15 @@ const jezik = (jezik: string) => {
         >
           <Icon name="mdi:close" />
         </button>
-        {
-          frontmatter.linkovi.map(
-            ({ naziv, link }: { naziv: string; link: string }) => (
-              <HeaderLink href={`/${lang}${link}`}>{naziv}</HeaderLink>
-            ),
-          )
-        }
+        {frontmatter.linkovi.map(({
+          naziv,
+          link,
+        }: {
+          naziv: string;
+          link: string;
+        }) => (
+          <HeaderLink href={`/${lang}${link}`}>{naziv}</HeaderLink>
+        ))}
 
         <button
           aria-label="Open website language list"
@@ -72,9 +76,21 @@ const jezik = (jezik: string) => {
             <Icon name="mdi:close" />
           </button>
         </li>
-        <li><a class="button" href={jezik("sr")}>Српски (ћирилица)</a></li>
-        <li><a class="button" href={jezik("sr-lat")}>Srpski (latinica)</a></li>
-        <li><a class="button" href={jezik("en")}>English</a></li>
+        <li>
+          <a class="button" href={jezik("sr")}>
+            Српски (ћирилица)
+          </a>
+        </li>
+        <li>
+          <a class="button" href={jezik("sr-lat")}>
+            Srpski (latinica)
+          </a>
+        </li>
+        <li>
+          <a class="button" href={jezik("en")}>
+            English
+          </a>
+        </li>
       </ul>
     </div>
   </nav>

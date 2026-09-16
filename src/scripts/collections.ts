@@ -82,6 +82,9 @@ export const map = () =>
     ])
       .singular("Marker")
       .optional(),
+    list_field("layers", "Layer", [string_field("layer", "Layer")])
+      .singular("Layer")
+      .optional(),
   ]);
 
 const vesti = folder_collection(
