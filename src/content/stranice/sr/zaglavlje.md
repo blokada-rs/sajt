@@ -1,8 +1,8 @@
 ---
 naslov: Студенти побеђују
 linkovi:
-  - naziv: Укључи се
-    link: /ukljuci-se
+  - naziv: Избори
+    link: /izbori
   - naziv: Вести
     link: /vesti
   - naziv: Дијаспора
