@@ -15,4 +15,7 @@ linkovi:
   - type: viber
     naslov: Viber заједница
     link: https://invite.viber.com/?g2=AQB8BfcmzepMEVQjdZ8%2BOnXRqWFoh9Aa2xG1GgMXDwfbjuvAeFcF4ywBed1mYndI
+  - type: whatsapp
+    naslov: WhatsApp заједница
+    link: https://chat.whatsapp.com/LsrYYg62IGmILSLcnqualx
 ---
