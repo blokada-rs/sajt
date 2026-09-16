@@ -9,4 +9,7 @@ linkovi:
   - type: instagram
     naslov: Instagram профил
     link: https://www.instagram.com/studentitrstenika
+  - type: facebook
+    naslov: Facebook страница
+    link: https://www.facebook.com/share/19KKBcixxU/
 ---
