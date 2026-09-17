@@ -78,7 +78,7 @@ const { data } = Astro.props;
     inset: 0;
   }
 
-  :global(.cluster-icon) {
+  :global(.cluster-icon, .single-marker) {
     --color: var(--primary);
   }
 
@@ -96,6 +96,14 @@ const { data } = Astro.props;
 
   :global(.fifth) {
     --color: var(--fifth);
+  }
+
+  :global(.single-marker) {
+    background-color: var(--color);
+    border: white 2px solid;
+    color: var(--on-primary);
+    border-radius: 50%;
+    aspect-ratio: 1/1;
   }
 
   :global(.cluster-icon) {
@@ -119,9 +127,7 @@ const { data } = Astro.props;
 
 <script>
   import leaflet from "leaflet";
-  import "leaflet.markercluster";
-  import "leaflet.markercluster/dist/MarkerCluster.css";
-  import "leaflet.markercluster/dist/MarkerCluster.Default.css";
+import "leaflet.markercluster"
 
   const color_keys = ["first", "fourth", "fifth"];
 
@@ -168,6 +174,41 @@ const { data } = Astro.props;
         );
         return markers;
       });
+
+      const getLatLng = async (url: string): Promise<leaflet.LatLng> => {
+        const resp = await fetch(url, {
+          method: "GET",
+        });
+
+        const json = await resp.json();
+
+        return leaflet.latLng([json.lat, json.lon]);
+      };
+
+      if (map_data.track) {
+        map_data.track.forEach(async (url: string, idx: number) => {
+          try {
+            const marker = leaflet
+              .marker(await getLatLng(url))
+              .setIcon(new leaflet.DivIcon({
+              iconAnchor: [8, 8],
+              iconSize: [16, 16],
+              className: `single-marker ${color_keys[idx]}`,
+              html: "<div></div>",
+            }));
+
+            marker.addTo(map);
+
+            setInterval(async () => {
+              marker.setLatLng(await getLatLng(url));
+            }, 60000);
+
+            return marker;
+          } catch (e) {
+            console.log("ERROR: ", e);
+          }
+        });
+      }
 
       const map = leaflet.map(this, {
         preferCanvas: true,

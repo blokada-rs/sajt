@@ -85,6 +85,8 @@ export const map = () =>
     list_field("layers", "Layer", [string_field("layer", "Layer")])
       .singular("Layer")
       .optional(),
+    list_field("track", "Track", [string_field("address", "Address")])
+      .optional(),
   ]);
 
 const vesti = folder_collection(
