@@ -1838,7 +1838,7 @@ map:
     - coords_lat: 42.81000506202619
       coords_long: 22.299024999999997
       text: '**Црна Трава** - **18.9.** 14.00–16.00<br>Трг Милентије Поповића'
-      color: first
+      color: fourth
 description: Ми знамо како!
 ---
 
