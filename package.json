@@ -19,7 +19,7 @@
     "@mashehu/astropub-md": "^3.0.0",
     "@oddbird/popover-polyfill": "^0.7.2",
     "@sveltia/cms": "^0.213.4",
-    "astro": "^7.3.2",
+    "astro": "^7.3.3",
     "astro-font": "^1.2.0",
     "astro-icon": "^1.2.0",
     "leaflet": "^1.9.4",
