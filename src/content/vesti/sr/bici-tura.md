@@ -17,6 +17,9 @@ description: Чувари Устава - од 17. до 26. септембра, �
 timeline:
   - naslov: 16 минута тишине
     datum: 2026-09-17T12:00:00
+    slike:
+      - '@assets/images/IMG_20260917_121602.webp'
+      - '@assets/images/IMG_20260917_121645.webp'
   - naslov: 'Север: улазак у Панчево'
     datum: 2026-09-17T11:34:00
     videos:
