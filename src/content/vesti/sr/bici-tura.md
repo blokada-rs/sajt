@@ -1,7 +1,7 @@
 ---
 link: bici-tura
 title: Чувари Устава
-live: false
+live: true
 pubDate: 2026-09-16T13:34:00
 updatedDate: 2026-09-16T13:34:00
 heroImage: '@assets/images/sajt-1.webp'
