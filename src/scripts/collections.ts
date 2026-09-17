@@ -85,8 +85,9 @@ export const map = () =>
     list_field("layers", "Layer", [string_field("layer", "Layer")])
       .singular("Layer")
       .optional(),
-    list_field("track", "Track", [string_field("address", "Address")])
-      .optional(),
+    list_field("track", "Track", [
+      string_field("address", "Address"),
+    ]).optional(),
   ]);
 
 const vesti = folder_collection(
@@ -203,6 +204,7 @@ const stranice = file_collection("stranice", "Stranice", "description", [
     markdown_field("kontakt_opis", "Kontakt - opis"),
     string_field("live", "Live"),
     string_field("studenti_u_blokadi", "Studenti u blokadi"),
+    string_field("footer", "Footer"),
     string_field("pojedinacni_fakulteti", "Kontakti pojedinačnih fakulteta"),
     string_field("pratite_live", "Pratite live"),
     markdown_field("vesti_opis", "Vesti - opis"),

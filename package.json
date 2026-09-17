@@ -18,7 +18,7 @@
     "@iconify-json/simple-icons": "^1.2.96",
     "@mashehu/astropub-md": "^3.0.0",
     "@oddbird/popover-polyfill": "^0.7.2",
-    "@sveltia/cms": "^0.213.0",
+    "@sveltia/cms": "^0.213.4",
     "astro": "^7.3.2",
     "astro-font": "^1.2.0",
     "astro-icon": "^1.2.0",
@@ -31,7 +31,7 @@
     "@types/geojson": "^7946.0.16",
     "@types/leaflet": "^1.9.22",
     "@types/leaflet.markercluster": "^1.5.6",
-    "prettier": "^3.9.6",
+    "prettier": "^3.9.7",
     "prettier-plugin-astro": "1.0.0",
     "prettier-plugin-astro-organize-imports": "^0.4.13",
     "prettier-plugin-organize-imports": "^4.3.0"

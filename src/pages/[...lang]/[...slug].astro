@@ -11,7 +11,7 @@ import Mapa from "@components/Mapa.astro";
 import SectionLink from "@components/SectionLink.astro";
 import Vesti from "@components/Vesti.astro";
 
-import slsp from "@assets/images/slsp.png";
+import slsp from "@assets/images/slsp.svg";
 
 const { lang } = Astro.params;
 if (typeof lang === "undefined") {
@@ -65,7 +65,12 @@ const live = vesti.filter((vest) => vest.data.live && !vest.data.archived);
         />
 
         {frontmatter.link == "index" ? (
-          <Picture class="slsp" src={slsp} alt={frontmatter.title} />
+          <Picture
+            class="slsp"
+            formats={["svg"]}
+            src={slsp}
+            alt={frontmatter.title}
+          />
         ) : (
           <h1>{frontmatter.title}</h1>
         )}
@@ -116,7 +121,7 @@ const live = vesti.filter((vest) => vest.data.live && !vest.data.archived);
   .title .slsp {
     position: absolute;
     width: 80%;
-    height: 80%;
+    height: 40%;
     inset: 0;
     margin: auto;
     z-index: 2;
@@ -187,7 +192,7 @@ const live = vesti.filter((vest) => vest.data.live && !vest.data.archived);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.2rem;
+    gap: 0.5rem;
     z-index: 3;
     margin-top: -1rem;
     margin-bottom: 1rem;

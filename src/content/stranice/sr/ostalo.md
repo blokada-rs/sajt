@@ -7,6 +7,7 @@ kontakt: Контакт
 kontakt_opis: Званичне заједничке друштвене мреже студената у Београду.
 live: Уживо
 studenti_u_blokadi: Студенти побеђују
+footer: Студентска листа - Студенти побеђују
 pojedinacni_fakulteti: Контакти појединачних факултета
 pratite_live: Пратите видео пренос уживо
 vesti_opis: |-

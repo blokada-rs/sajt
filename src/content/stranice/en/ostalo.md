@@ -7,6 +7,7 @@ kontakt: Contact
 kontakt_opis: Official contact information
 live: Live
 studenti_u_blokadi: Student blockades
+footer: Studentska lista - Studenti pobeđuju
 pojedinacni_fakulteti: Faculty accounts
 pratite_live: Watch us live
 vesti_opis: Please read
