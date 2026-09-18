@@ -23,6 +23,11 @@ timeline:
     color: first
     videos:
       - 9Kgko-iLiBs
+  - naslov: 'Југ: Дочек у Горњем Милановцу'
+    datum: 2026-09-18T19:25:00
+    color: second
+    videos:
+      - rioD5YXT96M
   - naslov: 'Север: Пауза у Лазареву'
     datum: 2026-09-18T18:25:00
     color: first
