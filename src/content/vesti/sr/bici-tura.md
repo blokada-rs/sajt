@@ -25,7 +25,7 @@ timeline:
       - '@assets/images/IMG_6623 (1).webp'
   - naslov: Југ зна за кога гласа
     datum: 2026-09-18T13:46:00
-    color: first
+    color: second
     slike:
       - '@assets/images/IMG_6619.webp'
       - '@assets/images/IMG_6620.webp'
