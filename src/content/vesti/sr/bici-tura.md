@@ -27,7 +27,7 @@ timeline:
     slike:
       - '@assets/images/IMG_6613.webp'
       - '@assets/images/IMG_6614.webp'
-  - naslov: Други дан за екипу са севера је крену - Полазак из Вршца
+  - naslov: Други дан за екипу са севера је кренуо - Полазак из Вршца
     datum: 2026-09-18T10:00:00
     videos:
       - EKqHe5oVDNk
