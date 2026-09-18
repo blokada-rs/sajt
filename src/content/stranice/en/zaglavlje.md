@@ -1,8 +1,8 @@
 ---
 naslov: Students Win
 linkovi:
-  - naziv: Get Involved
-    link: /ukljuci-se
+  - naziv: Elections
+    link: /izbori
   - naziv: News
     link: /vesti
   - naziv: Diaspora
