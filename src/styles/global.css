@@ -17,6 +17,12 @@
   --background-gradient: var(--background)
     linear-gradient(var(--secondary-background), var(--background)) no-repeat;
 
+  --first: var(--primary);
+  --second: hsl(from var(--primary) calc(h + 3 * 360/5) s l);
+  --third: hsl(from var(--primary) calc(h + 1 * 360/5) s l);
+  --fourth: hsl(from var(--primary) calc(h + 4 * 360/5) s l);
+  --fifth: hsl(from var(--primary) calc(h + 2 * 360/5) s l);
+
   --gray: 96, 115, 159;
   --gray-light: hsl(0 0% 95%);
   --gray-dark: 34, 41, 57;
@@ -358,3 +364,9 @@ section > article:not(:last-of-type) {
   vertical-align: middle;
   display: inline-block;
 }
+
+.first  { --color: var(--first);  }
+.second { --color: var(--second); }
+.third  { --color: var(--third);  }
+.fourth { --color: var(--fourth); }
+.fifth  { --color: var(--fifth);  }

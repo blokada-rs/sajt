@@ -30,14 +30,6 @@ const { data } = Astro.props;
     justify-content: center;
   }
 
-  astro-map {
-    --first: var(--primary);
-    --second: hsl(from var(--primary) calc(h + 1 * 360/5) s l);
-    --third: hsl(from var(--primary) calc(h + 2 * 360/5) s l);
-    --fourth: hsl(from var(--primary) calc(h + 3 * 360/5) s l);
-    --fifth: hsl(from var(--primary) calc(h + 4 * 360/5) s l);
-  }
-
   astro-map:not(.fullscreen) {
     position: relative;
     max-width: 1000px;
@@ -78,26 +70,6 @@ const { data } = Astro.props;
     inset: 0;
   }
 
-  :global(.cluster-icon, .single-marker) {
-    --color: var(--primary);
-  }
-
-  :global(.second) {
-    --color: var(--second);
-  }
-
-  :global(.third) {
-    --color: var(--third);
-  }
-
-  :global(.fourth) {
-    --color: var(--fourth);
-  }
-
-  :global(.fifth) {
-    --color: var(--fifth);
-  }
-
   :global(.single-marker) {
     background-color: var(--color);
     border: white 2px solid;
@@ -129,7 +101,7 @@ const { data } = Astro.props;
   import leaflet from "leaflet";
 import "leaflet.markercluster"
 
-  const color_keys = ["first", "fourth", "fifth"];
+  const color_keys = ["first", "second", "third", "fourth", "fifth"];
 
   class Mapa extends HTMLElement {
     #locate: HTMLButtonElement;

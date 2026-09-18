@@ -14,7 +14,7 @@ const { timeline, border = "light" } = Astro.props;
 {typeof timeline !== "undefined" && (
   <div class="desavanja">
     {timeline.map((post) => (
-      <article>
+      <article class={post.color ?? "first"}>
         <h3 class:list={[{ dark: border === "dark" }]}>{post.naslov}</h3>
         <FormattedDate date={post.datum} time />
         {((post.slike?.length ?? 0) > 0 || (post.videos?.length ?? 0) > 0) && (
@@ -61,7 +61,7 @@ const { timeline, border = "light" } = Astro.props;
     position: absolute;
     width: 14px;
     height: 14px;
-    background-color: var(--primary);
+    background-color: var(--color);
     top: 50%;
     translate: 0 -50%;
     left: -39px;

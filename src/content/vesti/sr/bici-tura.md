@@ -20,50 +20,60 @@ description: Чувари Устава - од 17. до 26. септембра, �
 timeline:
   - naslov: 'Југ: Полазак из Мионице'
     datum: 2026-09-18T13:05:00
+    color: second
     slike:
       - '@assets/images/IMG_1075.webp'
       - '@assets/images/IMG_1071.webp'
-  - naslov: Управо је кренула и екипа са југа - Излазак из Ваљева
+  - naslov: 'Југ: Управо је кренула и екипа са југа - Излазак из Ваљева'
     datum: 2026-09-18T11:30:00
+    color: second
     slike:
       - '@assets/images/IMG_4061.webp'
   - naslov: 'Север: Дочек у Пландишту'
     datum: 2026-09-18T10:55:00
+    color: first
     videos:
       - c_-KH-aqo6Q
     slike:
       - '@assets/images/IMG_6613.webp'
       - '@assets/images/IMG_6614.webp'
-  - naslov: Други дан за екипу са севера је кренуо - Полазак из Вршца
+  - naslov: 'Југ: Други дан за екипу са севера је кренуо - Полазак из Вршца'
     datum: 2026-09-18T10:00:00
+    color: second
     videos:
       - EKqHe5oVDNk
     slike:
       - '@assets/images/IMG_6612.webp'
-  - naslov: Дочек у Ваљеву
+  - naslov: 'Југ: Дочек у Ваљеву'
     datum: 2026-09-17T19:48:00
+    color: second
     videos:
       - e-bK6WVMtR4
   - naslov: 'Север: надомак Вршца'
     datum: 2026-09-17T17:55:00
+    color: first
     videos:
       - lFVi6ar-VWw
   - naslov: 'Југ: Бициклисти праве последњу паузу пред улазак у Ваљево'
     datum: 2026-09-17T17:45:00
+    color: second
     slike:
       - '@assets/images/Untitled design (1).webp'
   - naslov: 'Север: Бициклисти дочекани у селу Николинци'
     datum: 2026-09-17T17:01:00
+    color: first
     slike:
       - '@assets/images/1-2.webp'
       - '@assets/images/2-2.webp'
     tekst: Неколицина мештана села Николинци приредила је дочек нашим бициклистима. Они су им припремили различита пецива и слатке палачинке. Након краће паузе наши бициклисти су наставили даље својом путањом.
   - naslov: 'Север: Бициклисти прошли Алибунар'
     datum: 2026-09-17T15:25:00
+    color: first
     slike:
       - '@assets/images/Untitled design.webp'
   - naslov: 'Север: Крај паузе у Банатском Новом Селу'
     datum: 2026-09-17T14:51:00
+    color: first
     videos:
       - r_-EFk59fwI
     slike:
@@ -71,12 +81,14 @@ timeline:
       - '@assets/images/IMG_20260917_150540.webp'
   - naslov: 'Југ: Пауза у Убу'
     datum: 2026-09-17T14:50:00
+    color: second
     slike:
       - '@assets/images/IMG_6601.webp'
       - '@assets/images/IMG_6602.webp'
     tekst: Бициклисти су одлучили да предахну у Убу. Тамо су се сусрели са колегама из радне јединице Студент у сваком селу и потписали Студенткси план.
   - naslov: 'Југ: Предах у Црвеној Јабуци'
     datum: 2026-09-17T14:37:00
+    color: second
     slike:
       - '@assets/images/IMG_20260917_144545.webp'
       - '@assets/images/IMG_20260917_144624.webp'
@@ -84,31 +96,38 @@ timeline:
     tekst: Бициклисти који возе носећи Устав кроз централну и јужну Србију, направили су краћи предах у месту Црвена Јабука, надомак Уба.
   - naslov: 'Север: Улазак у Банатско Ново Село'
     datum: 2026-09-17T14:23:00
+    color: first
     slike:
       - '@assets/images/IMG_20260917_145809.webp'
       - '@assets/images/IMG_20260917_145823.webp'
   - naslov: 'Југ: Кренули пут Уба'
     datum: 2026-09-17T13:29:00
+    color: second
     tekst: Након паузе у Обреновцу, бициклисти су се упутили ка Убу.
   - naslov: 'Север: Улазак у Банатско Ново Село'
     datum: 2026-09-17T13:17:00
+    color: first
     tekst: Бициклисти улазе у Банатско Ново Село, где ће направити паузу.
   - naslov: 'Север: Наставак пута кроз Банат'
     datum: 2026-09-17T12:30:00
+    color: first
     slike:
       - '@assets/images/IMG_20260917_124009.webp'
       - '@assets/images/IMG_20260917_124040.webp'
     tekst: Бициклисти су се након  шенаестоминутног помена, упутили ка Банатском Новом Селу где ће застати да предахну.
   - naslov: 'Југ: Обреновац'
     datum: 2026-09-17T12:22:00
+    color: second
     tekst: Бициклисти који су се упутили ка јужној Србији, застали су да предахну у Обреновцу.
   - naslov: 16 минута тишине
     datum: 2026-09-17T12:00:00
+    color: first
     slike:
       - '@assets/images/IMG_20260917_121602.webp'
       - '@assets/images/IMG_20260917_121645.webp'
   - naslov: 'Север: улазак у Панчево'
     datum: 2026-09-17T11:34:00
+    color: first
     videos:
       - girsmag8sJ8
     slike:
@@ -116,6 +135,7 @@ timeline:
     tekst: Студент Електротехничког факултета Андреј Танко, дочекао је бициклисте у Панчеву.
   - naslov: 'Север: Надомак Панчева'
     datum: 2026-09-17T11:16:00
+    color: first
     videos:
       - mvOv6M0yW7A
     slike:
@@ -124,6 +144,7 @@ timeline:
     tekst: Биклисти на тури кроз Војводину улазе у Панчево, где ће у 11.52 бити одржано 16 минута тишине.
   - naslov: Говор студенткиње Факултета организационих наука
     datum: 2026-09-17T09:52:00
+    color: first
     videos:
       - 70iyvQ02jgg
     tekst: |-
@@ -157,6 +178,7 @@ timeline:
       > **И запамтите. Студенти побеђују!**
   - naslov: Окупљање бициклиста
     datum: 2026-09-17T08:32:00
+    color: first
     tekst: У току је окјупљање бициклиста на Тргу републике.
 ---
 

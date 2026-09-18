@@ -63,7 +63,16 @@ export const type = {
   privatni: { sort: 3 },
 };
 
-export const map = () =>
+const color = () =>
+  enum_field("color", "Boja", [
+    ["first", "Prva"],
+    ["second", "Druga"],
+    ["third", "Treca"],
+    ["fourth", "Cetrvrta"],
+    ["fifth", "Peta"],
+  ]).optional();
+
+const map = () =>
   object_field("map", "Mapa", [
     number_field("coords_lat", "Geografska širina").default(44.8118),
     number_field("coords_long", "Geografska dužina").default(20.4659),
@@ -72,13 +81,7 @@ export const map = () =>
       number_field("coords_lat", "Geografska širina"),
       number_field("coords_long", "Geografska dužina"),
       markdown_field("text", "Tekst"),
-      enum_field("color", "Boja", [
-        ["first", "Prva"],
-        ["second", "Druga"],
-        ["third", "Treca"],
-        ["fourth", "Cetrvrta"],
-        ["fifth", "Peta"],
-      ]).optional(),
+      color(),
     ])
       .singular("Marker")
       .optional(),
@@ -110,6 +113,7 @@ const vesti = folder_collection(
     list_field("timeline", "Tajmlajn", [
       string_field("naslov", "Naslov"),
       datetime_field("datum", "Datum"),
+      color(),
       list_field("videos", "Video IDs", [string_field("id", "ID")])
         .singular("Video ID")
         .optional(),
