@@ -26,7 +26,7 @@ timeline:
   - naslov: Други дан за екипу са севера је крену - Полазак из Вршца
     datum: 2026-09-18T10:00:00
     videos:
-      - XUNt4_2vyQE
+      - EKqHe5oVDNk
     slike:
       - '@assets/images/IMG_6612.webp'
   - naslov: Дочек у Ваљеву
