@@ -40,9 +40,6 @@ timeline:
     slike:
       - '@assets/images/IMG_6656.webp'
       - '@assets/images/IMG_6655.webp'
-  - naslov: 'Север: Кандидат Дејан Ђурђев прати бициклисте на трактору'
-    datum: 2026-09-19T13:52:00
-    color: first
   - naslov: 'Север: Kолона трактора'
     datum: 2026-09-19T13:30:00
     color: first
