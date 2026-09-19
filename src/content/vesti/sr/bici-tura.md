@@ -29,6 +29,11 @@ timeline:
     slike:
       - '@assets/images/IMG_6645.webp'
       - '@assets/images/IMG_6644.webp'
+  - naslov: 'Север: На путу до Житишта'
+    datum: 2026-09-19T10:15:00
+    color: first
+    videos:
+      - _X9iNYzszBk
   - naslov: 'Север: Трећи дан за наше бициклисте је крену - Полазак из Зрењанина'
     datum: 2026-09-19T09:20:00
     color: first
