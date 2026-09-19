@@ -21,8 +21,6 @@ timeline:
   - naslov: 'Север: Кандидат Дејан Ђурђев прати бициклисте на трактору'
     datum: 2026-09-19T13:52:00
     color: first
-    videos:
-      - PzALxWavROE
   - naslov: 'Север: Kолона трактора'
     datum: 2026-09-19T13:30:00
     color: first
