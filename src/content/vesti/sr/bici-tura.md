@@ -21,9 +21,8 @@ timeline:
   - naslov: 'Север: Дочек у Новом Кнежевцу'
     datum: 2026-09-20T15:05:00
     color: first
-    slike:
-      - '@assets/images/BLK03901.webp'
-      - '@assets/images/BLK03899.webp'
+    videos:
+      - y5jFi0eX9mA
   - naslov: 'Север: Пауза у Чоки'
     datum: 2026-09-20T13:43:00
     color: first
