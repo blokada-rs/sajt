@@ -26,7 +26,7 @@ timeline:
       - '@assets/images/BLK04263.webp'
   - naslov: 'Југ: Дочек у Чачку'
     datum: 2026-09-20T16:26:00
-    color: first
+    color: second
     slike:
       - '@assets/images/Untitled design (2).webp'
   - naslov: 'Југ: На путу до Чачка'
