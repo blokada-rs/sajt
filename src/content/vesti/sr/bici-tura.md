@@ -27,6 +27,8 @@ timeline:
   - naslov: 'Југ: Бициклисти улазе у Краљево'
     datum: 2026-09-20T19:00:00
     color: second
+    videos:
+      - bnMib7_veiU
   - naslov: 'Север: Бициклисти уз пратњу бајкера улазе у Суботицу'
     datum: 2026-09-20T18:56:00
     color: first
