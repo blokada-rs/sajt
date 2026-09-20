@@ -1,7 +1,7 @@
 ---
 link: studentski_plan
 title: Студентски план - ми знамо како
-live: true
+live: false
 pubDate: 2026-09-14T18:03:00
 updatedDate: 2026-09-14T18:03:00
 heroImage: '@assets/images/photo_5854732047786645027_y.webp'
