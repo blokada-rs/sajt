@@ -21,9 +21,17 @@ timeline:
   - naslov: 'Југ: Полазак из Ужица'
     datum: 2026-09-20T11:00:00
     color: first
+    videos:
+      - Hm-9N04NK2o
     slike:
       - '@assets/images/IMG_6667.webp'
       - '@assets/images/IMG_6666.webp'
+  - naslov: 'Север: Пауза у Иђошу'
+    datum: 2026-09-20T10:40:00
+    color: first
+    slike:
+      - '@assets/images/BLK03522.webp'
+      - '@assets/images/BLK03517.webp'
   - naslov: 'Север: Полазак из Кикинде'
     datum: 2026-09-20T09:41:00
     color: first
