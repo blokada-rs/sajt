@@ -21,6 +21,9 @@ timeline:
   - naslov: 'Север: Дочек у Суботици'
     datum: 2026-09-20T19:20:00
     color: first
+    slike:
+      - '@assets/images/BLK04533 (1).webp'
+      - '@assets/images/BLK04496.webp'
   - naslov: 'Југ: Бициклисти улазе у Краљево'
     datum: 2026-09-20T19:00:00
     color: second
