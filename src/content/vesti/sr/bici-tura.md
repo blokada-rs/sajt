@@ -31,6 +31,8 @@ timeline:
   - naslov: 'Север: Пауза у Бачкој Тополи'
     datum: 2026-09-21T12:55:00
     color: first
+    slike:
+      - '@assets/images/BLK04716.webp'
   - naslov: 'Југ: Пауза у Трстенику'
     datum: 2026-09-21T11:55:00
     color: second
