@@ -21,6 +21,8 @@ timeline:
   - naslov: 'Југ: Друга група бициклиста је кренула из Краљева'
     datum: 2026-09-21T10:20:00
     color: second
+    slike:
+      - '@assets/images/IMG_6679.webp'
   - naslov: 'Север: Бициклисти су започели пут даље из Суботице'
     datum: 2026-09-21T10:03:00
     color: first
