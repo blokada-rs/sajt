@@ -23,6 +23,7 @@ timeline:
     color: second
     slike:
       - '@assets/images/IMG_6681.webp'
+      - '@assets/images/IMG_6683.webp'
   - naslov: 'Југ: Пауза у Подунавцима'
     datum: 2026-09-21T11:05:00
     color: second
