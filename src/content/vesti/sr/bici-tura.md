@@ -23,6 +23,11 @@ timeline:
     color: second
     videos:
       - nKsZowpC0GQ
+  - naslov: 'Север: Дочек у Сомбору'
+    datum: 2026-09-21T19:30:00
+    color: first
+    videos:
+      - TuFVJtxc4Yg
   - naslov: 'Север: Светозар Милетић пауза'
     datum: 2026-09-21T18:17:00
     color: first
