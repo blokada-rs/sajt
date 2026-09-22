@@ -21,6 +21,8 @@ timeline:
   - naslov: 'Север:  Дочек Руменка'
     datum: 2026-09-22T19:25:00
     color: first
+    videos:
+      - qtWyp3jBJtI
   - naslov: 'Југ: Дочек у Лесковцу'
     datum: 2026-09-22T19:10:00
     color: second
