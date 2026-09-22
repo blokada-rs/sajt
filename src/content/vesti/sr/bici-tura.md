@@ -21,6 +21,8 @@ timeline:
   - naslov: 'Север: Бициклисти су стигли у у Нови Сад'
     datum: 2026-09-22T20:25:00
     color: first
+    videos:
+      - J9Jh10jwmMw
   - naslov: 'Север:  Дочек Руменка'
     datum: 2026-09-22T19:25:00
     color: first
