@@ -20,10 +20,10 @@ description: Чувари Устава - од 17. до 26. септембра, �
 timeline:
   - naslov: 'Југ: Мерошина пауза'
     datum: 2026-09-22T12:15:00
-    color: first
+    color: second
   - naslov: 'Југ: Полазак из Ниша'
     datum: 2026-09-22T11:10:00
-    color: first
+    color: second
     slike:
       - '@assets/images/IMG_6708.webp'
   - naslov: 'Север: Пауза у Кљајићеву'
