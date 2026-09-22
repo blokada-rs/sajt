@@ -23,6 +23,11 @@ timeline:
     color: second
     slike:
       - '@assets/images/IMG_6711.webp'
+  - naslov: 'Север: Излаз из Црвенке'
+    datum: 2026-09-22T12:30:00
+    color: first
+    videos:
+      - 7Z0WKywQwsI
   - naslov: 'Југ: Мерошина пауза'
     datum: 2026-09-22T12:15:00
     color: second
