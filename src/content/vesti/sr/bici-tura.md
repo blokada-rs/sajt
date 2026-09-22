@@ -21,6 +21,8 @@ timeline:
   - naslov: 'Север: Пауза у Сиригу'
     datum: 2026-09-22T16:40:00
     color: first
+    slike:
+      - '@assets/images/IMG_6716.webp'
   - naslov: 'Север: Србобран пауза'
     datum: 2026-09-22T15:45:00
     color: first
