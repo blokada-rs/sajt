@@ -20,7 +20,7 @@ description: Чувари Устава - од 17. до 26. септембра, �
 timeline:
   - naslov: 'Југ: Дочек у Бладичином Хану'
     datum: 2026-09-23T18:11:00
-    color: first
+    color: second
     videos:
       - dakSLDJ3ALg
   - naslov: 'Север: Пауза у Иригу'
