@@ -33,6 +33,8 @@ timeline:
   - naslov: 'Југ: Полазак из Лесковца'
     datum: 2026-09-23T13:05:00
     color: second
+    videos:
+      - 3wN8kmdwo6g
     slike:
       - '@assets/images/IMG_6718.webp'
   - naslov: 'Север: Дочек и пауза у Сремским Карловцима'
@@ -43,6 +45,8 @@ timeline:
   - naslov: 'Север: Полазак из Новог Сада'
     datum: 2026-09-23T11:10:00
     color: first
+    videos:
+      - 2Dtuu2O3q2o
   - naslov: 'Север: Бициклисти су стигли у у Нови Сад'
     datum: 2026-09-22T20:25:00
     color: first
