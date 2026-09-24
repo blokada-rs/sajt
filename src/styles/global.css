@@ -13,6 +13,7 @@
   --secondary-dark: hsl(345 6% 13%);
   --secondary-background: var(--secondary);
   --on-secondary: black;
+  --on-secondary-dark: white;
 
   --background-gradient: var(--background)
     linear-gradient(var(--secondary-background), var(--background)) no-repeat;
@@ -44,6 +45,7 @@
 
     --secondary-background: var(--secondary-dark);
     --on-secondary: white;
+    --on-secondary-dark: white;
 
     --background-gradient: var(--background)
       linear-gradient(
