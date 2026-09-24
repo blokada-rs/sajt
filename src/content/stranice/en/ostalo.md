@@ -15,4 +15,5 @@ najnovija_vest: Latest news
 afere_description: Affairs
 vesti_description: Please read
 kontakt_description: Official contact information
+vidi_jos: See more
 ---

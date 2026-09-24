@@ -217,6 +217,7 @@ const stranice = file_collection("stranice", "Stranice", "description", [
     text_field("afere_description", "Afere opis"),
     text_field("vesti_description", "Vesti opis"),
     text_field("kontakt_description", "Kontakt opis"),
+    string_field("vidi_jos", "Vidi još"),
   ]),
 ]);
 

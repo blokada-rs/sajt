@@ -1,5 +1,6 @@
 ---
 import { Markdown } from "@mashehu/astropub-md";
+import { file } from "@scripts/i18n.ts";
 import { Picture } from "astro:assets";
 import type { CollectionEntry } from "astro:content";
 import FormattedDate from "./FormattedDate.astro";
@@ -9,10 +10,13 @@ type Props = {
   border?: "light" | "dark";
 };
 const { timeline, border = "light" } = Astro.props;
+
+const { lang } = Astro.params;
+const { frontmatter } = await file("ostalo", lang);
 ---
 
 {typeof timeline !== "undefined" && (
-  <div class="desavanja">
+  <div class="desavanja" data-vidi_jos={frontmatter.vidi_jos}>
     {timeline.map((post) => (
       <article class:list={[post.color ?? "first", {"important": post.important}]}>
         <h3 class:list={[{ dark: border === "dark" }]}>{post.naslov}</h3>
@@ -39,6 +43,21 @@ const { timeline, border = "light" } = Astro.props;
     ))}
   </div>
 )}
+
+<script>
+  const timeline = document.querySelector(".desavanja") as HTMLElement;
+  timeline?.classList.add("short");
+
+  const toggle_short = document.createElement("button");
+  toggle_short.innerText = timeline?.dataset?.vidi_jos;
+  toggle_short.className = "button primary";
+  toggle_short.onclick = () => {
+    timeline?.classList.remove("short");
+    timeline?.removeChild(toggle_short);
+  }
+
+  timeline?.appendChild(toggle_short);
+</script>
 
 <style>
   .desavanja {
@@ -132,5 +151,9 @@ const { timeline, border = "light" } = Astro.props;
     aspect-ratio: 16 / 9;
     border: none;
     border-radius: 8px;
+  }
+
+  .short article:nth-child(n+3) {
+    display: none;
   }
 </style>
