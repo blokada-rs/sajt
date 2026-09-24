@@ -38,6 +38,22 @@ timeline:
     color: second
     slike:
       - '@assets/images/IMG_5652.webp'
+  - naslov: 'Север: Дочек у Шапцу'
+    datum: 2026-09-23T22:04:00
+    color: first
+    videos:
+      - rpZyd7Jb9kA
+  - naslov: 'Југ: Дочек у Врању'
+    datum: 2026-09-23T20:03:00
+    slike:
+      - '@assets/images/1000001495.webp'
+  - naslov: 'Југ: Дочек у Владичином Хану'
+    datum: 2026-09-23T18:11:00
+    color: second
+    videos:
+      - dakSLDJ3ALg
+  - naslov: 'Југ: Дочек у Врању'
+    datum: 2026-09-23T20:03:00
   - naslov: 'Север: Пауза у Иригу'
     datum: 2026-09-23T14:20:00
     color: first
@@ -72,7 +88,7 @@ timeline:
     color: first
     videos:
       - J9Jh10jwmMw
-  - naslov: 'Север:  Дочек Руменка'
+  - naslov: 'Север: Дочек Руменка'
     datum: 2026-09-22T19:25:00
     color: first
     videos:

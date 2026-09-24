@@ -11,27 +11,27 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/mdx": "^8.0.1",
+    "@astrojs/mdx": "^8.0.2",
     "@astrojs/rss": "^4.0.19",
     "@astrojs/sitemap": "^3.7.4",
     "@iconify-json/mdi": "^1.2.3",
-    "@iconify-json/simple-icons": "^1.2.96",
+    "@iconify-json/simple-icons": "^1.2.97",
     "@mashehu/astropub-md": "^3.0.0",
     "@oddbird/popover-polyfill": "^0.7.2",
-    "@sveltia/cms": "^0.213.5",
-    "astro": "^7.3.3",
+    "@sveltia/cms": "^0.219.0",
+    "astro": "^7.3.4",
     "astro-font": "^1.2.0",
     "astro-icon": "^1.2.0",
     "leaflet": "^1.9.4",
     "leaflet.markercluster": "^1.5.3",
-    "sass": "^1.104.1",
+    "sass": "^1.105.0",
     "sharp": "^0.35.4"
   },
   "devDependencies": {
     "@types/geojson": "^7946.0.16",
     "@types/leaflet": "^1.9.22",
     "@types/leaflet.markercluster": "^1.5.6",
-    "prettier": "^3.9.7",
+    "prettier": "^3.9.9",
     "prettier-plugin-astro": "^1.0.1",
     "prettier-plugin-astro-organize-imports": "^0.4.13",
     "prettier-plugin-organize-imports": "^4.3.0"

@@ -57,7 +57,7 @@ export async function getStaticPaths() {
   </section>
   <section>
     <ul>
-      {posts.slice(1).map((post, index) => (
+      {posts.slice(1).sort((a, b) => b.data.live - a.data.live).map((post, index) => (
         <li>
           <a class="clear" href={`/${lang}/vesti/${post.id}/`}>
             <Picture

@@ -113,6 +113,7 @@ const vesti = folder_collection(
     list_field("timeline", "Tajmlajn", [
       string_field("naslov", "Naslov"),
       datetime_field("datum", "Datum"),
+      bool_field("important", "Bitno").optional(),
       color(),
       list_field("videos", "Video IDs", [string_field("id", "ID")])
         .singular("Video ID")

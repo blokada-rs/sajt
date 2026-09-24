@@ -14,16 +14,20 @@ const { timeline, border = "light" } = Astro.props;
 {typeof timeline !== "undefined" && (
   <div class="desavanja">
     {timeline.map((post) => (
-      <article class={post.color ?? "first"}>
+      <article class:list={[post.color ?? "first", {"important": post.important}]}>
         <h3 class:list={[{ dark: border === "dark" }]}>{post.naslov}</h3>
         <FormattedDate date={post.datum} time />
-        {((post.slike?.length ?? 0) > 0 || (post.videos?.length ?? 0) > 0) && (
-          <div class="slike">
+        {(post.videos?.length ?? 0) > 0 && (
+          <div class="videi">
             {post.videos?.map((video) => <iframe
-              src={`https://www.youtube-nocookie.com/embed/${video}`}
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>)}
+                src={`https://www.youtube-nocookie.com/embed/${video}`}
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>)}
+          </div>
+        )}
+        {(post.slike?.length ?? 0) > 0  && (
+          <div class="slike">
             {post.slike?.map((slika) => (
               <Picture formats={["avif", "webp"]} src={slika} alt="" />
             ))}
@@ -39,15 +43,38 @@ const { timeline, border = "light" } = Astro.props;
 <style>
   .desavanja {
     border-left: 4px solid var(--on-background);
-    padding-left: 24px;
+    padding-left: 1rem;
   }
 
   .desavanja:not(:first-child) {
     margin-top: 2rem;
   }
 
+  article {
+    position: relative;
+  }
+
+  .important {
+    color: var(--on-primary);
+    padding: 1.5rem;
+  }
+
+  .important h3::before {
+    left: calc(-15px - 2.5rem);
+  }
+
+  .important::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-color: var(--color);
+    border-radius: 8px;
+  }
+
   article:not(:last-of-type) {
-    margin-bottom: 3rem;
+    padding-block: 1rem;
+    margin-bottom: 1rem;
   }
 
   article h3 {
@@ -64,7 +91,7 @@ const { timeline, border = "light" } = Astro.props;
     background-color: var(--color);
     top: 50%;
     translate: 0 -50%;
-    left: -39px;
+    left: calc(-15px - 1rem);
     border-radius: 50%;
     border: 6px solid var(--background);
   }
@@ -83,7 +110,7 @@ const { timeline, border = "light" } = Astro.props;
     margin-top: 1rem;
   }
 
-  .slike {
+  .slike, .videi {
     margin-block: 1rem;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
@@ -91,7 +118,7 @@ const { timeline, border = "light" } = Astro.props;
   }
 
   @media (max-width: 700px) {
-    .slike {
+    .slike, .videi {
       grid-template-columns: 1fr;
     }
   }
