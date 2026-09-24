@@ -18,56 +18,78 @@ map:
     - https://gps.blokade.org/get?id=1
 description: Чувари Устава - од 17. до 26. септембра, две бициклистичке екипе носе Устав Републике Србије кроз Војводину, запад, југ и центар Србије, до Крагујевца. Настављамо традицију бициклистичких тура које су водиле до Крагујевца, Стразбура, Ниша,  Новог Пазара - овог пута са Уставом у рукама, прикупљајући потписе грађана за Студентски план. Не чекамо да Србија дође до нас - ми идемо кроз Србију.
 timeline:
+  - naslov: 'Југ: Пауза у Лесковцу'
+    datum: 2026-09-24T16:35:00
+    important: false
+    color: second
+  - naslov: 'Север: Пауза у Мачванским Прљавору'
+    datum: 2026-09-24T16:20:00
+    important: false
+    color: first
   - naslov: 'Север: Бициклисте у Богатићу је дочекако кандидат СЛСП-a Мирослав Панајотовић'
     datum: 2026-09-24T14:10:00
+    important: false
     color: first
     slike:
       - '@assets/images/IMG_6741.webp'
   - naslov: 'Југ: Пауза у Грделици'
     datum: 2026-09-24T14:45:00
+    important: false
     color: second
     slike:
       - '@assets/images/IMG_6740.webp'
   - naslov: 'Север: Дочек у Богатићу'
     datum: 2026-09-24T14:00:00
+    important: false
     color: first
     videos:
       - MLjovqguEXY
   - naslov: 'Југ: Полазак из Врања'
     datum: 2026-09-24T11:00:00
+    important: false
     color: second
     slike:
       - '@assets/images/IMG_5652.webp'
   - naslov: 'Север: Дочек у Шапцу'
     datum: 2026-09-23T22:04:00
+    important: false
     color: first
     videos:
       - rpZyd7Jb9kA
   - naslov: 'Југ: Дочек у Врању'
     datum: 2026-09-23T20:03:00
+    important: false
+    color: first
     slike:
       - '@assets/images/1000001495.webp'
   - naslov: 'Југ: Дочек у Владичином Хану'
     datum: 2026-09-23T18:11:00
+    important: false
     color: second
     videos:
       - dakSLDJ3ALg
   - naslov: 'Југ: Дочек у Врању'
     datum: 2026-09-23T20:03:00
+    important: false
+    color: first
   - naslov: 'Север: Пауза у Иригу'
     datum: 2026-09-23T14:20:00
+    important: false
     color: first
   - naslov: 'Југ: Кандидати СЛСП и бициклисти су стигли на паузу у Власотинце'
     datum: 2026-09-23T14:05:00
+    important: false
     color: second
     slike:
       - '@assets/images/IMG_6720.webp'
       - '@assets/images/IMG_6719.webp'
   - naslov: 'Север: Пауза у Банстолу'
     datum: 2026-09-23T13:15:00
+    important: false
     color: first
   - naslov: 'Југ: Полазак из Лесковца'
     datum: 2026-09-23T13:05:00
+    important: false
     color: second
     videos:
       - 3wN8kmdwo6g
@@ -75,188 +97,228 @@ timeline:
       - '@assets/images/IMG_6718.webp'
   - naslov: 'Север: Дочек и пауза у Сремским Карловцима'
     datum: 2026-09-23T12:00:00
+    important: false
     color: first
     videos:
       - 2Dtuu2O3q2o
   - naslov: 'Север: Полазак из Новог Сада'
     datum: 2026-09-23T11:10:00
+    important: false
     color: first
     videos:
       - 2Dtuu2O3q2o
   - naslov: 'Север: Бициклисти су стигли у у Нови Сад'
     datum: 2026-09-22T20:25:00
+    important: false
     color: first
     videos:
       - J9Jh10jwmMw
   - naslov: 'Север: Дочек Руменка'
     datum: 2026-09-22T19:25:00
+    important: false
     color: first
     videos:
       - qtWyp3jBJtI
   - naslov: 'Југ: Дочек у Лесковцу'
     datum: 2026-09-22T19:10:00
+    important: false
     color: second
     videos:
       - x1Yy-LeHO1Y
   - naslov: 'Југ: На путу до Лесковца'
     datum: 2026-09-22T18:40:00
+    important: false
     color: second
     videos:
       - CPBsKICoNFQ
   - naslov: 'Север: Пауза у Кисици - Са нама је и кандидат СЛСП-а'
     datum: 2026-09-22T18:30:00
+    important: false
     color: first
     slike:
       - '@assets/images/IMG_6717.webp'
   - naslov: 'Север: Пауза у Змајеву'
     datum: 2026-09-22T17:25:00
+    important: false
     color: first
   - naslov: 'Север: Пауза у Сиригу'
     datum: 2026-09-22T16:40:00
+    important: false
     color: first
     slike:
       - '@assets/images/IMG_6716.webp'
   - naslov: 'Север: Србобран пауза'
     datum: 2026-09-22T15:45:00
+    important: false
     color: first
   - naslov: 'Југ: Пауза Житорађа'
     datum: 2026-09-22T15:40:00
+    important: false
     color: second
   - naslov: 'Север: Пауза у Врбасу са нашим кандидатима СЛСП'
     datum: 2026-09-22T14:25:00
+    important: false
     color: first
     slike:
       - '@assets/images/IMG_6713.webp'
   - naslov: 'Југ: Дочек у Прокупљу'
     datum: 2026-09-22T14:10:00
+    important: false
     color: second
     slike:
       - '@assets/images/IMG_6712.webp'
   - naslov: 'Север: Дочек у Кули'
     datum: 2026-09-22T12:50:00
+    important: false
     color: first
     videos:
       - 5mOrxSj1Qo0
   - naslov: 'Југ: Кандидати СЛСП Славољуб Узуновић и Марија Митровић су се прикључили бициклистима'
     datum: 2026-09-22T12:46:00
+    important: false
     color: second
     slike:
       - '@assets/images/IMG_6711.webp'
   - naslov: 'Север: Излаз из Црвенке'
     datum: 2026-09-22T12:30:00
+    important: false
     color: first
     videos:
       - 7Z0WKywQwsI
   - naslov: 'Југ: Мерошина пауза'
     datum: 2026-09-22T12:15:00
+    important: false
     color: second
   - naslov: 'Југ: Полазак из Ниша'
     datum: 2026-09-22T11:10:00
+    important: false
     color: second
     slike:
       - '@assets/images/IMG_6708.webp'
   - naslov: 'Север: Пауза у Кљајићеву'
     datum: 2026-09-22T11:04:00
+    important: false
     color: first
     slike:
       - '@assets/images/IMG_6707.webp'
   - naslov: 'Север: Полазак из Сомбора - Нашим бициклистима су се придружили кандидати СЛСП'
     datum: 2026-09-22T09:55:00
+    important: false
     color: first
   - naslov: 'Југ: Дочек бициклиста у Нишу'
     datum: 2026-09-21T20:15:00
+    important: false
     color: second
     videos:
       - nKsZowpC0GQ
   - naslov: 'Север: Дочек у Сомбору'
     datum: 2026-09-21T19:30:00
+    important: false
     color: first
     videos:
       - TuFVJtxc4Yg
   - naslov: 'Север: Светозар Милетић пауза'
     datum: 2026-09-21T18:17:00
+    important: false
     color: first
     slike:
       - '@assets/images/BLK04896.webp'
       - '@assets/images/BLK04893.webp'
   - naslov: 'Југ: Житковац пауза'
     datum: 2026-09-21T17:25:00
+    important: false
     color: second
     slike:
       - '@assets/images/IMG_6703.webp'
   - naslov: 'Север: Алекса Шантић пауза'
     datum: 2026-09-21T17:00:00
+    important: false
     color: first
   - naslov: 'Југ: Пауза у Ђунису'
     datum: 2026-09-21T15:46:00
+    important: false
     color: second
   - naslov: 'Југ: Дочек и пауза у Крушевцу'
     datum: 2026-09-21T13:50:00
+    important: false
     color: second
     slike:
       - '@assets/images/IMG_6688.webp'
   - naslov: 'Југ: Пауза у Стопњу'
     datum: 2026-09-21T13:00:00
+    important: false
     color: second
     slike:
       - '@assets/images/IMG_6684.webp'
   - naslov: 'Север: Пауза у Бачкој Тополи'
     datum: 2026-09-21T12:55:00
+    important: false
     color: first
     slike:
       - '@assets/images/BLK04716.webp'
   - naslov: 'Југ: Пауза у Трстенику'
     datum: 2026-09-21T11:55:00
+    important: false
     color: second
     slike:
       - '@assets/images/IMG_6681.webp'
       - '@assets/images/IMG_6683.webp'
   - naslov: 'Југ: Пауза у Подунавцима'
     datum: 2026-09-21T11:05:00
+    important: false
     color: second
   - naslov: 'Север: Пауза у Старом Жеднику'
     datum: 2026-09-21T10:49:00
+    important: false
     color: first
     slike:
       - '@assets/images/BLK04571.webp'
       - '@assets/images/BLK04628_1.webp'
   - naslov: 'Југ: Друга група бициклиста је кренула из Краљева'
     datum: 2026-09-21T10:20:00
+    important: false
     color: second
     slike:
       - '@assets/images/IMG_6679.webp'
   - naslov: 'Север: Бициклисти су започели пут даље из Суботице'
     datum: 2026-09-21T10:03:00
+    important: false
     color: first
   - naslov: 'Север: Дочек у Суботици'
     datum: 2026-09-20T19:20:00
+    important: false
     color: first
     slike:
       - '@assets/images/BLK04533 (1).webp'
       - '@assets/images/BLK04496.webp'
   - naslov: 'Југ: Бициклисти улазе у Краљево'
     datum: 2026-09-20T19:00:00
+    important: false
     color: second
     videos:
       - bnMib7_veiU
   - naslov: 'Север: Бициклисти уз пратњу бајкера улазе у Суботицу'
     datum: 2026-09-20T18:56:00
+    important: false
     color: first
     videos:
       - G360Ioob1q4
   - naslov: 'Север: Бициклисти стигли на Палић'
     datum: 2026-09-20T18:07:00
+    important: false
     color: first
     slike:
       - '@assets/images/BLK04249.webp'
       - '@assets/images/BLK04263.webp'
   - naslov: 'Југ: Дочек у Чачку'
     datum: 2026-09-20T16:26:00
+    important: false
     color: second
     slike:
       - '@assets/images/Untitled design (2).webp'
   - naslov: 'Југ: На путу до Чачка'
     datum: 2026-09-20T16:13:00
+    important: false
     color: second
     videos:
       - 3beo7iSMzXY
@@ -264,31 +326,37 @@ timeline:
       - '@assets/images/photo_5870835894519009580_y.webp'
   - naslov: 'Север: Бициклисти и грађани играју коло у Новом Кнежевцу'
     datum: 2026-09-20T15:37:00
+    important: false
     color: first
     slike:
       - '@assets/images/BLK03993.webp'
       - '@assets/images/BLK03984.webp'
   - naslov: 'Север: Дочек у Новом Кнежевцу'
     datum: 2026-09-20T15:05:00
+    important: false
     color: first
     slike:
       - '@assets/images/BLK03901.webp'
       - '@assets/images/BLK03899.webp'
   - naslov: 'Север: Пауза у Чоки'
     datum: 2026-09-20T13:43:00
+    important: false
     color: first
   - naslov: 'Југ: Бициклисти настављају ка Пожеги уз одличну атмосферу'
     datum: 2026-09-20T13:26:00
+    important: false
     color: second
     videos:
       - aONpwrdhBRs
   - naslov: 'Север: Улазак у Сенту'
     datum: 2026-09-20T12:53:00
+    important: false
     color: first
     videos:
       - cAwamMdDtyw
   - naslov: 'Југ: Полазак из Ужица'
     datum: 2026-09-20T11:00:00
+    important: false
     color: second
     videos:
       - Hm-9N04NK2o
@@ -297,12 +365,14 @@ timeline:
       - '@assets/images/IMG_6666.webp'
   - naslov: 'Север: Пауза у Иђошу'
     datum: 2026-09-20T10:40:00
+    important: false
     color: first
     slike:
       - '@assets/images/BLK03522.webp'
       - '@assets/images/BLK03517.webp'
   - naslov: 'Север: Полазак из Кикинде'
     datum: 2026-09-20T09:41:00
+    important: false
     color: first
     videos:
       - S0YxWwIInUw
@@ -314,6 +384,7 @@ timeline:
       Придружили су им се тркачи који ће ићи са њима до излаза из Кикинде.
   - naslov: 'Север: Предаја Устава и дочек у Кикинди'
     datum: 2026-09-19T20:10:00
+    important: false
     color: first
     slike:
       - '@assets/images/BLK03325.webp'
@@ -322,176 +393,209 @@ timeline:
       - '@assets/images/BLK03433.webp'
   - naslov: 'Југ: Дочек у Ужицу'
     datum: 2026-09-19T19:30:00
+    important: false
     color: second
     videos:
       - otiyJblO7lc
   - naslov: 'Север: Дочек у Накову'
     datum: 2026-09-19T19:00:00
+    important: false
     color: first
     slike:
       - '@assets/images/BLK03092.webp'
       - '@assets/images/BLK03108.webp'
   - naslov: 'Југ: Пут бициклиста ка Ужицу'
     datum: 2026-09-19T17:38:00
+    important: false
     color: second
     videos:
       - Ke2OANK9LeA
   - naslov: 'Север: На путу до Руског села'
     datum: 2026-09-19T17:15:00
+    important: false
     color: first
     slike:
       - '@assets/images/IMG_6661.webp'
       - '@assets/images/IMG_6662.webp'
   - naslov: 'Север: Пауза у Српској Црњи'
     datum: 2026-09-19T16:00:00
+    important: false
     color: first
     slike:
       - '@assets/images/IMG_6659.webp'
   - naslov: 'Југ: Дочек у Пожеги'
     datum: 2026-09-19T15:55:00
+    important: false
     color: second
     videos:
       - QVmhkBj1_5A
   - naslov: 'Север: Пауза у Војвода Степи'
     datum: 2026-09-19T15:00:00
+    important: false
     color: first
     slike:
       - '@assets/images/IMG_6656.webp'
       - '@assets/images/IMG_6655.webp'
   - naslov: 'Север: Kолона трактора'
     datum: 2026-09-19T13:30:00
+    important: false
     color: first
     videos:
       - iKd6eTt1rSA
   - naslov: 'Север: Пауза у Банатском Карађорђеву'
     datum: 2026-09-19T12:40:00
+    important: false
     color: first
     slike:
       - '@assets/images/IMG_6653.webp'
       - '@assets/images/IMG_6654 2.webp'
   - naslov: 'Југ: Дочек у Чачку'
     datum: 2026-09-19T12:15:00
+    important: false
     color: second
     slike:
       - '@assets/images/IMG_6652.webp'
   - naslov: 'Север: 16 минута тишине у Честерегу'
     datum: 2026-09-19T12:08:00
+    important: false
     color: first
     slike:
       - '@assets/images/IMG_6650.webp'
   - naslov: 'Север: Нашим бициклистима се придружио кандидат СЛ Дејан Ђурђев'
     datum: 2026-09-19T11:25:00
+    important: false
     color: first
     videos:
       - 6-1FXiPcg-A
   - naslov: 'Југ: Полазак из Горњег Милановца'
     datum: 2026-09-19T10:50:00
+    important: false
     color: second
     slike:
       - '@assets/images/IMG_6647.webp'
   - naslov: 'Север: Пауза у Житишту'
     datum: 2026-09-19T10:35:00
+    important: false
     color: first
     slike:
       - '@assets/images/IMG_6645.webp'
       - '@assets/images/IMG_6644.webp'
   - naslov: 'Север: На путу до Житишта'
     datum: 2026-09-19T10:15:00
+    important: false
     color: first
     videos:
       - _X9iNYzszBk
   - naslov: 'Север: Трећи дан за наше бициклисте је крену - Полазак из Зрењанина'
     datum: 2026-09-19T09:20:00
+    important: false
     color: first
     slike:
       - '@assets/images/IMG_9726.webp'
   - naslov: 'Југ: Говор Александре Штимац у Горњем Милановцу'
     datum: 2026-09-18T19:40:00
+    important: false
     color: second
     videos:
       - htiNmrdCk2s
   - naslov: 'Север: Говор Михајла Јовановића студента Факултетa спорта и физичког васпитања'
     datum: 2026-09-18T19:30:00
+    important: false
     color: first
     videos:
       - h1_YAcVemNw
   - naslov: 'Север: Дочек у Зрењанину'
     datum: 2026-09-18T19:10:00
+    important: false
     color: first
     videos:
       - U0fnUn29t3Y
   - naslov: 'Север: Улазак у Зрењанин'
     datum: 2026-09-18T19:29:00
+    important: false
     color: first
     videos:
       - 9Kgko-iLiBs
   - naslov: 'Југ: Дочек у Горњем Милановцу'
     datum: 2026-09-18T19:25:00
+    important: false
     color: second
     videos:
       - rioD5YXT96M
   - naslov: 'Север: Пауза у Лазареву'
     datum: 2026-09-18T18:25:00
+    important: false
     color: first
     slike:
       - '@assets/images/IMG_6636.webp'
   - naslov: 'Север: Илија Срдановић се придружио нашим бициклистима'
     datum: 2026-09-18T17:31:00
+    important: false
     color: first
     slike:
       - '@assets/images/IMG_6634.webp'
       - '@assets/images/IMG_6631.webp'
   - naslov: 'Југ: На путу ка Горњем Милановцу'
     datum: 2026-09-18T16:00:00
+    important: false
     color: second
     videos:
       - FlTAfzW-2ho
   - naslov: 'Север: Дочек у Сечњу'
     datum: 2026-09-18T15:56:00
+    important: false
     color: first
     videos:
       - 3LmiH4Kwif4
   - naslov: 'Север: Непланирана пауза у Боки'
     datum: 2026-09-18T15:01:00
+    important: false
     color: first
     slike:
       - '@assets/images/IMG_6628.webp'
   - naslov: 'Југ: Дочек у Љигу'
     datum: 2026-09-18T14:15:00
+    important: false
     color: second
     slike:
       - '@assets/images/IMG_6625.webp'
       - '@assets/images/IMG_6626.webp'
   - naslov: 'Север: Пауза у Конаку'
     datum: 2026-09-18T14:03:00
+    important: false
     color: first
     slike:
       - '@assets/images/IMG_6623 2.webp'
       - '@assets/images/IMG_6624.webp'
   - naslov: 'Север: На путу до Конака'
     datum: 2026-09-18T13:55:00
+    important: false
     color: first
     videos:
       - t8GyMN-mNzM
   - naslov: Југ зна за кога гласа
     datum: 2026-09-18T13:46:00
+    important: false
     color: second
     slike:
       - '@assets/images/IMG_6619.webp'
       - '@assets/images/IMG_6620.webp'
   - naslov: 'Југ: Полазак из Мионице'
     datum: 2026-09-18T13:05:00
+    important: false
     color: second
     slike:
       - '@assets/images/IMG_1075.webp'
       - '@assets/images/IMG_1071.webp'
   - naslov: 'Југ: Управо је кренула и екипа са југа - Излазак из Ваљева'
     datum: 2026-09-18T11:30:00
+    important: false
     color: second
     slike:
       - '@assets/images/IMG_4061.webp'
   - naslov: 'Север: Дочек у Пландишту'
     datum: 2026-09-18T10:55:00
+    important: false
     color: first
     videos:
       - c_-KH-aqo6Q
@@ -500,6 +604,7 @@ timeline:
       - '@assets/images/IMG_6614.webp'
   - naslov: 'Север: Други дан за екипу је кренуо - Полазак из Вршца'
     datum: 2026-09-18T10:00:00
+    important: false
     color: first
     videos:
       - EKqHe5oVDNk
@@ -507,21 +612,25 @@ timeline:
       - '@assets/images/IMG_6612.webp'
   - naslov: 'Југ: Дочек у Ваљеву'
     datum: 2026-09-17T19:48:00
+    important: false
     color: second
     videos:
       - e-bK6WVMtR4
   - naslov: 'Север: надомак Вршца'
     datum: 2026-09-17T17:55:00
+    important: false
     color: first
     videos:
       - lFVi6ar-VWw
   - naslov: 'Југ: Бициклисти праве последњу паузу пред улазак у Ваљево'
     datum: 2026-09-17T17:45:00
+    important: false
     color: second
     slike:
       - '@assets/images/Untitled design (1).webp'
   - naslov: 'Север: Бициклисти дочекани у селу Николинци'
     datum: 2026-09-17T17:01:00
+    important: false
     color: first
     slike:
       - '@assets/images/1-2.webp'
@@ -529,11 +638,13 @@ timeline:
     tekst: Неколицина мештана села Николинци приредила је дочек нашим бициклистима. Они су им припремили различита пецива и слатке палачинке. Након краће паузе наши бициклисти су наставили даље својом путањом.
   - naslov: 'Север: Бициклисти прошли Алибунар'
     datum: 2026-09-17T15:25:00
+    important: false
     color: first
     slike:
       - '@assets/images/Untitled design.webp'
   - naslov: 'Север: Крај паузе у Банатском Новом Селу'
     datum: 2026-09-17T14:51:00
+    important: false
     color: first
     videos:
       - r_-EFk59fwI
@@ -542,6 +653,7 @@ timeline:
       - '@assets/images/IMG_20260917_150540.webp'
   - naslov: 'Југ: Пауза у Убу'
     datum: 2026-09-17T14:50:00
+    important: false
     color: second
     slike:
       - '@assets/images/IMG_6601.webp'
@@ -549,6 +661,7 @@ timeline:
     tekst: Бициклисти су одлучили да предахну у Убу. Тамо су се сусрели са колегама из радне јединице Студент у сваком селу и потписали Студенткси план.
   - naslov: 'Југ: Предах у Црвеној Јабуци'
     datum: 2026-09-17T14:37:00
+    important: false
     color: second
     slike:
       - '@assets/images/IMG_20260917_144545.webp'
@@ -557,20 +670,24 @@ timeline:
     tekst: Бициклисти који возе носећи Устав кроз централну и јужну Србију, направили су краћи предах у месту Црвена Јабука, надомак Уба.
   - naslov: 'Север: Улазак у Банатско Ново Село'
     datum: 2026-09-17T14:23:00
+    important: false
     color: first
     slike:
       - '@assets/images/IMG_20260917_145809.webp'
       - '@assets/images/IMG_20260917_145823.webp'
   - naslov: 'Југ: Кренули пут Уба'
     datum: 2026-09-17T13:29:00
+    important: false
     color: second
     tekst: Након паузе у Обреновцу, бициклисти су се упутили ка Убу.
   - naslov: 'Север: Улазак у Банатско Ново Село'
     datum: 2026-09-17T13:17:00
+    important: false
     color: first
     tekst: Бициклисти улазе у Банатско Ново Село, где ће направити паузу.
   - naslov: 'Север: Наставак пута кроз Банат'
     datum: 2026-09-17T12:30:00
+    important: false
     color: first
     slike:
       - '@assets/images/IMG_20260917_124009.webp'
@@ -578,16 +695,19 @@ timeline:
     tekst: Бициклисти су се након  шенаестоминутног помена, упутили ка Банатском Новом Селу где ће застати да предахну.
   - naslov: 'Југ: Обреновац'
     datum: 2026-09-17T12:22:00
+    important: false
     color: second
     tekst: Бициклисти који су се упутили ка јужној Србији, застали су да предахну у Обреновцу.
   - naslov: 16 минута тишине
     datum: 2026-09-17T12:00:00
+    important: false
     color: first
     slike:
       - '@assets/images/IMG_20260917_121602.webp'
       - '@assets/images/IMG_20260917_121645.webp'
   - naslov: 'Север: улазак у Панчево'
     datum: 2026-09-17T11:34:00
+    important: false
     color: first
     videos:
       - girsmag8sJ8
@@ -596,6 +716,7 @@ timeline:
     tekst: Студент Електротехничког факултета Андреј Танко, дочекао је бициклисте у Панчеву.
   - naslov: 'Север: Надомак Панчева'
     datum: 2026-09-17T11:16:00
+    important: false
     color: first
     videos:
       - mvOv6M0yW7A
@@ -605,6 +726,7 @@ timeline:
     tekst: Биклисти на тури кроз Војводину улазе у Панчево, где ће у 11.52 бити одржано 16 минута тишине.
   - naslov: Говор студенткиње Факултета организационих наука
     datum: 2026-09-17T09:52:00
+    important: false
     color: first
     videos:
       - 70iyvQ02jgg
@@ -639,6 +761,7 @@ timeline:
       > **И запамтите. Студенти побеђују!**
   - naslov: Окупљање бициклиста
     datum: 2026-09-17T08:32:00
+    important: false
     color: first
     tekst: У току је окјупљање бициклиста на Тргу републике.
 ---
