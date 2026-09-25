@@ -22,6 +22,9 @@ timeline:
     datum: 2026-09-25T16:45:00
     important: false
     color: first
+    slike:
+      - '@assets/images/BLK05656.webp'
+      - '@assets/images/BLK05643.webp'
   - naslov: 'Север: На паузи у Осечини'
     datum: 2026-09-25T13:45:00
     important: false
