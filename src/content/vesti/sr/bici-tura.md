@@ -41,6 +41,8 @@ timeline:
     datum: 2026-09-25T11:30:00
     important: false
     color: first
+    videos:
+      - yK6D5HcCo-s
   - naslov: 'Југ: Наши бициклисти настављају своју туру даље - Полазак из Ниша'
     datum: 2026-09-25T11:15:00
     important: false
