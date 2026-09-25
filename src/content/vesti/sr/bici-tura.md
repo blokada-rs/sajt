@@ -30,7 +30,7 @@ timeline:
     color: second
     slike:
       - '@assets/images/IMG_6760.webp'
-  - naslov: 'Север: Пауза Завлаци'
+  - naslov: 'Север: Завлака пауза'
     datum: 2026-09-25T13:00:00
     important: false
     color: first
