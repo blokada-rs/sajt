@@ -188,8 +188,8 @@ importers:
         specifier: ^0.7.2
         version: 0.7.2
       '@sveltia/cms':
-        specifier: ^0.219.0
-        version: 0.219.0
+        specifier: ^0.220.0
+        version: 0.220.0
       astro:
         specifier: ^7.3.4
         version: 7.3.4(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@24.13.6)(sass@1.105.0)
@@ -1061,8 +1061,8 @@ packages:
   '@shikijs/vscode-textmate@10.0.2':
     resolution: {integrity: sha512-83yeghZ2xxin3Nj8z1NMd/NCuca+gsYXswywDy5bHvwlWL8tpTQmzGeUuHd9FC3E/SBEMvzJRwWEOz5gGes9Qg==}
 
-  '@sveltia/cms@0.219.0':
-    resolution: {integrity: sha512-2mPDk4VjPKWABL8qiOo/mS+YM8GIpT/Oyz/pUpr1LYQV9HysCauKps/5PMk40n2Vj/4SoEqCLOu5vruqMy3WvA==}
+  '@sveltia/cms@0.220.0':
+    resolution: {integrity: sha512-MVIIfnw8ptT5GIPf0TtJDEVeJ/nQkJnC3ODPoo4tTtWfcdtulE0d66GQ7QunhhTBvdjmfg8Sv3xPMlZrPd4zlw==}
 
   '@tybys/wasm-util@0.10.4':
     resolution: {integrity: sha512-W3c4gRigFS0T/Ma4qIYF3GDAc5AQdHb1yL5znJT1Zv1YaD9Kitx656wBjvr19qbiosmZT8lWDM5BEMynUqX65A==}
@@ -2557,7 +2557,7 @@ snapshots:
 
   '@shikijs/vscode-textmate@10.0.2': {}
 
-  '@sveltia/cms@0.219.0': {}
+  '@sveltia/cms@0.220.0': {}
 
   '@tybys/wasm-util@0.10.4':
     dependencies:
