@@ -5,6 +5,7 @@ live: false
 pubDate: 2026-08-13T18:59
 updatedDate: 2026-08-13T18:59
 heroImage: '@assets/images/IMG_4550.webp'
+archived: true
 description: |-
   15. августа студенти одлазе да лично помогну пољопривредницима у брању шљива.
   Заједно побеђујемо, и заједно ћемо славити.
