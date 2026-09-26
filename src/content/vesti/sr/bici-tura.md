@@ -31,13 +31,14 @@ timeline:
     important: false
     color: first
     tekst: Бициклисти са југа и севера су се спојили у једну колону.
-  - naslov: 'Север: Пауза у Тополи и кандидаткиња СЛСП Сузана Роган'
+  - naslov: 'Север: Пауза у Тополи'
     datum: 2026-09-26T14:00:00
     important: false
     color: first
     slike:
       - '@assets/images/photo_2026-09-26 14.06.25.webp'
       - '@assets/images/photo_2026-09-26 14.11.55.webp'
+    tekst: Кандидаткиња Студентске листе - Студенти побеђују Сузана Роган вози са нама.
   - naslov: 'Југ: Пауза у Милошеву'
     datum: 2026-09-26T13:30:00
     important: false
@@ -64,7 +65,7 @@ timeline:
     slike:
       - '@assets/images/BLK05937.webp'
       - '@assets/images/BLK05966.webp'
-  - naslov: 'Север: Наши бициклисти су управо кренули из Лазаревца'
+  - naslov: 'Север: Бициклисти су управо кренули из Лазаревца'
     datum: 2026-09-26T09:29:00
     important: false
     color: first
