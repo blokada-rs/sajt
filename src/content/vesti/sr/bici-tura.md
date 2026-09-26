@@ -28,6 +28,9 @@ timeline:
     datum: 2026-09-26T11:35:00
     important: false
     color: first
+    slike:
+      - '@assets/images/photo_2026-09-26 12.43.57.webp'
+      - '@assets/images/photo_2026-09-26 12.43.53.webp'
   - naslov: 'Север: На путу до Аранђеловца'
     datum: 2026-09-26T10:35:00
     important: false
