@@ -22,6 +22,8 @@ timeline:
     datum: 2026-09-26T14:00:00
     important: false
     color: first
+    slike:
+      - '@assets/images/photo_2026-09-26 14.06.25.webp'
   - naslov: 'Југ: Пауза у Милошеву'
     datum: 2026-09-26T13:30:00
     important: false
