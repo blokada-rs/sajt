@@ -5,6 +5,7 @@ live: false
 pubDate: 2026-08-29T16:18
 updatedDate: 2026-08-29T16:18
 heroImage: '@assets/images/photo_5807509230259474614_w.webp'
+archived: true
 description: |-
   Крушевац - 18–21ч . Дом синдиката
   Чачак - 19–22ч - шеталиште на Морави
