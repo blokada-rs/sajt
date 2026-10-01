@@ -40,3 +40,7 @@ description: 'Послали смо отворено писмо целој ди�
 Права свих српских бирача морају бити заштићена. Позивамо свако дипломатско-конзуларно представништво Републике Србије да поступи у складу с тим.
 
 **Студентски покрет**
+
+[**Поштовање права свих српских бирача**](https://studenti.org.rs/download/postovanje_svih.pdf)
+
+[**Report on opholding the rights of all Serbian voters**](https://studenti.org.rs/download/all_rights.pdf)
