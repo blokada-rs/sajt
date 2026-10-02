@@ -61,6 +61,15 @@ const { lang } = Astro.params;
     <slot name="head" />
   </head>
   <body>
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-TH44SPHK"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"
+      />
+    </noscript>
+
     <Header />
     <slot name="above" />
     <main>
