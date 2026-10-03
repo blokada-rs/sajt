@@ -1,6 +1,6 @@
 ---
 import Base from "@layouts/Base.astro";
-import { collection, file, langs } from "@scripts/i18n";
+import { collection,file,langs } from "@scripts/i18n";
 
 import { Picture } from "astro:assets";
 
@@ -31,7 +31,7 @@ export async function getStaticPaths() {
   <section>
     <h2>{frontmatter.najnovija_vest}</h2>
 
-    <a class="latest clear" href={`/${lang}/vesti/${posts[0].id}/`}>
+    <a class="latest clear" href={`${lang == "sr" ? "" : `/${lang}`}/vesti/${posts[0].id}/`}>
       <Picture
         transition:name={posts[0].id}
         formats={["avif", "webp"]}
@@ -57,7 +57,7 @@ export async function getStaticPaths() {
     <ul>
       {posts.slice(1).sort((a, b) => b.data.live - a.data.live).map((post, index) => (
         <li>
-          <a class="clear" href={`/${lang}/vesti/${post.id}/`}>
+          <a class="clear" href={`${lang == "sr" ? "" : `/${lang}`}/vesti/${post.id}/`}>
             <Picture
               transition:name={post.id}
               formats={["avif", "webp"]}

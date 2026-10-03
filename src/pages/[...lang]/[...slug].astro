@@ -83,7 +83,7 @@ const live = vesti.filter((vest) => vest.data.live && !vest.data.archived);
   {frontmatter.link == "index" && live.length > 0 && (
     <div class="live-box">
       {live.map((live) => (
-        <Live href={`/${lang}/vesti/${live.id}`}>{live.data.title}</Live>
+        <Live href={`${lang == "sr" ? "" : `/${lang}`}/vesti/${live.id}`}>{live.data.title}</Live>
       ))}
     </div>
   )}

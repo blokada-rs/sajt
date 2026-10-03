@@ -1,6 +1,6 @@
 ---
-import Slider from "@components/Slider.astro";
 import Card from "@components/Card.astro";
+import Slider from "@components/Slider.astro";
 import { collection } from "@scripts/i18n.ts";
 
 interface Props {
@@ -16,9 +16,9 @@ const vesti = await collection("vesti", lang);
 
 <Slider>
   {vesti.sort((a, b) => b.data.live - a.data.live).slice(0, 3).map((post) => (
-    <Card link={`/${lang}/vesti/${post.id}`} {...post} />
+    <Card link={`${lang == "sr" ? "" : `/${lang}`}/vesti/${post.id}`} {...post} />
   ))}
-  <a slot="button" href=`/${lang}/vesti` class="button primary dugme">
+  <a slot="button" href={`${lang == "sr" ? "" : `/${lang}`}/vesti`} class="button primary dugme">
     {text}
   </a>
 </Slider>
