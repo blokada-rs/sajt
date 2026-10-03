@@ -3,8 +3,6 @@ import BaseHead from "@components/BaseHead.astro";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
 
-import { langs } from "@scripts/i18n";
-
 interface Props {
   title: string;
   description: string;
@@ -13,50 +11,19 @@ interface Props {
 }
 
 const { title, description, image, class: klass } = Astro.props;
+
 const { lang } = Astro.params;
 ---
 
-<!doctype html>
-<html
-  {lang}
-  class={klass}
-  data-langs={JSON.stringify(
-    langs.filter((lang) => typeof lang !== "undefined"),
-  )}
->
+<html {lang} class={klass}>
   <head>
-    <script>
-      (() => {
+    {Astro.params.lang === "sr" && <script>
+      const lang = localStorage.getItem("lang") ?? "sr";
+      if (lang !== "sr") {
         let link = `${window.location.pathname + window.location.search + window.location.hash}`;
-        const langs = JSON.parse(
-          document.documentElement.dataset.langs!!,
-        ) as string[];
-        const shouldRedirect = !langs.some(
-          (lang) =>
-            window.location.pathname.startsWith(`/${lang}/`) ||
-            window.location.pathname === `/${lang}`,
-        );
-
-        if (!shouldRedirect) {
-          localStorage.setItem("lang", document.documentElement.lang);
-          link = link.substring(document.documentElement.lang.length + 1);
-          window.history.replaceState(
-            {},
-            "",
-            `${window.location.protocol}//${window.location.host}${link}`,
-          );
-          return;
-        }
-
-        const lang = localStorage.getItem("lang");
-        if (lang !== null) {
-          window.location.replace(`/${lang}${link}`);
-          return;
-        }
-
-        window.location.replace(`/sr${link}`);
-      })();
-    </script>
+        window.location.replace(`/${lang}${link}`);
+      }
+    </script>}
     <BaseHead {title} {description} {image} />
     <slot name="head" />
   </head>

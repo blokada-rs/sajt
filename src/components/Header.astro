@@ -17,13 +17,17 @@ const jezik = (jezik: string) => {
     url = url.replace(`/${lang}`, "");
   }
 
+  if (jezik == "sr") {
+    return `${url}`;
+  }
+
   return `/${jezik}${url}`;
 };
 ---
 
 <header transition:name="header">
   <nav>
-    <a class="title" href=`/${lang}`>
+    <a class="title" href=`/${lang == "sr" ? "" : lang}`>
       {frontmatter.naslov}
     </a>
 
@@ -52,7 +56,7 @@ const jezik = (jezik: string) => {
           naziv: string;
           link: string;
         }) => (
-          <HeaderLink href={`/${lang}${link}`}>{naziv}</HeaderLink>
+          <HeaderLink href={`${lang == "sr" ? "" : `/${lang}`}${link}`}>{naziv}</HeaderLink>
         ))}
 
         <button
@@ -77,17 +81,29 @@ const jezik = (jezik: string) => {
           </button>
         </li>
         <li>
-          <a class="button" href={jezik("sr")}>
+          <a
+            class="button"
+            onclick="localStorage.setItem('lang', 'sr')"
+            href={jezik("sr")}
+          >
             Српски (ћирилица)
           </a>
         </li>
         <li>
-          <a class="button" href={jezik("sr-lat")}>
+          <a
+            class="button"
+            onclick="localStorage.setItem('lang', 'sr-lat')"
+            href={jezik("sr-lat")}
+          >
             Srpski (latinica)
           </a>
         </li>
         <li>
-          <a class="button" href={jezik("en")}>
+          <a
+            class="button"
+            onclick="localStorage.setItem('lang', 'en')"
+            href={jezik("en")}
+          >
             English
           </a>
         </li>

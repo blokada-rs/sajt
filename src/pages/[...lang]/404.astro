@@ -8,9 +8,6 @@ export async function getStaticPaths() {
 }
 
 const { lang } = Astro.params;
-if (typeof lang === "undefined") {
-  return Astro.rewrite(`/sr${Astro.url.pathname}`);
-}
 
 const { frontmatter } = await file("ostalo", lang);
 const { Content } = await file("not_found", lang);

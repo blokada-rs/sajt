@@ -3,11 +3,6 @@ import { collectionIDs, entry, langs } from "@scripts/i18n";
 import { render, type CollectionEntry } from "astro:content";
 import BlogPost from "../../../layouts/BlogPost.astro";
 
-const { lang } = Astro.params;
-if (typeof lang === "undefined") {
-  return Astro.rewrite(`/sr${Astro.url.pathname}`);
-}
-
 export async function getStaticPaths() {
   const posts = await collectionIDs("vesti");
 

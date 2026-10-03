@@ -7,9 +7,6 @@ import { ICON_SIZE_LG } from "consts";
 import { icons, socials } from "@scripts/collections";
 
 const { lang } = Astro.params;
-if (typeof lang === "undefined") {
-  return Astro.rewrite(`/sr${Astro.url.pathname}`);
-}
 
 export async function getStaticPaths() {
   const linkovi = await collectionIDs("linkovi");

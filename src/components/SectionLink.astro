@@ -5,10 +5,17 @@ interface Props {
 }
 
 const { link, text } = Astro.props;
+const { lang } = Astro.params;
+
+let lang_link = link;
+if (link.startsWith("/") && Astro.params.lang != "sr") {
+  lang_link = `/${lang}${link}`
+}
+
 ---
 
 <div class="buttons">
-  <a href={link} class="button primary dugme center">
+  <a href={lang_link} class="button primary dugme center">
     {text}
   </a>
 </div>

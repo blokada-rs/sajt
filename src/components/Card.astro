@@ -7,7 +7,7 @@ import Live from "./Live.astro";
 
 type Props = CollectionEntry<"vesti"> & { lang: string; link: string };
 
-const { body, data, link, lang } = Astro.props;
+const { body, data, id, link, lang } = Astro.props;
 const { lang: expectedLang } = Astro.params;
 const { frontmatter } = await file("ostalo", lang);
 ---
@@ -16,7 +16,7 @@ const { frontmatter } = await file("ostalo", lang);
   <a href={link} class="clear">
     {data.live && <Live>{frontmatter.live}</Live>}
     <Picture
-      transition:name={link}
+      transition:name={id}
       class="thumbnail"
       formats={["avif", "webp"]}
       width={1020}

@@ -24,6 +24,7 @@ const {
   live = false,
   live_embed,
   timeline,
+  link,
   map: map_prerender = null,
 } = Astro.props;
 
@@ -51,7 +52,7 @@ const { frontmatter } = await file("ostalo", lang);
   image={heroImage.src}
 >
   {expectedLang !== lang && (
-    <div class="full-width">
+    <div class="full-width untranslated">
       This page is currently not translated to English. Showing the untranslated
       version.
     </div>
@@ -61,7 +62,7 @@ const { frontmatter } = await file("ostalo", lang);
       {heroImage && (
         <Picture
           fetchpriority="high"
-          transition:name={Astro.originPathname}
+          transition:name={link}
           formats={["avif", "webp"]}
           width={1020}
           src={heroImage}
@@ -154,9 +155,10 @@ const { frontmatter } = await file("ostalo", lang);
     font-style: italic;
   }
 
-  .full-width {
+  .untranslated {
     text-align: center;
     background-color: bisque;
+    color: black;
     position: sticky;
     top: calc(4rem - 2px);
     padding-block: 0.5rem;

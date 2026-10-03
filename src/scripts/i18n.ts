@@ -7,7 +7,7 @@ import {
   render,
 } from "astro:content";
 
-export const langs = ["sr", "sr-lat", "en", undefined];
+export const langs = ["sr", "sr-lat", "en"];
 
 const fallbackLanguages = ["en", "sr-lat"];
 

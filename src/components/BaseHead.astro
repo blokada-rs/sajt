@@ -4,6 +4,7 @@ import "../styles/global.css";
 
 import slavija from "@assets/images/slavija-test.jpg";
 import { AstroFont } from "astro-font";
+import ClientRouter from "astro/components/ClientRouter.astro";
 
 interface Props {
   title: string;
@@ -73,35 +74,10 @@ const tag_id = "GTM-TH44SPHK";
   }
 />
 
-<!-- <ClientRouter /> -->
-<!--<meta name="astro-view-transitions-enabled" content="false" />-->
-
-<!-- Google tag (gtag.js) -->
-<script
-  is:inline
-  defer
-  src="https://www.googletagmanager.com/gtag/js?id=G-LR43G5KCPF"
-></script>
-<script defer is:inline>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-
-  gtag("js", new Date());
-  gtag("config", "G-LR43G5KCPF", { debug_mode: true });
-</script>
+<ClientRouter />
 
 <script is:inline>
   window.dataLayer = window.dataLayer || [];
   window.dataLayer.push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
 </script>
 <script is:inline async src=`https://www.googletagmanager.com/gtm.js?id=${tag_id}&l=dataLayer` />
-
-<script>
-  import { apply, isSupported } from "@oddbird/popover-polyfill/fn";
-
-  if (!isSupported()) {
-    apply();
-  }
-</script>

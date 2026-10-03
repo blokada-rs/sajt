@@ -4,9 +4,6 @@ import { collection, file, langs } from "@scripts/i18n";
 
 import { Markdown } from "@mashehu/astropub-md";
 const { lang } = Astro.params;
-if (typeof lang === "undefined") {
-  return Astro.rewrite(`/sr${Astro.url.pathname}`);
-}
 
 const afere = await collection("afere", lang);
 
