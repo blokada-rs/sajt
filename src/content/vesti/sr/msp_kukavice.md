@@ -2,6 +2,7 @@
 link: msp_kukavice
 title: Мук, кукавичлук и институционална саботажа
 live: false
+live_embed: LY3ldsobJoU
 pubDate: 2026-10-04T21:42:00
 updatedDate: 2026-10-04T21:42:00
 heroImage: '@assets/images/1000002162.webp'
