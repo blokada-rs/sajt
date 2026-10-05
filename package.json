@@ -17,7 +17,7 @@
     "@iconify-json/mdi": "^1.2.3",
     "@iconify-json/simple-icons": "^1.2.98",
     "@mashehu/astropub-md": "^3.0.0",
-    "@sveltia/cms": "^0.227.2",
+    "@sveltia/cms": "^0.227.4",
     "astro": "^7.3.5",
     "astro-font": "^1.2.0",
     "astro-icon": "^1.2.0",
@@ -32,7 +32,7 @@
     "@types/leaflet.markercluster": "^1.5.6",
     "prettier": "^3.9.9",
     "prettier-plugin-astro": "^1.1.0",
-    "prettier-plugin-astro-organize-imports": "^0.4.13",
+    "prettier-plugin-astro-organize-imports": "^0.4.14",
     "prettier-plugin-organize-imports": "^4.3.0"
   },
   "packageManager": "pnpm@12.4.2+sha512.08adc6613180275c7c9edada39dcf08c9c61ad4e7eaf330a4f3461f102b0f907423454d117f98e72d47fef0616070644d7bffc973a6a57f5090a6d7c368b07c9"

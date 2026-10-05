@@ -185,8 +185,8 @@ importers:
         specifier: ^3.0.0
         version: 3.0.0(astro@7.3.5(@types/node@24.19.1)(sass@1.105.1))
       '@sveltia/cms':
-        specifier: ^0.227.2
-        version: 0.227.2
+        specifier: ^0.227.4
+        version: 0.227.4
       astro:
         specifier: ^7.3.5
         version: 7.3.5(@types/node@24.19.1)(sass@1.105.1)
@@ -225,8 +225,8 @@ importers:
         specifier: ^1.1.0
         version: 1.1.0(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(prettier@3.9.9)
       prettier-plugin-astro-organize-imports:
-        specifier: ^0.4.13
-        version: 0.4.13(prettier-plugin-astro@1.1.0(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(prettier@3.9.9))(prettier@3.9.9)
+        specifier: ^0.4.14
+        version: 0.4.14(prettier-plugin-astro@1.1.0(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(prettier@3.9.9))(prettier@3.9.9)
       prettier-plugin-organize-imports:
         specifier: ^4.3.0
         version: 4.3.0(prettier@3.9.9)(typescript@6.0.3)
@@ -1147,8 +1147,8 @@ packages:
   '@shikijs/vscode-textmate@10.0.2':
     resolution: {integrity: sha512-83yeghZ2xxin3Nj8z1NMd/NCuca+gsYXswywDy5bHvwlWL8tpTQmzGeUuHd9FC3E/SBEMvzJRwWEOz5gGes9Qg==}
 
-  '@sveltia/cms@0.227.2':
-    resolution: {integrity: sha512-sVcZEiIoowGacQVZntrVZ3xsyFX7aK7BavTS1NT8jCAz+Kf6F4sckyNyaNZArEpNolK1H3mpmp8FVry8xadXCw==}
+  '@sveltia/cms@0.227.4':
+    resolution: {integrity: sha512-SU0ql3ln5gYd/VvwGqY+Gvzs/Y4hL1tIfHmZYyTLr+6hyyl6s1yZw6udXys/SNl6+m330wHU/QjcUIWQP61Xzw==}
     peerDependencies:
       '@types/react': ^19.3.0
     peerDependenciesMeta:
@@ -1435,8 +1435,8 @@ packages:
   html-void-elements@3.0.0:
     resolution: {integrity: sha512-bEqo66MRXsUGxWHV5IP0PUiAWwoEjba4VCzg0LjFJBpchPaTfyfCKTG6bc5F8ucKec3q5y6qOdGyYTSBEvhCrg==}
 
-  http-cache-semantics@4.2.0:
-    resolution: {integrity: sha512-dTxcvPXqPvXBQpq5dUr6mEMJX4oIEFv6bwom3FDwKRDsuIjjJGANqhBuoAn9c1RQJIdAKav33ED65E2ys+87QQ==}
+  http-cache-semantics@4.3.0:
+    resolution: {integrity: sha512-M5t5LlJpS1UHMjvwRQVdFHvPISGeLAxNcrWuJkeGh0KxsqCHZ1O3NXZU/8x7cD0BDcGW8kapxMKTvwlqrNkHkA==}
 
   immutable@5.1.9:
     resolution: {integrity: sha512-m8nVez3rwrgmWxtLMt1ZYXB2Lv7OKYn/disyxAlSDYAlKSlFoPPfIAmAM/M5xqL4m4C/wAPw7S2/CNaUii1Hxg==}
@@ -1682,8 +1682,8 @@ packages:
     resolution: {integrity: sha512-RRuzqDtt5Y9h3quz5hWhK+TPnsmVs6WwSU6LkJMeY4HstUEDuYTG8UJSdawMRzmzAtV+KEoG8N3Qg2qLy5vM/A==}
     engines: {node: ^10 || ^12 || >=14}
 
-  prettier-plugin-astro-organize-imports@0.4.13:
-    resolution: {integrity: sha512-AN96GT3ioy1r0MhVdT9UcqMWXtlb0itmUYvefWpclI1uMgPk9kpIqi1aW0fUzKsVWLWkfOWAPp3dOPFrf3pBRg==}
+  prettier-plugin-astro-organize-imports@0.4.14:
+    resolution: {integrity: sha512-botXAlDCY9vnYwMSPOfZppukdhtqkZzL3gggnbf7AQxxGSHWzfnYMzBX7NPCoo8P/IvgPXehDCP71Eg9TrJO4A==}
     peerDependencies:
       prettier: ^3.0
       prettier-plugin-astro: '*'
@@ -1832,8 +1832,8 @@ packages:
       leaflet: ^1.9.4
       terra-draw: ^1.0.0
 
-  terra-draw@1.35.0:
-    resolution: {integrity: sha512-uQI8lcPiUMqwVV29CexTfvT/AM4lGHtA+xWraW4njVExiM1+eGvRetYOBXmXEmgy5pL4X2dmjwMRH8JEYVtbgw==}
+  terra-draw@1.36.0:
+    resolution: {integrity: sha512-qvfMP2t8pVJectt3VL4h9VOoRaI7NEaKsvoiU+7rXzKuyDfsc+h0wsbl0d3ru7etiVSwl+ic64YCKVdVrcqJnA==}
 
   tiny-inflate@1.0.3:
     resolution: {integrity: sha512-pkY1fj1cKHb2seWDy0B16HeWyczlJA9/WW3u3c4z/NiWDsO3DOU5D7nhTLE9CF0yXv/QZFY7sEJmj24dK+Rrqw==}
@@ -2739,7 +2739,7 @@ snapshots:
 
   '@shikijs/vscode-textmate@10.0.2': {}
 
-  '@sveltia/cms@0.227.2':
+  '@sveltia/cms@0.227.4':
     dependencies:
       '@shikijs/langs': 4.4.3
       '@shikijs/themes': 4.4.3
@@ -2747,8 +2747,8 @@ snapshots:
       immutable: 5.1.9
       leaflet: 1.9.4
       svgo: 4.1.0
-      terra-draw: 1.35.0
-      terra-draw-leaflet-adapter: 1.0.3(leaflet@1.9.4)(terra-draw@1.35.0)
+      terra-draw: 1.36.0
+      terra-draw-leaflet-adapter: 1.0.3(leaflet@1.9.4)(terra-draw@1.36.0)
       turndown: 7.2.4
 
   '@tybys/wasm-util@0.10.4':
@@ -2848,7 +2848,7 @@ snapshots:
       get-tsconfig: 5.0.0-beta.4
       github-slugger: 2.0.0
       html-escaper: 3.0.3
-      http-cache-semantics: 4.2.0
+      http-cache-semantics: 4.3.0
       js-yaml: 4.3.2
       jsonc-parser: 3.3.1
       magic-string: 1.4.2
@@ -3128,7 +3128,7 @@ snapshots:
 
   html-void-elements@3.0.0: {}
 
-  http-cache-semantics@4.2.0: {}
+  http-cache-semantics@4.3.0: {}
 
   immutable@5.1.9: {}
 
@@ -3330,7 +3330,7 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.2
 
-  prettier-plugin-astro-organize-imports@0.4.13(prettier-plugin-astro@1.1.0(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(prettier@3.9.9))(prettier@3.9.9):
+  prettier-plugin-astro-organize-imports@0.4.14(prettier-plugin-astro@1.1.0(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(prettier@3.9.9))(prettier@3.9.9):
     dependencies:
       '@astrojs/compiler': 3.0.1
       prettier: 3.9.9
@@ -3538,12 +3538,12 @@ snapshots:
       picocolors: 1.1.1
       sax: 1.6.1
 
-  terra-draw-leaflet-adapter@1.0.3(leaflet@1.9.4)(terra-draw@1.35.0):
+  terra-draw-leaflet-adapter@1.0.3(leaflet@1.9.4)(terra-draw@1.36.0):
     dependencies:
       leaflet: 1.9.4
-      terra-draw: 1.35.0
+      terra-draw: 1.36.0
 
-  terra-draw@1.35.0: {}
+  terra-draw@1.36.0: {}
 
   tiny-inflate@1.0.3: {}
 

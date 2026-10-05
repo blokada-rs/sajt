@@ -18,19 +18,21 @@ const { frontmatter } = await file("ostalo", lang);
 {typeof timeline !== "undefined" && (
   <div class="desavanja" data-vidi_jos={frontmatter.vidi_jos}>
     {timeline.map((post) => (
-      <article class:list={[post.color ?? "first", {"important": post.important}]}>
+      <article
+        class:list={[post.color ?? "first", { important: post.important }]}
+      >
         <h3 class:list={[{ dark: border === "dark" }]}>{post.naslov}</h3>
         <FormattedDate date={post.datum} time />
         {(post.videos?.length ?? 0) > 0 && (
           <div class="videi">
             {post.videos?.map((video) => <iframe
-                src={`https://www.youtube-nocookie.com/embed/${video}`}
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              ></iframe>)}
+              src={`https://www.youtube-nocookie.com/embed/${video}`}
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>)}
           </div>
         )}
-        {(post.slike?.length ?? 0) > 0  && (
+        {(post.slike?.length ?? 0) > 0 && (
           <div class="slike">
             {post.slike?.map((slika) => (
               <Picture formats={["avif", "webp"]} src={slika} alt="" />
@@ -44,20 +46,20 @@ const { frontmatter } = await file("ostalo", lang);
   </div>
 )}
 
-<script>
+{timeline.length > 3 && <script>
   const timeline = document.querySelector(".desavanja") as HTMLElement;
   timeline?.classList.add("short");
 
   const toggle_short = document.createElement("button");
-  toggle_short.innerText = timeline?.dataset?.vidi_jos;
+  toggle_short.innerText = timeline.dataset.vidi_jos!;
   toggle_short.className = "button primary";
   toggle_short.onclick = () => {
     timeline?.classList.remove("short");
     timeline?.removeChild(toggle_short);
-  }
+  };
 
   timeline?.appendChild(toggle_short);
-</script>
+</script>}
 
 <style>
   .desavanja {
@@ -129,7 +131,8 @@ const { frontmatter } = await file("ostalo", lang);
     margin-top: 1rem;
   }
 
-  .slike, .videi {
+  .slike,
+  .videi {
     margin-block: 1rem;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
@@ -137,7 +140,8 @@ const { frontmatter } = await file("ostalo", lang);
   }
 
   @media (max-width: 700px) {
-    .slike, .videi {
+    .slike,
+    .videi {
       grid-template-columns: 1fr;
     }
   }
@@ -153,7 +157,7 @@ const { frontmatter } = await file("ostalo", lang);
     border-radius: 8px;
   }
 
-  .short article:nth-child(n+4) {
+  .short article:nth-child(n + 4) {
     display: none;
   }
 </style>
