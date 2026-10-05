@@ -46,7 +46,7 @@ const { frontmatter } = await file("ostalo", lang);
   </div>
 )}
 
-{timeline.length > 3 && <script>
+{(timeline ?? []).length > 3 && <script>
   const timeline = document.querySelector(".desavanja") as HTMLElement;
   timeline?.classList.add("short");
 
