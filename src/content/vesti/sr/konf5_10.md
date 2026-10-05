@@ -1,7 +1,7 @@
 ---
 link: konf5_10
 title: Хитна конференција за медије
-live: false
+live: true
 live_embed: w7PffRENitQ
 pubDate: 2026-10-05T11:01:00
 updatedDate: 2026-10-05T11:01:00
