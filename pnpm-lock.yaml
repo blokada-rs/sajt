@@ -185,8 +185,8 @@ importers:
         specifier: ^3.0.0
         version: 3.0.0(astro@7.3.5(@types/node@24.19.1)(sass@1.105.1))
       '@sveltia/cms':
-        specifier: ^0.227.4
-        version: 0.227.4
+        specifier: ^0.228.0
+        version: 0.228.0
       astro:
         specifier: ^7.3.5
         version: 7.3.5(@types/node@24.19.1)(sass@1.105.1)
@@ -1116,10 +1116,6 @@ packages:
     resolution: {integrity: sha512-dKVmbJecVdB9recl8a/CU4jdpNXyjJQrIcesIkpS70s5HS02ohpnCSpMUbotPnEUzbAcLQ+S4hwZYbkBBiTcJw==}
     engines: {node: '>=20'}
 
-  '@shikijs/langs@4.4.3':
-    resolution: {integrity: sha512-ePic0yfAJGOF83D5wBHK/00EjK65oahBYxFk5epgq33WRv7X9UuxLEV8PtR0szC0z8dl7INIpIodB99JRFlR+A==}
-    engines: {node: '>=20'}
-
   '@shikijs/langs@4.5.0':
     resolution: {integrity: sha512-wwBTqwduXSz0X4v9Qa2EWeFaYJEw1clCncWjoRNQRbVDu3SPRTRWucnouYapKj3b8Q+sk/41Vbc4B5c8nuYzLA==}
     engines: {node: '>=20'}
@@ -1128,16 +1124,8 @@ packages:
     resolution: {integrity: sha512-UM7ShlA8oz0OWxLLO8BmO9Ip6fVqdkt8yF0EH7nOCqHfrx1eEAzF0ZUVK7L+I8NEgeu1PEWSRlxaiPPeCb4iDg==}
     engines: {node: '>=20'}
 
-  '@shikijs/themes@4.4.3':
-    resolution: {integrity: sha512-w8UHjeUnIR965KMWJHUPXOc2mNJUnK3vpVLYLvw5IYU2mnTTJ89E24OrJDBNiJDQ0qzb0tc4l7mrIXx5cFeIyw==}
-    engines: {node: '>=20'}
-
   '@shikijs/themes@4.5.0':
     resolution: {integrity: sha512-zGb87H3UBbpuI4yoh5UguB1XbU+2BDU3kflM7UfZ+Cy2hWo9lBtqjSVK20gmLY6ukYl040hAypGXMgud9vul8Q==}
-    engines: {node: '>=20'}
-
-  '@shikijs/types@4.4.3':
-    resolution: {integrity: sha512-UEJxmRR++MAGR6hugn0vgVS2W/6lWAts84FFSrnlH9sP0LNol7E5+NQ792pH8liWUhyMyjhTgSUH3k7iD7tc5g==}
     engines: {node: '>=20'}
 
   '@shikijs/types@4.5.0':
@@ -1147,8 +1135,8 @@ packages:
   '@shikijs/vscode-textmate@10.0.2':
     resolution: {integrity: sha512-83yeghZ2xxin3Nj8z1NMd/NCuca+gsYXswywDy5bHvwlWL8tpTQmzGeUuHd9FC3E/SBEMvzJRwWEOz5gGes9Qg==}
 
-  '@sveltia/cms@0.227.4':
-    resolution: {integrity: sha512-SU0ql3ln5gYd/VvwGqY+Gvzs/Y4hL1tIfHmZYyTLr+6hyyl6s1yZw6udXys/SNl6+m330wHU/QjcUIWQP61Xzw==}
+  '@sveltia/cms@0.228.0':
+    resolution: {integrity: sha512-wxFptKsSuyUVLmhbwkwqzC/n6UIZ01iXsLQNJlYe3mvsn4Ro2br9cG76p5MF+U4bw6zg2Q6zqedx8PtCieZ9HQ==}
     peerDependencies:
       '@types/react': ^19.3.0
     peerDependenciesMeta:
@@ -2705,10 +2693,6 @@ snapshots:
       '@shikijs/types': 4.5.0
       '@shikijs/vscode-textmate': 10.0.2
 
-  '@shikijs/langs@4.4.3':
-    dependencies:
-      '@shikijs/types': 4.4.3
-
   '@shikijs/langs@4.5.0':
     dependencies:
       '@shikijs/types': 4.5.0
@@ -2719,18 +2703,9 @@ snapshots:
       '@shikijs/vscode-textmate': 10.0.2
       '@types/hast': 3.0.5
 
-  '@shikijs/themes@4.4.3':
-    dependencies:
-      '@shikijs/types': 4.4.3
-
   '@shikijs/themes@4.5.0':
     dependencies:
       '@shikijs/types': 4.5.0
-
-  '@shikijs/types@4.4.3':
-    dependencies:
-      '@shikijs/vscode-textmate': 10.0.2
-      '@types/hast': 3.0.5
 
   '@shikijs/types@4.5.0':
     dependencies:
@@ -2739,10 +2714,10 @@ snapshots:
 
   '@shikijs/vscode-textmate@10.0.2': {}
 
-  '@sveltia/cms@0.227.4':
+  '@sveltia/cms@0.228.0':
     dependencies:
-      '@shikijs/langs': 4.4.3
-      '@shikijs/themes': 4.4.3
+      '@shikijs/langs': 4.5.0
+      '@shikijs/themes': 4.5.0
       exifr: 7.1.3
       immutable: 5.1.9
       leaflet: 1.9.4
