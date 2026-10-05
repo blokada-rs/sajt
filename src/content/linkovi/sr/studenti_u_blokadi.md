@@ -1,6 +1,7 @@
 ---
 title: Студенти у блокади
 link: studenti_u_blokadi
+type: ot
 linkovi:
   - type: web
     naslov: Званични сајт студената у блокади
@@ -32,4 +33,7 @@ linkovi:
   - type: facebook
     naslov: Facebook профил
     link: https://www.facebook.com/share/1aWq33NE8Z/
+  - type: mail-bitno
+    naslov: Контакт за медије
+    link: mailto:mediji@studenti.org.rs
 ---
