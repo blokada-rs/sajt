@@ -4,8 +4,8 @@ description: Листа најкориснијих линкова
 najnovije_vesti: Најновије вести
 linkovi:
   - type: web-bitno
-    naslov: Упит у бирачки списак
-    link: https://upit.birackispisak.gov.rs
+    naslov: Приложи за победу
+    link: https://prilozi.studenti.org.rs
   - type: web-bitno
     naslov: Укључи се!
     link: https://studenti.org.rs/ukljuci-se#svi
@@ -16,6 +16,6 @@ linkovi:
     naslov: Водич за изборе
     link: https://studenti.org.rs/evodic/
   - type: web-bitno
-    naslov: Приложи за победу
-    link: https://prilozi.studenti.org.rs
+    naslov: Упит у бирачки списак
+    link: https://upit.birackispisak.gov.rs
 ---
