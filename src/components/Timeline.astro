@@ -21,15 +21,17 @@ const { frontmatter } = await file("ostalo", lang);
       <article
         class:list={[post.color ?? "first", { important: post.important }]}
       >
-        <h3 class:list={[{ dark: border === "dark" }]}>{post.naslov}</h3>
-        <FormattedDate date={post.datum} time />
+        <div>
+          <h3 class:list={[{ dark: border === "dark" }]}>{post.naslov}</h3>
+          <FormattedDate date={post.datum} time />
+        </div>
         {(post.videos?.length ?? 0) > 0 && (
           <div class="videi">
             {post.videos?.map((video) => <iframe
               src={`https://www.youtube-nocookie.com/embed/${video}`}
               referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen
-            ></iframe>)}
+            />)}
           </div>
         )}
         {(post.slike?.length ?? 0) > 0 && (
@@ -65,6 +67,9 @@ const { frontmatter } = await file("ostalo", lang);
   .desavanja {
     border-left: 4px solid var(--on-background);
     padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
 
   .desavanja:not(:first-child) {
@@ -73,11 +78,15 @@ const { frontmatter } = await file("ostalo", lang);
 
   article {
     position: relative;
+    padding-block: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
   }
 
   .important {
     color: var(--on-primary);
-    padding: 1.5rem;
+    padding-inline: 1.5rem;
   }
 
   .important h3::before {
@@ -93,9 +102,8 @@ const { frontmatter } = await file("ostalo", lang);
     border-radius: 8px;
   }
 
-  article:not(:last-of-type) {
-    padding-block: 1rem;
-    margin-bottom: 1rem;
+  article :global(p) {
+    margin: 0;
   }
 
   article h3 {
@@ -122,18 +130,12 @@ const { frontmatter } = await file("ostalo", lang);
   }
 
   article p {
-    margin-top: 0.5rem;
     margin-bottom: 0;
     text-align: justify;
   }
 
-  article :global(blockquote) {
-    margin-top: 1rem;
-  }
-
   .slike,
   .videi {
-    margin-block: 1rem;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 1rem;
@@ -159,5 +161,9 @@ const { frontmatter } = await file("ostalo", lang);
 
   .short article:nth-child(n + 4) {
     display: none;
+  }
+
+  .desavanja :global(.button) {
+    align-self:flex-start;
   }
 </style>
