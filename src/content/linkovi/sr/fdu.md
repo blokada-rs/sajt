@@ -16,4 +16,7 @@ linkovi:
   - type: facebook
     naslov: Facebook профил
     link: https://www.facebook.com/share/1EvzZ6fPr3/
+  - type: web
+    naslov: Блокадни албум
+    link: https://open.spotify.com/album/4RLEtsHx0y4fGf1t5FiP60
 ---
