@@ -4,7 +4,7 @@ title: Неће моћи ове ноћи
 live: false
 pubDate: 2026-10-06T12:14:00
 updatedDate: 2026-10-06T12:14:00
-heroImage: '@assets/images/IMG_20261006_120601.webp'
+heroImage: '@assets/images/riksajt.webp'
 archived: true
 description: |-
   РИК, среда 7.10. у 18.00.
