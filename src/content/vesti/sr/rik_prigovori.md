@@ -5,7 +5,7 @@ live: false
 pubDate: 2026-10-06T12:14:00
 updatedDate: 2026-10-06T12:14:00
 heroImage: '@assets/images/riksajt.webp'
-archived: true
+archived: false
 description: |-
   РИК, среда 7.10. у 18.00.
 
