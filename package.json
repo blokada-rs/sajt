@@ -15,7 +15,7 @@
     "@astrojs/rss": "^4.0.19",
     "@astrojs/sitemap": "^3.7.4",
     "@iconify-json/mdi": "^1.2.3",
-    "@iconify-json/simple-icons": "^1.2.98",
+    "@iconify-json/simple-icons": "^1.2.99",
     "@mashehu/astropub-md": "^3.0.0",
     "@sveltia/cms": "^0.228.0",
     "astro": "^7.3.5",
