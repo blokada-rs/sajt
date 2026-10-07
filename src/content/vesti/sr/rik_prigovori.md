@@ -16,7 +16,7 @@ timeline:
     important: false
     color: first
     videos:
-      - PEGl7K5gm10
+      - O2nyc2pmIMU
   - naslov: Предаја приговора против одлука РИК-а
     datum: 2026-10-07T18:45:00
     important: false
