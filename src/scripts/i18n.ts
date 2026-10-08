@@ -7,7 +7,7 @@ import {
   render,
 } from "astro:content";
 
-export const langs = ["sr", "sr-lat", "en"];
+export const langs = ["sr", "sr-lat", "en", "hu"];
 
 const fallbackLanguages = ["en", "sr-lat"];
 
@@ -56,7 +56,7 @@ export async function entry<
       break;
     }
 
-    e = await getEntry(collection, `${lang}/${entry}`);
+    e = await getEntry(collection, `${lang}/${search}`);
   }
 
   const c = e as CollectionEntry<T>;

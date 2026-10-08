@@ -49,15 +49,13 @@ const jezik = (jezik: string) => {
         >
           <Icon name="mdi:close" />
         </button>
-        {frontmatter.linkovi.map(({
-          naziv,
-          link,
-        }: {
-          naziv: string;
-          link: string;
-        }) => (
-          <HeaderLink href={`${lang == "sr" ? "" : `/${lang}`}${link}`}>{naziv}</HeaderLink>
-        ))}
+        {frontmatter.linkovi.map(
+          ({ naziv, link }: { naziv: string; link: string }) => (
+            <HeaderLink href={`${lang == "sr" ? "" : `/${lang}`}${link}`}>
+              {naziv}
+            </HeaderLink>
+          ),
+        )}
 
         <button
           aria-label="Open website language list"
@@ -105,6 +103,15 @@ const jezik = (jezik: string) => {
             href={jezik("en")}
           >
             English
+          </a>
+        </li>
+        <li>
+          <a
+            class="button"
+            onclick="localStorage.setItem('lang', 'hu')"
+            href={jezik("hu")}
+          >
+            Magyar
           </a>
         </li>
       </ul>

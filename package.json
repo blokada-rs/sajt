@@ -11,14 +11,14 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/mdx": "^8.0.2",
+    "@astrojs/mdx": "^8.0.3",
     "@astrojs/rss": "^4.0.19",
     "@astrojs/sitemap": "^3.7.4",
     "@iconify-json/mdi": "^1.2.3",
     "@iconify-json/simple-icons": "^1.2.99",
     "@mashehu/astropub-md": "^3.0.0",
-    "@sveltia/cms": "^0.229.0",
-    "astro": "^7.3.5",
+    "@sveltia/cms": "^0.230.1",
+    "astro": "^7.3.6",
     "astro-font": "^1.2.0",
     "astro-icon": "^1.2.0",
     "leaflet": "^1.9.4",
