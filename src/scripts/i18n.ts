@@ -7,9 +7,9 @@ import {
   render,
 } from "astro:content";
 
-export const langs = ["sr", "sr-lat", "en", "hu"];
+export const langs = ["sr", "sr-lat", "en", "hu", "root"];
 
-const fallbackLanguages = ["en", "sr-lat"];
+const fallbackLanguages = ["en", "sr-lat", "sr"];
 
 export async function collectionIDs<
   T extends "vesti" | "akcije" | "afere" | "linkovi" | "specijalne_stranice",
@@ -46,9 +46,10 @@ export async function entry<
 >(
   collection: T,
   entry: string,
-  lang: string = "sr",
+  language: string = "sr",
 ): Promise<CollectionEntry<T> & { lang: string; id: string }> {
   const search = typeof entry === "undefined" ? "pocetna" : entry;
+  const lang = language === "root" ? "sr" : language;
   let e = await getEntry(collection, `${lang}/${search}`);
 
   for (let lang of fallbackLanguages) {
@@ -65,7 +66,7 @@ export async function entry<
 
 export async function file<C extends keyof DataEntryMap>(
   collection: C,
-  lang: string = "all",
+  language: string = "all",
 ): Promise<{
   Content: AstroComponentFactory;
   frontmatter: Record<string, any>;
@@ -75,6 +76,8 @@ export async function file<C extends keyof DataEntryMap>(
     lang: post.id.split("/")[0],
     id: post.id.split("/")[1],
   }));
+
+  const lang = language === "root" ? "sr" : language;
 
   let post = all.filter((post) => lang === post.lang)[0];
 

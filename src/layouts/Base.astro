@@ -17,7 +17,7 @@ const { lang } = Astro.params;
 
 <html {lang} class={klass}>
   <head>
-    {Astro.params.lang === "sr" && <script>
+    {Astro.params.lang === "root" && <script>
       const lang = localStorage.getItem("lang") ?? "sr";
       if (lang !== "sr") {
         let link = `${window.location.pathname + window.location.search + window.location.hash}`;

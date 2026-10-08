@@ -17,7 +17,7 @@ const jezik = (jezik: string) => {
     url = url.replace(`/${lang}`, "");
   }
 
-  if (jezik == "sr") {
+  if (jezik === "sr" || jezik === "root") {
     return `${url}`;
   }
 
@@ -27,7 +27,7 @@ const jezik = (jezik: string) => {
 
 <header transition:name="header">
   <nav>
-    <a class="title" href=`/${lang == "sr" ? "" : lang}`>
+    <a class="title" href=`/${lang === "sr" || lang === "root" ? "" : lang}`>
       {frontmatter.naslov}
     </a>
 
@@ -51,7 +51,9 @@ const jezik = (jezik: string) => {
         </button>
         {frontmatter.linkovi.map(
           ({ naziv, link }: { naziv: string; link: string }) => (
-            <HeaderLink href={`${lang == "sr" ? "" : `/${lang}`}${link}`}>
+            <HeaderLink
+              href={`${lang === "sr" || lang === "root" ? "" : `/${lang}`}${link}`}
+            >
               {naziv}
             </HeaderLink>
           ),

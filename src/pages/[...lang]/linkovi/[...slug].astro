@@ -52,7 +52,10 @@ const live = vesti.filter((vest) => vest.data.live && !vest.data.archived);
         <ul>
           {live.map((live) => (
             <li>
-              <a class="live button" href={`${lang == "sr" ? "" : `/${lang}`}/vesti/${live.data.link}`}>
+              <a
+                class="live button"
+                href={`${lang === "sr" || lang === "root" ? "" : `/${lang}`}/vesti/${live.data.link}`}
+              >
                 <Icon size={ICON_SIZE_LG} name="mdi:newspaper" />
                 {live.data.title}
               </a>
@@ -116,7 +119,10 @@ const live = vesti.filter((vest) => vest.data.live && !vest.data.archived);
     <ul>
       {vesti.slice(0, 3).map((vest) => (
         <li>
-          <a class="button" href={`${lang == "sr" ? "" : `/${lang}`}/vesti/${vest.data.link}`}>
+          <a
+            class="button"
+            href={`${lang === "sr" || lang === "root" ? "" : `/${lang}`}/vesti/${vest.data.link}`}
+          >
             <Icon size={ICON_SIZE_LG} name="mdi:newspaper" />
             {vest.data.title}
           </a>

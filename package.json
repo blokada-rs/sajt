@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "./latinica.sh && astro dev",
-    "build": "./latinica.sh && astro build && cp -r dist/sr/* dist/",
+    "build": "./latinica.sh && astro build && mv dist/root/* dist/",
     "preview": "astro preview",
     "compress": "parallel 'echo {} && mogrify -resize 1920x1080 -quality 90 {}' ::: src/assets/images/*",
     "format": "prettier . --write",
@@ -17,7 +17,7 @@
     "@iconify-json/mdi": "^1.2.3",
     "@iconify-json/simple-icons": "^1.2.99",
     "@mashehu/astropub-md": "^3.0.0",
-    "@sveltia/cms": "^0.230.1",
+    "@sveltia/cms": "^0.231.0",
     "astro": "^7.3.6",
     "astro-font": "^1.2.0",
     "astro-icon": "^1.2.0",
