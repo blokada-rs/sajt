@@ -1,15 +1,15 @@
 ---
 naslov: Students Win
 linkovi:
-  - naziv: Elections
+  - naziv: Választások
     link: /izbori
-  - naziv: News
+  - naziv: Hírek
     link: /vesti
-  - naziv: Diaspora
+  - naziv: Diaszpóra
     link: /dijaspora
-  - naziv: Demands
+  - naziv: Követelései
     link: /zahtevi
-  - naziv: Affairs
+  - naziv: Ügyek
     link: /afere
   - naziv: About
     link: /o-blokadama
