@@ -1,7 +1,7 @@
 ---
 akcije: Public Actions
 vesti: News
-afere: Affairs
+afere: Ügyek – nyitóoldal
 notifikacije: Enable notifications
 kontakt: Contact
 kontakt_opis: Official contact information
@@ -12,7 +12,9 @@ pojedinacni_fakulteti: Faculty accounts
 pratite_live: Watch us live
 vesti_opis: Please read
 najnovija_vest: Latest news
-afere_description: Affairs
+afere_description: |-
+  Ügyek – nyitóoldal 
+  Olvass a kormányzó rezsim botrányairól:
 vesti_description: Please read
 kontakt_description: Official contact information
 vidi_jos: See more
