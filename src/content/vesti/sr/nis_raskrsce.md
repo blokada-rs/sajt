@@ -8,7 +8,7 @@ heroImage: '@assets/images/1000002315.webp'
 archived: false
 description: Видимо се 10. октобра у Нишу, граду из ког промена креће.
 timeline:
-  - naslov: Никола Микић је отворио програм са химном Републике Србије
+  - naslov: Никола Микић је отворио програм химном Републике Србије
     datum: 2026-10-10T18:38:00
     important: false
     color: first
