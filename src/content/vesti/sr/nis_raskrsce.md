@@ -8,6 +8,12 @@ heroImage: '@assets/images/1000002315.webp'
 archived: false
 description: Видимо се 10. октобра у Нишу, граду из ког промена креће.
 timeline:
+  - naslov: Грађани се полако скупљају на тргу Краља Милана
+    datum: 2026-10-10T18:10:00
+    important: false
+    color: first
+    videos:
+      - cjRx4yuMHAk
   - naslov: Победином до победе
     datum: 2026-10-10T16:45:00
     important: false
