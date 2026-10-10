@@ -8,7 +8,7 @@ heroImage: '@assets/images/1000002315.webp'
 archived: false
 description: Видимо се 10. октобра у Нишу, граду из ког промена креће.
 timeline:
-  - naslov: Грађани се полако скупљају на тргу Краља Милана
+  - naslov: Грађани се полако скупљају на Тргу Краља Милана
     datum: 2026-10-10T18:10:00
     important: false
     color: first
