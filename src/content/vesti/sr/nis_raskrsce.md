@@ -1,12 +1,21 @@
 ---
 link: nis_raskrsce
 title: Раскршће – бирамо заједно!
-live: false
+live: true
 pubDate: 2026-10-09T20:11:00
 updatedDate: 2026-10-09T20:11:00
 heroImage: '@assets/images/1000002315.webp'
 archived: false
 description: Видимо се 10. октобра у Нишу, граду из ког промена креће.
+timeline:
+  - naslov: Победином до победе - Штандови дуж Победине улице
+    datum: 2026-10-10T16:45:00
+    important: false
+    color: first
+    slike:
+      - '@assets/images/IMG_7059.webp'
+      - '@assets/images/IMG_7062.webp'
+    tekst: У Нишу је почео скуп, где се налазе штандови и мноштво становника и кандидата са наше листе.
 ---
 
 Ниш је град раскршћа.
