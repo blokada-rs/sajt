@@ -8,6 +8,12 @@ heroImage: '@assets/images/1000002315.webp'
 archived: false
 description: Видимо се 10. октобра у Нишу, граду из ког промена креће.
 timeline:
+  - naslov: Окупљени грађани играју коло
+    datum: 2026-10-10T20:03:00
+    important: false
+    color: first
+    videos:
+      - P_WZBSx7Bzg
   - naslov: Славија 22.10.
     datum: 2026-10-10T19:59:00
     important: false
@@ -18,6 +24,14 @@ timeline:
       Професор Јово Бакић најавио је последњи предизборни скуп Студентске листе у Београду, који ће се одржати 22. октобра на Славији.
 
       [Победа зове!](https://studenti.org.rs/vesti/pobeda_zove/)
+  - naslov: Победнички перформанс - Предаја симбола града окупљенима на скупу
+    datum: 2026-10-10T19:55:00
+    important: false
+    color: first
+    videos:
+      - kGxldhThP28
+    slike:
+      - '@assets/images/IMG_7136.webp'
   - naslov: Говор Јово Бакића
     datum: 2026-10-10T19:48:00
     important: false
