@@ -8,6 +8,13 @@ heroImage: '@assets/images/1000002315.webp'
 archived: false
 description: Видимо се 10. октобра у Нишу, граду из ког промена креће.
 timeline:
+  - naslov: Беседа
+    datum: 2026-10-10T18:43:00
+    important: false
+    color: first
+    slike:
+      - '@assets/images/IMG_7089.webp'
+    tekst: Беседа ”На Раскршћу” - Говоре Матеја Николић и Марта Ђорђевић, студенти Универзитета у Нишу.
   - naslov: Никола Микић је отворио програм химном Републике Србије
     datum: 2026-10-10T18:38:00
     important: false
