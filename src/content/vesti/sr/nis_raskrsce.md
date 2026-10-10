@@ -8,6 +8,13 @@ heroImage: '@assets/images/1000002315.webp'
 archived: false
 description: Видимо се 10. октобра у Нишу, граду из ког промена креће.
 timeline:
+  - naslov: Говор професора Радомира Саичића
+    datum: 2026-10-10T18:52:00
+    important: false
+    color: first
+    slike:
+      - '@assets/images/IMG_7098.webp'
+    tekst: Професор Хемијског факултета др Радомир Саичић говори о делу програма који се односи на просвету.
   - naslov: Беседа
     datum: 2026-10-10T18:43:00
     important: false
