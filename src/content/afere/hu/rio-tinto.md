@@ -1,0 +1,16 @@
+---
+link: rio-tinto
+title: Rio Tinto
+---
+
+2018 óta szakemberek és polgárok egyaránt aggodalommal figyelik a Rio Tinto vállalat „Jadar” projektjének lehetséges megvalósítását. Azóta a Szerb Köztársaság polgárai tüntetéseket szerveznek, amelyek 2024 nyarán érték el csúcspontjukat. A Nyilvános Rendezvények Archívuma (Arhiv javnih skupova) adatai szerint 2024. augusztus 10-én 50 000 ember vonult az utcára.
+
+Már maga a technológia, amellyel a lítiumot ércekből, például jadaritból nyerik ki, elegendő ok az aggodalomra. A Rio Tinto és leányvállalata, a Rio Sava Exploration tömeges törvénysértései, a projekt 2021-es felfüggesztése, majd 2024-es újraindítása a területrendezési terv visszaállításával, a működés átláthatatlansága, az olyan törvények és rendeletek megalkotása, amelyek egyetlen külföldi projektnek akarnak legitimitást adni a közvélemény szemében, valamint az illetékes intézmények és minisztériumok teljes működésképtelensége tovább erősíti, méghozzá joggal, a félelmet és a bizalmatlanságot a projekt biztonságos megvalósításával szemben.
+
+A nehézfémek vízben és talajban megengedett koncentrációjáról szóló jogszabályokat értelmetlenné tette, hogy a határértékeket többszörösen megemelték. A fémek, például a bór nagyobb mennyisége a talajban és a vízben gátolja a növények növekedését, embereknél pedig szervkárosodáshoz vagy halálhoz vezethet. A bánya kutatófúrásai már most jelentős mértékben szennyezték a mezőgazdasági földeket, a talajvizet, valamint a Korenita és a Jadar folyót.
+
+A vállalat és egyes állami tisztségviselők a „Jadar” projektet a szerbiai „zöld átállás” kulcsfontosságú elemeként mutatták be a nyilvánosságnak. A terep és a termőföld elpusztítása a bánya érdekében, a folyók, a talaj és a talajvíz szennyezése, valamint a mérgező bányászati hulladék felhalmozódása, amelynek elhelyezése még mindig nincs teljesen megtervezve, nem hangzik túl zöldnek. A lítium ércből való kinyerése rendkívül erőforrás- és energiaigényes, és nagy mennyiségű hulladék felhalmozódásával is jár. Miért éppen Szerbiában részesítik előnyben ezt a kitermelési módszert, amikor az ásványosodás feltételei kedvezőbbek olyan országokban, mint Németország, Franciaország, Ausztria vagy Spanyolország?
+
+A lítiumion-akkumulátorok kapacitása korlátozott, és idővel csökken. Szerbiában az elektromos energia legnagyobb részét hőerőművekben állítják elő, alacsony minőségű és fűtőértékű szén elégetésével. Valóban szükség van lítiumion-akkumulátorokra a zöld átálláshoz? A lítiumion-akkumulátorok csak elrejtik a fogyasztók elől a szén-dioxid-kibocsátást. Szerbiában nem a megújuló energiaforrások használata és a zöld átállás felé tett más lépések élveznek elsőbbséget, hanem egy külföldi vállalat bányájának megnyitása, kizárólag európai érdekből. Ez akkor vált nyilvánvalóvá, amikor a „Jadar” projekt felkerült a kritikus nyersanyagokról szóló uniós jogszabály szerinti lehetséges európai stratégiai projektek listájára. Az érc feldolgozásának első szakaszában óriási mennyiségű tömény savat használnak. A tehervonatok által használt vasútvonalak a használhatatlanság határán vannak, és állandóan tanúi vagyunk a vagonok kisiklásából és a rakomány kiömléséből eredő baleseteknek. A tömény sav szállítása a bányán túl további ökológiai katasztrófát jelentene.
+
+**Kérdésessé válik a lítiumion-akkumulátorok jövőbeli felhasználása is.**
