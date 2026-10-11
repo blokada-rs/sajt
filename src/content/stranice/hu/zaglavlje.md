@@ -11,8 +11,8 @@ linkovi:
     link: /zahtevi
   - naziv: Ügyek
     link: /afere
-  - naziv: About
+  - naziv: Rólunk
     link: /o-blokadama
-  - naziv: Contact
+  - naziv: Kapcsolat
     link: /kontakt
 ---
