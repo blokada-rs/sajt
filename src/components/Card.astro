@@ -24,7 +24,7 @@ const { frontmatter } = await file("ostalo", lang);
       alt=""
     />
 
-    {lang !== expectedLang && (
+    {expectedLang !== "root" && lang !== expectedLang && (
       <span class="untranslated">Currently untranslated</span>
     )}
     <div class="content">

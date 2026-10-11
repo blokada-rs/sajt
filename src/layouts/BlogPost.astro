@@ -51,7 +51,7 @@ const { frontmatter } = await file("ostalo", lang);
   description={description}
   image={heroImage.src}
 >
-  {expectedLang !== lang && (
+  {expectedLang !== "root" && expectedLang !== lang && (
     <div class="full-width untranslated">
       This page is currently not translated to English. Showing the untranslated
       version.
