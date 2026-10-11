@@ -3,7 +3,7 @@ akcije: Public Actions
 vesti: News
 afere: Ügyek – nyitóoldal
 notifikacije: Enable notifications
-kontakt: Contact
+kontakt: Kapcsolat
 kontakt_opis: Official contact information
 live: Live
 studenti_u_blokadi: Student blockades
