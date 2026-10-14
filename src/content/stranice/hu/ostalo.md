@@ -18,4 +18,7 @@ afere_description: |-
 vesti_description: Please read
 kontakt_description: Official contact information
 vidi_jos: See more
+nije_prevedeno: Currently untranslated
+nije_prevedeno_dugacko: |-
+  This page is currently not translated to Hungarian. Showing the untranslated version.
 ---

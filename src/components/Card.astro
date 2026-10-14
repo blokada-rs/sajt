@@ -9,7 +9,7 @@ type Props = CollectionEntry<"vesti"> & { lang: string; link: string };
 
 const { body, data, id, link, lang } = Astro.props;
 const { lang: expectedLang } = Astro.params;
-const { frontmatter } = await file("ostalo", lang);
+const { frontmatter } = await file("ostalo", expectedLang);
 ---
 
 <article class="card">
@@ -25,7 +25,7 @@ const { frontmatter } = await file("ostalo", lang);
     />
 
     {expectedLang !== "root" && lang !== expectedLang && (
-      <span class="untranslated">Currently untranslated</span>
+      <span class="untranslated">{frontmatter.nije_prevedeno}</span>
     )}
     <div class="content">
       <FormattedDate date={data.pubDate} />
@@ -78,10 +78,11 @@ const { frontmatter } = await file("ostalo", lang);
   }
 
   .untranslated {
-    background-color: bisque;
-    color: black;
+    background-color: var(--primary-dark);
+    color: var(--on-primary);
     padding: 0.1rem 1rem;
     margin-top: 0.5rem;
+    border-radius: 0.2rem;
   }
 
   .live {

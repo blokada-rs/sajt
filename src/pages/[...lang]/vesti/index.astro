@@ -1,6 +1,6 @@
 ---
 import Base from "@layouts/Base.astro";
-import { collection,file,langs } from "@scripts/i18n";
+import { collection, file, langs } from "@scripts/i18n";
 
 import { Picture } from "astro:assets";
 
@@ -46,7 +46,7 @@ export async function getStaticPaths() {
       <div class="details">
         {posts[0].data.live && <Live>{frontmatter.live}</Live>}
         {lang !== "root" && lang !== posts[0].lang && (
-          <p class="untranslated">Currently untranslated</p>
+          <p class="untranslated">{frontmatter.nije_prevedeno}</p>
         )}
         <h2 class="title">{posts[0].data.title}</h2>
         <p class="date">
@@ -78,7 +78,7 @@ export async function getStaticPaths() {
               <div class="details">
                 {post.data.live && <Live>{frontmatter.live}</Live>}
                 {lang !== "root" && lang !== post.lang && (
-                  <p class="untranslated">Currently untranslated</p>
+                  <p class="untranslated">{frontmatter.nije_prevedeno}</p>
                 )}
                 <h2 class="title">{post.data.title}</h2>
                 <p class="date">
@@ -193,6 +193,10 @@ export async function getStaticPaths() {
   }
 
   .untranslated {
-    background-color: bisque;
+    background-color: var(--primary-dark);
+    color: var(--on-primary);
+    padding-inline: 0.5rem;
+    border-radius: 0.2rem;
+    margin-bottom: 0.5rem;
   }
 </style>

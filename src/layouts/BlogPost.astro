@@ -43,7 +43,7 @@ const map =
 
 const { lang: expectedLang } = Astro.params;
 
-const { frontmatter } = await file("ostalo", lang);
+const { frontmatter } = await file("ostalo", expectedLang);
 ---
 
 <Base
@@ -53,8 +53,7 @@ const { frontmatter } = await file("ostalo", lang);
 >
   {expectedLang !== "root" && expectedLang !== lang && (
     <div class="full-width untranslated">
-      This page is currently not translated to English. Showing the untranslated
-      version.
+      {frontmatter.nije_prevedeno_dugacko}
     </div>
   )}
   <article>
@@ -157,8 +156,8 @@ const { frontmatter } = await file("ostalo", lang);
 
   .untranslated {
     text-align: center;
-    background-color: bisque;
-    color: black;
+    background-color: var(--primary-dark);
+    color: var(--on-primary);
     position: sticky;
     top: calc(4rem - 2px);
     padding-block: 0.5rem;

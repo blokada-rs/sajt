@@ -21,4 +21,7 @@ vesti_description: |-
   Наш циљ је да пружимо поуздан извор информација и простор за информисање јавности о темама од значаја за студенте и друштво у целини.
 kontakt_description: Званичне заједничке друштвене мреже студената у Београду.
 vidi_jos: Види још
+nije_prevedeno: Није преведено
+nije_prevedeno_dugacko: |-
+  This page is currently not translated to English. Showing the untranslated version.
 ---
