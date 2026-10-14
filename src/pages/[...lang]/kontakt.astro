@@ -56,7 +56,8 @@ const all = await collection("linkovi", lang);
           .toSorted(({ data: a }, { data: b }) =>
             a.type !== b.type
               ? type[a.type].sort - type[b.type].sort
-              : (a.prikaz ?? "").localeCompare(b.prikaz ?? ""))
+              : (a.prikaz ?? "").localeCompare(b.prikaz ?? ""),
+          )
           .map(({ data }) => (
             <>
               <button
@@ -154,7 +155,7 @@ const all = await collection("linkovi", lang);
       position: absolute;
       inset: 0;
       z-index: -1;
-      background: white;
+      background: var(--background);
     }
 
     ul {
@@ -175,11 +176,11 @@ const all = await collection("linkovi", lang);
       flex-grow: 1;
 
       text-decoration: none;
-      color: black;
+      color: var(--on-background);
       align-items: center;
       gap: 1rem;
 
-      border: 2px solid black;
+      border: 2px solid var(--on-background);
       border-radius: 0.5rem;
       padding: 1rem;
     }
