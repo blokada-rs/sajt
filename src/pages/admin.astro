@@ -242,8 +242,18 @@ import { AstroFont } from "astro-font";
         summary: "{{text}}",
       });
 
+      registerMdxComponent({
+        id: "video",
+        label: "Video",
+        icon: "videocam",
+        mode: "dialog",
+        fields: [{ name: "id", widget: "string" }],
+        summary: "[video: {{id}}]",
+      });
+
       init({
         config: {
+          publish_mode: "editorial_workflow",
           load_config_file: false,
           app_title: "Studenti pobeđuju",
           site_url: "https://studenti.org.rs",
