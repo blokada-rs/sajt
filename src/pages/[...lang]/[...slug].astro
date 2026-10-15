@@ -1,16 +1,17 @@
 ---
 import Base from "@layouts/Base.astro";
-import { collection, collectionIDs, entry, langs } from "@scripts/i18n";
-import { type CollectionEntry, render } from "astro:content";
+import { collection,collectionIDs,entry,langs } from "@scripts/i18n";
+import { type CollectionEntry,render } from "astro:content";
 
 import { Icon } from "astro-icon/components";
 import { Picture } from "astro:assets";
 
 import Live from "@components/Live.astro";
 import Mapa from "@components/Mapa.astro";
+import PdfGenerator from "@components/PdfGenerator.astro";
 import SectionLink from "@components/SectionLink.astro";
 import Vesti from "@components/Vesti.astro";
-import Video from "@components/Video.astro"
+import Video from "@components/Video.astro";
 
 import slsp from "@assets/images/slsp.svg";
 
@@ -93,7 +94,7 @@ const live = vesti.filter((vest) => vest.data.live && !vest.data.archived);
     </div>
   )}
 
-  <Content components={{ Icon, SectionLink, Vesti, Mapa, Video }} />
+  <Content components={{ Icon, SectionLink, Vesti, Mapa, Video, PdfGenerator }} />
 </Base>
 
 <style>

@@ -1,0 +1,22 @@
+---
+interface Field {
+  name: string
+}
+
+interface Props {
+  pdf: string;
+  fields: string;
+}
+
+const { pdf, fields: jsonFields } = Astro.props;
+
+const fields = JSON.parse(jsonFields) as Field[];
+
+---
+
+<div>
+  {pdf}
+  <ul>
+    {fields.map(field => <li>{field.name}</li>)}
+  </ul>
+</div>
