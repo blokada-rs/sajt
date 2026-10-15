@@ -242,25 +242,6 @@ import { AstroFont } from "astro-font";
         summary: "{{text}}",
       });
 
-      registerEditorComponent({
-        id: "pdf",
-        label: "PdfGenerator",
-        icon: "picture_as_pdf",
-        mode: "dialog",
-        fields: [
-          { name: "pdf", widget: "string" },
-          {
-            name: "fields",
-            widget: "list",
-            fields: [{ name: "name", widget: "string" }],
-          },
-        ],
-        pattern: /<PdfGenerator pdf='(?<pdf>.*?)' fields='(?<fields>.*?)' \/>/,
-        toBlock: ({ pdf, fields }) => `<PdfGenerator pdf='${pdf}' fields='${JSON.stringify(fields)}' />`,
-        fromBlock: (match) => ({ pdf: match[1], fields: JSON.parse(match[2]) }),
-        summary: "[pdf: {{pdf}}]",
-      });
-
       registerMdxComponent({
         id: "video",
         label: "Video",
