@@ -79,6 +79,12 @@ export class FolderBuilder implements Builder {
     return this;
   }
 
+  protected _publish_simple: boolean = false;
+  publish_simple() {
+    this._publish_simple = true;
+    return this;
+  }
+
   make_cms() {
     return defined({
       name: this.name,
@@ -89,6 +95,7 @@ export class FolderBuilder implements Builder {
       fields: this.fields.map((field) => field.make_cms()),
       i18n: this._i18n,
       extension: this.extension,
+      publish_mode: this._publish_simple? "simple": undefined,
       sortable_fields:
         typeof this._sort_by !== "undefined"
           ? {

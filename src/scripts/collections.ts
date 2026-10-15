@@ -129,7 +129,8 @@ const vesti = folder_collection(
   ],
 )
   .slug("{{fields.link}}")
-  .sort_by("pubDate");
+  .sort_by("pubDate")
+  .publish_simple();
 
 const afere = folder_collection(
   "afere",
@@ -239,7 +240,7 @@ const linkovi = folder_collection(
     ).optional(),
     link_list(),
   ],
-);
+).publish_simple();
 
 export const all = all_collections([
   vesti,
