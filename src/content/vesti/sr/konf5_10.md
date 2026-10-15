@@ -12,7 +12,7 @@ timeline:
   - naslov: Академик Радомир Саичић
     datum: 2026-10-05T15:19:00
     important: false
-    color: third
+    color: first
   - naslov: Адвокат Владимир Тупањац
     datum: 2026-10-05T15:12:00
     important: false
