@@ -30,6 +30,8 @@ timeline:
     datum: 2026-10-16T21:05:00
     important: false
     color: first
+    slike:
+      - '@assets/images/IMG_7889.webp'
     tekst: |-
       Окупљенима се обратио кандидат Студентске листе - Студенти побеђују, порф. др  Никола Цветановић:
 
@@ -93,6 +95,8 @@ timeline:
     datum: 2026-10-16T20:55:00
     important: false
     color: first
+    slike:
+      - '@assets/images/IMG_7879.webp'
     tekst: |-
       Говор кандидатиње Студентске листе - Студенти побеђују, доц. др Ане Сарвановић:
 
@@ -123,6 +127,8 @@ timeline:
     datum: 2026-10-16T20:51:00
     important: false
     color: first
+    slike:
+      - '@assets/images/IMG_7881.webp'
     tekst: |-
       Окупљенима се обратио кандидат Студентске листе - Студенти побеђују, проф. др Јово Бакић:
 
@@ -169,11 +175,15 @@ timeline:
     datum: 2026-10-16T20:48:00
     important: false
     color: first
+    slike:
+      - '@assets/images/IMG_7883.webp'
     tekst: Бака Марина из Бора, уручила је шетачу Стефану пар вунених чарапа!
   - naslov: 'Историја: Обраћање шетача Стефана Томића'
     datum: 2026-10-16T20:44:00
     important: false
     color: first
+    slike:
+      - '@assets/images/IMG_7882.webp'
     tekst: |-
       Окупљенима се обратио студенти Стефан Томић:
 
