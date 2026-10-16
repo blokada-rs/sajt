@@ -1,5 +1,5 @@
 ---
-link: studenti.org.rs/generalstab_tramp
+link: generalstab_tramp
 title: Наша историја - њихов приватни профит
 live: false
 pubDate: 2026-10-16T16:58:00
