@@ -26,6 +26,9 @@ timeline:
     datum: 2026-10-16T10:50:00
     important: false
     color: first
+    slike:
+      - '@assets/images/BLK07236.webp'
+      - '@assets/images/BLK07245.webp'
   - naslov: 'Исток: Шетачи су званично започели свој први дан поласком из Зајечара'
     datum: 2026-10-16T09:27:00
     important: false
