@@ -26,6 +26,9 @@ timeline:
     datum: 2026-10-16T09:27:00
     important: false
     color: first
+    slike:
+      - '@assets/images/BLK07198.webp'
+      - '@assets/images/BLK07189.webp'
 ---
 
 Неке ствари се не могу заборавити. Не могу се заташкати. И не можемо само да наставимо као да се ништа није догодило.
