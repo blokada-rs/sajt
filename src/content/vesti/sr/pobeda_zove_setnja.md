@@ -26,6 +26,9 @@ timeline:
     datum: 2026-10-16T17:20:00
     important: false
     color: first
+    slike:
+      - '@assets/images/sajt-2.webp'
+      - '@assets/images/sajt1.webp'
   - naslov: 'Исток: Кратка пауза за пешаке у Метовници'
     datum: 2026-10-16T14:48:00
     important: false
