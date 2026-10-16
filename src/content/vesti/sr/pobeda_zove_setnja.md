@@ -22,8 +22,15 @@ description: |-
   Западна рута креће из Горњег Милановца 18. октобра, а из Ваљева и Шапца 19. октобра.
   Северна рута полази из Новог Сада 20. октобра.
 timeline:
+  - naslov: 'Исток: Кратка пауза за пешаке у Метовници'
+    datum: 2026-10-16T14:48:00
+    important: false
+    color: first
+    slike:
+      - '@assets/images/BLK07349.webp'
+      - '@assets/images/BLK07358.webp'
   - naslov: 'Исток: Пут до Метовнице'
-    datum: 2026-10-16T14:40:00
+    datum: 2026-10-16T14:20:00
     important: false
     color: first
     slike:
