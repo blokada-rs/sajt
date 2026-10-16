@@ -26,6 +26,9 @@ timeline:
     datum: 2026-10-16T12:13:00
     important: false
     color: first
+    slike:
+      - '@assets/images/BLK07311.webp'
+      - '@assets/images/BLK07315.webp'
   - naslov: 'Исток: На путу до Гамзиграда'
     datum: 2026-10-16T11:30:00
     important: false
