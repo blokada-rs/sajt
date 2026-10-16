@@ -22,6 +22,12 @@ description: |-
   Западна рута креће из Горњег Милановца 18. октобра, а из Ваљева и Шапца 19. октобра.
   Северна рута полази из Новог Сада 20. октобра.
 timeline:
+  - naslov: 'Исток: На путу до Гамзиграда'
+    datum: 2026-10-16T11:30:00
+    important: false
+    color: first
+    slike:
+      - '@assets/images/STF_6165.webp'
   - naslov: 'Исток: Пауза Звездан'
     datum: 2026-10-16T10:50:00
     important: false
