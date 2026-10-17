@@ -23,89 +23,103 @@ description: |-
   The northern route sets off from Novi Sat on 20 October.
   The groups will meet in Belgrade on 21 October at Slavija Square, at the final rally ‘Victory Is Calling’, ahead of the starting of the election silence period.
 timeline:
-  - datum: 2026-10-17T17:21:00
+  - naslov: 'East: Break near Žagubica'
+    datum: 2026-10-17T17:21:00
     important: false
     color: first
-  - datum: 2026-10-17T14:50:00
+  - naslov: 'East: Break in a hamlet'
+    datum: 2026-10-17T14:50:00
     important: false
     color: first
     slike:
       - '@assets/images/_DSC5559-2.webp'
       - '@assets/images/_DSC5556-2.webp'
-  - datum: 2026-10-17T12:15:00
+  - naslov: 'East: Break at Bor Lake'
+    datum: 2026-10-17T12:15:00
     important: false
     color: first
     slike:
       - '@assets/images/IMG_2786.webp'
-  - datum: 2026-10-17T10:05:00
+  - naslov: 'East: Break in Brestovačka banja [lit. Brestovačka spa]'
+    datum: 2026-10-17T10:05:00
     important: false
     color: first
     slike:
       - '@assets/images/_A160105.webp'
-  - datum: 2026-10-17T08:15:00
+  - naslov: 'East: The walkers are on their way – Starting off from Bor'
+    datum: 2026-10-17T08:15:00
     important: false
     color: first
-  - naslov: The people of Bor danced the kolo [a folk dance] with the walkers
+  - naslov: 'East: The people of Bor danced the kolo [a folk dance] with the walkers'
     datum: 2026-10-16T21:19:00
     important: false
     color: first
-  - datum: 2026-10-16T21:05:00
+  - naslov: 'East: Speech of candidate Nikola Cvetanović'
+    datum: 2026-10-16T21:05:00
     important: false
     color: first
     slike:
       - '@assets/images/IMG_7889.webp'
-  - datum: 2026-10-16T21:02:00
+  - naslov: 'East: Speech of candidate Zoran Stanić'
+    datum: 2026-10-16T21:02:00
     important: false
     color: first
-  - datum: 2026-10-16T20:55:00
+  - naslov: 'East: Speech of candidate Ana Sarvanović'
+    datum: 2026-10-16T20:55:00
     important: false
     color: first
     slike:
       - '@assets/images/IMG_7879.webp'
-  - datum: 2026-10-16T20:51:00
+  - naslov: 'East: Speech of candidate Jovo Bakić'
+    datum: 2026-10-16T20:51:00
     important: false
     color: first
     slike:
       - '@assets/images/IMG_7881.webp'
-  - datum: 2026-10-16T20:48:00
+  - naslov: 'East: Grandma Marina gifts a pair of socks'
+    datum: 2026-10-16T20:48:00
     important: false
     color: first
     slike:
       - '@assets/images/IMG_7883.webp'
-  - datum: 2026-10-16T20:44:00
+    tekst: Grandma Marina from Bor fits walker Stefan a pair of woolen socks!
+  - naslov: 'East: Speech of walker Stefan Tomić'
+    datum: 2026-10-16T20:44:00
     important: false
     color: first
     slike:
       - '@assets/images/IMG_7882.webp'
-  - datum: 2026-10-16T20:32:00
+  - naslov: 'East: Speech of candidate Miloš Janošević'
+    datum: 2026-10-16T20:32:00
     important: false
     color: first
     slike:
       - '@assets/images/IMG_7886.webp'
-  - datum: 2026-10-16T20:25:00
+  - naslov: 'East: Students Marko and Lena open the [reception] programme'
+    datum: 2026-10-16T20:25:00
     important: false
     color: first
     slike:
       - '@assets/images/IMG_7887.webp'
-  - naslov: The walkers have arrived in Bor
+  - naslov: 'East: The walkers have arrived in Bor'
     datum: 2026-10-16T20:20:00
     important: false
     color: first
-  - naslov: Break in Brestovac
+  - naslov: 'East: Break in Brestovac'
     datum: 2026-10-16T17:20:00
     important: false
     color: first
     slike:
       - '@assets/images/sajt-2.webp'
       - '@assets/images/sajt1.webp'
-  - naslov: 'East: Short break for the walkers in Metovnica'
+  - naslov: 'East: East: Short break for the walkers in Metovnica'
     datum: 2026-10-16T14:48:00
     important: false
     color: first
     slike:
       - '@assets/images/BLK07349.webp'
       - '@assets/images/BLK07358.webp'
-  - naslov: Road to Metovnica
+  - naslov: 'East: Road to Metovnica'
     datum: 2026-10-16T14:20:00
     important: false
     color: first
@@ -114,14 +128,14 @@ timeline:
     slike:
       - '@assets/images/STF_6182.webp'
       - '@assets/images/STF_6179.webp'
-  - naslov: Break in Gamzigrad
+  - naslov: 'East: Break in Gamzigrad'
     datum: 2026-10-16T12:13:00
     important: false
     color: first
     slike:
       - '@assets/images/BLK07311.webp'
       - '@assets/images/BLK07315.webp'
-  - naslov: On the road to Gamzigrad
+  - naslov: 'East: On the road to Gamzigrad'
     datum: 2026-10-16T11:30:00
     important: false
     color: first
@@ -134,7 +148,7 @@ timeline:
     slike:
       - '@assets/images/BLK07236.webp'
       - '@assets/images/BLK07245.webp'
-  - naslov: The walkers have officially begun their first day, setting off from Zaječar
+  - naslov: 'East: The walkers have officially begun their first day, setting off from Zaječar'
     datum: 2026-10-16T09:27:00
     important: false
     color: first
