@@ -49,6 +49,8 @@ timeline:
     datum: 2026-10-17T08:15:00
     important: false
     color: first
+    videos:
+      - hq9WN4_fnQqU
   - naslov: 'Исток: Борани су заиграли коло са шетачима'
     datum: 2026-10-16T21:19:00
     important: false
