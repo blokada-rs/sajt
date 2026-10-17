@@ -83,14 +83,20 @@ const map = () =>
       markdown_field("text", "Tekst"),
       color(),
     ])
+      .i18n("duplicate")
       .singular("Marker")
       .optional(),
-    list_field("layers", "Layer", [string_field("layer", "Layer")])
+    list_field("layers", "Layer", [
+      string_field("layer", "Layer").i18n("duplicate"),
+    ])
+      .i18n("duplicate")
       .singular("Layer")
       .optional(),
     list_field("track", "Track", [
-      string_field("address", "Address"),
-    ]).optional(),
+      string_field("address", "Address").i18n("duplicate"),
+    ])
+      .i18n("duplicate")
+      .optional(),
   ]);
 
 const vesti = folder_collection(
@@ -107,12 +113,12 @@ const vesti = folder_collection(
     datetime_field("updatedDate", "Datum izmene").optional(),
     image_field("heroImage", "Glavna slika"),
     bool_field("archived", "Arhivirano").optional(),
-    map().optional(),
+    map().i18n("duplicate").optional(),
     text_field("description", "Opis").optional(),
     markdown_field("body", "Tekst"),
     list_field("timeline", "Tajmlajn", [
-      string_field("naslov", "Naslov"),
-      datetime_field("datum", "Datum"),
+      string_field("naslov", "Naslov").optional(),
+      datetime_field("datum", "Datum").optional(),
       bool_field("important", "Bitno").optional(),
       color(),
       list_field("videos", "Video IDs", [string_field("id", "ID")])
@@ -124,8 +130,7 @@ const vesti = folder_collection(
       markdown_field("tekst", "Tekst").optional(),
     ])
       .add_to_top()
-      .optional()
-      .i18n(false),
+      .optional(),
   ],
 )
   .slug("{{fields.link}}")
