@@ -26,8 +26,6 @@ timeline:
     datum: 2026-10-17T22:46:00
     important: false
     color: first
-    videos:
-      - PkaUknmXjz4
   - naslov: 'Исток: Говор Вукашина Стојковића'
     datum: 2026-10-17T22:40:00
     important: false
@@ -54,6 +52,8 @@ timeline:
     datum: 2026-10-17T22:35:00
     important: false
     color: first
+    videos:
+      - PkaUknmXjz4
   - naslov: 'Исток: Пауза близу Жагубице'
     datum: 2026-10-17T17:21:00
     important: false
