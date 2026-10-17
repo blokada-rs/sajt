@@ -27,8 +27,8 @@ timeline:
     important: false
     color: first
     slike:
-      - '@assets/images/_DSC5559.webp'
-      - '@assets/images/_DSC5556.webp'
+      - '@assets/images/_DSC5559-1.webp'
+      - '@assets/images/_DSC5556-1.webp'
   - naslov: 'Исток: Пауза на Борском језеру'
     datum: 2026-10-17T12:15:00
     important: false
