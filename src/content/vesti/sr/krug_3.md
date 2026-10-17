@@ -8,12 +8,18 @@ heroImage: '@assets/images/IMG_20261017_114045.webp'
 archived: false
 description: Три дана на бициклима кроз приградска насеља и мања места
 timeline:
-  - naslov: Пауза у Угриновцима
-    datum: 2026-10-17T13:38:00
+  - naslov: Дочек у Батајници
+    datum: 2026-10-17T15:00:00
+    important: false
+    color: first
+    videos:
+      - 2qKslvVgY0g
+  - naslov: бициклисти кренули ка Батајници
+    datum: 2026-10-17T14:17:00
     important: false
     color: first
     slike:
-      - '@assets/images/1000002445.webp'
+      - '@assets/images/IMG_20261017_151636.webp'
   - naslov: Пауза у Јакову
     datum: 2026-10-17T11:47:00
     important: false
