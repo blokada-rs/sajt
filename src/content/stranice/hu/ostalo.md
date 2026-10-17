@@ -4,7 +4,7 @@ vesti: Ujság
 afere: Ügyek – nyitóoldal
 notifikacije: Enable notifications
 kontakt: Kapcsolat
-kontakt_opis: Kapcsolat
+kontakt_opis: Hivatalos elérhetőségek
 live: Élő
 studenti_u_blokadi: Diákblokádok
 footer: Studentska lista - Studenti pobeđuju
