@@ -26,6 +26,8 @@ timeline:
     datum: 2026-10-17T10:05:00
     important: false
     color: first
+    slike:
+      - '@assets/images/_A160105.webp'
   - naslov: 'Исток: Пешаци су кренули свој пут даље - Полазак из Бора'
     datum: 2026-10-17T08:15:00
     important: false
