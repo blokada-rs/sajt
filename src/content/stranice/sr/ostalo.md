@@ -22,6 +22,5 @@ vesti_description: |-
 kontakt_description: Званичне заједничке друштвене мреже студената у Београду.
 vidi_jos: Види још
 nije_prevedeno: Није преведено
-nije_prevedeno_dugacko: |-
-  This page is currently not translated to English. Showing the untranslated version.
+nije_prevedeno_dugacko: This page is currently not translated to English. Showing the untranslated version.
 ---

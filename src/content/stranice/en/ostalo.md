@@ -10,13 +10,12 @@ studenti_u_blokadi: Student blockades
 footer: Studentska lista - Studenti pobeđuju
 pojedinacni_fakulteti: Faculty accounts
 pratite_live: Watch us live
-vesti_opis: Please read
+vesti_opis: Read latest news!
 najnovija_vest: Latest news
 afere_description: Affairs
-vesti_description: Please read
+vesti_description: See latest news!
 kontakt_description: Official contact information
 vidi_jos: See more
 nije_prevedeno: Currently untranslated
-nije_prevedeno_dugacko: |-
-  This page is currently not translated to English. Showing the untranslated version.
+nije_prevedeno_dugacko: This page is currently not translated to English. Showing the untranslated version.
 ---
