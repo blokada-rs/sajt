@@ -62,22 +62,49 @@ timeline:
     color: first
     slike:
       - '@assets/images/IMG_7889.webp'
+    tekst: |-
+      Student List candidate Nikola Cvetanović greeted the crowd as compatriots and fellows in this struggle(srb. saborci, lit. co-fighters ). He called on the gathered crowd to cheer loudly for those who are in fear of the regime. Cvetanović also comes from Bor, and stated how although he left Bor to work in Belgrade, Bor never left him. He characterised the city of Bor as a city which does not tolerate the leading party (SNS) — so much so that they (implying the SNS) had to place a person from outside of Bor as the mayor of the city. 
+
+      Cvetanović lauded the student walkers, saying that the walkers are going to the Homolje mountains, to ‘our wounded Homolje mountains’ (due to ecological devastation because of a mining facility to be built). He stated how the people love student walkers because the walkers are ‘heralds of peace’. Cvetanović said emphatically, adding ‘[Freedom] was taken away from us. The state and the media were taken away.’ He asked, and  freedom won’t be given back, he stated firmly, but ‘we have to take it back on our own, on our own, we have to fight for it.’ 
+
+      He emphasised that the elections are a chance to secure a future for their children, that the elections are a crossroads, where no more debates are needed, but actions. 
+
+      > ‘On the 25th we are taking back our captured state, we will all circle in the number 3!’
   - naslov: 'East: Speech of candidate Zoran Stanić'
     datum: 2026-10-16T21:02:00
     important: false
     color: first
+    tekst: |-
+      Zoran Stanić greeted the gathered protesters with the statement that he wanted to speak about ‘all of us’ and the fear of voting against the regime. He spoke of the pressures put on regular people to do what the regime wants, for fears of losing their jobs, losing their salaries their entire families depend on. He also stated that the people of Bor knew of the hard labour in the mines, and that ‘A person who works honestly does not owe their vote to a corrupted regime, does not owe it to the regime to go to a regime meeting, and does not owe them dignity!’
+
+      He stated how 26 October (the day after the elections) will bring a new, happier morning, and that while people will walk the same streets, children will go to the same schools and people will go to their workplaces, it will be completely different, for ‘we will know that we have changed the system!’ 
+
+      He stated that even though one might feel afraid, that ‘we are still a courageous people’. He emphasised that when we step behind the voter screen (to vote), there was no boss to be afraid of. He spoke of the story of one of his students, who sent a message to her mother saying ‘I understand you. I love you. Vote for me, vote with dignity.’ He urged the people to give a hand to those who couldn’t come to the gathering today, to help them make the right choice and vote for the Student List. 
+
+      > ‘Each of us carries fear and courage. Together we can bring back dignity and security into our lives. Long live Bor! Long live a free, fair and just Serbia!’
   - naslov: 'East: Speech of candidate Ana Sarvanović'
     datum: 2026-10-16T20:55:00
     important: false
     color: first
     slike:
       - '@assets/images/IMG_7879.webp'
+    tekst: |-
+      Ana Sarvanović said how it was an honour to be a guest tonight and to greet the student walkers together with the people of Bor. She stated how the student marches are once again waking up and calling the people, to ‘rouse us from a chronic hypnosis, to make us cry, and once more, for good measure, to remind us how beautiful this country is. And that it belongs to all of us, however different we may be!
+
+      She said how the people were able to learn a lot from the students in the past two years: that the people had the right to know and seek accountability, that the way things are must not be how things will remain forever, that it was important to self-organise, and that togetherness and solidarity are the people’s power when it comes to overcoming fears.
+
+      ‘I know it isn’t easy’, she stated, addressing those who witnessed the turmoil of the local elections held in Bor in March 2026. ‘Winning back freedom is a long process, and it is tedious, slow-paced work. There will be obstacles and difficult parts of the path. But we need not traverse this path alone.’
+
+      She closed her speech by calling on the people to vote, as the students have done their pair, and now it was up to the people to do their part. 
+
+      > Victory is calling from the East! The students are winning!
   - naslov: 'East: Speech of candidate Jovo Bakić'
     datum: 2026-10-16T20:51:00
     important: false
     color: first
     slike:
       - '@assets/images/IMG_7881.webp'
+    tekst: Jovo Bakić greeted and thanked the citizens of Bor as well as the student walkers. He addressed the crowd excitedly, stating how ‘We are all brothers and sisters!’ He expressed he wanted to keep his speech brief, also due to the cold weather, because everything has already been said and that things were clear — that ‘Victory is in our hands!’. He called upon the crowd to go and vote on 25 October.
   - naslov: 'East: Grandma Marina gifts a pair of socks'
     datum: 2026-10-16T20:48:00
     important: false
@@ -91,12 +118,30 @@ timeline:
     color: first
     slike:
       - '@assets/images/IMG_7882.webp'
+    tekst: |-
+      Student Stefan Tomić addressed the crowd and thanked fellow student walkers. He stated how today was the first of a six-day-walk from Zaječar to Belgrade. The students are going to traverse 50 km a day, and ahead of them lies the mountainous terrain of eastern Serbia: the Homolje mountains with the Black Peak (srb. Crni vrh), and a forecast of rain and mud. He shared with the gathered crowd a message of encouragement all student walkers received on their phones at the start of the march, namely that although their bodies and spirits will be tested, their marches carry a deeper significance in the times they are in. The walks are a reminder of what the students have experienced and achieved. 
+
+      Stefan Tomić ended his address by calling upon everyone to go and vote on 25 October and to help defend each and every vote. 
+
+      > ‘And we continue our walk to Belgrade. See you at Slavija Square! Until Victory! The students are winning!’
   - naslov: 'East: Speech of candidate Miloš Janošević'
     datum: 2026-10-16T20:32:00
     important: false
     color: first
     slike:
       - '@assets/images/IMG_7886.webp'
+    tekst: |-
+      Student List candidate Miloš Janošević gave a speech at the welcoming of student walkers. He greeted the citizens of Bor as a free and proud people. He expressed a deep sense of pride, but also a great sense of responsibility. He comes from Bor and has learned what hard work means and that nothing is granted in this life. He said how the industrial city of Bor has raised the entire country.
+
+      In his speech he focused on the power of the people and collective action, be it among regular people on the streets in protest, or among colleagues of the Student List. He gave his word that ‘the Parliament of Serbia will no longer be a place in which injustice is greeted with silence’. He also said that Bor has been treated unfairly, only as ‘mere numbers on paper’, and that the time has come for change.
+
+      He touched on the issue of young people leaving Eastern Serbia due to poor job prospects and to evade corruption, as getting a job at home is only possible through party affiliation.
+
+      He also said how the lack of political experience of Student List candidates is not a weakness, and that the political experience of the ruling party has nothing to show for except corruption and ruining people’s lives.
+
+      He said that the upcoming elections were not ‘just simple elections, but a referendum on what kind of a country we want to live in’. He urged the crowd to take the positive energy of the gathering to every home in Bor, speak to those fearful of the regime, and to go vote: 
+
+      > ‘On Sunday, there is no retreat and no fear! Let us go out [and vote] and show that we can decide on our destiny!’
   - naslov: 'East: Students Marko and Lena open the [reception] programme'
     datum: 2026-10-16T20:25:00
     important: false
