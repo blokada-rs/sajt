@@ -8,13 +8,19 @@ heroImage: '@assets/images/IMG_20261017_114045.webp'
 archived: false
 description: Три дана на бициклима кроз приградска насеља и мања места
 timeline:
+  - naslov: На путу ка Земуну
+    datum: 2026-10-17T15:29:00
+    important: false
+    color: first
+    slike:
+      - '@assets/images/IMG_20261017_164627.webp'
   - naslov: Дочек у Батајници
     datum: 2026-10-17T15:00:00
     important: false
     color: first
     videos:
       - 2qKslvVgY0g
-  - naslov: бициклисти кренули ка Батајници
+  - naslov: Бициклисти су кренули ка Батајници
     datum: 2026-10-17T14:17:00
     important: false
     color: first
