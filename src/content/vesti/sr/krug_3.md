@@ -1,19 +1,13 @@
 ---
 link: krug_3
 title: Викенд Круга тројке
-live: true
+live: false
 pubDate: 2026-10-17T07:35:00
 updatedDate: 2026-10-17T11:35:00
 heroImage: '@assets/images/IMG_20261017_114045.webp'
 archived: false
 description: Три дана на бициклима кроз приградска насеља и мања места
 timeline:
-  - naslov: 16 минута тишине
-    datum: 2026-10-17T11:58:00
-    important: false
-    color: first
-    slike:
-      - '@assets/images/1000002440.webp'
   - naslov: Пауза у Јакову
     datum: 2026-10-17T11:47:00
     important: false
@@ -24,9 +18,9 @@ timeline:
     datum: 2026-10-17T10:15:00
     important: false
     color: first
-    slike:
-      - '@assets/images/1000002441.webp'
-      - '@assets/images/1000002442.webp'
+    videos:
+      - BQ3bCxECECQ
+      - rA_3bzEC2qI
     tekst: Бициклисти су из улице Народних хероја кренули на пут од 3 дана око Београда.
 ---
 
