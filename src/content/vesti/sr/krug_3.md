@@ -1,7 +1,7 @@
 ---
 link: krug_3
 title: Викенд Круга тројке
-live: false
+live: true
 pubDate: 2026-10-17T07:35:00
 updatedDate: 2026-10-17T11:35:00
 heroImage: '@assets/images/IMG_20261017_114045.webp'
@@ -13,14 +13,45 @@ timeline:
     important: false
     color: first
     tekst: Наши бициклисти кренули су из Панчева пут Смедерева, преко Баваништа и Ковина.
+  - naslov: Скуп у Панчеву
+    datum: 2026-10-17T19:43:00
+    important: false
+    color: first
+    videos:
+      - kwhPsrKHfNk
+    slike:
+      - '@assets/images/193250_0678.webp'
+      - '@assets/images/195403_0779.webp'
+      - '@assets/images/200758_0809.webp'
+      - '@assets/images/200201_0786.webp'
+    tekst: |-
+      На скупу поводом дочека бициклиста у Панчеву, окупљенима су се обратили:
+
+      - Кандидат Слободан Бубњић
+      - Кандидат Драган Богојевић
+      - Кандидат Радомир Саичић
+      - Кандидаткиња Ана Димитријевић
+      - Кандидат Дејан Бодирога.
   - naslov: Дочек у Панчеву
-    datum: 2026-10-17T18:53:00
+    datum: 2026-10-17T19:08:00
     important: false
     color: first
     slike:
       - '@assets/images/1000002456.webp'
       - '@assets/images/1000002458.webp'
+      - '@assets/images/NES09618.webp'
+      - '@assets/images/NES09748.webp'
     tekst: Грађани Панчева су дочекали бициклисте уз занимљив програм, песму и игру!
+  - naslov: Дочек у панчеву је спреман!
+    datum: 2026-10-17T18:34:00
+    important: false
+    color: first
+    slike:
+      - '@assets/images/NES09534.webp'
+      - '@assets/images/NES09551.webp'
+      - '@assets/images/191213_0403.webp'
+      - '@assets/images/183851_0309.webp'
+    tekst: Све је спремно за дочек бициклиста у Панчеву!
   - naslov: На путу ка Земуну
     datum: 2026-10-17T15:29:00
     important: false
