@@ -8,6 +8,12 @@ heroImage: '@assets/images/IMG_20261017_114045.webp'
 archived: false
 description: Три дана на бициклима кроз приградска насеља и мања места
 timeline:
+  - naslov: Излазак из Омољице
+    datum: 2026-10-18T12:10:00
+    important: false
+    color: first
+    videos:
+      - DDU6U4ltV9A
   - naslov: Полазак из Панчева
     datum: 2026-10-18T09:34:00
     important: false
