@@ -24,6 +24,10 @@ description: |-
   Западна рута креће из Горњег Милановца 18. октобра, а из Ваљева и Шапца 19. октобра.
   Северна рута полази из Новог Сада 20. октобра.
 timeline:
+  - naslov: 'Исток: Пауза у Ждрелу'
+    datum: 2026-10-18T18:20:00
+    important: false
+    color: first
   - naslov: 'Запад: Пауза у Лалинцима'
     datum: 2026-10-18T17:30:00
     important: false
@@ -55,6 +59,8 @@ timeline:
     datum: 2026-10-18T10:05:00
     important: false
     color: second
+    videos:
+      - _Kw6w0sxwPI
     slike:
       - '@assets/images/BLK07734.webp'
   - naslov: 'Исток: Шетачи су наставили свој пут ка Петровцу на Млави'
