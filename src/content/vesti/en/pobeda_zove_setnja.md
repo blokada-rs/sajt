@@ -24,6 +24,8 @@ timeline:
   - datum: 2026-10-18T22:35:00
     important: false
     color: first
+    slike:
+      - '@assets/images/_DSC5871.webp'
   - datum: 2026-10-18T21:07:00
     important: false
     color: first

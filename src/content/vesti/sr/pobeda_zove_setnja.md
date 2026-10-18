@@ -25,6 +25,8 @@ timeline:
     datum: 2026-10-18T22:35:00
     important: false
     color: first
+    slike:
+      - '@assets/images/_DSC5871.webp'
   - naslov: 'Запад: Дочек у Љигу'
     datum: 2026-10-18T21:07:00
     important: false
@@ -35,6 +37,8 @@ timeline:
     datum: 2026-10-18T20:30:00
     important: false
     color: first
+    videos:
+      - CPEg2gBJvp0
   - naslov: 'Исток: Пауза у Ждрелу'
     datum: 2026-10-18T18:20:00
     important: false
