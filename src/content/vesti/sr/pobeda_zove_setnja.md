@@ -24,6 +24,12 @@ description: |-
   Западна рута креће из Горњег Милановца 18. октобра, а из Ваљева и Шапца 19. октобра.
   Северна рута полази из Новог Сада 20. октобра.
 timeline:
+  - naslov: 'Запад: Пауза у Лалинцима'
+    datum: 2026-10-18T17:30:00
+    important: false
+    color: second
+    slike:
+      - '@assets/images/BLK07920.webp'
   - naslov: 'Исток: Пауза код манастира Горњак'
     datum: 2026-10-18T16:41:00
     important: false
