@@ -8,18 +8,30 @@ heroImage: '@assets/images/IMG_20261017_114045.webp'
 archived: false
 description: Три дана на бициклима кроз приградска насеља и мања места
 timeline:
+  - naslov: 'Круг тројке: Полазак из Ковина!'
+    datum: 2026-10-18T13:58:00
+    important: false
+    color: first
+    videos:
+      - 3fbG44ngBKc
+  - naslov: 'Круг тројке: коло у Ковину.'
+    datum: 2026-10-18T23:25:00
+    important: false
+    color: first
+    videos:
+      - l74aplSDEIk
+  - naslov: 'Круг тројке: Дочек у Ковину је спреман!'
+    datum: 2026-10-18T10:43:00
+    important: false
+    color: first
+    videos:
+      - Jz4WO_NvHMc
   - naslov: Излазак из Омољице
     datum: 2026-10-18T12:10:00
     important: false
     color: first
     videos:
       - DDU6U4ltV9A
-  - naslov: Коло у Омољици
-    datum: 2026-10-18T12:04:00
-    important: false
-    color: first
-    slike:
-      - '@assets/images/1000002463.webp'
   - naslov: Полазак из Панчева
     datum: 2026-10-18T09:34:00
     important: false
