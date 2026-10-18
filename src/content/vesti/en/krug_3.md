@@ -7,7 +7,7 @@ updatedDate: 2026-10-17T11:35:00
 heroImage: '@assets/images/IMG_20261017_114045.webp'
 archived: false
 timeline:
-  - datum: 2026-10-18T20:26:00
+  - datum: 2026-10-18T20:10:00
     important: false
     color: first
     videos:

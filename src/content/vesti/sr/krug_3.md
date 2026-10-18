@@ -9,7 +9,7 @@ archived: false
 description: Три дана на бициклима кроз приградска насеља и мања места
 timeline:
   - naslov: 'Круг тројке: Улазак у Младеновац'
-    datum: 2026-10-18T20:26:00
+    datum: 2026-10-18T20:10:00
     important: false
     color: first
     videos:
