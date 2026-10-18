@@ -8,6 +8,12 @@ heroImage: '@assets/images/IMG_20261017_114045.webp'
 archived: false
 description: Три дана на бициклима кроз приградска насеља и мања места
 timeline:
+  - naslov: Младеновац из дрона
+    datum: 2026-10-18T20:26:00
+    important: false
+    color: first
+    videos:
+      - fgrqVBxESNM
   - naslov: Улазак у Младеновац
     datum: 2026-10-18T20:10:00
     important: false
