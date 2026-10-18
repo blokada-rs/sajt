@@ -8,6 +8,11 @@ heroImage: '@assets/images/IMG_20261017_114045.webp'
 archived: false
 description: Три дана на бициклима кроз приградска насеља и мања места
 timeline:
+  - naslov: Полазак из Панчева
+    datum: 2026-10-18T09:34:00
+    important: false
+    color: first
+    tekst: Наши бициклисти кренули су из Панчева пут Смедерева, преко Баваништа и Ковина.
   - naslov: Дочек у Панчеву
     datum: 2026-10-17T18:53:00
     important: false
