@@ -32,8 +32,6 @@ timeline:
     datum: 2026-10-18T17:30:00
     important: false
     color: second
-    videos:
-      - _Rr6QICPlV8
     slike:
       - '@assets/images/BLK07920.webp'
   - naslov: 'Исток: Пауза код манастира Горњак'
