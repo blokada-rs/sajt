@@ -14,6 +14,12 @@ timeline:
     color: first
     videos:
       - DDU6U4ltV9A
+  - naslov: Коло у Омољици
+    datum: 2026-10-18T12:04:00
+    important: false
+    color: first
+    slike:
+      - '@assets/images/1000002463.webp'
   - naslov: Полазак из Панчева
     datum: 2026-10-18T09:34:00
     important: false

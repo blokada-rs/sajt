@@ -12,6 +12,11 @@ timeline:
     color: first
     videos:
       - DDU6U4ltV9A
+  - datum: 2026-10-18T12:04:00
+    important: false
+    color: first
+    slike:
+      - '@assets/images/1000002463.webp'
   - datum: 2026-10-18T09:34:00
     important: false
     color: first
