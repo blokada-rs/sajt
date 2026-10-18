@@ -99,7 +99,7 @@ const { data } = Astro.props;
 
 <script>
   import leaflet from "leaflet";
-import "leaflet.markercluster"
+  import "leaflet.markercluster";
 
   const color_keys = ["first", "second", "third", "fourth", "fifth"];
 
@@ -158,21 +158,23 @@ import "leaflet.markercluster"
       };
 
       if (map_data.track) {
-        map_data.track.forEach(async (url: string, idx: number) => {
+        map_data.track.forEach(async (track) => {
           try {
             const marker = leaflet
-              .marker(await getLatLng(url))
-              .setIcon(new leaflet.DivIcon({
-              iconAnchor: [8, 8],
-              iconSize: [16, 16],
-              className: `single-marker ${color_keys[idx]}`,
-              html: "<div></div>",
-            }));
+              .marker(await getLatLng(track.address))
+              .setIcon(
+                new leaflet.DivIcon({
+                  iconAnchor: [8, 8],
+                  iconSize: [16, 16],
+                  className: `single-marker ${track.color}`,
+                  html: "<div></div>",
+                }),
+              );
 
             marker.addTo(map);
 
             setInterval(async () => {
-              marker.setLatLng(await getLatLng(url));
+              marker.setLatLng(await getLatLng(track.address));
             }, 60000);
 
             return marker;

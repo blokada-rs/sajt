@@ -95,7 +95,7 @@ export class FolderBuilder implements Builder {
       fields: this.fields.map((field) => field.make_cms()),
       i18n: this._i18n,
       extension: this.extension,
-      publish_mode: this._publish_simple? "simple": undefined,
+      publish_mode: this._publish_simple ? "simple" : undefined,
       sortable_fields:
         typeof this._sort_by !== "undefined"
           ? {

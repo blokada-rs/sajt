@@ -27,11 +27,13 @@ const { frontmatter } = await file("ostalo", lang);
         </div>
         {(post.videos?.length ?? 0) > 0 && (
           <div class="videi">
-            {post.videos?.map((video) => <iframe
-              src={`https://www.youtube-nocookie.com/embed/${video}`}
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            />)}
+            {post.videos?.map((video) => (
+              <iframe
+                src={`https://www.youtube-nocookie.com/embed/${video}`}
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              />
+            ))}
           </div>
         )}
         {(post.slike?.length ?? 0) > 0 && (
@@ -164,6 +166,6 @@ const { frontmatter } = await file("ostalo", lang);
   }
 
   .desavanja :global(.button) {
-    align-self:flex-start;
+    align-self: flex-start;
   }
 </style>

@@ -260,13 +260,44 @@ import { AstroFont } from "astro-font";
                 label: "Track",
                 required: false,
                 add_to_top: false,
-                field: {
-                  widget: "string",
-                  name: "address",
-                  label: "Address",
-                  required: true,
-                  type: "text",
-                },
+                fields: [
+                  {
+                    widget: "string",
+                    name: "address",
+                    label: "Address",
+                    required: true,
+                    type: "text",
+                  },
+                  {
+                    widget: "select",
+                    name: "color",
+                    label: "Boja",
+                    required: false,
+                    options: [
+                      {
+                        value: "first",
+                        label: "Prva",
+                      },
+                      {
+                        value: "second",
+                        label: "Druga",
+                      },
+                      {
+                        value: "third",
+                        label: "Treca",
+                      },
+                      {
+                        value: "fourth",
+                        label: "Cetrvrta",
+                      },
+                      {
+                        value: "fifth",
+                        label: "Peta",
+                      },
+                    ],
+                    default: "first",
+                  },
+                ],
               },
             ],
           },

@@ -94,6 +94,7 @@ const map = () =>
       .optional(),
     list_field("track", "Track", [
       string_field("address", "Address").i18n("duplicate"),
+      color().i18n("duplicate"),
     ])
       .i18n("duplicate")
       .optional(),

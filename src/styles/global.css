@@ -371,8 +371,18 @@ section > article:not(:last-of-type) {
   display: inline-block;
 }
 
-.first  { --color: var(--first);  }
-.second { --color: var(--second); }
-.third  { --color: var(--third);  }
-.fourth { --color: var(--fourth); }
-.fifth  { --color: var(--fifth);  }
+.first {
+  --color: var(--first);
+}
+.second {
+  --color: var(--second);
+}
+.third {
+  --color: var(--third);
+}
+.fourth {
+  --color: var(--fourth);
+}
+.fifth {
+  --color: var(--fifth);
+}
