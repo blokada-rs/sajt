@@ -28,6 +28,8 @@ timeline:
     datum: 2026-10-18T16:41:00
     important: false
     color: first
+    slike:
+      - '@assets/images/STF_6341.webp'
   - naslov: 'Запад: Шетачи су стигли на паузу у Бољковце'
     datum: 2026-10-18T15:23:00
     important: false
@@ -41,6 +43,8 @@ timeline:
     color: first
     videos:
       - 3dxyc2ls5k0
+    slike:
+      - '@assets/images/_DSC5668.webp'
   - naslov: 'Запад: Прва колона са запада - Полазак из Горњег Милановца'
     datum: 2026-10-18T10:05:00
     important: false

@@ -27,6 +27,8 @@ timeline:
   - datum: 2026-10-18T16:41:00
     important: false
     color: first
+    slike:
+      - '@assets/images/STF_6341.webp'
   - datum: 2026-10-18T15:23:00
     important: false
     color: first
@@ -36,6 +38,8 @@ timeline:
   - datum: 2026-10-18T14:22:00
     important: false
     color: first
+    slike:
+      - '@assets/images/_DSC5668.webp'
   - datum: 2026-10-18T10:05:00
     important: false
     color: first
