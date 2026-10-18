@@ -27,6 +27,8 @@ timeline:
   - datum: 2026-10-18T21:07:00
     important: false
     color: first
+    slike:
+      - '@assets/images/BLK08074.webp'
   - datum: 2026-10-18T20:30:00
     important: false
     color: first

@@ -28,6 +28,8 @@ timeline:
     datum: 2026-10-18T21:07:00
     important: false
     color: second
+    slike:
+      - '@assets/images/BLK08074.webp'
   - naslov: 'Исток: Дочек шетача у Великом Лаолу'
     datum: 2026-10-18T20:30:00
     important: false
