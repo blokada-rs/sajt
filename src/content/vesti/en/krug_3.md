@@ -10,6 +10,9 @@ timeline:
   - datum: 2026-10-17T18:53:00
     important: false
     color: first
+    slike:
+      - '@assets/images/1000002456.webp'
+      - '@assets/images/1000002458.webp'
   - naslov: On the road to Zemun
     datum: 2026-10-17T15:29:00
     important: false
