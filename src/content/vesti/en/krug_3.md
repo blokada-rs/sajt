@@ -7,17 +7,20 @@ updatedDate: 2026-10-17T11:35:00
 heroImage: '@assets/images/IMG_20261017_114045.webp'
 archived: false
 timeline:
-  - datum: 2026-10-18T20:10:00
+  - naslov: Welcome in Mladenovac
+    datum: 2026-10-18T20:10:00
     important: false
     color: first
     videos:
       - fM0wRT7yew8
-  - datum: 2026-10-18T18:13:00
+  - naslov: Setting off from Semederevo
+    datum: 2026-10-18T18:13:00
     important: false
     color: first
     videos:
       - diRom5ESsy4
-  - datum: 2026-10-18T18:14:00
+  - naslov: Kolo in Semederevo
+    datum: 2026-10-18T18:14:00
     important: false
     color: first
     videos:
@@ -25,33 +28,41 @@ timeline:
     slike:
       - '@assets/images/photo_5953986633168261196_w.webp'
       - '@assets/images/photo_5953986633168261195_w.webp'
-  - datum: 2026-10-18T14:10:00
+  - naslov: Entering Smederevo
+    datum: 2026-10-18T14:10:00
     important: false
     color: first
     videos:
       - plUM8noUnMQ
-  - datum: 2026-10-18T13:58:00
+  - naslov: Setting off from Kovin!
+    datum: 2026-10-18T13:58:00
     important: false
     color: first
-  - datum: 2026-10-18T23:25:00
+  - naslov: Kolo in Kovin.
+    datum: 2026-10-18T23:25:00
     important: false
     color: first
     videos:
       - l74aplSDEIk
-  - datum: 2026-10-18T10:43:00
+  - naslov: Kovin is ready to welcome the cyclists!
+    datum: 2026-10-18T10:43:00
     important: false
     color: first
     videos:
       - Jz4WO_NvHMc
-  - datum: 2026-10-18T12:10:00
+  - naslov: Departing from Omoljica
+    datum: 2026-10-18T12:10:00
     important: false
     color: first
     videos:
       - DDU6U4ltV9A
-  - datum: 2026-10-18T09:34:00
+  - naslov: Setting off from Pančevo
+    datum: 2026-10-18T09:34:00
     important: false
     color: first
-  - datum: 2026-10-17T19:43:00
+    tekst: Our cyclists have set off from Pančevo to Sederevo, via Bavanište and Kovin.
+  - naslov: Gathering in Pančevo
+    datum: 2026-10-17T19:43:00
     important: false
     color: first
     videos:
@@ -61,7 +72,16 @@ timeline:
       - '@assets/images/195403_0779.webp'
       - '@assets/images/200758_0809.webp'
       - '@assets/images/200201_0786.webp'
-  - datum: 2026-10-17T19:08:00
+    tekst: |-
+      The following speakers addressed the crowd that welcomed the cyclists in Pančevo:
+
+      - Candidate Slobodan Bubnjić
+      - Candidate Dragan Bogojević
+      - Candidate Radomir Saičić
+      - Candidate Ana Dimitrijević
+      - Candidate Dejan Bodiroga.
+  - naslov: Welcome in Pančevo
+    datum: 2026-10-17T19:08:00
     important: false
     color: first
     slike:
@@ -69,7 +89,9 @@ timeline:
       - '@assets/images/1000002458.webp'
       - '@assets/images/NES09618.webp'
       - '@assets/images/NES09748.webp'
-  - datum: 2026-10-17T18:34:00
+    tekst: People in Pančeveo welcome the cyclists with an entertaining programme, and with music and dance!
+  - naslov: Pančevo is ready to welcome the cyclists!
+    datum: 2026-10-17T18:34:00
     important: false
     color: first
     slike:
@@ -77,6 +99,7 @@ timeline:
       - '@assets/images/NES09551.webp'
       - '@assets/images/191213_0403.webp'
       - '@assets/images/183851_0309.webp'
+    tekst: All is set for a warm welcome of the cyclists to Pančevo!
   - naslov: On the road to Zemun
     datum: 2026-10-17T15:29:00
     important: false
