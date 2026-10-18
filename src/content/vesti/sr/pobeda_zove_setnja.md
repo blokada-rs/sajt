@@ -35,6 +35,8 @@ timeline:
     datum: 2026-10-18T14:22:00
     important: false
     color: first
+    videos:
+      - 3dxyc2ls5k0
   - naslov: 'Запад: Прва колона са запада - Полазак из Горњег Милановца'
     datum: 2026-10-18T10:05:00
     important: false
