@@ -8,6 +8,12 @@ heroImage: '@assets/images/IMG_20261017_114045.webp'
 archived: false
 description: Три дана на бициклима кроз приградска насеља и мања места
 timeline:
+  - naslov: 'Круг тројке: Улазак у Младеновац'
+    datum: 2026-10-18T20:26:00
+    important: false
+    color: first
+    videos:
+      - fM0wRT7yew8
   - naslov: 'Круг тројке: Полазак из Смедерева'
     datum: 2026-10-18T18:13:00
     important: false
