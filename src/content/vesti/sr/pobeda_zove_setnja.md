@@ -32,6 +32,8 @@ timeline:
     datum: 2026-10-18T17:30:00
     important: false
     color: second
+    videos:
+      - _Rr6QICPlV8
     slike:
       - '@assets/images/BLK07920.webp'
   - naslov: 'Исток: Пауза код манастира Горњак'
@@ -61,6 +63,7 @@ timeline:
     color: second
     videos:
       - _Kw6w0sxwPI
+      - 8xeg-XvwhEc
     slike:
       - '@assets/images/BLK07734.webp'
   - naslov: 'Исток: Шетачи су наставили свој пут ка Петровцу на Млави'
