@@ -21,6 +21,21 @@ description: |-
   The northern route sets off from Novi Sat on 20 October.
   The groups will meet in Belgrade on 21 October at Slavija Square, at the final rally ‘Victory Is Calling’, ahead of the starting of the election silence period.
 timeline:
+  - datum: 2026-10-18T00:04:00
+    important: false
+    color: first
+    slike:
+      - '@assets/images/_DSC5608.webp'
+  - datum: 2026-10-17T23:51:00
+    important: false
+    color: first
+    slike:
+      - '@assets/images/_DSC5588.webp'
+      - '@assets/images/_DSC5590.webp'
+      - '@assets/images/_DSC5591.webp'
+      - '@assets/images/_DSC5594.webp'
+      - '@assets/images/_DSC5595.webp'
+      - '@assets/images/_DSC5601.webp'
   - datum: 2026-10-17T22:46:00
     important: false
     color: first
