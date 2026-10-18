@@ -8,12 +8,31 @@ heroImage: '@assets/images/IMG_20261017_114045.webp'
 archived: false
 description: Три дана на бициклима кроз приградска насеља и мања места
 timeline:
+  - naslov: 'Круг тројке: Полазак из Смедерева'
+    datum: 2026-10-18T18:13:00
+    important: false
+    color: first
+    videos:
+      - diRom5ESsy4
+  - naslov: 'Круг тројке: Коло у Смедереву'
+    datum: 2026-10-18T18:14:00
+    important: false
+    color: first
+    videos:
+      - _4fbbvEDim0
+    slike:
+      - '@assets/images/photo_5953986633168261196_w.webp'
+      - '@assets/images/photo_5953986633168261195_w.webp'
+  - naslov: 'Круг тројке: Улазак у Смедерево'
+    datum: 2026-10-18T14:10:00
+    important: false
+    color: first
+    videos:
+      - plUM8noUnMQ
   - naslov: 'Круг тројке: Полазак из Ковина!'
     datum: 2026-10-18T13:58:00
     important: false
     color: first
-    videos:
-      - 3fbG44ngBKc
   - naslov: 'Круг тројке: коло у Ковину.'
     datum: 2026-10-18T23:25:00
     important: false

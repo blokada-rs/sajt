@@ -7,11 +7,27 @@ updatedDate: 2026-10-17T11:35:00
 heroImage: '@assets/images/IMG_20261017_114045.webp'
 archived: false
 timeline:
-  - datum: 2026-10-18T13:58:00
+  - datum: 2026-10-18T18:13:00
     important: false
     color: first
     videos:
-      - 3fbG44ngBKc
+      - diRom5ESsy4
+  - datum: 2026-10-18T18:14:00
+    important: false
+    color: first
+    videos:
+      - _4fbbvEDim0
+    slike:
+      - '@assets/images/photo_5953986633168261196_w.webp'
+      - '@assets/images/photo_5953986633168261195_w.webp'
+  - datum: 2026-10-18T14:10:00
+    important: false
+    color: first
+    videos:
+      - plUM8noUnMQ
+  - datum: 2026-10-18T13:58:00
+    important: false
+    color: first
   - datum: 2026-10-18T23:25:00
     important: false
     color: first
