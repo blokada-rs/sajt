@@ -33,6 +33,9 @@ timeline:
   - datum: 2026-10-19T10:25:00
     important: false
     color: first
+    slike:
+      - '@assets/images/BLK08163.webp'
+      - '@assets/images/BLK08158.webp'
   - datum: 2026-10-19T09:20:00
     important: false
     color: first
