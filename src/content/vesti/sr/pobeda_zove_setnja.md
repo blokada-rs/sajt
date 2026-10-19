@@ -42,10 +42,10 @@ timeline:
     color: second
     slike:
       - '@assets/images/IMG_0492.webp'
-  - naslov: 'Исток: Горњи Милановац - Боговођа пауза'
+  - naslov: 'Запад: Горњи Милановац - Боговођа пауза'
     datum: 2026-10-19T15:08:00
     important: false
-    color: first
+    color: second
   - naslov: 'Исток: Пауза у Великом Селу'
     datum: 2026-10-19T14:17:00
     important: false
