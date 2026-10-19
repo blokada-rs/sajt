@@ -30,6 +30,20 @@ description: |-
   Западна рута креће из Горњег Милановца 18. октобра, а из Ваљева и Шапца 19. октобра.
   Северна рута полази из Новог Сада 20. октобра.
 timeline:
+  - naslov: 'Запад: Наша друга колона са запада је кренула - Полазак из Ваљева'
+    datum: 2026-10-19T09:20:00
+    important: false
+    color: second
+  - naslov: 'Исток: Полазак из Петроваца на Млави'
+    datum: 2026-10-19T09:11:00
+    important: false
+    color: first
+  - naslov: 'Запад: Трећа колона са запада'
+    datum: 2026-10-19T09:00:00
+    important: false
+    color: second
+    slike:
+      - '@assets/images/7V0A1268.webp'
   - naslov: 'Исток: Петровац на Млави дочек шетача'
     datum: 2026-10-18T22:35:00
     important: false
