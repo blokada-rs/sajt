@@ -8,6 +8,18 @@ heroImage: '@assets/images/IMG_20261017_114045.webp'
 archived: false
 description: Три дана на бициклима кроз приградска насеља и мања места
 timeline:
+  - naslov: Наши бициклисти у Умки
+    datum: 2026-10-19T18:18:00
+    important: false
+    color: first
+    videos:
+      - hZp5Aor4uVA
+  - naslov: Улазак у Барич
+    datum: 2026-10-19T17:27:00
+    important: false
+    color: first
+    videos:
+      - 45WX0VPS9CQ
   - naslov: Дочек у Сремчици
     datum: 2026-10-19T15:45:00
     important: false
