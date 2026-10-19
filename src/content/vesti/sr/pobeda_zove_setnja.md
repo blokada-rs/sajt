@@ -28,8 +28,18 @@ description: |-
   Западна рута креће из Горњег Милановца 18. октобра, а из Ваљева и Шапца 19. октобра.
   Северна рута полази из Новог Сада 20. октобра.
 timeline:
+  - naslov: 'Запад: Шетачи су стигли у Лајковац'
+    datum: 2026-10-19T18:00:00
+    important: false
+    color: second
+    slike:
+      - '@assets/images/DSC00673.webp'
+  - naslov: 'Запад: Шабац - Пауза у месту'
+    datum: 2026-10-19T17:56:00
+    important: false
+    color: second
   - naslov: 'Запад: Шабац - Нашим шетачима су се придружили кандидати СЛСП'
-    datum: 2026-10-19T17:53:00
+    datum: 2026-10-19T17:45:00
     important: false
     color: second
     slike:
