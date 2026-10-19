@@ -37,6 +37,10 @@ timeline:
     slike:
       - '@assets/images/BLK08163.webp'
       - '@assets/images/BLK08158.webp'
+  - naslov: 'Исток: Пауза Трновче'
+    datum: 2026-10-19T10:20:00
+    important: false
+    color: first
   - naslov: 'Запад: Наша друга колона са запада је кренула - Полазак из Ваљева'
     datum: 2026-10-19T09:20:00
     important: false
