@@ -48,6 +48,8 @@ timeline:
   - datum: 2026-10-19T10:20:00
     important: false
     color: first
+    slike:
+      - '@assets/images/_A180016.webp'
   - datum: 2026-10-19T09:20:00
     important: false
     color: first

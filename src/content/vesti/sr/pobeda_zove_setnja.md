@@ -52,6 +52,8 @@ timeline:
     datum: 2026-10-19T10:20:00
     important: false
     color: first
+    slike:
+      - '@assets/images/_A180016.webp'
   - naslov: 'Запад: Наша друга колона са запада је кренула - Полазак из Ваљева'
     datum: 2026-10-19T09:20:00
     important: false
