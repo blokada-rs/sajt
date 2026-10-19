@@ -38,6 +38,9 @@ timeline:
     datum: 2026-10-19T17:56:00
     important: false
     color: second
+    slike:
+      - '@assets/images/7V0A1748.webp'
+      - '@assets/images/7V0A1744.webp'
   - naslov: 'Запад: Шабац - Нашим шетачима су се придружили кандидати СЛСП'
     datum: 2026-10-19T17:45:00
     important: false
