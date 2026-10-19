@@ -36,6 +36,8 @@ timeline:
     datum: 2026-10-19T18:00:00
     important: false
     color: second
+    videos:
+      - uS6LMo-JIYQ
     slike:
       - '@assets/images/DSC00673.webp'
   - naslov: 'Запад: Шабац - Пауза у месту Вукона'
