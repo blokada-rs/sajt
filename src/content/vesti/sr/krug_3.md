@@ -8,6 +8,12 @@ heroImage: '@assets/images/IMG_20261017_114045.webp'
 archived: false
 description: Три дана на бициклима кроз приградска насеља и мања места
 timeline:
+  - naslov: Крај туре на Новом Београду
+    datum: 2026-10-19T22:38:00
+    important: false
+    color: first
+    videos:
+      - Dxi83MmGYNY
   - naslov: Наши бициклисти у Умки
     datum: 2026-10-19T18:18:00
     important: false
