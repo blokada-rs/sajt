@@ -33,6 +33,9 @@ timeline:
   - datum: 2026-10-19T13:02:00
     important: false
     color: first
+    slike:
+      - '@assets/images/7V0A1484.webp'
+      - '@assets/images/7V0A1490.webp'
   - datum: 2026-10-19T12:44:00
     important: false
     color: first
