@@ -33,7 +33,7 @@ timeline:
   - naslov: 'Запад: Прва колона - Шетачи су стигли на паузу у месту Латковићи'
     datum: 2026-10-19T12:35:00
     important: false
-    color: first
+    color: second
   - naslov: 'Запад: Прва колона - Пуза Јајчићи'
     datum: 2026-10-19T12:07:00
     important: false
