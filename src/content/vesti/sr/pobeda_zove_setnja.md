@@ -34,6 +34,9 @@ timeline:
     datum: 2026-10-19T12:44:00
     important: false
     color: second
+    slike:
+      - '@assets/images/BLK08210.webp'
+      - '@assets/images/BLK08202.webp'
   - naslov: 'Запад: Ваљево - Шетачи су стигли на паузу у месту Латковићи'
     datum: 2026-10-19T12:35:00
     important: false
