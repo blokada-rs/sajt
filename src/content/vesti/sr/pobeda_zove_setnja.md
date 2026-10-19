@@ -30,17 +30,17 @@ description: |-
   Западна рута креће из Горњег Милановца 18. октобра, а из Ваљева и Шапца 19. октобра.
   Северна рута полази из Новог Сада 20. октобра.
 timeline:
-  - naslov: 'Запад: Друга колона - Пауза у Дивцима'
+  - naslov: 'Запад: Ваљево - Пауза у Дивцима'
     datum: 2026-10-19T12:44:00
     important: false
     color: second
-    slike:
-      - '@assets/images/BLK08210.webp'
-      - '@assets/images/BLK08202.webp'
-  - naslov: 'Запад: Ваљево - Шетачи су стигли на паузу у месту Латковићи'
+  - naslov: 'Запад: Горњи Милановац - Шетачи су стигли на паузу у месту Латковићи'
     datum: 2026-10-19T12:35:00
     important: false
     color: second
+    slike:
+      - '@assets/images/BLK08202-1.webp'
+      - '@assets/images/BLK08210-1.webp'
   - naslov: 'Запад: Горњи Милановац - Пауза Јајчићи'
     datum: 2026-10-19T12:07:00
     important: false

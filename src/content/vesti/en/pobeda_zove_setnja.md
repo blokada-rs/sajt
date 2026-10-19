@@ -33,12 +33,12 @@ timeline:
   - datum: 2026-10-19T12:44:00
     important: false
     color: first
-    slike:
-      - '@assets/images/BLK08210.webp'
-      - '@assets/images/BLK08202.webp'
   - datum: 2026-10-19T12:35:00
     important: false
     color: first
+    slike:
+      - '@assets/images/BLK08202-1.webp'
+      - '@assets/images/BLK08210-1.webp'
   - datum: 2026-10-19T12:07:00
     important: false
     color: first
