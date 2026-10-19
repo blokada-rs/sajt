@@ -31,7 +31,7 @@ timeline:
   - naslov: 'Запад: Дочек шетача у Лазаревцу'
     datum: 2026-10-19T21:38:00
     important: false
-    color: first
+    color: second
     slike:
       - '@assets/images/BLK08442.webp'
   - naslov: 'Запад: Дочек у Петки'
