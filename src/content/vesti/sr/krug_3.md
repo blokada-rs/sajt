@@ -8,6 +8,12 @@ heroImage: '@assets/images/IMG_20261017_114045.webp'
 archived: false
 description: Три дана на бициклима кроз приградска насеља и мања места
 timeline:
+  - naslov: Дочек у Сремчици
+    datum: 2026-10-19T15:45:00
+    important: false
+    color: first
+    videos:
+      - 8pQDLbA3WtA
   - naslov: Улазак у Барајево
     datum: 2026-10-19T13:26:00
     important: false
