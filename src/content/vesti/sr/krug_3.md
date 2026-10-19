@@ -8,6 +8,18 @@ heroImage: '@assets/images/IMG_20261017_114045.webp'
 archived: false
 description: Три дана на бициклима кроз приградска насеља и мања места
 timeline:
+  - naslov: Улазак у Барајево
+    datum: 2026-10-19T13:26:00
+    important: false
+    color: first
+    videos:
+      - 2KyRfjxe39o
+  - naslov: Надомак Барајева
+    datum: 2026-10-19T13:00:00
+    important: false
+    color: first
+    slike:
+      - '@assets/images/IMG_20261019_145257.webp'
   - naslov: Сваки нови сусрет нам даје снагу да наставимо!
     datum: 2026-10-19T12:34:00
     important: false

@@ -7,6 +7,14 @@ updatedDate: 2026-10-17T11:35:00
 heroImage: '@assets/images/IMG_20261017_114045.webp'
 archived: false
 timeline:
+  - datum: 2026-10-19T13:26:00
+    important: false
+    color: first
+  - datum: 2026-10-19T13:00:00
+    important: false
+    color: first
+    slike:
+      - '@assets/images/IMG_20261019_145257.webp'
   - datum: 2026-10-19T12:34:00
     important: false
     color: first
