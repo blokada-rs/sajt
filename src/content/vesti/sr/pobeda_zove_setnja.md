@@ -30,10 +30,16 @@ description: |-
   Западна рута креће из Горњег Милановца 18. октобра, а из Ваљева и Шапца 19. октобра.
   Северна рута полази из Новог Сада 20. октобра.
 timeline:
+  - naslov: 'Запад: Шабац - Пауза у Дебрецу'
+    datum: 2026-10-19T15:23:00
+    important: false
+    color: second
+    slike:
+      - '@assets/images/7V0A1658.webp'
   - naslov: 'Запад: Ваљево - Пауза у Словцу'
     datum: 2026-10-19T15:17:00
     important: false
-    color: first
+    color: second
     slike:
       - '@assets/images/IMG_0492.webp'
   - naslov: 'Исток: Горњи Милановац - Боговођа пауза'
