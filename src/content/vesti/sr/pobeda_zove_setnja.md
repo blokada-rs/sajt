@@ -38,6 +38,8 @@ timeline:
     datum: 2026-10-19T12:44:00
     important: false
     color: second
+    videos:
+      - r9f6LS6VIj0
   - naslov: 'Запад: Горњи Милановац - Шетачи су стигли на паузу у месту Латковићи'
     datum: 2026-10-19T12:35:00
     important: false
