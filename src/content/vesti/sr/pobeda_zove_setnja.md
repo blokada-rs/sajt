@@ -34,7 +34,7 @@ timeline:
     color: second
     slike:
       - '@assets/images/DSC00673.webp'
-  - naslov: 'Запад: Шабац - Пауза у месту'
+  - naslov: 'Запад: Шабац - Пауза у месту Вукона'
     datum: 2026-10-19T17:56:00
     important: false
     color: second
