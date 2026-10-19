@@ -8,6 +8,26 @@ heroImage: '@assets/images/IMG_20261017_114045.webp'
 archived: false
 description: Три дана на бициклима кроз приградска насеља и мања места
 timeline:
+  - naslov: На путу од Сопота до Раље
+    datum: 2026-10-19T11:36:00
+    important: false
+    color: first
+    videos:
+      - OzNPJbwMkYw
+  - naslov: Улазак у Сопот
+    datum: 2026-10-19T10:05:00
+    important: false
+    color: first
+    videos:
+      - OzNPJbwMkYw
+    slike:
+      - '@assets/images/IMG_2818.webp'
+  - naslov: Полазак из Младеновца
+    datum: 2026-10-19T09:04:00
+    important: false
+    color: first
+    slike:
+      - '@assets/images/IMG_20261019_122150.webp'
   - naslov: Младеновац из дрона
     datum: 2026-10-18T20:26:00
     important: false
