@@ -19,8 +19,6 @@ map:
       color: first
     - address: https://gps.blokade.org/get?id=0
       color: second
-    - address: https://gps.blokade.org/get?id=2
-      color: second
     - address: https://gps.blokade.org/get?id=3
       color: second
 description: |-
@@ -30,10 +28,19 @@ description: |-
   Западна рута креће из Горњег Милановца 18. октобра, а из Ваљева и Шапца 19. октобра.
   Северна рута полази из Новог Сада 20. октобра.
 timeline:
+  - naslov: 'Запад: Шабац - Нашим шетачима су се придружили кандидати СЛСП'
+    datum: 2026-10-19T17:53:00
+    important: false
+    color: second
+    slike:
+      - '@assets/images/7V0A1715.webp'
+    tekst: Наш драги Александар Чупић и Светлана Батарило
   - naslov: 'Запад: Колона из Горњег Милановца и Ваљева су се спојиле'
     datum: 2026-10-19T17:47:00
     important: false
-    color: first
+    color: second
+    slike:
+      - '@assets/images/DSC00572.webp'
   - naslov: 'Исток: Пут ка Великом Црнићу'
     datum: 2026-10-19T16:16:00
     important: false
