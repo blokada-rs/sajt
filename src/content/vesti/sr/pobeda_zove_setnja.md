@@ -32,6 +32,8 @@ timeline:
     datum: 2026-10-19T21:38:00
     important: false
     color: second
+    videos:
+      - XHHh-zfxPNE
     slike:
       - '@assets/images/BLK08442.webp'
   - naslov: 'Запад: Дочек у Петки'
