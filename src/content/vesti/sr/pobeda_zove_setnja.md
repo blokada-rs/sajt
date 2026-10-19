@@ -52,7 +52,7 @@ timeline:
     important: false
     color: second
     slike:
-      - '@assets/images/7V0A1715.webp'
+      - '@assets/images/7V0A1715-1.webp'
     tekst: Наш драги Александар Чупић и Светлана Батарило
   - naslov: 'Запад: Колона из Горњег Милановца и Ваљева су се спојиле'
     datum: 2026-10-19T17:47:00

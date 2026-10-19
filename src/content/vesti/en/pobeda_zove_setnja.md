@@ -46,7 +46,7 @@ timeline:
     important: false
     color: first
     slike:
-      - '@assets/images/7V0A1715.webp'
+      - '@assets/images/7V0A1715-1.webp'
   - datum: 2026-10-19T17:47:00
     important: false
     color: first
