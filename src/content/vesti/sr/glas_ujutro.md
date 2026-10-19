@@ -2,7 +2,7 @@
 link: glas_ujutro
 title: Гласајте ујутру
 live: false
-pubDate: 2026-10-18T13:59:00
+pubDate: 2026-10-19T13:59:00
 updatedDate: 2026-10-18T13:59:00
 heroImage: '@assets/images/JUTRO SAJT.webp'
 archived: false
