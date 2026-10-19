@@ -58,6 +58,8 @@ timeline:
     datum: 2026-10-19T09:20:00
     important: false
     color: second
+    videos:
+      - nEG76vFRCms
   - naslov: 'Исток: Полазак из Петроваца на Млави'
     datum: 2026-10-19T09:11:00
     important: false
