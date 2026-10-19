@@ -32,6 +32,8 @@ timeline:
     datum: 2026-10-19T20:42:00
     important: false
     color: second
+    slike:
+      - '@assets/images/BLK08417.webp'
   - naslov: 'Запад: Шабац - Дочек шетача у Бањанима'
     datum: 2026-10-19T19:52:00
     important: false
