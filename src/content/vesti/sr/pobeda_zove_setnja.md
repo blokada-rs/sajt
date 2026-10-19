@@ -38,6 +38,7 @@ timeline:
     color: second
     videos:
       - XHHh-zfxPNE
+      - TzqoRVQt910
     slike:
       - '@assets/images/BLK08442.webp'
   - naslov: 'Запад: Дочек у Петки'
