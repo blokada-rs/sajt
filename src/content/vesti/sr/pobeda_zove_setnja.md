@@ -32,6 +32,9 @@ timeline:
     datum: 2026-10-19T22:21:00
     important: false
     color: first
+    videos:
+      - JiTfdjpFSSI
+      - iDVVsnRKmQQ
   - naslov: 'Запад: Дочек шетача у Лазаревцу'
     datum: 2026-10-19T21:38:00
     important: false
