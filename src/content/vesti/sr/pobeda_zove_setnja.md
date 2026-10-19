@@ -28,6 +28,12 @@ description: |-
   Западна рута креће из Горњег Милановца 18. октобра, а из Ваљева и Шапца 19. октобра.
   Северна рута полази из Новог Сада 20. октобра.
 timeline:
+  - naslov: 'Запад: Дочек шетача у Лазаревцу'
+    datum: 2026-10-19T21:38:00
+    important: false
+    color: first
+    slike:
+      - '@assets/images/BLK08442.webp'
   - naslov: 'Запад: Дочек у Петки'
     datum: 2026-10-19T20:42:00
     important: false
