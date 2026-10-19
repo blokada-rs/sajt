@@ -34,6 +34,9 @@ timeline:
     datum: 2026-10-19T11:10:00
     important: false
     color: second
+    slike:
+      - '@assets/images/7V0A1443.webp'
+      - '@assets/images/7V0A1444.webp'
   - naslov: 'Запад: Прва колона шетача је кренула из Љига'
     datum: 2026-10-19T10:25:00
     important: false
