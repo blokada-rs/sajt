@@ -8,12 +8,19 @@ heroImage: '@assets/images/IMG_20261017_114045.webp'
 archived: false
 description: Три дана на бициклима кроз приградска насеља и мања места
 timeline:
+  - naslov: Сваки нови сусрет нам даје снагу да наставимо!
+    datum: 2026-10-19T12:34:00
+    important: false
+    color: first
+    videos:
+      - 4ybTTUNAh9I
+    tekst: Наши бициклисти прелазе тешке деонице са великим успонима. Имају честе краће паузе да би одморили. Упркос томе, сваки нови човек на путу даје им додатан елан да наставе даље. Кад виде осмехе свог сународника, постаје им још јасније да СТУДЕНТИ ПОБЕЂУЈУ!
   - naslov: На путу од Сопота до Раље
     datum: 2026-10-19T11:36:00
     important: false
     color: first
     videos:
-      - OzNPJbwMkYw
+      - hNEGLvl_0jk
   - naslov: Улазак у Сопот
     datum: 2026-10-19T10:05:00
     important: false
