@@ -32,6 +32,9 @@ timeline:
     datum: 2026-10-19T19:52:00
     important: false
     color: second
+    slike:
+      - '@assets/images/7V0A1783.webp'
+      - '@assets/images/7V0A1785.webp'
   - naslov: 'Исток: Пауза у Великом Црнићу'
     datum: 2026-10-19T18:05:00
     important: false
