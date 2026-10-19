@@ -30,6 +30,12 @@ description: |-
   Западна рута креће из Горњег Милановца 18. октобра, а из Ваљева и Шапца 19. октобра.
   Северна рута полази из Новог Сада 20. октобра.
 timeline:
+  - naslov: 'Запад: Прва колона - Пуза Јајчићи'
+    datum: 2026-10-19T12:07:00
+    important: false
+    color: second
+    slike:
+      - '@assets/images/BLK08191.webp'
   - naslov: 'Исток: Пауза у Рашанцу'
     datum: 2026-10-19T11:46:00
     important: false
