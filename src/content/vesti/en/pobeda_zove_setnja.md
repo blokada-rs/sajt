@@ -21,6 +21,8 @@ map:
       color: second
     - address: https://gps.blokade.org/get?id=3
       color: second
+    - address: https://gps.blokade.org/get?id=4
+      color: third
 description: |-
   From 16 October, three groups will set off gradually from different parts of Serbia and make their way towards Belgrade.
   The eastern route sets off from Zaječar on 16 October.
