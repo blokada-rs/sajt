@@ -30,10 +30,14 @@ description: |-
   Западна рута креће из Горњег Милановца 18. октобра, а из Ваљева и Шапца 19. октобра.
   Северна рута полази из Новог Сада 20. октобра.
 timeline:
+  - naslov: 'Запад: Шабац - Пауза у месту Стублине'
+    datum: 2026-10-20T18:29:00
+    important: false
+    color: second
   - naslov: 'Север: Дочек шетача у Инђији'
     datum: 2026-10-20T18:14:00
     important: false
-    color: first
+    color: third
   - naslov: 'Север: Љубав је на улици'
     datum: 2026-10-20T18:08:00
     important: false
