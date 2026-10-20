@@ -32,10 +32,15 @@ timeline:
     datum: 2026-10-20T22:26:00
     important: false
     color: third
+    videos:
+      - JxjcFAGqktY
   - naslov: 'Исток: Дочек у Смедереву'
     datum: 2026-10-20T22:04:00
     important: false
     color: first
+    videos:
+      - i6c9Odq48Ag
+      - 4fc79OBmkfU
     slike:
       - '@assets/images/photo_2026-10-20 22.05.14.webp'
   - naslov: 'Исток: Пауза пред улазак у Смедерево'
