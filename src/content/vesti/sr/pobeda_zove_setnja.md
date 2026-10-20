@@ -45,6 +45,8 @@ timeline:
     datum: 2026-10-20T13:00:00
     important: false
     color: second
+    videos:
+      - vZyw2IeuLmY
   - naslov: 'Запад: Атмосфера пре уласка у Колубару'
     datum: 2026-10-20T12:45:00
     important: false
