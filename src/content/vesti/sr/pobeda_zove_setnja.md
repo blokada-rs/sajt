@@ -30,6 +30,13 @@ description: |-
   Западна рута креће из Горњег Милановца 18. октобра, а из Ваљева и Шапца 19. октобра.
   Северна рута полази из Новог Сада 20. октобра.
 timeline:
+  - naslov: 'Север: Пауза Банстол'
+    datum: 2026-10-20T13:08:00
+    important: false
+    color: third
+    slike:
+      - '@assets/images/IMG_3376.webp'
+      - '@assets/images/IMG_3377.webp'
   - naslov: 'Запад: Колубара пауза'
     datum: 2026-10-20T13:00:00
     important: false
