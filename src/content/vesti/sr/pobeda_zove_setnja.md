@@ -34,6 +34,9 @@ timeline:
     datum: 2026-10-20T10:07:00
     important: false
     color: third
+    slike:
+      - '@assets/images/IMG_3316.webp'
+      - '@assets/images/IMG_3310.webp'
   - naslov: 'Север: На путу до Сремских Карловаца'
     datum: 2026-10-20T09:20:00
     important: false
