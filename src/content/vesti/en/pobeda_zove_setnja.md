@@ -42,12 +42,18 @@ timeline:
   - datum: 2026-10-20T13:00:00
     important: false
     color: first
+    videos:
+      - vZyw2IeuLmY
   - datum: 2026-10-20T12:45:00
     important: false
     color: first
+    videos:
+      - Cet2VGlOZJs
   - datum: 2026-10-20T12:07:00
     important: false
     color: first
+    videos:
+      - OL9UQHzA4YI
   - datum: 2026-10-20T11:40:00
     important: false
     color: first
@@ -60,9 +66,13 @@ timeline:
   - datum: 2026-10-20T11:00:00
     important: false
     color: first
+    videos:
+      - IpitWKZGpuI
   - datum: 2026-10-20T10:24:00
     important: false
     color: first
+    videos:
+      - OjHEFKfkWYg
     slike:
       - '@assets/images/BLK08649.webp'
       - '@assets/images/BLK08642.webp'
@@ -75,6 +85,8 @@ timeline:
   - datum: 2026-10-20T09:20:00
     important: false
     color: first
+    videos:
+      - ASIRqUdpDsU
   - datum: 2026-10-20T09:05:00
     important: false
     color: first
@@ -89,9 +101,15 @@ timeline:
   - datum: 2026-10-19T22:21:00
     important: false
     color: first
+    videos:
+      - JiTfdjpFSSI
+      - iDVVsnRKmQQ
   - datum: 2026-10-19T21:38:00
     important: false
     color: first
+    videos:
+      - XHHh-zfxPNE
+      - TzqoRVQt910
     slike:
       - '@assets/images/BLK08442.webp'
   - datum: 2026-10-19T20:42:00
@@ -99,146 +117,185 @@ timeline:
     color: first
     slike:
       - '@assets/images/BLK08417.webp'
-  - datum: 2026-10-19T19:52:00
+  - naslov: 'West: Šabac — Welcoming of the walkers in Banjani'
+    datum: 2026-10-19T19:52:00
     important: false
     color: first
     slike:
       - '@assets/images/7V0A1783.webp'
       - '@assets/images/7V0A1785.webp'
-  - datum: 2026-10-19T18:05:00
+  - naslov: 'East: Break in Veliko Crnće'
+    datum: 2026-10-19T18:05:00
     important: false
     color: first
-  - datum: 2026-10-19T18:00:00
+  - naslov: 'West: The walkers have arrived in Lajkovac'
+    datum: 2026-10-19T18:00:00
     important: false
     color: first
+    videos:
+      - uS6LMo-JIYQ
     slike:
       - '@assets/images/DSC00673.webp'
-  - datum: 2026-10-19T17:56:00
+  - naslov: 'West: Šabac — Break in the village of Vukona'
+    datum: 2026-10-19T17:56:00
     important: false
     color: first
     slike:
       - '@assets/images/7V0A1748.webp'
       - '@assets/images/7V0A1744.webp'
-  - datum: 2026-10-19T17:45:00
+  - naslov: 'West: Šabac — SLSP candidates joined our walkers'
+    datum: 2026-10-19T17:45:00
     important: false
     color: first
     slike:
       - '@assets/images/7V0A1715-1.webp'
-  - datum: 2026-10-19T17:47:00
+    tekst: '[SLPS stands for Student List – Studenti Pobeđuju, the official name of the student list in Serbian, lit. ‘Student List  — Students are Winning’]'
+  - naslov: 'West: The groups from Gornji Milanovac and Valjevo join together'
+    datum: 2026-10-19T17:47:00
     important: false
     color: first
     slike:
       - '@assets/images/DSC00572.webp'
-  - datum: 2026-10-19T16:16:00
+  - naslov: 'West: On the way to Veliko Crniće'
+    datum: 2026-10-19T16:16:00
     important: false
     color: first
     slike:
       - '@assets/images/STF_6394.webp'
-  - datum: 2026-10-19T15:23:00
+  - naslov: 'West: Šabac — Break in Debrec'
+    datum: 2026-10-19T15:23:00
     important: false
     color: first
     slike:
       - '@assets/images/7V0A1658.webp'
-  - datum: 2026-10-19T15:17:00
+  - naslov: 'West: Valjevo — Break in Slovce'
+    datum: 2026-10-19T15:17:00
     important: false
     color: first
     slike:
       - '@assets/images/IMG_0492.webp'
-  - datum: 2026-10-19T15:08:00
+  - naslov: 'West: Gornji Milanovac — Break at the Bogovođa Monastery'
+    datum: 2026-10-19T15:08:00
     important: false
     color: first
     slike:
       - '@assets/images/BLK08249.webp'
       - '@assets/images/BLK08251_1.webp'
-  - datum: 2026-10-19T14:17:00
+  - naslov: 'East: Break in Veliko Selo [lit. ‘Big Village’]'
+    datum: 2026-10-19T14:17:00
     important: false
     color: first
-  - datum: 2026-10-19T13:02:00
+  - naslov: 'West: Šabac — Break for our walkers in Trbušac'
+    datum: 2026-10-19T13:02:00
     important: false
     color: first
     slike:
       - '@assets/images/7V0A1484.webp'
       - '@assets/images/7V0A1490.webp'
-  - datum: 2026-10-19T12:44:00
+  - naslov: 'West: Valjevo — Break in Divci'
+    datum: 2026-10-19T12:44:00
     important: false
     color: first
-  - datum: 2026-10-19T12:35:00
+    videos:
+      - r9f6LS6VIj0
+  - naslov: 'West: Gornji Milanovac — The walkers have arrived for a break in Latkovići'
+    datum: 2026-10-19T12:35:00
     important: false
     color: first
     slike:
       - '@assets/images/BLK08202-1.webp'
       - '@assets/images/BLK08210-1.webp'
-  - datum: 2026-10-19T12:07:00
+  - naslov: 'West: Gornji Milanovac — Break in Jajčići'
+    datum: 2026-10-19T12:07:00
     important: false
     color: first
     slike:
       - '@assets/images/BLK08191.webp'
-  - datum: 2026-10-19T11:46:00
+  - naslov: 'East: Break in Rašanac'
+    datum: 2026-10-19T11:46:00
     important: false
     color: first
-  - datum: 2026-10-19T11:10:00
+  - naslov: 'West: Šabac — Break at the Monastery of The Dormition of the Mother of God in Orid'
+    datum: 2026-10-19T11:10:00
     important: false
     color: first
     slike:
       - '@assets/images/7V0A1443.webp'
       - '@assets/images/7V0A1444.webp'
-  - datum: 2026-10-19T10:25:00
+  - naslov: 'West: The first group of walkers has departed from Ljig'
+    datum: 2026-10-19T10:25:00
     important: false
     color: first
     slike:
       - '@assets/images/BLK08163.webp'
       - '@assets/images/BLK08158.webp'
-  - datum: 2026-10-19T10:20:00
+  - naslov: 'East: Break in Trnovče'
+    datum: 2026-10-19T10:20:00
     important: false
     color: first
     slike:
       - '@assets/images/_A180016.webp'
-  - datum: 2026-10-19T09:20:00
+  - naslov: 'West: Our second group from the west has set off — Departure from Valjevo'
+    datum: 2026-10-19T09:20:00
     important: false
     color: first
-  - datum: 2026-10-19T09:11:00
+    videos:
+      - nEG76vFRCms
+  - naslov: 'East: Departure from Petrovac na Mlavi'
+    datum: 2026-10-19T09:11:00
     important: false
     color: first
-  - datum: 2026-10-19T09:00:00
+  - naslov: 'West: The third group from the west — Departure from Šabac'
+    datum: 2026-10-19T09:00:00
     important: false
     color: first
     slike:
       - '@assets/images/7V0A1268.webp'
-  - datum: 2026-10-18T22:35:00
+  - naslov: 'East: Petrovac na Mlavi welcomes the walkers'
+    datum: 2026-10-18T22:35:00
     important: false
     color: first
     slike:
       - '@assets/images/_DSC5871.webp'
-  - datum: 2026-10-18T21:07:00
+  - naslov: 'West: Welcome in Ljig'
+    datum: 2026-10-18T21:07:00
     important: false
     color: first
     slike:
       - '@assets/images/BLK08074.webp'
-  - datum: 2026-10-18T20:30:00
+  - naslov: 'East: Welcoming the walkers in Veliko Laole'
+    datum: 2026-10-18T20:30:00
     important: false
     color: first
-  - datum: 2026-10-18T18:20:00
+    videos:
+      - CPEg2gBJvp0
+  - naslov: 'East: Break in Ždrelo'
+    datum: 2026-10-18T18:20:00
     important: false
     color: first
-  - datum: 2026-10-18T17:30:00
+  - naslov: 'West: Break in Lalinci'
+    datum: 2026-10-18T17:30:00
     important: false
     color: first
     videos:
       - _Rr6QICPlV8
     slike:
       - '@assets/images/BLK07920.webp'
-  - datum: 2026-10-18T16:41:00
+  - naslov: 'East: Break new Gornjak Monastery'
+    datum: 2026-10-18T16:41:00
     important: false
     color: first
     slike:
       - '@assets/images/STF_6341.webp'
-  - datum: 2026-10-18T15:23:00
+  - naslov: 'East: The walkers have arrived for a break in Boljkovci'
+    datum: 2026-10-18T15:23:00
     important: false
     color: first
     slike:
       - '@assets/images/BLK07861.webp'
       - '@assets/images/BLK07862.webp'
-  - datum: 2026-10-18T14:22:00
+  - naslov: 'East: The walkers have arrived for a break in Krepoljin'
+    datum: 2026-10-18T14:22:00
     important: false
     color: first
     videos:
