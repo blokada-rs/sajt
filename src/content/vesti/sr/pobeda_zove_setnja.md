@@ -34,6 +34,12 @@ timeline:
     datum: 2026-10-20T17:08:00
     important: false
     color: second
+  - naslov: 'Север: На путу до Инђије'
+    datum: 2026-10-20T17:00:00
+    important: false
+    color: third
+    videos:
+      - rjMxAI5bBiY
   - naslov: 'Запад: Шабац - Пироман пауза'
     datum: 2026-10-20T16:58:00
     important: false
