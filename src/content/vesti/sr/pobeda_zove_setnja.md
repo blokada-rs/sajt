@@ -34,6 +34,9 @@ timeline:
     datum: 2026-10-20T10:24:00
     important: false
     color: second
+    slike:
+      - '@assets/images/BLK08649.webp'
+      - '@assets/images/BLK08642.webp'
   - naslov: 'Север: Сремски Карловци пауза'
     datum: 2026-10-20T10:07:00
     important: false
