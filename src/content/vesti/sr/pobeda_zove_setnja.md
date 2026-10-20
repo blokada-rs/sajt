@@ -30,6 +30,10 @@ description: |-
   Западна рута креће из Горњег Милановца 18. октобра, а из Ваљева и Шапца 19. октобра.
   Северна рута полази из Новог Сада 20. октобра.
 timeline:
+  - naslov: 'Исток: Пауза на Љубичком мосту'
+    datum: 2026-10-20T13:13:00
+    important: false
+    color: first
   - naslov: 'Север: Пауза Банстол'
     datum: 2026-10-20T13:08:00
     important: false
@@ -41,6 +45,12 @@ timeline:
     datum: 2026-10-20T13:00:00
     important: false
     color: second
+  - naslov: 'Запад: Атмосфера пре уласка у Колубару'
+    datum: 2026-10-20T12:45:00
+    important: false
+    color: second
+    videos:
+      - Cet2VGlOZJs
   - naslov: 'Север: Пауза за 16 минута тишине'
     datum: 2026-10-20T12:07:00
     important: false
