@@ -36,6 +36,8 @@ timeline:
     datum: 2026-10-20T20:33:00
     important: false
     color: second
+    videos:
+      - AJIRXVWPoJU
   - naslov: 'Исток: Мала Крсна пауза'
     datum: 2026-10-20T18:39:00
     important: false
