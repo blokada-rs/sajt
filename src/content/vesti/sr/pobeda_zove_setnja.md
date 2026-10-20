@@ -42,6 +42,8 @@ timeline:
     datum: 2026-10-20T18:14:00
     important: false
     color: third
+    videos:
+      - i559PkwUNVY
   - naslov: 'Север: Љубав је на улици'
     datum: 2026-10-20T18:08:00
     important: false
