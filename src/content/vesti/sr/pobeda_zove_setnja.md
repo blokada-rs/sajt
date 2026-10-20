@@ -30,6 +30,13 @@ description: |-
   Западна рута креће из Горњег Милановца 18. октобра, а из Ваљева и Шапца 19. октобра.
   Северна рута полази из Новог Сада 20. октобра.
 timeline:
+  - naslov: 'Севеер: Шетачи из Новог Сада су кренули свој пут ка Славији'
+    datum: 2026-10-20T07:35:00
+    important: false
+    color: third
+    slike:
+      - '@assets/images/IMG_3227.webp'
+      - '@assets/images/IMG_3255.webp'
   - naslov: 'Исток: Шетачи су стигли у Пожаревац'
     datum: 2026-10-19T22:21:00
     important: false
