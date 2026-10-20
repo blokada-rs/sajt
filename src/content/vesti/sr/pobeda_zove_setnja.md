@@ -39,7 +39,7 @@ timeline:
     important: false
     color: second
     slike:
-      - '@assets/images/IMG_5879.webp'
+      - '@assets/images/IMG_5879-1.webp'
   - naslov: 'Исток: Пауза на Љубичком мосту'
     datum: 2026-10-20T13:13:00
     important: false
