@@ -36,6 +36,8 @@ timeline:
   - datum: 2026-10-20T14:59:00
     important: false
     color: first
+    slike:
+      - '@assets/images/IMG_5879.webp'
   - datum: 2026-10-20T13:13:00
     important: false
     color: first
