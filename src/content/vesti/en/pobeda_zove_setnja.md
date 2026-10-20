@@ -28,12 +28,14 @@ description: |-
   The northern route sets off from Novi Sat on 20 October.
   The groups will meet in Belgrade on 21 October at Slavija Square, at the final rally ‘Victory Is Calling’, ahead of the starting of the election silence period.
 timeline:
-  - datum: 2026-10-20T22:26:00
+  - naslov: 'North: The walkers have arrived in Stara Pazova'
+    datum: 2026-10-20T22:26:00
     important: false
     color: first
     videos:
       - JxjcFAGqktY
-  - datum: 2026-10-20T22:04:00
+  - naslov: 'East: Welcome in Smederevo'
+    datum: 2026-10-20T22:04:00
     important: false
     color: first
     videos:
@@ -41,96 +43,116 @@ timeline:
       - 4fc79OBmkfU
     slike:
       - '@assets/images/photo_2026-10-20 22.05.14.webp'
-  - datum: 2026-10-20T20:47:00
+  - naslov: 'East: Break before entering Smederevo'
+    datum: 2026-10-20T20:47:00
     important: false
     color: first
-  - datum: 2026-10-20T20:33:00
+  - naslov: 'West: Our western groups have joined into one'
+    datum: 2026-10-20T20:33:00
     important: false
     color: first
     videos:
       - AJIRXVWPoJU
-  - datum: 2026-10-20T18:39:00
+  - naslov: 'East: Break in Mala Krsna'
+    datum: 2026-10-20T18:39:00
     important: false
     color: first
-  - datum: 2026-10-20T18:29:00
+  - naslov: 'West: Šabac — Break in the Village of Stubline'
+    datum: 2026-10-20T18:29:00
     important: false
     color: first
-  - datum: 2026-10-20T18:14:00
+  - naslov: 'North: Welcoming the walkers in Inđija'
+    datum: 2026-10-20T18:14:00
     important: false
     color: first
     videos:
       - i559PkwUNVY
       - nIXN8lIq9YI
       - pbfVQ5pvlDk
-  - datum: 2026-10-20T18:08:00
+  - naslov: 'North: Love is in the streets'
+    datum: 2026-10-20T18:08:00
     important: false
     color: first
     videos:
       - w29-3A9qY9M
-  - datum: 2026-10-20T17:08:00
+  - naslov: 'West: Break in Tamnava'
+    datum: 2026-10-20T17:08:00
     important: false
     color: first
     slike:
       - '@assets/images/BLK08737.webp'
       - '@assets/images/BLK08740.webp'
-  - datum: 2026-10-20T17:00:00
+  - naslov: 'North: On the way to Inđija'
+    datum: 2026-10-20T17:00:00
     important: false
     color: first
     videos:
       - rjMxAI5bBiY
-  - datum: 2026-10-20T16:58:00
+  - naslov: 'West: Šabac — Break in Piroman'
+    datum: 2026-10-20T16:58:00
     important: false
     color: first
     slike:
       - '@assets/images/IMG_20261020_164300.webp'
-  - datum: 2026-10-20T15:20:00
+  - naslov: 'East: Break in Osipaonica'
+    datum: 2026-10-20T15:20:00
     important: false
     color: first
-  - datum: 2026-10-20T14:59:00
+  - naslov: 'West: Šabac — Break in Ločanik'
+    datum: 2026-10-20T14:59:00
     important: false
     color: first
     slike:
       - '@assets/images/IMG_5879-1.webp'
-  - datum: 2026-10-20T13:13:00
+  - naslov: 'East: Break at Ljubički bridge'
+    datum: 2026-10-20T13:13:00
     important: false
     color: first
-  - datum: 2026-10-20T13:08:00
+  - naslov: 'North: Break in Banstol'
+    datum: 2026-10-20T13:08:00
     important: false
     color: first
     slike:
       - '@assets/images/IMG_3376.webp'
       - '@assets/images/IMG_3377.webp'
-  - datum: 2026-10-20T13:00:00
+  - naslov: 'West: Break in Kolubara'
+    datum: 2026-10-20T13:00:00
     important: false
     color: first
     videos:
       - vZyw2IeuLmY
-  - datum: 2026-10-20T12:45:00
+  - naslov: 'West: Mood before entering Kolubara'
+    datum: 2026-10-20T12:45:00
     important: false
     color: first
     videos:
       - Cet2VGlOZJs
       - vZyw2IeuLmY
-  - datum: 2026-10-20T12:07:00
+  - naslov: 'North: Break for 16 minutes of silence'
+    datum: 2026-10-20T12:07:00
     important: false
     color: first
     videos:
       - OL9UQHzA4YI
-  - datum: 2026-10-20T11:40:00
+  - naslov: 'East: Departure from Požarevac'
+    datum: 2026-10-20T11:40:00
     important: false
     color: first
-  - datum: 2026-10-20T11:30:00
+  - naslov: 'West: Šabac — Break near Ub'
+    datum: 2026-10-20T11:30:00
     important: false
     color: first
     slike:
       - '@assets/images/IMG-20261020-WA0017.webp'
       - '@assets/images/IMG-20261020-WA0016.webp'
-  - datum: 2026-10-20T11:00:00
+  - naslov: 'North: A long group of walkers from Novi Sad'
+    datum: 2026-10-20T11:00:00
     important: false
     color: first
     videos:
       - IpitWKZGpuI
-  - datum: 2026-10-20T10:24:00
+  - naslov: 'West: Walkers have departed from Lazarevac'
+    datum: 2026-10-20T10:24:00
     important: false
     color: first
     videos:
@@ -138,35 +160,41 @@ timeline:
     slike:
       - '@assets/images/BLK08649.webp'
       - '@assets/images/BLK08642.webp'
-  - datum: 2026-10-20T10:07:00
+  - naslov: 'North: Break in Sremski Karlovci'
+    datum: 2026-10-20T10:07:00
     important: false
     color: first
     slike:
       - '@assets/images/IMG_3316.webp'
       - '@assets/images/IMG_3310.webp'
-  - datum: 2026-10-20T09:20:00
+  - naslov: 'North: On the way to Sremski Karlovci'
+    datum: 2026-10-20T09:20:00
     important: false
     color: first
     videos:
       - ASIRqUdpDsU
-  - datum: 2026-10-20T09:05:00
+  - naslov: 'West: Šabac — Walkers depart from Banjani'
+    datum: 2026-10-20T09:05:00
     important: false
     color: first
     slike:
       - '@assets/images/IMG_5841.webp'
-  - datum: 2026-10-20T07:35:00
+  - naslov: 'North: Walkers from Novi Sad have set off towards Slavija'
+    datum: 2026-10-20T07:35:00
     important: false
     color: first
     slike:
       - '@assets/images/IMG_3227.webp'
       - '@assets/images/IMG_3255.webp'
-  - datum: 2026-10-19T22:21:00
+  - naslov: 'East: Walkers have arrived in Požarevac'
+    datum: 2026-10-19T22:21:00
     important: false
     color: first
     videos:
       - JiTfdjpFSSI
       - iDVVsnRKmQQ
-  - datum: 2026-10-19T21:38:00
+  - naslov: 'West: Welcoming the walkers in Lazarevac'
+    datum: 2026-10-19T21:38:00
     important: false
     color: first
     videos:
@@ -174,7 +202,8 @@ timeline:
       - TzqoRVQt910
     slike:
       - '@assets/images/BLK08442.webp'
-  - datum: 2026-10-19T20:42:00
+  - naslov: 'West: Welcome in Petka'
+    datum: 2026-10-19T20:42:00
     important: false
     color: first
     slike:
