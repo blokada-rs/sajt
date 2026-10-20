@@ -1,7 +1,7 @@
 ---
 link: krug_3
 title: Circle-Three Weekend
-live: true
+live: false
 pubDate: 2026-10-17T07:35:00
 updatedDate: 2026-10-17T11:35:00
 heroImage: '@assets/images/IMG_20261017_114045.webp'
