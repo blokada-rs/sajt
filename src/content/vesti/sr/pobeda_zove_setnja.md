@@ -53,6 +53,7 @@ timeline:
     color: second
     videos:
       - Cet2VGlOZJs
+      - vZyw2IeuLmY
   - naslov: 'Север: Пауза за 16 минута тишине'
     datum: 2026-10-20T12:07:00
     important: false
