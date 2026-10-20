@@ -30,6 +30,29 @@ description: |-
   Западна рута креће из Горњег Милановца 18. октобра, а из Ваљева и Шапца 19. октобра.
   Северна рута полази из Новог Сада 20. октобра.
 timeline:
+  - naslov: 'Север: Пауза за 16 минута тишине'
+    datum: 2026-10-20T12:07:00
+    important: false
+    color: third
+    videos:
+      - OL9UQHzA4YI
+  - naslov: 'Исток: Полазак из Пожаревца'
+    datum: 2026-10-20T11:40:00
+    important: false
+    color: first
+  - naslov: 'Запад: Шабац - Пауза близу Уба'
+    datum: 2026-10-20T11:30:00
+    important: false
+    color: second
+    slike:
+      - '@assets/images/IMG-20261020-WA0017.webp'
+      - '@assets/images/IMG-20261020-WA0016.webp'
+  - naslov: 'Север: Дугачка колона шетача из Новог Сада'
+    datum: 2026-10-20T11:00:00
+    important: false
+    color: third
+    videos:
+      - IpitWKZGpuI
   - naslov: 'Запад: Шетачи су кренули из Лазаревца'
     datum: 2026-10-20T10:24:00
     important: false
