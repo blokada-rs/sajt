@@ -33,7 +33,7 @@ timeline:
   - naslov: 'Север: На путу до Сремских Карловаца'
     datum: 2026-10-20T09:20:00
     important: false
-    color: first
+    color: third
     videos:
       - ASIRqUdpDsU
   - naslov: 'Запад: Шабац - Полазак шетача из Бањана'
