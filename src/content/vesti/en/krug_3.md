@@ -7,49 +7,69 @@ updatedDate: 2026-10-17T11:35:00
 heroImage: '@assets/images/IMG_20261017_114045.webp'
 archived: false
 timeline:
-  - datum: 2026-10-19T22:38:00
+  - naslov: End of the tour in New Belgrade
+    datum: 2026-10-19T22:38:00
     important: false
     color: first
-  - datum: 2026-10-19T18:18:00
+    videos:
+      - Dxi83MmGYNY
+  - naslov: Our cyclists in Umka
+    datum: 2026-10-19T18:18:00
     important: false
     color: first
-  - datum: 2026-10-19T17:27:00
+  - naslov: Entering Barič
+    datum: 2026-10-19T17:27:00
     important: false
     color: first
-  - datum: 2026-10-19T15:45:00
+    videos:
+      - 45WX0VPS9CQ
+  - naslov: Welcome in Sremčica
+    datum: 2026-10-19T15:45:00
     important: false
     color: first
-  - datum: 2026-10-19T13:26:00
+    videos:
+      - 8pQDLbA3WtA
+  - naslov: Entering Barajevo
+    datum: 2026-10-19T13:26:00
     important: false
     color: first
-  - datum: 2026-10-19T13:00:00
+    videos:
+      - 2KyRfjxe39o
+  - naslov: Close to Barajevo
+    datum: 2026-10-19T13:00:00
     important: false
     color: first
     slike:
       - '@assets/images/IMG_20261019_145257.webp'
-  - datum: 2026-10-19T12:34:00
+  - naslov: Every new encounter gives us strength to continue!
+    datum: 2026-10-19T12:34:00
     important: false
     color: first
     videos:
       - 4ybTTUNAh9I
-  - datum: 2026-10-19T11:36:00
+    tekst: Our cyclists are tackling difficult stretches with steep climbs. They take frequent, short breaks to rest. Despite that, every new person they meet along the way gives them extra motivation to keep going. When they see the smiles of their fellow people, it’s all the clearer to them that the STUDENTS ARE WINNING!
+  - naslov: On the road from Sopot to Ralja
+    datum: 2026-10-19T11:36:00
     important: false
     color: first
     videos:
       - hNEGLvl_0jk
-  - datum: 2026-10-19T10:05:00
+  - naslov: Entering Sopot
+    datum: 2026-10-19T10:05:00
     important: false
     color: first
     videos:
       - OzNPJbwMkYw
     slike:
       - '@assets/images/IMG_2818.webp'
-  - datum: 2026-10-19T09:04:00
+  - naslov: Departure from Mladenovac
+    datum: 2026-10-19T09:04:00
     important: false
     color: first
     slike:
       - '@assets/images/IMG_20261019_122150.webp'
-  - datum: 2026-10-18T20:26:00
+  - naslov: Mladenovac from a drone
+    datum: 2026-10-18T20:26:00
     important: false
     color: first
     videos:
