@@ -19,8 +19,6 @@ map:
       color: first
     - address: https://gps.blokade.org/get?id=0
       color: second
-    - address: https://gps.blokade.org/get?id=3
-      color: second
     - address: https://gps.blokade.org/get?id=4
       color: third
 description: |-
@@ -30,6 +28,10 @@ description: |-
   Западна рута креће из Горњег Милановца 18. октобра, а из Ваљева и Шапца 19. октобра.
   Северна рута полази из Новог Сада 20. октобра.
 timeline:
+  - naslov: 'Запад: Наше западне колоне су се спојиле у једну'
+    datum: 2026-10-20T20:33:00
+    important: false
+    color: second
   - naslov: 'Исток: Мала Крсна пауза'
     datum: 2026-10-20T18:39:00
     important: false
