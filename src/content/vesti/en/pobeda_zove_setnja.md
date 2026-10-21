@@ -48,6 +48,8 @@ timeline:
   - datum: 2026-10-21T11:55:00
     important: false
     color: first
+    slike:
+      - '@assets/images/_DSC6456.webp'
   - datum: 2026-10-21T11:45:00
     important: false
     color: first
