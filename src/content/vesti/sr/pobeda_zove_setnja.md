@@ -32,7 +32,7 @@ timeline:
     datum: 2026-10-21T17:55:00
     important: false
     color: first
-  - naslov: 'Север: Нашим шетачима се придружио Бојан Димитријевић'
+  - naslov: 'Запад: Нашим шетачима се придружио Бојан Димитријевић'
     datum: 2026-10-21T17:50:00
     important: false
     color: second
