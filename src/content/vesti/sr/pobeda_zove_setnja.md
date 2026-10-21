@@ -31,6 +31,8 @@ timeline:
     datum: 2026-10-22T00:25:00
     important: false
     color: first
+    videos:
+      - D9ewa8vT78M
     tekst: |-
       Студенткиња Дуња је затворила програм речима:
 
