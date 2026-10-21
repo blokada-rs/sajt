@@ -31,11 +31,15 @@ timeline:
   - datum: 2026-10-21T22:28:00
     important: false
     color: first
+    videos:
+      - JKgqHf2nVhU
     slike:
       - '@assets/images/IMG_7393.webp'
   - datum: 2026-10-21T22:32:00
     important: false
     color: first
+    videos:
+      - _JlqWlaqArI
   - datum: 2026-10-21T22:08:00
     important: false
     color: first
