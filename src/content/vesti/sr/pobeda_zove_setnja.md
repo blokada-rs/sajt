@@ -36,6 +36,9 @@ timeline:
     datum: 2026-10-21T15:58:00
     important: false
     color: second
+    slike:
+      - '@assets/images/DSC01252.webp'
+      - '@assets/images/DSC01236.webp'
   - naslov: Дочек шетача у Београду
     datum: 2026-10-21T14:08:00
     important: true
