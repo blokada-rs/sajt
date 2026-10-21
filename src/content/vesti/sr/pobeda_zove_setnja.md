@@ -28,6 +28,12 @@ description: |-
   Западна рута креће из Горњег Милановца 18. октобра, а из Ваљева и Шапца 19. октобра.
   Северна рута полази из Новог Сада 20. октобра.
 timeline:
+  - naslov: Прелепа атмосфера пред дочек шетача
+    datum: 2026-10-21T21:23:00
+    important: false
+    color: first
+    videos:
+      - mW7q-JrcAQ0
   - naslov: 'Запад: Колона се упутила од Ada Mall-а ка згради Ректората'
     datum: 2026-10-21T21:10:00
     important: false
@@ -40,6 +46,7 @@ timeline:
     color: first
     videos:
       - pJgG6bbkPHM
+      - 8u3WEW3yjr0
   - naslov: Студенткиња Дуња Ескић је отворила програм
     datum: 2026-10-21T20:40:00
     important: false
