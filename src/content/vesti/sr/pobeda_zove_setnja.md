@@ -29,13 +29,16 @@ description: |-
   Северна рута полази из Новог Сада 20. октобра.
 timeline:
   - naslov: 'Исток: Пауза у Брестовнику'
-    datum: 2026-10-21T11:51:00
+    datum: 2026-10-21T11:55:00
     important: false
     color: first
   - naslov: 'Запад: Пауза у Баричу'
     datum: 2026-10-21T11:45:00
     important: false
     color: second
+    slike:
+      - '@assets/images/BLK08919.webp'
+      - '@assets/images/BLK08918.webp'
   - naslov: 'Запад: Шетачи из Обреновца су кренули ка Београду'
     datum: 2026-10-21T10:39:00
     important: false
