@@ -47,6 +47,8 @@ timeline:
   - datum: 2026-10-21T19:44:00
     important: false
     color: first
+    slike:
+      - '@assets/images/_DSC6614.webp'
   - datum: 2026-10-21T19:41:00
     important: false
     color: first
