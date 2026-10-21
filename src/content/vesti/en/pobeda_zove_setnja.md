@@ -34,6 +34,8 @@ timeline:
   - datum: 2026-10-21T15:58:00
     important: false
     color: first
+    videos:
+      - bCDf3dS2k5o
     slike:
       - '@assets/images/DSC01252.webp'
       - '@assets/images/DSC01236.webp'
