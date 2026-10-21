@@ -36,6 +36,8 @@ timeline:
     datum: 2026-10-21T23:05:00
     important: false
     color: third
+    videos:
+      - NJWd0LpG67k
   - naslov: Бајкери су кренули ка Студентском тргу
     datum: 2026-10-21T22:57:00
     important: false
