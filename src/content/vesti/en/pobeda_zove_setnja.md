@@ -34,6 +34,9 @@ timeline:
   - datum: 2026-10-21T13:40:00
     important: false
     color: first
+    slike:
+      - '@assets/images/_DSC6524.webp'
+      - '@assets/images/_DSC6509.webp'
   - datum: 2026-10-21T13:30:00
     important: false
     color: first
