@@ -26,12 +26,16 @@ description: |-
   Западна рута креће из Горњег Милановца 18. октобра, а из Ваљева и Шапца 19. октобра.
   Северна рута полази из Новог Сада 20. октобра.
 timeline:
+  - naslov: Колона са севера пристигла је на Студентски трг!
+    datum: 2026-10-21T23:05:00
+    important: false
+    color: third
   - naslov: Бајкери су кренули ка Студентском тргу
     datum: 2026-10-21T22:57:00
     important: false
     color: first
     videos:
-      - htTwcltTj_ABA
+      - TwcltTj_ABA
   - naslov: Богдан Брковић се обратио граћанима
     datum: 2026-10-21T22:28:00
     important: false
