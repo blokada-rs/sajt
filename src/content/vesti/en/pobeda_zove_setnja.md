@@ -34,6 +34,9 @@ timeline:
   - datum: 2026-10-21T19:41:00
     important: false
     color: first
+    videos:
+      - 6FiAXdi-nIw
+      - j77CQB6GoY0
     slike:
       - '@assets/images/DSC06516.webp'
   - datum: 2026-10-21T19:17:00
