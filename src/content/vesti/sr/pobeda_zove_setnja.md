@@ -29,6 +29,13 @@ description: |-
   Северна рута полази из Новог Сада 20. октобра.
 timeline:
   - naslov: 'Исток: Пауза у Болечу'
+    datum: 2026-10-21T19:07:00
+    important: false
+    color: first
+    slike:
+      - '@assets/images/_DSC6600.webp'
+      - '@assets/images/_DSC6577.webp'
+  - naslov: 'Исток: Пауза у Болечу'
     datum: 2026-10-21T17:55:00
     important: false
     color: first
