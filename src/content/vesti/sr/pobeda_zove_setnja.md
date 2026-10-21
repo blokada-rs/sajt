@@ -17,8 +17,6 @@ map:
   track:
     - address: https://gps.blokade.org/get?id=1
       color: first
-    - address: https://gps.blokade.org/get?id=4
-      color: third
 description: |-
   Од 16. октобра три колоне ће постепено кретати из различитих крајева Србије и упућивати се ка Београду.
 
