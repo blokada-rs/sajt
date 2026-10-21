@@ -32,6 +32,8 @@ timeline:
     datum: 2026-10-21T22:08:00
     important: false
     color: second
+    videos:
+      - YMVGGxG4cJA
   - naslov: Трубачи свирају за све окупљене грађане
     datum: 2026-10-21T22:03:00
     important: false
