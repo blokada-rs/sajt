@@ -36,6 +36,8 @@ timeline:
     datum: 2026-10-21T19:41:00
     important: false
     color: third
+    slike:
+      - '@assets/images/DSC06516.webp'
   - naslov: Зона заједништва
     datum: 2026-10-21T19:17:00
     important: true
