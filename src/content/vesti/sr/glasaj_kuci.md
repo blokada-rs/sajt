@@ -5,7 +5,7 @@ live: false
 pubDate: 2026-10-21T12:00:00
 updatedDate: 2026-10-21T11:32:00
 heroImage: '@assets/images/SAJT-3.webp'
-archived: false
+archived: true
 description: Грађани који због тешке болести, старости или инвалидитета не могу да дођу на бирачко место, имају право да гласају код куће.
 ---
 
