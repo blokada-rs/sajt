@@ -25,6 +25,8 @@ timeline:
     datum: 2026-10-21T23:56:00
     important: false
     color: first
+    videos:
+      - mquBAiQNorw
   - naslov: Обраћање студента Марко Тепавчевић грађанима
     datum: 2026-10-21T23:38:00
     important: false
