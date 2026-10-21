@@ -4,7 +4,7 @@ title: Зона заједништва
 live: false
 pubDate: 2026-10-21T17:13:00
 updatedDate: 2026-10-21T17:13:00
-heroImage: '@assets/images/IMG_20261021_171151.webp'
+heroImage: '@assets/images/sajtzonazajednistva.webp'
 archived: false
 description: 'Зона заједништва: на Славији има места за све!'
 ---
