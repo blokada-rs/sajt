@@ -36,6 +36,9 @@ timeline:
     datum: 2026-10-21T10:33:00
     important: false
     color: third
+    slike:
+      - '@assets/images/IMG_3435.webp'
+      - '@assets/images/IMG_3442.webp'
   - naslov: 'Север: Полазак колоне из Старе Пазове'
     datum: 2026-10-21T09:10:00
     important: false
