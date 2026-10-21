@@ -32,6 +32,9 @@ timeline:
     datum: 2026-10-21T19:58:00
     important: false
     color: second
+    slike:
+      - '@assets/images/_MG_3161.webp'
+      - '@assets/images/DSC01416.webp'
   - naslov: 'Исток: Пауза у Калуђерици'
     datum: 2026-10-21T19:44:00
     important: false
