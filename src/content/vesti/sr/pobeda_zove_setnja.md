@@ -25,6 +25,8 @@ timeline:
     datum: 2026-10-22T00:19:00
     important: false
     color: first
+    slike:
+      - '@assets/images/IMG_7404.webp'
     tekst: |-
       **Ивона Ђоровић - Филолошки факултет, Универзитет у Београду**
 
@@ -49,6 +51,7 @@ timeline:
     color: first
     videos:
       - mquBAiQNorw
+      - sK9d3_DA_vg
   - naslov: Обраћање студента Марко Тепавчевић грађанима
     datum: 2026-10-21T23:38:00
     important: false

@@ -24,6 +24,8 @@ timeline:
   - datum: 2026-10-22T00:19:00
     important: false
     color: first
+    slike:
+      - '@assets/images/IMG_7404.webp'
   - datum: 2026-10-21T23:56:00
     important: false
     color: first
