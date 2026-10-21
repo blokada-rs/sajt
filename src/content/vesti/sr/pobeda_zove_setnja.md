@@ -28,6 +28,12 @@ description: |-
   Западна рута креће из Горњег Милановца 18. октобра, а из Ваљева и Шапца 19. октобра.
   Северна рута полази из Новог Сада 20. октобра.
 timeline:
+  - naslov: 'Исток: На путу до Гроцке'
+    datum: 2026-10-21T13:11:00
+    important: false
+    color: first
+    slike:
+      - '@assets/images/STF_6481.webp'
   - naslov: 'Исток: Пауза у Брестовнику'
     datum: 2026-10-21T11:55:00
     important: false
