@@ -43,6 +43,9 @@ timeline:
     datum: 2026-10-21T13:25:00
     important: false
     color: third
+    slike:
+      - '@assets/images/IMG_3493.webp'
+      - '@assets/images/IMG_3489.webp'
   - naslov: 'Исток: На путу до Гроцке'
     datum: 2026-10-21T13:11:00
     important: false
