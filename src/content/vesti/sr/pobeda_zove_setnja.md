@@ -32,6 +32,9 @@ timeline:
     datum: 2026-10-21T09:10:00
     important: false
     color: third
+    videos:
+      - dEb2VIkueKY
+      - 5e7cABHE2Aw
   - naslov: 'Исток: Шетачи су кренули пут ка Славији - Полазак из Смедерева'
     datum: 2026-10-21T08:50:00
     important: false
