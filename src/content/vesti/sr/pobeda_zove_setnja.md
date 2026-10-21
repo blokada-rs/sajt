@@ -28,10 +28,17 @@ description: |-
   Западна рута креће из Горњег Милановца 18. октобра, а из Ваљева и Шапца 19. октобра.
   Северна рута полази из Новог Сада 20. октобра.
 timeline:
+  - naslov: 'Исток: Пауза Гроцка'
+    datum: 2026-10-21T13:40:00
+    important: false
+    color: first
   - naslov: 'Запад: Умка пауза'
     datum: 2026-10-21T13:30:00
     important: false
     color: second
+    slike:
+      - '@assets/images/BLK08975.webp'
+      - '@assets/images/BLK08978.webp'
   - naslov: 'Север: Пауза у Батајници за наше шетаче'
     datum: 2026-10-21T13:25:00
     important: false
