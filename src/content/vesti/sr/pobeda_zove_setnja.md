@@ -17,8 +17,6 @@ map:
   track:
     - address: https://gps.blokade.org/get?id=1
       color: first
-    - address: https://gps.blokade.org/get?id=0
-      color: second
     - address: https://gps.blokade.org/get?id=4
       color: third
 description: |-
