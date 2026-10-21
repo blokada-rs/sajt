@@ -33,11 +33,13 @@ timeline:
     important: false
     color: second
     videos:
-      - YMVGGxG4cJA
+      - 4iP-GtfOQLk
   - naslov: Трубачи свирају за све окупљене грађане
     datum: 2026-10-21T22:03:00
     important: false
     color: first
+    videos:
+      - YMVGGxG4cJA
     slike:
       - '@assets/images/IMG_7385.webp'
   - naslov: Студенткиња Дуња је најавила колону са запада која нам управо пристиже
