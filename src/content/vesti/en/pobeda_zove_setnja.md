@@ -708,4 +708,6 @@ The eastern, Timočka route sets off from Zaječar and passes through Zvezdan, G
 
 From Petrovac, the route continues through Trnovača, Veliki Popovac, Orljevo, Veliko Selo and Veliko Crniće to Požarevac. Next come Dragovac, Vranovo, Radinac and Smederevo. The final stretch leads via Udovice, Brestovnik, Grocka, Boleč and  Kaluđerica to Slavija Square.
 
+**The walkers will be welcomed at 20.00 in front of the Rectorate building.**
+
 Translated by [A3S](https://a3s.space)
