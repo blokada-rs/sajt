@@ -12,6 +12,8 @@ timeline:
     datum: 2026-10-22T16:44:00
     important: false
     color: first
+    videos:
+      - U9u8GY1qZRg
     slike:
       - '@assets/images/BLK09385.webp'
   - naslov: Бајкери уз студенте су кренули ка Славији
