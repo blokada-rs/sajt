@@ -9,6 +9,12 @@ heroImage: '@assets/images/1000002342.webp'
 archived: false
 description: Видимо се 22.10. на добро познатом месту, на Славији!
 timeline:
+  - naslov: Подршка од наших познатих личности
+    datum: 2026-10-22T19:08:00
+    important: false
+    color: first
+    videos:
+      - Nfl43bGX9Bo
   - naslov: Говор студента из Репубилке Српске
     datum: 2026-10-22T19:05:00
     important: false
