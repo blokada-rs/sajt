@@ -9,6 +9,12 @@ heroImage: '@assets/images/1000002342.webp'
 archived: false
 description: Видимо се 22.10. на добро познатом месту, на Славији!
 timeline:
+  - naslov: Прелепа атмосфера на Славији
+    datum: 2026-10-22T18:13:00
+    important: false
+    color: first
+    videos:
+      - vW3cm87-K2A
   - naslov: Стижу и колоне са Новог Београда и Чукарице
     datum: 2026-10-22T17:57:00
     important: false
