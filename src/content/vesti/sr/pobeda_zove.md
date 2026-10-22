@@ -9,6 +9,12 @@ heroImage: '@assets/images/1000002342.webp'
 archived: false
 description: Видимо се 22.10. на добро познатом месту, на Славији!
 timeline:
+  - naslov: Спајање колона са Новог Београда и Чукарице
+    datum: 2026-10-22T17:40:00
+    important: false
+    color: first
+    slike:
+      - '@assets/images/BLK09445.webp'
   - naslov: Из минута у минут на Славији се окупља све више људи
     datum: 2026-10-22T17:23:00
     important: false
