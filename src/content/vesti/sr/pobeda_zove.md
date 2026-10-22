@@ -12,6 +12,8 @@ timeline:
     datum: 2026-10-22T15:16:00
     important: false
     color: first
+    slike:
+      - '@assets/images/BLK09322.webp'
   - naslov: Полазак Белих зечева из Новог Сада ка Славји
     datum: 2026-10-22T14:00:00
     important: false
