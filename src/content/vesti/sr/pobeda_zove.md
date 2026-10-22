@@ -47,6 +47,9 @@ timeline:
     datum: 2026-10-22T19:26:00
     important: false
     color: first
+    slike:
+      - '@assets/images/BLK09720.webp'
+      - '@assets/images/BLK09704.webp'
     tekst: |-
       Кандидати наше листе са бине се спупуштају међу грађане око Славије
 
