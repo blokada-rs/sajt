@@ -245,6 +245,7 @@ const stranice = file_collection("stranice", "Stranice", "description", [
     string_field("vidi_jos", "Vidi još"),
     string_field("nije_prevedeno", "Nije prevedeno"),
     string_field("nije_prevedeno_dugacko", "Nije prevedeno (dugačko)"),
+    markdown_field("program", "Program"),
   ]),
 ]);
 
