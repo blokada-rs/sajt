@@ -21,7 +21,7 @@ description: |-
   The northern route sets off from Novi Sat on 20 October.
   The groups will meet in Belgrade on 21 October at Slavija Square, at the final rally ‘Victory Is Calling’, ahead of the starting of the election silence period.
 timeline:
-  - naslov: See zou at Slavija square
+  - naslov: See you at Slavija square
     datum: 2026-10-22T03:32:00
     important: true
     color: first
@@ -41,13 +41,47 @@ timeline:
     datum: 2026-10-22T00:25:00
     important: false
     color: first
+    tekst: |-
+      Student Dunja closed the programme with the following words: 
+
+      Thank you all for being here tonight and for joining us in giving our walkers the welcome they deserve!
+
+      Once again, a huge thank you to them, for showing us that no journey is too long when it leads to the freedom we're fighting for!
+
+      Our fight continues tomorrow already!
+
+      That's why we're calling on all of you to come together tomorrow in even greater numbers and light up Slavija for the fifth time! Let's show how many of us there are and what it means to love your country, believe in it, and fight for its future!
+
+      Let our voices be heard and our light be seen, tomorrow at 18:00 at Slavija!
+
+      With this, tonight's gathering has come to an end. Thank you from the bottom of my heart!
+
+      Victory is calling!
   - naslov: Speech by Ivona Đorović
     datum: 2026-10-22T00:19:00
     important: false
     color: first
     slike:
       - '@assets/images/IMG_7404.webp'
-  - naslov: The easter group has arrived
+    tekst: |-
+      **Ivona Đorović - Faculty of Philology, University of Belgrade**
+
+      Slavija is the place where, back in December 2024, we showed just how big a heart Belgrade has.
+
+      All the protests, marches, moments of silence, and kilometres we've crossed together have brought us to October 25th.
+
+      ‘Every single one of you is part of this change. Every conversation you've had, every door you've knocked on, every badge you've proudly worn —  all of it mattered, and all of it was worth the effort, because now we are only three days away from victory!’
+
+      Those gathered were called upon to go out and vote on Sunday, bring their families, friends, and neighbors, encourage those who have lost hope, and seize the opportunity to decide what kind of Serbia they want to leave to future generations.
+
+      A special part of the speech was dedicated to Istok [lit. ‘east’], a dog who accompanied the students during their walk towards Belgrade and is in need of a home. His story reminded us that no one should be left behind, and that solidarity, kindness, and hope must form the foundation of the Serbia we are building. 
+
+      ‘We promise to work every day towards a future for this country where every child can live in safety, have access to quality education, accessible healthcare, and institutions that protect them. Not because they are a child of a government official, but because they are a child of Serbia!’
+
+      The speech concluded with the message, ‘Serbia, your time has come followed by the question:
+
+      ‘Who is winning?’
+  - naslov: The eastern group has arrived!
     datum: 2026-10-21T23:56:00
     important: false
     color: first
@@ -57,6 +91,34 @@ timeline:
     color: first
     slike:
       - '@assets/images/IMG_7402.webp'
+    tekst: |-
+      ### **Marko Tepavčević — Faculty of Technical Sciences, University of Novi Sad**
+
+      GOOD EVENING BELGRADE!
+
+      First of all, I want to congratulate all colleagues and friends who have spent the past few days walking from all parts of our beautiful Serbia and have proudly and bravely arrived here, in Belgrade!
+
+      Thank you for this incredible welcome! 
+
+      Once again, we have gathered here for another rally, but for the same reason that set us off the first time.
+
+      We haven't returned because nothing has changed. We've come back because what we set out to achieve remains unfinished.
+
+      We continue to persevere in our efforts for a society where every person's voice is heard, where accountability means something, and in where our future doesn't depend on how much injustice we're willing to endure.
+
+      It's time to achieve what we've been hoping for over the past two years — a student victory!
+
+      That's why we'll stand together tomorrow, and again on 25 October. 
+
+      Let's go out and vote, because we are deciding on the future for all of us — on the kind of country we want to live in. Let our voices be heard clearly:
+
+      **STUDENTS ARE WINNING!!!**
+
+      **STUDENTS ARE WINNING!!!**
+
+      **STUDENTS ARE WINNING!!!**
+
+      **The crowd chants ‘VICTORY! VICTORY!’**
   - naslov: Exchange of flags
     datum: 2026-10-21T23:35:00
     important: false
@@ -67,9 +129,9 @@ timeline:
     important: false
     color: first
     tekst: |-
-      The song "Kukavica" is blaring in front of the Rectorate building.
+      The song Kukavica [lit. cowards, cuckoo bird] is blaring in front of the Rectorate building.
 
-      > Kukavica, nisam znala da si takva kukavica!
+      ‘Kukavica, nisam znala da si takva kukavica!’ [lit. ‘Coward, I hadn’t known you are such a coward!’]
   - naslov: The group from the north has arrived at Students' Square!
     datum: 2026-10-21T23:05:00
     important: false
