@@ -9,6 +9,12 @@ heroImage: '@assets/images/1000002342.webp'
 archived: false
 description: Видимо се 22.10. на добро познатом месту, на Славији!
 timeline:
+  - naslov: Колона са Земуна је на Бранковом мосту
+    datum: 2026-10-22T17:21:00
+    important: false
+    color: first
+    videos:
+      - _sCn-Fs_xgY
   - naslov: Дефиле бајкера Славијом
     datum: 2026-10-22T17:18:00
     important: false
