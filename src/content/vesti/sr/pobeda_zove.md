@@ -9,6 +9,10 @@ heroImage: '@assets/images/1000002342.webp'
 archived: false
 description: Видимо се 22.10. на добро познатом месту, на Славији!
 timeline:
+  - naslov: Дефиле бајкера Славијом
+    datum: 2026-10-22T17:18:00
+    important: false
+    color: first
   - naslov: Граћани су кренули да се сакупљају код Славије
     datum: 2026-10-22T16:57:00
     important: false
