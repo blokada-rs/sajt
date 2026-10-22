@@ -1,6 +1,7 @@
 ---
 title: Култура
 order: 15
+heroImage: '@assets/program/kultura.png'
 description: |-
 
 ---

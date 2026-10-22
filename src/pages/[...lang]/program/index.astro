@@ -1,9 +1,9 @@
 ---
 import Base from "@layouts/Base.astro";
-import { collection,file,langs } from "@scripts/i18n";
-
+import { collection, file, langs } from "@scripts/i18n";
 
 import { Markdown } from "@mashehu/astropub-md";
+import { Picture } from "astro:assets";
 
 const { lang } = Astro.params;
 
@@ -22,12 +22,22 @@ export async function getStaticPaths() {
   <section>
     <Markdown of={frontmatter.program} />
   </section>
-  {posts.map((post) => (
+  {posts.map((post, index) => (
     <section>
       <a
         class="latest clear"
         href={`${lang === "sr" || lang === "root" ? "" : `/${lang}`}/program/${post.id}/`}
       >
+        {post.data.heroImage && (
+          <Picture
+            transition:name={post.id}
+            formats={["avif", "webp"]}
+            width={720}
+            src={post.data.heroImage}
+            loading={index <= 3 ? "eager" : "lazy"}
+            alt=""
+          />
+        )}
         <div class="details">
           <h2 class="title">{post.data.title}</h2>
           <p class="description">{post.data.description}</p>
