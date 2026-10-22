@@ -8,12 +8,18 @@ heroImage: '@assets/images/1000002342.webp'
 archived: false
 description: Видимо се 22.10. на добро познатом месту, на Славији!
 timeline:
+  - naslov: Граћани су кренули да се сакупљају код Славије
+    datum: 2026-10-22T16:57:00
+    important: false
+    color: first
+    videos:
+      - U9u8GY1qZRg
   - naslov: Колона са Чукарице је код Ada Mall-а
     datum: 2026-10-22T16:44:00
     important: false
     color: first
     videos:
-      - U9u8GY1qZRg
+      - 61ncSDjnes0
     slike:
       - '@assets/images/BLK09385.webp'
   - naslov: Бајкери уз студенте су кренули ка Славији
