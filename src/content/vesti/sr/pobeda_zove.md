@@ -13,6 +13,8 @@ timeline:
     datum: 2026-10-22T17:23:00
     important: false
     color: first
+    videos:
+      - FK_3rm4cTrQ
     slike:
       - '@assets/images/IMG_3370.webp'
   - naslov: Колона са Земуна је на Бранковом мосту
