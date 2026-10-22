@@ -8,6 +8,10 @@ heroImage: '@assets/images/1000002342.webp'
 archived: false
 description: Видимо се 22.10. на добро познатом месту, на Славији!
 timeline:
+  - naslov: Колона са Викидковца је кренула ка Славији
+    datum: 2026-10-22T15:16:00
+    important: false
+    color: first
   - naslov: Полазак Белих зечева из Новог Сада ка Славји
     datum: 2026-10-22T14:00:00
     important: false
