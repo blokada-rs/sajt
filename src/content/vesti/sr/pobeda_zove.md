@@ -12,6 +12,8 @@ timeline:
     datum: 2026-10-22T14:00:00
     important: false
     color: first
+    slike:
+      - '@assets/images/photo_2026-10-22 14.15.17.webp'
   - naslov: Бајкери Блокери Југ
     datum: 2026-10-22T12:00:00
     important: false
