@@ -1,7 +1,7 @@
 ---
 link: pobeda_zove
 title: Победа зове
-live: true
+live: false
 live_embed: stEwWFSDdRM
 pubDate: 2026-10-10T19:55:00
 updatedDate: 2026-10-10T19:55:00
