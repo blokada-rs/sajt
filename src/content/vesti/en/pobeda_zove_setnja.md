@@ -21,6 +21,16 @@ description: |-
   The northern route sets off from Novi Sat on 20 October.
   The groups will meet in Belgrade on 21 October at Slavija Square, at the final rally ‘Victory Is Calling’, ahead of the starting of the election silence period.
 timeline:
+  - naslov: See zou at Slavija square
+    datum: 2026-10-22T03:32:00
+    important: true
+    color: first
+    tekst: |-
+      See you at Slavija square!
+
+      22.10. - 18.00
+
+      [Slavija](https://studenti.org.rs/vesti/pobeda_zove)
   - naslov: The students were welcomed by Crown Prince Philip.
     datum: 2026-10-22T00:30:00
     important: true
