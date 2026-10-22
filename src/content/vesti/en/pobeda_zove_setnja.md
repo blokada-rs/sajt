@@ -21,99 +21,177 @@ description: |-
   The northern route sets off from Novi Sat on 20 October.
   The groups will meet in Belgrade on 21 October at Slavija Square, at the final rally ‘Victory Is Calling’, ahead of the starting of the election silence period.
 timeline:
-  - datum: 2026-10-22T00:30:00
+  - naslov: The students were welcomed by Crown Prince Philip.
+    datum: 2026-10-22T00:30:00
     important: true
     color: first
-  - datum: 2026-10-22T00:25:00
+    videos:
+      - g0dux8D6_c4
+  - naslov: End of the program and an announcement for Slavia!
+    datum: 2026-10-22T00:25:00
     important: false
     color: first
-  - datum: 2026-10-22T00:19:00
+  - naslov: Speech by Ivona Đorović
+    datum: 2026-10-22T00:19:00
     important: false
     color: first
     slike:
       - '@assets/images/IMG_7404.webp'
-  - datum: 2026-10-21T23:56:00
+  - naslov: The easter group has arrived
+    datum: 2026-10-21T23:56:00
     important: false
     color: first
-  - datum: 2026-10-21T23:38:00
+  - naslov: Speech student Marko Tepavčević
+    datum: 2026-10-21T23:38:00
     important: false
     color: first
     slike:
       - '@assets/images/IMG_7402.webp'
-  - datum: 2026-10-21T23:35:00
+  - naslov: Exchange of flags
+    datum: 2026-10-21T23:35:00
     important: false
     color: first
-  - datum: 2026-10-21T23:25:00
+    tekst: Students from Belgrade, Banja Luka, Novi Pazar, and Novi Sad exchanged city flags.
+  - naslov: Kukavica (Coward/Cuckoo)
+    datum: 2026-10-21T23:25:00
     important: false
     color: first
-  - datum: 2026-10-21T23:05:00
+    tekst: |-
+      The song "Kukavica" is blaring in front of the Rectorate building.
+
+      > Kukavica, nisam znala da si takva kukavica!
+  - naslov: The group from the north has arrived at Students' Square!
+    datum: 2026-10-21T23:05:00
     important: false
     color: first
-  - datum: 2026-10-21T22:57:00
+  - naslov: The bikers headed toward Studentski Trg
+    datum: 2026-10-21T22:57:00
     important: false
     color: first
-  - datum: 2026-10-21T22:28:00
+  - naslov: Bogdan Brković addresses the crowd
+    datum: 2026-10-21T22:33:00
     important: false
     color: first
     videos:
       - JKgqHf2nVhU
     slike:
       - '@assets/images/IMG_7393.webp'
-  - datum: 2026-10-21T22:32:00
+    tekst: |-
+      **Bogdan Brković — Faculty of dramatic arts, University of Belgrade**
+
+      > Good evening, brave and free Serbia!
+
+      > I am Bogdan, a student at the Faculty of dramatic arts and together with my neighbours and fellow students, I joined the walking from Gornji Milanovac. 
+
+      > We passed through parts of the country known for their hospitality, but our hosts have exceeded even our highest expectations and showed us that Serbia has already made a choice. 
+
+      > What will remain in my memory is the merging of the groups that walked from Valjevo and Šabac, it symbolises how our victory had begun in many different parts of the country, yet it shares one common goal.
+
+      > I am glad to recognise a huge number of people who had waited for us during our walk to Belgrade on the eve of 15 March [2025], as proof of our perseverance and struggle. But I would also like to emphasise that many new faces have joined us as well, and they are ready to help us achieve the justice we have all been waiting for for so long.
+
+      > After spending the past two years walking across all of Serbia on our feet, walking through some parts even more than once, I truly believe this to be our final steps toward final freedom!
+
+      > Thank you very much, see you tomorrow, we all know where!
+  - naslov: 'West: Awarding of Medals'
+    datum: 2026-10-21T22:32:00
     important: false
     color: first
     videos:
       - _JlqWlaqArI
-  - datum: 2026-10-21T22:15:00
+  - naslov: The group from the west has arrived at the Students Square!
+    datum: 2026-10-21T22:15:00
     important: false
     color: first
     videos:
       - YMVGGxG4cJA
-  - datum: 2026-10-21T22:03:00
+    tekst: It has started raining, the heavens have opened!
+  - naslov: Brass musicians are playing for the gathered crowd
+    datum: 2026-10-21T22:03:00
     important: false
     color: first
     slike:
       - '@assets/images/IMG_7385.webp'
-  - datum: 2026-10-21T21:50:00
+  - naslov: Student Dubja announced the arrival of the western group, which is now approaching
+    datum: 2026-10-21T21:50:00
     important: false
     color: first
-  - datum: 2026-10-21T21:23:00
+    tekst: |-
+      She addressed the citizens with the following words:
+
+      > Welcome, Serbia!
+
+      > Welcome, students and citizens!
+      > Welcome to everyone who believes in and loves their country!
+
+      > Tonight, Belgrade proudly welcomes its heroes!
+
+      > Our fellow students, our walkers, who have spent days walking from all parts of Serbia to travel once again through our beautiful country, are arriving here, step by step, ahead of tomorrow's gathering at Slavija.
+
+      > Thank you all for being here tonight so that we can give them the recognition they deserve. 
+
+      > They deserve a huge THANK YOU, because every step they've taken is proof that we haven't stopped, we haven't forgotten, and that our fight continues and is stronger than ever!
+
+      > So, let's get ready to give them a proper welcome, loudly, proudly, and together!
+
+      > Thank you!
+  - naslov: Lovely mood ahead of the walkers' arrival
+    datum: 2026-10-21T21:23:00
     important: false
     color: first
-  - datum: 2026-10-21T21:10:00
+    videos:
+      - mW7q-JrcAQ0
+  - naslov: 'West: The group sets off from Ada Mall towards the Rectorate building'
+    datum: 2026-10-21T21:10:00
     important: false
     color: first
     slike:
       - '@assets/images/IMG_20261021_210151_240.webp'
-  - datum: 2026-10-21T21:06:00
+  - naslov: 'North: The group sets off from Zemun towards the rectorate building'
+    datum: 2026-10-21T21:06:00
     important: false
     color: first
     videos:
       - pJgG6bbkPHM
+      - 8u3WEW3yjr0
     slike:
       - '@assets/images/IMG_1076 (1)-1.webp'
-  - datum: 2026-10-21T20:40:00
+  - naslov: Student Dunja Eskić opened the programme
+    datum: 2026-10-21T20:40:00
     important: false
     color: first
     slike:
       - '@assets/images/IMG_7373.webp'
-  - datum: 2026-10-21T20:38:00
+    tekst: |-
+      **Dunja Eskić — faculty of organisational sciences, University of Belgrade**
+
+      > Dear fellow citizens, thank you all for coming, in case you're watching us on your TV screens, you have just enough time to come down and welcome the walkers with us.
+
+      > The northern group is currently in Zemun. The western group is passing through Čukarica, and the eastern group through Kaluđerica. 
+
+      > As you know, thousands of hugs take time!
+
+      > The students are winning!
+  - naslov: The welcome reception at Studentski Trg (Students' Square) is ready
+    datum: 2026-10-21T20:38:00
     important: false
     color: first
     videos:
       - XgRRG7OeMgg
-  - datum: 2026-10-21T19:58:00
+  - naslov: 'West: The group has arrived at Ada Mall'
+    datum: 2026-10-21T19:58:00
     important: false
     color: first
     slike:
       - '@assets/images/_MG_3161.webp'
       - '@assets/images/DSC01416.webp'
-  - datum: 2026-10-21T19:44:00
+  - naslov: 'East: Break in Kaluđerica'
+    datum: 2026-10-21T19:44:00
     important: false
     color: first
     slike:
       - '@assets/images/_DSC6614.webp'
-  - datum: 2026-10-21T19:41:00
+  - naslov: 'North: The group has arrived at Avijatičarski Square'
+    datum: 2026-10-21T19:41:00
     important: false
     color: first
     videos:
@@ -121,27 +199,35 @@ timeline:
       - j77CQB6GoY0
     slike:
       - '@assets/images/DSC06516.webp'
-  - datum: 2026-10-21T19:17:00
+  - naslov: Zone of Togetherness
+    datum: 2026-10-21T19:17:00
     important: true
     color: first
-  - datum: 2026-10-21T19:07:00
+    tekst: |-
+      **There is room for everyone in the zone of togetherness at Slavija!**
+
+      We have set aside a special area called **‘unity zone’** which is intended for people with disabilities, elderly citizens, pregnant women, …
+
+      [**The Zone of Togetherness**](https://studenti.org.rs/en/vesti/mesto_za_sve/)
+  - naslov: 'East: Berak in Boleč'
+    datum: 2026-10-21T19:07:00
     important: false
     color: first
     slike:
       - '@assets/images/_DSC6600.webp'
       - '@assets/images/_DSC6577.webp'
-  - datum: 2026-10-21T17:55:00
-    important: false
-    color: first
-  - datum: 2026-10-21T17:50:00
+  - naslov: 'West: Bojan Dimitrijević has joined our walkers'
+    datum: 2026-10-21T17:50:00
     important: false
     color: first
     slike:
       - '@assets/images/DSC01350.webp'
-  - datum: 2026-10-21T16:05:00
+  - naslov: 'East: Short break in Zaklopača'
+    datum: 2026-10-21T16:05:00
     important: false
     color: first
-  - datum: 2026-10-21T15:58:00
+  - naslov: 'West: Break for the walkers in Ostružnica'
+    datum: 2026-10-21T15:58:00
     important: false
     color: first
     videos:
@@ -149,62 +235,89 @@ timeline:
     slike:
       - '@assets/images/DSC01252.webp'
       - '@assets/images/DSC01236.webp'
-  - datum: 2026-10-21T14:08:00
+  - naslov: Welcoming the walkers in Belgrade
+    datum: 2026-10-21T14:08:00
     important: true
     color: first
-  - datum: 2026-10-21T13:40:00
+    tekst: |-
+      Welcomings of the walkers will be held at the following locations:
+
+      **Victory calls from the west:**
+
+      Čukarica - Ada mall - 7.30 PM
+
+      **Victory calls from the north:**
+
+      Zemun - Avijatičarski square - 6.00 PM
+
+      **Victory calls from the east:**
+
+      Voždovac - Konjarnik - 7 PM
+
+      **All groups will come together near the rectorate building of the University of Belgrade at 20:00**
+  - naslov: 'East: Break in Grocka'
+    datum: 2026-10-21T13:40:00
     important: false
     color: first
     slike:
       - '@assets/images/_DSC6524.webp'
       - '@assets/images/_DSC6509.webp'
-  - datum: 2026-10-21T13:30:00
+  - naslov: 'West: Break in Umka'
+    datum: 2026-10-21T13:30:00
     important: false
     color: first
     slike:
       - '@assets/images/BLK08975.webp'
       - '@assets/images/BLK08978.webp'
-  - datum: 2026-10-21T13:25:00
+  - naslov: 'North: Break for our walkers in Batajnica'
+    datum: 2026-10-21T13:25:00
     important: false
     color: first
     slike:
       - '@assets/images/IMG_3493.webp'
       - '@assets/images/IMG_3489.webp'
-  - datum: 2026-10-21T13:11:00
+  - naslov: 'East: On the way to Grocka'
+    datum: 2026-10-21T13:11:00
     important: false
     color: first
     slike:
       - '@assets/images/STF_6481.webp'
-  - datum: 2026-10-21T11:55:00
+  - naslov: 'East: Break in Brestovnik'
+    datum: 2026-10-21T11:55:00
     important: false
     color: first
     slike:
       - '@assets/images/_DSC6456.webp'
-  - datum: 2026-10-21T11:45:00
+  - naslov: 'West: Break in Barič'
+    datum: 2026-10-21T11:45:00
     important: false
     color: first
     slike:
       - '@assets/images/BLK08919.webp'
       - '@assets/images/BLK08918.webp'
-  - datum: 2026-10-21T10:39:00
+  - naslov: 'West: Walkers from Obrenovac set off towards Belgrade'
+    datum: 2026-10-21T10:39:00
     important: false
     color: first
     slike:
       - '@assets/images/BLK08891_1.webp'
       - '@assets/images/BLK08894.webp'
-  - datum: 2026-10-21T10:33:00
+  - naslov: 'North: Break in Nova Pazova'
+    datum: 2026-10-21T10:33:00
     important: false
     color: first
     slike:
       - '@assets/images/IMG_3435.webp'
       - '@assets/images/IMG_3442.webp'
-  - datum: 2026-10-21T09:10:00
+  - naslov: 'North: Departure of the group from Stara Pazova'
+    datum: 2026-10-21T09:10:00
     important: false
     color: first
     videos:
       - dEb2VIkueKY
       - 5e7cABHE2Aw
-  - datum: 2026-10-21T08:50:00
+  - naslov: 'East: Walkers set off towards Slavija — departure from Smederevo'
+    datum: 2026-10-21T08:50:00
     important: false
     color: first
   - naslov: 'West: Welcome in Obrenovac'

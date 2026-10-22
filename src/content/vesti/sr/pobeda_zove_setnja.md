@@ -80,7 +80,7 @@ timeline:
     videos:
       - mquBAiQNorw
       - sK9d3_DA_vg
-  - naslov: Обраћање студента Марко Тепавчевић грађанима
+  - naslov: Обраћање студента Маркa Тепавчевићa грађанима
     datum: 2026-10-21T23:38:00
     important: false
     color: third
@@ -142,7 +142,7 @@ timeline:
     videos:
       - TwcltTj_ABA
   - naslov: Богдан Брковић се обратио граћанима
-    datum: 2026-10-21T22:28:00
+    datum: 2026-10-21T22:33:00
     important: false
     color: second
     videos:
@@ -294,10 +294,6 @@ timeline:
     slike:
       - '@assets/images/_DSC6600.webp'
       - '@assets/images/_DSC6577.webp'
-  - naslov: 'Исток: Пауза у Болечу'
-    datum: 2026-10-21T17:55:00
-    important: false
-    color: first
   - naslov: 'Запад: Нашим шетачима се придружио Бојан Димитријевић'
     datum: 2026-10-21T17:50:00
     important: false
