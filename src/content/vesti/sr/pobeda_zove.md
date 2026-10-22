@@ -11,7 +11,7 @@ description: Видимо се 22.10. на добро познатом мест�
 timeline:
   - naslov: Рекапитуација студентске борбе
     datum: 2026-10-22T18:42:00
-    important: false
+    important: true
     color: first
     videos:
       - UAVCOvY4ako
