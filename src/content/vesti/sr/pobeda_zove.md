@@ -423,7 +423,7 @@ timeline:
     datum: 2026-10-22T17:18:00
     important: false
     color: first
-  - naslov: Граћани су кренули да се сакупљају код Славије
+  - naslov: Грађани су кренули да се сакупљају код Славије
     datum: 2026-10-22T16:57:00
     important: false
     color: first
