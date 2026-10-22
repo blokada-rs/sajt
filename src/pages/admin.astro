@@ -147,6 +147,40 @@ import { AstroFont } from "astro-font";
         toPreview: ({ content, id }) => `--- article ${id}\n${content}\n\n`,
       });
 
+      const colors = () => ({
+        widget: "select",
+        name: "color",
+        label: "Boja",
+        required: false,
+        options: [
+          {
+            value: "first",
+            label: "Prva",
+          },
+          {
+            value: "second",
+            label: "Druga",
+          },
+          {
+            value: "third",
+            label: "Treca",
+          },
+          {
+            value: "fourth",
+            label: "Cetrvrta",
+          },
+          {
+            value: "fifth",
+            label: "Peta",
+          },
+          {
+            value: "sixth",
+            label: "Šesta",
+          },
+        ],
+        default: "first",
+      });
+
       registerEditorComponent({
         id: "mapa",
         label: "Mapa",
@@ -207,35 +241,7 @@ import { AstroFont } from "astro-font";
                     label: "Tekst",
                     required: true,
                   },
-                  {
-                    widget: "select",
-                    name: "color",
-                    label: "Boja",
-                    required: false,
-                    options: [
-                      {
-                        value: "first",
-                        label: "Prva",
-                      },
-                      {
-                        value: "second",
-                        label: "Druga",
-                      },
-                      {
-                        value: "third",
-                        label: "Treca",
-                      },
-                      {
-                        value: "fourth",
-                        label: "Cetrvrta",
-                      },
-                      {
-                        value: "fifth",
-                        label: "Peta",
-                      },
-                    ],
-                    default: "first",
-                  },
+                  colors(),
                 ],
               },
               {
@@ -268,35 +274,7 @@ import { AstroFont } from "astro-font";
                     required: true,
                     type: "text",
                   },
-                  {
-                    widget: "select",
-                    name: "color",
-                    label: "Boja",
-                    required: false,
-                    options: [
-                      {
-                        value: "first",
-                        label: "Prva",
-                      },
-                      {
-                        value: "second",
-                        label: "Druga",
-                      },
-                      {
-                        value: "third",
-                        label: "Treca",
-                      },
-                      {
-                        value: "fourth",
-                        label: "Cetrvrta",
-                      },
-                      {
-                        value: "fifth",
-                        label: "Peta",
-                      },
-                    ],
-                    default: "first",
-                  },
+                  colors(),
                 ],
               },
             ],

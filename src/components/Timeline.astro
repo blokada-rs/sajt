@@ -104,6 +104,15 @@ const { frontmatter } = await file("ostalo", lang);
     border-radius: 8px;
   }
 
+  .important :global(a) {
+    display: inline-block;
+    background-color: var(--on-primary);
+    color: var(--color);
+    margin-top: 0.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+  }
+
   article :global(p) {
     margin: 0;
   }

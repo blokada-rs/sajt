@@ -70,6 +70,7 @@ const color = () =>
     ["third", "Treca"],
     ["fourth", "Cetrvrta"],
     ["fifth", "Peta"],
+    ["sixth", "Šesta"],
   ]).optional();
 
 const map = () =>
