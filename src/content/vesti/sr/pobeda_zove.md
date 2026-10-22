@@ -9,6 +9,12 @@ heroImage: '@assets/images/1000002342.webp'
 archived: false
 description: Видимо се 22.10. на добро познатом месту, на Славији!
 timeline:
+  - naslov: Рекапитуација студентске борбе
+    datum: 2026-10-22T18:42:00
+    important: false
+    color: first
+    videos:
+      - UAVCOvY4ako
   - naslov: Говор студенткиње Наталије Степановић
     datum: 2026-10-22T18:36:00
     important: false
