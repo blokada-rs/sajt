@@ -13,6 +13,8 @@ timeline:
     datum: 2026-10-22T18:46:00
     important: true
     color: first
+    slike:
+      - '@assets/images/BLK09555.webp'
     tekst: |-
       **Тихомир Станић говори о правосуђу:**
 
