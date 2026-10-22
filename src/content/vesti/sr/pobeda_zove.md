@@ -9,6 +9,10 @@ heroImage: '@assets/images/1000002342.webp'
 archived: false
 description: Видимо се 22.10. на добро познатом месту, на Славији!
 timeline:
+  - naslov: Химна Републике Србије
+    datum: 2026-10-22T18:30:00
+    important: false
+    color: first
   - naslov: Прелепа атмосфера на Славији
     datum: 2026-10-22T18:13:00
     important: false
