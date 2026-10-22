@@ -9,10 +9,16 @@ heroImage: '@assets/images/1000002342.webp'
 archived: false
 description: Видимо се 22.10. на добро познатом месту, на Славији!
 timeline:
+  - naslov: Стижу и колоне са Новог Београда и Чукарице
+    datum: 2026-10-22T17:57:00
+    important: false
+    color: first
   - naslov: Вождовачка колона је код Факултета ветеринарске медицине
     datum: 2026-10-22T17:55:00
     important: false
     color: first
+    videos:
+      - kIIGI7hNne0
   - naslov: Спајање колона са Новог Београда и Чукарице
     datum: 2026-10-22T17:40:00
     important: false
