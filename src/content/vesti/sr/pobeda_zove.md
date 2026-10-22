@@ -9,6 +9,10 @@ heroImage: '@assets/images/1000002342.webp'
 archived: false
 description: Видимо се 22.10. на добро познатом месту, на Славији!
 timeline:
+  - naslov: Вождовачка колона је код Факултета ветеринарске медицине
+    datum: 2026-10-22T17:55:00
+    important: false
+    color: first
   - naslov: Спајање колона са Новог Београда и Чукарице
     datum: 2026-10-22T17:40:00
     important: false
@@ -21,6 +25,7 @@ timeline:
     color: first
     videos:
       - FK_3rm4cTrQ
+      - KwXRdsaMuSI
     slike:
       - '@assets/images/IMG_3370.webp'
   - naslov: Колона са Земуна је на Бранковом мосту
