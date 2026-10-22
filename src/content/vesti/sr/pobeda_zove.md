@@ -13,6 +13,8 @@ timeline:
     datum: 2026-10-22T19:20:00
     important: false
     color: first
+    slike:
+      - '@assets/images/BLK09637.webp'
     tekst: |-
       Студент Билошког факултета, Универзитета у Београду - Арса Стојановић поручио је следеће:
 
