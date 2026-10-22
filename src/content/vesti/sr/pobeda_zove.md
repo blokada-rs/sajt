@@ -8,6 +8,11 @@ heroImage: '@assets/images/1000002342.webp'
 archived: false
 description: Видимо се 22.10. на добро познатом месту, на Славији!
 timeline:
+  - naslov: Бајкери са југа
+    datum: 2026-10-22T12:00:00
+    important: false
+    color: first
+    tekst: Бајкери са југа су се окупили код Лидла у Сомборској улици у Нишу и кренули за Београд.
   - naslov: Шетње до Славије 22. 10.
     datum: 2026-10-21T17:00:00
     important: true
