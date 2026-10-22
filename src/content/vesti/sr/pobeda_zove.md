@@ -8,6 +8,12 @@ heroImage: '@assets/images/1000002342.webp'
 archived: false
 description: Видимо се 22.10. на добро познатом месту, на Славији!
 timeline:
+  - naslov: Дочек за бајкере у Жаркову
+    datum: 2026-10-22T15:54:00
+    important: false
+    color: first
+    slike:
+      - '@assets/images/BLK09346.webp'
   - naslov: Бајкери уз студенте се окупљају код Икее
     datum: 2026-10-22T15:30:00
     important: false
