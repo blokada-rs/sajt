@@ -183,7 +183,7 @@ timeline:
     color: first
     slike:
       - '@assets/images/IMG_7385.webp'
-  - naslov: Student Dubja announced the arrival of the western group, which is now approaching
+  - naslov: Student Dunja announced the arrival of the western group, which is now approaching
     datum: 2026-10-21T21:50:00
     important: false
     color: first
