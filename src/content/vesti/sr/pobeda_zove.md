@@ -8,6 +8,10 @@ heroImage: '@assets/images/1000002342.webp'
 archived: false
 description: Видимо се 22.10. на добро познатом месту, на Славији!
 timeline:
+  - naslov: Полазак колоне са Новог Београда, Земуна и Чукарице
+    datum: 2026-10-22T16:00:00
+    important: false
+    color: first
   - naslov: Дочек за бајкере у Жаркову
     datum: 2026-10-22T15:54:00
     important: false
