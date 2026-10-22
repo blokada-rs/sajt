@@ -1,0 +1,29 @@
+---
+import Base from "@layouts/Base.astro";
+import { collectionIDs,entry,langs } from "@scripts/i18n";
+import { render,type CollectionEntry } from "astro:content";
+
+export async function getStaticPaths() {
+  const posts = await collectionIDs("programmmm");
+
+  return (
+    await Promise.all(
+      langs
+        .flatMap((lang) => posts.flatMap((id) => ({ lang, id })))
+        .map(async ({ lang, id }) => ({
+          params: { lang, slug: id },
+          props: await entry("programmmm", id, lang),
+        })),
+    )
+  );
+}
+
+type Props = CollectionEntry<"programmmm"> & { lang: string };
+
+const post = Astro.props;
+const { Content } = await render(post);
+---
+<Base>
+  <h1>{post.data.title}</h1>
+  <Content />
+</Base>

@@ -1,0 +1,133 @@
+---
+import Base from "@layouts/Base.astro";
+import { collection,file,langs } from "@scripts/i18n";
+
+
+import { Markdown } from "@mashehu/astropub-md";
+
+const { lang } = Astro.params;
+
+const posts = await collection("programmmm", lang);
+const { frontmatter } = await file("ostalo", lang);
+
+export async function getStaticPaths() {
+  return langs.map((lang) => ({ params: { lang } }));
+}
+---
+
+<Base
+  title={`${frontmatter.vesti} | ${frontmatter.studenti_u_blokadi}`}
+  description={frontmatter.vesti_description}
+>
+  <section>
+    <Markdown of={frontmatter.program} />
+  </section>
+  {posts.map((post) => (
+    <section>
+      <a
+        class="latest clear"
+        href={`${lang === "sr" || lang === "root" ? "" : `/${lang}`}/vesti/${post.id}/`}
+      >
+        <div class="details">
+          <h2 class="title">{post.data.title}</h2>
+          <p class="description">{post.data.description}</p>
+        </div>
+      </a>
+    </section>
+  ))}
+</Base>
+
+<style>
+  /* TODO: clean up */
+
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex-wrap: wrap;
+    gap: 2rem;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li * {
+    transition: 0.2s ease;
+  }
+
+  li h2 {
+    font-size: 1.5rem;
+  }
+
+  .latest {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .latest .details {
+    grid-column: 2;
+  }
+
+  li > h2 {
+    margin-bottom: 1rem;
+  }
+
+  .description {
+    margin-top: 1rem;
+  }
+
+  li .details {
+    margin-top: 1rem;
+  }
+
+  img {
+    margin-bottom: 0.5rem;
+    border-radius: 12px;
+  }
+
+  a {
+    display: block;
+    position: relative;
+  }
+
+  .title {
+    margin: 0;
+    line-height: 1;
+  }
+
+  .date {
+    margin: 0;
+    color: rgb(var(--gray));
+  }
+
+  a:hover .title,
+  a:hover .date {
+    color: var(--primary-text);
+  }
+
+  a:hover img {
+    box-shadow: var(--box-shadow);
+  }
+
+  @media (max-width: 720px) {
+    ul,
+    .latest {
+      gap: 2em;
+      grid-template-columns: 1fr;
+    }
+
+    .latest .details {
+      grid-column: 1;
+    }
+
+    li .details {
+      margin-top: 1rem;
+    }
+  }
+</style>

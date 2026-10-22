@@ -136,8 +136,20 @@ const vesti = folder_collection(
   ],
 )
   .slug("{{fields.link}}")
-  .sort_by("pubDate")
-  .publish_simple();
+  .sort_by("pubDate");
+
+const program = folder_collection(
+  "programmmm",
+  "programmmm",
+  "calendar_today",
+  "src/content/program",
+  [
+    string_field("title", "Naslov"),
+    image_field("heroImage", "Glavna slika").optional(),
+    text_field("description", "Opis").optional(),
+    markdown_field("body", "Tekst"),
+  ],
+);
 
 const afere = folder_collection(
   "afere",
@@ -184,6 +196,11 @@ const specijalne_stranice = folder_collection(
 const stranice = file_collection("stranice", "Stranice", "description", [
   file("not_found", "404", "src/content/stranice", "404.md", [
     text_field("description", "Opis"),
+    markdown_field("body", "Tekst"),
+  ]),
+
+  file("program", "program", "src/content/stranice", "program.md", [
+    text_field("description", "Opis").optional(),
     markdown_field("body", "Tekst"),
   ]),
 
@@ -251,6 +268,7 @@ const linkovi = folder_collection(
 
 export const all = all_collections([
   vesti,
+  program,
   afere,
   divider(),
   stranice,
