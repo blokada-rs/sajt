@@ -12,7 +12,7 @@ timeline:
     datum: 2026-10-22T16:00:00
     important: false
     color: first
-  - naslov: Дочек за бајкере у Жаркову
+  - naslov: Дочек за шетача у Жаркову
     datum: 2026-10-22T15:54:00
     important: false
     color: first
