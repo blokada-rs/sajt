@@ -384,6 +384,6 @@ section > article:not(:last-of-type) {
   --color: var(--fifth);
 }
 .sixth {
-  --color: var(--fifth);
+  --color: var(--sixth);
 }
 
