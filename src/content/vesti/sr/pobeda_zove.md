@@ -9,6 +9,12 @@ heroImage: '@assets/images/1000002342.webp'
 archived: false
 description: Видимо се 22.10. на добро познатом месту, на Славији!
 timeline:
+  - naslov: На Славији се окупља сваког тренутка све више људи
+    datum: 2026-10-22T17:23:00
+    important: false
+    color: first
+    slike:
+      - '@assets/images/IMG_3370.webp'
   - naslov: Колона са Земуна је на Бранковом мосту
     datum: 2026-10-22T17:21:00
     important: false
