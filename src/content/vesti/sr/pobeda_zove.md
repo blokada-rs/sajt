@@ -15,6 +15,7 @@ timeline:
     color: first
     videos:
       - vW3cm87-K2A
+      - lxG9oLUEW_4
     slike:
       - '@assets/images/IMG_8654.webp'
   - naslov: Стижу и колоне са Новог Београда и Чукарице
