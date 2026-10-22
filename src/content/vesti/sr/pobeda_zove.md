@@ -9,6 +9,10 @@ heroImage: '@assets/images/1000002342.webp'
 archived: false
 description: Видимо се 22.10. на добро познатом месту, на Славији!
 timeline:
+  - naslov: Виори се српско коло Славијом
+    datum: 2026-10-22T19:37:00
+    important: false
+    color: first
   - naslov: Дефиле кандидати Студентске листе - Студенти побеђују
     datum: 2026-10-22T19:26:00
     important: false
