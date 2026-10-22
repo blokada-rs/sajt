@@ -22,6 +22,8 @@ timeline:
     datum: 2026-10-22T15:30:00
     important: false
     color: first
+    slike:
+      - '@assets/images/photo_2026-10-22 16.05.44.webp'
   - naslov: Колона са Викидковца је кренула ка Славији
     datum: 2026-10-22T15:16:00
     important: false
