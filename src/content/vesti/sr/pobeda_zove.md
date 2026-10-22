@@ -12,6 +12,8 @@ timeline:
     datum: 2026-10-22T16:00:00
     important: false
     color: first
+    slike:
+      - '@assets/images/BLK09372.webp'
   - naslov: Дочек за шетача у Жаркову
     datum: 2026-10-22T15:54:00
     important: false
