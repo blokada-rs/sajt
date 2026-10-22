@@ -1,7 +1,7 @@
 ---
 link: pobeda_zove_setnja
 title: Победа зове са свих страна
-live: true
+live: false
 pubDate: 2026-10-16T01:46:00
 updatedDate: 2026-10-16T01:46:00
 heroImage: '@assets/images/pobeda_zove.webp'
