@@ -47,6 +47,8 @@ timeline:
     datum: 2026-10-22T19:26:00
     important: false
     color: first
+    videos:
+      - 9ItchuRolns
     slike:
       - '@assets/images/BLK09720.webp'
       - '@assets/images/BLK09704.webp'
@@ -60,6 +62,10 @@ timeline:
     datum: 2026-10-22T19:20:00
     important: false
     color: first
+    videos:
+      - 3--jJJK2DQg
+      - R46hkTQ-_MQ
+      - NDuVO7s4vYY
     slike:
       - '@assets/images/BLK09637.webp'
     tekst: |-
@@ -132,6 +138,11 @@ timeline:
     datum: 2026-10-22T19:11:00
     important: false
     color: first
+    videos:
+      - 8zckYqw1QXI
+      - xjdafG022sk
+      - 2hymMlZpp14
+      - 2q2Y63skjU4
     slike:
       - '@assets/images/BLK09626.webp'
     tekst: |-
@@ -182,6 +193,8 @@ timeline:
     datum: 2026-10-22T19:01:00
     important: false
     color: first
+    videos:
+      - YfL6pWieJuk
     slike:
       - '@assets/images/BLK09602.webp'
     tekst: |-
