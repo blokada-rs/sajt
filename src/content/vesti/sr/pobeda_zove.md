@@ -15,6 +15,8 @@ timeline:
     color: first
     videos:
       - vW3cm87-K2A
+    slike:
+      - '@assets/images/IMG_8654.webp'
   - naslov: Стижу и колоне са Новог Београда и Чукарице
     datum: 2026-10-22T17:57:00
     important: false
