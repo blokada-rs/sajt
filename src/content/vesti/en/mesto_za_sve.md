@@ -24,3 +24,5 @@ We want everyone who wishes to come to Slavija Square to have the chance to be h
 Togetherness means that we think of one another, leaving no one behind.
 
 See you on 22 October on Slavija Square!
+
+Translated by [A3S](https://a3s.space/).
