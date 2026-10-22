@@ -9,12 +9,19 @@ heroImage: '@assets/images/1000002342.webp'
 archived: false
 description: Видимо се 22.10. на добро познатом месту, на Славији!
 timeline:
+  - naslov: Славија из неба
+    datum: 2026-10-22T18:54:00
+    important: false
+    color: first
+    videos:
+      - sfxgz3wvZRs
   - naslov: Наши кандидати су поручили
     datum: 2026-10-22T18:46:00
     important: true
     color: first
     slike:
       - '@assets/images/BLK09555.webp'
+      - '@assets/images/BLK09558.webp'
     tekst: |-
       **Тихомир Станић говори о правосуђу:**
 
