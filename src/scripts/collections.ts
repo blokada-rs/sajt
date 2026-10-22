@@ -145,8 +145,8 @@ const program = folder_collection(
   "src/content/program",
   [
     string_field("title", "Naslov"),
-    image_field("heroImage", "Glavna slika").optional(),
-    text_field("description", "Opis").optional(),
+    image_field("heroImage", "Glavna slika"),
+    text_field("description", "Opis"),
     markdown_field("body", "Tekst"),
   ],
 );
