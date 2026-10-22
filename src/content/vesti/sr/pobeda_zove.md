@@ -8,6 +8,10 @@ heroImage: '@assets/images/1000002342.webp'
 archived: false
 description: Видимо се 22.10. на добро познатом месту, на Славији!
 timeline:
+  - naslov: Бајкери уз студенте се окупљају код Икее
+    datum: 2026-10-22T15:30:00
+    important: false
+    color: first
   - naslov: Колона са Викидковца је кренула ка Славији
     datum: 2026-10-22T15:16:00
     important: false
