@@ -9,6 +9,11 @@ heroImage: '@assets/images/1000002342.webp'
 archived: false
 description: Victory is Calling — Students Are Walking to Slavija Once Again!
 timeline:
+  - naslov: We present to you a summary of the student programme
+    datum: 2026-10-22T23:50:00
+    important: true
+    color: first
+    tekst: We present to you a [summary of the student programme](https://studenti.org.rs/en/program/).
   - naslov: Slavija, thank you for this evening that we shall never forget!
     datum: 2026-10-22T19:58:00
     important: true

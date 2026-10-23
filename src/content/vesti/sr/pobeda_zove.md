@@ -9,6 +9,11 @@ heroImage: '@assets/images/1000002342.webp'
 archived: false
 description: Видимо се 22.10. на добро познатом месту, на Славији!
 timeline:
+  - naslov: Представљамо вам сиже студентског програма
+    datum: 2026-10-22T23:50:00
+    important: true
+    color: first
+    tekst: Представљамо вам сиже [студентског програма](https://studenti.org.rs/program/).
   - naslov: Славијо, хвала ти за вече које никада нећемо заборавити!
     datum: 2026-10-22T19:58:00
     important: true
