@@ -147,6 +147,7 @@ const program = folder_collection(
     string_field("title", "Naslov"),
     image_field("heroImage", "Glavna slika"),
     text_field("description", "Opis"),
+    number_field("order", "Redosled"),
     markdown_field("body", "Tekst"),
   ],
 );
@@ -196,11 +197,6 @@ const specijalne_stranice = folder_collection(
 const stranice = file_collection("stranice", "Stranice", "description", [
   file("not_found", "404", "src/content/stranice", "404.md", [
     text_field("description", "Opis"),
-    markdown_field("body", "Tekst"),
-  ]),
-
-  file("program", "program", "src/content/stranice", "program.md", [
-    text_field("description", "Opis").optional(),
     markdown_field("body", "Tekst"),
   ]),
 
