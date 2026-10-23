@@ -10,6 +10,7 @@ const { date, time = false } = Astro.props;
 const locale = (lang?: string) => {
   switch (lang) {
     case "sr":
+    case "root":
       return "sr-RS";
     case "sr-lat":
       return "sr-Latn-RS";
