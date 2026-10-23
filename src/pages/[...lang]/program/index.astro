@@ -28,16 +28,14 @@ export async function getStaticPaths() {
         class="latest clear"
         href={`${lang === "sr" || lang === "root" ? "" : `/${lang}`}/program/${post.id}/`}
       >
-        {post.data.heroImage && (
-          <Picture
-            transition:name={post.id}
-            formats={["avif", "webp"]}
-            width={720}
-            src={post.data.heroImage}
-            loading={index <= 3 ? "eager" : "lazy"}
-            alt=""
-          />
-        )}
+        <Picture
+          transition:name={post.id}
+          formats={["avif", "webp"]}
+          width={720}
+          src={post.data.heroImage}
+          loading={index <= 3 ? "eager" : "lazy"}
+          alt=""
+        />
         <div class="details">
           <h2 class="title">{post.data.title}</h2>
           <p class="description">{post.data.description}</p>

@@ -1,20 +1,19 @@
 ---
 import Base from "@layouts/Base.astro";
-import { collectionIDs,entry,langs } from "@scripts/i18n";
-import { render,type CollectionEntry } from "astro:content";
+import { collectionIDs, entry, langs } from "@scripts/i18n";
+import { Picture } from "astro:assets";
+import { render, type CollectionEntry } from "astro:content";
 
 export async function getStaticPaths() {
   const posts = await collectionIDs("programmmm");
 
-  return (
-    await Promise.all(
-      langs
-        .flatMap((lang) => posts.flatMap((id) => ({ lang, id })))
-        .map(async ({ lang, id }) => ({
-          params: { lang, slug: id },
-          props: await entry("programmmm", id, lang),
-        })),
-    )
+  return await Promise.all(
+    langs
+      .flatMap((lang) => posts.flatMap((id) => ({ lang, id })))
+      .map(async ({ lang, id }) => ({
+        params: { lang, slug: id },
+        props: await entry("programmmm", id, lang),
+      })),
   );
 }
 
@@ -23,7 +22,30 @@ type Props = CollectionEntry<"programmmm"> & { lang: string };
 const post = Astro.props;
 const { Content } = await render(post);
 ---
-<Base>
-  <h1>{post.data.title}</h1>
-  <Content />
+
+<Base title={post.data.title} image={post.data.heroImage.src}>
+  <section>
+    <div class="hero-image">
+      <Picture
+        fetchpriority="high"
+        transition:name={post.id}
+        formats={["avif", "webp"]}
+        width={1020}
+        src={post.data.heroImage}
+        loading="eager"
+        alt=""
+      />
+    </div>
+    <h1>{post.data.title}</h1>
+    <Content />
+  </section>
 </Base>
+
+<style>
+  :global(img) {
+    width: 720px;
+    display: block;
+    margin-inline: auto;
+    margin-top: 2rem;
+  }
+</style>
