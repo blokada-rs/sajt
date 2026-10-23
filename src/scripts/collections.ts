@@ -147,10 +147,10 @@ const program = folder_collection(
     string_field("title", "Naslov"),
     image_field("heroImage", "Glavna slika"),
     text_field("description", "Opis"),
-    number_field("order", "Redosled"),
+    number_field("order", "Redosled").i18n("duplicate"),
     markdown_field("body", "Tekst"),
   ],
-);
+).sort_by("order");
 
 const afere = folder_collection(
   "afere",
