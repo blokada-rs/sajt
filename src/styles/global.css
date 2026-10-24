@@ -368,6 +368,10 @@ section > article:not(:last-of-type) {
   justify-content: space-between;
 }
 
+.flex h2 {
+  margin-block: 0.5rem;
+}
+
 [data-icon] {
   font-size: 1.2rem;
   vertical-align: middle;
