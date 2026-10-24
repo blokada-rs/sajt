@@ -1,4 +1,5 @@
 ---
+import Markdown from "@mashehu/astropub-md/Markdown";
 import { file } from "@scripts/i18n.ts";
 import { Icon } from "astro-icon/components";
 
@@ -13,13 +14,42 @@ const { frontmatter } = await file("ostalo", lang);
     <Icon class="enabled" name="mdi:notifications-off" />
     <span class="enabled">{frontmatter.disable_notifications}</span>
   </button>
+
+  <div id="in-app" popover>
+    <button popovertarget="in-app" popovertargetaction="hide">
+      <Icon name="mdi:close" />
+    </button>
+    <Markdown of={frontmatter.notifications_in_app} />
+  </div>
+
+  <div id="safari" popover>
+    <button popovertarget="safari" popovertargetaction="hide">
+      <Icon name="mdi:close" />
+    </button>
+    <Markdown of={frontmatter.notifications_safari} />
+  </div>
 </notifications-button>
 
 <script>
   import { subscribe, subscribed, unsubscribe } from "@scripts/sw.ts";
 
+  const APP_TOKENS = [
+    /\bFB[\w_]+\/Messenger/i,
+    /\bInstagram\b/i,
+    /\bFBAN\/|\bFBAV\/|\bFB_IAB\//i,
+    /musical_ly|\btrill_|AppName\/ultralite/i,
+    /BytedanceWebview/i,
+    /\bBarcelona\b/i,
+    /LinkedInApp/i,
+    /Snapchat/i,
+    /\bTwitter/i,
+    /Telegram/i,
+  ];
+
   class Notifications extends HTMLElement {
     button: HTMLButtonElement;
+    in_app: HTMLDivElement;
+    safari: HTMLDivElement;
 
     async toggle() {
       if (await subscribed()) {
@@ -38,6 +68,27 @@ const { frontmatter } = await file("ostalo", lang);
 
     async setup() {
       this.button.ariaDisabled = null;
+
+      const ua = window.navigator.userAgent;
+      const in_app = APP_TOKENS.some((re) => re.test(ua));
+
+      const IOS = /iPhone|iPad|iPod/.test(ua);
+      const standalone = window.matchMedia(
+        "(display-mode: standalone)",
+      ).matches;
+
+      if (in_app) {
+        this.button.classList.toggle("enabled", true);
+        this.button.onclick = () => this.in_app.showPopover();
+        return;
+      }
+
+      if (IOS && !standalone) {
+        this.button.classList.toggle("enabled", true);
+        this.button.onclick = () => this.safari.showPopover();
+        return;
+      }
+
       this.button.classList.toggle("enabled", !(await subscribed()));
       this.button.onclick = () => this.toggle();
     }
@@ -46,6 +97,8 @@ const { frontmatter } = await file("ostalo", lang);
       super();
 
       this.button = document.querySelector("#notification-button")!;
+      this.in_app = document.querySelector("#in-app")!;
+      this.safari = document.querySelector("#safari")!;
 
       this.setup();
     }
@@ -59,7 +112,7 @@ const { frontmatter } = await file("ostalo", lang);
     display: none;
   }
 
-  notifications-button button {
+  notifications-button > button {
     all: unset;
     line-height: normal;
     cursor: pointer;
@@ -76,7 +129,7 @@ const { frontmatter } = await file("ostalo", lang);
     color: white;
   }
 
-  notifications-button button:hover {
+  notifications-button > button:hover {
     background-color: var(--primary-dark);
   }
 
@@ -85,19 +138,54 @@ const { frontmatter } = await file("ostalo", lang);
     width: min-content;
   }
 
-  notifications-button button.enabled {
+  notifications-button > button.enabled {
     background-color: var(--primary);
     color: var(--on-primary);
   }
-  notifications-button button.enabled > :global(:not(.disabled)) {
+  notifications-button > button.enabled > :global(:not(.disabled)) {
     display: none;
   }
 
-  notifications-button button:not(.enabled) {
+  notifications-button > button:not(.enabled) {
     background-color: var(--secondary-background);
     color: var(--on-secondary);
   }
-  notifications-button button:not(.enabled) > :global(:not(.enabled)) {
+  notifications-button > button:not(.enabled) > :global(:not(.enabled)) {
     display: none;
+  }
+
+  [popover] {
+    position: fixed;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 50rem;
+    max-width: calc(100% - 2rem);
+
+    &:before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -2;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background: var(--background);
+    }
+
+    button {
+      margin-left: auto;
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    :where(a, button):hover {
+      filter: opacity(0.5);
+    }
   }
 </style>

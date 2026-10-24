@@ -31,4 +31,21 @@ program_opis: |-
 
   Translated with DeepL.com (free version)
 program_description: Íme a hallgatói politikai program összefoglalása!
+notifications_in_app: |-
+  **Instructions for enabling notifications on the website if you access it via social media:**
+
+  1. Click on the “three dots” icon in the top-right corner of the screen
+  2. Open in browser
+  3. Click on “Turn on notifications” in the top-right corner of the screen
+notifications_safari: |-
+  **Instructions for enabling notifications for iPhone users:**
+
+  1. Click on the “three dots” icon in the lower right corner of the screen
+  2. Share
+  3. View more
+  4. Add to home screen
+  5. Add (upper right corner of the screen)
+  6. The phone will return you to the home screen, and you will see a new icon (Students win)
+  7. Open the app by clicking on the icon
+  8. In the upper right corner, click on “Turn on notifications”
 ---

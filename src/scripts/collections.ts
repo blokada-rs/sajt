@@ -245,6 +245,8 @@ const stranice = file_collection("stranice", "Stranice", "description", [
     string_field("program", "Program"),
     markdown_field("program_opis", "Program - opis"),
     text_field("program_description", "Program opis"),
+    markdown_field("notifications_in_app", "Notifikacije in-app"),
+    markdown_field("notifications_safari", "Notifikacije Safari"),
   ]),
 ]);
 
