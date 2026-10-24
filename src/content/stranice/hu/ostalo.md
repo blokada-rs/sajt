@@ -2,7 +2,8 @@
 akcije: Nyilvános cselekvések
 vesti: Ujság
 afere: Ügyek – nyitóoldal
-notifikacije: Enable notifications
+enable_notifications: Enable notifications
+disable_notifications: Disable notifications
 kontakt: Kapcsolat
 kontakt_opis: Hivatalos elérhetőségek
 live: Élő

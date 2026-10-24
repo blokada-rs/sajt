@@ -5,6 +5,7 @@ import { collection, file, langs } from "@scripts/i18n";
 import { Picture } from "astro:assets";
 
 import Live from "@components/Live.astro";
+import Notifications from "@components/Notifications.astro";
 import { Markdown } from "@mashehu/astropub-md";
 import FormattedDate from "../../../components/FormattedDate.astro";
 
@@ -25,7 +26,10 @@ export async function getStaticPaths() {
   description={frontmatter.vesti_description}
 >
   <section>
-    <h1>{frontmatter.vesti}</h1>
+    <div class="flex">
+      <h1>{frontmatter.vesti}</h1>
+      <Notifications />
+    </div>
     <Markdown of={frontmatter.vesti_opis} />
   </section>
   <section>
@@ -94,6 +98,9 @@ export async function getStaticPaths() {
 
 <style>
   /* TODO: clean up */
+  h1 {
+    margin-block: 1rem;
+  }
 
   .flex {
     display: flex;

@@ -2,7 +2,8 @@
 akcije: Public Actions
 vesti: News
 afere: Affairs
-notifikacije: Enable notifications
+enable_notifications: Enable notifications
+disable_notifications: Disable notifications
 kontakt: Contact
 kontakt_opis: Official contact information
 live: Live

@@ -225,7 +225,8 @@ const stranice = file_collection("stranice", "Stranice", "description", [
     string_field("akcije", "Akcije"),
     string_field("vesti", "Vesti"),
     string_field("afere", "Afere"),
-    string_field("notifikacije", "Uključi notifikacije"),
+    string_field("enable_notifications", "Uključi obaveštenja"),
+    string_field("disable_notifications", "Otkaži obaveštenja"),
     string_field("kontakt", "Kontakt"),
     markdown_field("kontakt_opis", "Kontakt - opis"),
     string_field("live", "Live"),
@@ -241,9 +242,9 @@ const stranice = file_collection("stranice", "Stranice", "description", [
     string_field("vidi_jos", "Vidi još"),
     string_field("nije_prevedeno", "Nije prevedeno"),
     string_field("nije_prevedeno_dugacko", "Nije prevedeno (dugačko)"),
-    string_field("program", "Program").optional(),
-    markdown_field("program_opis", "Program - opis").optional(),
-    text_field("program_description", "Program opis").optional(),
+    string_field("program", "Program"),
+    markdown_field("program_opis", "Program - opis"),
+    text_field("program_description", "Program opis"),
   ]),
 ]);
 

@@ -185,8 +185,8 @@ importers:
         specifier: ^3.0.0
         version: 3.0.0(astro@7.4.2(@types/node@24.19.2)(sass@1.106.1)(yaml@2.9.1))
       '@sveltia/cms':
-        specifier: ^0.250.1
-        version: 0.250.1
+        specifier: ^0.250.2
+        version: 0.250.2
       astro:
         specifier: ^7.4.2
         version: 7.4.2(@types/node@24.19.2)(sass@1.106.1)(yaml@2.9.1)
@@ -1054,8 +1054,8 @@ packages:
   '@shikijs/vscode-textmate@10.1.0':
     resolution: {integrity: sha512-cVBuhDQjBZaNMTwBquYfPydrUP+E3hE6oYGasx8h6ZrODIM7/r+gxLDXdd66oszbrggZHEntdE6j+5gYIVyMWQ==}
 
-  '@sveltia/cms@0.250.1':
-    resolution: {integrity: sha512-9nhd/4cEjEO2m5ojbDKkF+MdLlvJYjTxZ0wF96pLtwb+IccNaFN0cpKYZ547gXK5C7sEfVwrgROlXV+oUmpBdw==}
+  '@sveltia/cms@0.250.2':
+    resolution: {integrity: sha512-HXIPTrGz0DB7X3xV8BrzKI38uLzLh36rdzqptgpFK0dvcmA09Z6P67shbA38TkZKiVbQWYR/6ejf7uXAvITitg==}
     peerDependencies:
       '@types/react': ^19.3.0
     peerDependenciesMeta:
@@ -2603,7 +2603,7 @@ snapshots:
 
   '@shikijs/vscode-textmate@10.1.0': {}
 
-  '@sveltia/cms@0.250.1':
+  '@sveltia/cms@0.250.2':
     dependencies:
       '@shikijs/langs': 4.5.0
       '@shikijs/themes': 4.5.0

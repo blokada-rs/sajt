@@ -2,7 +2,8 @@
 akcije: Дневник акција
 vesti: Вести
 afere: Афере
-notifikacije: Укључи нотификације
+enable_notifications: Укључи обавештења
+disable_notifications: Откажи обавештења
 kontakt: Контакт
 kontakt_opis: Званичне заједничке друштвене мреже студената у Београду.
 live: Уживо

@@ -1,0 +1,103 @@
+---
+import { file } from "@scripts/i18n.ts";
+import { Icon } from "astro-icon/components";
+
+const { lang } = Astro.params;
+const { frontmatter } = await file("ostalo", lang);
+---
+
+<notifications-button data-success="Uspešno">
+  <button id="notification-button" aria-disabled="true">
+    <Icon class="disabled" name="mdi:notifications-active" />
+    <span class="disabled">{frontmatter.enable_notifications}</span>
+    <Icon class="enabled" name="mdi:notifications-off" />
+    <span class="enabled">{frontmatter.disable_notifications}</span>
+  </button>
+</notifications-button>
+
+<script>
+  import { subscribe, subscribed, unsubscribe } from "@scripts/sw.ts";
+
+  class Notifications extends HTMLElement {
+    button: HTMLButtonElement;
+
+    async toggle() {
+      if (await subscribed()) {
+        await unsubscribe();
+        this.button.classList.toggle("enabled", !(await subscribed()));
+      } else {
+        try {
+          await subscribe();
+          this.button.classList.toggle("enabled", !(await subscribed()));
+          alert(this.dataset.success!);
+        } catch (e) {
+          alert(e);
+        }
+      }
+    }
+
+    async setup() {
+      this.button.ariaDisabled = null;
+      this.button.classList.toggle("enabled", !(await subscribed()));
+      this.button.onclick = () => this.toggle();
+    }
+
+    constructor() {
+      super();
+
+      this.button = document.querySelector("#notification-button")!;
+
+      this.setup();
+    }
+  }
+
+  customElements.define("notifications-button", Notifications);
+</script>
+
+<style>
+  notifications-button button[aria-disabled] {
+    display: none;
+  }
+
+  notifications-button button {
+    all: unset;
+    line-height: normal;
+    cursor: pointer;
+    user-select: none;
+
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-block: 1rem;
+    padding: 0.5rem 1rem;
+
+    font-weight: bold;
+    color: white;
+  }
+
+  notifications-button button:hover {
+    background-color: var(--primary-dark);
+  }
+
+  notifications-button span {
+    font-size: 0.75rem;
+    width: min-content;
+  }
+
+  notifications-button button.enabled {
+    background-color: var(--primary);
+    color: var(--on-primary);
+  }
+  notifications-button button.enabled > :global(:not(.disabled)) {
+    display: none;
+  }
+
+  notifications-button button:not(.enabled) {
+    background-color: var(--secondary-background);
+    color: var(--on-secondary);
+  }
+  notifications-button button:not(.enabled) > :global(:not(.enabled)) {
+    display: none;
+  }
+</style>

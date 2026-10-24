@@ -13,6 +13,13 @@ function urlBase64ToUint8Array(base64String: string) {
   return outputArray;
 }
 
+export const subscribed = async (): Promise<boolean> => {
+  await navigator.serviceWorker.register("/service-worker.js");
+  const registration = await navigator.serviceWorker.ready;
+
+  return (await registration.pushManager.getSubscription()) !== null;
+};
+
 const getSubscription = async (registration: ServiceWorkerRegistration) => {
   const existing = await registration.pushManager.getSubscription();
   if (existing) {
@@ -31,11 +38,30 @@ export const subscribe = async () => {
   const registration = await navigator.serviceWorker.ready;
   const subscription = await getSubscription(registration);
 
-  await fetch("/.netlify/functions/subscribe", {
+  const response = await fetch("/subscribe", {
     method: "post",
     headers: {
       "Content-type": "application/json",
     },
     body: JSON.stringify({ subscription }),
   });
+
+  if (!response.ok) {
+    throw new Error(await response.text());
+  }
+};
+
+export const unsubscribe = async () => {
+  const registration = await navigator.serviceWorker.ready;
+  const subscription = await getSubscription(registration);
+
+  await fetch("/unsubscribe", {
+    method: "post",
+    headers: {
+      "Content-type": "application/json",
+    },
+    body: JSON.stringify({ subscription }),
+  });
+
+  await registration.unregister();
 };
