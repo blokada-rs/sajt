@@ -1,7 +1,7 @@
 ---
 link: izbori
 title: Парламентарни избори 2026.
-live: false
+live: true
 pubDate: 2026-10-24T20:00:00
 updatedDate: 2026-10-24T19:13:00
 heroImage: '@assets/images/izbori.webp'
