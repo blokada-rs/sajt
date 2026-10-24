@@ -1,5 +1,6 @@
 ---
 import Base from "@layouts/Base.astro";
+import Notifications from "@components/Notifications.astro";
 import { collection, collectionIDs, entry, file, langs } from "@scripts/i18n";
 import { Icon } from "astro-icon/components";
 import { type CollectionEntry } from "astro:content";
@@ -64,7 +65,10 @@ const live = vesti.filter((vest) => vest.data.live && !vest.data.archived);
         </ul>
       </>
     )}
-    <h1>{linkovi.data.title}</h1>
+    <div class="flex">
+      <h1>{linkovi.data.title}</h1>
+      <Notifications />
+    </div>
     {get_others(linkovi.data.linkovi).length > 0 && (
       <ul>
         {get_others(linkovi.data.linkovi).map((link) => (
@@ -164,6 +168,10 @@ const live = vesti.filter((vest) => vest.data.live && !vest.data.archived);
     flex-direction: column;
     gap: 1rem;
     padding: 0;
+  }
+
+  ul:not(:last-of-type) {
+    margin-bottom: 1rem;
   }
 
   .socials {

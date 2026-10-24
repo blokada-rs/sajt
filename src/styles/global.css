@@ -362,6 +362,12 @@ section > article:not(:last-of-type) {
   margin-block: 2rem;
 }
 
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 [data-icon] {
   font-size: 1.2rem;
   vertical-align: middle;

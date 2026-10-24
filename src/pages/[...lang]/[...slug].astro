@@ -8,6 +8,7 @@ import { Picture } from "astro:assets";
 
 import Live from "@components/Live.astro";
 import Mapa from "@components/Mapa.astro";
+import Notifications from "@components/Notifications.astro";
 import SectionLink from "@components/SectionLink.astro";
 import Vesti from "@components/Vesti.astro";
 import Video from "@components/Video.astro";
@@ -93,7 +94,9 @@ const live = vesti.filter((vest) => vest.data.live && !vest.data.archived);
     </div>
   )}
 
-  <Content components={{ Icon, SectionLink, Vesti, Mapa, Video }} />
+  <Content
+    components={{ Icon, SectionLink, Vesti, Mapa, Video, Notifications }}
+  />
 </Base>
 
 <style>
