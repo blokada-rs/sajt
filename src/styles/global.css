@@ -19,11 +19,13 @@
     linear-gradient(var(--secondary-background), var(--background)) no-repeat;
 
   --first: var(--primary);
-  --second: hsl(from var(--primary) calc(h + 3 * 360/6) s l);
-  --third: hsl(from var(--primary) calc(h + 1 * 360/6) s l);
-  --fourth: hsl(from var(--primary) calc(h + 4 * 360/6) s l);
-  --fifth: hsl(from var(--primary) calc(h + 2 * 360/6) s l);
-  --sixth: hsl(from var(--primary) calc(h + 5 * 360/6) s l);
+  --second: hsl(from var(--primary) calc(h + 5 * 360/9) s l);
+  --third: hsl(from var(--primary) calc(h + 7 * 360/9) s l);
+  --fourth: hsl(from var(--primary) calc(h + 3 * 360/9) s l);
+  --fifth: hsl(from var(--primary) calc(h + 6 * 360/9) s l);
+  --sixth: hsl(from var(--primary) calc(h + 2 * 360/9) s l);
+  --seventh: hsl(from var(--primary) calc(h + 4 * 360/9) s l);
+  --eight: hsl(from var(--primary) calc(h + 8 * 360/9) s l);
 
   --gray: 96, 115, 159;
   --gray-light: hsl(0 0% 95%);
@@ -396,4 +398,11 @@ section > article:not(:last-of-type) {
 .sixth {
   --color: var(--sixth);
 }
+.seventh {
+  --color: var(--seventh);
+}
+.eight {
+  --color: var(--eight);
+}
+
 

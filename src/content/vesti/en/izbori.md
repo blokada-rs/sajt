@@ -12,8 +12,14 @@ description: |-
 
   Throughout the entire election day, our website will be the place where you could track the latest news, live updates, and first-hand reports, brought to you from the ground by students across Serbia.
 timeline:
+  - datum: 2026-10-25T09:10:00
+    important: false
+    color: first
+  - datum: 2026-10-25T09:10:00
+    important: false
+    color: first
   - naslov: Polling stations are open
-    datum: 2026-10-25T07:01:00
+    datum: 2026-10-25T09:10:00
     important: true
     color: first
     videos:
@@ -24,7 +30,7 @@ timeline:
 
       Today is the day for victory!
   - naslov: Queues of hope
-    datum: 2026-10-25T06:45:00
+    datum: 2026-10-25T09:10:00
     important: false
     color: first
     videos:
@@ -32,11 +38,9 @@ timeline:
       - MQA8KQsijMw
       - tXuz0mocTSc
       - KHsUbzMR2sA
-    slike:
-      - '@assets/images/1000002557.webp'
     tekst: The polling stations haven’t even opened yet, and large numbers of citizens are already displaying their wish for change!
   - naslov: Diaspora for change!
-    datum: 2026-10-25T06:40:00
+    datum: 2026-10-25T09:10:00
     important: false
     color: first
     videos:

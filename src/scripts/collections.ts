@@ -71,6 +71,8 @@ const color = () =>
     ["fourth", "Cetrvrta"],
     ["fifth", "Peta"],
     ["sixth", "Šesta"],
+    ["seventh", "Sedma"],
+    ["eight", "Osma"],
   ]).optional();
 
 const map = () =>

@@ -50,7 +50,7 @@ const { frontmatter } = await file("ostalo", lang);
   </div>
 )}
 
-{(timeline ?? []).filter(({important}) => !important).length > 3 && <script>
+{(timeline ?? []).filter(({ important }) => !important).length > 3 && <script>
   const timeline = document.querySelector(".desavanja") as HTMLElement;
   timeline?.classList.add("short");
 
@@ -176,5 +176,9 @@ const { frontmatter } = await file("ostalo", lang);
 
   .desavanja :global(.button) {
     align-self: flex-start;
+  }
+
+  .desavanja :global(blockquote) {
+    border-left-color: white;
   }
 </style>
