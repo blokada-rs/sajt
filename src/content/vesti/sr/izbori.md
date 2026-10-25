@@ -23,6 +23,8 @@ timeline:
     datum: 2026-10-25T07:01:00
     important: false
     color: first
+    videos:
+      - SOvCrlBDzSQ
     slike:
       - '@assets/images/1000002557.webp'
     tekst: Бирачка места се још нису отворена, а велики број грађана већ показује жељу за променама!
