@@ -12,6 +12,94 @@ description: |-
 
   Throughout the entire election day, our website will be the place where you could track the latest news, live updates, and first-hand reports, brought to you from the ground by students across Serbia.
 timeline:
+  - naslov: Turnout at 18.00 reached 64.2%
+    datum: 2026-10-25T18:37:00
+    important: true
+    pin: true
+    color: first
+  - naslov: Београд – неправилности од 16 до 17 часова
+    datum: 2026-10-25T17:25:00
+    important: false
+    pin: false
+    color: second
+    tekst: |-
+      <span class="highlight">**Нови Београд**</span>
+
+      - **Блок 70, у околини ОШ „20. октобар“, бирачко место 77:** Позвана је полиција након физичког напада на грађанина који је гласао ван бирачког места. Инцидент је прошао без озбиљнијих повреда.
+
+      <span class="highlight">**Раковица**</span>
+
+      - **Бирачко место 26, ОШ „Никола Тесла“:** Бирачко место је затворено због фотографисања гласачког листића.
+  - naslov: Запад – решене неправилности од 16 до 17 часова
+    datum: 2026-10-25T17:25:00
+    important: false
+    pin: false
+    color: fourth
+    tekst: |-
+      <span class="highlight">**Лајковац**</span>
+
+      - **Бирачко место 23:** Спречен је „бугарски воз“.
+
+      <span class="highlight">**Дом културе**</span>
+
+      - **Бирачко место 56:** Спречено је фотографисање гласачког листића.
+  - naslov: Исток – решене неправилности од 16 до 17 часова
+    datum: 2026-10-25T17:25:00
+    important: false
+    pin: false
+    color: third
+    tekst: |-
+      <span class="highlight">**Пожаревац**</span>
+
+      - **Брежане, бирачко место 6:** Пронађени су и одузети паралелни бирачки спискови.
+  - naslov: Крагујевац – решене неправилности од 16 до 17 часова
+    datum: 2026-10-25T17:23:00
+    important: false
+    pin: false
+    color: seventh
+    tekst: |-
+      <span class="highlight">**Трстеник**</span>
+
+      - **Бирачко место 55:** Спречен је покушај дуплог гласања.
+
+      <span class="highlight">**Крагујевац**</span>
+
+      - **Месна заједница Десимировац, бирачко место 129:** Заустављено је фотографисање гласачког листића.
+  - naslov: Север – решене неправилности од 16 до 17 часова
+    datum: 2026-10-25T17:22:00
+    important: false
+    pin: false
+    color: fifth
+    tekst: |-
+      <span class="highlight">**Кула**</span>
+
+      - **Средња техничка школа:** Особа је приведена након што је ухваћена приликом фотографисања гласачког листића.
+
+      <span class="highlight">**Ново Милошево**</span>
+
+      - **Бирачко место 24:** Одузет је паралелни бирачки списак.
+
+      <span class="highlight">**Вршац**</span>
+
+      - **Марковац:** Одузет је паралелни бирачки списак.
+  - naslov: Југ – неправилности од 16 до 17 часова
+    datum: 2026-10-25T17:22:00
+    important: false
+    pin: false
+    color: sixth
+    tekst: |-
+      <span class="highlight">**Лесковац**</span>
+
+      - **Бирачко место 15:** Поломљена је гласачка кутија и гласање је прекинуто. Контролор Студентске листе задобио је повреде од стране члана СПС-а. Напад је пријављен и на терен изашче су екипе Хитне помоћи и полицијских службеника. 
+      **Бела Паланка**
+
+      Накнадно достављене пријаве за јутарње часове. Све ситуације су решене.
+
+      - **Бирачко место 32:** Вођена је евиденција о томе ко је гласао.
+      - **Бирачко место 20:** Пријављено је спречавање наших чланова бирачког одбора да обављају свој посао.
+      - **Бирачко место 10:** Пријављен је покушај гласања са неважећом личном картом.
+      - **Бирачко место 20:** Пријављен је покушај накнадног уписивања бирача на списак за гласање ван бирачког места, након 11 часова.
+      - **Бирачко место 12:** Пријављено је вођење паралелног списка за исплату новца бирачима од стране члана бирачког одбора испред СНС-а.
   - naslov: East – irregularities resolved from 15:00 to 16:00
     datum: 2026-10-25T16:43:00
     important: false
@@ -28,7 +116,6 @@ timeline:
     pin: false
     color: sixth
     tekst: |-
-      
       **Vranje**
 
       - Electoral registers were spotted in cars parked outside several polling stations.
@@ -38,7 +125,6 @@ timeline:
     pin: false
     color: second
     tekst: |-
-      
       **Grocka**
 
       - **Polling station 48:** An attempt to photograph a ballot paper together with an identity card was prevented.
@@ -60,21 +146,15 @@ timeline:
     pin: false
     color: fifth
     tekst: |-
-      
+      **Polling station 36**
+      - The detected parallel electoral register was resolved 
 
-      Polling station 36
-
-      The detected parallel electoral register was resolved 
-
-
-      Novo Miloševo
-
-
-      Polling station 24: A parallel electoral register was confiscated, and the police arrived at the scene immediately upon being called.
+      **Novo Miloševo**
+      - Polling station 24: A parallel electoral register was confiscated, and the police arrived at the scene immediately upon being called.
   - naslov: Turnout at 16.00 reached 55.7%
     datum: 2026-10-25T16:30:00
     important: true
-    pin: true
+    pin: false
     color: first
   - naslov: East – Irregularities resolved between 14:00 and 15:00
     datum: 2026-10-25T15:29:00
@@ -103,22 +183,17 @@ timeline:
     pin: false
     color: sixth
     tekst: |-
-      
-
       **Jagodina**
-      **Končarevo, polling stations 20, 21, and 22**: The president of the electoral committee found a vehicle containing parallel electoral registers.
-
+      - **Končarevo, polling stations 20, 21, and 22**: The president of the electoral committee found a vehicle containing parallel electoral registers.
 
       **Aranđelovac**
-      **Polling station 5**, nursery ‘Sunce’ (lit. ‘Sun’): Parallel voters lists were found.
-
+      - **Polling station 5**, nursery ‘Sunce’ (lit. ‘Sun’): Parallel voters lists were found.
 
       **Kruševac**
-      **Polling stations 20 and 22:** The police intervened after parallel electoral registers were found.
-
+      - **Polling stations 20 and 22:** The police intervened after parallel electoral registers were found.
 
       **Čačak**
-      **Polling station 20**, Student residence: Voting outside the polling station was stopped because the list provided by the Municipal Election Commission differed from the list at the polling station.
+      - **Polling station 20**, Student residence: Voting outside the polling station was stopped because the list provided by the Municipal Election Commission differed from the list at the polling station.
   - naslov: Belgrade – reported irregularities
     datum: 2026-10-25T15:29:00
     important: false
@@ -135,7 +210,6 @@ timeline:
     pin: false
     color: fifth
     tekst: |-
-      
       **Novi Sad**
       An attempt at electoral manipulation involving the purchase of a ballot paper was prevented.
 
@@ -147,7 +221,6 @@ timeline:
     pin: false
     color: first
     tekst: |-
-      
       **Bosilegrad**
 
       - **Polling station 2.**  A ballot was invalidated because it was photographed.
@@ -277,27 +350,22 @@ timeline:
     color: first
     tekst: |-
       **Lajkovoac**
-      Four attempts of ballot paper photographing were reported. All cases were sanctioned.
+      - Four attempts of ballot paper photographing were reported. All cases were sanctioned.
 
       **Gornji Milalnovac**
-      **Polling stations 64 and 65:** In the parking lot in front of the polling station a double electoral register was found. Police are expected to arrive.
+      - **Polling stations 64 and 65:** In the parking lot in front of the polling station a double electoral register was found. Police are expected to arrive.
 
       **Ljubovija**
-      **Polling station 3:** Photographing of ballot papers was reported. The police detained the individual, but the ballot paper was placed in the ballot box.
+      - **Polling station 3:** Photographing of ballot papers was reported. The police detained the individual, but the ballot paper was placed in the ballot box.
   - naslov: South — irregularities resolved from 13:00 to 14:00
     datum: 2026-10-25T14:34:00
     important: false
     pin: false
     color: sixth
     tekst: |-
-      
       **Vranje**
 
       - **Polling station 29:** voter buying reported to the police
-
-      **Preševo**
-
-      - **Polling station 14:** The president of the electoral committee allowed a person who had already been marked with UV spay to vote. Our electoral monitor was verbally abused, and a criminal complaint was filed.
   - naslov: Turnout at 13.00 reached 41%
     datum: 2026-10-25T13:35:00
     important: true
@@ -361,20 +429,19 @@ timeline:
     slike:
       - '@assets/images/sonja.webp'
     tekst: |-
-      
-      Good afternoon, Serbia! Good morning, good afternoon, and good evening to the diaspora!
-
-      The number of people at polling stations clearly shows your readiness to make your voices heard. If you haven’t voted yet, now is the right time to go to the polls.
-
-      **Turnout by 12:00 stands at 34.4%, based on our representative sample.** According to the Republic Electoral Commission (RIK), turnout by 12:00 in the previous elections was 21.33% – a difference of 13 percentage points compared with the previous elections.
-
-      **As many as 2 million 220 thousand people have voted so far. Join them. Now.**
-
-      We are also seeing an increase in diaspora turnout compared with previous election cycles. By 12:00, turnout stood at **60.8% in Brisbane, 63.5% in Sydney, 79.7% in Auckland, 88.1% in Tokyo, and 68.8% in Nicosia.**
-
-      We see everything, respond to reported cases, and ensure that every situation is resolved very quickly. Even so, turnout is at a record high. People in the queues are not giving up. Nothing is stopping citizens from expressing their electoral will, and our teams are constantly working to protect every vote.
-
-      **Every person’s vote matters, and the strength of democracy lies in the will of the citizens.**
+      > Good afternoon, Serbia! Good morning, good afternoon, and good evening to the diaspora!
+      > <br /><br />
+      > The number of people at polling stations clearly shows your readiness to make your voices heard. If you haven’t voted yet, now is the right time to go to the polls.
+      > <br /><br />
+      > **Turnout by 12:00 stands at 34.4%, based on our representative sample.** According to the Republic Electoral Commission (RIK), turnout by 12:00 in the previous elections was 21.33% – a difference of 13 percentage points compared with the previous elections.
+      > <br /><br />
+      > **As many as 2 million 220 thousand people have voted so far. Join them. Now.**
+      > <br /><br />
+      > We are also seeing an increase in diaspora turnout compared with previous election cycles. By 12:00, turnout stood at **60.8% in Brisbane, 63.5% in Sydney, 79.7% in Auckland, 88.1% in Tokyo, and 68.8% in Nicosia.**
+      > <br /><br />
+      > We see everything, respond to reported cases, and ensure that every situation is resolved very quickly. Even so, turnout is at a record high. People in the queues are not giving up. Nothing is stopping citizens from expressing their electoral will, and our teams are constantly working to protect every vote.
+      > <br /><br />
+      > **Every person’s vote matters, and the strength of democracy lies in the will of the citizens.**
   - naslov: Turnout at 12.00 reached 34.4%
     datum: 2026-10-25T12:30:00
     important: true
@@ -386,7 +453,6 @@ timeline:
     pin: false
     color: first
     tekst: |-
-      
       **Čačak**
 
       - **Polling station 101:** The polling station opened after a four-hour delay.
@@ -404,7 +470,6 @@ timeline:
     pin: false
     color: first
     tekst: |-
-      
       **Priboj**
 
       - **Polling Station 47:** An activist from the SNS party was reported to the police for irregularly adding voters not on the electoral roll.
@@ -427,8 +492,6 @@ timeline:
     pin: false
     color: first
     tekst: |-
-      
-
       **Požarevac**
 
       - Near the Agricultural School: Women holding duplicate electoral registers were caught.
@@ -442,7 +505,6 @@ timeline:
     pin: false
     color: first
     tekst: |-
-      
       **Alibunar**
 
       - Lokve local community: According to reports, two Serbian Progressive Party (SNS) members were caught buying votes. The police went to the scene.
@@ -452,8 +514,6 @@ timeline:
     pin: false
     color: first
     tekst: |-
-      
-
       **Niš – Medijana**
 
       - Duplicate electoral registers were found in several cafés. The police are on the scene.
@@ -470,7 +530,6 @@ timeline:
     pin: false
     color: first
     tekst: |-
-      
       **Rakovica**
 
       - Polling station 23: An attempt to photograph a ballot paper was prevented. The police are expected to arrive.
@@ -513,7 +572,6 @@ timeline:
     pin: false
     color: fourth
     tekst: |-
-      
       **Aranđelovac**
 
       - **Polling station 27, Vukosavci:** A case of a parallel voter list kept by polling board members, with help from members of other polling boards, was resolved.
@@ -528,7 +586,6 @@ timeline:
     pin: false
     color: third
     tekst: |-
-      
       **Kula**
 
       - At polling station 5, in the Isa Bajić Primary School, the polling board prevented carousel voting, after which voting resumed.
@@ -538,7 +595,6 @@ timeline:
     pin: false
     color: first
     tekst: |-
-      
       **Attempts at carousel voting prevented**
 
       **Obrenovac**
@@ -589,8 +645,6 @@ timeline:
     pin: false
     color: first
     tekst: |-
-      
-
       **Vienna**
 
       Duplicate voter lists were reported. According to reports received, one person was reported to the Austrian police on suspicion of terrorist and extremist activities.
@@ -652,6 +706,182 @@ timeline:
       **Požarevac**
 
       - **Kostolac, Polling Station 2:** An individual in possession of a duplicate voter register was stopped.
+  - naslov: Београд – извештај од 9.00 до 10.00 часова
+    datum: 2026-10-25T10:10:00
+    important: false
+    pin: false
+    color: second
+    tekst: |-
+      <span class="highlight">**Палилула**</span>, бирачка места 18, 19, 20 и 21
+
+      - Спречен је покушај дељења личних карата.
+
+      <span class="highlight">**Раковица**</span>, Лабудово брдо, бирачко место 54
+
+      - Спречен је покушај неовлашћеног уласка на бирачко место.
+
+      <span class="highlight">**Лазаревац**</span>
+
+      - Према информацијама са терена, одузети су дупли бирачки спискови.
+  - naslov: Крагујевачки регион – извештај од 9.00 до 10.00 часова
+    datum: 2026-10-25T10:10:00
+    important: false
+    pin: false
+    color: seventh
+    tekst: |-
+      <span class="highlight">**Крагујевац**</span>, Трмбас, бирачко место 115
+
+      - Пријављена је куповина гласова. Ситуација је неутралисана.
+
+      <span class="highlight">**Чачак**</span>, МЗ Јежевица, бирачко место 85
+
+      - Након печаћења гласачке кутије, из ње је извађен контролни лист. Због ове неправилности затражена је обустава гласања на бирачком месту.
+
+      <span class="highlight">**Чачак**</span>
+
+      - Представници Републичке изборне комисије (РИК) уочили су да гласачке кутије на већем броју бирачких места нису биле запечаћене. Неправилности су отклоњене.
+
+      <span class="highlight">**Александровац**</span>, Вржогрнци, бирачко место 31
+
+      - Према информацијама са терена, председница општине дошла је на бирачко место и покушала самостално да промени распоред простора. Након што се представница контролорског тима томе успротивила, указујући на то да председница општине нема овлашћење да тако поступа, члан бирачког одбора гурнуо ју је низ степенице и упутио јој претње. Случај је пријављен полицији. У току је подношење кривичне пријаве.
+
+      <span class="highlight">**Чачак**</span>, Риђаге, бирачко место 101
+
+      - Бирачко место није отворено због недостатка записника о раду. Контролори су адекватно реаговали и спречили отварање бирачког места.
+  - naslov: Југ – извештај од 9.00 до 10.00 часова
+    datum: 2026-10-25T10:10:00
+    important: false
+    pin: false
+    color: sixth
+    tekst: |-
+      <span class="highlight">**Прокупље**</span>
+
+      - Пријављен је случај куповине гласова. Предузете су све потребне мере.
+      - Реаговано је на случај фотографисања гласачког листића.
+  - naslov: 'Излазност до 10 часова: 19.7%'
+    datum: 2026-10-25T10:10:00
+    important: true
+    pin: false
+    color: first
+    slike:
+      - '@assets/images/pasted-image-1792921175175.webp'
+    tekst: 'Извор: [Време](https://vreme.com/vesti/blog-izbori-glasanje-narodna-skupstina/)'
+  - naslov: Аустријска полиција одузела је дупли бирашки списак
+    datum: 2026-10-25T09:46:00
+    important: false
+    pin: false
+    color: eight
+  - naslov: Прво обраћање студената у току изборног дана
+    datum: 2026-10-25T09:10:00
+    important: true
+    pin: false
+    color: first
+    tekst: |-
+      Србија се буди!
+
+      Добро јутро, Србијо! Добро јутро, добар дан и добро вече, дијаспоро!
+
+      **Гласање у Србији и широм света је почело!**
+
+      По јутру се дан познаје, а ово јутро обележили су редови на бирачким местима. У градовима широм Србије грађани су почели да пристижу још од 6 часова, а према информацијама са терена, атмосфера је прелепа. Од раног јутра стижу нам фотографије и снимци дугих редова са бирачких места широм земље.
+
+      Позивамо све грађане да изађу на гласање и испуне своју грађанску дужност. **Сваки глас је битан!**
+
+      ### Неправилности на бирачким местима
+
+      На појединим бирачким местима уочене су неправилности.
+
+      Први проблем били су неадекватни или недостајући паравани за гласање. Наши контролори успели су да пронађу решење и обезбеде постављање заменских паравана.
+
+      Други проблем односио се на спрејеве за обележавање прста који се лако уклањају. Захваљујући ажурности и организованости наших контролора, као и њиховом ангажовању преко председника бирачких одбора, локалне изборне комисије доставиле су одговарајуће спрејеве.
+
+      Поручујемо свим председницима бирачких одбора и локалних изборних комисија да сваки покушај коришћења неадекватног изборног материјала мора бити озбиљно схваћен и испитан, а надлежни позвани на одговорност у складу са законом.
+
+      Наши контролори спремни су да прате изборни процес, уоче неправилности и реагују како би заштитили право грађана да њихов глас буде поштован.
+
+      ### Излазност до 8 часова
+
+      **Подаци о излазности биће објављени након што буду доступни.**
+
+      Надамо се да ће остатак изборног дана протећи мирно, уз поштовање изборних процедура и без већих неправилности. Настављамо да пратимо ситуацију на бирачким местима широм Србије."
+  - naslov: Београд – Извештај од 8.00 до 9.00 часова
+    datum: 2026-10-25T09:10:00
+    important: false
+    pin: false
+    color: second
+    tekst: |-
+      <span class="highlight">**Раковица, БМ 29**</span>
+      - Затечена је особа која је фотографисала гласачки листић. Гласање је заустављено и очекује се долазак полиције.
+
+      <span class="highlight">**Нови Београд, БМ 19**</span>
+      - Спречен је покушај изборне манипулације познате као „бугарски воз“.
+
+      <span class="highlight">**Палилула, БМ 16**</span>
+      - Гласање је обустављено због инцидента са спрејом.
+
+      <span class="highlight">**Раковица, БМ 9**</span>
+      - Гласање је прекинуто због инцидента са спрејом.
+  - naslov: Исток – Извештај од 8.00 до 9.00 часова
+    datum: 2026-10-25T09:10:00
+    important: false
+    pin: false
+    color: third
+    tekst: |-
+      <span class="highlight">**Ћуприја**</span>, Ново насеље, БМ 8
+      - Спречен је покушај изборне манипулације познате као „бугарски воз“. 
+
+      <span class="highlight">**Ћуприја**</span>, БМ 2, код ОШ „13. октобар“
+      - Пронађен је дупли бирачки списак. Неправилност је отклоњена.
+
+      <span class="highlight">**Ћуприја**</span>, БМ 5, Медицинска школа
+      - Контролори су били изложени притисцима да дозволе улазак већег броја бирача у просторију за гласање него што је прописано. Ситуација је разрешена.
+  - naslov: Крагујевац – Извештај од 8.00 до 9.00 часова
+    datum: 2026-10-25T09:10:00
+    important: false
+    pin: false
+    color: seventh
+    tekst: |-
+      <span class="highlight">**Врњачка Бања**</span>, БМ 4
+
+      - Према информацијама са терена, заменик ПБО користи лажну акредитацију ЦЕСИД-а и представља се као посматрач, иако ЦЕСИД нема пријављене посматраче на овом бирачком месту.
+
+      <span class="highlight">**Врњачка Бања**</span>, БМ 1
+
+      - Гласање је обустављено због уочених неправилности. Општинска изборна комисија излази на терен.
+
+      <span class="highlight">**Чачак**</span>, БМ 101, Риђаге
+
+      - Бирачко место није отворено јер није обезбеђен записник о раду. Две особе које се представљају као представници Градске изборне комисије (ГИК) тврдиле су да се бирачко место може отворити на основу усменог договора. Контролори су спречили отварање без записника. Очекује се достављање документације.
+  - naslov: Југ – Извештај од 8.00 до 9.00 часова
+    datum: 2026-10-25T09:10:00
+    important: false
+    pin: false
+    color: sixth
+    tekst: |-
+      <span class="highlight">**Дољевац**</span>
+
+      - БМ 27 – Пријављене су претње и физички напад на контролора, који је ударен у стомак.
+      - БМ 25 – Пријављене су претње, гажење и шутирање контролора по ногама.
+      - БМ 22 – Један контролор је физички избачен са бирачког места, док га је други контролор напустио због угрожене безбедности.
+      - БМ 31 – Пријављено је бацање столица на бирачком месту.
+
+      <span class="highlight">**Бујановац**</span>
+
+      - Према информацијама са терена, једна особа је гласала у име три особе, користећи три личне карте.
+
+      <span class="highlight">**Житорађа**</span>
+
+      - Пријављено је јавно гласање, супротно правилу загарантоване тајности гласања.
+  - naslov: Запад – Извештај од 8.00 до 9.00 часова
+    datum: 2026-10-25T09:10:00
+    important: false
+    pin: false
+    color: fourth
+    tekst: |-
+      - <span class="highlight">**Бајина Башта**</span>, Обајгора, БМ 34 – Испред дома спречен је покушај изборне манипулације познате као „бугарски воз“.
+      - <span class="highlight">**Шабац, Заблаће**</span>, БМ 87 – Пријављена је куповина гласова полицији.
+      - <span class="highlight">**Бајина Башта**</span>, БМ 42 – Уочени су дупли бирачки спискови. Неправилност је отклоњена, након чега је бирачко место поново отворено.
+      - <span class="highlight">**Сечањ**</span>, Сутјеска, БМ 15 – Контролор је спречио покушај изношења гласачког листића са бирачког места.
   - naslov: Polling stations are open
     datum: 2026-10-25T09:10:00
     important: true
@@ -690,8 +920,6 @@ timeline:
     color: first
     videos:
       - tnUfjswaTTA
-    slike:
-      - '@assets/images/pasted-image-1792921175175.webp'
 ---
 
 **From every corner of Serbia, straight from the field: all the information in one place!**
