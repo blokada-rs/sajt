@@ -12,6 +12,26 @@ description: |-
 
   Throughout the entire election day, our website will be the place where you could track the latest news, live updates, and first-hand reports, brought to you from the ground by students across Serbia.
 timeline:
+  - datum: 2026-10-25T13:35:00
+    important: true
+    pin: true
+    color: first
+  - datum: 2026-10-25T13:15:00
+    important: false
+    pin: false
+    color: first
+  - datum: 2026-10-25T13:15:00
+    important: false
+    pin: false
+    color: first
+  - datum: 2026-10-25T13:15:00
+    important: false
+    pin: false
+    color: first
+  - datum: 2026-10-25T13:15:00
+    important: false
+    pin: false
+    color: first
   - datum: 2026-10-25T12:30:00
     important: true
     pin: false
@@ -20,7 +40,7 @@ timeline:
       - '@assets/images/sonja.webp'
   - datum: 2026-10-25T12:30:00
     important: true
-    pin: true
+    pin: false
     color: first
   - datum: 2026-10-25T12:14:00
     important: false
