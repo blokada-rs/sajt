@@ -703,11 +703,9 @@ timeline:
     pin: false
     color: fourth
     tekst: |-
-      
       **Priboj**
 
       - At polling station 44, an attempt to photograph a ballot was prevented.
-      - In the Luka neighbourhood, outside the polling station, according to reports from the field, Suad Ćelahmetović was seen; he is alleged to have offered 5,000 dinars per vote.
 
       **Ljubovija**
 
@@ -728,7 +726,7 @@ timeline:
     datum: 2026-10-25T11:05:00
     important: false
     pin: false
-    color: eight
+    color: fourth
     tekst: |-
       **Vienna**
 
@@ -786,7 +784,7 @@ timeline:
     datum: 2026-10-25T10:10:00
     important: false
     pin: false
-    color: third
+    color: fourth
     tekst: |-
       **Požarevac**
 
