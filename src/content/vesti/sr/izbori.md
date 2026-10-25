@@ -12,6 +12,11 @@ description: |-
 
   Током целог изборног дана, наш сајт биће место на ком ћете моћи да пратите најновије вести, дешавања и информације из прве руке, које ће вам студенти широм Србије преносити са терена.
 timeline:
+  - naslov: 'Излазност до 12 часова: 34.4%'
+    datum: 2026-10-25T12:30:00
+    important: true
+    pin: true
+    color: first
   - naslov: Исток – решене неправилности од 11 до 12 часова
     datum: 2026-10-25T12:14:00
     important: false
@@ -279,7 +284,7 @@ timeline:
   - naslov: 'Излазност до 10 часова: 19.7%'
     datum: 2026-10-25T10:10:00
     important: true
-    pin: true
+    pin: false
     color: first
     slike:
       - '@assets/images/pasted-image-1792921175175.webp'
