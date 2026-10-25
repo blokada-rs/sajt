@@ -12,91 +12,182 @@ description: |-
 
   Throughout the entire election day, our website will be the place where you could track the latest news, live updates, and first-hand reports, brought to you from the ground by students across Serbia.
 timeline:
-  - datum: 2026-10-25T17:25:00
-    important: false
-    pin: false
-    color: second
-  - datum: 2026-10-25T17:25:00
-    important: false
-    pin: false
-    color: fourth
-  - datum: 2026-10-25T17:25:00
+  - naslov: East – irregularities resolved from 15:00 to 16:00
+    datum: 2026-10-25T16:43:00
     important: false
     pin: false
     color: third
-  - datum: 2026-10-25T17:23:00
-    important: false
-    pin: false
-    color: seventh
-  - datum: 2026-10-25T17:22:00
-    important: false
-    pin: false
-    color: fifth
-  - datum: 2026-10-25T17:22:00
-    important: false
-    pin: false
-    color: sixth
-  - datum: 2026-10-25T16:43:00
-    important: false
-    pin: false
-    color: third
-  - datum: 2026-10-25T16:43:00
+    tekst: |-
+      
+      **Bor**
+
+      - **Polling station 46:** The electoral committee was keeping a parallel electoral register at the polling station. The situation was resolved.
+  - naslov: South – irregularities from 15:00 to 16:00
+    datum: 2026-10-25T16:43:00
     important: false
     pin: false
     color: sixth
-  - datum: 2026-10-25T16:43:00
+    tekst: |-
+      
+      **Vranje**
+
+      - Electoral registers were spotted in cars parked outside several polling stations.
+  - naslov: Belgrade – irregularities
+    datum: 2026-10-25T16:43:00
     important: false
     pin: false
     color: second
-  - datum: 2026-10-25T16:43:00
+    tekst: |-
+      
+      **Grocka**
+
+      - **Polling station 48:** An attempt to photograph a ballot paper together with an identity card was prevented.
+
+      **Sopot**
+
+      - **Polling station 18:** An attempt to photograph a ballot paper was prevented. The police were called.
+
+      **Pančevo**
+
+      - The police checked the identity of a suspicious person from a van with Vršac number plates.
+
+      **Barajevo**
+
+      - **Polling station 28:** An attempt to photograph a ballot paper was prevented. The police are expected to arrive.
+  - naslov: North – Resolved irregularities from 15:00 to 16:00
+    datum: 2026-10-25T16:43:00
     important: false
     pin: false
     color: fifth
-  - datum: 2026-10-25T16:30:00
+    tekst: |-
+      
+
+      Polling station 36
+
+      The detected parallel electoral register was resolved 
+
+
+      Novo Miloševo
+
+
+      Polling station 24: A parallel electoral register was confiscated, and the police arrived at the scene immediately upon being called.
+  - naslov: Turnout at 16.00 reached 55.7%
+    datum: 2026-10-25T16:30:00
     important: true
     pin: true
     color: first
-  - datum: 2026-10-25T15:29:00
+  - naslov: East – Irregularities resolved between 14:00 and 15:00
+    datum: 2026-10-25T15:29:00
     important: false
     pin: false
     color: third
-  - datum: 2026-10-25T15:29:00
+    tekst: |-
+      
+
+      **Despotovac**
+      -**Resavica, polling station 35:** A member of our team caught a member of the electoral committee keeping a duplicate voter registry. The case was verified by the mobile team.
+  - naslov: West – Irregularities from 14:00 to 15:00
+    datum: 2026-10-25T15:29:00
     important: false
     pin: false
     color: first
-  - datum: 2026-10-25T15:29:00
+    tekst: |-
+      **Ljubovija**
+      -**Polling station 4:** The photograph of a ballot paper was reported. The police took away the individual.
+       
+      **Gornji Milanovac**
+      -**Polling station 42:** An election observer kept a duplicate record. The police were called.
+  - naslov: Kragujevac — Irregularities addressed between 14:00 and 15:00
+    datum: 2026-10-25T15:29:00
     important: false
     pin: false
     color: first
-  - datum: 2026-10-25T15:29:00
+    tekst: |-
+      
+
+      **Jagodina**
+      **Končarevo, polling stations 20, 21, and 22**: The president of the electoral committee found a vehicle containing parallel electoral registers.
+
+
+      **Aranđelovac**
+      **Polling station 5**, nursery ‘Sunce’ (lit. ‘Sun’): Parallel voters lists were found.
+
+
+      **Kruševac**
+      **Polling stations 20 and 22:** The police intervened after parallel electoral registers were found.
+
+
+      **Čačak**
+      **Polling station 20**, Student residence: Voting outside the polling station was stopped because the list provided by the Municipal Election Commission differed from the list at the polling station.
+  - naslov: Belgrade – reported irregularities
+    datum: 2026-10-25T15:29:00
     important: false
     pin: false
     color: first
-  - datum: 2026-10-25T15:29:00
+    tekst: |-
+      
+      **Grocka**
+
+      -**Polling station 25:** Photographing of a ballot paper was reported, and the police were called. Our election monitors were locked in a room, while election observers were denied access. After 30 minutes, the polling station resumed operations.
+  - naslov: North — Irregularities resolved between 13:00 and 14:00
+    datum: 2026-10-25T15:29:00
     important: false
     pin: false
     color: first
-  - datum: 2026-10-25T15:29:00
+    tekst: |-
+      
+      **Novi Sad**
+      An attempt at electoral manipulation involving the purchase of a ballot paper was prevented.
+
+      **Novi Sad – Telep**
+      The keeping of duplicate electoral registers outside of polling stations 39, 40 and 41 was prevented.
+  - naslov: South  – resolved irregularities
+    datum: 2026-10-25T15:29:00
     important: false
     pin: false
     color: first
+    tekst: |-
+      
+      **Bosilegrad**
+
+      - **Polling station 2.**  A ballot was invalidated because it was photographed.
+      - **Polling station 2.**  An attempt to vote publicly was prevented.
+
+      **Pirot**
+
+      - **Polling station 60:** Photographing of the ballot paper has been reported. A report has been filed with the police.
+      - **Polling station 62:** Vote-buying has been reported. A report has been filed with the police and a lawyer. 
+
+      **Bela Palanka**
+
+      - A duplicate electoral register was detected. The irregularity was obstructed and thwarted.
   - naslov: Peaceful until the end
     datum: 2026-10-25T15:23:00
     important: true
     pin: true
     color: first
     tekst: |-
-      These are hours in which we see what remains of SNS's attempt to project power. Violence, threats, intimidation, and attempts to instigate slashes. So much for their force.
+      These are hours in which we see what remains of SNS's attempt to project power. Violence, threats, intimidation, and attempts to provoke clashes. So much for their force.
 
-      [Read more](https://studenti.org.rs/vesti/izbori_mirno_do_kraja)
-  - datum: 2026-10-25T15:20:00
+      [Read more!](https://studenti.org.rs/vesti/izbori_mirno_do_kraja/)
+  - naslov: Statement regarding the assault on a member of the electoral committee in Doljevac
+    datum: 2026-10-25T15:20:00
     important: true
     pin: true
     color: first
-  - datum: 2026-10-25T14:47:00
+    tekst: |-
+      Statement by the attorney of our colleague Strahinja, who was assaulted today in Doljevac, at the polling station where he served as a member of the electoral committee on behalf of the Student List.
+
+      [Read more.](https://studenti.org.rs/vesti/izbori_doljevac)
+  - naslov: A letter to the Nation
+    datum: 2026-10-25T14:47:00
     important: false
     pin: false
     color: first
+    tekst: |-
+      Thank you for all the patience you have shown so far.
+
+      [Read the letter!](https://studenti.org.rs/vesti/izbori_pismo)
   - naslov: Serbia has been awake for hours!
     datum: 2026-10-25T14:37:00
     important: true
@@ -162,7 +253,7 @@ timeline:
     datum: 2026-10-25T14:35:00
     important: false
     pin: false
-    color: fifth
+    color: first
     tekst: |-
       **Novi Sad**
 
@@ -193,7 +284,7 @@ timeline:
 
       **Ljubovija**
       **Polling station 3:** Photographing of ballot papers was reported. The police detained the individual, but the ballot paper was placed in the ballot box.
-  - naslov: South — irregularities resolved from 13:00 to 14:00  **Vranje**
+  - naslov: South — irregularities resolved from 13:00 to 14:00
     datum: 2026-10-25T14:34:00
     important: false
     pin: false
@@ -262,37 +353,117 @@ timeline:
       **Palilula**
 
       - Rade Drainac Primary School: A stolen ballot paper was confiscated. Carousel voting was prevented.
-  - datum: 2026-10-25T12:30:00
+  - naslov: Serbia Has Woken Up!
+    datum: 2026-10-25T12:30:00
     important: true
     pin: false
     color: first
     slike:
       - '@assets/images/sonja.webp'
+    tekst: |-
+      
+      Good afternoon, Serbia! Good morning, good afternoon, and good evening to the diaspora!
+
+      The number of people at polling stations clearly shows your readiness to make your voices heard. If you haven’t voted yet, now is the right time to go to the polls.
+
+      **Turnout by 12:00 stands at 34.4%, based on our representative sample.** According to the Republic Electoral Commission (RIK), turnout by 12:00 in the previous elections was 21.33% – a difference of 13 percentage points compared with the previous elections.
+
+      **As many as 2 million 220 thousand people have voted so far. Join them. Now.**
+
+      We are also seeing an increase in diaspora turnout compared with previous election cycles. By 12:00, turnout stood at **60.8% in Brisbane, 63.5% in Sydney, 79.7% in Auckland, 88.1% in Tokyo, and 68.8% in Nicosia.**
+
+      We see everything, respond to reported cases, and ensure that every situation is resolved very quickly. Even so, turnout is at a record high. People in the queues are not giving up. Nothing is stopping citizens from expressing their electoral will, and our teams are constantly working to protect every vote.
+
+      **Every person’s vote matters, and the strength of democracy lies in the will of the citizens.**
   - naslov: Turnout at 12.00 reached 34.4%
     datum: 2026-10-25T12:30:00
     important: true
     pin: false
     color: first
-  - datum: 2026-10-25T12:14:00
+  - naslov: Kragujevac – irregularities from 11:00 to 12:00
+    datum: 2026-10-25T12:14:00
     important: false
     pin: false
     color: first
-  - datum: 2026-10-25T12:14:00
+    tekst: |-
+      
+      **Čačak**
+
+      - **Polling station 101:** The polling station opened after a four-hour delay.
+
+      **Aranđelovac**
+
+      - **Vukosavci, polling station 27:** Another parallel electoral register was found. Folders and money were also found in a car. The case was resolved.
+
+      **Kragujevac**
+
+      - **Denino Brdo, polling station 172:** The ink spray was found to be faulty, as the mark could be removed with acetone. Members of the City Electoral Commission (GIK) stopped voting until the situation was resolved.
+  - naslov: West – Report from 11:00 AM to 12:00 PM
+    datum: 2026-10-25T12:14:00
     important: false
     pin: false
     color: first
-  - datum: 2026-10-25T12:14:00
+    tekst: |-
+      
+      **Priboj**
+
+      - **Polling Station 47:** An activist from the SNS party was reported to the police for irregularly adding voters not on the electoral roll.
+
+      **Rasna**
+
+      - **Polling station 32:** A “Bulgarian train” was prevented.
+
+      **Loznica**
+
+      - **Klupci:** The police were notified of vote buying.
+
+
+      **Šabac**
+
+      - **Polling station 24:** Photographing a ballot paper was prevented.
+  - naslov: East – irregularities resolved from 11:00 to 12:00
+    datum: 2026-10-25T12:14:00
     important: false
     pin: false
     color: first
-  - datum: 2026-10-25T12:14:00
+    tekst: |-
+      
+
+      **Požarevac**
+
+      - Near the Agricultural School: Women holding duplicate electoral registers were caught.
+
+      **Petrovac na Mlavi**
+
+      - Trnovče, polling station 43: A person who had a parallel electoral register on them burned it after being spotted by the mobile team.
+  - naslov: Vojvodina – irregularities resolved from 11:00 to 12:00
+    datum: 2026-10-25T12:14:00
     important: false
     pin: false
     color: first
-  - datum: 2026-10-25T12:14:00
+    tekst: |-
+      
+      **Alibunar**
+
+      - Lokve local community: According to reports, two Serbian Progressive Party (SNS) members were caught buying votes. The police went to the scene.
+  - naslov: South – irregularities from 11:00 to 12:00
+    datum: 2026-10-25T12:14:00
     important: false
     pin: false
     color: first
+    tekst: |-
+      
+
+      **Niš – Medijana**
+
+      - Duplicate electoral registers were found in several cafés. The police are on the scene.
+      - Polling station 22: An ordinary lamp was being used, and a UV lamp was then brought in. It was stated that this was accidental, and the case was resolved.
+      - Café: A member of the mobile team was attacked.
+
+      **Vranje**
+
+      - Polling stations 32 and 33: Duplicate electoral registers were found, but the electoral committee prevented the irregularity.
+      - Polling station 9: The mobile team prevented vote buying, and the police were called.
   - naslov: Belgrade – irregularities from 11:00 to 12:00
     datum: 2026-10-25T12:14:00
     important: false
