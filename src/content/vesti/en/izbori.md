@@ -12,9 +12,10 @@ description: |-
 
   Throughout the entire election day, our website will be the place where you could track the latest news, live updates, and first-hand reports, brought to you from the ground by students across Serbia.
 timeline:
-  - datum: 2026-10-25T19:40:00
+  - naslov: We plead upon the citizens not to go to Belgrade.
+    datum: 2026-10-25T19:43:00
     important: true
-    pin: false
+    pin: true
     color: first
   - datum: 2026-10-25T19:17:00
     important: true
