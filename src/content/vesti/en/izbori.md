@@ -14,6 +14,10 @@ description: |-
 timeline:
   - datum: 2026-10-25T12:30:00
     important: true
+    pin: false
+    color: first
+  - datum: 2026-10-25T12:30:00
+    important: true
     pin: true
     color: first
   - datum: 2026-10-25T12:14:00
