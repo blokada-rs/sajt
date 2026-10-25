@@ -107,6 +107,9 @@ timeline:
     important: true
     pin: true
     color: first
+    slike:
+      - '@assets/images/pasted-image-1792921175175.webp'
+    tekst: 'Извор: [Време](https://vreme.com/vesti/blog-izbori-glasanje-narodna-skupstina/)'
   - naslov: Аустријска полиција одузела је дупли бирашки списак
     datum: 2026-10-25T09:46:00
     important: false

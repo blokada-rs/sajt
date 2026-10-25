@@ -58,6 +58,8 @@ timeline:
     color: first
     videos:
       - tnUfjswaTTA
+    slike:
+      - '@assets/images/pasted-image-1792921175175.webp'
 ---
 
 **From every corner of Serbia, straight from the field: all the information in one place!**

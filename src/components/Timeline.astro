@@ -53,7 +53,7 @@ const { frontmatter } = await file("ostalo", lang);
   </div>
 )}
 
-{(timeline ?? []).filter(({ important }) => !important).length > 3 && <script>
+{(timeline ?? []).filter(({ important }) => !important).length > 6 && <script>
   const timeline = document.querySelector(".desavanja") as HTMLElement;
   timeline?.classList.add("short");
 
@@ -173,7 +173,7 @@ const { frontmatter } = await file("ostalo", lang);
     border-radius: 8px;
   }
 
-  .short article:not(.pin):nth-child(n + 4) {
+  .short article:not(.pin):nth-child(n + 7) {
     display: none;
   }
 
