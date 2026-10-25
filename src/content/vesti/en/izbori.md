@@ -12,22 +12,48 @@ description: |-
 
   Throughout the entire election day, our website will be the place where you could track the latest news, live updates, and first-hand reports, brought to you from the ground by students across Serbia.
 timeline:
-  - naslov: Belgrade – irregularities from 17:00 to 18:00
-    datum: 2026-10-25T18:42:00
-    important: false
+  - datum: 2026-10-25T18:47:00
+    important: true
     pin: false
-    color: second
+    color: first
+    slike:
+      - '@assets/images/IMG_7491.webp'
     tekst: |-
-      
+      > **Good evening, Serbia!**
+      > <br /><br /> 
+      > Serbia, there are less than two hours left until the polling stations close. The sun has already set, but election day is not over yet!
+      > <br /><br /> 
+      > Before we share the turnout figures, a reminder of an important rule: **if you are in the queue at a polling station at 20:00, you have the right to vote!**
+      > <br /><br /> 
+      > According to our representative sample, **64.2% of voters** have voted so far. This already exceeds the turnout in the previous two elections.
+      > <br /><br /> 
+      > According to Republic Electoral Commission (RIK) data, turnout in the previous elections by 18:00 was 51.93%. **The total turnout in the 2023 parliamentary elections has already been exceeded!**
+      > <br /><br /> 
+      > By 18:00, **4,400,000 people had voted!**
+      > <br /><br /> 
+      > Turnout is still rising! Go out and vote too, and help make it even stronger. There are still almost two hours until the polling stations close.
+      > <br /><br /> 
+      > Every vote matters. Your vote matters. We are not stopping until the very end of election day. We are one step away from making history and achieving the highest turnout in Serbia's history!
+      > <br /><br /> 
+      > Our teams are still in the field. Our election monitors are staying at the polling stations, and people are still waiting in the queues.
+      > <br /><br /> 
+      > We ask citizens to stay calm, and we call on everyone taking part in the electoral process to let it come to a peaceful end.
+      > <br /><br /> 
+      > **Serbia is not just Belgrade.** Stay in the queues and wait your turn. Our election monitors carry an enormous responsibility right now. Support them and be the wind in their sails.
+      > <br /><br /> 
+      > **Every citizen must be able to exercise their right to vote. Until the very end!**
 
+      Ana Dimitrijević:
+      > **Turnout is higher than in the last two election cycles!**
+      > <br /><br /> 
+      > Let's keep going together until the end!
+      > <br /><br /> 
+      > **Use your right: choose your future!**
       **Mladenovac**
-
 
       - **Polling station 31:** Ballots were reportedly being put into the ballot box without verification, i.e. ballot box stuffing. An election monitor from the Student List – Students Win covered the ballot box and stopped the voting, after which they were physically attacked. The local electoral commission set off for the polling station.
 
-
       **Voždovac**
-
 
       - **Polling station 33:** Duplicate electoral registers were confiscated.
   - naslov: East – irregularities resolved from 17:00 to 18:00
@@ -36,10 +62,7 @@ timeline:
     pin: false
     color: third
     tekst: |-
-      
-
       **Petrovac na Mlavi**
-
 
       - **Flat in the town centre:** Acting on a tip-off, mobile teams discovered a call centre in a flat in the centre of Petrovac na Mlavi. With our legal adviser present, the police took in for questioning three people who, according to the report, are employed by an institution in Stamnica that owns the flat.
   - naslov: Kragujevac – irregularities from 17:00 to 18:00
@@ -48,23 +71,16 @@ timeline:
     pin: false
     color: seventh
     tekst: |-
-      
-
       **Čačak**
-
 
       - **Mrčajevci local community**, polling station 68: The envelopes had not been properly sealed. Voting was suspended pending a response from the Republic Electoral Commission (RIK).
       - **Food and Hospitality School**, polling station 15: An attempt to smash the ballot boxes was prevented.
 
-
       **Topola**
-
 
       - **Polling station 29:** An attempt to photograph the electoral register was prevented.
 
-
       **Kragujevac**
-
 
       - **Veliko Polje local community**, polling station 63: An attempt to photograph a ballot paper was prevented.
       - **Desimirovac local community**, polling station 129: Two parallel electoral registers were being kept; both were confiscated.
@@ -74,16 +90,11 @@ timeline:
     pin: false
     color: fifth
     tekst: |-
-      
-
       **Kucura**
-
 
       - **Polling stations 28 and 30:** Parallel electoral registers were confiscated.
 
-
       **Vršac**
-
 
       - A parallel electoral register was found in the car of SNS candidate Ivan Grujin. The public prosecutor and a forensic team went to the scene. A criminal complaint will be filed.
   - naslov: Turnout at 18.00 reached 64.2%
@@ -244,7 +255,7 @@ timeline:
     datum: 2026-10-25T15:29:00
     important: false
     pin: false
-    color: third
+    color: fourth
     tekst: |-
       **Ljubovija**
       -**Polling station 4:** The photograph of a ballot paper was reported. The police took away the individual.
@@ -255,7 +266,7 @@ timeline:
     datum: 2026-10-25T15:29:00
     important: false
     pin: false
-    color: sixth
+    color: seventh
     tekst: |-
       **Jagodina**
       - **Končarevo, polling stations 20, 21, and 22**: The president of the electoral committee found a vehicle containing parallel electoral registers.
@@ -293,7 +304,7 @@ timeline:
     datum: 2026-10-25T15:29:00
     important: false
     pin: false
-    color: first
+    color: sixth
     tekst: |-
       **Bosilegrad**
 
@@ -312,7 +323,7 @@ timeline:
     datum: 2026-10-25T15:23:00
     important: true
     pin: true
-    color: third
+    color: first
     tekst: |-
       These are hours in which we see what remains of SNS's attempt to project power. Violence, threats, intimidation, and attempts to provoke clashes. So much for their force.
 
@@ -321,7 +332,7 @@ timeline:
     datum: 2026-10-25T15:20:00
     important: true
     pin: true
-    color: fourth
+    color: first
     tekst: |-
       Statement by the attorney of our colleague Strahinja, who was assaulted today in Doljevac, at the polling station where he served as a member of the electoral committee on behalf of the Student List.
 
@@ -330,7 +341,7 @@ timeline:
     datum: 2026-10-25T14:47:00
     important: false
     pin: false
-    color: seventh
+    color: first
     tekst: |-
       Thank you for all the patience you have shown so far.
 
@@ -375,7 +386,7 @@ timeline:
     datum: 2026-10-25T14:37:00
     important: false
     pin: false
-    color: first
+    color: seventh
     tekst: |-
       **Ljig**
       - **Polling station 25:** An attempt by an unknown individual to confiscate accreditation away from election monitor was thwarted.
@@ -389,7 +400,7 @@ timeline:
     datum: 2026-10-25T14:36:00
     important: false
     pin: false
-    color: first
+    color: third
     tekst: |-
       **Zaječar** 
       -**Polling station 13:** The door handles on the entrance doors of the polling station were sprayed, preventing voters from entering. The situation was resolved, and voters were able to entre.
@@ -400,7 +411,7 @@ timeline:
     datum: 2026-10-25T14:35:00
     important: false
     pin: false
-    color: first
+    color: fifth
     tekst: |-
       **Novi Sad**
 
@@ -409,7 +420,7 @@ timeline:
     datum: 2026-10-25T14:35:00
     important: false
     pin: false
-    color: first
+    color: second
     tekst: |-
       **Obrenovac**
       -**Polling stations 13 and 14:** The photographing of ballot papers was prevented.
@@ -421,7 +432,7 @@ timeline:
     datum: 2026-10-25T14:34:00
     important: false
     pin: false
-    color: first
+    color: fourth
     tekst: |-
       **Lajkovoac**
       - Four attempts of ballot paper photographing were reported. All cases were sanctioned.
@@ -449,7 +460,7 @@ timeline:
     datum: 2026-10-25T13:15:00
     important: false
     pin: false
-    color: first
+    color: seventh
     tekst: |-
       **Aranđelovac**
 
@@ -459,7 +470,7 @@ timeline:
     datum: 2026-10-25T13:15:00
     important: false
     pin: false
-    color: first
+    color: fourth
     tekst: |-
       **Valjevo**
 
@@ -473,7 +484,7 @@ timeline:
     datum: 2026-10-25T13:15:00
     important: false
     pin: false
-    color: first
+    color: fifth
     tekst: |-
       **Vrbas**
 
@@ -490,7 +501,7 @@ timeline:
     datum: 2026-10-25T13:15:00
     important: false
     pin: false
-    color: first
+    color: second
     tekst: |-
       **Palilula**
 
@@ -525,7 +536,7 @@ timeline:
     datum: 2026-10-25T12:14:00
     important: false
     pin: false
-    color: first
+    color: seventh
     tekst: |-
       **Čačak**
 
@@ -542,7 +553,7 @@ timeline:
     datum: 2026-10-25T12:14:00
     important: false
     pin: false
-    color: first
+    color: fourth
     tekst: |-
       **Priboj**
 
@@ -564,7 +575,7 @@ timeline:
     datum: 2026-10-25T12:14:00
     important: false
     pin: false
-    color: first
+    color: third
     tekst: |-
       **Požarevac**
 
@@ -577,7 +588,7 @@ timeline:
     datum: 2026-10-25T12:14:00
     important: false
     pin: false
-    color: first
+    color: fifth
     tekst: |-
       **Alibunar**
 
@@ -586,7 +597,7 @@ timeline:
     datum: 2026-10-25T12:14:00
     important: false
     pin: false
-    color: first
+    color: sixth
     tekst: |-
       **Niš – Medijana**
 
@@ -602,7 +613,7 @@ timeline:
     datum: 2026-10-25T12:14:00
     important: false
     pin: false
-    color: first
+    color: second
     tekst: |-
       **Rakovica**
 
@@ -616,7 +627,7 @@ timeline:
     datum: 2026-10-25T11:15:00
     important: false
     pin: false
-    color: first
+    color: third
     tekst: |-
       
       **Knjaževac**
@@ -644,7 +655,7 @@ timeline:
     datum: 2026-10-25T11:15:00
     important: false
     pin: false
-    color: fourth
+    color: seventh
     tekst: |-
       **Aranđelovac**
 
@@ -658,7 +669,7 @@ timeline:
     datum: 2026-10-25T11:24:00
     important: false
     pin: false
-    color: third
+    color: fifth
     tekst: |-
       **Kula**
 
@@ -667,7 +678,7 @@ timeline:
     datum: 2026-10-25T11:15:00
     important: false
     pin: false
-    color: first
+    color: second
     tekst: |-
       **Attempts at carousel voting prevented**
 
@@ -690,7 +701,7 @@ timeline:
     datum: 2026-10-25T11:15:00
     important: false
     pin: false
-    color: first
+    color: fourth
     tekst: |-
       
       **Priboj**
@@ -717,7 +728,7 @@ timeline:
     datum: 2026-10-25T11:05:00
     important: false
     pin: false
-    color: first
+    color: eight
     tekst: |-
       **Vienna**
 
@@ -746,7 +757,7 @@ timeline:
     datum: 2026-10-25T10:10:00
     important: false
     pin: false
-    color: first
+    color: fourth
     tekst: |-
       **Valjevo, Gornja Kalenica, polling stations 86 and 88**
 
@@ -983,7 +994,7 @@ timeline:
     datum: 2026-10-25T09:10:00
     important: false
     pin: false
-    color: first
+    color: eight
     videos:
       - xBVmvPX25sk
       - UEfwOWCgkPk
