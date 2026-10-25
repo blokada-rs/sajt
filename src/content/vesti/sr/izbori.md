@@ -25,9 +25,7 @@ timeline:
     pin: false
     color: first
     slike:
-      - '@assets/images/_A240143.webp'
       - '@assets/images/_A240155.webp'
-      - '@assets/images/_A240159.webp'
       - '@assets/images/IMG_20261026_002422.webp'
   - naslov: Прослава испред Скупштине
     datum: 2026-10-26T23:29:00
