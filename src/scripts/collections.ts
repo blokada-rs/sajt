@@ -124,6 +124,7 @@ const vesti = folder_collection(
       string_field("naslov", "Naslov").optional(),
       datetime_field("datum", "Datum").optional(),
       bool_field("important", "Bitno").optional(),
+      bool_field("pin", "Pin").optional(),
       color(),
       list_field("videos", "Video IDs", [string_field("id", "ID")])
         .singular("Video ID")

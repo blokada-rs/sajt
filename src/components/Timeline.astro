@@ -19,7 +19,10 @@ const { frontmatter } = await file("ostalo", lang);
   <div class="desavanja" data-vidi_jos={frontmatter.vidi_jos}>
     {timeline.map((post) => (
       <article
-        class:list={[post.color ?? "first", { important: post.important }]}
+        class:list={[
+          post.color ?? "first",
+          { important: post.important, pin: post.pin },
+        ]}
       >
         <div>
           <h3 class:list={[{ dark: border === "dark" }]}>{post.naslov}</h3>
@@ -170,7 +173,7 @@ const { frontmatter } = await file("ostalo", lang);
     border-radius: 8px;
   }
 
-  .short article:not(.important):nth-child(n + 4) {
+  .short article:not(.pin):nth-child(n + 4) {
     display: none;
   }
 
