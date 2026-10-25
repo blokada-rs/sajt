@@ -27,6 +27,9 @@ timeline:
     color: first
     videos:
       - SOvCrlBDzSQ
+      - MQA8KQsijMw
+      - tXuz0mocTSc
+      - KHsUbzMR2sA
     slike:
       - '@assets/images/1000002557.webp'
     tekst: Бирачка места се још нису отворена, а велики број грађана већ показује жељу за променама!
