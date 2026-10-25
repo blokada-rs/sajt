@@ -12,6 +12,14 @@ description: |-
 
   Throughout the entire election day, our website will be the place where you could track the latest news, live updates, and first-hand reports, brought to you from the ground by students across Serbia.
 timeline:
+  - datum: 2026-10-25T15:23:00
+    important: true
+    pin: false
+    color: first
+  - datum: 2026-10-25T15:20:00
+    important: true
+    pin: false
+    color: first
   - datum: 2026-10-25T14:47:00
     important: false
     pin: false
@@ -29,22 +37,52 @@ timeline:
     important: false
     pin: false
     color: first
-  - datum: 2026-10-25T14:36:00
+  - naslov: East – irregularities resolved from 13:00 to 14:00
+    datum: 2026-10-25T14:36:00
     important: false
     pin: false
     color: first
-  - datum: 2026-10-25T14:35:00
+    tekst: |-
+      **Zaječar** 
+      -**Polling station 13:** The door handles on the entrance doors of the polling station were sprayed, preventing voters from entering. The situation was resolved, and voters were able to entre.
+
+      **Paraćin**
+      -**Sports hall, polling station 5:** A duplicate voter list was found and confiscated.
+  - naslov: Vojvodina — irregularities resolved by 14:00
+    datum: 2026-10-25T14:35:00
     important: false
     pin: false
     color: first
-  - datum: 2026-10-25T14:35:00
+    tekst: |-
+      **Novi Sad**
+
+      - Double electoral paper confiscated
+  - naslov: Belgrade — irregularities from 13.00 to 14.00
+    datum: 2026-10-25T14:35:00
     important: false
     pin: false
     color: first
-  - datum: 2026-10-25T14:34:00
+    tekst: |-
+      **Obrenovac**
+      -**Polling stations 13 and 14:** The photographing of ballot papers was prevented.
+
+      **Grocka**
+      -**Polling station 43**: The photographing of ballot papers was prevented 
+      -**Polling station 25**: The photographing of a ballot paper was reported. Voting was suspended.
+  - naslov: West — Irregularities resolved from 13:00 to 14:00
+    datum: 2026-10-25T14:34:00
     important: false
     pin: false
     color: first
+    tekst: |-
+      **Lajkovoac**
+      Four attempts of ballot paper photographing were reported. All cases were sanctioned.
+
+      **Gornji Milalnovac**
+      **Polling stations 64 and 65:** In the parking lot in front of the polling station a double electoral register was found. Police are expected to arrive.
+
+      **Ljubovija**
+      **Polling station 3:** Photographing of ballot papers was reported. The police detained the individual, but the ballot paper was placed in the ballot box.
   - datum: 2026-10-25T14:34:00
     important: false
     pin: false
