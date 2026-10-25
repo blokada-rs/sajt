@@ -89,10 +89,6 @@ timeline:
       Затварањем бирачких места изборни процес није завршен.
 
       [Шта даље?](https://studenti.org.rs/vesti/srbija_nije_beograd)
-  - datum: 2026-10-25T19:04:00
-    important: false
-    pin: false
-    color: first
   - naslov: Апел поводом угрожене безбедности на бирачком месту у Параћину
     datum: 2026-10-25T19:04:00
     important: true
