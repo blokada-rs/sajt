@@ -12,6 +12,27 @@ description: |-
 
   Током целог изборног дана, наш сајт биће место на ком ћете моћи да пратите најновије вести, дешавања и информације из прве руке, које ће вам студенти широм Србије преносити са терена.
 timeline:
+  - naslov: Коло у Раковици
+    datum: 2026-10-26T00:01:00
+    important: false
+    pin: false
+    color: first
+    videos:
+      - 4JqIrRmHAjI
+  - naslov: Прослава испред Скупштине
+    datum: 2026-10-26T23:29:00
+    important: false
+    pin: false
+    color: first
+    videos:
+      - MDMPjuZWrFk
+  - naslov: Прослава на Славији
+    datum: 2026-10-26T23:10:00
+    important: false
+    pin: false
+    color: first
+    videos:
+      - 9hVK_ikAYr8
   - naslov: Ми нашу победу чувамо
     datum: 2026-10-25T22:30:00
     important: true

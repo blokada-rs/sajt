@@ -12,6 +12,25 @@ description: |-
 
   Throughout the entire election day, our website will be the place where you could track the latest news, live updates, and first-hand reports, brought to you from the ground by students across Serbia.
 timeline:
+  - datum: 2026-10-26T00:01:00
+    important: false
+    pin: false
+    color: first
+    videos:
+      - 4JqIrRmHAjI
+  - datum: 2026-10-26T23:29:00
+    important: false
+    pin: false
+    color: first
+    videos:
+      - MDMPjuZWrFk
+  - naslov: Celebration at Slavija square
+    datum: 2026-10-26T23:10:00
+    important: false
+    pin: false
+    color: first
+    videos:
+      - 9hVK_ikAYr8
   - naslov: We are protecting our victory
     datum: 2026-10-25T22:30:00
     important: true
