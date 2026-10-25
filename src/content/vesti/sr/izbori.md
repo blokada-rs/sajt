@@ -17,6 +17,8 @@ timeline:
     important: true
     pin: false
     color: first
+    slike:
+      - '@assets/images/sonja.webp'
     tekst: |-
       > Србија се пробудила!
       > <br /><br />

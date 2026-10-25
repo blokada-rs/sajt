@@ -16,6 +16,8 @@ timeline:
     important: true
     pin: false
     color: first
+    slike:
+      - '@assets/images/sonja.webp'
   - datum: 2026-10-25T12:30:00
     important: true
     pin: true
