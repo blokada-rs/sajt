@@ -12,10 +12,38 @@ description: |-
 
   Throughout the entire election day, our website will be the place where you could track the latest news, live updates, and first-hand reports, brought to you from the ground by students across Serbia.
 timeline:
+  - datum: 2026-10-25T14:37:00
+    important: true
+    pin: false
+    color: first
   - naslov: Turnout at 14.00 reached 46.3%
     datum: 2026-10-25T14:16:00
     important: true
     pin: true
+    color: first
+  - datum: 2026-10-25T14:37:00
+    important: false
+    pin: false
+    color: first
+  - datum: 2026-10-25T14:36:00
+    important: false
+    pin: false
+    color: first
+  - datum: 2026-10-25T14:35:00
+    important: false
+    pin: false
+    color: first
+  - datum: 2026-10-25T14:35:00
+    important: false
+    pin: false
+    color: first
+  - datum: 2026-10-25T14:34:00
+    important: false
+    pin: false
+    color: first
+  - datum: 2026-10-25T14:34:00
+    important: false
+    pin: false
     color: first
   - naslov: Turnout at 13.00 reached 41%
     datum: 2026-10-25T13:35:00
@@ -81,6 +109,10 @@ timeline:
   - naslov: Turnout at 12.00 reached 34.4%
     datum: 2026-10-25T12:30:00
     important: true
+    pin: false
+    color: first
+  - datum: 2026-10-25T12:14:00
+    important: false
     pin: false
     color: first
   - datum: 2026-10-25T12:14:00
