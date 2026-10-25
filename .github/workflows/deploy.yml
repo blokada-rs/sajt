@@ -1,12 +1,42 @@
-name: Deploy
+name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Run the build script
-        run: "${{ secrets.IN }}/build.sh"
+      - uses: actions/checkout@v6
+
+      - name: Cache images
+        uses: actions/cache@v5
+        with:
+          path: |
+            cache
+          key: images-${{ runner.os }}-${{ github.run_id }}
+          restore-keys:
+            images-${{ runner.os }}
+
+      - name: Install, build, and upload your site
+        uses: withastro/action@v6
+        with:
+          package-manager: pnpm@latest
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
