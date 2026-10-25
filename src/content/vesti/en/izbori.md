@@ -15,7 +15,7 @@ timeline:
   - datum: 2026-10-25T15:29:00
     important: false
     pin: false
-    color: first
+    color: third
   - datum: 2026-10-25T15:29:00
     important: false
     pin: false
@@ -48,19 +48,56 @@ timeline:
     important: false
     pin: false
     color: first
-  - datum: 2026-10-25T14:37:00
+  - naslov: Serbia has been awake for hours!
+    datum: 2026-10-25T14:37:00
     important: true
     pin: false
     color: first
+    tekst: |-
+      So, good afternoon Serbia! Good morning, good afternoon, and good evening, diaspora!
+
+      Since 7:00 this morning the number of people at polling stations has not decreased. Citizens continue to wait patiently and peacefully in queues, both in Serbia and across the diaspora. If you didn’t vote yet, now is the perfect time.
+
+      Voters in the diaspora are travelling thousands of kilometres today for their right to vote. We send our greetings to all our fellow citizens who have reached out to us after travelling halfway around the world to make sure their voices are heard too. Some of them woke up in the middle of the night, some voted in their pyjamas, and others didn’t sleep at all. The first kolo of the day took place in Toronto at 01:30. A big shout-out to everyone! 
+
+      ##Voter turnout by 14:00 is 46.3%, according to our representative sample. According to REC data, the turnout by 14:00 in the previous elections was 32.38%.
+
+      By 14:00, **three million people** have voted!
+
+      Let’s make these numbers even higher. Let’s make an even greater difference, patiently and responsibly.
+
+      Compared to the previous data, the last two hours have been marked by a further escalation of violence against citizens. Incidents were reported in Pančevo, Palilula, Stari Grad, Zvezdara, Doljevac, and Novi Sad. Our teams have notified the police about all the aforementioned situations, and we expect them to be resolved as soon as possible.
+
+      We remind you once again: any form of violence and pressure on voters is unacceptable. We expect all those responsible for such actions to face consequences in accordance with the law.
+
+      Our hardworking people have been safeguarding the votes and polling stations since the early morning hours, and all of us are safeguarding them.
+
+      **There are only six hours left until the closing of the polling stations.** We call on everyone to be patient, wait for their turn, even in the event of temporary suspensions of voting, and exercise their right to vote. We have waited for this day for two years; we can manage a few more hours. 
+
+      So, good afternoon Serbia! Good morning, good afternoon, and good evening, diaspora!
+
+      Since 7:00 this morning the number of people at polling stations has not decreased. Citizens continue to wait patiently and peacefully in queues, both in Serbia and across the diaspora. If you didn’t vote yet, now is the perfect time.
+
+      Voters in the diaspora are travelling thousands of kilometres today for their right to vote. We send our greetings to all our fellow citizens who have reached out to us after travelling halfway around the world to make sure their voices are heard too. Some of them woke up in the middle of the night, some voted in their pyjamas, and others didn’t sleep at all. The first kolo of the day took place in Toronto at 01:30. A big shout-out to everyone!
   - naslov: Turnout at 14.00 reached 46.3%
     datum: 2026-10-25T14:16:00
     important: true
     pin: true
     color: first
-  - datum: 2026-10-25T14:37:00
+  - naslov: Kragujevac – resolved irregularities from 1:00 to 2:00 PM
+    datum: 2026-10-25T14:37:00
     important: false
     pin: false
     color: first
+    tekst: |-
+      **Ljig**
+      - **Polling station 25:** An attempt by an unknown individual to confiscate accreditation away from election monitor was thwarted.
+      **Kragujevac**
+      - **Local community Veliko Polje, polling station 63:** Two attempts to photograph the ballot papers were thwarted.
+      **Čačak**
+      - **Trbušani**, outpost of ‘Tanasko Rajić’ Primary School, polling station 44: Police arrived after election monitors were reported for obstructing the voting process because they were not allowing ballot papers to be photographed.
+      **Kraljevo**
+      - **Polling stations 1 and 2:** Double electoral register were found. The case was solved.
   - naslov: East – irregularities resolved from 13:00 to 14:00
     datum: 2026-10-25T14:36:00
     important: false
@@ -107,10 +144,20 @@ timeline:
 
       **Ljubovija**
       **Polling station 3:** Photographing of ballot papers was reported. The police detained the individual, but the ballot paper was placed in the ballot box.
-  - datum: 2026-10-25T14:34:00
+  - naslov: South — irregularities resolved from 13:00 to 14:00  **Vranje**
+    datum: 2026-10-25T14:34:00
     important: false
     pin: false
-    color: first
+    color: sixth
+    tekst: |-
+      
+      **Vranje**
+
+      - **Polling station 29:** voter buying reported to the police
+
+      **Preševo**
+
+      - **Polling station 14:** The president of the electoral committee allowed a person who had already been marked with UV spay to vote. Our electoral monitor was verbally abused, and a criminal complaint was filed.
   - naslov: Turnout at 13.00 reached 41%
     datum: 2026-10-25T13:35:00
     important: true
@@ -175,6 +222,10 @@ timeline:
   - naslov: Turnout at 12.00 reached 34.4%
     datum: 2026-10-25T12:30:00
     important: true
+    pin: false
+    color: first
+  - datum: 2026-10-25T12:14:00
+    important: false
     pin: false
     color: first
   - datum: 2026-10-25T12:14:00

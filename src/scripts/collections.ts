@@ -73,7 +73,9 @@ const color = () =>
     ["sixth", "Šesta"],
     ["seventh", "Sedma"],
     ["eight", "Osma"],
-  ]).optional();
+  ])
+    .i18n("duplicate")
+    .optional();
 
 const map = () =>
   object_field("map", "Mapa", [
