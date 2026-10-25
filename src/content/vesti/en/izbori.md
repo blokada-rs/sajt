@@ -18,6 +18,15 @@ timeline:
     color: first
     videos:
       - 4JqIrRmHAjI
+  - datum: 2026-10-26T23:46:00
+    important: false
+    pin: false
+    color: first
+    slike:
+      - '@assets/images/_A240143.webp'
+      - '@assets/images/_A240155.webp'
+      - '@assets/images/_A240159.webp'
+      - '@assets/images/IMG_20261026_002422.webp'
   - datum: 2026-10-26T23:29:00
     important: false
     pin: false
