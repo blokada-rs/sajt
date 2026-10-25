@@ -4,7 +4,7 @@ title: Ми нашу победу чувамо
 live: false
 pubDate: 2026-10-25T22:33:00
 updatedDate: 2026-10-25T22:33:00
-heroImage: '@assets/images/чувамо.webp'
+heroImage: '@assets/images/cuvamo.webp'
 archived: false
 description: Посао није готов.
 ---
