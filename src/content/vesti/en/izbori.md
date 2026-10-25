@@ -12,6 +12,30 @@ description: |-
 
   Throughout the entire election day, our website will be the place where you could track the latest news, live updates, and first-hand reports, brought to you from the ground by students across Serbia.
 timeline:
+  - datum: 2026-10-25T17:25:00
+    important: false
+    pin: false
+    color: second
+  - datum: 2026-10-25T17:25:00
+    important: false
+    pin: false
+    color: fourth
+  - datum: 2026-10-25T17:25:00
+    important: false
+    pin: false
+    color: third
+  - datum: 2026-10-25T17:23:00
+    important: false
+    pin: false
+    color: seventh
+  - datum: 2026-10-25T17:22:00
+    important: false
+    pin: false
+    color: fifth
+  - datum: 2026-10-25T17:22:00
+    important: false
+    pin: false
+    color: sixth
   - datum: 2026-10-25T16:43:00
     important: false
     pin: false
@@ -56,10 +80,15 @@ timeline:
     important: false
     pin: false
     color: first
-  - datum: 2026-10-25T15:23:00
+  - naslov: Peaceful until the end
+    datum: 2026-10-25T15:23:00
     important: true
     pin: true
     color: first
+    tekst: |-
+      These are hours in which we see what remains of SNS's attempt to project power. Violence, threats, intimidation, and attempts to instigate slashes. So much for their force.
+
+      [Read more](https://studenti.org.rs/vesti/izbori_mirno_do_kraja)
   - datum: 2026-10-25T15:20:00
     important: true
     pin: true
@@ -133,7 +162,7 @@ timeline:
     datum: 2026-10-25T14:35:00
     important: false
     pin: false
-    color: first
+    color: fifth
     tekst: |-
       **Novi Sad**
 
