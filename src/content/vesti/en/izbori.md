@@ -82,15 +82,15 @@ timeline:
     pin: false
     color: third
     tekst: |-
-      
-
       **Despotovac**
-      -**Resavica, polling station 35:** A member of our team caught a member of the electoral committee keeping a duplicate voter registry. The case was verified by the mobile team.
+
+      - **Resavica, polling station 35:** A member of our team caught a member of the electoral committee keeping a duplicate voter registry. The case was verified by the mobile team.
+      - The deputy chairperson of the polling board  at Despotovac **ate two ballot papers** (presumably brought in from outside).
   - naslov: West – Irregularities from 14:00 to 15:00
     datum: 2026-10-25T15:29:00
     important: false
     pin: false
-    color: first
+    color: third
     tekst: |-
       **Ljubovija**
       -**Polling station 4:** The photograph of a ballot paper was reported. The police took away the individual.
@@ -101,7 +101,7 @@ timeline:
     datum: 2026-10-25T15:29:00
     important: false
     pin: false
-    color: first
+    color: sixth
     tekst: |-
       
 
@@ -123,7 +123,7 @@ timeline:
     datum: 2026-10-25T15:29:00
     important: false
     pin: false
-    color: first
+    color: second
     tekst: |-
       
       **Grocka**
@@ -133,7 +133,7 @@ timeline:
     datum: 2026-10-25T15:29:00
     important: false
     pin: false
-    color: first
+    color: fifth
     tekst: |-
       
       **Novi Sad**
@@ -165,7 +165,7 @@ timeline:
     datum: 2026-10-25T15:23:00
     important: true
     pin: true
-    color: first
+    color: third
     tekst: |-
       These are hours in which we see what remains of SNS's attempt to project power. Violence, threats, intimidation, and attempts to provoke clashes. So much for their force.
 
@@ -174,7 +174,7 @@ timeline:
     datum: 2026-10-25T15:20:00
     important: true
     pin: true
-    color: first
+    color: fourth
     tekst: |-
       Statement by the attorney of our colleague Strahinja, who was assaulted today in Doljevac, at the polling station where he served as a member of the electoral committee on behalf of the Student List.
 
@@ -183,7 +183,7 @@ timeline:
     datum: 2026-10-25T14:47:00
     important: false
     pin: false
-    color: first
+    color: seventh
     tekst: |-
       Thank you for all the patience you have shown so far.
 
@@ -511,7 +511,7 @@ timeline:
     datum: 2026-10-25T11:15:00
     important: false
     pin: false
-    color: first
+    color: fourth
     tekst: |-
       
       **Aranđelovac**
@@ -526,7 +526,7 @@ timeline:
     datum: 2026-10-25T11:24:00
     important: false
     pin: false
-    color: first
+    color: third
     tekst: |-
       
       **Kula**
