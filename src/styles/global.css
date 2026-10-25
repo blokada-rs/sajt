@@ -380,6 +380,11 @@ section > article:not(:last-of-type) {
   display: inline-block;
 }
 
+.highlight {
+  background-color: hsla(from var(--color) h s l / 30%);
+  padding-inline: 0.2rem;
+}
+
 .first {
   --color: var(--first);
 }
@@ -404,5 +409,3 @@ section > article:not(:last-of-type) {
 .eight {
   --color: var(--eight);
 }
-
-
