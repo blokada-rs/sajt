@@ -15,12 +15,14 @@ timeline:
     datum: 2026-10-25T07:01:00
     important: true
     color: first
+    videos:
+      - 0c6pC8UL__U
     tekst: |-
       Бирачка места отворена су данас од 7 до 20 часова. Изађите на изборе, гласајте и испуните своју грађанску дужност.
 
       Данас је дан за победу!
   - naslov: Редови наде
-    datum: 2026-10-25T07:01:00
+    datum: 2026-10-25T06:45:00
     important: false
     color: first
     videos:
@@ -28,6 +30,13 @@ timeline:
     slike:
       - '@assets/images/1000002557.webp'
     tekst: Бирачка места се још нису отворена, а велики број грађана већ показује жељу за променама!
+  - naslov: Дијаспора за промене!
+    datum: 2026-10-25T06:40:00
+    important: false
+    color: first
+    videos:
+      - xBVmvPX25sk
+      - UEfwOWCgkPk
   - naslov: Изађите на гласање
     datum: 2026-10-25T06:00:00
     important: false
