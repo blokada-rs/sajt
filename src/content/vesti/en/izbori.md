@@ -12,6 +12,15 @@ description: |-
 
   Throughout the entire election day, our website will be the place where you could track the latest news, live updates, and first-hand reports, brought to you from the ground by students across Serbia.
 timeline:
+  - naslov: Polls closing
+    datum: 2026-10-25T20:01:00
+    important: false
+    pin: false
+    color: first
+    tekst: |-
+      It is 8:00 PM. Polling stations are closing.
+
+      We remind all citizens who were already in line before 8:00 PM that they still have the right to cast their vote.
   - naslov: We plead upon the citizens not to go to Belgrade.
     datum: 2026-10-25T19:43:00
     important: true
