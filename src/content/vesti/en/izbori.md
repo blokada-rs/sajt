@@ -12,10 +12,13 @@ description: |-
 
   Throughout the entire election day, our website will be the place where you could track the latest news, live updates, and first-hand reports, brought to you from the ground by students across Serbia.
 timeline:
-  - datum: 2026-10-25T22:30:00
+  - naslov: We are protecting our victory
+    datum: 2026-10-25T22:30:00
     important: true
     pin: true
     color: first
+    videos:
+      - xjeP6mjrnqE
   - naslov: South – irregularities from 19:00 to 20:00
     datum: 2026-10-25T20:05:00
     important: false
