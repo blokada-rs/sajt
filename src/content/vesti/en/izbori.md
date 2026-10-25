@@ -12,22 +12,80 @@ description: |-
 
   Throughout the entire election day, our website will be the place where you could track the latest news, live updates, and first-hand reports, brought to you from the ground by students across Serbia.
 timeline:
-  - datum: 2026-10-25T18:42:00
+  - naslov: Belgrade – irregularities from 17:00 to 18:00
+    datum: 2026-10-25T18:42:00
     important: false
     pin: false
     color: second
-  - datum: 2026-10-25T18:42:00
+    tekst: |-
+      
+
+      **Mladenovac**
+
+
+      - **Polling station 31:** Ballots were reportedly being put into the ballot box without verification, i.e. ballot box stuffing. An election monitor from the Student List – Students Win covered the ballot box and stopped the voting, after which they were physically attacked. The local electoral commission set off for the polling station.
+
+
+      **Voždovac**
+
+
+      - **Polling station 33:** Duplicate electoral registers were confiscated.
+  - naslov: East – irregularities resolved from 17:00 to 18:00
+    datum: 2026-10-25T18:42:00
     important: false
     pin: false
     color: third
-  - datum: 2026-10-25T18:41:00
+    tekst: |-
+      
+
+      **Petrovac na Mlavi**
+
+
+      - **Flat in the town centre:** Acting on a tip-off, mobile teams discovered a call centre in a flat in the centre of Petrovac na Mlavi. With our legal adviser present, the police took in for questioning three people who, according to the report, are employed by an institution in Stamnica that owns the flat.
+  - naslov: Kragujevac – irregularities from 17:00 to 18:00
+    datum: 2026-10-25T18:41:00
     important: false
     pin: false
     color: seventh
-  - datum: 2026-10-25T18:41:00
+    tekst: |-
+      
+
+      **Čačak**
+
+
+      - **Mrčajevci local community**, polling station 68: The envelopes had not been properly sealed. Voting was suspended pending a response from the Republic Electoral Commission (RIK).
+      - **Food and Hospitality School**, polling station 15: An attempt to smash the ballot boxes was prevented.
+
+
+      **Topola**
+
+
+      - **Polling station 29:** An attempt to photograph the electoral register was prevented.
+
+
+      **Kragujevac**
+
+
+      - **Veliko Polje local community**, polling station 63: An attempt to photograph a ballot paper was prevented.
+      - **Desimirovac local community**, polling station 129: Two parallel electoral registers were being kept; both were confiscated.
+  - naslov: North – irregularities resolved from 17:00 to 18:00
+    datum: 2026-10-25T18:41:00
     important: false
     pin: false
     color: fifth
+    tekst: |-
+      
+
+      **Kucura**
+
+
+      - **Polling stations 28 and 30:** Parallel electoral registers were confiscated.
+
+
+      **Vršac**
+
+
+      - A parallel electoral register was found in the car of SNS candidate Ivan Grujin. The public prosecutor and a forensic team went to the scene. A criminal complaint will be filed.
   - naslov: Turnout at 18.00 reached 64.2%
     datum: 2026-10-25T18:37:00
     important: true
