@@ -12,6 +12,22 @@ description: |-
 
   Throughout the entire election day, our website will be the place where you could track the latest news, live updates, and first-hand reports, brought to you from the ground by students across Serbia.
 timeline:
+  - datum: 2026-10-25T22:30:00
+    important: true
+    pin: true
+    color: first
+  - datum: 2026-10-25T20:05:00
+    important: false
+    pin: false
+    color: sixth
+  - datum: 2026-10-25T20:03:00
+    important: false
+    pin: false
+    color: fourth
+  - datum: 2026-10-25T20:00:00
+    important: false
+    pin: false
+    color: seventh
   - naslov: Polls closing
     datum: 2026-10-25T20:01:00
     important: false
@@ -29,6 +45,26 @@ timeline:
   - datum: 2026-10-25T19:17:00
     important: true
     pin: true
+    color: first
+  - datum: 2026-10-25T19:04:00
+    important: false
+    pin: false
+    color: first
+  - datum: 2026-10-25T19:04:00
+    important: true
+    pin: false
+    color: first
+  - datum: 2026-10-25T19:03:00
+    important: false
+    pin: false
+    color: fifth
+  - datum: 2026-10-25T19:02:00
+    important: false
+    pin: false
+    color: second
+  - datum: 2026-10-25T19:00:00
+    important: false
+    pin: false
     color: first
   - datum: 2026-10-25T18:47:00
     important: true
@@ -91,7 +127,7 @@ timeline:
     datum: 2026-10-25T18:42:00
     important: false
     pin: false
-    color: second
+    color: third
     tekst: |-
       **Petrovac na Mlavi**
 
