@@ -12,6 +12,10 @@ description: |-
 
   Throughout the entire election day, our website will be the place where you could track the latest news, live updates, and first-hand reports, brought to you from the ground by students across Serbia.
 timeline:
+  - datum: 2026-10-25T19:17:00
+    important: true
+    pin: true
+    color: first
   - datum: 2026-10-25T18:47:00
     important: true
     pin: false
@@ -56,11 +60,24 @@ timeline:
       **Voždovac**
 
       - **Polling station 33:** Duplicate electoral registers were confiscated.
+  - naslov: Belgrade – irregularities from 17:00 to 18:00
+    datum: 2026-10-25T18:42:00
+    important: false
+    pin: false
+    color: second
+    tekst: |-
+      **Mladenovac**
+        
+      - **Polling station 31:** Ballots were reportedly being put into the ballot box without verification, i.e. ballot box stuffing. An election monitor from the Student List – Students Win covered the ballot box and stopped the voting, after which they were physically attacked. The local electoral commission set off for the polling station.
+        
+      **Voždovac**
+        
+      - **Polling station 33:** Duplicate electoral registers were confiscated.
   - naslov: East – irregularities resolved from 17:00 to 18:00
     datum: 2026-10-25T18:42:00
     important: false
     pin: false
-    color: third
+    color: second
     tekst: |-
       **Petrovac na Mlavi**
 
@@ -69,7 +86,7 @@ timeline:
     datum: 2026-10-25T18:41:00
     important: false
     pin: false
-    color: seventh
+    color: third
     tekst: |-
       **Čačak**
 
