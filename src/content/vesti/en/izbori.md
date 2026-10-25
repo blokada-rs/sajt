@@ -12,33 +12,74 @@ description: |-
 
   Throughout the entire election day, our website will be the place where you could track the latest news, live updates, and first-hand reports, brought to you from the ground by students across Serbia.
 timeline:
-  - datum: 2026-10-25T13:35:00
+  - naslov: Turnout at 14.00 reached 46.3%
+    datum: 2026-10-25T14:16:00
     important: true
     pin: true
     color: first
-  - datum: 2026-10-25T13:15:00
+  - naslov: Turnout at 13.00 reached 41%
+    datum: 2026-10-25T13:35:00
+    important: true
+    pin: false
+    color: first
+  - naslov: Kragujevac – irregularities from 12:00 to 13:00
+    datum: 2026-10-25T13:15:00
     important: false
     pin: false
     color: first
-  - datum: 2026-10-25T13:15:00
+    tekst: |-
+      **Aranđelovac**
+
+      - Polling station 14, Pensioners' Association: Three attempts to photograph ballot papers were prevented.
+      - Ilija Garašanin Primary School: A duplicate electoral register was found at the Izvor Hotel.
+  - naslov: West – irregularities from 12:00 to 13:00
+    datum: 2026-10-25T13:15:00
     important: false
     pin: false
     color: first
-  - datum: 2026-10-25T13:15:00
+    tekst: |-
+      **Valjevo**
+
+      - Polling station 91: A parallel electoral register was removed.
+      - Polling station 6: A voter pushed an election monitor. The police are expected to arrive.
+
+      **Lajkovac**
+
+      - Polling station 3: Vote buying was reported at the home of the municipal president.
+  - naslov: Vojvodina – irregularities from 12:00 to 13:00
+    datum: 2026-10-25T13:15:00
     important: false
     pin: false
     color: first
-  - datum: 2026-10-25T13:15:00
+    tekst: |-
+      **Vrbas**
+
+      - Duplicate electoral registers were confiscated.
+
+      **Novi Sad**
+
+      - Polling station 179: Vote buying was prevented.
+
+      **Vršac**
+
+      - A duplicate electoral register was confiscated.
+  - naslov: Belgrade – irregularities from 12:00 to 13:00
+    datum: 2026-10-25T13:15:00
     important: false
     pin: false
     color: first
+    tekst: |-
+      **Palilula**
+
+      - Rade Drainac Primary School: A stolen ballot paper was confiscated. Carousel voting was prevented.
   - datum: 2026-10-25T12:30:00
     important: true
     pin: false
     color: first
     slike:
       - '@assets/images/sonja.webp'
-  - datum: 2026-10-25T12:30:00
+  - naslov: Turnout at 12.00 reached 34.4%
+    datum: 2026-10-25T12:30:00
     important: true
     pin: false
     color: first
