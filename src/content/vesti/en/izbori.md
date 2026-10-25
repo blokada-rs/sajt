@@ -12,6 +12,10 @@ description: |-
 
   Throughout the entire election day, our website will be the place where you could track the latest news, live updates, and first-hand reports, brought to you from the ground by students across Serbia.
 timeline:
+  - datum: 2026-10-25T16:30:00
+    important: true
+    pin: true
+    color: first
   - datum: 2026-10-25T15:29:00
     important: false
     pin: false
@@ -82,7 +86,7 @@ timeline:
   - naslov: Turnout at 14.00 reached 46.3%
     datum: 2026-10-25T14:16:00
     important: true
-    pin: true
+    pin: false
     color: first
   - naslov: Kragujevac – resolved irregularities from 1:00 to 2:00 PM
     datum: 2026-10-25T14:37:00
