@@ -20,7 +20,7 @@ timeline:
     tekst: |-
       Хвала вам на стрпљењу које сте нам до сад показали.
 
-      [Прошитајте писмо!](https://studenti.org.rs/vesti/izbori_pismo)
+      [Прочитајте писмо!](https://studenti.org.rs/vesti/izbori_pismo)
   - naslov: Србија је већ сатима будна!
     datum: 2026-10-25T14:37:00
     important: true
