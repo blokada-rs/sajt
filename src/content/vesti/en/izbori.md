@@ -12,28 +12,37 @@ description: |-
 
   Throughout the entire election day, our website will be the place where you could track the latest news, live updates, and first-hand reports, brought to you from the ground by students across Serbia.
 timeline:
-  - datum: 2026-10-26T13:28:00
+  - naslov: Citizens and students cleaning up the liberated Pinoeers Park
+    datum: 2026-10-26T13:28:00
     important: false
     pin: false
     color: first
-  - datum: 2026-10-26T10:00:00
+    videos:
+      - Z12FYV02Tmc
+    tekst: The park was a stronghold of the regime's armed henchmen for the length of the two-year protests.
+  - naslov: Whoever was lucky enought to wake up in Serbia this morning...
+    datum: 2026-10-26T10:00:00
     important: false
     pin: false
     color: first
-  - datum: 2026-10-26T00:01:00
+    tekst: Whoever was lucky enough to wake up in Serbia this morning can consider they've accomplished enough in their lives on this day. Insistin on anything more would be pretentious.
+  - naslov: Traditional Kolo Dance in Rakovica, a Belgrade Suburb
+    datum: 2026-10-26T00:01:00
     important: false
     pin: false
     color: first
     videos:
       - 4JqIrRmHAjI
-  - datum: 2026-10-26T23:46:00
+  - naslov: Celebrations at the Main Post Office
+    datum: 2026-10-26T23:46:00
     important: false
     pin: false
     color: first
     slike:
       - '@assets/images/_A240155.webp'
       - '@assets/images/IMG_20261026_002422.webp'
-  - datum: 2026-10-26T23:29:00
+  - naslov: Celebrations In Front of Parliament
+    datum: 2026-10-26T23:29:00
     important: false
     pin: false
     color: first
