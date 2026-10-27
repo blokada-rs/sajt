@@ -1,6 +1,6 @@
 ---
 link: odgovarace_ub
-title: Правда је достижна, одговараће те!
+title: Правда је достижна, одговараћете!
 live: false
 pubDate: 2026-10-27T21:19:00
 updatedDate: 2026-10-27T21:19:00
