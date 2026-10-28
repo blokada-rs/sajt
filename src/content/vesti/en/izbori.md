@@ -12,12 +12,14 @@ description: |-
 
   Throughout the entire election day, our website will be the place where you could track the latest news, live updates, and first-hand reports, brought to you from the ground by students across Serbia.
 timeline:
-  - datum: 2026-10-28T15:00:00
+  - naslov: 141 seats in Parliament
+    datum: 2026-10-28T15:00:00
     important: false
     pin: false
     color: first
     slike:
       - '@assets/images/sajt53.01.webp'
+    tekst: Based on 99.2% of the processed vote count, **Student List - Students Win** has won **53.01%** of the vote, which translates to **141 out of 250 seats in Parliament.**
   - naslov: Citizens and students cleaning up the liberated Pinoeers Park
     datum: 2026-10-26T13:28:00
     important: false
