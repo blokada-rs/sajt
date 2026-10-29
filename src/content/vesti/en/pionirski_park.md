@@ -52,12 +52,31 @@ timeline:
       > For the same reasons, the Deputy Chief Public Prosecutor at the Higher Public Prosecutor's Office, Miodrag Marković, is also called on to resign immediately and irrevocably.
 
       > The President of the Constitutional Court, Vladan Petrov, has acted with bias in favour of Aleksandar Vučić's regime throughout his term. Throughout the election campaign he acted as a spokesperson for the Serbian Progressive Party, not as a professor at the Faculty of Law, still less as a Constitutional Court judge, who is required to act impartially. The Student List therefore demands his immediate and irrevocable resignation as a judge and as President of the Constitutional Court.
-  - datum: 2026-10-29T12:06:00
+  - naslov: Svetlana Stanarević on the work of the security services
+    datum: 2026-10-29T12:06:00
     important: false
     pin: false
     color: first
     slike:
       - '@assets/images/IMG_7607.webp'
+    tekst: |-
+      > In view of the principles mentioned, and of the state's international obligation to protect citizens from all forms of torture and ill-treatment, Student List – Students Win demand the immediate dismissal of all police officers who have broken the law. Above all, this means the Head of the Criminal Police Directorate, Marko Kričak; the Commander of the Gendarmerie, Radoslav Repac; the Commander of the Special Anti-Terrorist Unit, Igor Žmirić; the Head of the Valjevo Police Directorate, Vladimir Jerinić; and the Head of the Technology Directorate, Goran Colić. It also means other staff who have violated the law and the bylaws governing police conduct, as well as the Assistant Minister and Head of the Internal Control Sector, Miroslav Paunović.
+
+      > Officers competent to lead these organisational units should be temporarily appointed in their place, so that the units can keep functioning without disruption in the period ahead.
+
+      > The Student List also demands that all senior officers and staff who were dismissed or transferred to other posts in the previous period without grounds, for political or other unprofessional reasons, be returned to their posts immediately.
+
+      > In addition, the Student List demands that all police officers who were members of the strike teams and other working groups be returned to them without delay, so that they can complete their work on cases already under way, and that they be allowed to work fully independently and without obstruction.
+
+      > Once these steps have been taken, the Police Director, Dragan Vasiljević, must resign immediately and irrevocably, since he has grossly violated all the ethical and legal principles his office binds him to.
+
+      > The BIA has so far acted as a party security service, not a state security service. The Student List therefore demands that the Director of the BIA, Vladimir Orlić, resign immediately and irrevocably. It also demands that all other BIA officers immediately stop activities aimed at discrediting political opponents and return to acting solely within their legal remit.
+
+      > The Student List demands the immediate and irrevocable resignation of the Director of the Military Security Agency, Major General Đuro Jovanić.
+
+      > Jovanić became head of the VBA after controversial extraordinary promotions. According to criminal complaints that have been filed, the VBA under his leadership put pressure on the Military Trade Union of Serbia and kept the family and lawyers of the union's president under surveillance. We ask the competent prosecutor's offices and the National Assembly's Committee on the Control of Security Services to examine these complaints urgently.
+
+      > We ask members of the VBA to stop the surveillance of and pressure on trade unionists, journalists, students and political opponents immediately, and to return solely to their legal remit.
   - naslov: Mirjana Nikolić on how the media operate
     datum: 2026-10-29T12:02:00
     important: false
@@ -67,18 +86,32 @@ timeline:
       - '@assets/images/IMG_7606.webp'
     tekst: |-
       > Citizens have the right to truthful, complete and impartial information. For years, the public service broadcaster has subordinated that right to the interests of the government. That is why we sent an open letter to the management of RTS and to the Council of the REM.
+
       > RTS: We demanded the resignations of the Director General of RTS, Manja Grčić, and of the Editor-in-Chief of the News Programme, Bojana Mlađenović. This demand has been met, but we are still demanding the resignation of the Deputy Director General, Dejan Jovanović. The reasons are selective reporting, the suppression of pluralism, the uncritical relaying of government messages, and the stigmatisation of students and citizens.
+
       > Interim management: Until new management is chosen in a lawful and transparent process, we propose an interim management agreed with the representative trade unions at RTS. Its task is to ensure continuity of work, editorial independence and the protection of journalists.
-      > REM: We ask the four members of the REM Council to explain publicly why they changed their position and voted against including Informer in election monitoring. We demand the publication of the minutes and of the individual votes. We expect the Council to deal with complaints within the legal deadlines and to supervise all media effectively, including the public service broadcasters. 
+
+      > REM: We ask the four members of the REM Council to explain publicly why they changed their position and voted against including Informer in election monitoring. We demand the publication of the minutes and of the individual votes. 
+
+      > We expect the Council to deal with complaints within the legal deadlines and to supervise all media effectively, including the public service broadcasters. 
+
       > We demand that the REM immediately open proceedings over the daily insults and the spread of hate speech, with citizens being called "scum" on TV Informer, and that it examine the violation of dignity and the suspected hate speech!
+
       > Deadline: We demand a public response within seven days.
       > National Assembly: One of our MPs' first priorities will be to fill the REM Council to its full complement of nine members, through a procedure that is lawful, transparent and based on expertise.
+
       > Telekom: We demand the immediate and irrevocable resignation of Vladimir Lučić, and the dismissal of everyone responsible for the decisions that put Telekom at the service of political influence and of unreasonable spending. 
+
       > We demand an immediate end to the squandering of money, a halt to private projects paid for by Telekom, a halt to unjustified payments, and proceedings against anyone found responsible for abuses. 
+
       > The money of a state-controlled company must not be a private fund for financing political propaganda and enriching privileged individuals.
+
       > Telekom is a distributor and must not be Serbia's editor-in-chief. Neither Telekom nor any other operator! 
+
       > No political protection and no bylaw can be stronger than the law and the Constitution! 
+
       > Article 49 of the Constitution states: "Any inciting or encouraging of racial, ethnic, religious or other inequality, hatred and intolerance is prohibited and punishable."
+
       > The open letter has already been submitted and delivered to RTS and the REM Council. We want media that serve citizens.
   - naslov: Student Filip Ubović opened the conference
     datum: 2026-10-29T11:59:00
@@ -89,11 +122,17 @@ timeline:
       - '@assets/images/IMG_7603.webp'
     tekst: |-
       > At the election, citizens gave a clear mandate for the rule of law, equality before the law and the liberation of institutions.
+
       > We are starting to carry out that mandate right away, without waiting for a government to be formed.
+
       > We call on employees of state institutions, courts, banks, public enterprises and the media to report any destruction of documents and any suspicious payments, contracts and orders.
+
       > In this we rely on the honourable and professional people inside the institutions: civil servants, managers, police officers, prosecutors, judges, journalists and others.
+
       > Many of you have stayed true to the law and to your profession even under pressure.
+
       > We call on you to keep liberating your institutions and to prevent any abuse that representatives of the outgoing government may attempt during the transition period.
+
       > Citizens, workers, managers, directors of state enterprises, instit
 ---
 
