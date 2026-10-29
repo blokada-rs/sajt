@@ -4,7 +4,7 @@ title: Реприза избора
 live: false
 pubDate: 2026-10-29T14:00:00
 updatedDate: 2026-10-29T14:00:00
-heroImage: '@assets/images/рсајт.webp'
+heroImage: '@assets/images/sajt-4.webp'
 archived: false
 description: Понављa се гласање на изборима за народне посланике, одржаним 25. октобра 2026. године.
 ---
