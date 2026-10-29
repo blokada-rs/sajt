@@ -7,6 +7,13 @@ updatedDate: 2026-10-28T20:22:00
 heroImage: '@assets/images/konferencijazamedije.webp'
 archived: false
 description: The Students in Blockade will hold a press conference on Thursday, 29 October, at 12 noon, in the liberated Pionirski Park in Belgrade.
+timeline:
+  - datum: 2026-10-29T11:59:00
+    important: false
+    pin: false
+    color: first
+    slike:
+      - '@assets/images/IMG_7603.webp'
 ---
 
 The Students in Blockade will hold a press conference on Thursday, 29 October, at 12 noon, in the liberated Pionirski Park in Belgrade.
