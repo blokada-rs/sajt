@@ -9,7 +9,6 @@ archived: false
 description: We know how important it is to keep the peace and our dignity. They will not force on us the image of students as violent people.
 ---
 
-A Possible Attempt of a Staged Attack on Pro Regime Media Outlet, Sources Said (naslov, ako treba)
 
 We have reason to believe that a certain interest group is trying to stage an incident in Belgrade tonight.
 
