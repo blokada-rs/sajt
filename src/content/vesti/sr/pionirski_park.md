@@ -1,7 +1,8 @@
 ---
 link: pionirski_park
 title: Конференција за медије у ослобођеном Пионирском парку
-live: true
+live: false
+live_embed: 455-PbDNE_Q
 pubDate: 2026-10-28T20:22:00
 updatedDate: 2026-10-28T20:22:00
 heroImage: '@assets/images/konferencijazamedije.webp'
