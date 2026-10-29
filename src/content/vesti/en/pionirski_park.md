@@ -1,7 +1,7 @@
 ---
 link: pionirski_park
 title: Press conference in the liberated Pionirski Park
-live: false
+live: true
 pubDate: 2026-10-28T20:22:00
 updatedDate: 2026-10-28T20:22:00
 heroImage: '@assets/images/konferencijazamedije.webp'
