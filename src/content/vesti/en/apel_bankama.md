@@ -27,6 +27,6 @@ The Student List remains fully committed to ensuring the timely and uninterrupte
 
 We reaffirm our commitment to transparent, constructive, and long-term cooperation with domestic and international financial institutions, in full respect of established legal and regulatory frameworks.
 
-We trust that the banking community will uphold the highest standards of professional responsibility in safeguarding Serbia’s financial stability and the interests of its citizens and international partners.
+**We trust that the banking community will uphold the highest standards of professional responsibility in safeguarding Serbia’s financial stability and the interests of its citizens and international partners.**
 
 Thank you for your attention and cooperation.
