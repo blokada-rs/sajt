@@ -43,25 +43,18 @@ Within 7 working days of the court's decision to open bankruptcy proceedings, th
 
 As regards the stability of the financial system, we believe that Alta Banka is the just the tip of the iceberg of corruption, but not the only case. There are lawful ways to prevent further instability, and we urge that they be taken as soon as possible to preserve financial stability at this moment:
 
-- \* Enhanced monitoring of the liquidity of all banks operating in Serbia.
-
-- \* Readiness of the National Bank of Serbia to provide liquidity instruments (funds) to all solvent and soundly run banks, in order to preserve the stability of the healthy part of the banking system.
-
-- \* Temporary measures at banks where it is established that there is an intention to bring them into an illiquid position.
-
-- \* A rapid response by the competent authorities and the prosecution, to establish individual responsibility for abuses, corruption and lack of oversight.
-
-- \* Timely informing of the public about the actions taken to preserve financial stability.
+- Enhanced monitoring of the liquidity of all banks operating in Serbia.
+- Readiness of the National Bank of Serbia to provide liquidity instruments (funds) to all solvent and soundly run banks, in order to preserve the stability of the healthy part of the banking system.
+- Temporary measures at banks where it is established that there is an intention to bring them into an illiquid position.
+- A rapid response by the competent authorities and the prosecution, to establish individual responsibility for abuses, corruption and lack of oversight.
+- Timely informing of the public about the actions taken to preserve financial stability.
 
 **As regards Alta Banka:**
 
-- \* Alta Banka's problems require a detailed investigation of its business over a number of years. In June 2026, the bank reported to the NBS a capital adequacy ratio of 17.92%, well above the statutory minimum. It must be established how its financial condition deteriorated, whether the financial statements faithfully reflected the risks, and whether the NBS reacted in time.
-
-- \* The assets of the Alta Group must be examined. We demand a review of all large loans to related parties, of guarantees issued, and of the possibilities for collecting receivables or recovering unlawfully transferred funds, in order to give depositors and creditors the greatest possible protection.
-
-- \* It must be established who made decisions about the money of public enterprises. In particular, we demand an explanation of the decision to move the collection of Elektroprivreda Srbije's bills to Alta Banka from July 2025, and of the terms on which EPS and other public enterprises did business with the Alta Group.
-
-- \* Responsibility must be individual and complete. We demand an independent analysis of the loan portfolio and the publication of a chronology of the NBS's supervisory measures, so that the responsibility of the owners, the management and the regulator can be separated. If criminal offences are established, those responsible must be prosecuted, with penalties that reach 10 to 12 years in prison for the gravest forms of certain abuses.
+- Alta Banka's problems require a detailed investigation of its business over a number of years. In June 2026, the bank reported to the NBS a capital adequacy ratio of 17.92%, well above the statutory minimum. It must be established how its financial condition deteriorated, whether the financial statements faithfully reflected the risks, and whether the NBS reacted in time.
+- The assets of the Alta Group must be examined. We demand a review of all large loans to related parties, of guarantees issued, and of the possibilities for collecting receivables or recovering unlawfully transferred funds, in order to give depositors and creditors the greatest possible protection.
+- It must be established who made decisions about the money of public enterprises. In particular, we demand an explanation of the decision to move the collection of Elektroprivreda Srbije's bills to Alta Banka from July 2025, and of the terms on which EPS and other public enterprises did business with the Alta Group.
+- Responsibility must be individual and complete. We demand an independent analysis of the loan portfolio and the publication of a chronology of the NBS's supervisory measures, so that the responsibility of the owners, the management and the regulator can be separated. If criminal offences are established, those responsible must be prosecuted, with penalties that reach 10 to 12 years in prison for the gravest forms of certain abuses.
 
 ## Change of the EPS account for paying electricity bills
 
