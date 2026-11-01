@@ -1,6 +1,6 @@
 ---
 link: science_pametni
-title: 'Science: Serbia has just elected the smartest parliament in the world'
+title: 'Science: Serbia Has Just Elected the Smartest Parliament in the World'
 live: false
 pubDate: 2026-10-31T23:58:00
 updatedDate: 2026-11-01T02:15:00
