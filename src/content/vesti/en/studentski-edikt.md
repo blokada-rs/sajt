@@ -3,8 +3,11 @@ link: studentski-edikt
 title: The Student Edict
 live: false
 pubDate: 2025-02-28T12:16:00
+updatedDate: 2026-11-03T13:17:00
 heroImage: '@assets/images/studentski-edikt.jpg'
+archived: false
 ---
+
 An edict is a decision which brings about new rules. Now the students of Serbia are adopting their own - the Student Edict, a message that we will now longer accept injustice, corruption and an inefficient system which limits us.
 
 Some traces fade, while some become a part of history. We invite you to write the pages of the future together and leave an irremovable sign of our battle.
