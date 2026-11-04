@@ -2,7 +2,7 @@
 link: konferencija_4_11
 title: Press conference on November 4th
 live: true
-live_embed: ththQhlZAEwac
+live_embed: thQhlZAEwac
 pubDate: 2026-11-03T12:05:00
 updatedDate: 2026-11-03T12:05:00
 heroImage: '@assets/images/kof za medijie bez lokacije novo.webp'
