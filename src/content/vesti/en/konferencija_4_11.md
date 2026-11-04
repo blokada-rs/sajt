@@ -12,6 +12,12 @@ description: |-
   November 4th
   2PM
 timeline:
+  - datum: 2026-11-04T14:06:00
+    important: false
+    pin: false
+    color: first
+    slike:
+      - '@assets/images/IMG_7699.webp'
   - datum: 2026-11-04T14:00:00
     important: false
     pin: false
