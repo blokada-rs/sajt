@@ -11,6 +11,13 @@ description: |-
   Press conference
   November 4th
   2PM
+timeline:
+  - datum: 2026-11-04T13:56:00
+    important: false
+    pin: false
+    color: first
+    slike:
+      - '@assets/images/IMG_7697.webp'
 ---
 
 ## Press conference: key issues for Serbia's financial and energy stability
