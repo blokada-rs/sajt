@@ -1,5 +1,5 @@
 ---
-link: intersi_banka
+link: interеsi_banka
 title: Грађани не смеју да плаћају цену пораза!
 live: false
 pubDate: 2026-11-05T22:30:00
