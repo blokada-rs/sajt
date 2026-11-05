@@ -1,7 +1,7 @@
 ---
 link: konferencija_4_11
 title: Конференција за медије 4.11.
-live: true
+live: false
 live_embed: thQhlZAEwac
 pubDate: 2026-11-03T12:05:00
 updatedDate: 2026-11-03T12:05:00

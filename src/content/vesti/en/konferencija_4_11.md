@@ -1,7 +1,7 @@
 ---
 link: konferencija_4_11
 title: Press conference on November 4th
-live: true
+live: false
 live_embed: thQhlZAEwac
 pubDate: 2026-11-03T12:05:00
 updatedDate: 2026-11-03T12:05:00
