@@ -5,8 +5,6 @@ description: The exploration and exploitation of mineral resources must be based
 order: 11
 ---
 
-# Mining and geology
-
 For years, mining in Serbia has operated by rules that cannot be checked. On 23 April 2026, the National Assembly adopted the Strategy for the Management of Mineral and Other Geological Resources, but the action plan that the Strategy itself promised within ninety days has not been published, so not a single step stands between the 2022 baseline values and the 2040 targets. The institutions for exploration, exploitation and supervision exist, but they have neither the people nor the equipment to do their job. **Our goal is for it to be known what we have underground, what it is worth, who measured it and how much of it stays in Serbia**, and for **most of the mineral raw materials extracted to be processed in Serbia, including the final stage of processing.**
 
 ## Rules that tell us what we have
