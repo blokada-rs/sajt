@@ -5,8 +5,6 @@ description: Economic policy must encourage domestic manufacturing, innovations,
 order: 2
 ---
 
-# Economy and finance
-
 **The cheap-labour model is exhausted**: there are no longer any workers left for foreign factories that pay the minimum wage. We are not offering a new transition in which a minority grows rich at the expense of the majority. **There will be no sell-off of strategic enterprises, the dinar will remain stable, and confiscated assets will be put to socially useful purposes.** What works in the state, we will keep and complete.
 
 What does not work, we will change through rules that apply to everyone. **Every contract the state signs will be public. Public money will be safeguarded by institutions. Public enterprises will be run by experts from a public list.** We will introduce more progressive taxation, and incentives will go to companies that raise average wages.
