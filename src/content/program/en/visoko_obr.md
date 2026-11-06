@@ -5,8 +5,6 @@ description: Universities must have academic autonomy, stable funding, and condi
 order: 7
 ---
 
-# Higher education and science
-
 For years, universities and institutes in Serbia have worked with too little money, outdated equipment and management chosen by politics. Higher education increasingly resembles a market, and science is treated in the budget as a cost. Fixed-term contracts that last right up to election to the rank of professor teach academic staff to keep quiet. The recently introduced SPIRI system has taken away faculties' control over the money they earn themselves. **We are also building a programme to bring researchers back from abroad.**
 
 ## The university chooses its own leadership
