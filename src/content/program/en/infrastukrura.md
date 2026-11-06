@@ -5,8 +5,6 @@ description: Infrastructure should connect people and places and answer to the p
 order: 3
 ---
 
-# Infrastructure, urban planning, telecommunications and transport
-
 Today, decisions about what gets built, where and for whom are made outside the institutions. **Contracts for the largest public projects have been declared confidential, special laws bypass the general ones, plans are adapted to suit investors, and public participation has been reduced to an online formality.** Cities are expanding without enough water supply, schools and transport. Serbia has had no spatial plan for six years, maintenance of existing structures has been neglected, and public transport is ageing and becoming less and less reliable. **We are returning decisions about construction, spatial management, networks and transport to the institutions and placing them under public control.** Contracts will be available to the public, special laws will be repealed or brought into line with the general ones, and **maintaining existing infrastructure and improving public transport will take priority over new megaprojects.**
 
 ## Construction
