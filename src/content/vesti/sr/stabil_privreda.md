@@ -1,6 +1,6 @@
 ---
 link: stabil_privreda
-title: Ситуацију у компанији Идеа Маркети
+title: Ситуација у компанији Идеа Маркети
 live: false
 pubDate: 2026-11-09T18:18:00
 updatedDate: 2026-11-09T18:18:00
