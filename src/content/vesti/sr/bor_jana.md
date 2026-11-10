@@ -1,5 +1,5 @@
 ---
-link: bor_jana
+link: bor_jama
 title: 'Јама Бор: Захтев за обуставу'
 live: false
 pubDate: 2026-11-10T12:14:00
