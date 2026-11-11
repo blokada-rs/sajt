@@ -1,6 +1,6 @@
 ---
 link: dez_konj
-title: Одговор ДезИнформеу
+title: Одговор ДезИнформеру
 live: false
 pubDate: 2026-11-11T11:36:00
 updatedDate: 2026-11-11T11:36:00
