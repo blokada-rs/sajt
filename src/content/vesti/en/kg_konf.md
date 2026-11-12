@@ -13,6 +13,6 @@ The press conference, to be held on Friday, **13 November, starting at 18:00**, 
 
 **The City of Kragujevac** has faced a number of issues, such as:
 
-1. Preventing public-sector hiring where there is no real need, which **Stefan Stevanović**, a young lawyer from Kragujevac, will tell us more about;
+1. Public-sector hiring where there is no real need, which **Stefan Stevanović**, a young lawyer from Kragujevac, will tell us more about;
 2. Preventing the spreading of insecurity among citizens and destabilisation, which will be addressed by **Jugoslav Ristić**, a long-time trade union activist, former president of the Confederation of Autonomous Trade Unions of Kragujevac, and a retired worker of the "Zastava Arms" factory;
 3. Raising citizens' awareness of the importance of workers' rights issues, which **Matija Lazarević**, a student at the Faculty of Law of the University of Kragujevac, will tell us more about.
