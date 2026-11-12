@@ -14,7 +14,7 @@ linkovi:
     link: https://www.instagram.com/studenti.palilula/
   - type: twitter
     naslov: Twitter профил
-    link: https://x.com/studentpalilula
+    link: https://x.com/Palilulastdnt
   - type: facebook
     naslov: Facebook профил
     link: https://www.facebook.com/share/1Q1sfoXrFq/?mibextid=wwXIfr
