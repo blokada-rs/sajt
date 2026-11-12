@@ -25,4 +25,7 @@ linkovi:
   - type: mail
     naslov: studenti.etf.pr@gmail.com
     link: mailto:studenti.etf.pr@gmail.com
+  - type: web-bitno
+    naslov: Вук фондација
+    link: https://vukfondacija.com/
 ---
