@@ -21,7 +21,7 @@ linkovi:
     link: https://www.youtube.com/@etf_u_blokadi
   - type: donations
     naslov: Донације за свратишта
-    link: http://cim.org.rs/donacije/donacija/
+    link: https://cim.org.rs/donacije/donacija/
   - type: mail
     naslov: studenti.etf.pr@gmail.com
     link: mailto:studenti.etf.pr@gmail.com

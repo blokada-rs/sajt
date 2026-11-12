@@ -6,6 +6,9 @@ linkovi:
   - type: mail
     naslov: vlasotince@studenti.org.rs
     link: mailto:vlasotince@studenti.org.rs
+  - type: mail
+    naslov: vlablokada@proton.me
+    link: mailto:vlablokada@proton.me
   - type: instagram
     naslov: Instagram профил
     link: https://www.instagram.com/vlasotinceuzstudente/
