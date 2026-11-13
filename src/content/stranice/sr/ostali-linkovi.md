@@ -4,6 +4,9 @@ description: Листа најкориснијих линкова
 najnovije_vesti: Најновије вести
 linkovi:
   - type: web-bitno
+    naslov: Сиже Програма
+    link: https://studenti.org.rs/program
+  - type: web-bitno
     naslov: Од победе до Владе
     link: https://studenti.org.rs/pvodic
   - type: web-bitno
