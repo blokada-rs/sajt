@@ -8,8 +8,8 @@ linkovi:
     link: mailto:sopot@studenti.org.rs
   - type: instagram
     naslov: Instagram профил
-    link: https://www.instagram.com/sopotprica
+    link: https://www.instagram.com/studentisopota
   - type: facebook
     naslov: Facebook профил
-    link: https://www.facebook.com/share/g/1JQmhNkFR9/
+    link: https://www.facebook.com/share/1CMHXofP8j/
 ---
