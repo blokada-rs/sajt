@@ -14,8 +14,8 @@ linkovi:
     link: https://x.com/studentila
   - type: facebook
     naslov: Facebook профил
-    link: https://www.facebook.com/studenti.lazarevca.2025
+    link: https://www.facebook.com/share/1cxsjRLKNY/
   - type: viber
     naslov: Viber заједница
-    link: https://invite.viber.com/?g2=AQBOgikGsuGkMVaP%2Fzg6seXhg%2Fzht5A67ad%2F87Y55YYLvwv8rNa3t3C5cHJqc4Rm
+    link: https://invite.viber.com/?g2=AQAaBHxVaepfBVaP%2FziSVuvnsJz27%2F8wsoYFIWtb%2B0y8GrKDKrobaaS5lfx3N1mX
 ---
