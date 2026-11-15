@@ -28,24 +28,22 @@ program_opis: |-
   A 2024. november 1-jei tragédiát követő hetekben a diákok elfoglalták az egyetemi karokat, és az egész Szerbiában tartott plenáris üléseken elfogadtak egy követeléscsomagot, amely a mai napig a diákmozgalom sarokköve. Az idő múlásával egyre világosabbá vált, hogy a diákok követeléseiben felvetett kérdések elválaszthatatlanok az ország jövőjétől. Ezért 2025 májusának elején a diákmozgalom előrehozott parlamenti választásokat követelt, ami egy új szakaszt jelölt, amelyben a diákok a polgárokkal együtt elkezdték meghatározni, milyen Szerbiát akarunk és milyenre érdemelünk.
 
   Ma az a feladatunk, hogy ezt az energiát és egységet egy világos jövőképbe és annak megvalósítását szolgáló konkrét lépésekbe alakítsuk át. A Diák Lista viszi tovább ezt a jövőképet, mint e út hajtóerejét.
-
-  Translated with DeepL.com (free version)
 program_description: Íme a hallgatói politikai program összefoglalása!
 notifications_in_app: |-
-  **Instructions for enabling notifications on the website if you access it via social media:**
+  **Útmutató az értesítések engedélyezéséhez a weboldalon, ha azt közösségi médián keresztül éred el:**
 
-  1. Click on the “three dots” icon in the top-right corner of the screen
-  2. Open in browser
-  3. Click on “Turn on notifications” in the top-right corner of the screen
+  1. Kattints a képernyő jobb felső sarkában található „három pont” ikonra
+  2. Nyisd meg a böngészőben
+  3. Kattints a képernyő jobb felső sarkában található „Értesítések bekapcsolása” gombra
 notifications_safari: |-
-  **Instructions for enabling notifications for iPhone users:**
+  **Utasítások az értesítések engedélyezéséhez iPhone-felhasználók számára:**
 
-  1. Click on the “three dots” icon in the lower right corner of the screen
-  2. Share
-  3. View more
-  4. Add to home screen
-  5. Add (upper right corner of the screen)
-  6. The phone will return you to the home screen, and you will see a new icon (Students win)
-  7. Open the app by clicking on the icon
-  8. In the upper right corner, click on “Turn on notifications”
+  1. Kattints a képernyő jobb alsó sarkában található „három pont” ikonra
+  2. Megosztás
+  3. További lehetőségek
+  4. Hozzáadás a kezdőképernyőhöz
+  5. Hozzáadás (a képernyő jobb felső sarkában)
+  6. A telefon visszatér a kezdőképernyőre, és megjelenik egy új ikon (Students win)
+  7. Nyissa meg az alkalmazást az ikonra kattintva
+  8. A jobb felső sarokban kattintson az „Értesítések bekapcsolása” gombra
 ---
