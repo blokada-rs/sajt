@@ -7,6 +7,8 @@ linkovi:
     link: /vesti
   - naziv: Diaspora
     link: /dijaspora
+  - naziv: SUSS
+    link: /suss
   - naziv: Demands
     link: /zahtevi
   - naziv: Affairs

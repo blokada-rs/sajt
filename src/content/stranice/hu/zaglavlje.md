@@ -7,6 +7,8 @@ linkovi:
     link: /vesti
   - naziv: Diaszpóra
     link: /dijaspora
+  - naziv: SUSS
+    link: /suss
   - naziv: Követelései
     link: /zahtevi
   - naziv: Ügyek
