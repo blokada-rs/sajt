@@ -11,7 +11,10 @@ studenti_u_blokadi: Student blockades
 footer: Studentska lista - Studenti pobeđuju
 pojedinacni_fakulteti: Faculty accounts
 pratite_live: Watch us live
-vesti_opis: Read latest news!
+vesti_opis: |-
+  Follow the latest news, announcements, activities, protests, and live student reporting.
+
+  Our goal is to provide a reliable source of information and a platform to inform the public about topics of importance to students and society as a whole.
 najnovija_vest: Latest news
 afere_description: Affairs
 vesti_description: See latest news!
