@@ -4,7 +4,7 @@ title: Celebrating Algeria's National Day
 live: false
 pubDate: 2026-11-15T22:08:00
 updatedDate: 2026-11-15T22:08:00
-heroImage: '@assets/images/nnn.webp'
+heroImage: '@assets/images/hasahaahha.webp'
 archived: false
 description: Students and representatives of the Student List – Students Win at the celebration of Algeria's National Day
 ---

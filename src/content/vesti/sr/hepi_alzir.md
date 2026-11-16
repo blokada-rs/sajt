@@ -4,7 +4,7 @@ title: Обележавање Националног празника Алжир
 live: false
 pubDate: 2026-11-15T22:08:00
 updatedDate: 2026-11-15T22:08:00
-heroImage: '@assets/images/nnn.webp'
+heroImage: '@assets/images/hasahaahha.webp'
 archived: false
 description: Студенти и представници Студентске листе – Студенти побеђују на обележавању Националног празника Алжира
 ---
