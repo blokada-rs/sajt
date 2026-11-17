@@ -105,6 +105,23 @@ const map = () =>
       .optional(),
   ]);
 
+const timeline = () => list_field("timeline", "Tajmlajn", [
+    string_field("naslov", "Naslov").optional(),
+    datetime_field("datum", "Datum").optional(),
+    bool_field("important", "Bitno").optional(),
+    bool_field("pin", "Pin").optional(),
+    color(),
+    list_field("videos", "Video IDs", [string_field("id", "ID")])
+      .singular("Video ID")
+      .optional(),
+    list_field("slike", "Slike", [image_field("slike", "Slike")])
+      .singular("Slika")
+      .optional(),
+    markdown_field("tekst", "Tekst").optional(),
+  ])
+    .add_to_top()
+    .optional();
+
 const vesti = folder_collection(
   "vesti",
   "Vesti",
@@ -122,22 +139,7 @@ const vesti = folder_collection(
     map().i18n("duplicate").optional(),
     text_field("description", "Opis").optional(),
     markdown_field("body", "Tekst"),
-    list_field("timeline", "Tajmlajn", [
-      string_field("naslov", "Naslov").optional(),
-      datetime_field("datum", "Datum").optional(),
-      bool_field("important", "Bitno").optional(),
-      bool_field("pin", "Pin").optional(),
-      color(),
-      list_field("videos", "Video IDs", [string_field("id", "ID")])
-        .singular("Video ID")
-        .optional(),
-      list_field("slike", "Slike", [image_field("slike", "Slike")])
-        .singular("Slika")
-        .optional(),
-      markdown_field("tekst", "Tekst").optional(),
-    ])
-      .add_to_top()
-      .optional(),
+    timeline(),
   ],
 )
   .slug("{{fields.link}}")
@@ -225,6 +227,11 @@ const stranice = file_collection("stranice", "Stranice", "description", [
       link_list(),
     ],
   ),
+
+  file("aktivnosti", "Aktivnosti", "src/content/stranice", "aktivnosti.md", [
+    string_field("aktivnosti", "Aktivnosti"),
+    timeline(),
+  ]),
 
   file("ostalo", "Ostalo", "src/content/stranice", "ostalo.md", [
     string_field("akcije", "Akcije"),
