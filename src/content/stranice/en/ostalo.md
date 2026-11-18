@@ -35,7 +35,7 @@ program_opis: |-
   <div class="details-list">
 
   <details>
-  <summary>## What We Believe In</summary>
+  <summary>What We Believe In</summary>
   <div class="content">
   This document is the summary of the full Student Programme which we, the students in blockade, adopted as our guiding light in the struggle against the longstanding political crisis in the Republic of Serbia. We believe that a thorough reform of the current authoritarian system of corruption, poverty, inequality, and exploitation of humans and nature, [a reform] led by knowledge, responsibility, and the collaboration of politics and people can renew institutions of this country and restore the trust in them that has long been lost.
 
@@ -44,7 +44,7 @@ program_opis: |-
   </details>
 
   <details>
-  <summary>### Our guides on this path are:</summary>
+  <summary>Our guides on this path are:</summary>
   <div class="content">
   **Responsibility and justice.** The law must apply to all equally and be the expression of the people’s will. No individual person or institution can be above responsibility, regardless of political influences or assets. The judiciary must begin to function.
 
@@ -61,12 +61,12 @@ program_opis: |-
   **Community and solidarity.** We want a society of mutual care, in which nobody is neglected or excluded.
 
   **Ecological sustainability.** The relationship to water, air, and land is the reflection of our dignity and our relationship to future generations. We must urgently prevent the continued devastation of the environment; the rich natural environment of Serbia deserves to be restored and additionally protected. Clean water and air are basic needs and rights of all people. Nature is a public good, and everybody has a duty to take care of nature. Therefore, the principle of ecological sustainability must be consistently applied across the economy, energy, mining, agriculture, and urban planning.
-
-  The ultimate goal of our political activity is that, by the time we leave office, the institutions and citizens will be far better equipped to govern themselves. Only a truly free Serbia can continue on.
   </div>
   </details>
 
   </div>
+
+  The ultimate goal of our political activity is that, by the time we leave office, the institutions and citizens will be far better equipped to govern themselves. Only a truly free Serbia can continue on.
 program_description: We present to you a summary of the student programme!
 notifications_in_app: |-
   **Instructions for enabling notifications on the website if you access it via social media:**
