@@ -12,7 +12,7 @@ timeline:
     tekst: Представници Студентске листе – Студенти побеђују Дејан Шошкић, Јасмина Ђорђевић и  Владан Јовановић састали су се са делегацијом Француске.
   - naslov: Састанцима са представницима Француске, Немачке и Савета Европе
     datum: 2026-11-18T00:00:00
-    important: true
+    important: false
     pin: false
     color: first
     tekst: |-
@@ -47,7 +47,7 @@ timeline:
       Професор Александар Бауцал одржао је говор, који је испраћен аплаузом присутних. Том приликом, наши представници имали су прилику да се састану и са европском комесарком за проширење.
   - naslov: Обележавање Националног празника Алжира
     datum: 2026-11-16T00:00:00
-    important: true
+    important: false
     pin: false
     color: first
     tekst: |-
@@ -56,7 +56,7 @@ timeline:
       [Прочитајте више](https://studenti.org.rs/vesti/hepi_alzir)
   - naslov: Састанак са послаником Европског парламента
     datum: 2026-11-14T00:00:00
-    important: true
+    important: false
     pin: false
     color: first
     tekst: |-
@@ -65,7 +65,7 @@ timeline:
       [Прочитајте више](https://studenti.org.rs/vesti/ep_bg/)
   - naslov: Састанак са делегацијом Египта
     datum: 2026-11-13T00:00:00
-    important: true
+    important: false
     pin: false
     color: first
     tekst: |-
@@ -76,7 +76,7 @@ timeline:
       [Прочитајте више](https://studenti.org.rs/vesti/egipat_delegacija/)
   - naslov: Састанак са делегацијом Канаде
     datum: 2026-11-12T00:00:00
-    important: true
+    important: false
     pin: false
     color: first
     tekst: |-
@@ -85,7 +85,7 @@ timeline:
       [Прочитајте више](https://studenti.org.rs/vesti/kanada_delegacija)
   - naslov: Састанци са делегацијама САД и Италије
     datum: 2026-11-12T00:00:00
-    important: true
+    important: false
     pin: false
     color: first
     tekst: |-
@@ -94,7 +94,7 @@ timeline:
       [Прочитајте више](https://studenti.org.rs/vesti/ita_usa)
   - naslov: Посета Косову и Метохији
     datum: 2026-11-12T00:00:00
-    important: true
+    important: false
     pin: false
     color: first
     tekst: |-

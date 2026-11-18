@@ -9,8 +9,9 @@ type Props = {
   timeline: CollectionEntry<"vesti">["data"]["timeline"];
   border?: "light" | "dark";
   time?: boolean
+  shrink?: boolean
 };
-const { timeline, border = "light", time = true } = Astro.props;
+const { timeline, border = "light", time = true, shrink = true } = Astro.props;
 
 const { lang } = Astro.params;
 const { frontmatter } = await file("ostalo", lang);
@@ -54,7 +55,7 @@ const { frontmatter } = await file("ostalo", lang);
   </div>
 )}
 
-{(timeline ?? []).filter(({ important }) => !important).length > 6 && <script>
+{shrink && (timeline ?? []).filter(({ important }) => !important).length > 6 && <script>
   const timeline = document.querySelector(".desavanja") as HTMLElement;
   timeline?.classList.add("short");
 
