@@ -3,11 +3,16 @@ link: generalstab
 title: Komplex des Generalstabs und des Verteidigungsministeriums in Belgrad
 ---
 
+
+
+Nur zwei Wochen nach der Tragödie am Bahnhof von Novi Sad nutzten hochrangige Vertreter der Exekutive den kollektiven Schock der Öffentlichkeit als Vorwand, um im Geheimen und unter Umgehung sowohl der offiziellen Experten als auch der Fachwelt bei einer Regierungssitzung verfassungswidrige und rechtswidrige Beschlüsse durchzusetzen. Mit diesen Beschlüssen wurde dem Komplex des Generalstabs und des Verteidigungsministeriums in Belgrad der Status als „unbewegliches Kulturgut“ aberkannt.
+
+<br />
+
 <Video id="dsQ51EAtf38" />
 
 <br />
 
-Nur zwei Wochen nach der Tragödie am Bahnhof von Novi Sad nutzten hochrangige Vertreter der Exekutive den kollektiven Schock der Öffentlichkeit als Vorwand, um im Geheimen und unter Umgehung sowohl der offiziellen Experten als auch der Fachwelt bei einer Regierungssitzung verfassungswidrige und rechtswidrige Beschlüsse durchzusetzen. Mit diesen Beschlüssen wurde dem Komplex des Generalstabs und des Verteidigungsministeriums in Belgrad der Status als „unbewegliches Kulturgut“ aberkannt.
 
 Obwohl einschlägige Experten für Denkmalpflege betonten, dass diese Bauwerke ihren Denkmalwert nicht verloren haben, wurden die umstrittenen Entscheidungen dennoch ohne fachliche Analyse, ohne Vorschläge der zuständigen Institutionen und ohne jegliche Rechtsgrundlage getroffen. All dies geschah, um den Weg für den Bau des ersten Trump-Hotels in Europa zu ebnen – im Rahmen einer Vereinbarung mit Jared Kushner und eines Abkommens, das unter völliger Intransparenz gegenüber der Öffentlichkeit geschlossen wurde.
 
