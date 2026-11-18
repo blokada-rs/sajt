@@ -1,5 +1,5 @@
 ---
-naslov: Students Win
+naslov: Egyetemi  nyertek
 linkovi:
   - naziv: Választások
     link: /izbori
