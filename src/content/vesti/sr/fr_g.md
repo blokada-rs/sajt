@@ -49,4 +49,4 @@ description: У наредном периоду планирани су суср
 
 **Студенти победише!**
 
-Наше [**активности**](https://studenti.org.rs/aktivnosti)**.**
+Наше **[активности](https://studenti.org.rs/aktivnosti)**.
