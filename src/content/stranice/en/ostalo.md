@@ -32,14 +32,20 @@ program_opis: |-
 
   Ahead of us today is the task to transform all of that energy and togetherness into a clear vision of the future and into concrete steps towards their realisation. The Student List is the continuation of that path.
 
-  ## What We Believe In
+  <div class="details-list">
 
+  <details>
+  <summary>## What We Believe In</summary>
+  <div class="content">
   This document is the summary of the full Student Programme which we, the students in blockade, adopted as our guiding light in the struggle against the longstanding political crisis in the Republic of Serbia. We believe that a thorough reform of the current authoritarian system of corruption, poverty, inequality, and exploitation of humans and nature, [a reform] led by knowledge, responsibility, and the collaboration of politics and people can renew institutions of this country and restore the trust in them that has long been lost.
 
   The key to our vision is the wish for institutions to operate properly. The student-civic struggle has shown that institutions work best when they are monitored by the people and people actively participate in them. Alienated institutions, even if seemingly operating in the public interest, become breeding grounds for corruption and for the interests of domestic and foreign big capital. We believe in institutions which work for the people because they come from the people and require the people’s participation to function at all. That thought permeates every part of our movement, our List, and every programmatic solution we offer.
+  </div>
+  </details>
 
-  Our guides on this path are:
-
+  <details>
+  <summary>### Our guides on this path are:</summary>
+  <div class="content">
   **Responsibility and justice.** The law must apply to all equally and be the expression of the people’s will. No individual person or institution can be above responsibility, regardless of political influences or assets. The judiciary must begin to function.
 
   **Equality and democracy.** Students do not have a leader, and all [students] are equal. In the same way, their list does not have a leader, and all candidates on it are equals. Long-term reforms mean encouraging citizens to get involved in the operations of institutions and to change them from below, while the role of the government is to encourage and guide that dialogue. All authoritarian and repressive elements of the government must be abolished.
@@ -57,6 +63,10 @@ program_opis: |-
   **Ecological sustainability.** The relationship to water, air, and land is the reflection of our dignity and our relationship to future generations. We must urgently prevent the continued devastation of the environment; the rich natural environment of Serbia deserves to be restored and additionally protected. Clean water and air are basic needs and rights of all people. Nature is a public good, and everybody has a duty to take care of nature. Therefore, the principle of ecological sustainability must be consistently applied across the economy, energy, mining, agriculture, and urban planning.
 
   The ultimate goal of our political activity is that, by the time we leave office, the institutions and citizens will be far better equipped to govern themselves. Only a truly free Serbia can continue on.
+  </div>
+  </details>
+
+  </div>
 program_description: We present to you a summary of the student programme!
 notifications_in_app: |-
   **Instructions for enabling notifications on the website if you access it via social media:**
