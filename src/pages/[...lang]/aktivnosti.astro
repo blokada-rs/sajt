@@ -2,11 +2,11 @@
 import Timeline from "@components/Timeline.astro";
 import Base from "@layouts/Base.astro";
 
-import { file, langs } from "@scripts/i18n";
+import { file,langs } from "@scripts/i18n";
 const { lang } = Astro.params;
 
 const { frontmatter } = await file("ostalo", lang);
-const { frontmatter: aktivnosti } = await file("aktivnosti", lang);
+const { frontmatter: aktivnosti, Content } = await file("aktivnosti", lang);
 
 export async function getStaticPaths() {
   return langs.map((lang) => ({ params: { lang } }));
@@ -15,11 +15,12 @@ export async function getStaticPaths() {
 
 <Base
   title={`${aktivnosti.aktivnosti} | ${frontmatter.studenti_u_blokadi}`}
-  description={frontmatter.afere_description}
+  description={aktivnosti.description}
 >
-  <div class="flex">
+  <section>
     <h1>{aktivnosti.aktivnosti}</h1>
-  </div>
+    <Content />
+  </section>
   <section>
     <Timeline timeline={aktivnosti.timeline} />
   </section>

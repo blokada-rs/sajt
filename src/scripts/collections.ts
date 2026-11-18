@@ -230,6 +230,8 @@ const stranice = file_collection("stranice", "Stranice", "description", [
 
   file("aktivnosti", "Aktivnosti", "src/content/stranice", "aktivnosti.md", [
     string_field("aktivnosti", "Aktivnosti"),
+    text_field("description", "Opis"),
+    markdown_field("body", "Body"),
     timeline(),
   ]),
 
