@@ -1,4 +1,4 @@
-import type { AstroComponentFactory } from "astro/runtime/server";
+import type { AstroComponentFactory } from "astro/runtime/server/index.js";
 import {
   type CollectionEntry,
   type DataEntryMap,
@@ -14,11 +14,10 @@ const fallbackLanguages = ["en", "sr-lat", "sr"];
 export async function collectionIDs<
   T extends
     | "vesti"
-    | "akcije"
     | "afere"
     | "linkovi"
     | "specijalne_stranice"
-    | "programmm",
+    | "programmmm",
 >(collection: T): Promise<string[]> {
   const all = (await getCollection(collection)).map(
     (collection) => collection.id.split("/")[1],
@@ -30,11 +29,10 @@ export async function collectionIDs<
 export async function collection<
   T extends
     | "vesti"
-    | "akcije"
     | "afere"
     | "linkovi"
     | "specijalne_stranice"
-    | "programmm",
+    | "programmmm",
 >(
   collection: T,
   lang: string = "all",
@@ -60,11 +58,10 @@ export async function collection<
 export async function entry<
   T extends
     | "vesti"
-    | "akcije"
     | "afere"
     | "linkovi"
     | "specijalne_stranice"
-    | "programmm",
+    | "programmmm",
 >(
   collection: T,
   entry: string,
@@ -114,6 +111,6 @@ export async function file<C extends keyof DataEntryMap>(
   const rendered = await render(post);
   return {
     Content: rendered.Content,
-    frontmatter: rendered.remarkPluginFrontmatter,
+    frontmatter: post.data,
   };
 }
