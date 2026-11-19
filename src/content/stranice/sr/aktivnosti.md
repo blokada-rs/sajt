@@ -7,6 +7,7 @@ timeline:
     important: false
     pin: false
     color: first
+    tekst: '[Вест](https://studenti.org.rs/vesti/poljska_filip/)'
   - naslov: Састанак са француском делегацијом
     datum: 2026-11-18T00:00:00
     important: false
