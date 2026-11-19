@@ -6,7 +6,9 @@ pubDate: 2026-11-18T17:34:00
 updatedDate: 2026-11-18T17:34:00
 heroImage: '@assets/images/Generalstab .webp'
 archived: false
-description: Two years after the Government of the Republic of Serbia, contrary to legal procedures and expert opinion, decided to lift the protection of the Generalštab complex, the former Yugoslav Army General Staff building, the contract with Jared Kushner's company has been officially terminated. According to a statement from the competent ministry, the contract was terminated with no mutual claims.
+description: |-
+  Two years after the Government of the Republic of Serbia, contrary to legal procedures and expert opinion, decided to lift the protection of the Generalštab complex, the former Yugoslav Army General Staff building, the contract with Jared Kushner's company has been officially terminated. 
+  According to a statement from the competent ministry, the contract was terminated with no mutual claims.
 ---
 
 
