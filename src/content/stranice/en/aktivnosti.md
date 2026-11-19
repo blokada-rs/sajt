@@ -2,10 +2,12 @@
 aktivnosti: Activities
 description: The Student List – Students Win and the students are continuing talks with representatives of diplomatic missions, international institutions, and organisations. Through meetings with domestic and international partners, we present our views on Serbia's future, share experiences, and build space for cooperation, while consistently representing the interests of our citizens. We keep the public regularly informed about all our meetings and talks.
 timeline:
-  - datum: 2026-11-19T01:46:00
+  - naslov: Meetings with the Crown Prince and European officials
+    datum: 2026-11-19T01:46:00
     important: false
     pin: false
     color: first
+    tekst: '[News](https://studenti.org.rs/vesti/poljska_filip/)'
   - naslov: Meetings with the French delegation
     datum: 2026-11-18T00:00:00
     important: false
@@ -18,6 +20,7 @@ timeline:
     color: first
     slike:
       - '@assets/images/DSC09836.webp'
+      - '@assets/images/Meeting with Student List joint photo.webp'
     tekst: |-
       Representatives of the **Student List** are continuing talks with representatives of international institutions and diplomatic delegations. Meetings with representatives of France, Germany, and the Council of Europe are planned in the coming period, covering European integration, Serbia's future, the rule of law, and cooperation with European partners.
 
