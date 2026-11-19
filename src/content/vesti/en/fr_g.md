@@ -9,7 +9,6 @@ archived: false
 description: Representatives of the Student List are continuing talks with representatives of international institutions and diplomatic delegations. Meetings with representatives of France, Germany, and the Council of Europe are planned in the coming period, covering European integration, Serbia's future, the rule of law, and cooperation with European partners.
 ---
 
-
 Representatives of the **Student List** are continuing talks with representatives of international institutions and diplomatic delegations. Meetings with representatives of France, Germany, and the Council of Europe are planned in the coming period, covering European integration, Serbia's future, the rule of law, and cooperation with European partners.
 
 ### Meetings with the French delegation
@@ -23,7 +22,6 @@ On the French side, the meetings will be attended by **the Minister Delegate for
 - Vladan Jovanović
 
 <br />
-
 
 ### Meeting with a member of the German Bundestag
 
@@ -39,7 +37,7 @@ Also on Wednesday, 18 November, at 16:00, a meeting with representatives of **th
 
 The talks will focus on opportunities for cooperation and support in the areas of human rights, the judiciary, and the rule of law. Particular topics will include the fight against corruption, judicial and constitutional reform, the electoral process, the media, citizens' democratic participation, inclusion, and public trust in institutions.
 
-**The Student List will be represented by candidate Vladimir Jovanović.**
+**The Student List will be represented by studentts.**
 
 ## Open to dialogue, accountable to citizens
 
@@ -51,4 +49,4 @@ We thank all our interlocutors for their interest and willingness to engage in d
 
 **The students prevailed!**
 
-Our [**activities**](https://studenti.org.rs/aktivnosti).
+Our **[activities](https://studenti.org.rs/aktivnosti)**.
