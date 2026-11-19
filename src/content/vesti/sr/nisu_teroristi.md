@@ -5,7 +5,7 @@ live: false
 pubDate: 2026-11-19T20:28:00
 updatedDate: 2026-11-19T20:28:00
 heroImage: '@assets/images/IMG_5060.webp'
-archived: true
+archived: false
 description: |-
   Сутра, 20. новембра, у 10 часова
   Палата правде
