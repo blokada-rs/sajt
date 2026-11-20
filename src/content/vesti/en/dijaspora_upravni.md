@@ -4,7 +4,7 @@ title: See You in Court!
 live: false
 pubDate: 2026-10-13T18:49:00
 updatedDate: 2026-10-13T18:49:00
-heroImage: '@assets/images/IMG_7069.webp'
+heroImage: '@assets/images/IMG_5102.webp'
 archived: false
 description: |-
   After the Republic Electoral Commission (RIK) failed to rule on complaints within the legally prescribed 72-hour deadline and then unlawfully rejected the submitted complaints, we have officially filed appeals with the Administrative Court in Belgrade.
