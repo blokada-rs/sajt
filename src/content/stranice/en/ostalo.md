@@ -15,6 +15,8 @@ vesti_opis: |-
   Follow the latest news, announcements, activities, protests, and live student reporting.
 
   Our goal is to provide a reliable source of information and a platform to inform the public about topics of importance to students and society as a whole.
+
+  See [activities](https://studenti.org.rs/aktivnosti/).
 najnovija_vest: Latest news
 afere_description: Affairs
 vesti_description: See latest news!

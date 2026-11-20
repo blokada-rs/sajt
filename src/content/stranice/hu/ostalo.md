@@ -11,7 +11,12 @@ studenti_u_blokadi: Diákblokádok
 footer: Studentska lista - Studenti pobeđuju
 pojedinacni_fakulteti: Diákfiókok
 pratite_live: Nézzetek minket élőben
-vesti_opis: Ujság
+vesti_opis: |-
+  Kövesse nyomon a legfrissebb híreket, bejelentéseket, eseményeket, tüntetéseket és a diákok élő tudósításait.
+
+  Célunk, hogy megbízható információforrást és platformot biztosítsunk a nyilvánosság számára a diákok és a társadalom egészét érintő fontos témákról.
+
+  [Tevékenységek](https://studenti.org.rs/aktivnosti/) megtekintése.
 najnovija_vest: Összes hír
 afere_description: |-
   Ügyek – nyitóoldal 
