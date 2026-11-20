@@ -2,12 +2,22 @@
 aktivnosti: Activities
 description: The Student List – Students Win and the students are continuing talks with representatives of diplomatic missions, international institutions, and organisations. Through meetings with domestic and international partners, we present our views on Serbia's future, share experiences, and build space for cooperation, while consistently representing the interests of our citizens. We keep the public regularly informed about all our meetings and talks.
 timeline:
-  - naslov: Meetings with the Crown Prince and European officials
-    datum: 2026-11-19T01:46:00
+  - naslov: Aleksandar Čupić at a meeting with European officials
+    datum: 2026-11-20T16:13:00
     important: false
     pin: false
     color: first
-    tekst: '[News](https://studenti.org.rs/vesti/poljska_filip/)'
+  - naslov: Meetings with the Crown Prince and European officials
+    datum: 2026-11-19T01:46:00
+    important: true
+    pin: false
+    color: first
+    slike:
+      - '@assets/images/kraljevski dvor-004.webp'
+    tekst: |-
+      Poland's Independence Day and lunch at the Beli dvor.
+
+      [News](https://studenti.org.rs/vesti/poljska_filip/)
   - naslov: Meetings with the French delegation
     datum: 2026-11-18T00:00:00
     important: false
