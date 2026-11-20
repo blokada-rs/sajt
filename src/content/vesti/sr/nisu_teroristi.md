@@ -1,7 +1,7 @@
 ---
 link: nisu_teroristi
 title: Завршна реч
-live: false
+live: true
 pubDate: 2026-11-19T20:28:00
 updatedDate: 2026-11-19T20:28:00
 heroImage: '@assets/images/IMG_5060.webp'
