@@ -28,17 +28,22 @@ export async function getStaticPaths() {
   return Promise.all(
     langs
       .flatMap((lang) => posts.flatMap((id) => ({ lang, id })))
-      .map(async ({ lang, id }) => ({
-        params: { lang, slug: id },
-        props: await entry("specijalne_stranice", id, lang),
-      })),
+      .map(async ({ lang, id }) => {
+        const e = await entry("specijalne_stranice", id, lang);
+
+        return {
+          params: { lang, slug: id },
+          props: e,
+          cacheHey: String(e.digest)
+        }
+      }),
   );
 }
 
 const { lang } = Astro.params;
 
 type Props = CollectionEntry<"specijalne_stranice">;
-const { Content, headings } = await render(Astro.props);
+const { Content } = await render(Astro.props);
 
 const frontmatter = Astro.props.data;
 

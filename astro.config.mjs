@@ -31,4 +31,8 @@ export default defineConfig({
       }),
     },
   },
+  experimental: {
+    parallelPrerender: true,
+    incrementalBuild: true
+  }
 });
