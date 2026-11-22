@@ -5,8 +5,6 @@ description: People who build Serbia through their work deserve to be able to li
 order: 4
 ---
 
-
-
 Serbia's labour legislation is among the least favourable to workers in Europe, and the rights that exist on paper mean little with unscrupulous employers, because violating them goes almost unpunished. This is the result of a "race to the bottom". Foreign investment is attracted by cheap and unprotected labour, and in particular by the fact that working outside an employment relationship has become normal; investors disappear when their subsidies do, while conscientious domestic employers carry the burden.
 
 Starting from our position that work is **not** the purpose of human life, and that pay serves to meet people's needs so that workers and their families can live in dignity, **we are bringing work back into the employment relationship.**
@@ -100,8 +98,6 @@ War veterans, military war invalids and the families of fallen soldiers have bee
 We will top up survivors' pensions below the minimum to the relevant statutory minimum, and introduce **a targeted supplement of up to 15% of the deceased spouse's pension.**
 
 **Through a social pension, we will provide basic security for people over 65 with insufficient years of service or no pension entitlement.** The full amount will be equal to the farmers' minimum pension.
-
-For parents and carers who provide intensive care for a child or an adult family member dependent on the care of others, we will pay contributions from the budget and **recognise up to five years of service over their working life.**
 
 ## Fairer pension insurance for farmers and lower penalties
 
