@@ -14,7 +14,7 @@ description: |-
 
 The **sixth hearing** in the "**Generalštab**" case is scheduled for Monday, **23 November 2026**, starting at **10:00.**
 
-We invite you to gather in front of the Special Court at 9:00, after which anyone interested can go inside and follow the trial.
+We invite you to gather in front of the **Special Court** at 9:00, after which anyone interested can go inside and follow the trial.
 
 **The time for accountability is coming.**
 
