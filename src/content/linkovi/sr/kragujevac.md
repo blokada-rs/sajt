@@ -15,4 +15,7 @@ linkovi:
   - type: facebook
     naslov: Facebook профил
     link: https://www.facebook.com/share/1H1aJk1sd5/
+  - type: web-bitno
+    naslov: Председнички - Пријава контролора
+    link: https://forms.gle/2Gmr6A5hCfcG9kop8
 ---
