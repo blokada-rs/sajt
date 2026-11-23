@@ -6,6 +6,8 @@ timeline:
     important: false
     pin: false
     color: first
+    slike:
+      - '@assets/images/IMG_5165.webp'
   - naslov: Aleksandar Čupić at a meeting with European officials
     datum: 2026-11-20T16:13:00
     important: false

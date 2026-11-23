@@ -7,6 +7,8 @@ timeline:
     important: false
     pin: false
     color: first
+    slike:
+      - '@assets/images/IMG_5165.webp'
     tekst: |-
       Представнице Студентске листе Сања Фриц и Катарина Шћепановић састаће се са амбасадорком Швајцарске у Србији.
 
