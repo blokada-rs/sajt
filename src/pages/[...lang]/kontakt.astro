@@ -141,6 +141,8 @@ const all = await collection("linkovi", lang);
     border-radius: 1rem;
     width: 50rem;
     max-width: calc(100% - 2rem);
+    background: var(--background);
+    color: var(--on-background);
 
     &:before {
       content: "";
@@ -148,14 +150,6 @@ const all = await collection("linkovi", lang);
       inset: 0;
       z-index: -2;
       background: rgba(0, 0, 0, 0.5);
-    }
-
-    &:after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      z-index: -1;
-      background: var(--background);
     }
 
     ul {
@@ -191,28 +185,24 @@ const all = await collection("linkovi", lang);
   }
 
   .ub {
-    border-color: hsl(0 82% 43%);
+    --color: var(--first);
   }
   .uu {
-    border-color: hsl(114 87% 31%);
+    --color: var(--second);
   }
   .visa {
-    border-color: hsl(55 42% 52%);
+    --color: var(--third);
   }
   .privatni {
-    border-color: hsl(210 87% 19%);
+    --color: var(--fourth);
   }
 
-  .ub:hover {
-    color: hsl(0 82% 43%);
+  button {
+    border-color: var(--color);
   }
-  .uu:hover {
-    color: hsl(114 87% 31%);
-  }
-  .visa:hover {
-    color: hsl(55 42% 52%);
-  }
-  .privatni:hover {
-    color: hsl(210 87% 19%);
+
+  button:hover {
+    color: hsla(from var(--on-background) h s l / .9);
+    border-color: hsla(from var(--color) h s l / .7);
   }
 </style>
