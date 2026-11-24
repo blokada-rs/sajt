@@ -13,6 +13,12 @@ timeline:
     important: false
     pin: false
     color: first
+  - datum: 2026-11-19T06:02:00
+    important: false
+    pin: false
+    color: first
+    slike:
+      - '@assets/images/IMG_5202.webp'
   - naslov: Meetings with the Crown Prince and European officials
     datum: 2026-11-19T01:46:00
     important: true
