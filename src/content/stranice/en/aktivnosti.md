@@ -2,23 +2,56 @@
 aktivnosti: Activities
 description: The Student List and the students are continuing talks with representatives of diplomatic missions, international institutions, and organisations. Through meetings with domestic and international partners, we present our views on Serbia's future, share experiences, and build space for cooperation, while consistently representing the interests of our citizens. We keep the public regularly informed about all our meetings and talks.
 timeline:
-  - datum: 2026-11-23T13:57:00
+  - datum: 2026-11-24T00:42:00
+    important: false
+    pin: false
+    color: first
+  - datum: 2026-11-24T00:41:00
+    important: false
+    pin: false
+    color: first
+  - naslov: Lunch at the Embassy of Morocco
+    datum: 2026-11-23T16:38:00
+    important: false
+    pin: false
+    color: first
+    tekst: |-
+      The Ambassador of the Kingdom of Morocco to Serbia has invited the student movement to lunch at his residence.
+
+      In his letter, he thanked the student movement's delegation for attending a musical evening organised by the Embassy of Morocco and expressed his pleasure at having met and exchanged views with the students.
+
+      The lunch will be an opportunity to discuss the long-standing friendship and relations between Serbia and Morocco, as well as topics of common interest.
+
+      The Student List will be represented by candidates Zoran Stanić and Janko Međedović, together with students.
+  - naslov: Meeting with the Ambassador of Switzerland
+    datum: 2026-11-23T13:57:00
     important: false
     pin: false
     color: first
     slike:
       - '@assets/images/IMG_5165.webp'
+    tekst: |-
+      
+      Student List representatives Sanja Fric and Katarina Šćepanović will meet the Ambassador of Switzerland to Serbia.
+
+      The meeting will be an opportunity to establish direct dialogue and exchange views on relations between Switzerland and Serbia.
   - naslov: Aleksandar Čupić at a meeting with European officials
     datum: 2026-11-20T16:13:00
     important: false
     pin: false
     color: first
-  - datum: 2026-11-19T06:02:00
+    slike:
+      - '@assets/images/IMG_0483.webp'
+  - naslov: Representatives of the Student List at the commemoration of the Day of Independence of the Republic of Poland
+    datum: 2026-11-19T06:02:00
     important: false
     pin: false
     color: first
     slike:
       - '@assets/images/IMG_5202.webp'
+    tekst: |-
+      On the occasion of the celebration of Independence Day and Armed Forces Day of the Republic of Poland, held on November 19 in Belgrade, at the invitation of the Embassy of the Republic of Poland in Serbia, the ceremony was attended by Student List candidates Vlada Jovanović and Stanislav Milošević, as well as students.
+      The Embassy's invitation emphasized that the presence of representatives confirms the traditionally close and historical ties between the two peoples, as well as the significance of this moment for diplomatic and social cooperation.
   - naslov: Meetings with the Crown Prince and European officials
     datum: 2026-11-19T01:46:00
     important: true
