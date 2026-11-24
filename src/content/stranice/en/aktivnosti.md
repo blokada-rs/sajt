@@ -29,6 +29,8 @@ timeline:
     important: false
     pin: false
     color: first
+    slike:
+      - '@assets/images/IMG_9561.webp'
   - naslov: Meetings with representatives of France, Germany, and the Council of Europe
     datum: 2026-11-18T00:00:00
     important: true
