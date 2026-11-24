@@ -9,6 +9,7 @@ import { Picture } from "astro:assets";
 import Live from "@components/Live.astro";
 import Mapa from "@components/Mapa.astro";
 import Notifications from "@components/Notifications.astro";
+import PdfTemplate from "@components/PdfTemplate.astro";
 import SectionLink from "@components/SectionLink.astro";
 import Vesti from "@components/Vesti.astro";
 import Video from "@components/Video.astro";
@@ -34,8 +35,8 @@ export async function getStaticPaths() {
         return {
           params: { lang, slug: id },
           props: e,
-          cacheHey: String(e.digest)
-        }
+          cacheKey: String(e.digest),
+        };
       }),
   );
 }
@@ -100,7 +101,15 @@ const live = vesti.filter((vest) => vest.data.live && !vest.data.archived);
   )}
 
   <Content
-    components={{ Icon, SectionLink, Vesti, Mapa, Video, Notifications }}
+    components={{
+      Icon,
+      SectionLink,
+      Vesti,
+      Mapa,
+      Video,
+      Notifications,
+      PdfTemplate,
+    }}
   />
 </Base>
 

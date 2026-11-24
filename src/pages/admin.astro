@@ -288,6 +288,65 @@ import { AstroFont } from "astro-font";
         toPreview: () => `[Mapa]`,
       });
 
+      registerEditorComponent({
+        id: "pdf-generator",
+        label: "PDF generator",
+        fields: [
+          {
+            widget: "list",
+            name: "urls",
+            label: "Urls",
+            required: true,
+            label_singular: "Url",
+            field: {
+              widget: "string",
+              name: "url",
+            },
+          },
+          {
+            widget: "list",
+            name: "fields",
+            label: "Fields",
+            required: true,
+            label_singular: "Field",
+            fields: [
+              {
+                widget: "string",
+                name: "name",
+              },
+              {
+                widget: "string",
+                name: "label",
+              },
+              {
+                widget: "select",
+                name: "type",
+                options: [
+                  {
+                    value: "string",
+                    label: "String",
+                  },
+                  {
+                    value: "today",
+                    label: "Danas",
+                  },
+                ],
+              },
+            ],
+          },
+        ],
+        icon: "picture_as_pdf",
+        pattern: /<PdfTemplate urls='(?<urls>.*?)' fields='(?<fields>.*?)' \/>/,
+        mode: "dialog",
+        toBlock: ({ urls, fields }) =>
+          `<PdfTemplate urls='${JSON.stringify(urls)}' fields='${JSON.stringify(fields)}' />`,
+        fromBlock: (match) => ({
+          urls: JSON.parse(match[1]),
+          fields: JSON.parse(match[2]),
+        }),
+        toPreview: () => `[PDF template]`,
+      });
+
       registerMdxComponent({
         id: "link",
         label: "SectionLink",

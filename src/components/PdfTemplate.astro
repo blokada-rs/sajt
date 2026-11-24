@@ -1,0 +1,168 @@
+---
+interface Props {
+  urls: any;
+  fields: any;
+}
+
+enum FieldType {
+  STRING = "string",
+  TODAY = "today",
+}
+
+interface Field {
+  name: string;
+  label: string;
+  type: FieldType;
+}
+
+const { urls, fields: fields_json } = Astro.props;
+
+const fields: Field[] = JSON.parse(fields_json);
+---
+
+<pdf-template data-urls={urls} data-fields={fields_json}>
+  {fields.map((field) => {
+    switch (field.type) {
+      case FieldType.STRING:
+        return (
+          <>
+            <label for=`template-${field.name}`>{field.label}</label>
+            <input
+              id=`template-${field.name}`
+              data-field={field.name}
+              type="text"
+            />
+          </>
+        );
+    }
+  })}
+
+  <div class="buttons">
+    <button id="generate" class="primary">
+      Генериши
+    </button>
+  </div>
+</pdf-template>
+
+<style>
+  pdf-template {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.5rem 1rem;
+
+    background: var(--secondary-background);
+    padding: 1rem;
+    border: var(--on-background) 2px solid;
+    border-radius: 0.5rem;
+  }
+
+  .buttons {
+    grid-column: 1 / -1;
+    padding-top: 0.5rem;
+  }
+</style>
+
+<script>
+  import fontkit from "@pdf-lib/fontkit";
+  import { PDFDocument } from "pdf-lib";
+
+  enum FieldType {
+    STRING = "string",
+    TODAY = "today",
+  }
+
+  interface Field {
+    name: string;
+    label: string;
+    type: FieldType;
+  }
+
+  class PdfTemplate extends HTMLElement {
+    #urls: string[];
+    #fields: Field[];
+
+    downloadBlob(blob: Blob, filename: string) {
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = filename;
+
+      document.body.appendChild(a);
+      a.click();
+
+      URL.revokeObjectURL(a.href);
+      document.body.removeChild(a);
+    }
+
+    async generate() {
+      const generated = await Promise.all(
+        this.#urls.map((url) => this.generateOne(url)),
+      );
+
+      generated.forEach((blob, idx) =>
+        this.downloadBlob(blob, `generated${idx + 1}.pdf`),
+      );
+    }
+
+    async generateOne(url: string): Promise<Blob> {
+      const pdf_bytes = await fetch(url).then((res) => res.arrayBuffer());
+      const font_bytes = await fetch("/fonts/LiberationSerif-Regular.ttf").then(
+        (res) => res.arrayBuffer(),
+      );
+      const pdf_doc = await PDFDocument.load(pdf_bytes);
+
+      pdf_doc.registerFontkit(fontkit);
+      const customFont = await pdf_doc.embedFont(font_bytes);
+
+      const form = pdf_doc.getForm();
+
+      this.#fields.forEach((field) => {
+        switch (field.type) {
+          case FieldType.STRING: {
+            const input: HTMLInputElement = this.querySelector(
+              `[data-field="${field.name}"]`,
+            )!;
+            const text_field = form.getTextField(field.name);
+            text_field.setText(input.value);
+            text_field.setFontSize(10);
+            text_field.updateAppearances(customFont);
+            break;
+          }
+
+          case FieldType.TODAY: {
+            const date = new Date();
+            const text_field = form.getTextField(field.name);
+            text_field.setText(
+              `${date.toLocaleDateString("sr-RS", {
+                year: "numeric",
+                month: "numeric",
+                day: "numeric",
+                timeZone: "Europe/Belgrade",
+              })}`,
+            );
+            text_field.setFontSize(10);
+            text_field.updateAppearances(customFont);
+            break;
+          }
+        }
+      });
+
+      form.flatten();
+      const bytes = await pdf_doc.save();
+      return new Blob([bytes.buffer as ArrayBuffer], {
+        type: "document/pdf",
+      });
+    }
+
+    constructor() {
+      super();
+
+      this.#urls = JSON.parse(this.dataset.urls!);
+      this.#fields = JSON.parse(this.dataset.fields!);
+
+      const generate: HTMLButtonElement = this.querySelector("#generate")!;
+      generate.onclick = () => this.generate();
+    }
+  }
+
+  customElements.define("pdf-template", PdfTemplate);
+</script>
