@@ -16,7 +16,12 @@ vesti_opis: |-
 
   Célunk, hogy megbízható információforrást és platformot biztosítsunk a nyilvánosság számára a diákok és a társadalom egészét érintő fontos témákról.
 
-  [Tevékenységek](https://studenti.org.rs/aktivnosti/) megtekintése.
+  Актуелно:
+
+  - Погледајте [активности](https://studenti.org.rs/aktivnosti/).
+  - Попуните [захтеве](https://studenti.org.rs/javni_znacaj_alta/) везане за Алта банку.
+
+  <br />
 najnovija_vest: Összes hír
 afere_description: |-
   Ügyek – nyitóoldal 

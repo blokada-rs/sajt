@@ -16,7 +16,12 @@ vesti_opis: |-
 
   Наш циљ је да пружимо поуздан извор информација и простор за информисање јавности о темама од значаја за студенте и друштво у целини.
 
-  Погледајте [активности](https://studenti.org.rs/aktivnosti/).
+  Актуелно:
+
+  - Погледајте [активности](https://studenti.org.rs/aktivnosti/).
+  - Попуните [захтеве](https://studenti.org.rs/javni_znacaj_alta/) везане за Алта банку.
+
+  <br />
 najnovija_vest: Најновија вест
 afere_description: Афере владајуће странке
 vesti_description: |-

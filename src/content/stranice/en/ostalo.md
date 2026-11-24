@@ -16,7 +16,13 @@ vesti_opis: |-
 
   Our goal is to provide a reliable source of information and a platform to inform the public about topics of importance to students and society as a whole.
 
-  See [activities](https://studenti.org.rs/aktivnosti/).
+  Current:
+
+  - Check out [activities](https://studenti.org.rs/aktivnosti/).
+
+  - Complete [requests](https://studenti.org.rs/javni_znacaj_alta/) related to Alta Bank.
+
+  <br />
 najnovija_vest: Latest news
 afere_description: Affairs
 vesti_description: See latest news!
