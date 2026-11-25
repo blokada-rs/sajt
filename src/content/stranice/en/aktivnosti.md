@@ -10,19 +10,21 @@ timeline:
     important: false
     pin: false
     color: first
-  - naslov: Lunch at the Embassy of Morocco
+  - naslov: Meeting at the Embassy of Morocco
     datum: 2026-11-23T16:38:00
     important: false
     pin: false
     color: first
+    slike:
+      - '@assets/images/IMG_5215.webp'
     tekst: |-
-      The Ambassador of the Kingdom of Morocco to Serbia has invited the student movement to lunch at his residence.
+      The Ambassador of the Kingdom of Morocco to Serbia has invited the student movement to a meeting over a tea cup at his residence.
 
       In his letter, he thanked the student movement's delegation for attending a musical evening organised by the Embassy of Morocco and expressed his pleasure at having met and exchanged views with the students.
 
-      The lunch will be an opportunity to discuss the long-standing friendship and relations between Serbia and Morocco, as well as topics of common interest.
+      The meeting was an opportunity to discuss the long-standing friendship and relations between Serbia and Morocco, as well as topics of common interest.
 
-      The Student List will be represented by candidates Zoran Stanić and Janko Međedović, together with students.
+      The Student List was represented by candidates Zoran Stanić and Janko Međedović, together with students.
   - naslov: Meeting with the Ambassador of Switzerland
     datum: 2026-11-23T13:57:00
     important: false
