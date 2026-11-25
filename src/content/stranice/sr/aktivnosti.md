@@ -24,7 +24,7 @@ timeline:
     pin: false
     color: first
     slike:
-      - '@assets/images/IMG_5215.webp'
+      - '@assets/images/IMG_5215-1.webp'
     tekst: |-
       Амбасадор Краљевине Мароко у Србији упутио је позив студентском покрету на састанак уз шољицу чаја у својој резиденцији.
 

@@ -16,7 +16,7 @@ timeline:
     pin: false
     color: first
     slike:
-      - '@assets/images/IMG_5215.webp'
+      - '@assets/images/IMG_5215-1.webp'
     tekst: |-
       The Ambassador of the Kingdom of Morocco to Serbia has invited the student movement to a meeting over a tea cup at his residence.
 
