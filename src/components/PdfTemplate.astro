@@ -54,17 +54,25 @@ const fields: Field[] = JSON.parse(fields_json);
     padding: 1rem;
     border: var(--on-background) 2px solid;
     border-radius: 0.5rem;
+    margin-bottom: 1rem;
   }
 
-  .buttons {
+  pdf-template :global(.buttons) {
     grid-column: 1 / -1;
     padding-top: 0.5rem;
+    gap: 0.5rem;
+    margin-block: 0;
+    flex-wrap: wrap;
+  }
+
+  pdf-template :global(.buttons) :global(.button) {
+    flex-grow: 1;
   }
 </style>
 
 <script>
   import fontkit from "@pdf-lib/fontkit";
-  import { PDFDocument } from "pdf-lib";
+import { PDFDocument } from "pdf-lib"
 
   enum FieldType {
     STRING = "string",
@@ -80,6 +88,7 @@ const fields: Field[] = JSON.parse(fields_json);
   class PdfTemplate extends HTMLElement {
     #urls: string[];
     #fields: Field[];
+    #download_links: HTMLDivElement | null = null;
 
     downloadBlob(blob: Blob, filename: string) {
       const a = document.createElement("a");
@@ -98,9 +107,30 @@ const fields: Field[] = JSON.parse(fields_json);
         this.#urls.map((url) => this.generateOne(url)),
       );
 
-      generated.forEach((blob, idx) =>
-        this.downloadBlob(blob, `generated${idx + 1}.pdf`),
-      );
+      if (this.#download_links !== null) {
+        ([...this.#download_links.children] as HTMLAnchorElement[])
+          .forEach(link => URL.revokeObjectURL(link.href));
+
+        this.removeChild(this.#download_links);
+      }
+
+      if (generated.length === 1) {
+        this.downloadBlob(generated[0], "generated.pdf");
+        return;
+      }
+
+      this.#download_links = document.createElement("div");
+      this.#download_links.classList.add("buttons");
+
+      generated.forEach((blob, idx) => {
+        const link = document.createElement("a");
+        link.classList.add("button");
+        link.innerText = `zahtev${idx + 1}.pdf`;
+        link.href = URL.createObjectURL(blob);
+        this.#download_links!.append(link);
+      })
+
+      this.append(this.#download_links!);
     }
 
     async generateOne(url: string): Promise<Blob> {

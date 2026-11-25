@@ -188,8 +188,8 @@ importers:
         specifier: ^1.1.1
         version: 1.1.1
       '@sveltia/cms':
-        specifier: ^0.270.1
-        version: 0.270.1
+        specifier: ^0.271.2
+        version: 0.271.2
       astro:
         specifier: ^7.4.13
         version: 7.4.13(@types/node@26.6.6)(sass@1.108.2)(yaml@2.9.1)
@@ -1145,8 +1145,8 @@ packages:
     resolution: {integrity: sha512-xSMZIoi9tqXNXNdcJWdvVSiNmFiHnE8PjlV9Yb0I33zX2UrbNooiVpOdAvEjdrYYLLUEnvvqCnm+wTyU12wDng==}
     engines: {node: '>=22'}
 
-  '@sveltia/cms@0.270.1':
-    resolution: {integrity: sha512-y7OZjuOMP5AxNa9mNAGrpzk0eYZPuilrKFdv4jBOdlNDbtXZK3xybZW+uEQb+eP3YzLakHzl3OanOk7+WddPAg==}
+  '@sveltia/cms@0.271.2':
+    resolution: {integrity: sha512-VhzATMGTT1L0cvY+JQJszlOWCHWnqjpUF8s4cFKRFfPqQlwYoEL26U3zD7DHHbLySlSB6reQc6BstDnfG636Kg==}
     peerDependencies:
       '@types/react': ^19.3.0
     peerDependenciesMeta:
@@ -2758,7 +2758,7 @@ snapshots:
 
   '@sindresorhus/transliterate@3.1.0': {}
 
-  '@sveltia/cms@0.270.1':
+  '@sveltia/cms@0.271.2':
     dependencies:
       '@shikijs/langs': 4.6.0
       '@shikijs/themes': 4.6.0

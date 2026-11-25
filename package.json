@@ -18,7 +18,7 @@
     "@iconify-json/simple-icons": "^1.2.103",
     "@mashehu/astropub-md": "3.0.0",
     "@pdf-lib/fontkit": "^1.1.1",
-    "@sveltia/cms": "^0.270.1",
+    "@sveltia/cms": "^0.271.2",
     "astro": "^7.4.13",
     "astro-font": "^1.2.0",
     "astro-icon": "^1.2.0",
