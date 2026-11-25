@@ -2,14 +2,25 @@
 aktivnosti: Activities
 description: The Student List and the students are continuing talks with representatives of diplomatic missions, international institutions, and organisations. Through meetings with domestic and international partners, we present our views on Serbia's future, share experiences, and build space for cooperation, while consistently representing the interests of our citizens. We keep the public regularly informed about all our meetings and talks.
 timeline:
-  - datum: 2026-11-24T00:42:00
+  - naslov: Meeting with representatives of the United Nations
+    datum: 2026-11-24T00:42:00
     important: false
     pin: false
     color: first
-  - datum: 2026-11-24T00:41:00
+    tekst: |-
+      
+      A meeting between Student List – Students Win representatives Vladan Jovanović and Ana Dimitrijević and representatives of the United Nations has been proposed for 24 November.
+  - naslov: Meeting with a delegation from the Embassy of China
+    datum: 2026-11-24T00:41:00
     important: false
     pin: false
     color: first
+    tekst: |-
+      Representatives of the Student List held a meeting with a delegation from the Embassy of the People's Republic of China in Serbia, with students present.
+
+      During the conversation, the importance of the “steel friendship” between the Serbian and Chinese peoples was emphasized, and the readiness for the further development of the strategic partnership between the two countries was confirmed. Representatives of the Student List reiterated that Serbia supports the one-China policy, while the Chinese delegation confirmed their country's position that Kosovo is an integral part of Serbia.
+
+      Possibilities for cooperation were also discussed in the areas of environmental protection, high-tech development, intellectual exchange, and the fight against corruption. Representatives of the Student List welcomed the readiness of the Chinese side to contribute to creating a more favorable and transparent business environment, with clearer rules for Chinese companies operating in Serbia.
   - naslov: Meeting at the Embassy of Morocco
     datum: 2026-11-23T16:38:00
     important: false
