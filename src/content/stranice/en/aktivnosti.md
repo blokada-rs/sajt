@@ -166,4 +166,10 @@ timeline:
       [Read more](https://studenti.org.rs/vesti/poseta_kim/)
 ---
 
-The Student List and the students are continuing talks with representatives of diplomatic missions, international institutions, and organisations. Through meetings with domestic and international partners, we present our views on Serbia's future, share experiences, and build space for cooperation, while consistently representing the interests of our citizens. We keep the public regularly informed about all our meetings and talks.
+The Student List and the students are continuing talks with representatives of diplomatic missions, international institutions, and organisations. 
+
+Through meetings with domestic and international partners, we present our views on Serbia's future, share experiences, and build space for cooperation, while consistently representing the interests of our citizens. 
+
+We keep the public regularly informed about all our meetings and talks.
+
+See **[news](https://studenti.org.rs/vesti/)**.
